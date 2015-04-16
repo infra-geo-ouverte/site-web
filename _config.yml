@@ -1,0 +1,43 @@
+# Site settings
+title: IGO Infrastructure Géomatique Ouverte
+# site.name
+name: "IGO Infrastructure Géomatique Ouverte"
+
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+  
+# -------  URL  ------- # 
+#ajouter un CNAME pour lier le site à un nom de domaine acheté
+# dans cpanel (si le dns host utilise cpanel) aller dans puis dans Simple DNS Zone Editor, add a cname Record: name ex: igo.com, CNAME: igo.github,io
+#ajouter un fichier CNAME a la racine du gh-page avec le lien igo.com comme seule ligne de code à l'intérieur
+# voir dans setting, l'url du site est maintenant igo.com
+#local /IGO-gh-pages/  dans github "/test_IGO" c'est le nom du projet
+#baseurl pour site sur github: "/nomduprojet"  pour un site avec un cname mettre juste "/"
+baseurl: "/test_IGO"
+# url pour local : [http://localhost]
+url: "[http://localhost]"
+
+encoding: utf-8
+
+#redcarpet:  redcarpet appears to be The Standard GitHub Flavored Markdown, sinon c'est Kramdown
+markdown: redcarpet
+permalink: pretty
+
+# rouge: plus facile d'installation pour windows  sinon en general c'est pygments qui est utilisé
+# note: As of August 1, commiting a _config.yml that uses rouge now causes "Page build failure" on GitHub with a misleading error message like "The file _posts/2014-08-01-blah.md contains syntax errors." Before you commit & push, you must set highlighter: pygments in _config.yml, even if you don't care to install pygments locally.
+#ref: http://loyc.net/2014/blogging-on-github.html
+highlighter: pygments
+#rouge pas supporté par github mettre pygments
+
+# ref: http://pixelcog.com/blog/2013/jekyll-from-scratch-core-architecture/
+
+include: ['_pages']
+relative_permalinks: false
+
+# navigation dans l'entete	
+
+sass:
+    sass_dir: _sass 

@@ -1,0 +1,301 @@
+/***************************
+***  CSS 
+**************************/
+body .site-header{
+	border: none;
+}
+
+#header .navbar-default{
+	background-color: $gris-pale;
+	border: none;
+}
+
+
+/***********************
+Logo
+**********************/
+#header .logo-med{
+	padding: 10px 0 0 10px;
+	width: 180px;
+}
+// menu faq
+
+#header .navbar-right{
+	padding-top: 5px;
+	margin-right: 0;
+}
+#header .head-right{
+	float: left;
+	width: 100%;
+	background-color: $bleu;
+	padding-left: 2%;
+}
+#header .git-btn{
+	display: block;
+	font-weight: $bold;
+	background-color: $bleu;
+	margin: 15px auto 0 auto;
+	width: 100%;
+	font-size: 12px;
+	padding: 1%;
+}
+#header .git-btn:hover{
+	background-color: $bleu-fonce;
+}
+#header .btn{
+	padding: 5px 5px;
+}
+
+#header .head-right .nav>li{
+	display: inline-block;
+}
+#header .logo-git{
+	font-size: 12px;
+}
+#header .navbar-toggle{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 0;
+}
+
+
+/***
+*Navigation principale
+***/
+#header .menu-main a, #header .git-btn{ 
+	color: $blanc;
+	text-transform: uppercase;
+	font-family: $title-font-family;
+}
+
+#header .menu-main{
+	display: inline-block;
+	width: 100%;
+	font-weight: bold;
+	background-color: $bleu;	
+	padding: 5px 0;
+	font-size: $small-font-size;
+}
+#header .menu-main ul{ 
+	float: none;
+	padding: 0;
+	margin: 0;  
+}
+
+#header .navbar-collapse{
+	padding: 0;
+}
+
+#header .navbar{
+	border: none;
+	margin: 0;
+}
+
+#header .navbar-nav li a{
+	color: $blanc;
+}
+
+#header .nav-icons{
+	display: inline-block;
+	background-color: $blanc;
+	border: none;
+	border-radius: 50%;
+	margin:2px 2%;
+	height: 25px;
+	width: 25px;
+	color: $noir;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+
+
+/*******************************************************/
+
+/************css pour tablette et ordinateur ***********/
+
+/*******************************************************/
+/* ---------------- 500px ---------------------------- */
+@media screen and (min-width: $screen-xs-min) {
+
+	/***********************
+	Logo
+	**********************/
+	#header .logo-med{
+		padding: 15px 0 0 15px;
+		width: 220px;
+	}
+
+	/***
+	*Menu bouton git et nav FAQ/english
+	***/
+	#header .git-btn{
+		width: 140px;
+		margin-top: 70px;
+		float: right;
+	}
+
+	// menu faq
+
+
+	#header .logo-git{
+		font-size: 16px;
+	}
+
+	/***
+	*Navigation principale
+	***/
+
+	#header .nav-icons{
+		margin:2px 2%;
+		height: 25px;
+		width: 25px;
+		font-size: 16px;
+	}
+}
+/* ----------------768px-----------------------------  */
+
+@media screen and (min-width: $screen-sm-min) {
+
+	/***********************
+	Logo
+	**********************/
+	#header .logo-med{
+		padding: 20px 0 0 20px;
+		width: 230px;
+	}
+	
+
+	/***
+	* Menu bouton git et nav FAQ/english
+	***/
+
+	#header .navbar-header{
+		width: 100%!important;
+	}
+	#header .git-btn{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 200px;
+		font-size: $small-font-size;
+		margin-top: 0;
+	}
+	#header .logo-git{
+		font-size: 25px;
+	}
+	#header .btn{
+		padding: 6px 12px;
+	}
+	
+	// menu faq
+	#header .navbar-nav{
+		float: right;
+	}
+	#header .head-right{
+		display: inline-block;
+		float: right;
+		background-color: inherit;
+		height: 50px;
+		margin-top: -25px;
+	}
+	#header .menu-top li a{
+		color: $gris-fonce;
+	}
+
+
+	/***
+	* Navigation principale
+	***/
+
+	#header .menu-main{
+		padding: 0;
+		width: 100%;
+		font-size: $small-font-size;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	#header .menu-main ul{ 
+		margin: 0 auto;   /* a corriger ne prend pas le auto ??????? */
+		display: inline-block;
+
+	}
+	
+	#header .menu-main li{
+		padding: 10px 12px;
+		&:hover {
+			background-color: $bleu-fonce;
+		}
+	}
+	#header .menu-main li a{
+		padding: 10px 3%;
+	}
+
+	#header .nav-icons{
+		margin:0 auto 10px auto;
+		height: 30px;
+		width: 30px;
+		display: block;
+		font-size: 20px;
+	}
+
+}
+
+/* ----------------992px----------------------------------  */
+
+@media screen and (min-width: $screen-md-min) {
+
+	/***
+	* Menu bouton git et nav FAQ/english
+	***/
+	#header .logo-med{
+		width: 260px;
+	}
+	// menu faq
+	#header .git-btn{
+		font-size: $base-font-size;
+	}
+
+	/***
+	* Navigation principale
+	***/
+
+	#header .menu-main{
+		padding: 0;
+		width: 100%;
+		font-size: $base-font-size;
+	}
+
+	#header .menu-main li a{
+		padding: 10px 15px;
+	}
+
+	#header .nav-icons{
+		display: block;
+		margin:0 auto 10px auto;
+		height: 40px;
+		width: 40px;
+		font-size: 25px;
+		padding-top: 7px;
+	}
+}
+
+/* ----------------1200px---------------------------------  */
+
+@media screen and (min-width: $screen-lg-min) {
+
+
+}
+
+
+
+
+
+
+
+
+
+

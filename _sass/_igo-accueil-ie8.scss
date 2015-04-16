@@ -1,0 +1,101 @@
+/*****************************************
+css de l'accueil incluant la banniere pour IE8
+***************************************/
+
+#banniere{
+	background-image: url("../assets/img/banniere_carte.jpg");
+	@include background-img;
+	background-attachment: local;
+	height: 500px;
+	border: none;
+	margin-top: 0;
+}
+
+#banniere .banniere{
+	padding-top: 150px;
+	padding-left: 30%;
+}
+
+#banniere .banniere-logo, .banniere-titre{
+	display: inline-block;
+	vertical-align: 50%;
+}
+
+#banniere .banniere-logo{
+	vertical-align: 50%;
+	width: 115px;
+}
+
+#banniere .banniere-titre{
+	padding-left: 5%;
+	font-weight: $bold;
+	padding-top: 10px;
+	letter-spacing: $title-letter-spacing;
+	margin: 0;
+	font-size: $h1;
+	font-family: $title-font-family;
+	display: inline-block!important;
+	text-shadow: 0px 3px 4px #bbb;
+	color: $noir;
+}
+
+#banniere .btn-banniere{
+	color: $noir;
+	background-color: $vert;
+	width: 150px;
+	font-size: 20px;
+	margin: 5px auto 0 auto;
+	border-color: $vert;
+}
+#banniere .btn-banniere:hover{
+	color: $blanc;
+	background-color: $vert-fonce;
+	border-color: $vert-fonce;
+}
+#banniere .btn-banniere{
+	width: 150px;
+	font-size: 20px;
+	}
+
+#banniere .btn{
+	padding: 1%;
+	margin-right: 5%;	
+}
+
+#banniere .btn .fa, .octicon{
+	display: none;
+}
+
+
+#accueil .col-sm-6{
+	padding: 0;
+	width: 45%;
+	margin: 1%;
+	display: inline-block;
+}
+
+#accueil .btn{
+	width: 100%;
+	font-size: $h3*0.9;
+}
+#accueil .modal-backdrop.in{
+	opacity: 0;
+}
+
+#accueil .text-center{
+	padding-top: 15px;
+}
+#accueil .modal-header{
+	background-color: $vert-pale;
+}
+#accueil .in.modal-backdrop{
+	filter: alpha(opacity=0);
+}
+
+
+
+
+
+
+
+

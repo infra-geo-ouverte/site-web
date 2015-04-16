@@ -1,0 +1,227 @@
+/*******************************
+Feuille de base fait à partir du fichier _base qui avait été généré par github ou jekyll
+css des balises de base
+********************************/
+
+/****************************
+ * Reset some basic elements
+*****************************/
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+	border-color: $gris-fonce;
+	margin: 2%;
+}
+
+/****************************
+Style de base des pages
+*****************************/
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: $regular;
+    color: $noir;
+    background-color: $gris-pale;
+    -webkit-text-size-adjust: 100%;
+	font-size: $small-font-size;
+}
+
+/****************************
+ Set `margin-bottom` to maintain vertical rhythm  - Gardé dans le fichier base aussi
+*****************************/
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+/****************************
+Liens 
+*****************************/
+
+a {
+    color: $bleu;
+    text-decoration: none;
+
+    &:visited {
+        color: $gris;
+    }
+
+    &:hover {
+        color: $gris-fonce;
+        text-decoration: underline;
+    }
+}
+
+
+/****************************
+ * Lists
+*****************************/
+/*ul, ol {
+    margin-left: $spacing-unit;
+}*/
+/*
+li {
+    > ul,
+    > ol {
+         //margin-bottom: 0;
+    }
+}*/
+
+/****************************
+ * Headings
+*****************************/
+ 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $bold;
+	font-family: $base-font-family;
+	color: $bleu-fonce;
+}
+h1{
+	font-size: $h1*0.65;
+}
+h2{
+	font-size: $h2*0.7;
+}
+h3{
+	font-size: $h3*0.75;
+}
+h4{
+	font-size: $h4*0.8;
+}
+h5{
+	font-size: $h5*0.8;
+}
+
+/****************************
+ * Blockquotes
+*****************************/
+blockquote {
+    color: $gris;
+    border-left: 4px solid $gris-pale;
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+/****************************
+ * Code formatting
+*****************************/
+pre,
+code {
+    font-size: 15px;
+    border: 1px solid $gris-pale;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/****************************
+ * Wrapper
+*****************************/
+.wrapper {
+    padding-right: 10%;
+    padding-left: 10%;
+    @extend %clearfix;
+	margin-top: 20px;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+/****************************
+ * Icons
+*****************************/
+/*.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $gris;
+        }
+    }
+}*/
+
+/****************************
+ * Clearfix - Gardé dans le fichier base aussi à vérifier *
+*****************************/
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+/*******************************************************/
+
+/************css pour tablette et ordinateur ***********/
+
+/*******************************************************/
+/* ---------------- 768px ---------------------------- */
+@media screen and (min-width: $screen-sm-min) {
+	/****************************
+	 * Headings
+	*****************************/
+	h1{
+		font-size: $h1;
+	}
+	h2{
+		font-size: $h2;
+	}
+	h3{
+		font-size: $h3;
+	}
+	h4{
+		font-size: $h4;
+	}
+	h5{
+		font-size: $h5;
+	}
+
+	/****************************
+	Style de base des pages
+	*****************************/
+	body {
+		font-size: $base-font-size;
+	}
+}
+
+
+

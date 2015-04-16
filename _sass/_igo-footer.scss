@@ -1,0 +1,92 @@
+/**********************
+css du footer
+********************/
+
+#footer {
+	background-color: $bleu-fonce;
+	color: $blanc;
+	padding: 1% 0;
+	margin-top: 20px;
+}
+
+#footer ul{
+	list-style-type: none;
+	margin: 10px auto;
+}
+#footer ul a{
+	color: $blanc;
+}
+
+
+#footer .logo-med{
+	width: 60px;
+}
+
+#footer .footer-mail{
+	padding-top: 2% 0;
+	color: $blanc;
+	display: block;
+}
+#footer .footer-mail .octicon{
+	padding-right: 1%;
+}
+#footer .copyright{
+	padding-top: 20px;
+	display: block;
+}
+/************************
+* reseaux sociaux
+********************/
+
+#footer .footer-reseau{
+	color: $blanc;
+	text-align: center;
+}
+#footer .share-page{
+	text-align: center;
+	padding-top: 15px;
+}
+
+/* Grow animation*/
+#footer .fa {
+	padding-left: 10px;
+	font-size: 30px;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+#footer .fa:hover, .hvr-grow:focus, .hvr-grow:active {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+
+/*******************************************************/
+
+/************css pour tablette et ordinateur ***********/
+
+/*******************************************************/
+/* ---------------- 500px ---------------------------- */
+@media screen and (min-width: $screen-xs-min) {
+
+
+}
+/* ----------------768px-----------------------------  */
+
+@media screen and (min-width: $screen-sm-min) {
+	#footer .logo-med{
+		padding-top: 20px;
+	}
+	#footer .logo-med{
+		width: 75px;
+	}
+
+}

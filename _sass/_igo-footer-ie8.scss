@@ -1,0 +1,61 @@
+/**********************
+css du footer
+********************/
+
+#footer {
+	background-color: $bleu-fonce;
+	color: $blanc;
+	padding: 1% 0;
+	margin-top: 20px;
+}
+
+#footer ul{
+	list-style-type: none;
+	margin: 10px auto;
+}
+#footer ul a{
+	color: $blanc;
+}
+
+#footer .logo-med{
+	width: 75px;
+}
+
+#footer .footer-mail{
+	padding-top: 2% 0;
+	color: $blanc;
+	display: block;
+}
+#footer .footer-mail .octicon{
+	display: none;
+}
+#footer .copyright{
+	padding-top: 1%;
+	display: block;
+}
+
+#footer .col-xs-12{
+	width: 380px;
+	padding: 0 100px;
+}
+
+/************************
+* reseaux sociaux
+********************/
+
+#footer .footer-reseau{
+	color: $blanc;
+	text-align: center;
+}
+#footer .share-page{
+	text-align: center;
+	padding-top: 15px;
+}
+
+
+#footer .fa {
+	padding-left: 10px;
+	font-size: 30px;
+	vertical-align: middle;
+}
+

@@ -1,0 +1,828 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Muli);
+/*******************************************************/
+/************css pour tablette et ordinateur ***********/
+/*******************************************************/
+/* ---------------- 500px ---------------------------- */
+/* ----------------768px-----------------------------  */
+/* ----------------992px----------------------------------  */
+/* ----------------1200px---------------------------------  */
+/*******************************
+Feuille de base fait ├á partir du fichier _base qui avait ├®t├® g├®n├®r├® par github ou jekyll
+css des balises de base
+********************************/
+/****************************
+ * Reset some basic elements
+*****************************/
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+hr {
+  border-color: #4f4f4f;
+  margin: 2%; }
+
+/****************************
+Style de base des pages
+*****************************/
+body {
+  font-family: "Muli", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #111;
+  background-color: #f8f8f8;
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px; }
+
+/****************************
+ Set `margin-bottom` to maintain vertical rhythm  - Gard├® dans le fichier base aussi
+*****************************/
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+.highlight {
+  margin-bottom: 15px; }
+
+/****************************
+Liens 
+*****************************/
+a {
+  color: #006bb6;
+  text-decoration: none; }
+  a:visited {
+    color: #828282; }
+  a:hover {
+    color: #4f4f4f;
+    text-decoration: underline; }
+
+/****************************
+ * Lists
+*****************************/
+/*ul, ol {
+    margin-left: $spacing-unit;
+}*/
+/*
+li {
+    > ul,
+    > ol {
+         //margin-bottom: 0;
+    }
+}*/
+/****************************
+ * Headings
+*****************************/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: "Muli", "Helvetica", "Arial", sans-serif;
+  color: #002f50; }
+
+h1 {
+  font-size: 23.4px; }
+
+h2 {
+  font-size: 21px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 14.4px; }
+
+h5 {
+  font-size: 11.2px; }
+
+/****************************
+ * Blockquotes
+*****************************/
+blockquote {
+  color: #828282;
+  border-left: 4px solid #f8f8f8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+/****************************
+ * Code formatting
+*****************************/
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #f8f8f8;
+  border-radius: 3px;
+  background-color: #eef; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: scroll; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+/****************************
+ * Wrapper
+*****************************/
+.wrapper {
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-top: 20px; }
+  @media screen and (max-width: 800px) {
+    .wrapper {
+      max-width: -webkit-calc(800px - (30px));
+      max-width: calc(800px - (30px));
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+/****************************
+ * Icons
+*****************************/
+/*.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $gris;
+        }
+    }
+}*/
+/****************************
+ * Clearfix - Gard├® dans le fichier base aussi ├á v├®rifier *
+*****************************/
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*******************************************************/
+/************css pour tablette et ordinateur ***********/
+/*******************************************************/
+/* ---------------- 768px ---------------------------- */
+@media screen and (min-width: 768px) {
+  /****************************
+   * Headings
+  *****************************/
+  h1 {
+    font-size: 36px; }
+
+  h2 {
+    font-size: 30px; }
+
+  h3 {
+    font-size: 24px; }
+
+  h4 {
+    font-size: 18px; }
+
+  h5 {
+    font-size: 14px; }
+
+  /****************************
+  Style de base des pages
+  *****************************/
+  body {
+    font-size: 16px; } }
+/***************************
+***  CSS 
+**************************/
+body .site-header {
+  border: none; }
+
+#header .navbar-default {
+  background-color: #f8f8f8;
+  border: none; }
+
+/***********************
+Logo
+**********************/
+#header .logo-med {
+  padding: 10px 0 0 10px;
+  width: 180px; }
+
+#header .navbar-right {
+  padding-top: 5px;
+  margin-right: 0; }
+
+#header .head-right {
+  float: left;
+  width: 100%;
+  background-color: #006bb6;
+  padding-left: 2%; }
+
+#header .git-btn {
+  display: block;
+  font-weight: 700;
+  background-color: #006bb6;
+  margin: 15px auto 0 auto;
+  width: 100%;
+  font-size: 12px;
+  padding: 1%; }
+
+#header .git-btn:hover {
+  background-color: #002f50; }
+
+#header .btn {
+  padding: 5px 5px; }
+
+#header .head-right .nav > li {
+  display: inline-block; }
+
+#header .logo-git {
+  font-size: 12px; }
+
+#header .navbar-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0; }
+
+/***
+*Navigation principale
+***/
+#header .menu-main a, #header .git-btn {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif; }
+
+#header .menu-main {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  background-color: #006bb6;
+  padding: 5px 0;
+  font-size: 14px; }
+
+#header .menu-main ul {
+  float: none;
+  padding: 0;
+  margin: 0; }
+
+#header .navbar-collapse {
+  padding: 0; }
+
+#header .navbar {
+  border: none;
+  margin: 0; }
+
+#header .navbar-nav li a {
+  color: #fff; }
+
+#header .nav-icons {
+  display: inline-block;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  margin: 2px 2%;
+  height: 25px;
+  width: 25px;
+  color: #111;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 5px; }
+
+/*******************************************************/
+/************css pour tablette et ordinateur ***********/
+/*******************************************************/
+/* ---------------- 500px ---------------------------- */
+@media screen and (min-width: 500px) {
+  /***********************
+  Logo
+  **********************/
+  #header .logo-med {
+    padding: 15px 0 0 15px;
+    width: 220px; }
+
+  /***
+  *Menu bouton git et nav FAQ/english
+  ***/
+  #header .git-btn {
+    width: 140px;
+    margin-top: 70px;
+    float: right; }
+
+  #header .logo-git {
+    font-size: 16px; }
+
+  /***
+  *Navigation principale
+  ***/
+  #header .nav-icons {
+    margin: 2px 2%;
+    height: 25px;
+    width: 25px;
+    font-size: 16px; } }
+/* ----------------768px-----------------------------  */
+@media screen and (min-width: 768px) {
+  /***********************
+  Logo
+  **********************/
+  #header .logo-med {
+    padding: 20px 0 0 20px;
+    width: 230px; }
+
+  /***
+  * Menu bouton git et nav FAQ/english
+  ***/
+  #header .navbar-header {
+    width: 100% !important; }
+
+  #header .git-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    font-size: 14px;
+    margin-top: 0; }
+
+  #header .logo-git {
+    font-size: 25px; }
+
+  #header .btn {
+    padding: 6px 12px; }
+
+  #header .navbar-nav {
+    float: right; }
+
+  #header .head-right {
+    display: inline-block;
+    float: right;
+    background-color: inherit;
+    height: 50px;
+    margin-top: -25px; }
+
+  #header .menu-top li a {
+    color: #4f4f4f; }
+
+  /***
+  * Navigation principale
+  ***/
+  #header .menu-main {
+    padding: 0;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto; }
+
+  #header .menu-main ul {
+    margin: 0 auto;
+    /* a corriger ne prend pas le auto ??????? */
+    display: inline-block; }
+
+  #header .menu-main li {
+    padding: 10px 12px; }
+    #header .menu-main li:hover {
+      background-color: #002f50; }
+
+  #header .menu-main li a {
+    padding: 10px 3%; }
+
+  #header .nav-icons {
+    margin: 0 auto 10px auto;
+    height: 30px;
+    width: 30px;
+    display: block;
+    font-size: 20px; } }
+/* ----------------992px----------------------------------  */
+@media screen and (min-width: 992px) {
+  /***
+  * Menu bouton git et nav FAQ/english
+  ***/
+  #header .logo-med {
+    width: 260px; }
+
+  #header .git-btn {
+    font-size: 16px; }
+
+  /***
+  * Navigation principale
+  ***/
+  #header .menu-main {
+    padding: 0;
+    width: 100%;
+    font-size: 16px; }
+
+  #header .menu-main li a {
+    padding: 10px 15px; }
+
+  #header .nav-icons {
+    display: block;
+    margin: 0 auto 10px auto;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    padding-top: 7px; } }
+/* ----------------1200px---------------------------------  */
+/**********************
+css du footer
+********************/
+#footer {
+  background-color: #002f50;
+  color: #fff;
+  padding: 1% 0;
+  margin-top: 20px; }
+
+#footer ul {
+  list-style-type: none;
+  margin: 10px auto; }
+
+#footer ul a {
+  color: #fff; }
+
+#footer .logo-med {
+  width: 60px; }
+
+#footer .footer-mail {
+  padding-top: 2% 0;
+  color: #fff;
+  display: block; }
+
+#footer .footer-mail .octicon {
+  padding-right: 1%; }
+
+#footer .copyright {
+  padding-top: 20px;
+  display: block; }
+
+/************************
+* reseaux sociaux
+********************/
+#footer .footer-reseau {
+  color: #fff;
+  text-align: center; }
+
+#footer .share-page {
+  text-align: center;
+  padding-top: 15px; }
+
+/* Grow animation*/
+#footer .fa {
+  padding-left: 10px;
+  font-size: 30px;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+
+#footer .fa:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5); }
+
+/*******************************************************/
+/************css pour tablette et ordinateur ***********/
+/*******************************************************/
+/* ---------------- 500px ---------------------------- */
+/* ----------------768px-----------------------------  */
+@media screen and (min-width: 768px) {
+  #footer .logo-med {
+    padding-top: 20px; }
+
+  #footer .logo-med {
+    width: 75px; } }
+/*****************************************
+css de l'accueil incluant la banniere
+***************************************/
+#banniere {
+  background-image: url("../assets/img/banniere_carte.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  margin: 0 auto;
+  background-attachment: local;
+  height: 300px;
+  border: none; }
+
+#banniere .banniere {
+  padding-top: 60px;
+  padding-left: 5%; }
+
+#banniere .banniere-logo, .banniere-titre {
+  display: inline-block;
+  vertical-align: 50%; }
+
+#banniere .banniere-logo {
+  vertical-align: 50%;
+  width: 50px; }
+
+#banniere .banniere-titre {
+  padding-left: 2%;
+  font-weight: 700;
+  padding-top: 10px;
+  letter-spacing: 1.4px;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+  display: inline-block !important;
+  text-shadow: 0px 3px 4px #bbb;
+  color: #111; }
+
+#banniere .btn-banniere {
+  color: #111;
+  background-color: #9fcb17;
+  width: 110px;
+  font-size: 12px;
+  margin: 5px auto 0 auto;
+  border-color: #9fcb17; }
+
+#banniere .btn-banniere:hover {
+  color: #fff;
+  background-color: #576f0d;
+  border-color: #576f0d; }
+
+#banniere .btns-ban {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5px; }
+
+#banniere .btn {
+  padding: 1%; }
+
+/****************************
+*Accueil contenu
+***********************/
+#accueil .col-sm-6 {
+  padding: 0;
+  width: 100%;
+  margin: 1%; }
+
+#accueil .btn {
+  width: 100%;
+  font-size: 16.8px; }
+
+#accueil .modal-backdrop.in {
+  opacity: 0; }
+
+#accueil .text-center {
+  padding-top: 15px; }
+
+#accueil .modal-header {
+  background-color: #e7f7b7; }
+
+/*******************************************************/
+/************css pour tablette et ordinateur ***********/
+/*******************************************************/
+/* ---------------- 500px ---------------------------- */
+@media screen and (min-width: 500px) {
+  #banniere .banniere {
+    padding-top: 100px;
+    padding-left: 20%; }
+
+  #banniere {
+    height: 400px;
+    margin-top: 20px; }
+
+  #banniere .banniere-logo {
+    vertical-align: 50%;
+    width: 70px; }
+
+  #banniere .banniere-titre {
+    padding-left: 5%;
+    font-weight: 700;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    margin: 0;
+    font-size: 25.2px; }
+
+  #banniere .btn-banniere {
+    width: 130px;
+    font-size: 18px; }
+
+  #banniere .btns-ban {
+    padding-top: 15px; }
+
+  #banniere .btn {
+    margin-right: 5%; } }
+/* ----------------768px-----------------------------  */
+@media screen and (min-width: 768px) {
+  #banniere {
+    height: 500px;
+    margin-top: 0; }
+
+  #banniere .banniere {
+    padding-top: 130px;
+    padding-left: 25%; }
+
+  #banniere .banniere-titre {
+    letter-spacing: 4px;
+    font-size: 36px; }
+
+  #banniere .banniere-logo {
+    vertical-align: 50%;
+    width: 100px; }
+
+  #banniere .btn-banniere {
+    width: 150px;
+    font-size: 20px; }
+
+  #banniere .btns-ban {
+    width: 80%;
+    padding-top: 25px; }
+
+  #accueil .btn {
+    font-size: 16.8px; }
+
+  #accueil .col-sm-6 {
+    padding: 0;
+    width: 45%;
+    margin: 1%; } }
+/* ----------------992px----------------------------------  */
+@media screen and (min-width: 992px) {
+  #banniere .banniere {
+    padding-top: 150px;
+    padding-left: 30%; }
+
+  #banniere .banniere-logo {
+    vertical-align: 50%;
+    width: 115px; }
+
+  #accueil .btn {
+    font-size: 21.6px; } }
+/* ----------------1200px---------------------------------  */
+/*Icone liens pour les sections de pages*/
+.page-content a .octicon {
+  color: #9fcb17 !important; }
+
+/*******************************************************/
+/************css pour tablette et ordinateur ***********/
+/*******************************************************/
+/* ---------------- 500px ---------------------------- */
+/* ----------------768px-----------------------------  */
+/* ----------------992px----------------------------------  */
+/* ----------------1200px---------------------------------  */
+/***************************************
+Note: ├ël├®ments gard├®s car utilis├®s par d'autres fichiers Jekyll
+****************************************/
+/**
+ * Clearfix
+ */
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/****************************
+ Set `margin-bottom` to maintain vertical rhythm
+*****************************/
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
+  margin-bottom: 15px; }
+
+/**
+ * Syntax highlighting styles
+ */
+.highlight {
+  background: #fff; }
+  .highlight .c {
+    color: #998;
+    font-style: italic; }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2; }
+  .highlight .k {
+    font-weight: bold; }
+  .highlight .o {
+    font-weight: bold; }
+  .highlight .cm {
+    color: #998;
+    font-style: italic; }
+  .highlight .cp {
+    color: #999;
+    font-weight: bold; }
+  .highlight .c1 {
+    color: #998;
+    font-style: italic; }
+  .highlight .cs {
+    color: #999;
+    font-weight: bold;
+    font-style: italic; }
+  .highlight .gd {
+    color: #000;
+    background-color: #fdd; }
+  .highlight .gd .x {
+    color: #000;
+    background-color: #faa; }
+  .highlight .ge {
+    font-style: italic; }
+  .highlight .gr {
+    color: #a00; }
+  .highlight .gh {
+    color: #999; }
+  .highlight .gi {
+    color: #000;
+    background-color: #dfd; }
+  .highlight .gi .x {
+    color: #000;
+    background-color: #afa; }
+  .highlight .go {
+    color: #888; }
+  .highlight .gp {
+    color: #555; }
+  .highlight .gs {
+    font-weight: bold; }
+  .highlight .gu {
+    color: #aaa; }
+  .highlight .gt {
+    color: #a00; }
+  .highlight .kc {
+    font-weight: bold; }
+  .highlight .kd {
+    font-weight: bold; }
+  .highlight .kp {
+    font-weight: bold; }
+  .highlight .kr {
+    font-weight: bold; }
+  .highlight .kt {
+    color: #458;
+    font-weight: bold; }
+  .highlight .m {
+    color: #099; }
+  .highlight .s {
+    color: #d14; }
+  .highlight .na {
+    color: #008080; }
+  .highlight .nb {
+    color: #0086B3; }
+  .highlight .nc {
+    color: #458;
+    font-weight: bold; }
+  .highlight .no {
+    color: #008080; }
+  .highlight .ni {
+    color: #800080; }
+  .highlight .ne {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nf {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nn {
+    color: #555; }
+  .highlight .nt {
+    color: #000080; }
+  .highlight .nv {
+    color: #008080; }
+  .highlight .ow {
+    font-weight: bold; }
+  .highlight .w {
+    color: #bbb; }
+  .highlight .mf {
+    color: #099; }
+  .highlight .mh {
+    color: #099; }
+  .highlight .mi {
+    color: #099; }
+  .highlight .mo {
+    color: #099; }
+  .highlight .sb {
+    color: #d14; }
+  .highlight .sc {
+    color: #d14; }
+  .highlight .sd {
+    color: #d14; }
+  .highlight .s2 {
+    color: #d14; }
+  .highlight .se {
+    color: #d14; }
+  .highlight .sh {
+    color: #d14; }
+  .highlight .si {
+    color: #d14; }
+  .highlight .sx {
+    color: #d14; }
+  .highlight .sr {
+    color: #009926; }
+  .highlight .s1 {
+    color: #d14; }
+  .highlight .ss {
+    color: #990073; }
+  .highlight .bp {
+    color: #999; }
+  .highlight .vc {
+    color: #008080; }
+  .highlight .vg {
+    color: #008080; }
+  .highlight .vi {
+    color: #008080; }
+  .highlight .il {
+    color: #099; }

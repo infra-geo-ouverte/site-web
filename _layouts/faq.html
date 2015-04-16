@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}	
+	
+    <div class="page-content">
+
+      <div class="wrapper">
+	  
+	  
+	  
+	  
+	 <h2>Projet IGO</h2> 
+	  
+	  	{% for page in site.pages %}
+			{% if page.faqsection%} 
+				{{ page.title-top }} 
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#no{{page.faqsection}}" aria-expanded="true" aria-controls="no{{page.faqsection}}">
+									{{ page.titre-faq }} 
+								</a>
+							</h4>
+						</div>
+						<div id="no{{page.faqsection}}" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body">
+								{{ page.content }}
+							</div>
+						</div>
+					</div>
+				</div>		
+			{% endif %}
+		{% endfor %}
+
+	  
+
+	  
+        
+      </div>
+    </div>
+
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
