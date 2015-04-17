@@ -2,6 +2,10 @@
 css de l'accueil incluant la banniere pour IE8
 ***************************************/
 
+/***
+*Banniere
+***/
+
 #banniere{
 	background-image: url("../assets/img/banniere_carte.jpg");
 	@include background-img;
@@ -22,7 +26,6 @@ css de l'accueil incluant la banniere pour IE8
 }
 
 #banniere .banniere-logo{
-	vertical-align: 50%;
 	width: 115px;
 }
 
@@ -42,30 +45,28 @@ css de l'accueil incluant la banniere pour IE8
 #banniere .btn-banniere{
 	color: $noir;
 	background-color: $vert;
+	border-color: $vert;
 	width: 150px;
 	font-size: 20px;
 	margin: 5px auto 0 auto;
-	border-color: $vert;
+		.btn-banniere:hover{
+			color: $blanc;
+			background-color: $vert-fonce;
+			border-color: $vert-fonce;
+		}
 }
-#banniere .btn-banniere:hover{
-	color: $blanc;
-	background-color: $vert-fonce;
-	border-color: $vert-fonce;
-}
-#banniere .btn-banniere{
-	width: 150px;
-	font-size: 20px;
-	}
 
 #banniere .btn{
 	padding: 1%;
-	margin-right: 5%;	
+	margin-right: 5%;
+		.fa, .octicon{
+			display: none;
+		}
 }
 
-#banniere .btn .fa, .octicon{
-	display: none;
-}
-
+/***
+* Accueil
+***/
 
 #accueil .col-sm-6{
 	padding: 0;
@@ -78,12 +79,11 @@ css de l'accueil incluant la banniere pour IE8
 	width: 100%;
 	font-size: $h3*0.9;
 }
-#accueil .modal-backdrop.in{
-	opacity: 0;
-}
-
 #accueil .text-center{
 	padding-top: 15px;
+}
+#accueil .modal-backdrop.in{
+	opacity: 0;
 }
 #accueil .modal-header{
 	background-color: $vert-pale;
@@ -91,9 +91,3 @@ css de l'accueil incluant la banniere pour IE8
 #accueil .in.modal-backdrop{
 	filter: alpha(opacity=0);
 }
-
-
-
-
-
-
