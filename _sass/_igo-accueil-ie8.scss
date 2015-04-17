@@ -1,19 +1,22 @@
 /*****************************************
 css de l'accueil incluant la banniere pour IE8
 ***************************************/
-/*
+
 #banniere{
 	background-image: url("../assets/img/banniere_carte.jpg");
 	@include background-img;
 	background-attachment: local;
+	background-size: cover;
 	height: 500px;
 	border: none;
 	margin-top: 0;
+		#banniere .banniere{
+			padding-top: 150px;
+			padding-left: 30%;
+		}
 }
 
-#banniere .banniere{
-	padding-top: 150px;
-	padding-left: 30%;
+
 }
 
 #banniere .banniere-logo, .banniere-titre{
@@ -92,8 +95,6 @@ css de l'accueil incluant la banniere pour IE8
 	filter: alpha(opacity=0);
 }
 
-
-*/
 
 
 
