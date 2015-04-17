@@ -49,11 +49,11 @@ css de l'accueil incluant la banniere pour IE8
 	width: 150px;
 	font-size: 20px;
 	margin: 5px auto 0 auto;
-		.btn-banniere:hover{
-			color: $blanc;
-			background-color: $vert-fonce;
-			border-color: $vert-fonce;
-		}
+}
+#banniere .btn-banniere:hover{
+	color: $blanc;
+	background-color: $vert-fonce;
+	border-color: $vert-fonce;
 }
 
 #banniere .btn{
