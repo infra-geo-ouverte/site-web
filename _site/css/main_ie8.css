@@ -501,6 +501,9 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
 /*****************************************
 css de l'accueil incluant la banniere pour IE8
 ***************************************/
+/***
+*Banniere
+***/
 #banniere {
   background-image: url("../assets/img/banniere_carte.jpg");
   background-repeat: no-repeat;
@@ -512,20 +515,19 @@ css de l'accueil incluant la banniere pour IE8
   overflow: hidden;
   margin: 0 auto;
   background-attachment: local;
+  background-size: cover;
   height: 500px;
   border: none;
   margin-top: 0; }
-
-#banniere .banniere {
-  padding-top: 150px;
-  padding-left: 30%; }
+  #banniere .banniere {
+    padding-top: 150px;
+    padding-left: 30%; }
 
 #banniere .banniere-logo, .banniere-titre {
   display: inline-block;
   vertical-align: 50%; }
 
 #banniere .banniere-logo {
-  vertical-align: 50%;
   width: 115px; }
 
 #banniere .banniere-titre {
@@ -543,27 +545,25 @@ css de l'accueil incluant la banniere pour IE8
 #banniere .btn-banniere {
   color: #111;
   background-color: #9fcb17;
+  border-color: #9fcb17;
   width: 150px;
   font-size: 20px;
-  margin: 5px auto 0 auto;
-  border-color: #9fcb17; }
+  margin: 5px auto 0 auto; }
 
 #banniere .btn-banniere:hover {
   color: #fff;
   background-color: #576f0d;
   border-color: #576f0d; }
 
-#banniere .btn-banniere {
-  width: 150px;
-  font-size: 20px; }
-
 #banniere .btn {
   padding: 1%;
   margin-right: 5%; }
+  #banniere .btn .fa, #banniere .btn .octicon {
+    display: none; }
 
-#banniere .btn .fa, .octicon {
-  display: none; }
-
+/***
+* Accueil
+***/
 #accueil .col-sm-6 {
   padding: 0;
   width: 45%;
@@ -574,11 +574,11 @@ css de l'accueil incluant la banniere pour IE8
   width: 100%;
   font-size: 21.6px; }
 
-#accueil .modal-backdrop.in {
-  opacity: 0; }
-
 #accueil .text-center {
   padding-top: 15px; }
+
+#accueil .modal-backdrop.in {
+  opacity: 0; }
 
 #accueil .modal-header {
   background-color: #e7f7b7; }

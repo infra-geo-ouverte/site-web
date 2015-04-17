@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)">	
 	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur">
-	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+	<meta name="description" content="Site web de l'application IGO.
 ">
 	<meta name="google-site-verification" content="GipU5DbT1_yFbEaCkh-cvCAC77FmDLnkU90WZAKK19M" />
 	
@@ -21,43 +21,43 @@
 	<meta property="og:site_name" content="IGO Infrastructure de géomatique ouverte" />
 	<meta property="og:type" content="website" />
 	<meta property="og:locale" content="fr_FR" />
-	<meta property="og:description" content="description" />
-	<meta property="og:url" content="http://kboisvert.github.io/test_IGO/" />
-	<meta property="og:image" content="/test_IGO/assets/img/logo13.png" />
+	<meta property="og:description" content="Site web de l'application IGO" />
+	<meta property="og:url" content="http://infra-geo-ouverte.github.io/site-web/" />
+	<meta property="og:image" content="/site-web/assets/img/logo13.png" />
 	<meta property="fb:app_id" content="facebook_igo" />
 	
 	<meta property="twitter:title" content="IGO" />
 	<meta property="twitter:description" content="description" /> 
-	<meta property="twitter:url" content="http://kboisvert.github.io/test_IGO/" />
-	<meta property="twitter:image" content="/test_IGO/assets/img/logo13.png" />
+	<meta property="twitter:url" content="http://infra-geo-ouverte.github.io/site-web/" />
+	<meta property="twitter:image" content="/site-web/assets/img/logo13.png" />
 	
 	
 	<!-- Mettre une icone au site: icon in the highest resolution we need it for -->
-	<link rel="icon" sizes="228x228" href="/test_IGO/assets/img/logo13.png">
+	<link rel="icon" sizes="228x228" href="/site-web/assets/img/logo13.png">
 	<!-- reuse same icon for Safari -->
-	<link rel="apple-touch-icon" href="/test_IGO/assets/img/logo13.png">
+	<link rel="apple-touch-icon" href="/site-web/assets/img/logo13.png">
 	<!-- multiple icons for IE ????  -->
-	<meta name="msapplication-square70x70logo" content="/test_IGO/assets/img/logo13.png">
-	<meta name="msapplication-square150x150logo" content="/test_IGO/assets/img/logo13.png">
-	<meta name="msapplication-wide310x150logo" content="/test_IGO/assets/img/logo13.png">
-	<meta name="msapplication-square310x310logo" content="/test_IGO/assets/img/logo13.png">
+	<meta name="msapplication-square70x70logo" content="/site-web/assets/img/logo13.png">
+	<meta name="msapplication-square150x150logo" content="/site-web/assets/img/logo13.png">
+	<meta name="msapplication-wide310x150logo" content="/site-web/assets/img/logo13.png">
+	<meta name="msapplication-square310x310logo" content="/site-web/assets/img/logo13.png">
 	
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="/test_IGO/assets/fonts/octicons/octicons.css" />
-	<link rel="stylesheet" href="/test_IGO/css/print.css"  media="print">
+	<link rel="stylesheet" href="/site-web/assets/fonts/octicons/octicons.css" />
+	<link rel="stylesheet" href="/site-web/css/print.css"  media="print">
 	
 	<!--[if lte IE 8]>
-		<link rel="stylesheet" href="/test_IGO/css/main_ie8.css" />
-		<script type="text/javascript" src="/test_IGO/assets/script/modernizr.custom.88836.js"> </script>
+		<link rel="stylesheet" href="/site-web/css/main_ie8.css" />
+		<script type="text/javascript" src="/site-web/assets/script/modernizr.custom.88836.js"> </script>
 	<![endif]-->
 	<!--[if gt IE 8]><!-->
-		<link rel="stylesheet" href="/test_IGO/css/main.css" />
+		<link rel="stylesheet" href="/site-web/css/main.css" />
 	<!--<![endif]-->
 	
 	
-  <link rel="canonical" href="[http://localhost]/test_IGO/installation/" />
-  <link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="[http://localhost]/test_IGO/feed.xml" />
+  <link rel="canonical" href="[http://localhost]/site-web/installation/" />
+  <link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="[http://localhost]/site-web/feed.xml" />
 
   
 
@@ -69,7 +69,17 @@
 
   <body>
 
-    <header class="site-header" id="header">
+    <!-- facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<header class="site-header" id="header">
 	
 	<nav class="navbar navbar-default">
 	<div>
@@ -77,8 +87,8 @@
 		
 		<!-- Titre du site/ mettre le logo -->
 		<div class="navbar-header">
-			<a href="/test_IGO">
-				<img class="logo-med" src="/test_IGO/assets/img/logo-med.png"  alt="Logo IGO" />
+			<a href="/site-web">
+				<img class="logo-med" src="/site-web/assets/img/logo-med.png"  alt="Logo IGO" />
 			</a>
 					
 
@@ -95,7 +105,7 @@
 				<a class="git-btn btn btn-primary" href="https://gitlab.forge.gouv.qc.ca/geomatique/espace_public_description_projet_igo/tree/master">Voir sur Github
 					
 					<!--[if lte IE 8]>
-						<img class="logo-git" src="/test_IGO/assets/img/GitHub-Mark-Light-32px.png" alt="Logo Github" />
+						<img class="logo-git" src="/site-web/assets/img/GitHub-Mark-Light-32px.png" alt="Logo Github" />
 					<![endif]-->
 					<span class="logo-git octicon octicon-mark-github"></span>
 					
@@ -114,7 +124,7 @@
 				<!-- menu haut droit -->					
 				<ul class="nav navbar-nav navbar-right menu-top">
 					<li>
-					<a class="" href="/test_IGO/_pages/Contribuer/licence.txt">
+					<a class="" href="/site-web/_pages/Contribuer/licence.txt">
 						Licence
 					</a>
 					</li>
@@ -132,7 +142,7 @@
 						 
 						<li>
 							<a class="page-link"  
-								href="/test_IGO/faq/" role="button" aria-expanded="false">FAQ 
+								href="/site-web/faq/" role="button" aria-expanded="false">FAQ 
 							</a>
 						</li>
 						
@@ -160,7 +170,7 @@
 						 
 						<li>
 							<a class="page-link"  
-								href="/test_IGO/english/" role="button" aria-expanded="false">English 
+								href="/site-web/english/" role="button" aria-expanded="false">English 
 							</a>
 						</li>
 						
@@ -194,11 +204,11 @@
 						  
 						<li>
 							<a class="page-link"  
-								href="/test_IGO/communaute/" role="button" aria-expanded="false">
+								href="/site-web/communaute/" role="button" aria-expanded="false">
 								
 								
 									<!-- <i class="fa fa-child fa-lg"></i> 
-									<img class="icons" src="/test_IGO/assets/img/icons/appbar.people.multiple.svg" alt="Icone contribuer" /> -->
+									<img class="icons" src="/site-web/assets/img/icons/appbar.people.multiple.svg" alt="Icone contribuer" /> -->
 									<span class="nav-icons octicon octicon-organization"></span>
 									Communauté 
 								
@@ -213,10 +223,10 @@
 						  
 						<li>
 							<a class="page-link"  
-								href="/test_IGO/contribuer/" role="button" aria-expanded="false">
+								href="/site-web/contribuer/" role="button" aria-expanded="false">
 								
 									<!-- <i class="fa fa-user-plus fa-lg "></i>  
-									<img class="icons" src="/test_IGO/assets/img/icons/appbar.layer.add.svg" alt="Icone contribuer" /> -->
+									<img class="icons" src="/site-web/assets/img/icons/appbar.layer.add.svg" alt="Icone contribuer" /> -->
 									<span class="nav-icons octicon octicon-git-merge"></span>
 									Contribuer 
 								
@@ -232,14 +242,14 @@
 						  
 						<li>
 							<a class="page-link"  
-								href="/test_IGO/demo/" role="button" aria-expanded="false">
+								href="/site-web/demo/" role="button" aria-expanded="false">
 								
 								
 								
 								
 								
 									<!-- <i class="fa fa-eye fa-lg"></i> 
-									<img class="icons" src="/test_IGO/assets/img/icons/appbar.cogs.svg" alt="Icone contribuer" /> -->
+									<img class="icons" src="/site-web/assets/img/icons/appbar.cogs.svg" alt="Icone contribuer" /> -->
 									<span class="nav-icons octicon octicon-eye"></span>
 									Démonstration 
 								  
@@ -251,13 +261,13 @@
 						  
 						<li>
 							<a class="page-link"  
-								href="/test_IGO/documentation/" role="button" aria-expanded="false">
+								href="/site-web/documentation/" role="button" aria-expanded="false">
 								
 								
 								
 								
 									<!-- <i class="fa fa-file-text fa-lg"></i> 
-									<img class="icons" src="/test_IGO/assets/img/icons/appbar.page.text.svg" alt="Icone contribuer" /> -->
+									<img class="icons" src="/site-web/assets/img/icons/appbar.page.text.svg" alt="Icone contribuer" /> -->
 									<span class="nav-icons octicon octicon-file-text"></span>
 									Documentation 
 								
@@ -294,12 +304,12 @@
 						  
 						<li>
 							<a class="page-link"  
-								href="/test_IGO/installation/" role="button" aria-expanded="false">
+								href="/site-web/installation/" role="button" aria-expanded="false">
 								
 								
 								
 									<!-- <i class="fa fa-laptop fa-lg"></i> 
-									<img class="icons" src="/test_IGO/assets/img/icons/appbar.cabinet.in.svg" alt="Icone contribuer" /> -->
+									<img class="icons" src="/site-web/assets/img/icons/appbar.cabinet.in.svg" alt="Icone contribuer" /> -->
 									<span class="nav-icons octicon octicon-move-down"></span>
 									Installation 
 								
@@ -361,8 +371,8 @@
 
 	<div class="wrapper row">
 		<div class="col-xs-12 col-sm-4 text-center">
-			<a href="/test_IGO">
-				<img class="logo-med" src="/test_IGO/assets/img/logo13.png"  alt="Logo IGO" />
+			<a href="/site-web">
+				<img class="logo-med" src="/site-web/assets/img/logo13.png"  alt="Logo IGO" />
 			</a>
 		</div>
 		<div class="col-xs-12 col-sm-4 text-center">
@@ -373,7 +383,7 @@
 					 
 					<li>
 						<a class="page-link"  
-							href="/test_IGO/communaute/" role="button" aria-expanded="false">Communauté
+							href="/site-web/communaute/" role="button" aria-expanded="false">Communauté
 						</a>
 					</li>
 					
@@ -381,7 +391,7 @@
 					 
 					<li>
 						<a class="page-link"  
-							href="/test_IGO/contribuer/" role="button" aria-expanded="false">Contribuer
+							href="/site-web/contribuer/" role="button" aria-expanded="false">Contribuer
 						</a>
 					</li>
 					
@@ -389,7 +399,7 @@
 					 
 					<li>
 						<a class="page-link"  
-							href="/test_IGO/demo/" role="button" aria-expanded="false">Démonstration
+							href="/site-web/demo/" role="button" aria-expanded="false">Démonstration
 						</a>
 					</li>
 					
@@ -397,7 +407,7 @@
 					 
 					<li>
 						<a class="page-link"  
-							href="/test_IGO/documentation/" role="button" aria-expanded="false">Documentation
+							href="/site-web/documentation/" role="button" aria-expanded="false">Documentation
 						</a>
 					</li>
 					
@@ -429,7 +439,7 @@
 					 
 					<li>
 						<a class="page-link"  
-							href="/test_IGO/installation/" role="button" aria-expanded="false">Installation
+							href="/site-web/installation/" role="button" aria-expanded="false">Installation
 						</a>
 					</li>
 					
@@ -468,7 +478,7 @@
 					 
 					<li>
 						<a class="page-link"  
-							href="/test_IGO/faq/" role="button" aria-expanded="false">FAQ
+							href="/site-web/faq/" role="button" aria-expanded="false">FAQ
 						</a>
 					</li>
 
@@ -497,7 +507,7 @@
 					 
 					<li>
 						<a class="page-link"  
-							href="/test_IGO/english/" role="button" aria-expanded="false">English
+							href="/site-web/english/" role="button" aria-expanded="false">English
 						</a>
 					</li>
 
@@ -528,63 +538,26 @@
 	<hr>
 	<a class="footer-mail text-center" href="mailto:igo@msp.gouv.qc.ca"><span class="octicon octicon-mail"></span> Contactez-nous: igo@msp.gouv.qc.ca </a>
 	
-	<div class="share-page">
-    Partagez &rarr; 
-    <a class="footer-reseau" href="https://twitter.com/intent/tweet?text=&url=[http://localhost]/installation/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a>
-    <a class="footer-reseau" href="https://facebook.com/sharer.php?u=[http://localhost]/installation/" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
-    <a class="footer-reseau" href="https://plus.google.com/share?url=[http://localhost]/installation/" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
-</div>
-
-	<!-- bouton Twitter 
-	<a href="http://twitter.com/share" class="twitter-share-button" 
-	  data-count="vertical" data-via="">Tweet</a>
-	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	
-	<!-- bouton Facebook 
-	<iframe src= "http://www.facebook.com/plugins/like.php?"
-		href="http://kboisvert.github.io/test_IGO/"
-		scrolling= "no" frameborder= "0″ style= "border:none; overflow:hidden; width:65px; height:65px; margin-top:3px;" 
-		allowTransparency= "true">
-	</iframe>
-
-	<!-- bouton Google+ 
-	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
-		{lang: 'fr'}
-	</script>
-	<g:plusone size="tall"></g:plusone>
-	
-	<!-- bouton Linked in
-	<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
-	<script type="in/share" data-counter="top"></script>
-	<i class="fa fa-linkedin-square"></i>
-	-->
-
 	<small class="copyright text-center">&copy; Copyright IGO?</small>
 	
+	<!-- <p>test reseaux sociaux ne pas utiliser</p>
+	<div class="fb-like" data-href="http://infra-geo-ouverte.github.io/site-web/" data-width="300px" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
 
+	<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: fr_FR</script>
+	<script type="IN/Share" data-url="http://infra-geo-ouverte.github.io/site-web/" data-counter="right"></script>
+	-->
 </footer>
 	  
 
 	<!-- fin footer -->
 
-	<script type="text/javascript" src="/test_IGO/assets/script/jquery-1.11.1.min.js"> </script>
-	<script type="text/javascript" src="/test_IGO/assets/script/bootstrap.min.js"> </script>
-
-	<script type="text/javascript" src="/test_IGO/assets/script/velocity.min.js"> </script>
-	<script type="text/javascript" src="/test_IGO/assets/script/main.js"> </script>
-	<script type="text/javascript" src="/test_IGO/assets/script/animation_banniere.js"> </script>
+	<script type="text/javascript" src="/site-web/assets/script/jquery-1.11.1.min.js"> </script>
+	<script type="text/javascript" src="/site-web/assets/script/bootstrap.min.js"> </script>
+	<script type="text/javascript" src="/site-web/assets/script/main.js"> </script>
+	<script type="text/javascript" src="/site-web/assets/script/animation_banniere.js"> </script>
 	
 	<!-- Google Analitics -->
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-61852312-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 
 

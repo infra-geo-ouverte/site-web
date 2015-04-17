@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IGO Infrastructure Géomatique Ouverte</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <description>Site web de l&#39;application IGO.
 </description>
-    <link>[http://localhost]/test_IGO/</link>
-    <atom:link href="[http://localhost]/test_IGO/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 16 Apr 2015 09:43:22 -0400</pubDate>
-    <lastBuildDate>Thu, 16 Apr 2015 09:43:22 -0400</lastBuildDate>
+    <link>[http://localhost]/site-web/</link>
+    <atom:link href="[http://localhost]/site-web/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 17 Apr 2015 15:41:50 -0400</pubDate>
+    <lastBuildDate>Fri, 17 Apr 2015 15:41:50 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
   </channel>

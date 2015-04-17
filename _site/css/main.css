@@ -500,6 +500,9 @@ css du footer
 /*****************************************
 css de l'accueil incluant la banniere
 ***************************************/
+/***
+*Banniere
+***/
 #banniere {
   background-image: url("../assets/img/banniere_carte.jpg");
   background-repeat: no-repeat;
@@ -513,29 +516,27 @@ css de l'accueil incluant la banniere
   background-attachment: local;
   height: 300px;
   border: none; }
-
-#banniere .banniere {
-  padding-top: 60px;
-  padding-left: 5%; }
+  #banniere .banniere {
+    padding-top: 60px;
+    padding-left: 5%; }
 
 #banniere .banniere-logo, .banniere-titre {
   display: inline-block;
   vertical-align: 50%; }
 
 #banniere .banniere-logo {
-  vertical-align: 50%;
   width: 50px; }
 
 #banniere .banniere-titre {
   padding-left: 2%;
-  font-weight: 700;
   padding-top: 10px;
-  letter-spacing: 1.4px;
   margin: 0;
+  font-weight: 700;
   font-size: 18px;
   font-family: "Ubuntu", sans-serif;
   display: inline-block !important;
   text-shadow: 0px 3px 4px #bbb;
+  letter-spacing: 1.4px;
   color: #111; }
 
 #banniere .btn-banniere {
@@ -585,13 +586,12 @@ css de l'accueil incluant la banniere
 /*******************************************************/
 /* ---------------- 500px ---------------------------- */
 @media screen and (min-width: 500px) {
-  #banniere .banniere {
-    padding-top: 100px;
-    padding-left: 20%; }
-
   #banniere {
     height: 400px;
     margin-top: 20px; }
+    #banniere .banniere {
+      padding-top: 100px;
+      padding-left: 20%; }
 
   #banniere .banniere-logo {
     vertical-align: 50%;
@@ -619,10 +619,9 @@ css de l'accueil incluant la banniere
   #banniere {
     height: 500px;
     margin-top: 0; }
-
-  #banniere .banniere {
-    padding-top: 130px;
-    padding-left: 25%; }
+    #banniere .banniere {
+      padding-top: 130px;
+      padding-left: 25%; }
 
   #banniere .banniere-titre {
     letter-spacing: 4px;
@@ -652,10 +651,9 @@ css de l'accueil incluant la banniere
   #banniere .banniere {
     padding-top: 150px;
     padding-left: 30%; }
-
-  #banniere .banniere-logo {
-    vertical-align: 50%;
-    width: 115px; }
+    #banniere .banniere .banniere-logo {
+      vertical-align: 50%;
+      width: 115px; }
 
   #accueil .btn {
     font-size: 21.6px; } }
