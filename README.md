@@ -1,6 +1,6 @@
-# Dépôt de code source du site web d'IGO disponible à : http://igo 
+Dépôt de code source du site web d'IGO disponible à : http://igo 
 ***
-# Source code of the web site of IGO available at: http://igo
+Source code of the web site of IGO available at: http://igo
 
 # VERSION BÊTA
 
