@@ -219,7 +219,7 @@ _includes : fichier qui contient le code html des sections du site à l'exclusio
 	head.html : contient les instruction de la section head avec les liens vers le css, les meta et og pour les réseaux sociaux.
 	reseau_sociaux.html : code pour faire le lien vers le share des différents réseaux.
 
-_site : fichiers généré par Github/Jekyll, il s'agit des fichiers convertis du site web.  **Ne pas modifier ces fichiers.**
+**_site : fichiers généré par Github/Jekyll, il s'agit des fichiers convertis du site web.  Ne pas modifier ces fichiers.**
 
 _sass : fichiers scss pour l'apparence du site.  Ils sont par section.  Des fichiers ont été créés pour IE8, modifier les deux fichiers si nécessaire.  Jekyll possède un préprocesseur de sass donc pas besoin de le convertir dans un logiciel externe.
 
