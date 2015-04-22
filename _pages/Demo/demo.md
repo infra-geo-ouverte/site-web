@@ -5,7 +5,7 @@ title-main: Démonstration
 iconedemo: ""
 ---
 
-Voici le lien de démonstration pour voir le navigateur en action : http://pregeoegl.msp.gouv.qc.ca/gouvouvert/ et avec un exemple d'XML pour une configuration de base :
+Voici le lien de démonstration pour voir le navigateur en action : [http://pregeoegl.msp.gouv.qc.ca/gouvouvert/](http://pregeoegl.msp.gouv.qc.ca/gouvouvert/)  et avec un exemple d'XML pour une configuration de base :
 
 <navigateur authentification="false" 
             titre="I.G.O. - Données ouvertes - Gouvernement du Québec"
