@@ -86,9 +86,9 @@ Voici le lien de démonstration pour voir le navigateur en action : http://prege
             <couche titre="OpenStreetMap-Humanitaire" protocole="OSM" nom="humanitaire"/> 
             <couche titre="Fond blanc" protocole="Blanc"/>  
         </groupe-couches>
-        <!--groupe-couches>
-            <couche url="/cgi-wms/igo_gouvouvertqc.fcgi?" protocole="WMS" _useGetCapabilities="true"/>
-        </groupe-couches-->
+        <groupe-couches>
+            <couche url="http://geoegl.msp.gouv.qc.ca/cgi-wms/igo_gouvouvertqc.fcgi?" protocole="WMS" mode="getCapabilities"/>
+        </groupe-couches>
     </couches>
 
 </navigateur>
