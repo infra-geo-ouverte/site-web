@@ -6,7 +6,8 @@ $(document).ready (function(){
   var icone = $('#icone-sidebar'),
 	  footer= $('footer'),
 	  wrapper = $('#wrapper'),
-	  headerBouton = $('header button');
+	  headerBouton = $('header button'),
+	  sidebar = $("sidebar-wrapper");
 
 
   // Changer l'icone quand on ouvre et ferme le sidebar
@@ -31,11 +32,11 @@ $(document).ready (function(){
 	headerBouton.click(function(){
 		if(headerBouton.hasClass("collapse")){
 			icone.css("top","200px");
-			$("sidebar-wrapper").css("top","200px");
+			sidebar.css("top","200px");
 		}
 		else{
 			icone.css("top","500px");
-			$("sidebar-wrapper").css("top","500px");
+			sidebar.css("top","500px");
 		}
 		
 	});
