@@ -7,7 +7,7 @@ $(document).ready (function(){
 	  footer= $('footer'),
 	  wrapper = $('#wrapper'),
 	  headerBouton = $('header button'),
-	  sidebar = $("sidebar-wrapper");
+	  sidebar = $("#sidebar-wrapper");
 
 
   // Changer l'icone quand on ouvre et ferme le sidebar
