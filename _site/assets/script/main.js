@@ -2,10 +2,11 @@ $(document).ready (function(){
 
 	$('[data-toggle="tooltip"]').tooltip();
 	
-	/*menu sidebar ouvrir et fermer et changer l'icone et le texte*/
+	/*menu sidebar */
   var icone = $('#icone-sidebar'),
 	  footer= $('footer'),
-	  wrapper = $('#wrapper');
+	  wrapper = $('#wrapper'),
+	  headerBouton = $('header button'),
 
 
   // Changer l'icone quand on ouvre et ferme le sidebar
@@ -25,10 +26,18 @@ $(document).ready (function(){
 				footer.css("margin-left", "0px");
 			}
 	}); 
-
-
 	
-  /* fin menu sidebar */
+	//Pour faire descendre le bouton quand le menu est ouvert sur un appareil mobile
+	headerBouton.click(function(){
+		if(headerBouton.hasClass("collapse")){
+			icone.css("top","200px");
+		}
+		else{
+			icone.css("top","500px");
+		}
+		
+	});
+	
   
   /* scroll ref : http://demo.yoarts.com/liberty/# */
   
@@ -47,8 +56,6 @@ $(document).ready (function(){
     //}
   });
   
-  
-
   
 
 });
