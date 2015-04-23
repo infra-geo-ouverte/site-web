@@ -1,0 +1,30 @@
+<!-- Contenu de la barre de navigation sur le côté de la page -->
+ <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+
+	{% if page.submenu %}
+		
+		<ul class="nav sidebar-nav">
+		  {% for item in page.submenu %}
+			<li class="sidebar-brand "><a class="smooth-scroll" href="#{{ item.hook }}">{{ item.title }}</a></li>
+		  {% endfor %}
+
+			<li class="sidebar-brand">
+				<a href="#header" class="back-to-top smooth-scroll octicon octicon-chevron-up">
+					<span class="hautpage">Haut de la page<span>
+					
+				</a>
+			</li>
+		</ul>
+	{% else %}
+				<li class="sidebar-brand">
+				<a href="#header" class="back-to-top smooth-scroll">
+					<span class="octicon octicon-chevron-up">
+					<span class="hautpage">	Haut de la page </span>
+					</span>
+				</a>
+			</li>
+	{% endif %}
+
+</nav>
+
+        
