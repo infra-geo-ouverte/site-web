@@ -50,9 +50,8 @@
 
 
 
-  <body>
-
-    <header class="site-header" id="header">
+	<body>
+		<header class="site-header" id="header">
 	
 	<nav class="navbar navbar-default">
 	<div>
@@ -317,11 +316,37 @@
 
 </header>
 
+		
+			<div id="wrapper">
+			<!-- Contenu de la barre de navigation sur le côté de la page -->
+ <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
 
-    <div class="page-content">
+	
+				<li class="sidebar-brand">
+				<a href="#header" class="back-to-top smooth-scroll">
+					<span class="octicon octicon-chevron-up">
+					<span class="hautpage">	Haut de la page </span>
+					</span>
+				</a>
+			</li>
+	
 
-      <div class="wrapper">
-        <h2>Contribuer</h2>
+</nav>
+
+        
+
+			<!-- Page Content -->
+				<div id="page-content-wrapper">
+					<!-- Flèche pour ouvrir et fermer le menu de côté -->
+					<!--[if gte IE 8)] -->
+					<button type="button" id="icone-sidebar" class="octicon octicon-move-right" data-toggle="offcanvas">
+						 <span class="txtmenu">Menu</span>
+					</button>
+					<!-- [endif]-->
+			
+					<div class="container">
+						<div>				
+							<h2>Contribuer</h2>
 
 <p>Nous sommes bien content que vous pensiez contribuer à IGO !
 Avant de le faire, nous vous encourgeons à lire le guide de contribution (cette page courante), la <a href="./licence.txt">LICENCE</a> et la <a href="faq.md">FAQ</a> qui sont toutes dans ce dépôt.
@@ -388,9 +413,13 @@ Si un bogue ou problème à une étiquette :sparkles:aide:sparkles: cela vous do
 
 <p>Ce projet constitue un travail, entre autres, du gouvernement du Québec sujet aux droits d&#39;auteurs, mais il n&#39;est pas exclusif au gouvernement du Québec. 
 D&#39;ailleurs, tous les contributeurs externes au gouvernement du Québec au projet IGO pourront conserver leurs droits d&#39;auteurs en acceptant de les partager selon les mêmes termes de la licence d&#39;IGO.</p>
+                  
+						</div>
+					</div>
+				</div>
+					<!-- /#page-content-wrapper -->
 
-      </div>
-    </div>
+			</div>  <!-- /#wrapper di sidebar.html-->
 
 
     <footer class="site-footer" id="footer">

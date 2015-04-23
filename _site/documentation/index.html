@@ -50,9 +50,8 @@
 
 
 
-  <body>
-
-    <header class="site-header" id="header">
+	<body>
+		<header class="site-header" id="header">
 	
 	<nav class="navbar navbar-default">
 	<div>
@@ -317,11 +316,37 @@
 
 </header>
 
+		
+			<div id="wrapper">
+			<!-- Contenu de la barre de navigation sur le côté de la page -->
+ <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
 
-    <div class="page-content">
+	
+				<li class="sidebar-brand">
+				<a href="#header" class="back-to-top smooth-scroll">
+					<span class="octicon octicon-chevron-up">
+					<span class="hautpage">	Haut de la page </span>
+					</span>
+				</a>
+			</li>
+	
 
-      <div class="wrapper">
-        <p>Cet espace comprend toute la documentation et les gabarits communs du projet IGO.</p>
+</nav>
+
+        
+
+			<!-- Page Content -->
+				<div id="page-content-wrapper">
+					<!-- Flèche pour ouvrir et fermer le menu de côté -->
+					<!--[if gte IE 8)] -->
+					<button type="button" id="icone-sidebar" class="octicon octicon-move-right" data-toggle="offcanvas">
+						 <span class="txtmenu">Menu</span>
+					</button>
+					<!-- [endif]-->
+			
+					<div class="container">
+						<div>				
+							<p>Cet espace comprend toute la documentation et les gabarits communs du projet IGO.</p>
 
 <h2>Guide pour les utilisateurs :</h2>
 
@@ -346,9 +371,13 @@
 <li><a href="architecture.md">Architecture</a></li>
 <li><a href="module.md">Modules</a></li>
 </ul>
+                  
+						</div>
+					</div>
+				</div>
+					<!-- /#page-content-wrapper -->
 
-      </div>
-    </div>
+			</div>  <!-- /#wrapper di sidebar.html-->
 
 
     <footer class="site-footer" id="footer">

@@ -50,9 +50,8 @@
 
 
 
-  <body>
-
-    <header class="site-header" id="header">
+	<body>
+		<header class="site-header" id="header">
 	
 	<nav class="navbar navbar-default">
 	<div>
@@ -317,11 +316,37 @@
 
 </header>
 
+		
+			<div id="wrapper">
+			<!-- Contenu de la barre de navigation sur le côté de la page -->
+ <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
 
-    <div class="page-content">
+	
+				<li class="sidebar-brand">
+				<a href="#header" class="back-to-top smooth-scroll">
+					<span class="octicon octicon-chevron-up">
+					<span class="hautpage">	Haut de la page </span>
+					</span>
+				</a>
+			</li>
+	
 
-      <div class="wrapper">
-        <p>This IGO (for Open GIS Infrastructure) project involved 6 organisations in Quebec, Canada.</p>
+</nav>
+
+        
+
+			<!-- Page Content -->
+				<div id="page-content-wrapper">
+					<!-- Flèche pour ouvrir et fermer le menu de côté -->
+					<!--[if gte IE 8)] -->
+					<button type="button" id="icone-sidebar" class="octicon octicon-move-right" data-toggle="offcanvas">
+						 <span class="txtmenu">Menu</span>
+					</button>
+					<!-- [endif]-->
+			
+					<div class="container">
+						<div>				
+							<p>This IGO (for Open GIS Infrastructure) project involved 6 organisations in Quebec, Canada.</p>
 
 <p>IGO is an evolution of an internal Web GIS project at the government of Quebec and the objective to make it more open, common, modular and based on open source and governance model with multiple organisations.</p>
 
@@ -358,9 +383,13 @@ The source code of IGO should be released in 2015 as a LGPL licence and the gove
 
 <p>If you have any question and want to contribute, contact the main email of the project: igo@msp.gouv.qc.ca or subscribe to the mailing-list mainly in French.
 The documentation is mainly in French, but if there is a demand, the project can be translate if needed.</p>
+                  
+						</div>
+					</div>
+				</div>
+					<!-- /#page-content-wrapper -->
 
-      </div>
-    </div>
+			</div>  <!-- /#wrapper di sidebar.html-->
 
 
     <footer class="site-footer" id="footer">
