@@ -31,9 +31,11 @@ $(document).ready (function(){
 	headerBouton.click(function(){
 		if(headerBouton.hasClass("collapse")){
 			icone.css("top","200px");
+			wrapper.css("top","200px");
 		}
 		else{
 			icone.css("top","500px");
+			wrapper.css("top","500px");
 		}
 		
 	});
