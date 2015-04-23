@@ -6,7 +6,7 @@ $(document).ready (function(){
   var icone = $('#icone-sidebar'),
 	  footer= $('footer'),
 	  wrapper = $('#wrapper'),
-	  headerBouton = $('header button'),
+	  headerBouton = $('header button');
 
 
   // Changer l'icone quand on ouvre et ferme le sidebar
@@ -28,7 +28,7 @@ $(document).ready (function(){
 	}); 
 	
 	//Pour faire descendre le bouton quand le menu est ouvert sur un appareil mobile
-	/*headerBouton.click(function(){
+	headerBouton.click(function(){
 		if(headerBouton.hasClass("collapse")){
 			icone.css("top","200px");
 		}
@@ -36,7 +36,7 @@ $(document).ready (function(){
 			icone.css("top","500px");
 		}
 		
-	});*/
+	});
 	
   
   /* scroll ref : http://demo.yoarts.com/liberty/# */
