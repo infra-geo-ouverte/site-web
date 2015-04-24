@@ -37,11 +37,11 @@ $(document).ready (function(){
 	headerBouton.click(function(){
 		if(headerBouton.hasClass("collapsed")){
 			icone.css("position","200px");
-			sidebar.css("top","200px");
+			sidebar.css("top","250px");
 		}
 		else{
 			icone.css("top","500px");
-			sidebar.css("top","500px");
+			sidebar.css("top","550px");
 		}
 		
 	});
