@@ -30,6 +30,7 @@ $(document).ready (function(){
 					footer.css("margin-left", "0px");
 				}
 			}
+			location.reload();
 	}); 
 	
 	//Pour faire descendre le bouton quand le menu est ouvert sur un appareil mobile
