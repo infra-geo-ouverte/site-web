@@ -740,7 +740,7 @@ css de l'accueil incluant la banniere
   display: inline-block;
   float: left;
   position: fixed;
-  top: 160px;
+  top: 200px;
   z-index: 999;
   display: block;
   width: auto;
