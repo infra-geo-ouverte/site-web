@@ -36,12 +36,12 @@ $(document).ready (function(){
 	//Pour faire descendre le bouton quand le menu est ouvert sur un appareil mobile
 	headerBouton.click(function(){
 		if(headerBouton.hasClass("collapsed")){ //ouvert
-			icone.css("top","500px");
-			sidebar.css("top","550px");
+			icone.css("top","470px");
+			sidebar.css("top","500px");
 		}
 		else{
-			icone.css("top","200px");
-			sidebar.css("top","250px");
+			icone.css("top","160px");
+			sidebar.css("top","200px");
 		}
 		
 	});
