@@ -13,7 +13,7 @@ $(document).ready (function(){
   // Changer l'icone quand on ouvre et ferme le sidebar
 	$('[data-toggle="offcanvas"]').click(function () {
 		
-       // wrapper.toggleClass('toggled');
+        wrapper.toggleClass('toggled');
 			if (wrapper.hasClass('toggled')){  //ouvert
 				icone.removeClass('octicon-move-right');
 				icone.addClass('octicon-x');
