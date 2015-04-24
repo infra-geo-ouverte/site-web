@@ -14,17 +14,21 @@ $(document).ready (function(){
 	$('[data-toggle="offcanvas"]').click(function () {
 		
         wrapper.toggleClass('toggled');
-			if (wrapper.hasClass('toggled')){
+			if (wrapper.hasClass('toggled')){  //ouvert
 				icone.removeClass('octicon-move-right');
 				icone.addClass('octicon-x');
 				icone.text("");
-				footer.css("margin-left", "250px");
+				if ( $(window).width() > 739) { 
+					footer.css("margin-left", "250px");
+				}
 			}
 			else{
-				icone.removeClass('octicon-x');
+				icone.removeClass('octicon-x'); //fermé
 				icone.addClass('octicon-move-right');
 				icone.text("");
-				footer.css("margin-left", "0px");
+				if ( $(window).width() > 739) { 
+					footer.css("margin-left", "0px");
+				}
 			}
 	}); 
 	
@@ -40,6 +44,7 @@ $(document).ready (function(){
 		}
 		
 	});
+	
 	
   
   /* scroll ref : http://demo.yoarts.com/liberty/# */

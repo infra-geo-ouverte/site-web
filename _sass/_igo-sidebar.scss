@@ -13,16 +13,16 @@
 }
 
 #wrapper.toggled {
-    padding-left: 220px; // fait tasser le contenu principal vers la droite
+   // padding-left: 220px; // fait tasser le contenu principal vers la droite
 }
 
 #sidebar-wrapper {  //contenu du sidebar, le sidebar fait 220px de large
 	z-index: 1000;
-    left: 220px;
+    left: 0;
     width: 0;
-    height: 100%;
-	top: 160px;
-    margin-left: -220px;
+    //height: 100%;
+	top: 0px;
+    //margin-left: -220px;
     overflow-y: auto;
     overflow-x: hidden;
     background: $blanc;
@@ -32,10 +32,22 @@
     transition: all 0.5s ease;
 }
 
-
+#wrapper .navbar-fixed-top{ /*  verifier ecran   */
+	position: relative;
+}
+#wrapper .navbar-inverse{
+	border: none;
+}
+#wrapper .navbar{
+	border: none;
+	min-height: 200px; /*  verif ecran        */
+}
 
 #wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
     width: 220px;
+	position: fixed;
+	top: 200px;
+	opacity: 0.8;
 }
 
 #wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
@@ -44,7 +56,7 @@
 }
 
 #wrapper .container{  // contenu principal sans le bouton
-	margin-left: 45px;
+	margin-left: 15px;
 	width: auto;
 }
 #page-content-wrapper { // Contenu principal, incluant le bouton, position à partir du header
@@ -70,7 +82,7 @@
 	display: inline-block;
 	float: left;
 	position: fixed;
-	top: 200px;  
+	top: 150px;  
 	z-index: 999;
 	display: block;
 	width: auto;
@@ -215,6 +227,51 @@
 /* ----------------768px-----------------------------  */
 
 @media screen and (min-width: $screen-sm-min) {
+
+
+	// faire tasser le contenu vers la droite quand le menu ouvre/sidebar
+
+	#wrapper {
+		padding-left: 0;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+
+	#wrapper.toggled {
+		padding-left: 220px; // fait tasser le contenu principal vers la droite
+	}
+
+	#sidebar-wrapper {  //contenu du sidebar, le sidebar fait 220px de large
+		z-index: 1000;
+		left: 220px;
+		width: 0;
+		height: 100%;
+		top: 160px;
+		margin-left: -220px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		background: $blanc;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+
+
+
+	#wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
+		width: 220px;
+	}
+
+	#wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
+		position: relative;
+		margin-right: -220px;
+	}
+
+	
+
 	#icone-sidebar{
 		top: 325px;  
 	}

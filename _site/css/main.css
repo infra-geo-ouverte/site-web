@@ -681,16 +681,11 @@ css de l'accueil incluant la banniere
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-#wrapper.toggled {
-  padding-left: 220px; }
-
 #sidebar-wrapper {
   z-index: 1000;
-  left: 220px;
+  left: 0;
   width: 0;
-  height: 100%;
-  top: 160px;
-  margin-left: -220px;
+  top: 0px;
   overflow-y: auto;
   overflow-x: hidden;
   background: #fff;
@@ -699,15 +694,30 @@ css de l'accueil incluant la banniere
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
+#wrapper .navbar-fixed-top {
+  /*  verifier ecran   */
+  position: relative; }
+
+#wrapper .navbar-inverse {
+  border: none; }
+
+#wrapper .navbar {
+  border: none;
+  min-height: 200px;
+  /*  verif ecran        */ }
+
 #wrapper.toggled #sidebar-wrapper {
-  width: 220px; }
+  width: 220px;
+  position: fixed;
+  top: 200px;
+  opacity: 0.8; }
 
 #wrapper.toggled #page-content-wrapper {
   position: relative;
   margin-right: -220px; }
 
 #wrapper .container {
-  margin-left: 45px;
+  margin-left: 15px;
   width: auto; }
 
 #page-content-wrapper {
@@ -730,7 +740,7 @@ css de l'accueil incluant la banniere
   display: inline-block;
   float: left;
   position: fixed;
-  top: 200px;
+  top: 150px;
   z-index: 999;
   display: block;
   width: auto;
@@ -853,6 +863,38 @@ css de l'accueil incluant la banniere
     padding-top: 0px; } }
 /* ----------------768px-----------------------------  */
 @media screen and (min-width: 768px) {
+  #wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+
+  #wrapper.toggled {
+    padding-left: 220px; }
+
+  #sidebar-wrapper {
+    z-index: 1000;
+    left: 220px;
+    width: 0;
+    height: 100%;
+    top: 160px;
+    margin-left: -220px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+
+  #wrapper.toggled #sidebar-wrapper {
+    width: 220px; }
+
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: -220px; }
+
   #icone-sidebar {
     top: 325px; }
 
