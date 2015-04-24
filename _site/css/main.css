@@ -240,7 +240,8 @@ Logo
   display: inline-block; }
 
 #header .logo-git {
-  font-size: 12px; }
+  font-size: 12px;
+  padding-left: 5px; }
 
 #header .navbar-toggle {
   position: absolute;
@@ -309,7 +310,7 @@ Logo
   ***/
   #header .git-btn {
     width: 140px;
-    margin-top: 70px;
+    margin-top: 100px;
     float: right; }
 
   #header .logo-git {
