@@ -21,7 +21,6 @@ $(document).ready (function(){
 				if ( $(window).width() > 739) { 
 					footer.css("margin-left", "250px");
 				}
-				location.reload();
 			}
 			else{
 				icone.removeClass('octicon-x'); //fermé
@@ -30,13 +29,12 @@ $(document).ready (function(){
 				if ( $(window).width() > 739) { 
 					footer.css("margin-left", "0px");
 				}
-				location.reload();
 			}
 			
 	}); 
 	
 	//Pour faire descendre le bouton quand le menu est ouvert sur un appareil mobile
-	headerBouton.click(function(){
+	/*headerBouton.click(function(){
 		if(headerBouton.hasClass("collapse")){
 			icone.css("top","200px");
 			sidebar.css("top","200px");
@@ -46,7 +44,7 @@ $(document).ready (function(){
 			sidebar.css("top","500px");
 		}
 		
-	});
+	});*/
 	
 	
   
