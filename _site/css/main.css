@@ -695,9 +695,6 @@ css de l'accueil incluant la banniere
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-#wrapper .navbar-fixed-top {
-  /*  verifier ecran   */ }
-
 #wrapper .navbar-inverse {
   border: none; }
 
@@ -838,18 +835,19 @@ css de l'accueil incluant la banniere
 /*-------------------------------*/
 /*            Overlay            */
 /*-------------------------------*/
+/*
 .overlay {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 200px;
-  left: 0;
-  right: 0;
-  bottom: 200px;
-  background-color: rgba(250, 250, 250, 0.8);
-  z-index: 1; }
-
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 200px;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    background-color: rgba(250,250,250,.8);
+    z-index: 1;
+}*/
 /*******************************************************/
 /************css pour tablette et ordinateur ***********/
 /*******************************************************/

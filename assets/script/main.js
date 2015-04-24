@@ -2,13 +2,12 @@ $(document).ready (function(){
 
 	$('[data-toggle="tooltip"]').tooltip();
 	
-	/*menu sidebar */
-  var icone = $('#icone-sidebar'),
-	  footer= $('footer'),
-	  wrapper = $('#wrapper'),
-	  headerBouton = $('header button'),
-	  sidebar = $("#sidebar-wrapper");
-
+	/*Variables */
+	var icone = $('#icone-sidebar'),
+		footer= $('footer'),
+		wrapper = $('#wrapper'),
+		headerBouton = $('header button'),
+		sidebar = $("#sidebar-wrapper");
 
   // Changer l'icone quand on ouvre et ferme le sidebar
 	$('[data-toggle="offcanvas"]').click(function () {
@@ -29,8 +28,7 @@ $(document).ready (function(){
 				if ( $(window).width() > 739) { 
 					footer.css("margin-left", "0px");
 				}
-			}
-			
+			}			
 	}); 
 	
 	//Pour faire descendre le bouton quand le menu est ouvert sur un appareil mobile
@@ -42,11 +40,8 @@ $(document).ready (function(){
 		else{
 			icone.css("top","160px");
 			sidebar.css("top","200px");
-		}
-		
-	});
-	
-	
+		}	
+	});	
   
   /* scroll ref : http://demo.yoarts.com/liberty/# */
   
@@ -65,6 +60,4 @@ $(document).ready (function(){
     //}
   });
   
-  
-
 });

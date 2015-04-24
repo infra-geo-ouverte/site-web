@@ -12,10 +12,6 @@
     transition: all 0.5s ease;
 }
 
-#wrapper.toggled {
-   // padding-left: 220px; // fait tasser le contenu principal vers la droite
-}
-
 #sidebar-wrapper {  //contenu du sidebar, le sidebar fait 220px de large
 	z-index: 1000;
     left: 0;
@@ -32,9 +28,6 @@
     transition: all 0.5s ease;
 }
 
-#wrapper .navbar-fixed-top{ /*  verifier ecran   */
-	//position: relative;
-}
 #wrapper .navbar-inverse{
 	border: none;
 }
@@ -194,7 +187,7 @@
 /*-------------------------------*/
 /*            Overlay            */
 /*-------------------------------*/
-
+/*
 .overlay {
     position: fixed;
     display: none;
@@ -206,7 +199,7 @@
     bottom: 200px;
     background-color: rgba(250,250,250,.8);
     z-index: 1;
-}
+}*/
 
 /*******************************************************/
 
