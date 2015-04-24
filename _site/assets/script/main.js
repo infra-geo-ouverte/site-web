@@ -13,7 +13,7 @@ $(document).ready (function(){
   // Changer l'icone quand on ouvre et ferme le sidebar
 	$('[data-toggle="offcanvas"]').click(function () {
 		
-        wrapper.toggleClass('toggled');
+       // wrapper.toggleClass('toggled');
 			if (wrapper.hasClass('toggled')){  //ouvert
 				icone.removeClass('octicon-move-right');
 				icone.addClass('octicon-x');
@@ -21,6 +21,7 @@ $(document).ready (function(){
 				if ( $(window).width() > 739) { 
 					footer.css("margin-left", "250px");
 				}
+				location.reload();
 			}
 			else{
 				icone.removeClass('octicon-x'); //fermé
@@ -29,8 +30,9 @@ $(document).ready (function(){
 				if ( $(window).width() > 739) { 
 					footer.css("margin-left", "0px");
 				}
+				location.reload();
 			}
-			location.reload();
+			
 	}); 
 	
 	//Pour faire descendre le bouton quand le menu est ouvert sur un appareil mobile
