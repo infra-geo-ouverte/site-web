@@ -34,7 +34,7 @@ $(document).ready (function(){
 	}); 
 	
 	//Pour faire descendre le bouton quand le menu est ouvert sur un appareil mobile
-	headerBouton.click(function(){
+	/*headerBouton.click(function(){
 		if(headerBouton.hasClass("collapse")){
 			icone.css("position","200px");
 			sidebar.css("top","200px");
@@ -44,7 +44,7 @@ $(document).ready (function(){
 			sidebar.css("top","500px");
 		}
 		
-	});
+	});*/
 	
 	
   
