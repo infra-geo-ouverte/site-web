@@ -695,8 +695,7 @@ css de l'accueil incluant la banniere
   transition: all 0.5s ease; }
 
 #wrapper .navbar-fixed-top {
-  /*  verifier ecran   */
-  position: relative; }
+  /*  verifier ecran   */ }
 
 #wrapper .navbar-inverse {
   border: none; }
@@ -710,7 +709,7 @@ css de l'accueil incluant la banniere
   width: 220px;
   position: fixed;
   top: 200px;
-  opacity: 0.8; }
+  opacity: 0.9; }
 
 #wrapper.toggled #page-content-wrapper {
   position: relative;
@@ -878,7 +877,7 @@ css de l'accueil incluant la banniere
     left: 220px;
     width: 0;
     height: 100%;
-    top: 160px;
+    top: 300px;
     margin-left: -220px;
     overflow-y: auto;
     overflow-x: hidden;
@@ -900,9 +899,6 @@ css de l'accueil incluant la banniere
 
   #wrapper .container {
     margin-left: 95px; }
-
-  #sidebar-wrapper {
-    top: 300px; }
 
   #page-content-wrapper {
     width: 100%;

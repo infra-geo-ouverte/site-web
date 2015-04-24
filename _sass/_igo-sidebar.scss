@@ -33,7 +33,7 @@
 }
 
 #wrapper .navbar-fixed-top{ /*  verifier ecran   */
-	position: relative;
+	//position: relative;
 }
 #wrapper .navbar-inverse{
 	border: none;
@@ -47,7 +47,7 @@
     width: 220px;
 	position: fixed;
 	top: 200px;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 #wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
@@ -248,7 +248,7 @@
 		left: 220px;
 		width: 0;
 		height: 100%;
-		top: 160px;
+		top: 300px;
 		margin-left: -220px;
 		overflow-y: auto;
 		overflow-x: hidden;
@@ -278,9 +278,7 @@
 	#wrapper .container{
 		margin-left: 95px;
 	}
-	#sidebar-wrapper {
-		top: 300px;
-	}
+
 	#page-content-wrapper { // Contenu principal, incluant le bouton, position à partir du header
 		width: 100%;
 		padding-top: 40px;
