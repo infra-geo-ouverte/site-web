@@ -717,7 +717,8 @@ css de l'accueil incluant la banniere
 
 #wrapper .container {
   margin-left: 15px;
-  width: auto; }
+  width: auto;
+  padding-top: 30px; }
 
 #page-content-wrapper {
   width: 100%;
@@ -853,13 +854,16 @@ css de l'accueil incluant la banniere
 /* ---------------- 500px ---------------------------- */
 @media screen and (min-width: 500px) {
   #icone-sidebar {
-    top: 200px; }
+    top: 150px; }
 
   #sidebar-wrapper {
     top: 150px; }
 
   #page-content-wrapper {
-    padding-top: 0px; } }
+    padding-top: 40px; }
+
+  #wrapper .container {
+    margin-left: 45px; } }
 /* ----------------768px-----------------------------  */
 @media screen and (min-width: 768px) {
   #wrapper {
@@ -888,7 +892,8 @@ css de l'accueil incluant la banniere
     transition: all 0.5s ease; }
 
   #wrapper.toggled #sidebar-wrapper {
-    width: 220px; }
+    width: 220px;
+    top: 300px; }
 
   #wrapper.toggled #page-content-wrapper {
     position: relative;

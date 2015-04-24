@@ -58,6 +58,7 @@
 #wrapper .container{  // contenu principal sans le bouton
 	margin-left: 15px;
 	width: auto;
+	padding-top: 30px;
 }
 #page-content-wrapper { // Contenu principal, incluant le bouton, position à partir du header
     width: 100%;
@@ -215,13 +216,16 @@
 /* ---------------- 500px ---------------------------- */
 @media screen and (min-width: $screen-xs-min) {
  	#icone-sidebar{
-		top: 200px;  
+		top: 150px;  
 	}
 	#sidebar-wrapper {
 		top: 150px;
 	}
 	#page-content-wrapper { // Contenu principal, incluant le bouton, position à partir du header
-		padding-top: 0px;
+		padding-top: 40px;
+	}
+	#wrapper .container{
+		margin-left: 45px;
 	}
 }
 /* ----------------768px-----------------------------  */
@@ -263,6 +267,7 @@
 
 	#wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
 		width: 220px;
+		top: 300px;
 	}
 
 	#wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
