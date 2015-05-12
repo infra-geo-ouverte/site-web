@@ -33,7 +33,7 @@ IGO va intégrer un service de géolocalisation, de cartes Web et permettant à 
 <a id="structure" name="structure"></a>
 ### 2 Structure de la communauté IGO  [<span class="octicon octicon-link"></span>](#structure)
 
-La communauté IGO est composée d'un seul comité et des contributeurs autres que les membres de ces comités. La communauté IGO est sous l'autorité du ** comité technique**, qui assure le leadership technique du projet dans son ensemble et s'assure de la bonne compréhension des besoins et de la satisfaction des utilisateurs. Les développeurs, les utilisateurs et tout autre contributeur qui participent aux projets sont des acteurs aussi importants que les membres du comité. 
+La communauté IGO est composée d'un seul comité et des contributeurs autres que les membres de ces comités. La communauté IGO est sous l'autorité du **comité technique**, qui assure le leadership technique du projet dans son ensemble et s'assure de la bonne compréhension des besoins et de la satisfaction des utilisateurs. Les développeurs, les utilisateurs et tout autre contributeur qui participent aux projets sont des acteurs aussi importants que les membres du comité. 
 
 
 #### 2.1 Comité technique
@@ -76,7 +76,7 @@ Nous entendons ici par contributeur, toute personne du domaine métier ou techni
 
 ##### 2.2.1 Validateurs de code
 
-Ce sont des programmeurs expérimentés et habilités à valider le travail des autres programmeurs. Ils approuvent et intègrent le code soumis au projet, puis s'assure d'une documentation minimale au besoin. Les validateurs de code sont désignés par le comité technique. Un validateur de code doit être expert et s’engage à travailler pour garantir une meilleure stabilité du projet. Au moins un validateur de code doit faire partie du comité technique avec droit de vote (Voir section mécanisme de prise des décisions **##mettre lien vers 3.2**).
+Ce sont des programmeurs expérimentés et habilités à valider le travail des autres programmeurs. Ils approuvent et intègrent le code soumis au projet, puis s'assure d'une documentation minimale au besoin. Les validateurs de code sont désignés par le comité technique. Un validateur de code doit être expert et s’engage à travailler pour garantir une meilleure stabilité du projet. Au moins un validateur de code doit faire partie du comité technique avec droit de vote [(Voir section mécanisme de prise des décisions)](#principes).
 
 ##### Exigences
 - Être un programmeur expérimenté avec une excellente connaissance du logiciel ;
@@ -103,7 +103,7 @@ Les sources de la communauté se traduisent par une participation financière et
 <a id="licence" name="licence"></a>
 ###4 Licence  [<span class="octicon octicon-link"></span>](#licence)
 
-- Se référer à ... **(mettre le lien direct vers la licence)**
+- [Consulter la licence](/site-web/LICENCE.txt)
 
 <a id="droitauteur" name="droitauteur"></a>
 ### 5 Droits d'auteur   [<span class="octicon octicon-link"></span>](#droitauteur)
@@ -164,7 +164,7 @@ Le processus de demande de changement (RFC) doit suivre le processus suivant:
 <a id="charte" name="charte"></a>
 ###7 Charte du comité technique    [<span class="octicon octicon-link"></span>](#charte)
 
-Se référer à **l'annexe 1 (mettre le lien)**
+Se référer à [l'annexe 1](#annexe1)
 
 <a id="codage" name="codage"></a>
 ###8 Convention et règles de codage    [<span class="octicon octicon-link"></span>](#codage)
