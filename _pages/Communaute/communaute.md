@@ -12,7 +12,11 @@ submenu:
   - { hook: "principes", title: "6 Principes et mécanismes de prise des décisions" }
   - { hook: "charte", title: "7 Charte du comité technique" }
   - { hook: "codage", title: "8 Convention et règles de codage" }
-  - { hook: "depot", title: "9 Dépôt du code source et outils de communications " }
+  - { hook: "depot", title: "9 Dépôt du code source et outils de communications" }
+  - { hook: "amendement", title: "10 Amendement de ce présent acte constitutif" }
+  - { hook: "annexe1", title: "Annexe 1  Licence" }
+  - { hook: "annexe2", title: "Annexe 2 :Charte du comité technique" }
+  - { hook: "annexe3", title: "Annexe 3 :Foire aux Questions" }
 ---
 
 ## Acte constitutif de la communauté IGO
@@ -75,7 +79,7 @@ Nous entendons ici par contributeur, toute personne du domaine métier ou techni
 
 Ce sont des programmeurs expérimentés et habilités à valider le travail des autres programmeurs. Ils approuvent et intègrent le code soumis au projet, puis s'assure d'une documentation minimale au besoin. Les validateurs de code sont désignés par le comité technique. Un validateur de code doit être expert et s’engage à travailler pour garantir une meilleure stabilité du projet. Au moins un validateur de code doit faire partie du comité technique avec droit de vote (Voir section mécanisme de prise des décisions **##mettre lien vers 3.2**).
 
-###### Exigences
+##### Exigences
 - Être un programmeur expérimenté avec une excellente connaissance du logiciel ;
 - S'engager à respecter l'entente de contributions, telle que rédigée par le comité technique.
 
@@ -176,19 +180,23 @@ Dépôts du code source : [https://github.com/infra-geo-ouverte/igo](https://gi
 
 Outils de communication : si vous avez d'autres questions, n'hésitez pas à écrier à IGO à ce courriel : <igo(a)msp.gouv.qc.ca> ou à la liste courriel [http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique).
 
-###10 Amendement de ce présent acte constitutif
+<a id="amendement" name="amendement"></a>
+###10 Amendement de ce présent acte constitutif [<span class="octicon octicon-link"></span>](#amendement)
+
 Toute personne qui souhaite participer à la communauté IGO est tenue de respecter cet acte constitutif. Le comité Technique se réserve le droit d’amender cet acte à tout moment sauf dans sa partie Licence où les termes de la licence dominent.  
 
-##Annexe 1  Licence 
+<a id="annexe1" name="annexe1"></a>
+##Annexe 1  Licence  [<span class="octicon octicon-link"></span>](#annexe1)
 
 Copier ici la licence LiLiQ-R  
 
-##Annexe 2 :Charte du comité technique
+<a id="annexe2" name="annexe2"></a>
+##Annexe 2 :Charte du comité technique [<span class="octicon octicon-link"></span>](#annexe2)
 
-###2 Mission 
-Le Comité technique («CT») est chargé d'assurer le leadership technique pour IGO, il a la supervision technique sur l'ensemble des projets IGO et décide sur les questions touchant les aspects techniques. Il constitue le  comité  ultime d'appel des décisions techniques.
+###1 Mission 
+Le comité technique («CT») est chargé d'assurer le leadership technique pour IGO, il a la supervision technique sur l'ensemble des projets IGO et décide sur les questions touchant les aspects techniques. Il constitue le  comité  ultime d'appel des décisions techniques.
 
-###3 Responsabilités du CT
+###2 Responsabilités du CT
 - Rédiger la charte du comité technique et s'assurer de son respect par les membres de ce comité;
 - Tenir un calendrier d'évolution et le transmettre au comité d'administration pour information ;
 - Identifier, collecter et consolider les besoins des utilisateurs;
@@ -203,7 +211,7 @@ Le Comité technique («CT») est chargé d'assurer le leadership technique pour
 - Animer, tenir la communauté informée et faire en sorte de la garder dynamique ; 
 - Produire, au besoins des rapports du projet.
 
-###4 Comité initial    
+###3 Comité initial    
 Le comité technique actuel a pour mandat d'assurer le leadership technique de la communauté . Voici les membres actuels :
 
 - Luc Lessard (MSP)
@@ -216,34 +224,35 @@ Le comité technique actuel a pour mandat d'assurer le leadership technique de l
 - Simon Tremblay (CELL)
 - Sylvie Girouard (MCC)
 
-###5 Coordonnateur du CT
+###4 Coordonnateur du CT
 Après chaque élection, le CT propose un de ses membres pour agir à titre de coordonnateur du CT sous une présidence tournante. En cas de plusieurs candidats, le choix du candidat se fait selon le mécanisme de vote de la communauté IGO. Les responsabilités du  coordonnateur du CT sont :
  
 - Organiser les rencontres du CT ;
 - Siéger, au besoin, sans droit de vote, sur  le comité d'administration à titre de représentant du CT ;
 - Publier les comptes rendu des réunions du CT.
 
-###6 Réunions 
+###5 Réunions 
 - Les réunions se déroulent au moins à tous les mois ;
 - Le CT maintient un ordre du jour ouvert sur la liste de diffusion ;
 - Une réunion spéciale du CT peut être convoquée si un de ses membres en fait la demande sur la liste de diffusion au moins 2 jour avant l'heure de réunion ;
 - La tenue d'une réunion est conditionnelle à la participation d'au moins 50% des membres du CT;
 
 
-###7 Motions 
+###6 Motions 
 Avant d'être soumis à un vote, les motions doivent être présentées et discutés publiquement à la recherche d'un consensus sur la liste de diffusion des développeurs,  pour un minimum de 2 jours ouvrables.
 
-###8 Délégation du droit du vote 
+###7 Délégation du droit du vote 
 Un membre du CT qui se trouve dans l'impossibilité d'assister à une réunion, peut mandater un représentant qui représentera son opinion et voter en son nom.
 
-###9 Candidatures aux CT 
+###8 Candidatures aux CT 
 Tout contributeur technique actif ou super-utilisateur peut soumettre sa candidature pour devenir membre du CT.
 
-###10 
-###10.1 Amendement
+###9 
+###9.1 Amendement
 L'amendement de cette présente charte du CT est proposé dans une motion spéciale, qui, pour être acceptée, elle doit être approuvé selon les principes et les mécanismes de prise des décisions de la communauté.
 
-##Annexe 3           Foire aux Questions
+<a id="annexe3" name="annexe3"></a>
+##Annexe 3 :Foire aux Questions [<span class="octicon octicon-link"></span>](#annexe3)          
 
 #####Comment un développeur peut devenir un validateur de code ?
 Tel que précisé, les validateurs de code sont des développeurs expérimentés. Le profil de validateur de code pourrait s'acquérir à travers les étapes suivantes :
