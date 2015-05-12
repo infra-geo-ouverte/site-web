@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 7
+faqsection: 17
 titre-faq: Est-ce que je peux créer une nouvelle page de code source ou de documentation ?
 ---
 
