@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 10
+faqsection: 20
 titre-faq: Comment proposer des changements et/ou des améliorations ?
 ---
 
