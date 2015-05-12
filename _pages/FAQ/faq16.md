@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 6
+faqsection: 16
 titre-faq: Qui est en charge du projet IGO ? 
 ---
 
