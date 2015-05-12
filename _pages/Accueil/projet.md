@@ -9,5 +9,5 @@ Le projet IGO (Infrastructure Géomatique Ouverte) est une communauté de pratiq
 Le code source de ce projet et sa documentation sont déjà disponibles pour tout employé du gouvernement du Québec depuis 2014.
 Le développement est mené principalement par des professionnels internes au gouvernement du Québec.  
 
-Au printemps 2015, IGO a été distribué publiquement sous une [LICENCE libre](./licence.txt) du gouvernement du Québec, permettant à des [contributeurs](site/contribuer.md) de partout dans le monde de proposer des améliorations au logiciel, toujours au bénéfice des utilisateurs et du gouvernement du Québec. 
+Au printemps 2015, IGO a été distribué publiquement sous une [LICENCE libre](/site-web/LICENCE.txt) du gouvernement du Québec, permettant à des [contributeurs](/site-web/contribuer) de partout dans le monde de proposer des améliorations au logiciel, toujours au bénéfice des utilisateurs et du gouvernement du Québec. 
 
