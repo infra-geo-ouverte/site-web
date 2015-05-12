@@ -753,7 +753,7 @@ css de l'accueil incluant la banniere
 .sidebar-nav {
   position: absolute;
   top: 20px;
-  width: 220px;
+  width: 250px;
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -846,15 +846,15 @@ css de l'accueil incluant la banniere
     transition: all 0.5s ease; }
 
   #wrapper.toggled {
-    padding-left: 220px; }
+    padding-left: 250px; }
 
   #sidebar-wrapper {
     z-index: 1000;
-    left: 220px;
+    left: 250px;
     width: 0;
     height: 100%;
     top: 300px;
-    margin-left: -220px;
+    margin-left: -250px;
     overflow-y: auto;
     overflow-x: hidden;
     background: #fff;
@@ -864,12 +864,12 @@ css de l'accueil incluant la banniere
     transition: all 0.5s ease; }
 
   #wrapper.toggled #sidebar-wrapper {
-    width: 220px;
+    width: 250px;
     top: 300px; }
 
   #wrapper.toggled #page-content-wrapper {
     position: relative;
-    margin-right: -220px; }
+    margin-right: -250px; }
 
   #icone-sidebar {
     top: 325px; }
@@ -883,7 +883,7 @@ css de l'accueil incluant la banniere
     display: inline-block; }
 
   #page-content-wrapper .octicon {
-    font-size: 16px; }
+    font-size: 15px; }
 
   #page-content-wrapper span.txtmenu {
     font-size: 13px; }

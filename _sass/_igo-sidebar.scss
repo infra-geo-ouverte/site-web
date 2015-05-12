@@ -16,9 +16,7 @@
 	z-index: 1000;
     left: 0;
     width: 0;
-    //height: 100%;
 	top: 0px;
-    //margin-left: -220px;
     overflow-y: auto;
     overflow-x: hidden;
     background: $blanc;
@@ -102,7 +100,7 @@
 .sidebar-nav {  // dans le ul de la liste du sidebar
     position: absolute;
     top: 20px; 
-    width: 220px;
+    width: 250px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -219,16 +217,16 @@
 	}
 
 	#wrapper.toggled {
-		padding-left: 220px; // fait tasser le contenu principal vers la droite
+		padding-left: 250px; // fait tasser le contenu principal vers la droite
 	}
 
-	#sidebar-wrapper {  //contenu du sidebar, le sidebar fait 220px de large
+	#sidebar-wrapper {  //contenu du sidebar, le sidebar fait 250px de large
 		z-index: 1000;
-		left: 220px;
+		left: 250px;
 		width: 0;
 		height: 100%;
 		top: 300px;
-		margin-left: -220px;
+		margin-left: -250px;
 		overflow-y: auto;
 		overflow-x: hidden;
 		background: $blanc;
@@ -239,13 +237,13 @@
 	}
 
 	#wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
-		width: 220px;
+		width: 250px;
 		top: 300px;
 	}
 
 	#wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
 		position: relative;
-		margin-right: -220px;
+		margin-right: -250px;
 	}
 
 	#icone-sidebar{
@@ -261,16 +259,16 @@
 		display: inline-block;
 	}
 	#page-content-wrapper .octicon{
-		font-size: 16px;
+		font-size: 15px;
 	}
 	#page-content-wrapper span.txtmenu{
-		font-size: 13px;
+		font-size: $h6;
 	}
 	#wrapper .back-to-top .hautpage{ 
-		font-size: 13px;	
+		font-size: $h6;	
 	}
 	.sidebar-nav > .sidebar-brand {
-		font-size: 13px;
+		font-size: $h6;
 	}
 
 }
