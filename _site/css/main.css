@@ -696,14 +696,14 @@ css de l'accueil incluant la banniere
   min-height: 200px; }
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 220px;
+  width: 250px;
   position: fixed;
   top: 200px;
   opacity: 0.9; }
 
 #wrapper.toggled #page-content-wrapper {
   position: relative;
-  margin-right: -220px; }
+  margin-right: -250px; }
 
 #wrapper .container {
   margin-left: 15px;
@@ -853,7 +853,7 @@ css de l'accueil incluant la banniere
     left: 250px;
     width: 0;
     height: 100%;
-    top: 300px;
+    top: 280px;
     margin-left: -250px;
     overflow-y: auto;
     overflow-x: hidden;
@@ -865,7 +865,7 @@ css de l'accueil incluant la banniere
 
   #wrapper.toggled #sidebar-wrapper {
     width: 250px;
-    top: 300px; }
+    top: 280px; }
 
   #wrapper.toggled #page-content-wrapper {
     position: relative;
@@ -899,7 +899,7 @@ css de l'accueil incluant la banniere
     top: 325px; }
 
   #sidebar-wrapper {
-    top: 300px; } }
+    top: 280px; } }
 /***************************************
 Note: ├ël├®ments gard├®s car utilis├®s par d'autres fichiers Jekyll
 ****************************************/

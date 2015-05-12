@@ -35,7 +35,7 @@
 }
 
 #wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
-    width: 220px;
+    width: 250px;
 	position: fixed;
 	top: 200px;
 	opacity: 0.9;
@@ -43,7 +43,7 @@
 
 #wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
     position: relative;
-    margin-right: -220px;
+    margin-right: -250px;
 }
 
 #wrapper .container{  // contenu principal sans le bouton
@@ -225,7 +225,7 @@
 		left: 250px;
 		width: 0;
 		height: 100%;
-		top: 300px;
+		top: 280px;
 		margin-left: -250px;
 		overflow-y: auto;
 		overflow-x: hidden;
@@ -238,7 +238,7 @@
 
 	#wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
 		width: 250px;
-		top: 300px;
+		top: 280px;
 	}
 
 	#wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
@@ -280,7 +280,7 @@
 		top: 325px;  
 	}
 	#sidebar-wrapper {
-		top: 300px;
+		top: 280px;
 	}
 
 }
