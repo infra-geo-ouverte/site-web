@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 1
+faqsection: 01
 titre-faq: À quoi sert IGO ?
 ---
 
