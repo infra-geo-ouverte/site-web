@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 4
+faqsection: 14
 titre-faq: Est-ce que je peux utiliser ce code source ailleurs ?
 ---
 
