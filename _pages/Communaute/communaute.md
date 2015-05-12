@@ -186,23 +186,23 @@ Outils de communication : si vous avez d'autres questions, n'hésitez pas à é
 Toute personne qui souhaite participer à la communauté IGO est tenue de respecter cet acte constitutif. Le comité Technique se réserve le droit d’amender cet acte à tout moment sauf dans sa partie Licence où les termes de la licence dominent.  
 
 <a id="annexe1" name="annexe1"></a>
-##Annexe 1  Licence  [<span class="octicon octicon-link"></span>](#annexe1)
+###Annexe 1  Licence  [<span class="octicon octicon-link"></span>](#annexe1)
 
 Copier ici la licence LiLiQ-R  
 
 <a id="annexe2" name="annexe2"></a>
-##Annexe 2 :Charte du comité technique [<span class="octicon octicon-link"></span>](#annexe2)
+###Annexe 2 :Charte du comité technique [<span class="octicon octicon-link"></span>](#annexe2)
 
 ###1 Mission 
 Le comité technique («CT») est chargé d'assurer le leadership technique pour IGO, il a la supervision technique sur l'ensemble des projets IGO et décide sur les questions touchant les aspects techniques. Il constitue le  comité  ultime d'appel des décisions techniques.
 
 ###2 Responsabilités du CT
-- Rédiger la charte du comité technique et s'assurer de son respect par les membres de ce comité;
-- Tenir un calendrier d'évolution et le transmettre au comité d'administration pour information ;
-- Identifier, collecter et consolider les besoins des utilisateurs;
-- Étudier les demandes de changement et coordonner leurs réalisations par les contributeurs ;
-- Gérer les droits d'accès au code ;
-- Désigner les validateurs de code et les moyens techniques requis pour les projets de développement ;;
+  - Rédiger la charte du comité technique et s'assurer de son respect par les membres de ce comité;
+  - Tenir un calendrier d'évolution et le transmettre au comité d'administration pour information ;
+  - Identifier, collecter et consolider les besoins des utilisateurs;
+  - Étudier les demandes de changement et coordonner leurs réalisations par les contributeurs ;
+  - Gérer les droits d'accès au code ;
+  - Désigner les validateurs de code et les moyens techniques requis pour les projets de développement ;;
 - Établir l'entente de contribution destinée aux développeurs ;
 - S'assurer d'une production adéquate de documentation et d'une architecture commune ;
 - Rédiger les conventions et règles de codage;
@@ -252,7 +252,7 @@ Tout contributeur technique actif ou super-utilisateur peut soumettre sa candida
 L'amendement de cette présente charte du CT est proposé dans une motion spéciale, qui, pour être acceptée, elle doit être approuvé selon les principes et les mécanismes de prise des décisions de la communauté.
 
 <a id="annexe3" name="annexe3"></a>
-##Annexe 3 :Foire aux Questions [<span class="octicon octicon-link"></span>](#annexe3)          
+###Annexe 3 :Foire aux Questions [<span class="octicon octicon-link"></span>](#annexe3)          
 
 #####Comment un développeur peut devenir un validateur de code ?
 Tel que précisé, les validateurs de code sont des développeurs expérimentés. Le profil de validateur de code pourrait s'acquérir à travers les étapes suivantes :
