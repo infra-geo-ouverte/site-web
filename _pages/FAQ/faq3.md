@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 3
+faqsection: 13
 titre-faq: Comment puis-je contribuer ?
 ---
 
