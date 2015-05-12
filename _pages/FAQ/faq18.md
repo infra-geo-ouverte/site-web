@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 8
+faqsection: 18
 titre-faq: Combien de temps peut s'écouler pour recevoir une réponse de demande de changement (ex., « pull request »)?
 ---
 
