@@ -719,7 +719,7 @@ css de l'accueil incluant la banniere
 /* Bouton ouvrir et fermer
 -------------------------------- */
 #page-content-wrapper button {
-  padding: 5px 10px;
+  padding: 5px 5px;
   background-color: #006bb6;
   border-style: solid;
   border-width: 1px;
@@ -727,11 +727,14 @@ css de l'accueil incluant la banniere
   border-radius: 50px;
   color: #fff; }
 
+#page-content-wrapper button:hover {
+  background-color: #002f50; }
+
 #icone-sidebar {
   display: inline-block;
   float: left;
   position: fixed;
-  top: 135px;
+  top: 155px;
   z-index: 999;
   display: block;
   width: auto;

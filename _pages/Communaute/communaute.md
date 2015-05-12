@@ -9,14 +9,13 @@ submenu:
   - { hook: "financement", title: "3. Sources de financement" }
   - { hook: "licence", title: "4. Licence" }
   - { hook: "droitauteur", title: "5. Droits d'auteur" }
-  - { hook: "principes", title: "6 Principes et mécanismes de prise des décisions" }
-  - { hook: "charte", title: "7 Charte du comité technique" }
-  - { hook: "codage", title: "8 Convention et règles de codage" }
-  - { hook: "depot", title: "9 Dépôt du code source et outils de communications" }
-  - { hook: "amendement", title: "10 Amendement de ce présent acte constitutif" }
-  - { hook: "annexe1", title: "Annexe 1  Licence" }
-  - { hook: "annexe2", title: "Annexe 2 :Charte du comité technique" }
-  - { hook: "annexe3", title: "Annexe 3 :Foire aux Questions" }
+  - { hook: "principes", title: "6. Principes et mécanismes de prise des décisions" }
+  - { hook: "charte", title: "7. Charte du comité technique" }
+  - { hook: "codage", title: "8. Convention et règles de codage" }
+  - { hook: "depot", title: "9. Dépôt du code source et outils de communications" }
+  - { hook: "amendement", title: "10. Amendement de ce présent acte constitutif" }
+  - { hook: "annexe1", title: "Annexe 1: Charte du comité technique" }
+  - { hook: "annexe2", title: "Annexe 2: Foire aux Questions" }
 ---
 
 ## Acte constitutif de la communauté IGO
@@ -104,7 +103,7 @@ Les sources de la communauté se traduisent par une participation financière et
 <a id="licence" name="licence"></a>
 ###4 Licence  [<span class="octicon octicon-link"></span>](#licence)
 
-- Se référer à l'annexe 1 **(mettre le lien)**
+- Se référer à ... **(mettre le lien direct vers la licence)**
 
 <a id="droitauteur" name="droitauteur"></a>
 ### 5 Droits d'auteur   [<span class="octicon octicon-link"></span>](#droitauteur)
@@ -165,7 +164,7 @@ Le processus de demande de changement (RFC) doit suivre le processus suivant:
 <a id="charte" name="charte"></a>
 ###7 Charte du comité technique    [<span class="octicon octicon-link"></span>](#charte)
 
-Se référer à **l'annexe 2 (mettre le lien)**
+Se référer à **l'annexe 1 (mettre le lien)**
 
 <a id="codage" name="codage"></a>
 ###8 Convention et règles de codage    [<span class="octicon octicon-link"></span>](#codage)
@@ -185,13 +184,9 @@ Outils de communication : si vous avez d'autres questions, n'hésitez pas à é
 
 Toute personne qui souhaite participer à la communauté IGO est tenue de respecter cet acte constitutif. Le comité Technique se réserve le droit d’amender cet acte à tout moment sauf dans sa partie Licence où les termes de la licence dominent.  
 
+
 <a id="annexe1" name="annexe1"></a>
-###Annexe 1  Licence  [<span class="octicon octicon-link"></span>](#annexe1)
-
-Copier ici la licence LiLiQ-R  
-
-<a id="annexe2" name="annexe2"></a>
-###Annexe 2 :Charte du comité technique [<span class="octicon octicon-link"></span>](#annexe2)
+###Annexe 1 :Charte du comité technique [<span class="octicon octicon-link"></span>](#annexe1)
 
 ###1 Mission 
 Le comité technique («CT») est chargé d'assurer le leadership technique pour IGO, il a la supervision technique sur l'ensemble des projets IGO et décide sur les questions touchant les aspects techniques. Il constitue le  comité  ultime d'appel des décisions techniques.
@@ -251,8 +246,8 @@ Tout contributeur technique actif ou super-utilisateur peut soumettre sa candida
 ###9.1 Amendement
 L'amendement de cette présente charte du CT est proposé dans une motion spéciale, qui, pour être acceptée, elle doit être approuvé selon les principes et les mécanismes de prise des décisions de la communauté.
 
-<a id="annexe3" name="annexe3"></a>
-###Annexe 3 :Foire aux Questions [<span class="octicon octicon-link"></span>](#annexe3)          
+<a id="annexe2" name="annexe2"></a>
+###Annexe 2 :Foire aux Questions [<span class="octicon octicon-link"></span>](#annexe2)          
 
 #####Comment un développeur peut devenir un validateur de code ?
 Tel que précisé, les validateurs de code sont des développeurs expérimentés. Le profil de validateur de code pourrait s'acquérir à travers les étapes suivantes :

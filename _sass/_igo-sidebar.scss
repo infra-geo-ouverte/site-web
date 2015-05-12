@@ -61,7 +61,7 @@
 -------------------------------- */
 #page-content-wrapper button{
 
-	padding: 5px 10px;
+	padding: 5px 5px;
 	background-color: $bleu;
 	border-style: solid;
 	border-width: 1px;
@@ -69,12 +69,15 @@
 	border-radius: 50px;
 	color: $blanc;
 }
+#page-content-wrapper button:hover{
+	background-color: $bleu-fonce;
+}
 
 #icone-sidebar{
 	display: inline-block;
 	float: left;
 	position: fixed;
-	top: 135px;  
+	top: 155px;  
 	z-index: 999;
 	display: block;
 	width: auto;
