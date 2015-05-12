@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 5
+faqsection: 15
 titre-faq: Qui peut participer au projet IGO ? 
 ---
 
