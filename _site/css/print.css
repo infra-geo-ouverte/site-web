@@ -68,19 +68,6 @@ a {
     text-decoration: underline; }
 
 /****************************
- * Lists
-*****************************/
-/*ul, ol {
-    margin-left: $spacing-unit;
-}*/
-/*
-li {
-    > ul,
-    > ol {
-         //margin-bottom: 0;
-    }
-}*/
-/****************************
  * Headings
 *****************************/
 h1, h2, h3, h4, h5, h6 {
@@ -202,7 +189,13 @@ pre {
   Style de base des pages
   *****************************/
   body {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  /****************************
+   * Lists
+  *****************************/
+  .container ul li {
+    margin-left: 30px; } }
 /*Icone liens pour les sections de pages*/
 .page-content a .octicon {
   color: #9fcb17 !important; }

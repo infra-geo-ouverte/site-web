@@ -59,19 +59,6 @@ a {
     text-decoration: underline; }
 
 /****************************
- * Lists
-*****************************/
-/*ul, ol {
-    margin-left: $spacing-unit;
-}*/
-/*
-li {
-    > ul,
-    > ol {
-         //margin-bottom: 0;
-    }
-}*/
-/****************************
  * Headings
 *****************************/
 h1, h2, h3, h4, h5, h6 {
@@ -193,7 +180,13 @@ pre {
   Style de base des pages
   *****************************/
   body {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  /****************************
+   * Lists
+  *****************************/
+  .container ul li {
+    margin-left: 30px; } }
 /***************************
 ***  CSS 
 **************************/
@@ -802,14 +795,10 @@ css de l'accueil incluant la banniere
   color: #002f50;
   font-weight: 700;
   text-decoration: none;
-  padding: 5px 5px 5px 15px; }
+  padding: 0 5px 5px 10px; }
 
 .sidebar-nav li a:hover,
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus,
-.sidebar-nav li.open a:hover,
-.sidebar-nav li.open a:active,
-.sidebar-nav li.open a:focus {
+.sidebar-nav li.open a:hover {
   color: #fff;
   text-decoration: none;
   background-color: transparent; }
@@ -897,13 +886,13 @@ css de l'accueil incluant la banniere
     font-size: 16px; }
 
   #page-content-wrapper span.txtmenu {
-    font-size: 14px; }
+    font-size: 13px; }
 
   #wrapper .back-to-top .hautpage {
-    font-size: 14px; }
+    font-size: 13px; }
 
   .sidebar-nav > .sidebar-brand {
-    font-size: 14px; } }
+    font-size: 13px; } }
 /* ----------------992px----------------------------------  */
 @media screen and (min-width: 992px) {
   #icone-sidebar {

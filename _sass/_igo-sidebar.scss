@@ -150,16 +150,13 @@
     color: $bleu-fonce;
 	font-weight: $bold;
     text-decoration: none;
-    padding: 5px 5px 5px 15px;    
+    padding: 0 5px 5px 10px;    
 }
 
 
 .sidebar-nav li a:hover,
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus,
-.sidebar-nav li.open a:hover,
-.sidebar-nav li.open a:active,
-.sidebar-nav li.open a:focus{
+.sidebar-nav li.open a:hover
+{
     color: #fff;
     text-decoration: none;
     background-color: transparent;
@@ -267,13 +264,13 @@
 		font-size: 16px;
 	}
 	#page-content-wrapper span.txtmenu{
-		font-size: $h5;
+		font-size: 13px;
 	}
 	#wrapper .back-to-top .hautpage{ 
-		font-size: $h5;	
+		font-size: 13px;	
 	}
 	.sidebar-nav > .sidebar-brand {
-		font-size: $h5;
+		font-size: 13px;
 	}
 
 }
