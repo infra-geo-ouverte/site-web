@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 9
+faqsection: 19
 titre-faq: Quelle licence est utilisée pour IGO et pourquoi avoir choisi cette licence ?
 ---
 
