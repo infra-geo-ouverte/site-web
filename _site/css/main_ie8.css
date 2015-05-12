@@ -298,7 +298,7 @@ Logo
 
 ------------------------ */
 #wrapper .navbar-inverse {
-  width: 220px;
+  width: 250px;
   background-color: #fff; }
 
 #wrapper navbar-fixed-top {
@@ -342,14 +342,14 @@ Logo
   transition: all 0.5s ease; }
 
 #wrapper.toggled {
-  padding-left: 220px; }
+  padding-left: 250px; }
 
 #sidebar-wrapper {
   z-index: 1000;
-  left: 220px;
+  left: 250px;
   width: 0;
   height: 100%;
-  margin-left: -220px;
+  margin-left: -250px;
   overflow-y: auto;
   overflow-x: hidden;
   background: #fff;
@@ -359,11 +359,11 @@ Logo
   transition: all 0.5s ease; }
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 220px; }
+  width: 250px; }
 
 #wrapper.toggled #page-content-wrapper {
   position: relative;
-  margin-right: -220px; }
+  margin-right: -250px; }
 
 #page-content-wrapper {
   width: 100%;
@@ -373,7 +373,7 @@ Logo
 /* Bouton ouvrir et fermet 
 -------------------------------- */
 #page-content-wrapper button {
-  padding: 5px 10px;
+  padding: 5px 5px;
   background-color: #e9f6ff;
   border-style: solid;
   border-width: 1px;
@@ -403,7 +403,7 @@ Logo
 .sidebar-nav {
   position: absolute;
   top: 20px;
-  width: 220px;
+  width: 250px;
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -507,7 +507,7 @@ Logo
     margin-left: 95px; }
 
   #sidebar-wrapper {
-    top: 300px; }
+    top: 250px; }
 
   #page-content-wrapper {
     width: 100%;
@@ -815,3 +815,9 @@ css de l'accueil incluant la banniere pour IE8
 
 #accueil .in.modal-backdrop {
   filter: alpha(opacity=0); }
+
+#accueil .modal-content {
+  width: 500px; }
+
+#accueil .modal-body ul li {
+  margin-left: 20px; }

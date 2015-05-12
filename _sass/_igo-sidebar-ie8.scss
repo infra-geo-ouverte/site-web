@@ -7,7 +7,7 @@
 ------------------------ */
 
 #wrapper .navbar-inverse{
-	width: 220px;
+	width: 250px;
 	background-color: $blanc;	
 }
 #wrapper navbar-fixed-top{
@@ -55,16 +55,16 @@
 }
 
 #wrapper.toggled {
-    padding-left: 220px; // fait tasser le contenu principal vers la droite
+    padding-left: 250px; // fait tasser le contenu principal vers la droite
 }
 
 #sidebar-wrapper {  //contenu du sidebar, le sidebar fait 220px de large
    //position: fixed;
 	z-index: 1000;
-    left: 220px;
+    left: 250px;
     width: 0;
     height: 100%;
-    margin-left: -220px;
+    margin-left: -250px;
     overflow-y: auto;
     overflow-x: hidden;
     background: $blanc;
@@ -76,12 +76,12 @@
 
 
 #wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
-    width: 220px;
+    width: 250px;
 }
 
 #wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
     position: relative;
-    margin-right: -220px;
+    margin-right: -250px;
 }
 
 
@@ -93,14 +93,12 @@
 /* Bouton ouvrir et fermet 
 -------------------------------- */
 #page-content-wrapper button{
-
-	padding: 5px 10px;
+	padding: 5px 5px;
 	background-color: $bleu-pale;
 	border-style: solid;
 	border-width: 1px;
 	border-color: $bleu-fonce;
 	border-radius: 15px;
-
 }
 
 #icone-sidebar{
@@ -113,7 +111,6 @@
 	width: auto;
 	margin-left: 5px;
 	margin-right: 5px;
-
 }
 
 
@@ -131,7 +128,7 @@
 .sidebar-nav {  // dans le ul de la liste du sidebar
     position: absolute;
     top: 20px; 
-    width: 220px;
+    width: 250px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -252,7 +249,7 @@
 		margin-left: 95px;
 	}
 	#sidebar-wrapper {
-		top: 300px;
+		top: 250px;
 	}
 	#page-content-wrapper { // Contenu principal, incluant le bouton, position à partir du header
 		width: 100%;
