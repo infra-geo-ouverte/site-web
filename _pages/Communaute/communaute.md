@@ -45,7 +45,7 @@ Le comité technique assure le leadership technique des activités de la communa
 Le comité technique est composé de développeurs experts, de super-utilisateurs, de gestionnaires et de spécialistes en infrastructure qui participent à la conception, à la validation et à la réalisation de la solution. Le comité technique doit compter parmi ses membres votants, au moins un validateur de code.
 
 ##### 2.1.2 Responsabilités du comité
-- Rédiger, modifier et amender la charte du comité technique et s'assurer de son respect par les membres de ce comité;
+>- Rédiger, modifier et amender la charte du comité technique et s'assurer de son respect par les membres de ce comité;
 - Tenir un calendrier d'évolution et le transmettre au comité d'administration pour information ;
 - Identifier, collecter et consolider les besoins des utilisateurs;
 - Représenter la communauté auprès des organismes publics non membres et les partenaires extérieurs (incluant les fournisseurs de services, le cas échéant) ;
@@ -63,10 +63,10 @@ Le comité technique est composé de développeurs experts, de super-utilisateur
 
 ##### 2.1.3 Coordonnateur du comité technique
 Le coordonnateur du comité technique est  nommé par les membres du comité technique sous une formule de présidence tournante. Ses responsabilités sont les suivantes :
-
-- Organiser les rencontres du comité technique ;
-- Siéger, au besoin,  sans droit de vote sur le comité d'administration à titre de représentant du comité technique, dans le but de coordonner la relation de son comité avec comité d'administration. 
-- Publier les comptes rendus des réunions du comité technique.
+	
+	- Organiser les rencontres du comité technique ;
+	- Siéger, au besoin,  sans droit de vote sur le comité d'administration à titre de représentant du comité technique, dans le but de coordonner la relation de son comité avec comité d'administration. 
+	- Publier les comptes rendus des réunions du comité technique.
 
 #### 2.2 Contributeurs
 Nous entendons ici par contributeur, toute personne du domaine métier ou technique qui participe aux activités de la communauté. Les contributeurs incluent les :
@@ -197,12 +197,12 @@ Copier ici la licence LiLiQ-R
 Le comité technique («CT») est chargé d'assurer le leadership technique pour IGO, il a la supervision technique sur l'ensemble des projets IGO et décide sur les questions touchant les aspects techniques. Il constitue le  comité  ultime d'appel des décisions techniques.
 
 ###2 Responsabilités du CT
-  - Rédiger la charte du comité technique et s'assurer de son respect par les membres de ce comité;
-  - Tenir un calendrier d'évolution et le transmettre au comité d'administration pour information ;
-  - Identifier, collecter et consolider les besoins des utilisateurs;
-  - Étudier les demandes de changement et coordonner leurs réalisations par les contributeurs ;
-  - Gérer les droits d'accès au code ;
-  - Désigner les validateurs de code et les moyens techniques requis pour les projets de développement ;;
+- Rédiger la charte du comité technique et s'assurer de son respect par les membres de ce comité;
+- Tenir un calendrier d'évolution et le transmettre au comité d'administration pour information ;
+- Identifier, collecter et consolider les besoins des utilisateurs;
+- Étudier les demandes de changement et coordonner leurs réalisations par les contributeurs ;
+- Gérer les droits d'accès au code ;
+- Désigner les validateurs de code et les moyens techniques requis pour les projets de développement ;;
 - Établir l'entente de contribution destinée aux développeurs ;
 - S'assurer d'une production adéquate de documentation et d'une architecture commune ;
 - Rédiger les conventions et règles de codage;
