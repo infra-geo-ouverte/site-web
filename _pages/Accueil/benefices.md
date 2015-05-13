@@ -10,6 +10,6 @@ Les bénéfices, pour les partenaires, d’un travail collaboratif comme celui-c
 
 - d'échanger avec une communauté d'experts gouvernementaux actifs ;
 - de mettre en commun des besoins similaires en géomatique ;
-- de se partager les responsabilités et les coûts de développements ;
+- de se partager les responsabilités et les coûts de développement ;
 - d'éviter la duplication des efforts ;
 - d'offrir le projet à la communauté externe au gouvernement afin d'encourager la libre circulation des idées, du dialogue et de l'innovation.

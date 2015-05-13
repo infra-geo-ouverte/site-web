@@ -10,3 +10,4 @@ IGO va intégrer un service de géolocalisation, de cartes Web et permettant à 
 IGO est une amélioration d'une version précédente de ce genre d’outil utilisé, entre autres, par des partenaires de la sécurité publique et de santé publique du gouvernement du Québec.
 
 Le développement d’IGO a été possible par le travail de spécialistes en géomatique de plusieurs organisations publiques sur la forge gouvernementale. 
+
