@@ -1,3 +1,10 @@
+---
+permalink: /documentation/doc_module
+layout: general
+title-main: Module
+iconedocumentation: ""
+---
+
 ## Pour chaque module développé, remplir brièvement ces informations :
 
 |   Type d'information      |                                       Description                      |
