@@ -1,7 +1,6 @@
 ---
 permalink: /documentation/doc_module/
 layout: general
-title-main: ""
 iconedocumentation: ""
 ---
 
