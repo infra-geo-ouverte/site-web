@@ -1,7 +1,6 @@
 ---
 permalink: /documentation/architecture/
 layout: general
-title-main: Architecture
 iconedocumentation: ""
 ---
 
