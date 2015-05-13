@@ -1,8 +1,4 @@
----
-permalink: /documentation/architecture/
-layout: general
-iconedocumentation: ""
----
+
 
 L'espace public IGO sera utilisé pour partager des informations concernant le projet public sur github et jekyll (lien à ajouter).
 
