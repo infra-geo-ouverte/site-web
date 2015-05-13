@@ -1,7 +1,6 @@
 ---
 permalink: /documentation/doc_panorama/
 layout: general
-title-main: Panorama
 iconedocumentation: ""
 ---
 
