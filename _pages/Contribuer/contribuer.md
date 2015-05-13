@@ -20,10 +20,12 @@ Si vous avez d'autres questions, n'hésitez pas à écrire à IGO à ce courriel
 Le comité technique d'IGO et ses développeurs contributeurs sont responsables des mises à jour, corrections de bogues et ajouts de fonctionnalités par l'entremise du dépôt de source public.
 Les décisions sur le projet se prennent selon les règles de  [gouvernance de la communauté](/site-web/communaute).
 Dans l'esprit de collaboration des logiciels libres et ouverts, tout le monde est encouragé à améliorer ce produit.
-* Note : Si vous voulez contribuer, vous devrez vous créer un compte sur le site github.com, si ce n'est pas déjà fait.
-* Note : Tous les contributeurs d'IGO vont conserver leur droit d'auteur, mais en contribuant l'individu doit accepter les règles de la [LICENCE](/site-web/LICENCE.txt) d'IGO.
+
+- Note : Si vous voulez contribuer, vous devrez vous créer un compte sur le site github.com, si ce n'est pas déjà fait.
+- Note : Tous les contributeurs d'IGO vont conserver leur droit d'auteur, mais en contribuant l'individu doit accepter les règles de la [LICENCE](/site-web/LICENCE.txt) d'IGO.
 
 Voici de multiples façons de contribuer :
+
 - Rapporter des bogues ;
 - Suggérer de nouvelles fonctionnalités, nouveaux modules ou services ;
 - Traduire du contenu dans une autre langue ;
