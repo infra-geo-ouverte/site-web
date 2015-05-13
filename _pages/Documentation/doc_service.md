@@ -1,3 +1,10 @@
+---
+permalink: /documentation/doc_service/
+layout: general
+title-main: Doc_service
+iconedocumentation: ""
+---
+
 ## Pour chaque service développé, remplir brièvement ces informations :
 
 |   Type d'information  |                                       Description                                |
