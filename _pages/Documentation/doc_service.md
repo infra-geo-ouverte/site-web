@@ -1,7 +1,6 @@
 ---
 permalink: /documentation/doc_service/
 layout: general
-title-main: Doc_service
 iconedocumentation: ""
 ---
 
