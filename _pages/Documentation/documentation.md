@@ -20,5 +20,5 @@ Cet espace comprend toute la documentation et les gabarits communs du projet IGO
 
 ## Autres documents :
 * [Technologies utilisées](/site-web/documentation/techno)
-* [Architecture](/site-web/documentation/architecture)
+* Architecture
 * [Modules](/site-web/documentation/module)
