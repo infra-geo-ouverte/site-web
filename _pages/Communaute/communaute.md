@@ -104,7 +104,7 @@ Les sources de la communauté se traduisent par une participation financière et
 <a id="licence" name="licence"></a>
 ###4. Licence  [<span class="octicon octicon-link"></span>](#licence)
 
-- [Consulter la licence](/site-web/LICENCE.txt)
+- [Consulter la licence](https://github.com/infra-geo-ouverte/igo)
 
 <a id="droitauteur" name="droitauteur"></a>
 ###5. Droits d'auteur   [<span class="octicon octicon-link"></span>](#droitauteur)
