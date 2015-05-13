@@ -17,4 +17,4 @@ titre-accueil: Modèle de collaboration d'IGO
   -  Documentation ;
   -  Évaluations.
 
-Voir la [FAQ](/site-web/faq) pour plus d'information.
+Voir la [FAQ](/site-web/faq/) pour plus d'information.
