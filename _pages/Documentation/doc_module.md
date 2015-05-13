@@ -1,7 +1,7 @@
 ---
 permalink: /documentation/doc_module/
 layout: general
-title-main: Module
+title-main: ""
 iconedocumentation: ""
 ---
 
