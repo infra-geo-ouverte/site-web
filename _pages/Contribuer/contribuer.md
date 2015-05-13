@@ -34,12 +34,12 @@ Voici de multiples façons de contribuer :
 - Etc.
 
 <a id="rapporter" name="rapporter"></a>
-### Rapporter des problèmes majeurs [<span class="octicon octicon-link"></span>](#rapporter)
+## Rapporter des problèmes majeurs [<span class="octicon octicon-link"></span>](#rapporter)
 Avant de soumettre un nouveau bogue ou un problème, soyez certain qu'il n'a pas déjà été soumis ou n'est pas déjà en suivi. Si tel est le cas, veuillez contribuer à ce bogue ou problème connu en envoyant vos idées, propositions et commentaires au site de dépôt.  
 Quand vous soumettez un nouveau bogue ou problème, SVP donnez le plus de détails possible, (ex. copie d'écran du problème, code d'erreur retourné, technologie utilisée, hyperliens ou toute autre élément pertinent.  
 
 
 <a id="auteur" name="auteur"></a>
-## Droits d'auteurs sur les contributions [<span class="octicon octicon-link"></span>](#auteur)
+## Droits d'auteur sur les contributions [<span class="octicon octicon-link"></span>](#auteur)
 Ce projet constitue un travail, entre autres, du gouvernement du Québec sujet aux droits d'auteur, mais il n'est pas exclusif au gouvernement du Québec. 
 D'ailleurs, tous les contributeurs externes au gouvernement du Québec au projet IGO pourront conserver leurs droits d'auteur en acceptant de les partager selon les mêmes termes de la [LICENCE](/site-web/LICENCE.txt) d'IGO. Vous êtes encouragés d'ajouter votre nom ou le nom de votre employeur lors de contributions dans l'entête du fichier modifié.
