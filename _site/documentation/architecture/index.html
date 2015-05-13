@@ -39,7 +39,7 @@
 	<!--<![endif]-->
 	
 	
-  <link rel="canonical" href="[http://localhost]/site-web/installation/" />
+  <link rel="canonical" href="[http://localhost]/site-web/documentation/architecture/" />
   <link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="[http://localhost]/site-web/feed.xml" />
 
   
@@ -369,20 +369,99 @@
 			
 					<div class="container">
 						<div>				
-							<h2>1. Pour développeur :</h2>
+							<p>L&#39;espace public IGO sera utilisé pour partager des informations concernant le projet public sur github et jekyll (lien à ajouter).</p>
 
-<h3>Installation sous Linux-Ubuntu :</h3>
+<h2>Étapes à franchir avant de mettre IGO public :</h2>
 
-<p>Prévoir une installation simple pour développer dans le Navigateur seulement (pas de pilotage et d&#39;outil IDE).
-<a href="https://gitlab.forge.gouv.qc.ca/geomatique/igo/blob/dev/doc/installation/installation_linux.md">Procédure d&#39;installation complète Navigateur+Pilotage sous Ubuntu</a></p>
+<p>|                                           Étape                                                    | Responsabilité       | Date    | Statut    |
+|:--------------------------------------------------------------------------------------------------:|:--------------------:| -------:|-------:|
+|1. Valider que le gouvervenement détient les droits d&#39;auteurs du code reliés au GOLOC-IGO dans tous les contrats antérieurs avec les externes  | INSPQ, FADQ  | Février | |
+|2. Choisir la licence libre du Québec pour le projet IGO : LiLiQ-R faible                                              | Comité de Direction  | Février | |
+|3. Choisir la règle des droits d&#39;auteur des contribution : appartiennent aux propriétaires, pas exclusivement au gouvernement | Comité de Direction  | Février | |
+|4. Finaliser les règles de la communauté IGO | CELL  | Mars | |
+|5. Créer un courriel IGO commun : igo@msp.gouv.qc.ca | MSP  | Mars | |
+|6. Créer une liste courriel publique d&#39;IGO : igo-public@listes.securitepublique.gouv.qc.ca  | MSP  | Mars | |
+|7. Créer un compte github IGO et mettre le contenu du code source IGO-igo de Gitlab à l&#39;intérieur  | MSP  | Mars-Avril | |
+|8. Créer le contenu général du site web public d&#39;IGO (voir table des matières)  | IGO  | Mars-Avril | |
+|9. Terminer le contenu de la documentation technique d&#39;IGO (Navigateur, installation, modules, demo.xml)  | IGO  | Mars-Avril | |
+|10. Créer un site web jeykyll avec gabarit  | MSP  | Mars-Avril | |
+|11. Publier la nouvelle sur osgeo-qc, blogue du MSP et liste courriel logiciels-libres@listes.securitepublique.gouv.qc.ca  | MSP  | Avril | |</p>
 
-<h3>Installation sous Windows :</h3>
+<h2>Table des matières du futur site web :</h2>
 
-<p><a href="https://gitlab.forge.gouv.qc.ca/geomatique/igo/blob/dev/doc/installation/installation_windows.docm">Procédure d&#39;installation sous Windows</a></p>
+<ul>
+<li>Projet</li>
+<li>English</li>
+<li>Démo</li>
+<li>Installation</li>
+<li>Documentation</li>
+<li>Technologies utilisées</li>
+<li>Schéma de l&#39;architecture</li>
+<li>Licences et droits d&#39;auteurs</li>
+<li>Communauté et contacts</li>
+<li>FAQ</li>
+<li>Modules</li>
+</ul>
 
-<h2>2. Pour administrateur de système :</h2>
+<h2>Voici la liste des modules IGO :</h2>
 
-<p>Comment configurer un environnement de production.</p>
+<ol>
+<li>    Module Navigateur (incluant la description de chaque outil de navigation)</li>
+<li>    Module Pilotage
+
+<ul>
+<li>Service</li>
+</ul></li>
+<li>    Module Arborescence
+
+<ul>
+<li>      services WMS (liste)</li>
+</ul></li>
+<li>    Module Localisation
+
+<ul>
+<li>     service GLO (recherche par adresse, lieu, GPS, borne)</li>
+<li>    service rechercher par lot de la CPTAQ (recherche par cadastre rénové)</li>
+</ul></li>
+<li>    Module Requête Spatiale (incluant l’outil d’analyse spatiale)
+
+<ul>
+<li>      service « Lancer la requête »</li>
+</ul></li>
+<li>    Module Édition (incluant les outils de dessin et de sélection)
+
+<ul>
+<li>     service enregistrer des éléments géométriques</li>
+<li>     service enregistrer un regroupement</li>
+</ul></li>
+<li>    Module Impression
+
+<ul>
+<li>      service créer un fichier PDF</li>
+</ul></li>
+<li>    Module GPX</li>
+<li>    Module Fichier de forme / Shapefile</li>
+<li> Module Obtenir informations service WMS (GetInfo) (incluant l’outil d’information)
+
+<ul>
+<li>     services WMS qui permettent l’obtention d’informations (liste)</li>
+</ul></li>
+<li> Module Partager carte (incluant l’outil Partager carte)
+
+<ul>
+<li>     service Partager carte</li>
+</ul></li>
+<li> Module Ajouter service WEB (incluant l’outil Ajout WMS)
+
+<ul>
+<li>     service Ajouter WMS</li>
+</ul></li>
+<li>Module Itinéraire
+
+<ul>
+<li>Service OSRM</li>
+</ul></li>
+</ol>
                   
 						</div>
 					</div>

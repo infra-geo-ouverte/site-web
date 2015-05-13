@@ -4,6 +4,14 @@
     
     
     <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/architecture/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
         <loc>http://kboisvert.github.io/test_IGO//</loc>
     </url>
     
@@ -29,6 +37,30 @@
     
     <url>
         <loc>http://kboisvert.github.io/test_IGO//demo/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/doc_module/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/doc_panorama/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/doc_service/</loc>
     </url>
     
     
@@ -162,6 +194,14 @@
     
     
     <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/module/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
         <loc>http://kboisvert.github.io/test_IGO//</loc>
     </url>
     
@@ -184,6 +224,14 @@
     </url>
     
     
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/techno/</loc>
+    </url>
     
     
     

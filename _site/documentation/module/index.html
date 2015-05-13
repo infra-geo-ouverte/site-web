@@ -39,7 +39,7 @@
 	<!--<![endif]-->
 	
 	
-  <link rel="canonical" href="[http://localhost]/site-web/installation/" />
+  <link rel="canonical" href="[http://localhost]/site-web/documentation/module/" />
   <link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="[http://localhost]/site-web/feed.xml" />
 
   
@@ -369,20 +369,66 @@
 			
 					<div class="container">
 						<div>				
-							<h2>1. Pour développeur :</h2>
+							<h2>Voici la liste des modules IGO :</h2>
 
-<h3>Installation sous Linux-Ubuntu :</h3>
+<ol>
+<li>    Module Navigateur (incluant la description de chaque outil de navigation)</li>
+<li>    Module Pilotage
 
-<p>Prévoir une installation simple pour développer dans le Navigateur seulement (pas de pilotage et d&#39;outil IDE).
-<a href="https://gitlab.forge.gouv.qc.ca/geomatique/igo/blob/dev/doc/installation/installation_linux.md">Procédure d&#39;installation complète Navigateur+Pilotage sous Ubuntu</a></p>
+<ul>
+<li>      service</li>
+</ul></li>
+<li>    Module Arborescence
 
-<h3>Installation sous Windows :</h3>
+<ul>
+<li>      services WMS (liste)</li>
+</ul></li>
+<li>    Module Localisation
 
-<p><a href="https://gitlab.forge.gouv.qc.ca/geomatique/igo/blob/dev/doc/installation/installation_windows.docm">Procédure d&#39;installation sous Windows</a></p>
+<ul>
+<li>      service GLO (recherche par adresse, lieu, GPS, borne)</li>
+<li>    service rechercher par lot de la CPTAQ (recherche par cadastre rénové)</li>
+</ul></li>
+<li>    Module Requête Spatiale (incluant l’outil d’analyse spatiale)
 
-<h2>2. Pour administrateur de système :</h2>
+<ul>
+<li>      service « Lancer la requête »</li>
+</ul></li>
+<li>    Module Édition (incluant les outils de dessin et de sélection)
 
-<p>Comment configurer un environnement de production.</p>
+<ul>
+<li>      service enregistrer des éléments géométriques</li>
+<li>      service enregistrer un regroupement</li>
+</ul></li>
+<li>    Module Impression
+
+<ul>
+<li>      service créer un fichier PDF</li>
+</ul></li>
+<li>    <a href="module_exporter_gpx.md">Module Exporter GPX</a></li>
+<li>    <a href="module_exporter_fichier_forme.md">Module Exporter Fichier de formes / Shapefile</a></li>
+<li>   <a href="module_importer_fichier_geometrique.md">Module Importer fichier géométrique</a></li>
+<li>   Module Obtenir informations service WMS (GetInfo) (incluant l’outil d’information)
+
+<ul>
+<li>      services WMS qui permettent l’obtention d’informations (liste)</li>
+</ul></li>
+<li>   Module Partager carte (incluant l’outil Partager carte)
+
+<ul>
+<li>      service Partager carte</li>
+</ul></li>
+<li>   Module Ajouter service WEB (incluant l’outil Ajout WMS)
+
+<ul>
+<li>      service Ajouter WMS</li>
+</ul></li>
+<li>   Module Itinéraire
+
+<ul>
+<li>      service OSRM</li>
+</ul></li>
+</ol>
                   
 						</div>
 					</div>

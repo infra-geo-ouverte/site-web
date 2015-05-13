@@ -39,7 +39,7 @@
 	<!--<![endif]-->
 	
 	
-  <link rel="canonical" href="[http://localhost]/site-web/installation/" />
+  <link rel="canonical" href="[http://localhost]/site-web/documentation/doc_service/" />
   <link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="[http://localhost]/site-web/feed.xml" />
 
   
@@ -369,20 +369,19 @@
 			
 					<div class="container">
 						<div>				
-							<h2>1. Pour développeur :</h2>
+							<h2>Pour chaque service développé, remplir brièvement ces informations :</h2>
 
-<h3>Installation sous Linux-Ubuntu :</h3>
-
-<p>Prévoir une installation simple pour développer dans le Navigateur seulement (pas de pilotage et d&#39;outil IDE).
-<a href="https://gitlab.forge.gouv.qc.ca/geomatique/igo/blob/dev/doc/installation/installation_linux.md">Procédure d&#39;installation complète Navigateur+Pilotage sous Ubuntu</a></p>
-
-<h3>Installation sous Windows :</h3>
-
-<p><a href="https://gitlab.forge.gouv.qc.ca/geomatique/igo/blob/dev/doc/installation/installation_windows.docm">Procédure d&#39;installation sous Windows</a></p>
-
-<h2>2. Pour administrateur de système :</h2>
-
-<p>Comment configurer un environnement de production.</p>
+<p>|   Type d&#39;information  |                                       Description                                |
+|:-------------------------------------------------------------------------------------------------------:|:---------------:|
+|1. Alias  |  Inscrire le nom physique du service.  Exemple : ObtenirDossierActif |
+|2. Conditions d’utilisation    |  * Expliquer les conditions d’utilisation s’il y a lieu. * Exemples : Ce service est accessible aux utilisateurs xxxxx seulement. * Ce service est accessible au système xxxxxx seulement. Ce service est accessible par tous les systèmes, etc.  |
+|3. Raison d&#39;être  |  Raison d&#39;être du service du noyau et brève description de son comportement du point de vue utilisateur. |
+|4. Raison d&#39;être  |  Information servant de paramètres pour l&#39;obtention du service du noyau, règles de validation de ces paramètres et autres conditions relatives aux composantes du noyau utilisateur participant au service du noyau. |
+|5. Postconditions |  Information produite par le service du noyau, modifications des composantes du noyau utilisateur participant au service du noyau, conditions d&#39;erreurs possibles et façon dont elles sont indiquées, disponibilité des résultats : asynchrones ou synchrones. |
+|6. Règles d’intégrité |  Règles d&#39;intégrité qui s&#39;appliquent au service du noyau, particulièrement lorsque le service dépend d&#39;autres services, ou si la contrainte d&#39;intégrité dépend des comportements réunis de plusieurs services. S’applique habituellement aux mises à jour de données. |
+|7. Dynamique du service |  Description utilisateur du processus produisant le service. Indiquer, lorsque pertinent les algorithmes et les règles de calcul ainsi que les validations. Exemple : Le numéro de client est obligatoire (12S). |
+|8. Perspective locale | Présentation de la façon dont d’autres composantes collaborent (par l’intermédiaire de leurs services) à l’exécution de ce service du noyau sous forme de liste. |
+|9. Liste des services et composantes | Liste des services d’autres composantes du noyau ou de composantes d’interface utilisateur déclenchés par ce service. |</p>
                   
 						</div>
 					</div>

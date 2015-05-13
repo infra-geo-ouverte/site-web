@@ -195,6 +195,9 @@ pre {
    * Lists
   *****************************/
   .container ul li {
+    margin-left: 30px; }
+
+  .container ol li {
     margin-left: 30px; } }
 /*Icone liens pour les sections de pages*/
 .page-content a .octicon {
