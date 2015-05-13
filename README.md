@@ -1,12 +1,12 @@
-Dépôt de code source du site web d'IGO disponible à : http://igo 
+Dépôt de code source du site web d'IGO disponible à : http://www.igouverte.org 
 ***
-Source code of the web site of IGO available at: http://igo
+Source code of the web site of IGO available at: http://www.igouverte.org/english/
 
 # VERSION BÊTA
 
 # Infrastructure Géomatique Ouverte (IGO) / Open GIS Infrastructure
 ### Qu'est-ce qu'IGO ?
-Le projet IGO (Infrastructure Géomatique Ouverte) est une communauté de pratique qui regroupe des spécialistes en géomatique issues de plusieurs organismes et ministères du gouvernement du Québec. IGO a vu le jour en 2014 et il se concrétise par des avancées et des valeurs ajoutées remarquables, au plus grand bénéfice de ses utilisateurs, principalement des partenaires du gouvernement. 
+Le projet IGO (Infrastructure Géomatique Ouverte) est une communauté de pratiques qui regroupe des spécialistes en géomatique issus de plusieurs organismes et ministères du gouvernement du Québec. IGO a vu le jour en 2014 et il se concrétise par des avancées et des valeurs ajoutées remarquables, au plus grand bénéfice de ses utilisateurs, principalement des partenaires du gouvernement. 
 Ce projet constitue un travail, entre autres, du gouvernement du Québec sujet aux droits d'auteurs, mais il n'est pas exclusif au gouvernement du Québec. 
 D'ailleurs, tous les contributeurs externes au gouvernement du Québec au projet IGO pourront conserver leurs droits d'auteurs en acceptant de les partager selon les mêmes termes de la LICENCE d'IGO. 
 ***
