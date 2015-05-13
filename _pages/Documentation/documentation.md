@@ -14,11 +14,11 @@ Cet espace comprend toute la documentation et les gabarits communs du projet IGO
 ## Informations pour les développeurs et intégrateurs :
 [Documentation XML](https://gitlab.forge.gouv.qc.ca/geomatique/igo/blob/dev/doc/xml/DocumentationXML.markdown)
 ### Gabarit pour documenter un module, un service ou un panorama :
-* [Gabarit pour documenter un module](doc_module.md)
-* [Gabarit pour documenter un service](doc_service.md)
-* [Gabarit pour documenter un panorama](doc_panorama.md)
+* [Gabarit pour documenter un module](/site-web/doc_module)
+* [Gabarit pour documenter un service](/site-web/doc_service)
+* [Gabarit pour documenter un panorama](/site-web/doc_panorama)
 
 ## Autres documents :
-* [Technologies utilisées](techno.md)
-* [Architecture](architecture.md)
-* [Modules](module.md)
+* [Technologies utilisées](/site-web/techno)
+* [Architecture](/site-web/architecture)
+* [Modules](/site-web/module)
