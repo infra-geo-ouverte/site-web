@@ -1,3 +1,9 @@
+---
+permalink: /documentation/techno/
+layout: general
+iconedocumentation: ""
+---
+
 ## Technologies utilisées
 
 ### Voici la liste des logiciels utilisées et librairies supportant IGO : 
