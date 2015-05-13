@@ -1,3 +1,10 @@
+---
+permalink: /documentation/architecture/
+layout: general
+title-main: Architecture
+iconedocumentation: ""
+---
+
 L'espace public IGO sera utilisé pour partager des informations concernant le projet public sur github et jekyll (lien à ajouter).
 
 ## Étapes à franchir avant de mettre IGO public :
