@@ -1,3 +1,9 @@
+---
+permalink: /documentation/module/
+layout: general
+iconedocumentation: ""
+---
+
 ## Voici la liste des modules IGO : 
 1.     Module Navigateur (incluant la description de chaque outil de navigation)
 2.     Module Pilotage
