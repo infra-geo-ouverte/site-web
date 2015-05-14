@@ -4,10 +4,6 @@ layout: general
 iconedocumentation: ""
 ---
 
-require 'redcarpet'
-markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :tables => true)
-
-text = <<END
 
 ## Pour chaque module développé, remplir brièvement ces informations :
 
@@ -19,6 +15,4 @@ text = <<END
 |       4. Postconditions                 | Postconditions et résultats. Par exemple, changements d'apparence de la composante résultant d'une activité de l'utilisateur et sa signification pour l'utilisateur, liste des valeurs par défaut)  |
 |       5. Conditions d’utilisation       | Utilisation recommandées et à exclure  (Par exemple: Cette tâche est réservée aux utilisateurs à l’interne seulement) Circonstances d'utilisation et configurations utilisateur d'infrastructure visées  Personnalisation des paramètres disponibles Ne pas répéter ce qui est déjà défini dans un autre document (tel que les règles utilisateur, les règles réalisateur ou autre)  |
 
-END
 
-puts markdown.render(text)
