@@ -51,7 +51,6 @@ Le comité technique est composé de développeurs experts, de super-utilisateur
 - Étudier les demandes de changement et coordonner leurs réalisations par les contributeurs ;
 - Gérer les droits d'accès au code ;
 - Désigner les validateurs de code et les moyens techniques requis pour les projets de développement ;
-- Établir l'entente de contribution destinée aux développeurs  ;
 - S'assurer d'une production adéquate de documentation et d'une architecture commune ;
 - Rédiger les conventions et règles de codage;
 - Établir un mécanisme de gestion des versions en lien avec la communauté d'utilisateurs ;
