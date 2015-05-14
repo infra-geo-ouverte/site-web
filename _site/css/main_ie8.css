@@ -66,6 +66,7 @@ a {
 Tableaux
 *****************************/
 td, th {
+  color: red !important;
   text-align: left !important;
   width: 300px !important;
   border: solid !important;
