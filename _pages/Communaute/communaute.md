@@ -239,8 +239,7 @@ Un membre du CT qui se trouve dans l'impossibilité d'assister à une réunion, 
 ###8. Candidatures aux CT 
 Tout contributeur technique actif ou super-utilisateur peut soumettre sa candidature pour devenir membre du CT.
 
-###9. 
-###9.1. Amendement
+###9. Amendement
 L'amendement de cette présente charte du CT est proposé dans une motion spéciale, qui, pour être acceptée, elle doit être approuvé selon les principes et les mécanismes de prise des décisions de la communauté.
 
 <a id="annexe2" name="annexe2"></a>
