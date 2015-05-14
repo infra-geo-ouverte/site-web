@@ -7,7 +7,7 @@ iconedocumentation: ""
 
 ## Pour chaque module développé, remplir brièvement ces informations :
 
-|   Type d'information2      |                                       Description                      |
+|   Type d'information      |                                       Description                      |
 |:-------------------------------------------------------------------------------------------------------:|:---------------:| 
 |       1. Raison d’être                  | But de l’étape de tâche (ou de l’unité de tâche).  Inscrire la raison d’être définie dans le document d’architecture. | 
 |       2. Automatisation                 | Le mode d'automatisation peut être interactif ou automatisé.  |
