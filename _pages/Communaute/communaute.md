@@ -69,7 +69,7 @@ Le coordonnateur du comité technique est  nommé par les membres du comité tec
 #### 2.2. Contributeurs
 Nous entendons ici par contributeur, toute personne du domaine métier ou technique qui participe aux activités de la communauté. Les contributeurs incluent les :
 
-- Développeurs : ce sont en  général des programmeurs qui participent à la programmation du code du logiciel. **Un validateur de code est un profil particulier de développeur**. Les développeurs sont tenus de  respecter les conventions, l'architecture commune et règles de codage et l'entente de contribution. 
+- Développeurs : ce sont en  général des programmeurs qui participent à la programmation du code du logiciel. **Un validateur de code est un profil particulier de développeur**. Les développeurs sont tenus de  respecter les conventions, l'architecture commune et règles de codage. 
 - Super-utilisateurs et utilisateurs : ce sont les utilisateurs de la solution (simples utilisateurs, pilotes, testeurs, etc.) ;
 - Architectes et intégrateurs ;
 - Toutes autres type de contribution.
@@ -79,8 +79,7 @@ Nous entendons ici par contributeur, toute personne du domaine métier ou techni
 Ce sont des programmeurs expérimentés et habilités à valider le travail des autres programmeurs. Ils approuvent et intègrent le code soumis au projet, puis s'assure d'une documentation minimale au besoin. Les validateurs de code sont désignés par le comité technique. Un validateur de code doit être expert et s’engage à travailler pour garantir une meilleure stabilité du projet. Au moins un validateur de code doit faire partie du comité technique avec droit de vote [(Voir section mécanisme de prise des décisions)](#principes).
 
 ##### Exigences
-- Être un programmeur expérimenté avec une excellente connaissance du logiciel ;
-- S'engager à respecter l'entente de contributions, telle que rédigée par le comité technique.
+- Être un programmeur expérimenté avec une excellente connaissance du logiciel.
 
 ##### Statut
 - Le comité technique vote et approuve l'élection des validateurs de code ;
