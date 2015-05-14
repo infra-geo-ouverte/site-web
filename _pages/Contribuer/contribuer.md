@@ -38,7 +38,7 @@ Voici de multiples façons de contribuer :
 <a id="rapporter" name="rapporter"></a>
 ## Rapporter des problèmes majeurs [<span class="octicon octicon-link"></span>](#rapporter)
 Avant de soumettre un nouveau bogue ou un problème, soyez certain qu'il n'a pas déjà été soumis ou n'est pas déjà en suivi. Si tel est le cas, veuillez contribuer à ce bogue ou problème connu en envoyant vos idées, propositions et commentaires au site de dépôt.  
-Quand vous soumettez un nouveau bogue ou problème, SVP donnez le plus de détails possible, (ex. copie d'écran du problème, code d'erreur retourné, technologie utilisée, hyperliens ou toute autre élément pertinent.  
+Quand vous soumettez un nouveau bogue ou problème, SVP donnez le plus de détails possible (ex. copie d'écran du problème, code d'erreur retourné, technologie utilisée, hyperliens ou toute autre élément pertinent).  
 
 
 <a id="auteur" name="auteur"></a>
