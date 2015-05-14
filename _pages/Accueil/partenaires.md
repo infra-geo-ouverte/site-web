@@ -13,4 +13,4 @@ Voici les partenaires actuels du projet :
 - Institut national de la santé publique du Québec (INSPQ) ;
 - Financière agricole du Québec (FADQ) ;
 - Commission de la protection du territoire agricole du Québec (CPTAQ) ;
-- Centre d'Expertise en Logiciel Libre du Québec (CELL).
+- Centre d'expertise en logiciels libres du Québec (CELL).
