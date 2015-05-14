@@ -68,8 +68,11 @@ Tableaux
 td, th {
   text-align: left !important; }
 
-td:first-child, th:first-child {
-  width: 200px !important; }
+tr td:first-child {
+  width: 300px !important; }
+
+tr th:first-child {
+  width: 300px !important; }
 
 /****************************
  * Lists
