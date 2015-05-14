@@ -69,7 +69,6 @@ Le coordonnateur du comité technique est  nommé par les membres du comité tec
 
 #### 2.2. Contributeurs
 Nous entendons ici par contributeur, toute personne du domaine métier ou technique qui participe aux activités de la communauté. Les contributeurs incluent les :
-
 - Développeurs : ce sont en  général des programmeurs qui participent à la programmation du code du logiciel. **Un validateur de code est un profil particulier de développeur**. Les développeurs sont tenus de  respecter les conventions, l'architecture commune et règles de codage et l'entente de contribution. 
 - Super-utilisateurs et utilisateurs : ce sont les utilisateurs de la solution (simples utilisateurs, pilotes, testeurs, etc.) ;
 - Architectes et intégrateurs ;
@@ -83,18 +82,17 @@ Ce sont des programmeurs expérimentés et habilités à valider le travail des 
 - Être un programmeur expérimenté avec une excellente connaissance du logiciel ;
 - S'engager à respecter l'entente de contributions, telle que rédigée par le comité technique.
 
-#####Statut
+##### Statut
 - Le comité technique vote et approuve l'élection des validateurs de code ;
 - Le statut du validateur de code peut être révoqué à tout moment par le comité technique et, par conséquent, perdre les privilèges qui lui sont conférés. 
 
-Privilèges
+##### Privilèges
 - Permission de contribuer au dépôt du code source directement dans le tronc commun du logiciel sans modération préalable.
 
-#####Responsabilités
+##### Responsabilités
 - S'assurer de l'intégrité des contributions (provenance, propriété intellectuelle, brevets, licence, etc.) ;
 - Respecter les règles de codage ;
-- S'assure d'une documentation adéquate des changements effectués ;
-- Signer et respecter l'entente de contribution.
+- S'assure d'une documentation adéquate des changements effectués.
 
 <a id="financement" name="financement"></a>
 ###3. Sources de financement  [<span class="octicon octicon-link"></span>](#financement)
@@ -109,7 +107,7 @@ Les sources de la communauté se traduisent par une participation financière et
 <a id="droitauteur" name="droitauteur"></a>
 ###5. Droits d'auteur   [<span class="octicon octicon-link"></span>](#droitauteur)
 
-À la lumière des définitions données dans la termes de la licence :
+À la lumière des définitions données dans les termes de la licence :
 
 « concédant » : le titulaire du droit d'auteur sur le logiciel, ou toute personne dûment autorisée par ce dernier à accorder la présente licence;
 
@@ -178,7 +176,7 @@ La convention de codage est un document interne rédigé par le comité techniqu
 Dépôts du code source : [https://github.com/infra-geo-ouverte/igo](https://github.com/infra-geo-ouverte/igo)
  et [https://github.com/infra-geo-ouverte/puppet-igo](https://github.com/infra-geo-ouverte/puppet-igo)
 
-Outils de communication : si vous avez d'autres questions, n'hésitez pas à écrier à IGO à ce courriel : <igo(a)msp.gouv.qc.ca> ou à la liste courriel [http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique).
+Outils de communication : si vous avez d'autres questions, n'hésitez pas à écrier à IGO à ce courriel : <info(a)igouverte.org> ou à la liste courriel [http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique).
 
 <a id="amendement" name="amendement"></a>
 ###10. Amendement de ce présent acte constitutif [<span class="octicon octicon-link"></span>](#amendement)
@@ -194,12 +192,11 @@ Le comité technique («CT») est chargé d'assurer le leadership technique pour
 
 ###2. Responsabilités du CT
 - Rédiger la charte du comité technique et s'assurer de son respect par les membres de ce comité;
-- Tenir un calendrier d'évolution et le transmettre au comité d'administration pour information ;
+- Tenir un calendrier d'évolution pour information ;
 - Identifier, collecter et consolider les besoins des utilisateurs;
 - Étudier les demandes de changement et coordonner leurs réalisations par les contributeurs ;
 - Gérer les droits d'accès au code ;
 - Désigner les validateurs de code et les moyens techniques requis pour les projets de développement ;;
-- Établir l'entente de contribution destinée aux développeurs ;
 - S'assurer d'une production adéquate de documentation et d'une architecture commune ;
 - Rédiger les conventions et règles de codage;
 - Établir un mécanisme de gestion des versions en lien avec la communauté d'utilisateurs ;
