@@ -25,6 +25,9 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+#sidebar-wrapper .sidebar-brand li{
+	list-style-type: none;
+}
 
 #wrapper .navbar-inverse{
 	border: none;
