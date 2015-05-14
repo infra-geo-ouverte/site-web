@@ -63,6 +63,12 @@ a {
     text-decoration: underline; }
 
 /****************************
+Tableaux
+*****************************/
+td, th {
+  text-align: left !important; }
+
+/****************************
  * Lists
 *****************************/
 .container ul li {
