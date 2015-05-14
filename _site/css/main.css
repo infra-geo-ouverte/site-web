@@ -713,7 +713,7 @@ css de l'accueil incluant la banniere
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-#sidebar-wrapper .sidebar-brand li {
+#sidebar-wrapper .sidebar-brand {
   list-style-type: none; }
 
 #wrapper .navbar-inverse {
