@@ -68,6 +68,7 @@ Le coordonnateur du comité technique est  nommé par les membres du comité tec
 
 #### 2.2. Contributeurs
 Nous entendons ici par contributeur, toute personne du domaine métier ou technique qui participe aux activités de la communauté. Les contributeurs incluent les :
+
 - Développeurs : ce sont en  général des programmeurs qui participent à la programmation du code du logiciel. **Un validateur de code est un profil particulier de développeur**. Les développeurs sont tenus de  respecter les conventions, l'architecture commune et règles de codage et l'entente de contribution. 
 - Super-utilisateurs et utilisateurs : ce sont les utilisateurs de la solution (simples utilisateurs, pilotes, testeurs, etc.) ;
 - Architectes et intégrateurs ;
