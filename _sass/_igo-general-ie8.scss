@@ -66,13 +66,11 @@ Tableaux
 *****************************/
 
 td, th{
-	color: red!important;
-	text-align: left!important;
-	
-	width: 300px!important;
+	text-align: left!important;	
 	border: solid!important;
 	border-color: lavender!important;
 	border-width: 1px!important;
+	padding: 10px;
 } 
 tr td:first-child{
 	width: 300px!important;

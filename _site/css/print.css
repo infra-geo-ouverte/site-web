@@ -74,7 +74,8 @@ td, th {
   text-align: left !important;
   border: solid !important;
   border-color: lavender !important;
-  border-width: 1px !important; }
+  border-width: 1px !important;
+  padding: 10px; }
 
 tr td:first-child {
   width: 300px !important; }
