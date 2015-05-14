@@ -7,6 +7,7 @@ iconedemo: ""
 
 Voici le lien de démonstration pour voir le navigateur en action : [http://pregeoegl.msp.gouv.qc.ca/gouvouvert/](http://pregeoegl.msp.gouv.qc.ca/gouvouvert/)  et avec un exemple d'XML pour une configuration de base :
 
+{% highlight ruby linenos %}
 <navigateur authentification="false" 
             titre="I.G.O. - Données ouvertes - Gouvernement du Québec"
             baseUri="/gouvouvert/public/" 
@@ -92,5 +93,5 @@ Voici le lien de démonstration pour voir le navigateur en action : [http://preg
     </couches>
 
 </navigateur>
-
+{% endhighlight %}
  
