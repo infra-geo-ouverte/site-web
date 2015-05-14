@@ -69,10 +69,10 @@ td, th {
   text-align: left !important; }
 
 td:first-child, th:first-child {
-  width: 30%; }
+  width: 30% !important; }
 
 td:not:first-child, th:not:first-child {
-  width: 60%; }
+  width: 60% !important; }
 
 /****************************
  * Lists
