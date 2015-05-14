@@ -66,7 +66,8 @@ a {
 Tableaux
 *****************************/
 td, th {
-  text-align: left !important; }
+  text-align: left !important;
+  width: 300px; }
 
 tr td:first-child {
   width: 300px !important; }
