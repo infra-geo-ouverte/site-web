@@ -175,7 +175,7 @@ La convention de codage est un document interne rédigé par le comité techniqu
 Dépôts du code source : [https://github.com/infra-geo-ouverte/igo](https://github.com/infra-geo-ouverte/igo)
  et [https://github.com/infra-geo-ouverte/puppet-igo](https://github.com/infra-geo-ouverte/puppet-igo)
 
-Outils de communication : si vous avez d'autres questions, n'hésitez pas à écrier à IGO à ce courriel : <info(a)igouverte.org> ou à la liste courriel [http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique).
+Outils de communication : si vous avez d'autres questions, n'hésitez pas à écrier à IGO à ce courriel : info(a)igouverte.org ou à la liste courriel [http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique).
 
 <a id="amendement" name="amendement"></a>
 ###10. Amendement de ce présent acte constitutif [<span class="octicon octicon-link"></span>](#amendement)
