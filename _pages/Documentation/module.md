@@ -6,18 +6,18 @@ iconedocumentation: ""
 
 ## Voici la liste des modules IGO : 
 1.     Module Navigateur (incluant la description de chaque outil de navigation)
-2.     Module Pilotage
-  *       service
+2.     Module Pilotage / Interface d'administration
+  *       service en développement
 3.     Module Arborescence
-  *       services WMS (liste)
-4.     Module Localisation
+  *       services WMS (liste des couches)
+4.     Module Localisation (propre au gouvernement du Québec)
   *       service GLO (recherche par adresse, lieu, GPS, borne)
-  *     service rechercher par lot de la CPTAQ (recherche par cadastre rénové)
+  *       service rechercher par lot (recherche par cadastre rénové)
 5.     Module Requête Spatiale (incluant l’outil d’analyse spatiale)
-  *       service « Lancer la requête »
+  *       service « Lancer la requête »  en développement
 6.     Module Édition (incluant les outils de dessin et de sélection)
-  *       service enregistrer des éléments géométriques
-  *       service enregistrer un regroupement
+  *       service enregistrer des éléments géométriques en développement
+  *       service enregistrer un regroupement en développement
 7.     Module Impression
   *       service créer un fichier PDF
 8.     [Module Exporter GPX](module_exporter_gpx.md)
@@ -30,4 +30,4 @@ iconedocumentation: ""
 13.    Module Ajouter service WEB (incluant l’outil Ajout WMS)
   *       service Ajouter WMS
 14.    Module Itinéraire
-  *       service OSRM
+  *       service OSRM en développement
