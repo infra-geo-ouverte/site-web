@@ -9,6 +9,7 @@ Cet espace comprend toute la documentation et les gabarits communs du projet IGO
 
 
 ### Guide pour les utilisateurs d'IGO-Navigateur :
+[Guide du navigateur IGO ](https://github.com/infra-geo-ouverte/igo/blob/master/doc/xml/DocumentationXML.markdown)
 Guide du navigateur IGO
 
 ### Informations pour les développeurs et intégrateurs :
