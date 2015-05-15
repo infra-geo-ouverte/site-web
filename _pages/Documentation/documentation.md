@@ -9,10 +9,12 @@ Cet espace comprend toute la documentation et les gabarits communs du projet IGO
 
 
 ### Guide pour les utilisateurs d'IGO-Navigateur :
-[Guide du navigateur IGO et de ses balises XML](https://github.com/infra-geo-ouverte/igo/blob/master/doc/xml/DocumentationXML.markdown)
+[Guide d'utilisation du navigateur IGO](https://github.com/infra-geo-ouverte/igo/blob/master/doc/guide/IGO_Navigateur_guide.docx)
 
 ### Informations pour les développeurs et intégrateurs :
-Documentation XML
+[Documentation des balises XML d'IGO-Navigateur](https://github.com/infra-geo-ouverte/igo/blob/master/doc/xml/DocumentationXML.markdown)
+
+
 ### Gabarit pour documenter un module, un service ou un panorama :
 * [Gabarit pour documenter un module](/site-web/documentation/doc_module)
 * [Gabarit pour documenter un service](/site-web/documentation/doc_service)
