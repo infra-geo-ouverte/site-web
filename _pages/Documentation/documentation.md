@@ -8,7 +8,8 @@ iconedocumentation: ""
 Cet espace comprend toute la documentation et les gabarits communs du projet IGO.
 
 
-### Guide pour les utilisateurs d'IGO-Navigateur 
+### Guide pour les utilisateurs d'IGO-Navigateur :
+Guide du navigateur IGO
 
 ### Informations pour les développeurs et intégrateurs :
 Documentation XML
