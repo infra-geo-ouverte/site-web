@@ -13,12 +13,16 @@
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 	<!-- Reseaux sociaux-->
-	<!-- Goodle +-->
+	<!-- Google +-->
+	
+	<!-- Mettez la balise html à jour pour inclure les attributs itemscope et itemtype. -->
+<html itemscope itemtype="http://schema.org/Other">
 
-	<!-- Ajoutez les trois balises suivantes dans l'en-tête. G+ -->
-	<meta itemprop="name" content="IGO Infrastructure de données ouvertes">
-	<meta itemprop="description" content="Description a venir">
-	<meta itemprop="image" content="https://github.com/infra-geo-ouverte/site-web/tree/gh-pages/assets/img/share_google.jpg">
+<!-- Ajoutez les trois balises suivantes dans l'en-tête. -->
+<meta itemprop="name" content="igo">
+<meta itemprop="description" content="a venir">
+<meta itemprop="image" content="https://github.com/infra-geo-ouverte/site-web/blob/gh-pages/assets/img/share_google.jpg">
+
 
 	<!-- Mettre une icone au site: icon in the highest resolution we need it for -->
 	<link rel="icon" sizes="228x228" href="{{ '/assets/img/igo_icone.png' | prepend: site.baseurl }}">
