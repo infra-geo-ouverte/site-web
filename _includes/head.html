@@ -13,16 +13,13 @@
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 	<!-- Reseaux sociaux-->
-	<!-- Google +-->
-	
-	<!-- Mettez la balise html à jour pour inclure les attributs itemscope et itemtype. -->
-<html itemscope itemtype="http://schema.org/Other">
+<script type="text/javascript" src="http://panzi.github.io/SocialSharePrivacy/javascripts/jquery.cookies.js"></script>
+<script type="application/x-social-share-privacy-settings">{"path_prefix":"http://panzi.github.io/SocialSharePrivacy/","layout":"box","services":{"buffer":{"status":false},"delicious":{"status":false},"disqus":{"status":false},"facebook":{"status":false},"flattr":{"status":false},"hackernews":{"status":false},"mail":{"status":false},"pinterest":{"status":false},"reddit":{"status":false},"stumbleupon":{"status":false},"tumblr":{"status":false},"xing":{"status":false}}}</script>
 
-<!-- Ajoutez les trois balises suivantes dans l'en-tête. -->
-<meta itemprop="name" content="igo">
-<meta itemprop="description" content="a venir">
-<meta itemprop="image" content="https://github.com/infra-geo-ouverte/site-web/blob/gh-pages/assets/img/share_google.jpg">
-
+	<!-- Ajoutez les trois balises suivantes dans l'en-tête. G+ -->
+	<meta itemprop="name" content="IGO Infrastructure de données ouvertes">
+	<meta itemprop="description" content="Description a venir">
+	<meta itemprop="image" content="https://github.com/infra-geo-ouverte/site-web/tree/gh-pages/assets/img/share_google.jpg">
 
 	<!-- Mettre une icone au site: icon in the highest resolution we need it for -->
 	<link rel="icon" sizes="228x228" href="{{ '/assets/img/igo_icone.png' | prepend: site.baseurl }}">
