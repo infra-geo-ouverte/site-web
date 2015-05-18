@@ -13,13 +13,20 @@
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 	<!-- Reseaux sociaux-->
-<script type="text/javascript" src="http://panzi.github.io/SocialSharePrivacy/javascripts/jquery.cookies.js"></script>
-<script type="application/x-social-share-privacy-settings">{"path_prefix":"http://panzi.github.io/SocialSharePrivacy/","layout":"box","services":{"buffer":{"status":false},"delicious":{"status":false},"disqus":{"status":false},"facebook":{"status":false},"flattr":{"status":false},"hackernews":{"status":false},"mail":{"status":false},"pinterest":{"status":false},"reddit":{"status":false},"stumbleupon":{"status":false},"tumblr":{"status":false},"xing":{"status":false}}}</script>
 
-	<!-- Ajoutez les trois balises suivantes dans l'en-tête. G+ -->
-	<meta itemprop="name" content="IGO Infrastructure de données ouvertes">
-	<meta itemprop="description" content="Description a venir">
-	<meta itemprop="image" content="https://github.com/infra-geo-ouverte/site-web/tree/gh-pages/assets/img/share_google.jpg">
+<meta property="og:type"        content="website" />
+<meta property="og:title"       content="Le titre incitant au partage" />
+<meta property="og:description" content="La description de la page de destination (peut-être beaucoup plus long que la balise meta description classique)" />
+<meta property="og:url"         content="http://infra-geo-ouverte.github.io/site-web/" />
+<meta property="og:site_name"   content="Le nom du site" />
+<meta property="og:image"       content="assets/img/share_google.jpg" />
+
+
+<meta name="twitter:card"       content="summary_large_image"/>
+<meta name="twitter:domain"     content="Nom du site"/>
+<meta name="twitter:creator"    content="@pseudo-auteur"/>
+<meta name="twitter:site"       content="@pseudo-site"/>
+<meta name="twitter:image:src"  content="http://l-url-de-l-image.png"/>
 
 	<!-- Mettre une icone au site: icon in the highest resolution we need it for -->
 	<link rel="icon" sizes="228x228" href="{{ '/assets/img/igo_icone.png' | prepend: site.baseurl }}">
