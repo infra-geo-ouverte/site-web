@@ -46,11 +46,17 @@
 						{% if page.title-top%} 
 						<li>
 							<a class="page-link"  
-								href="{{ page.url | prepend: site.baseurl }}" role="button" aria-expanded="false">{{ page.title-top }} 
+								href="{{ page.url | prepend: site.baseurl }}" role="button" aria-expanded="false">
+								{% if page.title-top contains 'English'%} 
+									Français
+								{% else %}
+									{{ page.title-top }} 
+								{% endif %}
 							</a>
 						</li>
 						{% endif %}
 					{% endfor %}
+
 				</ul>				
 			</div>	
 			<!-- menu principal -->
