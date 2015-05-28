@@ -6,6 +6,6 @@ faqsection:
 titre-faq: 
 ---
 
-## Projet IGO
+## FAQ
 
 
