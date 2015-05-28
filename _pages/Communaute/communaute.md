@@ -4,7 +4,7 @@ layout: general
 title-main: Communauté
 iconecommunaute: ""
 submenu:
-  - { hook: "mission",       title: "1. Mission de la communauté IGO" }
+  - { hook: "mission", title: "1. Mission de la communauté IGO" }
   - { hook: "structure", title: "2. Structure de la communauté IGO" }
   - { hook: "financement", title: "3. Sources de financement" }
   - { hook: "licence", title: "4. Licence" }
@@ -93,7 +93,7 @@ Ce sont des programmeurs expérimentés et habilités à valider le travail des 
 - Respecter les règles de codage ;
 - S'assure d'une documentation adéquate des changements effectués.
 
-<a id="financement" name="financement"></a>
+<a id="financement"></a>
 ###3. Sources de financement  [<span class="octicon octicon-link"></span>](#financement)
  
 Les sources de la communauté se traduisent par une participation financière et/ou matérielle et/ou humaine.
