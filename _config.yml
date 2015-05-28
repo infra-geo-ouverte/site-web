@@ -16,7 +16,7 @@ description: > # this means to ignore newlines until "baseurl:"
 #baseurl pour site sur github: "/nomduprojet"  pour un site avec un cname mettre juste "/"
 baseurl: "/site-web"
 # url pour local : [http://localhost]
-url: "[http://localhost]"
+# url: "[http://localhost]"
 
 encoding: utf-8
 
