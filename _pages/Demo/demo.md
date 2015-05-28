@@ -7,7 +7,7 @@ iconedemo: ""
 
 ##Démonstration
 
-Voici le lien de démonstration pour voir le navigateur en action : [http://pregeoegl.msp.gouv.qc.ca/gouvouvert/](http://pregeoegl.msp.gouv.qc.ca/gouvouvert/)  et avec un exemple d'XML pour une configuration de base :
+Voici le lien de démonstration pour voir le navigateur en action : [http://geoegl.msp.gouv.qc.ca/gouvouvert/](http://geoegl.msp.gouv.qc.ca/gouvouvert/)  et avec un exemple d'XML pour une configuration de base :
 
 {% highlight xml linenos %}
 <navigateur authentification="false" 
