@@ -47,10 +47,11 @@
 						<li>
 							<a class="page-link"  
 								href="{{ page.url | prepend: site.baseurl }}" role="button" aria-expanded="false">
-								{% if page.title-top contains 'English' %} 
-								
+								{% if page.title-top contains 'english' %} 
+								<a class="page-link"  
+								href="{{ page.url | prepend: site.baseurl }}" role="button" aria-expanded="false">
 										Français
-								
+								</a>
 								{% else %}
 									{{ page.title-top }} 
 								{% endif %}
