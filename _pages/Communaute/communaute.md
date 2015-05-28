@@ -214,7 +214,7 @@ Le comité technique actuel a pour mandat d'assurer le leadership technique de l
 - Olivier Bégin (MTQ)
 - Michel Champagne (MTQ)
 - Simon Tremblay (CELL)
-- Annie Morel (MCC)
+- Anne Morel (MCC)
 
 ###4. Coordonnateur du CT
 Après chaque élection, le CT propose un de ses membres pour agir à titre de coordonnateur du CT sous une présidence tournante. En cas de plusieurs candidats, le choix du candidat se fait selon le mécanisme de vote de la communauté IGO. Les responsabilités du  coordonnateur du CT sont :
