@@ -10,7 +10,7 @@ submenu:
 ---
 
 
-## Contribuer 
+# Contribuer 
 Nous sommes bien heureux que vous pensiez contribuer à IGO !
 Avant de le faire, nous vous encourageons à lire le guide de contribution (la page courante), la [LICENCE](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt) et la [FAQ](/site-web/faq/) qui sont tous dans ce même dépôt.
 Si vous avez d'autres questions, n'hésitez pas à écrire à IGO à ce courriel : <info@igouverte.org> ou à la liste courriel [http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique "http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique").
