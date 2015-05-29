@@ -2,7 +2,7 @@
 permalink: /english/
 layout: general
 title-top: English
-language: E
+lang: Francais
 ---
 
 #English
