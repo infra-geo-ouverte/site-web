@@ -37,21 +37,14 @@ highlighter: pygments
 include: ['_pages']
 relative_permalinks: false 
 
-t:
-  en:
-    home:
-      name: "Home"
-      url: "/"
-    about:
-      name: "About"
-      url: "/about/"
-  fr:
-    home:
-      name: "Accueil"
-      url: "/accueil/"
-    about:
-      name: "À propos"
-      url: "/a-propos/"
+navigation:
+    - text: Index       
+      url: /            
+    - text: A propos
+      url: /about/
+    - text: Blog
+      url: /blog/
+      layout: default     
 
 # navigation dans l'entete	
 
