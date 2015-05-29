@@ -35,7 +35,23 @@
 		<div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<!--<![endif]-->
 			<div class="head-right">				
-				<!-- menu haut droit -->					
+				<!-- menu haut droit -->	
+				
+				
+<ul class="nav navbar-nav">
+    {% for link in site.navigation %}
+        {% assign current = nil %}
+        {% assign currentPage = page.url | remove: 'index.html' %}
+        {% if currentPage == link.url or page.layout == link.layout %}
+            {% assign current = 'active' %} // changer le nom de la classe
+        {% endif %}
+        <li class="{{current}}"><a href="{{site.url}}{{ link.url }}">{{ link.text }}</a></li>
+    {% endfor %}
+    <li><a href="mailto:exemple@exemple.com">Contact</a></li>
+</ul>
+				
+				
+				
 				<ul class="nav navbar-nav navbar-right menu-top">
 					<li>
 					<a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">
