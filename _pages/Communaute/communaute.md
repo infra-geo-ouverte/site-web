@@ -36,14 +36,14 @@ IGO va intégrer un service de géolocalisation, de cartes Web et permettant à 
 La communauté IGO est composée d'un seul comité et des contributeurs autres que les membres de ces comités. La communauté IGO est sous l'autorité du **comité technique**, qui assure le leadership technique du projet dans son ensemble et s'assure de la bonne compréhension des besoins et de la satisfaction des utilisateurs. Les développeurs, les utilisateurs et tout autre contributeur qui participent aux projets sont des acteurs aussi importants que les membres du comité. 
 
 
-#### 2.1. Comité technique
+### 2.1. Comité technique
 
 Le comité technique assure le leadership technique des activités de la communauté.
 
-##### 2.1.1. Composition
+#### 2.1.1. Composition
 Le comité technique est composé de développeurs experts, de super-utilisateurs, de gestionnaires et de spécialistes en infrastructure qui participent à la conception, à la validation et à la réalisation de la solution. Le comité technique doit compter parmi ses membres votants, au moins un validateur de code.
 
-##### 2.1.2. Responsabilités du comité
+#### 2.1.2. Responsabilités du comité
 - Rédiger, modifier et amender la charte du comité technique et s'assurer de son respect par les membres de ce comité;
 - Tenir un calendrier d'évolution et le transmettre au comité d'administration pour information ;
 - Identifier, collecter et consolider les besoins des utilisateurs;
@@ -59,14 +59,14 @@ Le comité technique est composé de développeurs experts, de super-utilisateur
 - Produire, au besoins des rapports du projet.
 
 
-##### 2.1.3. Coordonnateur du comité technique
+#### 2.1.3. Coordonnateur du comité technique
 Le coordonnateur du comité technique est  nommé par les membres du comité technique sous une formule de présidence tournante. Ses responsabilités sont les suivantes :
 	
 - Organiser les rencontres du comité technique ;
 - Siéger, au besoin,  sans droit de vote sur le comité d'administration à titre de représentant du comité technique, dans le but de coordonner la relation de son comité avec comité d'administration. 
 - Publier les comptes rendus des réunions du comité technique.
 
-#### 2.2. Contributeurs
+### 2.2. Contributeurs
 Nous entendons ici par contributeur, toute personne du domaine métier ou technique qui participe aux activités de la communauté. Les contributeurs incluent les :
 
 - Développeurs : ce sont en  général des programmeurs qui participent à la programmation du code du logiciel. **Un validateur de code est un profil particulier de développeur**. Les développeurs sont tenus de  respecter les conventions, l'architecture commune et règles de codage. 
@@ -74,7 +74,7 @@ Nous entendons ici par contributeur, toute personne du domaine métier ou techni
 - Architectes et intégrateurs ;
 - Toutes autres type de contribution.
 
-##### 2.2.1. Validateurs de code
+#### 2.2.1. Validateurs de code
 
 Ce sont des programmeurs expérimentés et habilités à valider le travail des autres programmeurs. Ils approuvent et intègrent le code soumis au projet, puis s'assure d'une documentation minimale au besoin. Les validateurs de code sont désignés par le comité technique. Un validateur de code doit être expert et s’engage à travailler pour garantir une meilleure stabilité du projet. Au moins un validateur de code doit faire partie du comité technique avec droit de vote [(Voir section mécanisme de prise des décisions)](#principes).
 
@@ -115,19 +115,19 @@ Les sources de la communauté se traduisent par une participation financière et
 <a id="principes"></a>
 ##6. Principes et mécanismes de prise des décisions   [<span class="octicon octicon-link"></span>](#principes)
 
-####6.1. Chercher le consensus
+###6.1. Chercher le consensus
 Comme principe général, il est préférable que les décisions soient prises à la suite d'un consensus entre les différents membres d'un comité. Le vote servira dans ce cas à officialiser ce consensus.
 
-####6.2. Membre votant
+###6.2. Membre votant
 Est considéré comme membre votant, un membre qui apporte une contribution substantielle (financière et/ou matérielle et\ou humaine) pour la communauté.
 
-####6.3. Membre observateur
+###6.3. Membre observateur
 Un membre  « observateur » est un contributeur qui n'a pas le droit de vote.
 
-####6.4. Poids du vote
+###6.4. Poids du vote
 Un membre – une voix ;
 
-####6.5. Mécanisme de vote
+###6.5. Mécanisme de vote
 - Les motions sont inscrites sur une  liste de discussion et les votes se font en public , sauf dans les cas exigeant la confidentialité; 
 - Le vote est habituellement ouvert pour une période relativement courte (ex. : trois jours ouvrables); 
 - La notation suivante pour le vote est adoptée : +1, 0, -1: 
@@ -140,7 +140,7 @@ Un membre – une voix ;
 - Si une proposition reçoit un veto (-1) et qu'il est impossible de satisfaire toutes les parties après révision et discussion, la proposition peut être soumise pour un second vote ultime et dans ce cas, un vote positif de la majorité absolue de tous les membres du comité est requis pour que la proposition soit acceptée. Dans ce cas, le veto ne s'applique plus ;
 - Le résultat du vote est compilé et publié.
 
-####6.6. Gestion des demandes de changements (RFC) 
+###6.6. Gestion des demandes de changements (RFC) 
 Le processus de demande de changement (RFC) doit suivre le processus suivant: 
 
 - Discussions préliminaires sur la liste de discussion ; 
@@ -150,13 +150,13 @@ Le processus de demande de changement (RFC) doit suivre le processus suivant:
 - Vote du comité technique au besoin ;
 - Publication des documents de demande de changement sur le site Web (ou dépôt) de IGO;
 
-####6.7. Gestion des révisions 
+###6.7. Gestion des révisions 
 
 - Dépôt d'un plan de livraison; 
 - Plan livraison -> gel de fonctionnalités -> version bêtas -> RC (candidate release) -> livraison. 
 - Rôle de responsable de livraison (doit être un validateur de code); 
 
-####6.8. Cycle de révisions : 
+###6.8. Cycle de révisions : 
 - Cycle des révisions est basé sur la feuille de route (“roadmap”);
 
 <a id="charte"></a>
@@ -245,7 +245,7 @@ L'amendement de cette présente charte du CT est proposé dans une motion spéci
 <a id="annexe2"></a>
 ##Annexe 2: Foire aux Questions [<span class="octicon octicon-link"></span>](#annexe2)          
 
-#####Comment un développeur peut devenir un validateur de code ?
+####Comment un développeur peut devenir un validateur de code ?
 Tel que précisé, les validateurs de code sont des développeurs expérimentés. Le profil de validateur de code pourrait s'acquérir à travers les étapes suivantes :
 
 - Commencer par contribuer régulièrement en envoyant des ajouts ou des modifications via le système de suivi de bogues ; 
@@ -254,14 +254,14 @@ Tel que précisé, les validateurs de code sont des développeurs expérimentés
 - Le comité technique passe au vote afin d’attribuer le titre de validateur de code au membre concerné (sans avoir le besoin de demander les autorisations du comité d'administration) ;
 - Un validateur de code inactif ou ne respectant pas les règles d'engagement peut se faire révoquer sa qualité de validateur de code par le comité technique et, par conséquent, perdre les privilèges qui lui sont conférés. 
 
-#####Comment gagner la confiance des autres validateurs de code ? 
+####Comment gagner la confiance des autres validateurs de code ? 
 - Avoir une bonne compréhension de l'architecture, des outils et des méthodes de fonctionnement du projet ;
 - Écrire du code de qualité ;
 - Avoir de bonnes aptitudes de communication ; 
 - Avoir l'intention de rester actif à moyen et long terme ;
 - Être disposé à poursuivre une formation ou « un examen par les pairs » pour acquérir la qualité de validateur de code d'une façon accélérée. 
 
-#####Numérotage des révisions 
+####Numérotage des révisions 
 
 - Version = x.y.z (majeur.mineur.patch); 
 - Mineur pair = stable (ex: 5.4, 5.6); 
