@@ -245,7 +245,7 @@ L'amendement de cette présente charte du CT est proposé dans une motion spéci
 <a id="annexe2"></a>
 ##Annexe 2: Foire aux Questions [<span class="octicon octicon-link"></span>](#annexe2)          
 
-####Comment un développeur peut devenir un validateur de code ?
+###Comment un développeur peut devenir un validateur de code ?
 Tel que précisé, les validateurs de code sont des développeurs expérimentés. Le profil de validateur de code pourrait s'acquérir à travers les étapes suivantes :
 
 - Commencer par contribuer régulièrement en envoyant des ajouts ou des modifications via le système de suivi de bogues ; 
@@ -254,14 +254,14 @@ Tel que précisé, les validateurs de code sont des développeurs expérimentés
 - Le comité technique passe au vote afin d’attribuer le titre de validateur de code au membre concerné (sans avoir le besoin de demander les autorisations du comité d'administration) ;
 - Un validateur de code inactif ou ne respectant pas les règles d'engagement peut se faire révoquer sa qualité de validateur de code par le comité technique et, par conséquent, perdre les privilèges qui lui sont conférés. 
 
-####Comment gagner la confiance des autres validateurs de code ? 
+###Comment gagner la confiance des autres validateurs de code ? 
 - Avoir une bonne compréhension de l'architecture, des outils et des méthodes de fonctionnement du projet ;
 - Écrire du code de qualité ;
 - Avoir de bonnes aptitudes de communication ; 
 - Avoir l'intention de rester actif à moyen et long terme ;
 - Être disposé à poursuivre une formation ou « un examen par les pairs » pour acquérir la qualité de validateur de code d'une façon accélérée. 
 
-####Numérotage des révisions 
+###Numérotage des révisions 
 
 - Version = x.y.z (majeur.mineur.patch); 
 - Mineur pair = stable (ex: 5.4, 5.6); 
