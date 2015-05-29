@@ -4,6 +4,8 @@ layout: general
 title-top: English
 ---
 
+#English
+
 This IGO (for Open GIS Infrastructure) project involved 6 organisations in Quebec, Canada.
 
 IGO is an evolution of an internal Web GIS project at the government of Quebec and the objective to make it more open, common, modular and based on open source and governance model with multiple organisations.
