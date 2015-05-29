@@ -43,7 +43,7 @@
         {% assign current = nil %}
         {% assign currentPage = page.url | remove: 'index.html' %}
         {% if currentPage == link.url or page.layout == link.layout %}
-            {% assign current = 'active' %} // changer le nom de la classe
+            {% assign current = 'active' %} test
         {% endif %}
         <li class="{{current}}"><a href="{{site.url}}{{ link.url }}">{{ link.text }}</a></li>
     {% endfor %}
