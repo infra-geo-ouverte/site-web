@@ -18,10 +18,10 @@ submenu:
   - { hook: "annexe2", title: "Annexe 2: Foire aux Questions" }
 ---
 
-## Acte constitutif de la communauté IGO
+# Acte constitutif de la communauté IGO
 
 <a id="mission"></a>
-### 1. Mission de la communauté IGO  [<span class="octicon octicon-link"></span>](#mission)
+## 1. Mission de la communauté IGO  [<span class="octicon octicon-link"></span>](#mission)
 
 Le projet IGO (Infrastructure Géomatique Ouverte) est une communauté de pratique qui regroupe des spécialistes en géomatique issus de plusieurs organismes et ministères du gouvernement du Québec. IGO a vu le jour en 2014 et il se concrétise par des avancées et des valeurs ajoutées remarquables, au plus grand bénéfice de ses utilisateurs, principalement des partenaires du gouvernement. Le développement est mené principalement par des professionnels internes au gouvernement du Québec.
 
@@ -31,7 +31,7 @@ Le projet IGO permettra de livrer un nouveau navigateur cartographique gouvernem
 IGO va intégrer un service de géolocalisation, de cartes Web et permettant à terme aussi la requête spatiale, le service d'itinéraire, l'édition en ligne, la gestion de la sécurité et le pilotage. IGO est une amélioration d'une version précédente de ce genre d’outil utilisé, entre autres, par des partenaires de la sécurité publique et de santé publique du gouvernement du Québec.
 
 <a id="structure"></a>
-### 2. Structure de la communauté IGO  [<span class="octicon octicon-link"></span>](#structure)
+## 2. Structure de la communauté IGO  [<span class="octicon octicon-link"></span>](#structure)
 
 La communauté IGO est composée d'un seul comité et des contributeurs autres que les membres de ces comités. La communauté IGO est sous l'autorité du **comité technique**, qui assure le leadership technique du projet dans son ensemble et s'assure de la bonne compréhension des besoins et de la satisfaction des utilisateurs. Les développeurs, les utilisateurs et tout autre contributeur qui participent aux projets sont des acteurs aussi importants que les membres du comité. 
 
@@ -94,17 +94,17 @@ Ce sont des programmeurs expérimentés et habilités à valider le travail des 
 - S'assure d'une documentation adéquate des changements effectués.
 
 <a id="financement"></a>
-###3. Sources de financement  [<span class="octicon octicon-link"></span>](#financement)
+##3. Sources de financement  [<span class="octicon octicon-link"></span>](#financement)
  
 Les sources de la communauté se traduisent par une participation financière et/ou matérielle et/ou humaine.
 
 <a id="licence"></a>
-###4. Licence  [<span class="octicon octicon-link"></span>](#licence)
+##4. Licence  [<span class="octicon octicon-link"></span>](#licence)
 
 - [Consulter la licence](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt)
 
 <a id="droitauteur"></a>
-###5. Droits d'auteur   [<span class="octicon octicon-link"></span>](#droitauteur)
+##5. Droits d'auteur   [<span class="octicon octicon-link"></span>](#droitauteur)
 
 À la lumière des définitions données dans les termes de la licence :
 
@@ -113,7 +113,7 @@ Les sources de la communauté se traduisent par une participation financière et
 « contributeur » : le titulaire du droit d'auteur ou toute personne autorisée par ce dernier à soumettre au concédant une contribution. **Un contributeur dont sa contribution est incorporée au logiciel est considéré comme un concédant en regard de sa contribution**;
 
 <a id="principes"></a>
-###6. Principes et mécanismes de prise des décisions   [<span class="octicon octicon-link"></span>](#principes)
+##6. Principes et mécanismes de prise des décisions   [<span class="octicon octicon-link"></span>](#principes)
 
 ####6.1. Chercher le consensus
 Comme principe général, il est préférable que les décisions soient prises à la suite d'un consensus entre les différents membres d'un comité. Le vote servira dans ce cas à officialiser ce consensus.
@@ -160,17 +160,17 @@ Le processus de demande de changement (RFC) doit suivre le processus suivant:
 - Cycle des révisions est basé sur la feuille de route (“roadmap”);
 
 <a id="charte"></a>
-###7. Charte du comité technique    [<span class="octicon octicon-link"></span>](#charte)
+##7. Charte du comité technique    [<span class="octicon octicon-link"></span>](#charte)
 
 Se référer à [l'annexe 1](#annexe1)
 
 <a id="codage"></a>
-###8. Convention et règles de codage    [<span class="octicon octicon-link"></span>](#codage)
+##8. Convention et règles de codage    [<span class="octicon octicon-link"></span>](#codage)
 
 La convention de codage est un document interne rédigé par le comité technique ou se servir de tout autre document que le comité technique juge utile. Cette convention doit être respectée par les développeurs et vise à atteindre l'uniformité du code et des méthodes de travail (par exemple, règles d'écriture du code source, règles d'architecture, du modèle de données, etc.)
 
 <a id="depot"></a>
-###9. Dépôt du code source et outils de communications     [<span class="octicon octicon-link"></span>](#depot)
+##9. Dépôt du code source et outils de communications     [<span class="octicon octicon-link"></span>](#depot)
 
 Dépôts du code source : [https://github.com/infra-geo-ouverte/igo](https://github.com/infra-geo-ouverte/igo)
  et [https://github.com/infra-geo-ouverte/puppet-igo](https://github.com/infra-geo-ouverte/puppet-igo)
@@ -178,13 +178,13 @@ Dépôts du code source : [https://github.com/infra-geo-ouverte/igo](https://gi
 Outils de communication : si vous avez d'autres questions, n'hésitez pas à écrier à IGO à ce courriel : info(a)igouverte.org ou à la liste courriel [http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique).
 
 <a id="amendement" ></a>
-###10. Amendement de ce présent acte constitutif [<span class="octicon octicon-link"></span>](#amendement)
+##10. Amendement de ce présent acte constitutif [<span class="octicon octicon-link"></span>](#amendement)
 
 Toute personne qui souhaite participer à la communauté IGO est tenue de respecter cet acte constitutif. Le comité Technique se réserve le droit d’amender cet acte à tout moment sauf dans sa partie Licence où les termes de la licence dominent.  
 
 
 <a id="annexe1" ></a>
-###Annexe 1: Charte du comité technique [<span class="octicon octicon-link"></span>](#annexe1)
+##Annexe 1: Charte du comité technique [<span class="octicon octicon-link"></span>](#annexe1)
 
 ###1. Mission 
 Le comité technique («CT») est chargé d'assurer le leadership technique pour IGO, il a la supervision technique sur l'ensemble des projets IGO et décide sur les questions touchant les aspects techniques. Il constitue le  comité  ultime d'appel des décisions techniques.
@@ -243,7 +243,7 @@ Tout contributeur technique actif ou super-utilisateur peut soumettre sa candida
 L'amendement de cette présente charte du CT est proposé dans une motion spéciale, qui, pour être acceptée, elle doit être approuvé selon les principes et les mécanismes de prise des décisions de la communauté.
 
 <a id="annexe2"></a>
-###Annexe 2: Foire aux Questions [<span class="octicon octicon-link"></span>](#annexe2)          
+##Annexe 2: Foire aux Questions [<span class="octicon octicon-link"></span>](#annexe2)          
 
 #####Comment un développeur peut devenir un validateur de code ?
 Tel que précisé, les validateurs de code sont des développeurs expérimentés. Le profil de validateur de code pourrait s'acquérir à travers les étapes suivantes :
