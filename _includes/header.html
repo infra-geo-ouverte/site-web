@@ -46,9 +46,9 @@
 						{% if page.title-top%} 
 						<li>
 							<a class="page-link"  href="{{ page.url | prepend: site.baseurl }}" role="button" aria-expanded="false">
-								{% if page.language%} 
+								{% if page.lang%} 
 									<a class="page-link fr"  href="http://infra-geo-ouverte.github.io/site-web/" role="button" aria-expanded="false">
-										Français
+										{{ page.lang }} 
 									</a>
 								{% else %}
 									{{ page.title-top }} 
