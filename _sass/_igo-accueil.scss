@@ -84,6 +84,9 @@ css de l'accueil incluant la banniere
 #accueil .modal-header{
 	background-color: $vert-pale;
 }
+#accueil .modal-backdrop{
+	z-index: 0;
+}
 #accueil .modal-body ul li{
 	margin-left: 10px;
 }
