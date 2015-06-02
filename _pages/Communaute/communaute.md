@@ -26,16 +26,16 @@ submenu:
 Supporter le développement d’IGO afin d’assurer le respect des hauts standards internationaux en matière de géomatique et de répondre aux besoins des utilisateurs, notamment en diffusant les données géographiques produites par le gouvernement du Québec.
 
 <a id="structure"></a>
-## 2. Structure de la communauté IGO  [<span class="octicon octicon-link"></span>](#structure)
+## 2. Structure[<span class="octicon octicon-link"></span>](#structure)
 
 La communauté est composée de contributeurs, d’utilisateurs et d'un *comité technique* (CT). Le CT assure le leadership technique du projet dans son ensemble et s'assure de la bonne compréhension des besoins des utilisateurs et de leur satisfaction. Les développeurs, les utilisateurs et tout autre contributeur qui participent aux projets sont des acteurs aussi importants que les membres du comité. 
 
-### 2.1. Comité technique
+### 2.1. Comité technique (CT)
 
-Le comité technique assure le leadership technique des activités de la communauté.
+Le CT assure le leadership technique des activités de la communauté.
 
 #### 2.1.1. Composition
-Le comité technique est composé de développeurs experts, de super-utilisateurs, de gestionnaires et de spécialistes en infrastructure qui participent à la conception, à la validation et à la réalisation de la solution. Le comité technique doit compter parmi ses membres votants, au moins un validateur de code.
+Le CT est composé de développeurs experts, de super-utilisateurs, de gestionnaires et de spécialistes en infrastructure qui participent à la conception, à la validation et à la réalisation de la solution. Le CT doit compter parmi ses membres votants, au moins un validateur de code.
 
 #### 2.1.2. Responsabilités du comité
 - Rédiger, modifier et amender la charte du comité technique et s'assurer de son respect par les membres de ce comité;
