@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <!DOCTYPE html xmlns:og="http://ogp.me/ns#">
-
+  <!DOCTYPE html>
+<html lang="fr-FR">
 <head>
 	<title>IGO Infrastructure Géomatique Ouverte</title>
 
@@ -9,12 +9,30 @@
 	<!-- Balises meta régulières -->	 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)">	
-	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur">
-	<meta name="description" content="Site web de l'application IGO.
+	<meta property="viewport" content="width=device-width, initial-scale=1">
+	<meta property="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)">	
+	<meta property="keywords" content="logiciel libre, géomatique, open source, navigateur">
+	<meta property="description" content="Site web de l'application IGO.
 ">
+
+	<!-- Reseaux sociaux-->
+
+  
+	<meta property="og:type"        content="website" />
+	<meta property="og:title"       content="IGO Infrastructure géomatique ouverte" />
+	<meta property="og:description" content="Le projet IGO (Infrastructure Géomatique Ouverte) est une communauté de pratiques qui regroupe des spécialistes en géomatique issus de plusieurs organismes et ministères du gouvernement du Québec." />
+	<meta property="og:url"         content="http://infra-geo-ouverte.github.io/site-web/" />
+	<meta property="og:site_name"   content="IGO" />
+	<meta property="og:image"       content="http://infra-geo-ouverte.github.io/site-web/assets/img/share_google.jpg" />
 	
+	
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@igo" />
+	<meta name="twitter:title" content="IGO: Infrastructure Géomatique Ouverte" />
+	<meta name="twitter:description" content="Le projet IGO (Infrastructure Géomatique Ouverte) est une communauté de pratiques qui regroupe des spécialistes en géomatique issus de plusieurs organismes et ministères du gouvernement du Québec." />
+	<meta name="twitter:image" content="http://infra-geo-ouverte.github.io/site-web/assets/img/share_twitter_fb.jpg" />
+
 	<!-- Mettre une icone au site: icon in the highest resolution we need it for -->
 	<link rel="icon" sizes="228x228" href="/site-web/assets/img/igo_icone.png">
 	<!-- reuse same icon for Safari -->
@@ -39,8 +57,8 @@
 	<!--<![endif]-->
 	
 	
-  <link rel="canonical" href="[http://localhost]/site-web/contribuer/" />
-  <link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="[http://localhost]/site-web/feed.xml" />
+  <link rel="canonical" href="/site-web/contribuer/" />
+  <link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="/site-web/feed.xml" />
 
   
 
@@ -88,10 +106,34 @@
 		<div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<!--<![endif]-->
 			<div class="head-right">				
-				<!-- menu haut droit -->					
+				<!-- menu haut droit -->	
+				
+				
+<!-- <ul class="nav navbar-nav">
+    
+        
+        
+        
+        <li class=""><a href="/">Index</a></li>
+    
+        
+        
+        
+        <li class=""><a href="/about/">A propos</a></li>
+    
+        
+        
+        
+        <li class=""><a href="/blog/">Blog</a></li>
+    
+    <li><a href="mailto:exemple@exemple.com">Contact</a></li>
+</ul> -->
+				
+				
+				
 				<ul class="nav navbar-nav navbar-right menu-top">
 					<li>
-					<a class="" href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">
+					<a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">
 						Licence
 					</a>
 					</li>
@@ -116,8 +158,10 @@
 					
 						 
 						<li>
-							<a class="page-link"  
-								href="/site-web/faq/" role="button" aria-expanded="false">FAQ 
+							<a class="page-link"  href="/site-web/faq/" role="button" aria-expanded="false">
+								
+									FAQ 
+								
 							</a>
 						</li>
 						
@@ -146,8 +190,12 @@
 					
 						 
 						<li>
-							<a class="page-link"  
-								href="/site-web/english/" role="button" aria-expanded="false">English 
+							<a class="page-link"  href="/site-web/english/" role="button" aria-expanded="false">
+								 
+									<a class="page-link fr"  href="http://infra-geo-ouverte.github.io/site-web/" role="button" aria-expanded="false">
+										Francais 
+									</a>
+								
 							</a>
 						</li>
 						
@@ -174,6 +222,7 @@
 					
 						
 					
+
 				</ul>				
 			</div>	
 			<!-- menu principal -->
@@ -357,7 +406,7 @@
 
 			<li class="sidebar-brand">
 				<a href="#header" class="back-to-top smooth-scroll octicon octicon-chevron-up">
-					<span class="hautpage">Haut de la page<span>
+					<span class="hautpage">Haut de la page <span>
 					
 				</a>
 			</li>
@@ -368,6 +417,7 @@
 
         
 
+
 			<!-- Page Content -->
 				<div id="page-content-wrapper">
 					<!-- Flèche pour ouvrir et fermer le menu de côté -->
@@ -377,25 +427,25 @@
 					</button>
 					<!-- [endif]-->
 			
-					<div class="container">
+					<div class="container" >
 						<div>				
-							<h2 id="contribuer">Contribuer</h2>
+							<h1 id="contribuer">Contribuer</h1>
 
 <p>Nous sommes bien heureux que vous pensiez contribuer à IGO !
-Avant de le faire, nous vous encourageons à lire le guide de contribution (la page courante), la <a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">LICENCE</a> et la <a href="/site-web/faq/">FAQ</a> qui sont tous dans ce même dépôt.
-Si vous avez d&#39;autres questions, n&#39;hésitez pas à écrire à IGO à ce courriel : <a href="mailto:info@igouverte.org">info@igouverte.org</a> ou à la liste courriel <a href="http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique" title="http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique">http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique</a>.</p>
+Avant de le faire, nous vous encourageons à lire le guide de contribution (la page courante), la <a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">LICENCE</a> et la <a href="/site-web/faq/">FAQ</a>.
+Si vous avez d&#39;autres questions, n&#39;hésitez pas à communiquer avec nous à l&#39;adresse suivante : info(a)igouverte.org ou à vous inscrire à la <a href="http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique">liste courriel</a>.</p>
 
 <p><a id="facon" name="facon"></a></p>
 
 <h2 id="façons-de-contribuer-">Façons de contribuer <a href="#facon"><span class="octicon octicon-link"></span></a></h2>
 
-<p>Le comité technique d&#39;IGO et ses développeurs contributeurs sont responsables des mises à jour, corrections de bogues et ajouts de fonctionnalités par l&#39;entremise du dépôt de source public.
+<p>Le comité technique d&#39;IGO et ses développeurs contributeurs sont responsables des mises à jour, des corrections de bogues et des ajouts de fonctionnalités par l&#39;entremise du dépôt de code source public.
 Les décisions sur le projet se prennent selon les règles de  <a href="/site-web/communaute">gouvernance de la communauté</a>.
 Dans l&#39;esprit de collaboration des logiciels libres et ouverts, tout le monde est encouragé à améliorer ce produit.</p>
 
 <ul>
-<li>Note : Si vous voulez contribuer, vous devrez vous créer un compte sur le site github.com, si ce n&#39;est pas déjà fait.</li>
-<li>Note : Tous les contributeurs d&#39;IGO vont conserver leur droit d&#39;auteur, mais en contribuant l&#39;individu doit accepter les règles de la <a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">LICENCE</a> d&#39;IGO.</li>
+<li>Si vous voulez contribuer, vous devez avoir un compte sur le site de <a href="http://github.com">Github</a>.</li>
+<li>Tous les contributeurs d&#39;IGO vont conserver leur droit d&#39;auteur, mais en contribuant l&#39;individu doit accepter les règles de la <a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">LICENCE</a> d&#39;IGO.</li>
 </ul>
 
 <p>Voici de multiples façons de contribuer :</p>
@@ -415,15 +465,15 @@ Dans l&#39;esprit de collaboration des logiciels libres et ouverts, tout le mond
 
 <h2 id="rapporter-des-problèmes-majeurs-">Rapporter des problèmes majeurs <a href="#rapporter"><span class="octicon octicon-link"></span></a></h2>
 
-<p>Avant de soumettre un nouveau bogue ou un problème, soyez certain qu&#39;il n&#39;a pas déjà été soumis ou n&#39;est pas déjà en suivi. Si tel est le cas, veuillez contribuer à ce bogue ou problème connu en envoyant vos idées, propositions et commentaires au site de dépôt.<br>
-Quand vous soumettez un nouveau bogue ou problème, SVP donnez le plus de détails possible (ex. copie d&#39;écran du problème, code d&#39;erreur retourné, technologie utilisée, hyperliens ou toute autre élément pertinent).  </p>
+<p>Avant de soumettre un nouveau bogue ou un problème, soyez certain qu&#39;il n&#39;a pas déjà été soumis ou n&#39;est pas déjà en suivi. Veuillez alors y contribuer en envoyant vos idées, propositions et commentaires au site <a href="http://github.com">Github</a>.<br>
+Quand vous soumettez un nouveau bogue ou problème, veuillez donner le plus de détails possible (ex. copie d&#39;écran du problème, code d&#39;erreur retourné, technologie utilisée, hyperliens ou toute autre élément pertinent).  </p>
 
 <p><a id="auteur" name="auteur"></a></p>
 
 <h2 id="droits-d&#39;auteur-sur-les-contributions-">Droits d&#39;auteur sur les contributions <a href="#auteur"><span class="octicon octicon-link"></span></a></h2>
 
-<p>Ce projet constitue un travail, entre autres, du gouvernement du Québec sujet aux droits d&#39;auteur, mais il n&#39;est pas exclusif au gouvernement du Québec. 
-D&#39;ailleurs, tous les contributeurs externes au gouvernement du Québec au projet IGO pourront conserver leurs droits d&#39;auteur en acceptant de les partager selon les mêmes termes de la <a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">LICENCE</a> d&#39;IGO. Vous êtes encouragés d&#39;ajouter votre nom ou le nom de votre employeur lors de contributions dans l&#39;entête du fichier modifié.</p>
+<p>Tous les ajouts et modifications à IGO sont sujets aux droits d&#39;auteur. Les contributeurs externes au gouvernement du Québec peuvent conserver leurs droits d&#39;auteur en acceptant de partager leur code selon les termes décrits dans la <a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">LICENCE</a>.
+Vous êtes encouragés à ajouter votre nom ou le nom de votre employeur lors de contributions dans l&#39;entête du fichier modifié.</p>
                   
 						</div>
 					</div>
@@ -633,34 +683,31 @@ D&#39;ailleurs, tous les contributeurs externes au gouvernement du Québec au pr
 	<a class="footer-mail text-center" href="mailto:info@igouverte.org"><span class="octicon octicon-mail"></span> Contactez-nous: info@igouverte.org </a>
 	<div class="share-page">
     Partagez &rarr; 
-    <a class="footer-reseau" href="https://twitter.com/intent/tweet?text=&url=[http://localhost]/contribuer/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a>
-    <a class="footer-reseau" href="https://facebook.com/sharer.php?u=[http://localhost]/contribuer/" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
-    <a class="footer-reseau" href="https://plus.google.com/share?url=[http://localhost]/contribuer/" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
-</div>
+    <a class="footer-reseau" href="https://twitter.com/intent/tweet?source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;text=IGO:%20http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a>
+    <a class="footer-reseau" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;t=IGO" title="Share on Facebook" target="_blank"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
+    <a class="footer-reseau" href="https://plus.google.com/share?url=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
+    <a class="footer-reseau" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;title=IGO&amp;summary=Infrastructure%20geomatique%20ouverte&amp;source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square" data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
+</div> 
 
-	<!-- bouton Twitter 
-	<a href="http://twitter.com/share" class="twitter-share-button" 
-	  data-count="vertical" data-via="">Tweet</a>
-	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	-->
-	<!-- bouton Facebook 
-	<iframe src= "http://www.facebook.com/plugins/like.php?"
-		href="http://kboisvert.github.io/test_IGO/"
-		scrolling= "no" frameborder= "0″ style= "border:none; overflow:hidden; width:65px; height:65px; margin-top:3px;" 
-		allowTransparency= "true">
-	</iframe>
--->
-	<!-- bouton Google+ 
-	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
-		{lang: 'fr'}
-	</script>
-	<g:plusone size="tall"></g:plusone>
-	-->
-	<!-- bouton Linked in
-	<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
-	<script type="in/share" data-counter="top"></script>
-	<i class="fa fa-linkedin-square"></i>
-	-->
+
+
+<!-- ref: http://codingtips.kanishkkunal.in/share-buttons-jekyll/ -->
+
+
+<!-- <div class="share-page">
+    Share this on &rarr; 
+    <a href="https://twitter.com/intent/tweet?text=&url=/contribuer/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=/contribuer/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url=/contribuer/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+</div> -->
+	<!-- summary="Infrastructure de géomatique ouverte" source="http://infra-geo-ouverte.github.io/site-web/" -->
+	
+	<!-- bouton Linked in 	<i class="fa fa-linkedin-square"></i> 
+	<div class="footer-reseau">
+	<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: fr_FR</script>
+	<script type="IN/Share" data-url="http://infra-geo-ouverte.github.io/site-web/"></script>
+	</div> -->
+	
 
 	<small class="copyright text-center">&copy;IGO, 2015</small>
 
@@ -675,8 +722,6 @@ D&#39;ailleurs, tous les contributeurs externes au gouvernement du Québec au pr
 	<script type="text/javascript" src="/site-web/assets/script/animation_banniere.js"> </script>
 	
 	<!-- Google Analitics -->
-
-
 
 
 	

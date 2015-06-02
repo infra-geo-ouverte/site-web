@@ -92,16 +92,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #002f50; }
 
 h1 {
-  font-size: 23.4px; }
+  font-size: 19.5px; }
 
 h2 {
-  font-size: 21px; }
+  font-size: 16.8px; }
 
 h3 {
-  font-size: 18px; }
+  font-size: 15px; }
 
 h4 {
-  font-size: 14.4px; }
+  font-size: 12.8px; }
 
 h5 {
   font-size: 11.2px; }
@@ -187,16 +187,16 @@ pre {
    * Headings
   *****************************/
   h1 {
-    font-size: 36px; }
-
-  h2 {
     font-size: 30px; }
 
-  h3 {
+  h2 {
     font-size: 24px; }
 
+  h3 {
+    font-size: 20px; }
+
   h4 {
-    font-size: 18px; }
+    font-size: 16px; }
 
   h5 {
     font-size: 14px; }

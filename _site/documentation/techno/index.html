@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <!DOCTYPE html xmlns:og="http://ogp.me/ns#">
-
+  <!DOCTYPE html>
+<html lang="fr-FR">
 <head>
 	<title>IGO Infrastructure Géomatique Ouverte</title>
 
@@ -9,12 +9,30 @@
 	<!-- Balises meta régulières -->	 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)">	
-	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur">
-	<meta name="description" content="Site web de l'application IGO.
+	<meta property="viewport" content="width=device-width, initial-scale=1">
+	<meta property="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)">	
+	<meta property="keywords" content="logiciel libre, géomatique, open source, navigateur">
+	<meta property="description" content="Site web de l'application IGO.
 ">
+
+	<!-- Reseaux sociaux-->
+
+  
+	<meta property="og:type"        content="website" />
+	<meta property="og:title"       content="IGO Infrastructure géomatique ouverte" />
+	<meta property="og:description" content="Le projet IGO (Infrastructure Géomatique Ouverte) est une communauté de pratiques qui regroupe des spécialistes en géomatique issus de plusieurs organismes et ministères du gouvernement du Québec." />
+	<meta property="og:url"         content="http://infra-geo-ouverte.github.io/site-web/" />
+	<meta property="og:site_name"   content="IGO" />
+	<meta property="og:image"       content="http://infra-geo-ouverte.github.io/site-web/assets/img/share_google.jpg" />
 	
+	
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@igo" />
+	<meta name="twitter:title" content="IGO: Infrastructure Géomatique Ouverte" />
+	<meta name="twitter:description" content="Le projet IGO (Infrastructure Géomatique Ouverte) est une communauté de pratiques qui regroupe des spécialistes en géomatique issus de plusieurs organismes et ministères du gouvernement du Québec." />
+	<meta name="twitter:image" content="http://infra-geo-ouverte.github.io/site-web/assets/img/share_twitter_fb.jpg" />
+
 	<!-- Mettre une icone au site: icon in the highest resolution we need it for -->
 	<link rel="icon" sizes="228x228" href="/site-web/assets/img/igo_icone.png">
 	<!-- reuse same icon for Safari -->
@@ -39,8 +57,8 @@
 	<!--<![endif]-->
 	
 	
-  <link rel="canonical" href="[http://localhost]/site-web/documentation/techno/" />
-  <link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="[http://localhost]/site-web/feed.xml" />
+  <link rel="canonical" href="/site-web/documentation/techno/" />
+  <link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="/site-web/feed.xml" />
 
   
 
@@ -88,10 +106,34 @@
 		<div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<!--<![endif]-->
 			<div class="head-right">				
-				<!-- menu haut droit -->					
+				<!-- menu haut droit -->	
+				
+				
+<!-- <ul class="nav navbar-nav">
+    
+        
+        
+        
+        <li class=""><a href="/">Index</a></li>
+    
+        
+        
+        
+        <li class=""><a href="/about/">A propos</a></li>
+    
+        
+        
+        
+        <li class=""><a href="/blog/">Blog</a></li>
+    
+    <li><a href="mailto:exemple@exemple.com">Contact</a></li>
+</ul> -->
+				
+				
+				
 				<ul class="nav navbar-nav navbar-right menu-top">
 					<li>
-					<a class="" href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">
+					<a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">
 						Licence
 					</a>
 					</li>
@@ -116,8 +158,10 @@
 					
 						 
 						<li>
-							<a class="page-link"  
-								href="/site-web/faq/" role="button" aria-expanded="false">FAQ 
+							<a class="page-link"  href="/site-web/faq/" role="button" aria-expanded="false">
+								
+									FAQ 
+								
 							</a>
 						</li>
 						
@@ -146,8 +190,12 @@
 					
 						 
 						<li>
-							<a class="page-link"  
-								href="/site-web/english/" role="button" aria-expanded="false">English 
+							<a class="page-link"  href="/site-web/english/" role="button" aria-expanded="false">
+								 
+									<a class="page-link fr"  href="http://infra-geo-ouverte.github.io/site-web/" role="button" aria-expanded="false">
+										Francais 
+									</a>
+								
 							</a>
 						</li>
 						
@@ -174,6 +222,7 @@
 					
 						
 					
+
 				</ul>				
 			</div>	
 			<!-- menu principal -->
@@ -345,6 +394,7 @@
  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
 
 	
+		<ul>
 				<li class="sidebar-brand">
 				<a href="#header" class="back-to-top smooth-scroll">
 					<span class="octicon octicon-chevron-up">
@@ -352,11 +402,13 @@
 					</span>
 				</a>
 			</li>
+		</ul>
 	
 
 </nav>
 
         
+
 
 			<!-- Page Content -->
 				<div id="page-content-wrapper">
@@ -367,7 +419,7 @@
 					</button>
 					<!-- [endif]-->
 			
-					<div class="container">
+					<div class="container" >
 						<div>				
 							<h2 id="technologies-utilisées">Technologies utilisées</h2>
 
@@ -594,34 +646,31 @@
 	<a class="footer-mail text-center" href="mailto:info@igouverte.org"><span class="octicon octicon-mail"></span> Contactez-nous: info@igouverte.org </a>
 	<div class="share-page">
     Partagez &rarr; 
-    <a class="footer-reseau" href="https://twitter.com/intent/tweet?text=&url=[http://localhost]/documentation/techno/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a>
-    <a class="footer-reseau" href="https://facebook.com/sharer.php?u=[http://localhost]/documentation/techno/" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
-    <a class="footer-reseau" href="https://plus.google.com/share?url=[http://localhost]/documentation/techno/" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
-</div>
+    <a class="footer-reseau" href="https://twitter.com/intent/tweet?source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;text=IGO:%20http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a>
+    <a class="footer-reseau" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;t=IGO" title="Share on Facebook" target="_blank"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
+    <a class="footer-reseau" href="https://plus.google.com/share?url=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
+    <a class="footer-reseau" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;title=IGO&amp;summary=Infrastructure%20geomatique%20ouverte&amp;source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square" data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
+</div> 
 
-	<!-- bouton Twitter 
-	<a href="http://twitter.com/share" class="twitter-share-button" 
-	  data-count="vertical" data-via="">Tweet</a>
-	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	-->
-	<!-- bouton Facebook 
-	<iframe src= "http://www.facebook.com/plugins/like.php?"
-		href="http://kboisvert.github.io/test_IGO/"
-		scrolling= "no" frameborder= "0″ style= "border:none; overflow:hidden; width:65px; height:65px; margin-top:3px;" 
-		allowTransparency= "true">
-	</iframe>
--->
-	<!-- bouton Google+ 
-	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
-		{lang: 'fr'}
-	</script>
-	<g:plusone size="tall"></g:plusone>
-	-->
-	<!-- bouton Linked in
-	<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
-	<script type="in/share" data-counter="top"></script>
-	<i class="fa fa-linkedin-square"></i>
-	-->
+
+
+<!-- ref: http://codingtips.kanishkkunal.in/share-buttons-jekyll/ -->
+
+
+<!-- <div class="share-page">
+    Share this on &rarr; 
+    <a href="https://twitter.com/intent/tweet?text=&url=/documentation/techno/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=/documentation/techno/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url=/documentation/techno/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+</div> -->
+	<!-- summary="Infrastructure de géomatique ouverte" source="http://infra-geo-ouverte.github.io/site-web/" -->
+	
+	<!-- bouton Linked in 	<i class="fa fa-linkedin-square"></i> 
+	<div class="footer-reseau">
+	<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: fr_FR</script>
+	<script type="IN/Share" data-url="http://infra-geo-ouverte.github.io/site-web/"></script>
+	</div> -->
+	
 
 	<small class="copyright text-center">&copy;IGO, 2015</small>
 
@@ -636,8 +685,6 @@
 	<script type="text/javascript" src="/site-web/assets/script/animation_banniere.js"> </script>
 	
 	<!-- Google Analitics -->
-
-
 
 
 	
