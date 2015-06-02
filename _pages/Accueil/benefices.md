@@ -6,6 +6,7 @@ titre-accueil: Bénéfices
 ---
 
 Plus spécifiquement, IGO permet :
+
 - d’avoir accès à du code source libre de qualité qui peut être réutilisé par tous;
 - d'échanger avec une communauté d'experts actifs;
 - de mettre en commun des besoins similaires en géomatique;
