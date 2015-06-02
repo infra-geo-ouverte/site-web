@@ -6,7 +6,7 @@ iconedocumentation: ""
 ---
 
 #Documentation
-Cet espace comprend toute la documentation et les gabarits communs du projet IGO.
+Cet espace comprend toute la documentation et les gabarits communs du projet d'IGO.
 
 
 ## Guide pour les utilisateurs d'IGO-Navigateur :
@@ -16,12 +16,12 @@ Cet espace comprend toute la documentation et les gabarits communs du projet IGO
 [Documentation des balises XML d'IGO-Navigateur](https://github.com/infra-geo-ouverte/igo/blob/master/doc/xml/DocumentationXML.markdown)
 
 
-## Gabarit pour documenter un module, un service ou un panorama :
-* [Gabarit pour documenter un module](/site-web/documentation/doc_module)
-* [Gabarit pour documenter un service](/site-web/documentation/doc_service)
-* [Gabarit pour documenter un panorama](/site-web/documentation/doc_panorama)
+## Gabarit pour documenter un :
+* [module](/site-web/documentation/doc_module)
+* [service](/site-web/documentation/doc_service)
+* [panorama](/site-web/documentation/doc_panorama)
 
 ## Autres documents :
-* [Technologies utilisées](/site-web/documentation/techno)
-* [Architecture](https://github.com/infra-geo-ouverte/igo/blob/master/doc/IGO-CIBLE-v2014_aveclogo.png)
-* [Modules](/site-web/documentation/module)
+* [technologies utilisées](/site-web/documentation/techno)
+* [architecture](https://github.com/infra-geo-ouverte/igo/blob/master/doc/IGO-CIBLE-v2014_aveclogo.png)
+* [modules](/site-web/documentation/module)
