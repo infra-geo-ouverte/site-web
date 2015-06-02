@@ -2,10 +2,9 @@
 permalink: /faq/
 layout: faq
 faqsection: 16
-titre-faq: Qui est en charge du projet IGO ? 
+titre-faq: Qui est responsable ? 
 ---
 
-Quiconque ayant un intérêt dans ce projet. 
-IGO a été fondé et initié par le gouvernement du Québec et ses ministères/organismes impliqués pour coordonner ce projet collaboratif en logiciels libres, mais nous souhaitons obtenir des contributions de la communauté, voir la section [Contribuer](/site-web/contribuer) pour plus d'information.
+IGO a été fondé et initié par certains ministères et organismes. Ces derniers coordonnent ce projet collaboratif en logiciels libres, mais ils souhaitent obtenir des contributions de la communauté. Pour en savoir plus, consulter la  [section Contribuer](/site-web/contribuer) pour plus d'information.
 
-Le gouvernement du Québec et ses ministères/organismes sont disponibles pour coordonner et supporter la communauté. À terme, la vision est d'avoir d'autres contributeurs du gouvernement, mais aussi de l'extérieur du gouvernement du Québec et qui voudraient assumer des tâches additionnelles de leadership.
+Certains ministères et organismes sont disponibles pour coordonner et soutenir la communauté. À terme, l’objectif est d'avoir d'autres contributeurs du gouvernement, mais aussi de l'extérieur du gouvernement du Québec, qui seraient prêts à assumer des tâches additionnelles de leadership.
