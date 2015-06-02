@@ -1,14 +1,12 @@
 ---
 permalink: /
 layout: default
-titre-projet: IGO le projet !
+titre-projet: Infrastructure géomatique ouverte (IGO)
 ---
 
-#IGO le projet !
-Le projet IGO (Infrastructure Géomatique Ouverte) est une communauté de pratiques qui regroupe des spécialistes en géomatique issus de plusieurs organismes et ministères du gouvernement du Québec. IGO a vu le jour en 2014 et il se concrétise par des avancées et des valeurs ajoutées remarquables, au plus grand bénéfice de ses utilisateurs, principalement des partenaires du gouvernement. 
-Le code source de ce projet et sa documentation sont déjà disponibles pour tout employé du gouvernement du Québec depuis 2014 dans une [forge privée gouvernementale](https://www.forge.gouv.qc.ca/) .
-Le développement est mené principalement par des professionnels internes au gouvernement du Québec.  
-
-Au printemps 2015, IGO a été distribué publiquement sous une [LICENCE libre](https://github.com/infra-geo-ouverte/igo) du gouvernement du Québec, permettant à des [contributeurs](/site-web/contribuer) de partout dans le monde de proposer des améliorations au logiciel, toujours au bénéfice des utilisateurs et du gouvernement du Québec. 
+#IGO
+IGO est une infrastructure de géomatique disponible gratuitement sur le Web. Elle a été conçue grâce à un vaste réseau d’échange regroupant des spécialistes en géomatique provenant de plusieurs ministères et organismes du gouvernement du Québec. Elle permet de tirer profit d’une multitude de données géographiques (patrimoine culturel, territoires agricoles, écoles, casernes d’incendie, etc.) grâce à une cartographie interactive. Toute la communauté géomatique ainsi que les entreprises, les municipalités, les développeurs et même les citoyens peuvent en profiter. 
+Les internautes de partout dans le monde sont encouragés à contribuer à IGO de plusieurs façons en vue de l’améliorer, et ce, au bénéfice de ses utilisateurs. Ainsi, par son développement basé sur un modèle collaboratif (« open source »), il est en constante évolution.
+IGO respecte les standards ouverts internationaux en géomatique et s'appuient sur des logiciels libres existants dans l'industrie. Il est également le premier logiciel à utiliser une [LICENCE ](https://github.com/infra-geo-ouverte/igo) libre en français produite par le gouvernement du Québec.
 
 
