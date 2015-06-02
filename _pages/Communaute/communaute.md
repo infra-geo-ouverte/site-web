@@ -183,15 +183,16 @@ Toute personne qui souhaite participer à la communauté IGO est tenue de respec
 Le comité technique («CT») est chargé d'assurer le leadership technique pour IGO, il a la supervision technique sur l'ensemble des projets IGO et décide sur les questions touchant les aspects techniques. Il constitue le  comité  ultime d'appel des décisions techniques.
 
 ###2. Responsabilités du CT
-- Rédiger la charte du comité technique et s'assurer de son respect par les membres de ce comité;
-- Tenir un calendrier d'évolution pour information ;
+- Rédiger, modifier et amender la charte du comité technique et s'assurer de son respect par les membres de ce comité;
+- Tenir un calendrier d'évolution et le transmettre à la communauté pour information ;
 - Identifier, collecter et consolider les besoins des utilisateurs;
+- Représenter la communauté auprès des organismes publics non membres et les partenaires extérieurs (incluant les fournisseurs de services, le cas échéant) ;
 - Étudier les demandes de changement et coordonner leurs réalisations par les contributeurs ;
 - Gérer les droits d'accès au code ;
-- Désigner les validateurs de code et les moyens techniques requis pour les projets de développement ;;
+- Désigner les validateurs de code et les moyens techniques requis pour les projets de développement ;
 - S'assurer d'une production adéquate de documentation et d'une architecture commune ;
 - Rédiger les conventions et règles de codage;
-- Établir un mécanisme de gestion des versions en lien avec la communauté d'utilisateurs ;
+- Établir un mécanisme de gestion des versions en lien avec la communauté d'utilisateurs ;
 - Suivre les déploiements de la solution et recueillir le retour sur expérience des utilisateurs ;
 - Animer, tenir la communauté informée et faire en sorte de la garder dynamique ; 
 - Produire, au besoins des rapports du projet.
