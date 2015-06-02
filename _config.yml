@@ -15,7 +15,7 @@ description: > # this means to ignore newlines until "baseurl:"
 #local /IGO-gh-pages/  dans github "/test_IGO" c'est le nom du projet
 #baseurl pour site sur github: "/nomduprojet"  pour un site avec un cname mettre juste "/"
 # sinin c'est /site-web
-baseurl: "/site-web"
+baseurl: "/"
 # url pour local : [http://localhost]
 # url: "[http://localhost]"
 
