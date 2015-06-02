@@ -18,23 +18,17 @@ submenu:
   - { hook: "annexe2", title: "Annexe 2: Foire aux Questions" }
 ---
 
-# Acte constitutif de la communauté IGO
+# Acte constitutif
 
 <a id="mission"></a>
-## 1. Mission de la communauté IGO  [<span class="octicon octicon-link"></span>](#mission)
+## 1. Mission [<span class="octicon octicon-link"></span>](#mission)
 
-Le projet IGO (Infrastructure Géomatique Ouverte) est une communauté de pratique qui regroupe des spécialistes en géomatique issus de plusieurs organismes et ministères du gouvernement du Québec. IGO a vu le jour en 2014 et il se concrétise par des avancées et des valeurs ajoutées remarquables, au plus grand bénéfice de ses utilisateurs, principalement des partenaires du gouvernement. Le développement est mené principalement par des professionnels internes au gouvernement du Québec.
-
-Au printemps 2015, IGO a été distribué publiquement sous une LICENCE libre du gouvernement du Québec, permettant à des contributeurs de partout dans le monde de proposer des améliorations au logiciel, toujours au bénéfice des utilisateurs et du gouvernement du Québec.
-Le projet IGO permettra de livrer un nouveau navigateur cartographique gouvernemental d’ici le printemps 2015.
-
-IGO va intégrer un service de géolocalisation, de cartes Web et permettant à terme aussi la requête spatiale, le service d'itinéraire, l'édition en ligne, la gestion de la sécurité et le pilotage. IGO est une amélioration d'une version précédente de ce genre d’outil utilisé, entre autres, par des partenaires de la sécurité publique et de santé publique du gouvernement du Québec.
+Supporter le développement d’IGO afin d’assurer le respect des hauts standards internationaux en matière de géomatique et de répondre aux besoins des utilisateurs, notamment en diffusant les données produites par le gouvernement du Québec.
 
 <a id="structure"></a>
 ## 2. Structure de la communauté IGO  [<span class="octicon octicon-link"></span>](#structure)
 
-La communauté IGO est composée d'un seul comité et des contributeurs autres que les membres de ces comités. La communauté IGO est sous l'autorité du **comité technique**, qui assure le leadership technique du projet dans son ensemble et s'assure de la bonne compréhension des besoins et de la satisfaction des utilisateurs. Les développeurs, les utilisateurs et tout autre contributeur qui participent aux projets sont des acteurs aussi importants que les membres du comité. 
-
+La communauté est composée de contributeurs, d’utilisateurs et d'un *comité technique* (CT). Le CT assure le leadership technique du projet dans son ensemble et s'assure de la bonne compréhension des besoins des utilisateurs et de leur satisfaction. Les développeurs, les utilisateurs et tout autre contributeur qui participent aux projets sont des acteurs aussi importants que les membres du comité. 
 
 ### 2.1. Comité technique
 
@@ -45,7 +39,7 @@ Le comité technique est composé de développeurs experts, de super-utilisateur
 
 #### 2.1.2. Responsabilités du comité
 - Rédiger, modifier et amender la charte du comité technique et s'assurer de son respect par les membres de ce comité;
-- Tenir un calendrier d'évolution et le transmettre au comité d'administration pour information ;
+- Tenir un calendrier d'évolution et le transmettre à la communauté pour information ;
 - Identifier, collecter et consolider les besoins des utilisateurs;
 - Représenter la communauté auprès des organismes publics non membres et les partenaires extérieurs (incluant les fournisseurs de services, le cas échéant) ;
 - Étudier les demandes de changement et coordonner leurs réalisations par les contributeurs ;
@@ -63,7 +57,6 @@ Le comité technique est composé de développeurs experts, de super-utilisateur
 Le coordonnateur du comité technique est  nommé par les membres du comité technique sous une formule de présidence tournante. Ses responsabilités sont les suivantes :
 	
 - Organiser les rencontres du comité technique ;
-- Siéger, au besoin,  sans droit de vote sur le comité d'administration à titre de représentant du comité technique, dans le but de coordonner la relation de son comité avec comité d'administration. 
 - Publier les comptes rendus des réunions du comité technique.
 
 ### 2.2. Contributeurs
@@ -76,7 +69,7 @@ Nous entendons ici par contributeur, toute personne du domaine métier ou techni
 
 #### 2.2.1. Validateurs de code
 
-Ce sont des programmeurs expérimentés et habilités à valider le travail des autres programmeurs. Ils approuvent et intègrent le code soumis au projet, puis s'assure d'une documentation minimale au besoin. Les validateurs de code sont désignés par le comité technique. Un validateur de code doit être expert et s’engage à travailler pour garantir une meilleure stabilité du projet. Au moins un validateur de code doit faire partie du comité technique avec droit de vote [(Voir section mécanisme de prise des décisions)](#principes).
+Ce sont des programmeurs expérimentés et habilités à valider le travail des autres programmeurs. Ils approuvent et intègrent le code soumis au projet, puis s'assure d'une documentation minimale au besoin. Les validateurs de code sont désignés par le comité technique. Un validateur de code doit être expert et s’engage à travailler pour garantir une meilleure stabilité du projet. Au moins un validateur de code doit faire partie du CT avec droit de vote. Pour plus d'information, [voir section mécanisme de prise des décisions](#principes).
 
 ##### Exigences
 - Être un programmeur expérimenté avec une excellente connaissance du logiciel.
@@ -148,7 +141,7 @@ Le processus de demande de changement (RFC) doit suivre le processus suivant:
 - Recherche de consensus ;
 - Discussion par le comité technique de la demande de changement; 
 - Vote du comité technique au besoin ;
-- Publication des documents de demande de changement sur le site Web (ou dépôt) de IGO;
+- Publication des documents de demande de changement sur le site github.com d'IGO;
 
 ###6.7. Gestion des révisions 
 
@@ -175,12 +168,12 @@ La convention de codage est un document interne rédigé par le comité techniqu
 Dépôts du code source : [https://github.com/infra-geo-ouverte/igo](https://github.com/infra-geo-ouverte/igo)
  et [https://github.com/infra-geo-ouverte/puppet-igo](https://github.com/infra-geo-ouverte/puppet-igo)
 
-Outils de communication : si vous avez d'autres questions, n'hésitez pas à écrier à IGO à ce courriel : info(a)igouverte.org ou à la liste courriel [http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique).
+Outils de communication : si vous avez d'autres questions, n'hésitez pas à communiquer avec nous à l'adresse suivante : info(a)igouverte.org ou à vous inscrire à la liste courriel [http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique).
 
 <a id="amendement" ></a>
 ##10. Amendement de ce présent acte constitutif [<span class="octicon octicon-link"></span>](#amendement)
 
-Toute personne qui souhaite participer à la communauté IGO est tenue de respecter cet acte constitutif. Le comité Technique se réserve le droit d’amender cet acte à tout moment sauf dans sa partie Licence où les termes de la licence dominent.  
+Toute personne qui souhaite participer à la communauté IGO est tenue de respecter cet acte constitutif. Le comité Technique se réserve le droit d’amender cet acte à tout moment sauf dans la partie Licence du logiciel IGO où les termes de la  [licence](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt) dominent.  
 
 
 <a id="annexe1" ></a>
