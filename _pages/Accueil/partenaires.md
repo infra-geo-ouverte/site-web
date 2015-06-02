@@ -5,7 +5,6 @@ accueilsection: 3
 titre-accueil: Partenaires actuels
 ---
 
-##Partenaires actuels
 - Ministère de la Sécurité publique (MSP);
 - Institut national de santé publique (INSPQ);
 - Ministère de la Culture et des Communications (MCC);
