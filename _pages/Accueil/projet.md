@@ -9,6 +9,6 @@ IGO est une [infrastructure de géomatique](https://github.com/infra-geo-ouverte
 
 Les internautes de partout dans le monde sont encouragés à contribuer à IGO de plusieurs façons en vue de l’améliorer, et ce, au bénéfice de ses utilisateurs. Ainsi, par son développement basé sur un modèle collaboratif (« open source »), il est en constante évolution.
 
-IGO respecte les standards ouverts internationaux en géomatique et s'appuient sur des logiciels libres existants dans l'industrie. Il est également le premier logiciel à utiliser une [LICENCE ](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt) libre en français produite par le gouvernement du Québec.
+IGO respecte les standards ouverts internationaux en géomatique et s'appui sur des logiciels libres existants dans l'industrie. Il est également le premier logiciel à utiliser une [LICENCE ](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt) libre en français produite par le gouvernement du Québec.
 
 
