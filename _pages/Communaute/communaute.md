@@ -23,7 +23,7 @@ submenu:
 <a id="mission"></a>
 ## 1. Mission [<span class="octicon octicon-link"></span>](#mission)
 
-Supporter le développement d’IGO afin d’assurer le respect des hauts standards internationaux en matière de géomatique et de répondre aux besoins des utilisateurs, notamment en diffusant les données produites par le gouvernement du Québec.
+Supporter le développement d’IGO afin d’assurer le respect des hauts standards internationaux en matière de géomatique et de répondre aux besoins des utilisateurs, notamment en diffusant les données géographiques produites par le gouvernement du Québec.
 
 <a id="structure"></a>
 ## 2. Structure de la communauté IGO  [<span class="octicon octicon-link"></span>](#structure)
