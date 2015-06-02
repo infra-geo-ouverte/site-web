@@ -7,7 +7,7 @@ titre-accueil: Fonctionnalités
 
 - Navigation cartographique
 - Service de géolocalisation et d’itinéraires
-- Requête spatiale
+- Requêtes spatiales
 - Mise à jour en ligne des données géographiques
 - Gestion de la sécurité et administration
 
