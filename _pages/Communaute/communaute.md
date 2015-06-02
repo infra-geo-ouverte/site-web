@@ -213,7 +213,6 @@ Le comité technique actuel a pour mandat d'assurer le leadership technique de l
 Après chaque élection, le CT propose un de ses membres pour agir à titre de coordonnateur du CT sous une présidence tournante. En cas de plusieurs candidats, le choix du candidat se fait selon le mécanisme de vote de la communauté IGO. Les responsabilités du  coordonnateur du CT sont :
  
 - Organiser les rencontres du CT ;
-- Siéger, au besoin, sans droit de vote, sur  le comité d'administration à titre de représentant du CT ;
 - Publier les comptes rendu des réunions du CT.
 
 ###5. Réunions 
