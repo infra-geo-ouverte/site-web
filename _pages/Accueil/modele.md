@@ -2,18 +2,18 @@
 permalink: /
 layout: default
 accueilsection: 5
-titre-accueil: Modèle de collaboration d'IGO
+titre-accueil: IGO, un modèle collaboratif
 ---
 
+##IGO, un modèle collaboratif
 
-- Projet géré ouvertement sur GitHub, y compris les discussions à travers le système de suivi des questions.
-- Processus d'examen sur plusieurs niveaux pour les contributions pour assurer l'intégrité du code (combinaison d'évaluations automatisées et manuelles)
-- La nature des contributions peuvent être :
+- Code source entièrement géré dans GitHub.com, une plate-forme Web dédiée à l’hébergement et au développement de logiciels libres permettant également les interactions de la communauté.
+- Processus de validation des contributions par la communauté afin d’assurer la qualité du code.
+- Types de contributions : 
+  - soumissions de code,
+  - gabarits de conception,
+  - problèmes et suggestions,
+  - documentation,
+  - évaluations.
 
-  -  Soumissions de code ;
-  -  Patrons de conception ;
-  -  Problèmes et suggestions ;
-  -  Documentation ;
-  -  Évaluations.
-
-Voir la [FAQ](/site-web/faq/) pour plus d'information.
+Voir la [section Foire aux questions (FAQ)](/site-web/faq/) pour plus d'information.
