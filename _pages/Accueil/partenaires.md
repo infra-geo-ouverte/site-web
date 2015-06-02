@@ -2,15 +2,14 @@
 permalink: /
 layout: default
 accueilsection: 3
-titre-accueil: Les partenaires IGO
+titre-accueil: Partenaires actuels
 ---
 
-Voici les partenaires actuels du projet :   
-
-- Ministère des Transports du Québec (MTQ) ; 
-- Ministère de la Sécurité publique du Québec (MSP) ; 
-- Ministère de la Culture et des Communications du Québec (MCC) ;
-- Institut national de la santé publique du Québec (INSPQ) ;
-- Financière agricole du Québec (FADQ) ;
-- Commission de la protection du territoire agricole du Québec (CPTAQ) ;
-- Centre d'expertise en logiciels libres du Québec (CELL).
+##Partenaires actuels
+- Ministère de la Sécurité publique (MSP);
+- Institut national de santé publique (INSPQ);
+- Ministère de la Culture et des Communications (MCC);
+- Financière agricole du Québec (FADQ);
+- Ministère des Transports (MTQ);
+- Commission de la protection du territoire agricole (CPTAQ);
+- Centre d’expertise en logiciel libre (CELL).
