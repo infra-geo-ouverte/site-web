@@ -15,7 +15,7 @@
 				{% endif %}
 			{% endfor %}
 			{% for page in site.pages %}
-			
+
 				{% if page.accueilsection%} 
 				
 					<div class="col-sm-6" >	
@@ -25,7 +25,7 @@
 						</button>
 						
 						<!-- Modal -->
-						<div class="modal fade" id="no{{page.accueilsection}}" tabindex="-1" role="dialog" aria-labelledby="no{{page.accueilsection}}" aria-hidden="true">
+						<div class="modal fade" id="no{{page.accueilsection}}" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="no{{page.accueilsection}}" aria-hidden="true">
 						  <div class="modal-dialog">
 							<div class="modal-content">
 								<div class="modal-header">
