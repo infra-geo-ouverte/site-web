@@ -85,6 +85,9 @@ css de l'accueil incluant la banniere pour IE8
 #accueil .modal-backdrop.in{
 	opacity: 0;
 }
+#accueil .modal-backdrop{
+	z-index: 0;
+}
 #accueil .modal-header{
 	background-color: $vert-pale;
 }
