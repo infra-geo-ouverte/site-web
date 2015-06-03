@@ -10,7 +10,7 @@ submenu:
 ---
 
 #Documentation
-Cet espace comprend toute la documentation et les gabarits communs du projet d'IGO.
+Cet espace comprend toute la documentation et les gabarits communs d'IGO.
 
 <a id="utilisateur"></a>
 ## Guide pour les utilisateurs d'IGO-Navigateur : [<span class="octicon octicon-link"></span>](#utilisateur)
@@ -24,9 +24,9 @@ Cet espace comprend toute la documentation et les gabarits communs du projet d'I
 ## Gabarit pour documenter un : [<span class="octicon octicon-link"></span>](#gabarit)
 * [module](/site-web/documentation/doc_module)
 * [service](/site-web/documentation/doc_service)
-* [panorama](/site-web/documentation/doc_panorama)
+* [panorama](/site-web/documentation/doc_panorama).
 
 ## Autres documents :
 * [technologies utilisées](/site-web/documentation/techno)
 * [architecture](https://github.com/infra-geo-ouverte/igo/blob/master/doc/IGO-CIBLE-v2014_aveclogo.png)
-* [modules](/site-web/documentation/module)
+* [modules](/site-web/documentation/module).
