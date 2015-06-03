@@ -48,9 +48,9 @@ Le CT est composé de développeurs experts, de super-utilisateurs, de gestionna
 - S'assurer d'une production adéquate de documentation et d'une architecture commune.
 - Rédiger les conventions et règles de codage.
 - Établir un mécanisme de gestion des versions en lien avec la communauté d'utilisateurs.
-- Suivre les déploiements de la solution et recueillir le retour sur expérience des utilisateurs.
+- Suivre les déploiements de la solution et recueillir le retour sur l'expérience des utilisateurs.
 - Animer la communauté, la tenir informée et faire en sorte de la garder dynamique.
-- Produire, au besoins, des rapports du projet.
+- Produire, au besoin, des rapports du projet.
 
 #### 2.1.3. Coordonnateur du CT
 Le coordonnateur du CT est nommé par les membres du CT sous une formule de présidence tournante. Ses responsabilités sont les suivantes :
@@ -82,7 +82,7 @@ Ce sont des programmeurs expérimentés et habilités à valider le travail des 
 ##### Responsabilités
 - S'assurer de l'intégrité des contributions (provenance, propriété intellectuelle, brevets, licence, etc.).
 - Respecter les règles de codage.
-- S'assure d'une documentation adéquate des changements effectués.
+- S'assure d'avoir une documentation adéquate concernant les changements effectués.
 
 <a id="financement"></a>
 ##3. Sources de financement  [<span class="octicon octicon-link"></span>](#financement)
@@ -124,7 +124,7 @@ Un membre = une voix.
 	2. 0: signifie « je m'abstiens »;
 	3. -1: signifie « j'ai une objection ». Ceci est considéré comme étant un veto. Dans ce cas, la personne votante est dans l'obligation de fournir une motion de rechange.
 - Une proposition est acceptée si elle reçoit au moins +2 (incluant l'auteur) et aucun veto (-1).
-- Si une proposition reçoit un veto (-1) et qu'il est impossible de satisfaire toutes les parties après révision et discussion, la proposition peut être soumise pour un second vote ultime et dans ce cas, un vote positif de la majorité absolue de tous les membres du comité est requis pour que la proposition soit acceptée. Dans ce cas, le veto ne s'applique plus.
+- Si une proposition reçoit un veto (-1) et qu'il est impossible de satisfaire toutes les parties après révision et discussion, la proposition peut être soumise pour un second vote ultime et, dans ce cas, un vote positif de la majorité absolue de tous les membres du comité est requis pour que la proposition soit acceptée. Dans ce cas, le veto ne s'applique plus.
 - Le résultat du vote est compilé et publié.
 
 ###6.6. Gestion des demandes de changements (RFC) 
@@ -133,7 +133,7 @@ Le processus de demande de changement (RFC) doit suivre le processus suivant :
 - discussions préliminaires sur la liste de discussion; 
 - production d'un document de demande de changement dans le dépôt du projet à partir des gabarits fournis (raison d'être, conditions, moyens, règle, composantes, etc.); 
 - recherche de consensus;
-- discussion du CT par rapport à de la demande de changement; 
+- discussion du CT par rapport à la demande de changement; 
 - vote du CT au besoin;
 - publication des documents de demande de changement sur le site GitHub d'IGO.
 
@@ -171,7 +171,7 @@ Toute personne qui souhaite participer à la communauté IGO est tenue de respec
 ##Annexe 1: Charte du CT [<span class="octicon octicon-link"></span>](#annexe1)
 
 ###1. Mission 
-Le comité technique («CT») est chargé d'assurer le leadership technique pour la gestion d’IGO et il prend les décisions concernant les questions liées aux aspects techniques. Il constitue le comité ultime d'appel des décisions techniques.
+Le comité technique (CT) est chargé d'assurer le leadership technique pour la gestion d’IGO et il prend les décisions concernant les questions liées aux aspects techniques. Il constitue le comité ultime d'appel des décisions techniques.
 
 ###2. Responsabilités du CT
 - Rédiger, modifier et amender la charte du CT et s'assurer de son respect par les membres de ce comité.
@@ -184,9 +184,9 @@ Le comité technique («CT») est chargé d'assurer le leadership technique pour
 - S'assurer d'une production adéquate de documentation et d'une architecture commune.
 - Rédiger les conventions et règles de codage.
 - Établir un mécanisme de gestion des versions en lien avec la communauté d'utilisateurs.
-- Suivre les déploiements de la solution et recueillir le retour sur expérience des utilisateurs.
+- Suivre les déploiements de la solution et recueillir le retour sur l'expérience des utilisateurs.
 - Animer la communauté, la tenir informée et faire en sorte de la garder dynamique.
-- Produire, au besoins, des rapports du projet.
+- Produire, au besoin, des rapports du projet.
 
 ###3. Comité initial    
 Le CT actuel a pour mandat d'assurer le leadership technique de la communauté. 
@@ -206,13 +206,13 @@ Voici les membres actuels :
 Après chaque élection, le CT propose un de ses membres pour agir à titre de coordonnateur du CT sous une présidence tournante. En cas de plusieurs candidats, le choix du candidat se fait selon le mécanisme de vote de la communauté IGO. Les responsabilités du  coordonnateur du CT sont :
 
 - d'organiser les rencontres du CT;
-- de publier les comptes rendu des réunions du CT.
+- de publier les comptes rendus des réunions du CT.
 
 ###5. Réunions 
-- Les réunions se déroulent au moins à tous les mois.
+- Les réunions se déroulent au moins tous les mois.
 - Le CT maintient un ordre du jour ouvert sur la liste de diffusion.
-- Une réunion spéciale du CT peut être convoquée si un de ses membres en fait la demande sur la liste de diffusion au moins 2 jour avant l'heure de réunion.
-- La tenue d'une réunion est conditionnelle à la participation d'au moins 50% des membres du CT.
+- Une réunion spéciale du CT peut être convoquée si un de ses membres en fait la demande sur la liste de diffusion au moins deux jours avant l'heure de réunion.
+- La tenue d'une réunion est conditionnelle à la participation d'au moins 50 % des membres du CT.
 
 ###6. Motions 
 Avant d'être soumises à un vote, les motions doivent être présentées et discutées publiquement à la recherche d'un consensus sur la liste de diffusion des développeurs, pour un minimum de deux jours ouvrables.
@@ -220,14 +220,14 @@ Avant d'être soumises à un vote, les motions doivent être présentées et dis
 ###7. Délégation du droit du vote 
 Un membre du CT qui se trouve dans l'impossibilité d'assister à une réunion peut mandater un représentant de son opinion qui votera en son nom.
 
-###8. Candidatures aux CT 
+###8. Candidatures au CT 
 Tout contributeur technique actif ou super-utilisateur peut soumettre sa candidature pour devenir membre du CT.
 
 ###9. Amendement
 L'amendement de cette présente charte du CT est proposé dans une motion spéciale qui, pour être acceptée, doit être approuvée selon les principes et les mécanismes de prise de décisions de la communauté.
 
 <a id="annexe2"></a>
-##Annexe 2: Foire aux Questions [<span class="octicon octicon-link"></span>](#annexe2)          
+##Annexe 2: Foire aux Questions (FAQ) [<span class="octicon octicon-link"></span>](#annexe2)          
 
 ###Comment un développeur peut-il devenir un validateur de code ?
 Les validateurs de code sont des développeurs expérimentés. Il est possible de devenir validateur de code en réalisant les étapes suivantes :
