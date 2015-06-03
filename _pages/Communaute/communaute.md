@@ -135,9 +135,9 @@ Le processus de demande de changement (RFC) doit suivre le processus suivant:
 - publication des documents de demande de changement sur le site GitHub d'IGO.
 
 ###6.7. Gestion des révisions 
-- Dépôt d'un plan de livraison; 
+- Dépôt d'un plan de livraison.
 - Plan livraison -> gel de fonctionnalités -> version bêtas -> RC (candidate release) -> livraison. 
-- Rôle de responsable de livraison (doit être un validateur de code); 
+- Rôle de responsable de livraison (doit être un validateur de code). 
 
 ###6.8. Cycle de révisions : 
 - Le cycle des révisions est basé sur la feuille de route (“roadmap”);
@@ -161,7 +161,7 @@ Outils de communication : si vous avez d'autres questions, n'hésitez pas à co
 <a id="amendement" ></a>
 ##10. Amendement de ce présent acte constitutif [<span class="octicon octicon-link"></span>](#amendement)
 
-Toute personne qui souhaite participer à la communauté IGO est tenue de respecter cet acte constitutif. Le comité Technique se réserve le droit d’amender cet acte à tout moment sauf dans la partie Licence du logiciel IGO où les termes de la  [licence](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt) dominent.  
+Toute personne qui souhaite participer à la communauté IGO est tenue de respecter cet acte constitutif. Le CT se réserve le droit d’amender cet acte à tout moment sauf dans la partie Licence du logiciel IGO où les termes de la  [licence](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt) dominent.  
 
 
 <a id="annexe1" ></a>
@@ -171,23 +171,22 @@ Toute personne qui souhaite participer à la communauté IGO est tenue de respec
 Le comité technique («CT») est chargé d'assurer le leadership technique pour la gestion d’IGO et il prend les décisions concernant les questions liées aux aspects techniques. Il constitue le comité ultime d'appel des décisions techniques.
 
 ###2. Responsabilités du CT
-- Rédiger, modifier et amender la charte du CT et s'assurer de son respect par les membres de ce comité;
-- Tenir un calendrier d'évolution et le transmettre à la communauté pour information ;
-- Identifier, collecter et consolider les besoins des utilisateurs;
-- Représenter la communauté auprès des organismes publics non membres et les partenaires extérieurs (incluant les fournisseurs de services, le cas échéant) ;
-- Étudier les demandes de changement et coordonner leurs réalisations par les contributeurs ;
-- Gérer les droits d'accès au code ;
-- Désigner les validateurs de code et les moyens techniques requis pour les projets de développement ;
-- S'assurer d'une production adéquate de documentation et d'une architecture commune ;
-- Rédiger les conventions et règles de codage;
-- Établir un mécanisme de gestion des versions en lien avec la communauté d'utilisateurs ;
-- Suivre les déploiements de la solution et recueillir le retour sur expérience des utilisateurs ;
-- Animer la communauté, la tenir informée et faire en sorte de la garder dynamique ; 
+- Rédiger, modifier et amender la charte du CT et s'assurer de son respect par les membres de ce comité.
+- Tenir un calendrier d'évolution et le transmettre à la communauté pour information.
+- Identifier, collecter et consolider les besoins des utilisateurs.
+- Représenter la communauté auprès des organismes publics non membres et les partenaires extérieurs (incluant les fournisseurs de services, le cas échéant).
+- Étudier les demandes de changement et coordonner leurs réalisations par les contributeurs.
+- Gérer les droits d'accès au code.
+- Désigner les validateurs de code et les moyens techniques requis pour les projets de développement.
+- S'assurer d'une production adéquate de documentation et d'une architecture commune.
+- Rédiger les conventions et règles de codage.
+- Établir un mécanisme de gestion des versions en lien avec la communauté d'utilisateurs.
+- Suivre les déploiements de la solution et recueillir le retour sur expérience des utilisateurs.
+- Animer la communauté, la tenir informée et faire en sorte de la garder dynamique.
 - Produire, au besoins, des rapports du projet.
 
 ###3. Comité initial    
 Le CT actuel a pour mandat d'assurer le leadership technique de la communauté. Voici les membres actuels :
-
 - Luc Lessard (MSP);
 - Nicolas Gignac (MSP);
 - François Gourdeau (MSP);
@@ -200,15 +199,14 @@ Le CT actuel a pour mandat d'assurer le leadership technique de la communauté. 
 
 ###4. Coordonnateur du CT
 Après chaque élection, le CT propose un de ses membres pour agir à titre de coordonnateur du CT sous une présidence tournante. En cas de plusieurs candidats, le choix du candidat se fait selon le mécanisme de vote de la communauté IGO. Les responsabilités du  coordonnateur du CT sont :
-- d'organiser les rencontres du CT ;
+- d'organiser les rencontres du CT;
 - de publier les comptes rendu des réunions du CT.
 
 ###5. Réunions 
-- Les réunions se déroulent au moins à tous les mois ;
-- Le CT maintient un ordre du jour ouvert sur la liste de diffusion ;
-- Une réunion spéciale du CT peut être convoquée si un de ses membres en fait la demande sur la liste de diffusion au moins 2 jour avant l'heure de réunion ;
-- La tenue d'une réunion est conditionnelle à la participation d'au moins 50% des membres du CT;
-
+- Les réunions se déroulent au moins à tous les mois.
+- Le CT maintient un ordre du jour ouvert sur la liste de diffusion.
+- Une réunion spéciale du CT peut être convoquée si un de ses membres en fait la demande sur la liste de diffusion au moins 2 jour avant l'heure de réunion.
+- La tenue d'une réunion est conditionnelle à la participation d'au moins 50% des membres du CT.
 
 ###6. Motions 
 Avant d'être soumises à un vote, les motions doivent être présentées et discutées publiquement à la recherche d'un consensus sur la liste de diffusion des développeurs, pour un minimum de deux jours ouvrables.
@@ -225,8 +223,8 @@ L'amendement de cette présente charte du CT est proposé dans une motion spéci
 <a id="annexe2"></a>
 ##Annexe 2: Foire aux Questions [<span class="octicon octicon-link"></span>](#annexe2)          
 
-###Comment un développeur peut devenir un validateur de code ?
-Les validateurs de code sont des développeurs expérimentés. Il est possible de devenir validateur de code en réalisant les étapes suivantes :
+###Comment un développeur peut-il devenir un validateur de code ?
+Les validateurs de code sont des développeurs expérimentés. Il est possible de devenir validateur de code en réalisant les étapes suivantes :
 - Contribuer régulièrement à la validation de code en envoyant des ajouts ou des modifications par l’intermédiaire du système de suivi de bogues.
 - Faire réviser et endosser ces modifications par un ou des validateurs de code pour inclusion officielle dans le logiciel. Cela permet de gagner la confiance des autres validateurs de code.
 - Confirmer le désir de devenir validateur de code et de respecter les règles d'engagement.
@@ -242,7 +240,7 @@ Les validateurs de code sont des développeurs expérimentés. Il est possible d
 
 ###Numérotage des révisions 
 
-- Version = x.y.z (majeur.mineur.patch); 
-- Mineur pair = stable (ex: 5.4, 5.6); 
-- Mineur impair = développement (ex: 5.5); 
+- Version = x.y.z (majeur.mineur.patch).
+- Mineur pair = stable (ex: 5.4, 5.6).
+- Mineur impair = développement (ex: 5.5). 
 - Patch = résolutions bogues = 5.4.1, 5.4.2, etc.
