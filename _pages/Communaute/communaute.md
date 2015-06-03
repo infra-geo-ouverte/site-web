@@ -53,19 +53,19 @@ Le CT est composé de développeurs experts, de super-utilisateurs, de gestionna
 - Produire, au besoins, des rapports du projet.
 
 #### 2.1.3. Coordonnateur du CT
-Le coordonnateur du CT est nommé par les membres du CT sous une formule de présidence tournante. Ses responsabilités sont les suivantes :
+Le coordonnateur du CT est nommé par les membres du CT sous une formule de présidence tournante. Ses responsabilités sont les suivantes :
 - organiser les rencontres du CT;
 - publier les comptes rendus des réunions du CT.
 
 ### 2.2. Contributeurs
 Nous entendons ici par contributeur, toute personne du domaine métier ou technique qui participe aux activités de la communauté. Les contributeurs incluent les :
-- développeurs : ce sont en  général des programmeurs qui participent à la programmation du code du logiciel. **Un validateur de code est un profil particulier de développeur**. Les développeurs sont tenus de  respecter les conventions, l'architecture commune et règles de codage. 
-- super-utilisateurs et utilisateurs : ce sont les utilisateurs de la solution (simples utilisateurs, pilotes, testeurs, etc.) ;
-- architectes et intégrateurs ;
+- développeurs : ce sont en  général des programmeurs qui participent à la programmation du code du logiciel. **Un validateur de code est un profil particulier de développeur**. Les développeurs sont tenus de respecter les conventions, l'architecture commune et règles de codage;
+- super-utilisateurs et utilisateurs : ce sont les utilisateurs de la solution (simples utilisateurs, pilotes, testeurs, etc.);
+- architectes et intégrateurs;
 - tout autre type de contributeurs.
 
 #### 2.2.1. Validateurs de code
-Ce sont des programmeurs expérimentés et habilités à valider le travail des autres programmeurs. Ils approuvent et intègrent le code soumis au projet, puis s'assurent d'une documentation minimale au besoin. Les validateurs de code sont désignés par le CT. Un validateur de code doit être expert et s’engage à travailler pour garantir une meilleure stabilité du projet. Au moins un validateur de code doit faire partie du CT avec droit de vote. Pour plus d’information, voir [la section Principes et mécanisme de prise des décisions](#principes).
+Ce sont des programmeurs expérimentés et habilités à valider le travail des autres programmeurs. Ils approuvent et intègrent le code soumis au projet, puis s'assurent d'une documentation minimale au besoin. Les validateurs de code sont désignés par le CT. Un validateur de code doit être expert et s’engage à travailler pour garantir une meilleure stabilité du projet. Au moins un validateur de code doit faire partie du CT avec droit de vote. Pour plus d’information, voir [la section Principes et mécanisme de prise des décisions](#principes).
 
 ##### Exigences
 - Être un programmeur expérimenté avec une excellente connaissance du logiciel.
