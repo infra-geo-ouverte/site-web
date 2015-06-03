@@ -59,7 +59,8 @@ Le coordonnateur du CT est nommé par les membres du CT sous une formule de pré
 - publier les comptes rendus des réunions du CT.
 
 ### 2.2. Contributeurs
-Nous entendons ici par contributeur, toute personne du domaine métier ou technique qui participe aux activités de la communauté. Les contributeurs incluent les :
+Nous entendons ici par contributeur, toute personne du domaine métier ou technique qui participe aux activités de la communauté. Les contributeurs incluent les :
+
 - développeurs : ce sont en  général des programmeurs qui participent à la programmation du code du logiciel. **Un validateur de code est un profil particulier de développeur**. Les développeurs sont tenus de respecter les conventions, l'architecture commune et règles de codage;
 - super-utilisateurs et utilisateurs : ce sont les utilisateurs de la solution (simples utilisateurs, pilotes, testeurs, etc.);
 - architectes et intégrateurs;
@@ -127,7 +128,8 @@ Un membre = une voix ;
 - Le résultat du vote est compilé et publié.
 
 ###6.6. Gestion des demandes de changements (RFC) 
-Le processus de demande de changement (RFC) doit suivre le processus suivant: 
+Le processus de demande de changement (RFC) doit suivre le processus suivant :
+
 - discussions préliminaires sur la liste de discussion; 
 - production d'un document de demande de changement dans le dépôt du projet à partir des gabarits fournis (raison d'être, conditions, moyens, règle, composantes, etc.); 
 - recherche de consensus;
@@ -187,7 +189,9 @@ Le comité technique («CT») est chargé d'assurer le leadership technique pour
 - Produire, au besoins, des rapports du projet.
 
 ###3. Comité initial    
-Le CT actuel a pour mandat d'assurer le leadership technique de la communauté. Voici les membres actuels :
+Le CT actuel a pour mandat d'assurer le leadership technique de la communauté. 
+Voici les membres actuels :
+
 - Luc Lessard (MSP);
 - Nicolas Gignac (MSP);
 - François Gourdeau (MSP);
@@ -199,7 +203,8 @@ Le CT actuel a pour mandat d'assurer le leadership technique de la communauté. 
 - Anne Morel (MCC).
 
 ###4. Coordonnateur du CT
-Après chaque élection, le CT propose un de ses membres pour agir à titre de coordonnateur du CT sous une présidence tournante. En cas de plusieurs candidats, le choix du candidat se fait selon le mécanisme de vote de la communauté IGO. Les responsabilités du  coordonnateur du CT sont :
+Après chaque élection, le CT propose un de ses membres pour agir à titre de coordonnateur du CT sous une présidence tournante. En cas de plusieurs candidats, le choix du candidat se fait selon le mécanisme de vote de la communauté IGO. Les responsabilités du  coordonnateur du CT sont :
+
 - d'organiser les rencontres du CT;
 - de publier les comptes rendu des réunions du CT.
 
@@ -226,13 +231,15 @@ L'amendement de cette présente charte du CT est proposé dans une motion spéci
 
 ###Comment un développeur peut-il devenir un validateur de code ?
 Les validateurs de code sont des développeurs expérimentés. Il est possible de devenir validateur de code en réalisant les étapes suivantes :
+
 - Contribuer régulièrement à la validation de code en envoyant des ajouts ou des modifications par l’intermédiaire du système de suivi de bogues.
 - Faire réviser et endosser ces modifications par un ou des validateurs de code pour inclusion officielle dans le logiciel. Cela permet de gagner la confiance des autres validateurs de code.
 - Confirmer le désir de devenir validateur de code et de respecter les règles d'engagement.
 - Se faire attribuer le titre de validateur de code par un vote du CT.
 - Être un validateur de code actif et respecter les règles d'engagement. Dans le cas contraire, la personne peut se faire révoquer sa qualité de validateur de code par le CT et, par conséquent, perdre les privilèges qui lui sont conférés.
 
-###Comment gagner la confiance des autres validateurs de code ? 
+###Comment gagner la confiance des autres validateurs de code ?
+
 - Avoir une bonne compréhension de l'architecture, des outils et des méthodes de fonctionnement du projet.
 - Écrire du code de qualité.
 - Avoir de bonnes aptitudes de communication.
