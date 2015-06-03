@@ -3,20 +3,25 @@ permalink: /documentation/
 layout: general
 title-main: Documentation
 iconedocumentation: ""
+submenu:
+  - { hook: "utilisateur",    title: "Pour les utilisateurs" }
+  - { hook: "developpeur", title: "Pour les développeurs" }
+  - { hook: "gabarit", title: "Gabarits et autres" }
 ---
 
 #Documentation
 Cet espace comprend toute la documentation et les gabarits communs du projet d'IGO.
 
-
-## Guide pour les utilisateurs d'IGO-Navigateur :
+<a id="utilisateur"></a>
+## Guide pour les utilisateurs d'IGO-Navigateur : [<span class="octicon octicon-link"></span>](#utilisateur)
 [Guide d'utilisation du navigateur IGO](https://github.com/infra-geo-ouverte/igo/blob/master/doc/guide/IGO_Navigateur_guide.docx)
 
-## Informations pour les développeurs et intégrateurs :
+<a id="developpeur"></a>
+## Informations pour les développeurs et intégrateurs : [<span class="octicon octicon-link"></span>](#developpeur)
 [Documentation des balises XML d'IGO-Navigateur](https://github.com/infra-geo-ouverte/igo/blob/master/doc/xml/DocumentationXML.markdown)
 
-
-## Gabarit pour documenter un :
+<a id="gabarit"></a>
+## Gabarit pour documenter un : [<span class="octicon octicon-link"></span>](#gabarit)
 * [module](/site-web/documentation/doc_module)
 * [service](/site-web/documentation/doc_service)
 * [panorama](/site-web/documentation/doc_panorama)
