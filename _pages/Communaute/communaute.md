@@ -143,7 +143,7 @@ Le processus de demande de changement (RFC) doit suivre le processus suivant :
 - Rôle de responsable de livraison (doit être un validateur de code). 
 
 ###6.8. Cycle de révisions : 
-- Le cycle des révisions est basé sur la feuille de route (“roadmap”);
+- Le cycle des révisions est basé sur la feuille de route (“roadmap”).
 
 <a id="charte"></a>
 ##7. Charte du comité technique    [<span class="octicon octicon-link"></span>](#charte)
