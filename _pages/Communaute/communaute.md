@@ -114,7 +114,7 @@ Est considéré comme membre votant, un membre qui apporte une contribution subs
 Un membre  « observateur » est un contributeur qui n'a pas le droit de vote.
 
 ###6.4. Poids du vote
-Un membre = une voix ;
+Un membre = une voix.
 
 ###6.5. Mécanisme de vote
 - Les motions sont inscrites sur une  liste de discussion et les votes se font en public, sauf dans les cas exigeant la confidentialité.
