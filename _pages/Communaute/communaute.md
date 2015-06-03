@@ -54,6 +54,7 @@ Le CT est composé de développeurs experts, de super-utilisateurs, de gestionna
 
 #### 2.1.3. Coordonnateur du CT
 Le coordonnateur du CT est nommé par les membres du CT sous une formule de présidence tournante. Ses responsabilités sont les suivantes :
+
 - organiser les rencontres du CT;
 - publier les comptes rendus des réunions du CT.
 
