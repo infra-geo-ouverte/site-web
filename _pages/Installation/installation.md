@@ -8,10 +8,10 @@ iconeinstallation: ""
 ##Procédures d'installations possibles et supportées :
 
 ### 1. Installation dans une machine virtuelle
-Consulter la [Procédure d'installation rapide avec](https://github.com/infra-geo-ouverte/igo#installation-et-démarrage-de-lenvironnement-de-développement) pour installer et démarrer une machine virtuelle dans Linux ou Windows préconfigurée pour tester et/ou développer dans IGO.
+Consulter la [Procédure d'installation rapide](https://github.com/infra-geo-ouverte/igo#installation-et-démarrage-de-lenvironnement-de-développement)  pour démarrer IGO dans une machine virtuelle préconfigurée afin de tester et/ou développer à même un poste Linux ou Windows.
 
 ### 2. Installation sous Linux-Ubuntu
-Consulter la [Procédure d'installation complète Navigateur+Pilotage sous Ubuntu](https://github.com/infra-geo-ouverte/igo/blob/master/doc/installation/installation_linux.md).
+Consulter la [Procédure d'installation complète sous Ubuntu](https://github.com/infra-geo-ouverte/igo/blob/master/doc/installation/installation_linux.md).
 
 ### 3. Installation sous Windows
 Consulter la [Procédure d'installation sous Windows avec WAMP](https://github.com/infra-geo-ouverte/igo/blob/master/doc/installation/installation_windows.docm)
