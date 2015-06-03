@@ -21,8 +21,8 @@ Le comité technique d'IGO et ses développeurs contributeurs sont responsables 
 Les décisions sur le projet se prennent selon les règles de  [gouvernance de la communauté](/site-web/communaute).
 Dans l'esprit de collaboration des logiciels libres et ouverts, tout le monde est encouragé à améliorer ce produit.
 
-- Si vous voulez contribuer, vous devez avoir un compte sur le site de [Github](http://github.com).
-- Tous les contributeurs d'IGO vont conserver leur droit d'auteur, mais en contribuant l'individu doit accepter les règles de la [LICENCE](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt) d'IGO.
+- Si vous voulez contribuer, vous devez avoir un compte sur le site de [GitHub](http://github.com).
+- Tous les contributeurs d'IGO conserveront leurs droits d'auteur, mais, en contribuant, l'individu doit accepter les règles de la [LICENCE](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt) d'IGO.
 
 Voici de multiples façons de contribuer :
 
@@ -37,7 +37,7 @@ Voici de multiples façons de contribuer :
 
 <a id="rapporter" name="rapporter"></a>
 ## Rapporter des problèmes majeurs [<span class="octicon octicon-link"></span>](#rapporter)
-Avant de soumettre un nouveau bogue ou un problème, soyez certain qu'il n'a pas déjà été soumis ou n'est pas déjà en suivi. Veuillez alors y contribuer en envoyant vos idées, propositions et commentaires au site [Github](http://github.com).  
+Avant de soumettre un nouveau bogue ou un problème, soyez certain qu'il n'a pas déjà été soumis ou qu'il n'est pas déjà en suivi. Veuillez alors y contribuer en envoyant vos idées, propositions et commentaires au site [Github](http://github.com).  
 Quand vous soumettez un nouveau bogue ou problème, veuillez donner le plus de détails possible (ex. copie d'écran du problème, code d'erreur retourné, technologie utilisée, hyperliens ou toute autre élément pertinent).  
 
 
