@@ -26,14 +26,14 @@ Dans l'esprit de collaboration des logiciels libres et ouverts, tout le monde es
 
 Voici de multiples façons de contribuer :
 
-- Rapporter des bogues ;
-- Suggérer de nouvelles fonctionnalités, nouveaux modules ou services ;
-- Traduire du contenu dans une autre langue ;
-- Produire et modifier la documentation
-- Produire du nouveau code source
-- Faire une revue des demandes de changements
-- Rapporter qu'un problème a été réglé.
-- Etc.
+- rapporter des bogues;
+- suggérer de nouvelles fonctionnalités, nouveaux modules ou services;
+- traduire du contenu dans une autre langue;
+- produire et modifier la documentation;
+- produire du nouveau code source;
+- faire une revue des demandes de changements;
+- rapporter qu'un problème a été réglé.
+- etc.
 
 <a id="rapporter" name="rapporter"></a>
 ## Rapporter des problèmes majeurs [<span class="octicon octicon-link"></span>](#rapporter)
