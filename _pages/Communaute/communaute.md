@@ -71,15 +71,15 @@ Ce sont des programmeurs expérimentés et habilités à valider le travail des 
 - Être un programmeur expérimenté avec une excellente connaissance du logiciel.
 
 ##### Statut
-- Le CT vote et approuve l'élection des validateurs de code ;
-- Le statut du validateur de code peut être révoqué à tout moment par le CT et, par conséquent, perdre les privilèges qui lui sont conférés. 
+- Le CT vote et approuve l'élection des validateurs de code.
+- Le statut du validateur de code peut être révoqué à tout moment par le CT et, par conséquent, celui-ci peut perdre les privilèges qui lui sont conférés.
 
 ##### Privilèges
 - Permission de contribuer au dépôt du code source directement dans le tronc commun du logiciel sans modération préalable.
 
 ##### Responsabilités
-- S'assurer de l'intégrité des contributions (provenance, propriété intellectuelle, brevets, licence, etc.) ;
-- Respecter les règles de codage ;
+- S'assurer de l'intégrité des contributions (provenance, propriété intellectuelle, brevets, licence, etc.).
+- Respecter les règles de codage.
 - S'assure d'une documentation adéquate des changements effectués.
 
 <a id="financement"></a>
@@ -97,7 +97,7 @@ Les sources de la communauté se traduisent par une participation financière et
 
 À la lumière des définitions données dans les termes de la licence :
 « concédant » : le titulaire du droit d'auteur sur le logiciel, ou toute personne dûment autorisée par ce dernier à accorder la présente licence;
-« contributeur » : le titulaire du droit d'auteur ou toute personne autorisée par ce dernier à soumettre au concédant une contribution. **Un contributeur dont sa contribution est incorporée au logiciel est considéré comme un concédant en regard de sa contribution**;
+« contributeur » : le titulaire du droit d'auteur ou toute personne autorisée par ce dernier à soumettre au concédant une contribution. **Un contributeur dont sa contribution est incorporée au logiciel est considéré comme un concédant en regard de sa contribution**.
 
 <a id="principes"></a>
 ##6. Principes et mécanismes de prise des décisions   [<span class="octicon octicon-link"></span>](#principes)
@@ -115,14 +115,14 @@ Un membre  « observateur » est un contributeur qui n'a pas le droit de vote.
 Un membre = une voix ;
 
 ###6.5. Mécanisme de vote
-- Les motions sont inscrites sur une  liste de discussion et les votes se font en public, sauf dans les cas exigeant la confidentialité; 
-- Le vote est habituellement ouvert pour une période relativement courte (ex. : trois jours ouvrables); 
+- Les motions sont inscrites sur une  liste de discussion et les votes se font en public, sauf dans les cas exigeant la confidentialité.
+- Le vote est habituellement ouvert pour une période relativement courte (ex. : trois jours ouvrables).
 - La notation suivante pour le vote est adoptée : +1, 0, -1: 
-	1. +: signifie « je suis d'accord et je m'engage à supporter cette décision et à collaborer à sa réalisation » ;
-	2. 0: signifie « je m'abstiens » ;
-	3. -1: signifie « j'ai une objection ». Ceci est considéré comme étant un veto. Dans ce cas, la personne votante est dans l'obligation de fournir une motion de rechange ;
-- Une proposition est acceptée si elle reçoit au moins +2 (incluant l'auteur) et aucun veto (-1); 
-- Si une proposition reçoit un veto (-1) et qu'il est impossible de satisfaire toutes les parties après révision et discussion, la proposition peut être soumise pour un second vote ultime et dans ce cas, un vote positif de la majorité absolue de tous les membres du comité est requis pour que la proposition soit acceptée. Dans ce cas, le veto ne s'applique plus ;
+	1. +: signifie « je suis d'accord et je m'engage à supporter cette décision et à collaborer à sa réalisation »;
+	2. 0: signifie « je m'abstiens »;
+	3. -1: signifie « j'ai une objection ». Ceci est considéré comme étant un veto. Dans ce cas, la personne votante est dans l'obligation de fournir une motion de rechange.
+- Une proposition est acceptée si elle reçoit au moins +2 (incluant l'auteur) et aucun veto (-1).
+- Si une proposition reçoit un veto (-1) et qu'il est impossible de satisfaire toutes les parties après révision et discussion, la proposition peut être soumise pour un second vote ultime et dans ce cas, un vote positif de la majorité absolue de tous les membres du comité est requis pour que la proposition soit acceptée. Dans ce cas, le veto ne s'applique plus.
 - Le résultat du vote est compilé et publié.
 
 ###6.6. Gestion des demandes de changements (RFC) 
@@ -132,7 +132,7 @@ Le processus de demande de changement (RFC) doit suivre le processus suivant:
 - recherche de consensus;
 - discussion du CT par rapport à de la demande de changement; 
 - vote du CT au besoin;
-- publication des documents de demande de changement sur le site GitHub d'IGO;
+- publication des documents de demande de changement sur le site GitHub d'IGO.
 
 ###6.7. Gestion des révisions 
 - Dépôt d'un plan de livraison; 
