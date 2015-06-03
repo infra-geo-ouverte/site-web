@@ -15,10 +15,10 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 Jekyll (http://jekyllrb.com/), licence de type MIT .
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-JQuery (https://github.com/jquery/jquery), licence de type MIT 
+jQuery (https://github.com/jquery/jquery), licence de type MIT 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-FontAwsome (http://fortawesome.github.io/Font-Awesome/), licence de type MIT, documentation sous CC BY 3.0.
+Font Awesome (http://fortawesome.github.io/Font-Awesome/), licence de type MIT, documentation sous CC BY 3.0.
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 GitHub Octicons (https://octicons.github.com/), licence de type MIT.
