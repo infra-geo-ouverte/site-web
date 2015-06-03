@@ -5,7 +5,7 @@ title-main: Installation
 iconeinstallation: ""
 ---
 
-##Types d'installation possibles et supportées
+##Procédures d'installations possibles et supportées
 
 ### 1. Installation dans une machine virtuelle
 Consulter la [Procédure d'installation rapide avec](https://github.com/infra-geo-ouverte/igo#installation-et-démarrage-de-lenvironnement-de-développement) pour installer et démarrer une machine virtuelle dans Linux ou Windows préconfigurée pour tester et/ou développer dans IGO.
