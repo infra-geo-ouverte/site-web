@@ -38,13 +38,12 @@ include: ['_pages']
 relative_permalinks: false 
 
 navigation:
-    - text: Index       
-      url: /            
-    - text: A propos
-      url: /about/
-    - text: Blog
-      url: /blog/
-      layout: default     
+    - text: FAQ       
+      url: /faq/  
+      layout: general 
+    - text: English
+      url: /english/
+      layout: general 
 
 # navigation dans l'entete	
 
