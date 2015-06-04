@@ -249,7 +249,7 @@ Logo
   padding: 10px 10px; }
 
 #header .head-right .fr:first-child + li + li {
-  margin-left: -30px; }
+  margin-right: 30px; }
 
 #header .logo-git {
   display: none; }
