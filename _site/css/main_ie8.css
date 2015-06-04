@@ -245,6 +245,9 @@ Logo
 #header .head-right .nav > li {
   display: inline-block; }
 
+#header .head-right .fr:last-child {
+  margin-left: -20px; }
+
 #header .logo-git {
   display: none; }
 
@@ -270,13 +273,13 @@ Logo
   margin: 0 auto; }
 
 #header .menu-main li {
-  padding: 10px 12px;
+  padding: 10px 10px;
   float: left; }
   #header .menu-main li:hover {
     background-color: #002f50; }
 
 #header .menu-main li a {
-  padding: 10px 15px; }
+  padding: 10px 10px; }
 
 #header .menu-main ul {
   float: none;
