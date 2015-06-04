@@ -2,7 +2,7 @@
 permalink: /faq/
 layout: faq
 faqsection: 16
-titre-faq: Qui est responsable ? 
+titre-faq: Qui est responsable? 
 ---
 
 IGO a été fondé et initié par certains ministères et organismes. Ces derniers coordonnent ce projet collaboratif en logiciels libres, mais ils souhaitent obtenir des contributions de la communauté. Pour en savoir plus, consulter la  [section Contribuer](/site-web/contribuer).
