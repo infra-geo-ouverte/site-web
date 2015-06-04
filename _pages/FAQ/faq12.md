@@ -2,7 +2,7 @@
 permalink: /faq/
 layout: faq
 faqsection: 12
-titre-faq: Pourquoi collaborer ?
+titre-faq: Pourquoi collaborer?
 ---
 
 
