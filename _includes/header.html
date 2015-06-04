@@ -40,9 +40,12 @@
 				
  <ul class="nav navbar-nav menu-top">
     {% for link in site.navigation %}
+    	{% if link.url contains 'english/' %}
         <li class="page-link"><a href="{{site.baseurl}}{{ link.url }}">{{ link.text }}</a></li>
+        {% else %}
+	<li class="page-link"><a href="{{site.baseurl}}{{ link.url }}">{{ link.text2 }}</a></li>
+	{% endif %}
     {% endfor %}
-    <li><a href="mailto:exemple@exemple.com">Contact</a></li>
 </ul> 
 				
 				
