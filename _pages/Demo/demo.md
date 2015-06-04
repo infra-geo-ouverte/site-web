@@ -7,7 +7,7 @@ iconedemo: ""
 
 #Démonstration
 
-Vous pouvez voir le navigateur en action sur le site [site des données ouvertes du gouvernement du Québec](http://geoegl.msp.gouv.qc.ca/gouvouvert/) et avec un exemple d'XML pour une configuration de base :
+Vous pouvez voir le navigateur en action sur le site [des données ouvertes du gouvernement du Québec](http://geoegl.msp.gouv.qc.ca/gouvouvert/) et avec un exemple d'XML pour une configuration de base :
 
 {% highlight xml linenos %}
 <navigateur authentification="false" 
