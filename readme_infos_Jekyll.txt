@@ -1,6 +1,5 @@
 Étapes pour Jekyll:
 
-
 1- Installation: Voir les instructions particulières pour Windows
 S'il y a un problème d'encodage entrer chcp 65001 dans la ligne de commande
 S'il y a un problème pour installer un gem: mettre la source http au lieu de https:
