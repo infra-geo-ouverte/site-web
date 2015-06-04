@@ -240,6 +240,9 @@ Logo
 	#header .menu-main li a{
 		padding: 10px 3%;
 	}
+	#header .menu-main li:last-child{
+		padding: 10px 16px;
+	}
 
 	#header .nav-icons{
 		margin:0 auto 10px auto;
@@ -247,6 +250,9 @@ Logo
 		width: 30px;
 		display: block;
 		font-size: 20px;
+	}
+	#header .octicon-code{
+		padding:0 ;
 	}
 
 }
@@ -277,7 +283,7 @@ Logo
 	}
 
 	#header .menu-main li a{
-		padding: 10px 15px;
+		padding: 10px 11%;
 	}
 
 	#header .nav-icons{
