@@ -21,7 +21,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-4 text-center">
 			<ul class="footer listGauche">
-				{% for page in site.pages %}
+			<!-- 	{% for page in site.pages %}
 					{% if page.title-top %} 
 					<li>
 						<a class="page-link"  
@@ -30,7 +30,17 @@
 					</li>
 
 					{% endif %}
-				{% endfor %}
+				{% endfor %} -->
+				
+
+				    {% for link in site.navigation %}
+				    	{% if page.url contains 'english/' %}
+				        <li class="page-link fr"><a href="{{site.baseurl}}{{ link.url }}">{{ link.text2 }}</a></li>
+				        {% else %}
+					<li class="page-link en"><a href="{{site.baseurl}}{{ link.url }}">{{ link.text}}</a></li>
+					{% endif %}
+				    {% endfor %}
+
 				
 			</ul>
 		</div>
