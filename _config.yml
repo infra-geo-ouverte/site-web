@@ -38,11 +38,15 @@ include: ['_pages']
 relative_permalinks: false 
 
 navigation:
-    - text: FAQ       
+    - text: FAQ 
+      text2: FAQ
       url: /faq/  
       layout: general 
     - text: English
       url: /english/
+      layout: general 
+    - text2: Français
+      url: /
       layout: general 
 
 # navigation dans l'entete	
