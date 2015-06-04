@@ -40,11 +40,6 @@
 				
  <ul class="nav navbar-nav">
     {% for link in site.navigation %}
-        {% assign current = nil %}
-        {% assign currentPage = page.url | remove: 'index.html' %}
-        {% if currentPage == link.url or page.layout == link.layout %}
-            {% assign current = 'active' %} test
-        {% endif %}
         <li class="{{current}}"><a href="{{site.url}}{{ link.url }}">{{ link.text }}</a></li>
     {% endfor %}
     <li><a href="mailto:exemple@exemple.com">Contact</a></li>
