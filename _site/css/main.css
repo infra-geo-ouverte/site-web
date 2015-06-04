@@ -252,7 +252,8 @@ Logo
   display: inline-block; }
 
 #header .head-right .nav > li .fr {
-  padding-left: 0; }
+  padding-left: 0;
+  margin-left: -40px; }
 
 #header .logo-git {
   font-size: 12px;
@@ -405,6 +406,9 @@ Logo
   #header .menu-main li a {
     padding: 10px 3%; }
 
+  #header .menu-main li:last-child {
+    padding: 10px 16px; }
+
   #header .nav-icons {
     margin: 0 auto 10px auto;
     height: 30px;
@@ -431,7 +435,7 @@ Logo
     font-size: 16px; }
 
   #header .menu-main li a {
-    padding: 10px 15px; }
+    padding: 10px 14px; }
 
   #header .nav-icons {
     display: block;
@@ -598,6 +602,9 @@ css de l'accueil incluant la banniere
 
 #accueil .modal-header {
   background-color: #e7f7b7; }
+
+#accueil .modal-backdrop {
+  z-index: 0; }
 
 #accueil .modal-body ul li {
   margin-left: 10px; }
