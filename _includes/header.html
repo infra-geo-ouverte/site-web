@@ -53,11 +53,11 @@
 				
 				
 				<ul class="nav navbar-nav navbar-right menu-top">
-					<li>
+				<!--	<li>
 					<a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">
 						Licence
 					</a>
-					</li>
+					</li> -->
 					{% for page in site.pages %}
 						{% if page.title-top%} 
 						<li>
@@ -121,6 +121,12 @@
 						</li>
 						{% endif %}
 					{% endfor %}
+					<li>
+						<a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">
+							<span class="nav-icons octicon octicon-eye"></span>
+							Licence
+						</a>
+					</li>
 				</ul>
 			</div>	
 		<!--[if gt IE 8]><!--></div><!--<![endif]-->	<!-- /.navbar-collapse -->		
