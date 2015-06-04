@@ -42,7 +42,6 @@
     {% for link in site.navigation %}
     	{% if page.url contains 'english/' %}
         <li class="page-link"><a href="{{site.baseurl}}{{ link.url }}">{{ link.text2 }}</a></li>
-        {% endif %}
         {% else %}
 	<li class="page-link"><a href="{{site.baseurl}}{{ link.url }}">{{ link.text}}</a></li>
 	{% endif %}
