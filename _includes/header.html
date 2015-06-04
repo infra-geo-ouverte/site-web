@@ -61,7 +61,9 @@
 					{% for page in site.pages %}
 						{% if page.title-top%} 
 						<li>
-							{{ page.title-top }} 
+							<a class="page-link"  href="{{ page.url | prepend: site.baseurl }}" role="button" aria-expanded="false"> <!-- lien vers la page -->
+								{{ page.title-top }} 
+							</a>
 						<!--	<a class="page-link"  href="{{ page.url | prepend: site.baseurl }}" role="button" aria-expanded="false">
 								{% if page.lang%} 
 									<a class="page-link fr"  href="http://infra-geo-ouverte.github.io/site-web/english/" role="button" aria-expanded="false">
