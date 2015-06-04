@@ -70,7 +70,7 @@ Logo
 #header .head-right .nav>li{
 	display: inline-block;
 }
-#header .head-right .fr:last-child{
+#header .head-right .fr:first-child + li +li{
 	margin-left: -20px;
 }
 #header .logo-git{
