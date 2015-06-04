@@ -251,7 +251,10 @@ Logo
 #header .head-right .nav > li {
   display: inline-block; }
 
-#header .head-right .nav > li .fr {
+#header .head-right .en {
+  margin-left: -30px; }
+
+#header .head-right .fr:last-child {
   padding-left: 0;
   margin-left: -40px; }
 
