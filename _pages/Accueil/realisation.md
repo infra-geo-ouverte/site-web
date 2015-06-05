@@ -10,5 +10,5 @@ titre-accueil: Fonctionnalités
 - Requêtes spatiales
 - Mise à jour en ligne des données géographiques
 - Gestion de la sécurité et administration
-- Conférence Web sur carte et clavardage en temps-réel
+- Conférence Web sur une carte et clavardage en temps réel
 
