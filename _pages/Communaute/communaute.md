@@ -61,7 +61,7 @@ Le coordonnateur du CT est nommé par les membres du CT sous une formule de pré
 ### 2.2. Contributeurs
 Nous entendons ici par contributeur, toute personne du domaine métier ou technique qui participe aux activités de la communauté. Les contributeurs incluent les :
 
-- développeurs : ce sont en  général des programmeurs qui participent à la programmation du code du logiciel. **Un validateur de code est un profil particulier de développeur**. Les développeurs sont tenus de respecter les conventions, l'architecture commune et règles de codage;
+- développeurs : ce sont en  général des programmeurs qui participent à la programmation du code du logiciel. **Un validateur de code est un profil particulier de développeur**. Les développeurs sont tenus de respecter les conventions, l'architecture commune et les règles de codage;
 - super-utilisateurs et utilisateurs : ce sont les utilisateurs de la solution (simples utilisateurs, pilotes, testeurs, etc.);
 - architectes et intégrateurs;
 - tout autre type de contributeurs.
@@ -82,12 +82,12 @@ Ce sont des programmeurs expérimentés et habilités à valider le travail des 
 ##### Responsabilités
 - S'assurer de l'intégrité des contributions (provenance, propriété intellectuelle, brevets, licence, etc.).
 - Respecter les règles de codage.
-- S'assure d'avoir une documentation adéquate concernant les changements effectués.
+- S'assurer d'avoir une documentation adéquate concernant les changements effectués.
 
 <a id="financement"></a>
 ##3. Sources de financement  [<span class="octicon octicon-link"></span>](#financement)
  
-Les sources de la communauté se traduisent par une participation financière et/ou matérielle et/ou humaine.
+Les sources de financement de la communauté se traduisent par une participation financière et/ou matérielle et/ou humaine.
 
 <a id="licence"></a>
 ##4. Licence  [<span class="octicon octicon-link"></span>](#licence)
@@ -119,10 +119,10 @@ Un membre = une voix.
 ###6.5. Mécanisme de vote
 - Les motions sont inscrites sur une  liste de discussion et les votes se font en public, sauf dans les cas exigeant la confidentialité.
 - Le vote est habituellement ouvert pour une période relativement courte (ex. : trois jours ouvrables).
-- La notation suivante pour le vote est adoptée : +1, 0, -1: 
-	1. +: signifie « je suis d'accord et je m'engage à supporter cette décision et à collaborer à sa réalisation »;
-	2. 0: signifie « je m'abstiens »;
-	3. -1: signifie « j'ai une objection ». Ceci est considéré comme étant un veto. Dans ce cas, la personne votante est dans l'obligation de fournir une motion de rechange.
+- La notation suivante pour le vote est adoptée : +1, 0, -1 : 
+	1. + : signifie « je suis d'accord et je m'engage à supporter cette décision et à collaborer à sa réalisation »;
+	2. 0 : signifie « je m'abstiens »;
+	3. -1 : signifie « j'ai une objection ». Ceci est considéré comme étant un veto. Dans ce cas, la personne votante est dans l'obligation de fournir une motion de rechange.
 - Une proposition est acceptée si elle reçoit au moins +2 (incluant l'auteur) et aucun veto (-1).
 - Si une proposition reçoit un veto (-1) et qu'il est impossible de satisfaire toutes les parties après révision et discussion, la proposition peut être soumise pour un second vote ultime et, dans ce cas, un vote positif de la majorité absolue de tous les membres du comité est requis pour que la proposition soit acceptée. Dans ce cas, le veto ne s'applique plus.
 - Le résultat du vote est compilé et publié.
@@ -155,7 +155,7 @@ Se référer à [l'annexe 1](#annexe1)
 La convention de codage est un document interne rédigé par le CT. On peut s’en servir ou se servir de tout autre document que le CT juge utile. Cette convention doit être respectée par les développeurs et vise à uniformiser le code et les méthodes de travail (ex. : règles d'écriture du code source, d'architecture, du modèle de données, etc.).
 
 <a id="depot"></a>
-##9. Dépôt du code source et outils de communications     [<span class="octicon octicon-link"></span>](#depot)
+##9. Dépôt du code source et outils de communication     [<span class="octicon octicon-link"></span>](#depot)
 Dépôts du code source : [https://github.com/infra-geo-ouverte/igo](https://github.com/infra-geo-ouverte/igo)
  et [https://github.com/infra-geo-ouverte/puppet-igo](https://github.com/infra-geo-ouverte/puppet-igo)
 
@@ -168,7 +168,7 @@ Toute personne qui souhaite participer à la communauté IGO est tenue de respec
 
 
 <a id="annexe1" ></a>
-##Annexe 1: Charte du CT [<span class="octicon octicon-link"></span>](#annexe1)
+##Annexe 1 : Charte du CT [<span class="octicon octicon-link"></span>](#annexe1)
 
 ###1. Mission 
 Le comité technique (CT) est chargé d'assurer le leadership technique pour la gestion d’IGO et il prend les décisions concernant les questions liées aux aspects techniques. Il constitue le comité ultime d'appel des décisions techniques.
@@ -227,7 +227,7 @@ Tout contributeur technique actif ou super-utilisateur peut soumettre sa candida
 L'amendement de cette présente charte du CT est proposé dans une motion spéciale qui, pour être acceptée, doit être approuvée selon les principes et les mécanismes de prise de décisions de la communauté.
 
 <a id="annexe2"></a>
-##Annexe 2: Foire aux Questions (FAQ) [<span class="octicon octicon-link"></span>](#annexe2)          
+##Annexe 2 : Foire aux Questions (FAQ) [<span class="octicon octicon-link"></span>](#annexe2)          
 
 ###Comment un développeur peut-il devenir un validateur de code?
 Les validateurs de code sont des développeurs expérimentés. Il est possible de devenir validateur de code en réalisant les étapes suivantes :
