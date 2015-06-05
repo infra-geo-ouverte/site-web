@@ -40,7 +40,8 @@
 				 <ul class="nav navbar-nav menu-top">
 				    {% for link in site.navigation %}
 				    
-				    {{ link.url }}">{{ link.text2 }}
+				    {{ link.url }}
+				    {{ link.text2 }}
 				    
 				    	{% if page.url contains 'english/' %}
 				        <li class="page-link fr"><a href="{{ link.url }}">{{ link.text2 }}</a></li>
