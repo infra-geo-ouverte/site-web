@@ -3,27 +3,38 @@ title: IGO Infrastructure Géomatique Ouverte
 # site.name
 name: "IGO Infrastructure Géomatique Ouverte"
 
-email: info@igouverte.org
-description: Site web de l'application IGO.
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. .
   
 # -------  URL  ------- # 
 #ajouter un CNAME pour lier le site à un nom de domaine acheté
 # dans cpanel (si le dns host utilise cpanel) aller dans puis dans Simple DNS Zone Editor, add a cname Record: name ex: igo.com, CNAME: igo.github,io
 #ajouter un fichier CNAME a la racine du gh-page avec le lien igo.com comme seule ligne de code à l'intérieur
 # voir dans setting, l'url du site est maintenant igo.com
+#Plus détaillée:
+#ajouter un CNAME pour lier le site à un nom de domaine acheté:
+#Pour l'administrateur/responsable du nom de domaine:
+#1- dans cpanel (panneau d'admin du domain name provider (dns) (si le dns host utilise cpanel) aller dans Domains puis dans Simple DNS Zone Editor, add a cname Record: 
+#name ex: igo (cela donnera igo.nom de domaine acheté), 
+#CNAME: infra-geo-ouverte.github.io  (pour faire le lien avec le site github)
+#Add a new file, named CNAME (with all caps!), to the root directory of the Pages branch.
+#In the new file, add a single line that specifies the bare subdomain for your custom domain. For example, use blog.example.com, not https://blog.example.com. Note that there can only be one domain in the CNAME file.
+#Pour moi:
+#2- Dans github - ajouter un fichier CNAME a la racine du gh-page avec le lien igo.nomdedomaine (name du cname) comme seule ligne de code à l'intérieur (le fichier doit se nommer CNAME en majuscule. (je vais le faire)
+#voir dans setting, l'url du site est maintenant changé pour le CNAME
+ 
+#Changer le baseurl dans le fichier config (je m'en occupe)
 #local /IGO-gh-pages/  dans github "/test_IGO" c'est le nom du projet
 #baseurl pour site sur github: "/nomduprojet"  pour un site avec un cname mettre juste "/"
-# sinin c'est /site-web
-baseurl: "http://infra-geo-ouverte.github.io/site-web"
+baseurl: "http://kboisvert.github.io/test_IGO/"
 # url pour local : [http://localhost]
-# url: "[http://localhost]"
+url: ""
 
 encoding: utf-8
 
 #redcarpet:  redcarpet appears to be The Standard GitHub Flavored Markdown, sinon c'est Kramdown
 markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 permalink: pretty
 
 # rouge: plus facile d'installation pour windows  sinon en general c'est pygments qui est utilisé
@@ -35,21 +46,10 @@ highlighter: pygments
 # ref: http://pixelcog.com/blog/2013/jekyll-from-scratch-core-architecture/
 
 include: ['_pages']
-relative_permalinks: false 
-
-navigation:
-    - text: FAQ 
-      text2: FAQ
-      url: /faq/  
-      layout: general 
-    - text: English
-      url: /english/
-      layout: general 
-    - text2: Français
-      url: /
-      layout: general 
+relative_permalinks: false
 
 # navigation dans l'entete	
 
 sass:
     sass_dir: _sass 
+#Réseaux sociaux  voir référence: http://blog.florianbersier.com/implementation-social-sharing-jekyll/
