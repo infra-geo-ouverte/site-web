@@ -38,17 +38,11 @@
 				<!-- menu haut droit -->	
 				
 				 <ul class="nav navbar-nav menu-top">
-				 	test0
+
 				    {% for link in site.navigation %}
-				    test
-				    {{ site.navigation }}test
-				    {{ link.url }}
-				    {{ link.text2 }}
-				    test2
-				    
 				    	{% if page.url contains 'english/' %}test3
 				        <li class="page-link fr"><a href="{{ link.url }}">{{ link.text2 }}</a></li>
-				        {% else %}test4
+				        {% else %}
 					<li class="page-link en"><a href="{{ link.url }}">{{ link.text}}</a></li>
 					{% endif %}
 				    {% endfor %}
