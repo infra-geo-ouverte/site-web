@@ -35,7 +35,7 @@ La communauté est composée de contributeurs, d’utilisateurs et d'un *comité
 Le CT assure le leadership technique des activités de la communauté.
 
 #### 2.1.1. Composition
-Le CT est composé de développeurs experts, de super-utilisateurs, de gestionnaires et de spécialistes en infrastructure qui participent à la conception, à la validation et à la réalisation de la solution. Le CT doit compter parmi ses membres votants, au moins un validateur de code.
+Le CT est composé de développeurs experts, de super-utilisateurs, de gestionnaires et de spécialistes en infrastructure qui participent à la conception, à la validation et à la réalisation de la solution. Le CT doit compter, parmi ses membres votants, au moins un validateur de code.
 
 #### 2.1.2. Responsabilités du CT
 - Rédiger, modifier et amender la charte du CT et s'assurer de son respect par les membres de ce comité.
