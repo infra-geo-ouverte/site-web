@@ -6,7 +6,7 @@ titre-accueil: Partenaires actuels
 ---
 
 - [Centre d’expertise en logiciel libre (CELL)](http://www.cspq.gouv.qc.ca/a-propos-du-cspq/centre-dexpertise-en-logiciel-libre/);
-- [Commission de la protection du territoire agricole (CPTAQ)](http://www.cptaq.gouv.qc.ca/);
+- [Commission de protection du territoire agricole (CPTAQ)](http://www.cptaq.gouv.qc.ca/);
 - [Financière agricole du Québec (FADQ)](http://www.fadq.qc.ca/);
 - [Institut national de santé publique (INSPQ)](http://www.inspq.qc.ca/);
 - [Ministère de la Culture et des Communications (MCC)](http://www.mcc.gouv.qc.ca/) ;
