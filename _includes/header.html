@@ -37,8 +37,8 @@
 			<div class="head-right">				
 				<!-- menu haut droit -->	
 				
-				 <ul class="nav navbar-nav menu-top">
-				    {% for link in site.navigation %}test
+				 <ul class="nav navbar-nav menu-top">test
+				    {% for link in site.navigation %}
 				    	{% if page.url contains 'english/' %}
 				        <li class="page-link fr"><a href="{{ link.url }}">{{ link.text2 }}</a></li>
 				        {% else %}
