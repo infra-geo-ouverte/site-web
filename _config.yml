@@ -3,9 +3,8 @@ title: IGO Infrastructure Géomatique Ouverte
 # site.name
 name: "IGO Infrastructure Géomatique Ouverte"
 
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. .
+email: info@igouverte.org
+description: Site web de l'application IGO..
   
 # -------  URL  ------- # 
 #ajouter un CNAME pour lier le site à un nom de domaine acheté
@@ -35,6 +34,8 @@ encoding: utf-8
 
 #redcarpet:  redcarpet appears to be The Standard GitHub Flavored Markdown, sinon c'est Kramdown
 markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 permalink: pretty
 
 # rouge: plus facile d'installation pour windows  sinon en general c'est pygments qui est utilisé
@@ -49,6 +50,17 @@ include: ['_pages']
 relative_permalinks: false
 
 # navigation dans l'entete	
+navigation:
+    - text: FAQ 
+      text2: FAQ
+      url: /faq/  
+      layout: general 
+    - text: English
+      url: /english/
+      layout: general 
+    - text2: Français
+      url: /
+      layout: general 
 
 sass:
     sass_dir: _sass 
