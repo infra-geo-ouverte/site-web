@@ -3,6 +3,9 @@ permalink: /english/
 layout: general
 title-top: English
 lang: Francais
+submenu:
+  - { hook: "features",    title: "IGO has multiple features" }
+  - { hook: "governance", title: "IGO Governance" }
 ---
 
 #English
@@ -11,7 +14,8 @@ This IGO (for Open GIS Infrastructure) project involved 6 organisations in Quebe
 
 IGO is an evolution of an internal Web GIS project at the government of Quebec and the objective to make it more open, common, modular and based on open source and governance model with multiple organisations.
 
-IGO has multiple features:
+<a id="features"></a>
+IGO has multiple features:[<span class="octicon octicon-link"></span>](#features)
 * Web GIS viewer: XML file config
 * Layer tree Manager and security: XML file & database configuration
 * Editing tools based on WFS, but as GeoJSON service
@@ -31,7 +35,8 @@ It develops WPS spatial analysis tools (based on Zoo Project), security manageme
 This project will enable anyone to configure by a simple XML its own web map application including Base Map and WMS/GeoJSON overlays in a layer tree and adding different built-in functionalities (ex. adding WMS server on-demand, share permalink, location tool) to the apps without any lines of javascript. 
 The source code of IGO should be released in 2015 as a LGPL licence and the government of Quebec is looking at other public administration (local, regional and national) in Canada or elsewhere to get involve or contribute to the project.
 
-IGO Governance (based on UMN MapServer Community) :
+<a id="governance"></a>
+IGO Governance (based on UMN MapServer Community) : [<span class="octicon octicon-link"></span>](#governance)
 * 7 Ministries main contributors
 * 15 organisations as users
 * Other potential organisation
