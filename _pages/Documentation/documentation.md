@@ -22,11 +22,11 @@ Cet espace comprend toute la documentation et les gabarits communs d'IGO.
 
 <a id="gabarit"></a>
 ## Gabarit pour documenter un : [<span class="octicon octicon-link"></span>](#gabarit)
-* [module](/site-web/documentation/doc_module)
-* [service](/site-web/documentation/doc_service)
-* [panorama](/site-web/documentation/doc_panorama).
+* [module](/documentation/doc_module)
+* [service](/documentation/doc_service)
+* [panorama](/documentation/doc_panorama).
 
 ## Autres documents :
-* [technologies utilisées](/site-web/documentation/techno)
+* [technologies utilisées](/documentation/techno)
 * [architecture](https://github.com/infra-geo-ouverte/igo/blob/master/doc/IGO-CIBLE-v2014_aveclogo.png)
-* [modules](/site-web/documentation/module).
+* [modules](/documentation/module).
