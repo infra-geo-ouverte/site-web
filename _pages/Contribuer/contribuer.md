@@ -38,7 +38,7 @@ Voici de multiples façons de contribuer :
 <a id="rapporter"></a>
 ## Rapporter des problèmes majeurs [<span class="octicon octicon-link"></span>](#rapporter)
 Avant de soumettre un nouveau bogue ou un problème, soyez certain qu'il n'a pas déjà été soumis ou qu'il n'est pas déjà en suivi. Veuillez alors y contribuer en envoyant vos idées, propositions et commentaires au site [Github](http://github.com).  
-Quand vous soumettez un nouveau bogue ou problème, veuillez donner le plus de détails possible (ex. copie d'écran du problème, code d'erreur retourné, technologie utilisée, hyperliens ou toute autre élément pertinent).  
+Quand vous soumettez un nouveau bogue ou problème, veuillez donner le plus de détails possible (ex. : copie d'écran du problème, code d'erreur retourné, technologie utilisée, hyperliens ou toute autre élément pertinent).  
 
 
 <a id="auteur"></a>
