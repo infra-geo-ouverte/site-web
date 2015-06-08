@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IGO Infrastructure Géomatique Ouverte</title>
-    <description>Site web de l&#39;application IGO.</description>
-    <link>http://infra-geo-ouverte.github.io/site-web/</link>
-    <atom:link href="http://infra-geo-ouverte.github.io/site-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Jun 2015 16:04:13 -0400</pubDate>
-    <lastBuildDate>Thu, 04 Jun 2015 16:04:13 -0400</lastBuildDate>
+    <description>Site web de l&#39;application IGO..</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 08 Jun 2015 10:43:24 -0400</pubDate>
+    <lastBuildDate>Mon, 08 Jun 2015 10:43:24 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
   </channel>
