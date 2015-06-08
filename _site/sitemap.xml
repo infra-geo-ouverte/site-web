@@ -1,233 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//communaute/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//contribuer/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//demo/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//documentation/doc_module/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//documentation/doc_panorama/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//documentation/doc_service/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//documentation/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
-    </url>
-    
-    
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//english/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//installation/</loc>
-    </url>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//documentation/module/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//</loc>
-    </url>
-    
-    
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//</loc>
-    </url>
-    
-    
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://kboisvert.github.io/test_IGO//documentation/techno/</loc>
-    </url>
-    
-    
-    
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/404.html</loc>
+  </url>
+  <url>
+    <loc>/</loc>
+  </url>
+  <url>
+    <loc>/communaute/</loc>
+  </url>
+  <url>
+    <loc>/contribuer/</loc>
+  </url>
+  <url>
+    <loc>/demo/</loc>
+  </url>
+  <url>
+    <loc>/documentation/doc_module/</loc>
+  </url>
+  <url>
+    <loc>/documentation/doc_panorama/</loc>
+  </url>
+  <url>
+    <loc>/documentation/doc_service/</loc>
+  </url>
+  <url>
+    <loc>/documentation/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/english/</loc>
+  </url>
+  <url>
+    <loc>/installation/</loc>
+  </url>
+  <url>
+    <loc>/</loc>
+  </url>
+  <url>
+    <loc>/documentation/module/</loc>
+  </url>
+  <url>
+    <loc>/</loc>
+  </url>
+  <url>
+    <loc>/</loc>
+  </url>
+  <url>
+    <loc>/</loc>
+  </url>
+  <url>
+    <loc>/documentation/techno/</loc>
+  </url>
 </urlset>
