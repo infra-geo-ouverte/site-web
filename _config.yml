@@ -7,25 +7,10 @@ email: info@igouverte.org
 description: Site web de l'application IGO..
   
 # -------  URL  ------- # 
-#ajouter un CNAME pour lier le site à un nom de domaine acheté
-# dans cpanel (si le dns host utilise cpanel) aller dans puis dans Simple DNS Zone Editor, add a cname Record: name ex: igo.com, CNAME: igo.github,io
-#ajouter un fichier CNAME a la racine du gh-page avec le lien igo.com comme seule ligne de code à l'intérieur
-# voir dans setting, l'url du site est maintenant igo.com
-#Plus détaillée:
-#ajouter un CNAME pour lier le site à un nom de domaine acheté:
-#Pour l'administrateur/responsable du nom de domaine:
-#1- dans cpanel (panneau d'admin du domain name provider (dns) (si le dns host utilise cpanel) aller dans Domains puis dans Simple DNS Zone Editor, add a cname Record: 
-#name ex: igo (cela donnera igo.nom de domaine acheté), 
-#CNAME: infra-geo-ouverte.github.io  (pour faire le lien avec le site github)
-#Add a new file, named CNAME (with all caps!), to the root directory of the Pages branch.
-#In the new file, add a single line that specifies the bare subdomain for your custom domain. For example, use blog.example.com, not https://blog.example.com. Note that there can only be one domain in the CNAME file.
-#Pour moi:
-#2- Dans github - ajouter un fichier CNAME a la racine du gh-page avec le lien igo.nomdedomaine (name du cname) comme seule ligne de code à l'intérieur (le fichier doit se nommer CNAME en majuscule. (je vais le faire)
-#voir dans setting, l'url du site est maintenant changé pour le CNAME
- 
-#Changer le baseurl dans le fichier config (je m'en occupe)
-#local /IGO-gh-pages/  dans github "/test_IGO" c'est le nom du projet
-#baseurl pour site sur github: "/nomduprojet"  pour un site avec un cname mettre juste "/"
+#Voir le document IGO_documentation.org
+#ref: http://imakewebthings.com/blog/github-pages-email/
+
+#baseurl pour site sur github: "/nomduprojet"  pour un site avec un cname mettre juste ""
 baseurl: ""
 # url pour local : [http://localhost]
 url: ""
@@ -49,9 +34,13 @@ highlighter: pygments
 include: ['_pages']
 relative_permalinks: false
 
-#Plugin redirect
+#Plugin redirect ref: https://github.com/jekyll/jekyll-redirect-from
 gems:
   - jekyll-redirect-from
+
+#plugin pour le sitemap
+gems:
+  - jekyll-sitemap
 
 # navigation dans l'entete	
 navigation:
