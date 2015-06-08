@@ -4,9 +4,9 @@ layout: general
 iconedocumentation: ""
 ---
 
-## Technologies utilisées
+# Technologies utilisées
 
-### Voici la liste des logiciels utilisées et librairies supportant IGO : 
+## Voici la liste des logiciels utilisées et librairies supportant IGO : 
 
 * Système d'exploitation : OS Ubuntu / CentOS
 * Serveur web : Apache
