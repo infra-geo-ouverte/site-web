@@ -2,6 +2,8 @@
 layout: null
 title: "Sitemap"
 ---
+
+#Modèle d'une sitemap fait avec Liquid.  Le sitemap qui sera utilisé est dans le dossier _site et est généré è partir du plugin jekyll-sitemap
 <?xml version="1.0" encoding="UTF-8"?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
