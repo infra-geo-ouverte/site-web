@@ -1,2 +1,22 @@
 User-Agent: *    
-Disallow: /
+Disallow: /_included/
+Disallow: /_layouts/
+Disallow: /_pages/
+Disallow: /_sass/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /readme_infos_Jekyll.txt
+Disallow: /readme_karine.txt
+Disallow: /_site/_pages/Documentation/
+Disallow: /_site/communaute/
+Disallow: /_site/contribuer/
+Disallow: /_site/demo/
+Disallow: /_site/documentation/
+Disallow: /_site/english/
+Disallow: /_site/faq/
+Disallow: /_site/installation/
+Disallow: /_site/_pages/IGO_documentation.md
+
+
+
+
