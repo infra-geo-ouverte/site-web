@@ -139,7 +139,7 @@ Le processus de demande de changement (RFC) doit suivre le processus suivant :
 
 ###6.7. Gestion des révisions 
 - Dépôt d'un plan de livraison.
-- Plan livraison -> gel de fonctionnalités -> version bêtas -> RC (candidate release) -> livraison. 
+- Plan livraison -> gel de fonctionnalités -> version bêta -> RC (candidate release) -> livraison. 
 - Rôle de responsable de livraison (doit être un validateur de code). 
 
 ###6.8. Cycle de révisions : 
@@ -227,7 +227,7 @@ Tout contributeur technique actif ou super-utilisateur peut soumettre sa candida
 L'amendement de cette présente charte du CT est proposé dans une motion spéciale qui, pour être acceptée, doit être approuvée selon les principes et les mécanismes de prise de décisions de la communauté.
 
 <a id="annexe2"></a>
-##Annexe 2 : Foire aux Questions (FAQ) [<span class="octicon octicon-link"></span>](#annexe2)          
+##Annexe 2 : foire aux questions (FAQ) [<span class="octicon octicon-link"></span>](#annexe2)          
 
 ###Comment un développeur peut-il devenir un validateur de code?
 Les validateurs de code sont des développeurs expérimentés. Il est possible de devenir validateur de code en réalisant les étapes suivantes :
@@ -249,6 +249,6 @@ Les validateurs de code sont des développeurs expérimentés. Il est possible d
 ###Numérotage des révisions 
 
 - Version = x.y.z (majeur.mineur.patch).
-- Mineur pair = stable (ex: 5.4, 5.6).
+- Mineur pair = stable (ex. : 5.4, 5.6).
 - Mineur impair = développement (ex: 5.5). 
 - Patch = résolutions bogues = 5.4.1, 5.4.2, etc.
