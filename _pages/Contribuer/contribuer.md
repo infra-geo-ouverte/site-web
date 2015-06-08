@@ -12,13 +12,13 @@ submenu:
 
 # Contribuer 
 Nous sommes bien heureux que vous pensiez contribuer à IGO!
-Avant de le faire, nous vous encourageons à lire le guide de contribution (la page courante), la [LICENCE](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt) et la [FAQ](/site-web/faq/).
+Avant de le faire, nous vous encourageons à lire le guide de contribution (la page courante), la [LICENCE](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt) et la [FAQ](/faq/).
 Si vous avez d'autres questions, n'hésitez pas à communiquer avec nous à l'adresse suivante : info(a)igouverte.org ou à vous inscrire à la [liste courriel](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique).
 
 <a id="facon"></a>
 ## Façons de contribuer [<span class="octicon octicon-link"></span>](#facon)
 Le comité technique d'IGO et ses développeurs contributeurs sont responsables des mises à jour, des corrections de bogues et des ajouts de fonctionnalités par l'entremise du dépôt de code source public.
-Les décisions sur le projet se prennent selon les règles de  [gouvernance de la communauté](/site-web/communaute).
+Les décisions sur le projet se prennent selon les règles de  [gouvernance de la communauté](/communaute).
 Dans l'esprit de collaboration des logiciels libres et ouverts, tout le monde est encouragé à améliorer ce produit.
 
 - Si vous voulez contribuer, vous devez avoir un compte sur le site de [GitHub](http://github.com).
