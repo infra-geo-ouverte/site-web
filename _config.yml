@@ -49,6 +49,10 @@ highlighter: pygments
 include: ['_pages']
 relative_permalinks: false
 
+#Plugin redirect
+gems:
+  - jekyll-redirect-from
+
 # navigation dans l'entete	
 navigation:
     - text: FAQ 
