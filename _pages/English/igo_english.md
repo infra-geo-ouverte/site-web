@@ -47,5 +47,4 @@ IGO Governance (based on UMN MapServer Community) : [<span class="octicon octico
 * Technical committee
 * Management committee
 
-If you have any question and want to contribute, contact the main email of the project: igo@msp.gouv.qc.ca or subscribe to the mailing-list mainly in French.
-The documentation is mainly in French, but if there is a demand, the project can be translate if needed.
+If you have any question and want to contribute, contact the main email of the project: info(a)igouverte.org or subscribe to the [mailing-list](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique) mainly in French. The documentation is mainly in French, but if there is a demand, IGO documentation can be translate.
