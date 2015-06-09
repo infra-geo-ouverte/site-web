@@ -1,3 +1,8 @@
+---
+permalink: /documentation/module/module_exporter_gpx/
+layout: general
+---
+
 ## Module Exporter en fichier GPX
 
 |   Type d'information      |                                       Description                      |
