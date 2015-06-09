@@ -1,3 +1,8 @@
+---
+permalink: /documentation/panorama/panorama1_importer_fichier_geometrique/
+layout: general
+---
+
 ## Panorama 1 - Importer un fichier géométrique :
 
 * Image du panorama
