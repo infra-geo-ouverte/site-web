@@ -1,3 +1,8 @@
+---
+permalink: /documentation/panorama/panorama1_exporter_fichier_forme/
+layout: general
+---
+
 ## Panorama 1 - Exporter en fichier de formes :
 
 * Image du panorama
