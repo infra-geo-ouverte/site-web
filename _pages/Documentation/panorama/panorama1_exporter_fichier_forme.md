@@ -6,7 +6,7 @@ layout: general
 ## Panorama 1 - Exporter en fichier de formes :
 
 * Image du panorama
-![image du panorama](/igo/interfaces/navigateur/public/images/toolbar/export_shape.png)
+![image du panorama](https://github.com/infra-geo-ouverte/igo/blob/master/interfaces/navigateur/public/images/toolbar/export_shape.png)
 * Ce panorama permet à l’utilisateur d’exporter des éléments géométriques sélectionnées dans la carte vers des fichiers de formes selon leur type de géométrie.
 
 
