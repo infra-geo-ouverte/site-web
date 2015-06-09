@@ -1,3 +1,8 @@
+---
+permalink: /documentation/module/module_exporter_fichier_forme/
+layout: general
+---
+
 ## Module Exporter en fichier de formes / shapefile
 
 |   Type d'information      |                                       Description                      |
