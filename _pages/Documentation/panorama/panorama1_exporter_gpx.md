@@ -7,7 +7,7 @@ layout: general
 
 * Image du panorama
 ![image du panorama](https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/interfaces/navigateur/public/images/toolbar/gps_up.png)
-* Ce panorame permet à l’utilisateur d’exporter des éléments géométriques sélectionnées dans la carte vers des fichiers GPX.
+* Ce panorama permet à l’utilisateur d’exporter des éléments géométriques sélectionnées dans la carte vers des fichiers GPX.
 
 
 * Tableau des info-bulles :
