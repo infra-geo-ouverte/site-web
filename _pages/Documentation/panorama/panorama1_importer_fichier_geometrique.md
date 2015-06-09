@@ -6,7 +6,7 @@ layout: general
 ## Panorama 1 - Importer un fichier géométrique :
 
 * Image du panorama
-![image du panorama](/igo/interfaces/navigateur/public/images/toolbar/gps_down.png)
+![image du panorama](https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/interfaces/navigateur/public/images/toolbar/gps_down.png)
 * Ce panorama permet à l’utilisateur permet d'importater des éléments géométriques dans la carte à partir de fichiers géométriques externes.
 
 
