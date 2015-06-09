@@ -1,3 +1,8 @@
+---
+permalink: /documentation/panorama/panorama1_exporter_gpx/
+layout: general
+---
+
 ## Panorama 1 - Exporter en fichier GPX :
 
 * Image du panorama
