@@ -12,4 +12,4 @@ layout: general
 |       3. Préconditions et paramètres    | Pour exporter, il faut sélectionner des éléments géométriques dans la carte et appuyer sur le bouton d’exportation en fichier de forme (shapefile). |
 |       4. Postconditions                 | Aucune |
 |       5. Conditions d’utilisation       | Ce module doit être inclus dans le fichier de configuration. |
-|       6. Panorama(s)       | [panorama 1](documentation/module/panorama1_exporter_fichier_forme) |
+|       6. Panorama(s)       | [panorama 1](documentation/panorama/panorama1_exporter_fichier_forme) |
