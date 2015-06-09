@@ -1,3 +1,8 @@
+---
+permalink: /documentation/module/module_importer_fichier_geometrique/
+layout: general
+---
+
 ## Module Importer un fichier géométrique
 
 |   Type d'information      |                                       Description                      |
