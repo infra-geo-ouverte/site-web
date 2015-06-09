@@ -20,9 +20,9 @@ iconedocumentation: ""
   *       service enregistrer un regroupement en développement
 7.     Module Impression
   *       service créer un fichier PDF
-8.     [Module Exporter GPX](/documentation/module_exporter_gpx.md)  
-9.     [Module Exporter Fichier de formes / Shapefile](/documentation/module_exporter_fichier_forme.md)
-10.    [Module Importer fichier géométrique](/documentation/module_importer_fichier_geometrique.md)
+8.     [Module Exporter GPX](/Documentation/module/module_exporter_gpx.md)  
+9.     [Module Exporter Fichier de formes / Shapefile](/Documentation/module/module_exporter_fichier_forme.md)
+10.    [Module Importer fichier géométrique](/Documentation/module/module_importer_fichier_geometrique.md)
 11.    Module Obtenir informations service WMS (GetInfo) (incluant l’outil d’information)
   *       services WMS qui permettent l’obtention d’informations (liste)
 12.    Module Partager carte (incluant l’outil Partager carte)
