@@ -6,7 +6,7 @@ layout: general
 ## Panorama 2 - Importer un fichier géométrique :
 
 * Image du panorama
-![image du panorama](/igo/espace_public_igo/site/panorama2_importer_fichier_geometrique.png)
+![image du panorama](https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/interfaces/navigateur/public/images/toolbar/mActionAddLayer.png)
 * Ce panorama permet à l’utilisateur de sélectionner un fichier géométrique externe qui contient les éléments géométriques qu'il souhaite importer dans la carte.
 * Tableau d’affichage
 
