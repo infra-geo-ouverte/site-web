@@ -1,7 +1,6 @@
 User-Agent: *    
 Disallow: /_included/
 Disallow: /_layouts/
-Disallow: /_pages/
 Disallow: /_sass/
 Disallow: /assets/
 Disallow: /css/
