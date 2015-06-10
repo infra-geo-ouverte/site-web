@@ -13,7 +13,7 @@ submenu:
 ##Procédures d'installations possibles et supportées :
 
 <a id="virtuelle"></a>
-### 1. Installation dans une machine virtuelle [<span class="octicon octicon-link"></span>](#virtuelle)
+## 1. Installation *recommandée* dans une machine virtuelle [<span class="octicon octicon-link"></span>](#virtuelle)
 Consulter la [Procédure d'installation rapide](https://github.com/infra-geo-ouverte/igo#installation-et-démarrage-de-lenvironnement-de-développement)  pour démarrer IGO dans une machine virtuelle préconfigurée afin de tester et/ou développer à même un poste Linux ou Windows.
 
 <a id="ubuntu"></a>
