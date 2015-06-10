@@ -166,19 +166,10 @@ pre {
 /****************************
  * Icons
 *****************************/
-/*.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $gris;
-        }
-    }
-}*/
+/*Icone liens pour les sections de pages*/
+.page-content a .octicon{
+	color: $vert!important;
+}
 
 /****************************
  * Clearfix - Gardé dans le fichier base aussi à vérifier *
