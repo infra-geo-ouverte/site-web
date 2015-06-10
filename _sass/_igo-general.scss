@@ -51,11 +51,11 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: $vert;
+        color: $gris;
     }
 
     &:hover {
-        color: $vert-fonce;
+        color: $gris-fonce;
         text-decoration: underline;
     }
 }
@@ -168,7 +168,7 @@ pre {
 *****************************/
 /*Icone liens pour les sections de pages*/
 #page-content-wrapper span.octicon.octicon-link{
-	color: $vert!important;
+	color: $bleu!important;
 }
 
 /****************************
