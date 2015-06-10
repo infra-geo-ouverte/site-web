@@ -14,8 +14,6 @@
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
 	<!-- Reseaux sociaux-->
-
-  
 	<meta property="og:title"       content="IGO Infrastructure Géomatique Ouverte" />
 	<meta property="og:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
 	<meta property="og:type"        content="website" />
@@ -52,11 +50,13 @@
 	<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	
+	<!-- Fichiers css-->
     	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="{{'/assets/fonts/octicons/octicons.css' | prepend: site.baseurl}}" />
-	<link rel="stylesheet" href="{{ '/css/print.css' | prepend: site.baseurl }}"  media="print">
+	<link rel="stylesheet" href="{{ '/css/print.css' | prepend: site.baseurl }}"  media="print">  	<!-- Pour l'impression de page du site -->
 	
+	<!-- CSS dépendant du navigateur IE -->
 	<!--[if lte IE 8]>
 		<link rel="stylesheet" href="{{ '/css/main_ie8.css' | prepend: site.baseurl }}" />
 		<script type="text/javascript" src="{{ '/assets/script/modernizr.custom.88836.js' | prepend: site.baseurl }}"> </script>
@@ -65,13 +65,10 @@
 		<link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}" />
 	<!--<![endif]-->
 	
-	
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+	<!-- pour avoir un url clean et mieux indexé ref: https://support.google.com/webmasters/answer/139066?hl=fr -->	
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+	  
+	<!-- pour le fil RSS à ajouter avec un blog http://joelglovier.com/writing/rss-for-jekyll/ -->
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-  
-
-  
   </head>
-
-
