@@ -85,6 +85,27 @@
     <loc>/documentation/module/</loc>
   </url>
   <url>
+    <loc>/documentation/module/module_exporter_fichier_forme/</loc>
+  </url>
+  <url>
+    <loc>/documentation/module/module_exporter_gpx/</loc>
+  </url>
+  <url>
+    <loc>/documentation/module/module_importer_fichier_geometrique/</loc>
+  </url>
+  <url>
+    <loc>/documentation/panorama/panorama1_exporter_fichier_forme/</loc>
+  </url>
+  <url>
+    <loc>/documentation/panorama/panorama1_exporter_gpx/</loc>
+  </url>
+  <url>
+    <loc>/documentation/panorama/panorama1_importer_fichier_geometrique/</loc>
+  </url>
+  <url>
+    <loc>/documentation/panorama/panorama2_importer_fichier_geometrique/</loc>
+  </url>
+  <url>
     <loc>/</loc>
   </url>
   <url>

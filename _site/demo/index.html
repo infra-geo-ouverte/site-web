@@ -10,12 +10,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)" />	
-	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur" />
+	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur, igo, infrastructure" />
 	<meta name="description" content="Site web de l'application IGO.." />
 
 	<!-- Reseaux sociaux-->
-
-  
 	<meta property="og:title"       content="IGO Infrastructure Géomatique Ouverte" />
 	<meta property="og:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
 	<meta property="og:type"        content="website" />
@@ -31,21 +29,34 @@
 	<meta name="twitter:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
 	<meta name="twitter:image" content="http://infra-geo-ouverte.github.io/site-web/assets/img/socialImg.jpg" />
 
-	<!-- Mettre une icone au site: icon in the highest resolution we need it for -->
-	<link rel="icon" sizes="228x228" href="/assets/img/igo_icone.png">
-	<!-- reuse same icon for Safari -->
-	<link rel="apple-touch-icon" href="/assets/img/igo_icone.png">
-	<!-- multiple icons for IE ???? refaire les logos  -->
-	<meta name="msapplication-square70x70logo" content="/assets/img/igo_icone.png">
-	<!-- <meta name="msapplication-square150x150logo" content="/assets/img/Igo_logosans.png">
-	<meta name="msapplication-wide310x150logo" content="/assets/img/Igo_logosans.png">
-	<meta name="msapplication-square310x310logo" content="/assets/img/Igo_logosans.png"> -->
+	<!-- Favicon pour mobile, onglet du site.... 
+	<link rel="icon" sizes="228x228" href="/assets/img/igo_icone.png"> -->
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 	
+	<!-- Fichiers css-->
     	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="/assets/fonts/octicons/octicons.css" />
-	<link rel="stylesheet" href="/css/print.css"  media="print">
+	<link rel="stylesheet" href="/css/print.css"  media="print">  	<!-- Pour l'impression de page du site -->
 	
+	<!-- CSS dépendant du navigateur IE -->
 	<!--[if lte IE 8]>
 		<link rel="stylesheet" href="/css/main_ie8.css" />
 		<script type="text/javascript" src="/assets/script/modernizr.custom.88836.js"> </script>
@@ -54,16 +65,13 @@
 		<link rel="stylesheet" href="/css/main.css" />
 	<!--<![endif]-->
 	
-	
-  <link rel="canonical" href="/demo/" />
-  <link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="/feed.xml" />
+	<!-- pour avoir un url clean et mieux indexé ref: https://support.google.com/webmasters/answer/139066?hl=fr -->	
+	<link rel="canonical" href="/demo/" />
+	  
+	<!-- pour le fil RSS à ajouter avec un blog http://joelglovier.com/writing/rss-for-jekyll/ -->
+	<link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="/feed.xml" />
 
-  
-
-  
   </head>
-
-
 
 
 	<body>
@@ -288,8 +296,22 @@
 					
 						
 					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
 					<li>
-						<a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">
+						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/LICENCE.txt">
 							<span class="nav-icons octicon octicon-code"></span>
 							Licence
 						</a>
@@ -548,8 +570,22 @@
 				
 					
 				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
 				<li>
-					<a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">
+					<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/LICENCE.txt">
 						Licence
 					</a>
 				</li>
@@ -645,6 +681,20 @@
 					
 				
 					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
 				 -->
 				
 
@@ -707,8 +757,10 @@
 
 	<!-- fin footer -->
 
-	<script type="text/javascript" src="/assets/script/jquery-1.11.1.min.js"> </script>
-	<script type="text/javascript" src="/assets/script/bootstrap.min.js"> </script>
+<!--	<script type="text/javascript" src="/assets/script/jquery-1.11.1.min.js"> </script>
+	<script type="text/javascript" src="/assets/script/bootstrap.min.js"> </script> -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"> </script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"> </script>
 	<script type="text/javascript" src="/assets/script/main.js"> </script>
 	<script type="text/javascript" src="/assets/script/animation_banniere.js"> </script>
 	

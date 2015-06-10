@@ -1,5 +1,6 @@
 $(document).ready (function(){
 
+//Barre de menu de gauche qui ouvre et ferme
 	$('[data-toggle="tooltip"]').tooltip();
 	
 	/*Variables */

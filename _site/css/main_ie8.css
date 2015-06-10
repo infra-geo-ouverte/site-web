@@ -162,19 +162,10 @@ pre {
 /****************************
  * Icons
 *****************************/
-/*.icon {
+/*Icone liens pour les sections de pages*/
+.page-content a .octicon {
+  color: #9fcb17 !important; }
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $gris;
-        }
-    }
-}*/
 /****************************
  * Clearfix - Gard├® dans le fichier base aussi ├á v├®rifier *
 *****************************/
@@ -302,9 +293,6 @@ Logo
 
 #header .nav-icons {
   display: none; }
-
-.page-content a .octicon {
-  color: #9fcb17 !important; }
 
 /* ref: http://bootsnipp.com/snippets/featured/fancy-sidebar-navigation */
 /* -------------------------

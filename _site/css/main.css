@@ -148,19 +148,10 @@ pre {
 /****************************
  * Icons
 *****************************/
-/*.icon {
+/*Icone liens pour les sections de pages*/
+#page-content-wrapper span.octicon.octicon-link {
+  color: #9fcb17 !important; }
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $gris;
-        }
-    }
-}*/
 /****************************
  * Clearfix - Gard├® dans le fichier base aussi ├á v├®rifier *
 *****************************/
@@ -692,17 +683,6 @@ css de l'accueil incluant la banniere
   #accueil .btn {
     font-size: 18px; } }
 /* ----------------1200px---------------------------------  */
-/*Icone liens pour les sections de pages*/
-.page-content a .octicon {
-  color: #9fcb17 !important; }
-
-/*******************************************************/
-/************css pour tablette et ordinateur ***********/
-/*******************************************************/
-/* ---------------- 500px ---------------------------- */
-/* ----------------768px-----------------------------  */
-/* ----------------992px----------------------------------  */
-/* ----------------1200px---------------------------------  */
 /* ref: http://bootsnipp.com/snippets/featured/fancy-sidebar-navigation */
 /*-------------------------------*/
 /* Wrappers : pour le contenu de la page en g├®n├®ral     */
@@ -772,7 +752,11 @@ css de l'accueil incluant la banniere
   color: #fff; }
 
 #page-content-wrapper button:hover {
-  background-color: #002f50; }
+  background-color: #002f50;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease; }
 
 #icone-sidebar {
   display: inline-block;

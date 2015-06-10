@@ -10,12 +10,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)" />	
-	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur" />
+	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur, igo, infrastructure" />
 	<meta name="description" content="Site web de l'application IGO.." />
 
 	<!-- Reseaux sociaux-->
-
-  
 	<meta property="og:title"       content="IGO Infrastructure Géomatique Ouverte" />
 	<meta property="og:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
 	<meta property="og:type"        content="website" />
@@ -31,21 +29,34 @@
 	<meta name="twitter:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
 	<meta name="twitter:image" content="http://infra-geo-ouverte.github.io/site-web/assets/img/socialImg.jpg" />
 
-	<!-- Mettre une icone au site: icon in the highest resolution we need it for -->
-	<link rel="icon" sizes="228x228" href="/assets/img/igo_icone.png">
-	<!-- reuse same icon for Safari -->
-	<link rel="apple-touch-icon" href="/assets/img/igo_icone.png">
-	<!-- multiple icons for IE ???? refaire les logos  -->
-	<meta name="msapplication-square70x70logo" content="/assets/img/igo_icone.png">
-	<!-- <meta name="msapplication-square150x150logo" content="/assets/img/Igo_logosans.png">
-	<meta name="msapplication-wide310x150logo" content="/assets/img/Igo_logosans.png">
-	<meta name="msapplication-square310x310logo" content="/assets/img/Igo_logosans.png"> -->
+	<!-- Favicon pour mobile, onglet du site.... 
+	<link rel="icon" sizes="228x228" href="/assets/img/igo_icone.png"> -->
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 	
+	<!-- Fichiers css-->
     	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="/assets/fonts/octicons/octicons.css" />
-	<link rel="stylesheet" href="/css/print.css"  media="print">
+	<link rel="stylesheet" href="/css/print.css"  media="print">  	<!-- Pour l'impression de page du site -->
 	
+	<!-- CSS dépendant du navigateur IE -->
 	<!--[if lte IE 8]>
 		<link rel="stylesheet" href="/css/main_ie8.css" />
 		<script type="text/javascript" src="/assets/script/modernizr.custom.88836.js"> </script>
@@ -54,16 +65,13 @@
 		<link rel="stylesheet" href="/css/main.css" />
 	<!--<![endif]-->
 	
-	
-  <link rel="canonical" href="/faq/" />
-  <link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="/feed.xml" />
+	<!-- pour avoir un url clean et mieux indexé ref: https://support.google.com/webmasters/answer/139066?hl=fr -->	
+	<link rel="canonical" href="/faq/" />
+	  
+	<!-- pour le fil RSS à ajouter avec un blog http://joelglovier.com/writing/rss-for-jekyll/ -->
+	<link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="/feed.xml" />
 
-  
-
-  
   </head>
-
-
 
 
   <body>
@@ -289,8 +297,22 @@
 					
 						
 					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
 					<li>
-						<a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">
+						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/LICENCE.txt">
 							<span class="nav-icons octicon octicon-code"></span>
 							Licence
 						</a>
@@ -389,7 +411,7 @@
 						</div>
 						<div id="no13" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
 							<div class="panel-body">
-								<p>IGO est issu d’un travail collaboratif et est basé sur la philosophie des logiciels libres et ouverts (« open source »). Les employés du gouvernement du Québec, les municipalités et les membres du public sont encouragés à améliorer IGO par leur contribution. Pour plus de détails sur les contributions, voir la <a href="/site-web/contribuer">section Contribuer</a>.</p>
+								<p>IGO est issu d’un travail collaboratif et est basé sur la philosophie des logiciels libres et ouverts (« open source »). Les employés du gouvernement du Québec, les municipalités et le public sont encouragés à améliorer IGO par leur contribution. Pour plus de détails sur les contributions, voir la <a href="/site-web/contribuer">section Contribuer</a>.</p>
 
 							</div>
 						</div>
@@ -410,9 +432,9 @@
 						</div>
 						<div id="no14" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
 							<div class="panel-body">
-								<p>Pour favoriser la collaboration et les contributions, IGO utilise la <a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">LICENCE LiLiQ-R</a> et est protégé par les droits d&#39;auteur des contributeurs. </p>
+								<p>Pour favoriser la collaboration et les contributions, IGO utilise la <a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">LICENCE LiLiQ-R (licence produite par le gouvernement du Québec)</a> et est protégé par les droits d&#39;auteur des contributeurs. </p>
 
-<p>IGO est disponible sur GitHub et il est un produit du gouvernement du Québec. Par ailleurs, les membres du public et d&#39;organisations externes au gouvernement du Québec qui soumettent des contributions conservent leurs droits d&#39;auteur s&#39;ils partagent leur code source selon la même LICENCE. Pour plus d’information, voir la <a href="/site-web/contribuer">section Contribuer</a>.</p>
+<p>IGO est disponible sur <a href="https://github.com/infra-geo-ouverte/igo/">GitHub</a> et il est un produit du gouvernement du Québec. Par ailleurs, les membres du public et d&#39;organisations externes au gouvernement du Québec qui soumettent des contributions conservent leurs droits d&#39;auteur s&#39;ils partagent leur code source selon la même <a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">LICENCE</a>. Pour plus d’information, voir la <a href="/site-web/contribuer">section Contribuer</a>.</p>
 
 							</div>
 						</div>
@@ -433,7 +455,7 @@
 						</div>
 						<div id="no15" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
 							<div class="panel-body">
-								<p>Tout le monde : que ce soit des employés du gouvernement du Québec ou des municipalités du Québec, consultants, travailleurs autonomes, organismes à but non lucratif, toutes organisations/juridictions, développeurs ou personnes du grand public. Toute la communauté peut consulter et/ou contribuer à IGO. Pour ce faire, consulter la <a href="/site-web/contribuer">section Contribuer</a>.</p>
+								<p>Tout le monde : que ce soit des employés du gouvernement du Québec ou des municipalités du Québec, des consultants, des travailleurs autonomes, des organismes à but non lucratif, toutes les organisations/juridictions, les développeurs ou les personnes du grand public. Toute la communauté peut consulter et/ou contribuer à IGO. Pour ce faire, consulter la <a href="/site-web/contribuer">section Contribuer</a>.</p>
 
 							</div>
 						</div>
@@ -454,7 +476,7 @@
 						</div>
 						<div id="no16" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
 							<div class="panel-body">
-								<p>IGO a été fondé et initié par certains ministères et organismes. Ces derniers coordonnent ce projet collaboratif en logiciels libres, mais ils souhaitent obtenir des contributions de la communauté. Pour en savoir plus, consulter la  <a href="/site-web/contribuer">section Contribuer</a>.</p>
+								<p>IGO a été fondé et initié par certains ministères et organismes du gouvernement du Québec. Ces derniers coordonnent ce projet collaboratif en logiciels libres, mais ils souhaitent obtenir des contributions de la communauté. Pour en savoir plus, consulter la  <a href="/site-web/contribuer">section Contribuer</a>.</p>
 
 <p>Certains ministères et organismes sont disponibles pour coordonner et soutenir la communauté. À terme, l’objectif est d&#39;avoir d&#39;autres contributeurs du gouvernement, mais aussi de l&#39;extérieur du gouvernement du Québec, qui seraient prêts à assumer des tâches additionnelles de leadership.</p>
 
@@ -498,7 +520,7 @@
 						</div>
 						<div id="no18" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
 							<div class="panel-body">
-								<p>Les cycles de versions publiées varient pour chaque projet. Voir dans le site <a href="https://github.com/infra-geo-ouverte/igo/issues">Github</a> combien de demandes de changements/améliorations ont été faites et en combien de temps elles ont été réglées.</p>
+								<p>Les cycles de versions publiées varient pour chaque projet. Vous pouvez consulter le site <a href="https://github.com/infra-geo-ouverte/igo/issues">Github</a> pour voir combien de demandes de changements/améliorations ont été faites et en combien de temps elles ont été réglées.</p>
 
 							</div>
 						</div>
@@ -604,7 +626,7 @@ Pour obtenir davantage d&#39;information sur la démarche de production de ces l
 						</div>
 						<div id="no23" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
 							<div class="panel-body">
-								<p>Comme GitHub est le service d&#39;hébergement Web et de gestion de code source le plus populaire et le plus utilisé au monde, sa visibilité donne plus de possibilités de contributions. La plupart des développeurs connaissent bien l&#39;environnement GitHub qui est reconnu pour sa simplicité, sa gratuité (si public) et son efficacité. GitHub devenait ainsi un choix incontournable. Cela contribue à faciliter les contributions externes au projet et à élargir sa portée à l&#39;extérieur des frontières du Québec.</p>
+								<p>GitHub est le service d&#39;hébergement Web et de gestion de code source le plus populaire et le plus utilisé au monde. Sa visibilité donne plus de possibilités de contributions. La plupart des développeurs connaissent bien l&#39;environnement GitHub qui est reconnu pour sa simplicité, sa gratuité (si public) et son efficacité. GitHub devenait ainsi un choix incontournable. Cela contribue à faciliter les contributions externes au projet et à élargir sa portée à l&#39;extérieur des frontières du Québec.</p>
 
 							</div>
 						</div>
@@ -625,12 +647,26 @@ Pour obtenir davantage d&#39;information sur la démarche de production de ces l
 						</div>
 						<div id="no24" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
 							<div class="panel-body">
-								<p>Pour qu&#39;IGO obtienne plusieurs contributions externes au gouvernement du Québec et ailleurs dans le monde, il est préférable d’avoir le moins d&#39;obstacles possibles pour la communauté d&#39;intérêts. Comme l&#39;anglais est la langue communes dans le Web et souvent la seule utilisée dans des projets libres (même ceux de la fancophonie), il est impératif que certaines sections d&#39;IGO soient disponibles en langue anglaise. De plus, comme IGO a choisi GitHub, soit le service gratuit d&#39;hébergement Web et de gestion de code source le plus populaire et le plus utilisé au monde, celui donne plus de visibilité. IGO s&#39;engage toutefois à traduire en français les menus, les fonctionnalités et les contenus anglais d&#39;intérêt afin de notamment: faciliter le participations des gens de l&#39;extérieur du Québec, avoir un contenu presqu&#39;esentiellement en français, à faire rayonner IGO ailleurs dans le monde et à obtenir plus de contributions à long terme.</p>
+								<p>Pour qu&#39;IGO obtienne plusieurs contributions externes au gouvernement du Québec et ailleurs dans le monde, il est préférable de recntontrer le moins d&#39;obstacles possible pour la communauté d&#39;intérêts. Comme l&#39;anglais est la langue commune dans le Web et souvent la seule utilisée dans des projets libres (même ceux de la Francophonie), il était impératif que certaines sections d&#39;IGO soient disponibles en langue anglaise. De plus, comme IGO a choisi GitHub, soit le service gratuit d&#39;hébergement Web et de gestion de code source le plus populaire et le plus utilisé au monde, celui donne plus de visibilité. IGO s&#39;engage toutefois à traduire en français les menus, les fonctionnalités et les contenus anglais d&#39;intérêt afin de notamment faciliter le participations des gens de l&#39;extérieur du Québec, d&#39;avoir un contenu presque essentiellement en français, de faire rayonner IGO ailleurs dans le monde et d&#39;obtenir plus de contributions à long terme.</p>
 
 							</div>
 						</div>
 					</div>
 				</div>		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
 			
 		
 			
@@ -783,8 +819,22 @@ Pour obtenir davantage d&#39;information sur la démarche de production de ces l
 				
 					
 				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
 				<li>
-					<a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">
+					<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/LICENCE.txt">
 						Licence
 					</a>
 				</li>
@@ -880,6 +930,20 @@ Pour obtenir davantage d&#39;information sur la démarche de production de ces l
 					
 				
 					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
 				 -->
 				
 
@@ -942,8 +1006,10 @@ Pour obtenir davantage d&#39;information sur la démarche de production de ces l
 
 	<!-- fin footer -->
 
-	<script type="text/javascript" src="/assets/script/jquery-1.11.1.min.js"> </script>
-	<script type="text/javascript" src="/assets/script/bootstrap.min.js"> </script>
+<!--	<script type="text/javascript" src="/assets/script/jquery-1.11.1.min.js"> </script>
+	<script type="text/javascript" src="/assets/script/bootstrap.min.js"> </script> -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"> </script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"> </script>
 	<script type="text/javascript" src="/assets/script/main.js"> </script>
 	<script type="text/javascript" src="/assets/script/animation_banniere.js"> </script>
 	

@@ -157,19 +157,10 @@ pre {
 /****************************
  * Icons
 *****************************/
-/*.icon {
+/*Icone liens pour les sections de pages*/
+#page-content-wrapper span.octicon.octicon-link {
+  color: #9fcb17 !important; }
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $gris;
-        }
-    }
-}*/
 /****************************
  * Clearfix - Gard├® dans le fichier base aussi ├á v├®rifier *
 *****************************/
@@ -215,17 +206,6 @@ pre {
 
   .container ol li {
     margin-left: 35px; } }
-/*Icone liens pour les sections de pages*/
-.page-content a .octicon {
-  color: #9fcb17 !important; }
-
-/*******************************************************/
-/************css pour tablette et ordinateur ***********/
-/*******************************************************/
-/* ---------------- 500px ---------------------------- */
-/* ----------------768px-----------------------------  */
-/* ----------------992px----------------------------------  */
-/* ----------------1200px---------------------------------  */
 /***************************************
 Note: ├ël├®ments gard├®s car utilis├®s par d'autres fichiers Jekyll
 ****************************************/
