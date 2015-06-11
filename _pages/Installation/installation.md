@@ -21,7 +21,7 @@ Consulter la [Procédure d'installation rapide](https://github.com/infra-geo-ouv
 Consulter la [Procédure d'installation complète de base sous Ubuntu](https://github.com/infra-geo-ouverte/igo/blob/master/doc/installation/installation_linux_base.md).
 
 <a id="windows"></a>
-### 3. Installation sous Windows [<span class="octicon octicon-link"></span>](#windows)
+### 3. Installation sous Windows avec WAMP [<span class="octicon octicon-link"></span>](#windows)
 Consulter la [Procédure d'installation sous Windows avec WAMP](https://github.com/infra-geo-ouverte/igo/blob/master/doc/installation/installation_windows.docm).
 
 
