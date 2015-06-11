@@ -10,41 +10,21 @@ submenu:
 
 #English
 
-This IGO (for Open GIS Infrastructure) project involved 6 organisations in Quebec, Canada.
+IGO (for Open GIS Infrastructure) is a Free Open Source Software for Geospatial (FOSS4G)  developed by 6 organisations in the government of Quebec in Canada. The objective to make it more open, common, modular, based on open source software and governance model supported by multiple organisations. IGO is a Web GIS software with a client & server component to manage and publish massive amount of Geospatial data.
 
-IGO is an evolution of an internal Web GIS project at the government of Quebec and the objective to make it more open, common, modular and based on open source and governance model with multiple organisations.
+IGO support many Open Geospatial Consortium (OGC) standards (ex. : WMS, WFS, WPS) and is based on many open source software (ex. : OpenLayers, UMN MapServer, MapCache, Phalcon, Geoext, ExtJS, Jquery, Zoo project, PostgreSQL/PostGIS, Apache, Ubuntu). The source code of IGO on GitHub is released under a LGPL compatible licence (written by the government of Quebec). IGO is looking for involvement from other public administrations (local, regional and national) in Canada or elsewhere to contribute to the project.
 
-<a id="features"></a>
-IGO has multiple features:[<span class="octicon octicon-link"></span>](#features)
-* Web GIS viewer: XML file config
-* Layer tree Manager and security: XML file & database configuration
-* Editing tools based on WFS, but as GeoJSON service
-* Spatial Analysis Service - WFS & WPS with Zoo project
-* Routing Service - OSRM with gov data
-* Metadata Service - GeoNetwork - PostgreSQL
-* Geocoding Service - as PHP Service - SOAP
-* IGO is an API on top of JavaScript & Phalcon
-* IGO depends on UMN MapServer
-* XML config on top of OpenLayers two, GeoExt 1.0
-* Adapted to change backend libraries (OL3, Leaflet)
-* Made also for integration in web site/portal as iframe
-* IGO is an API based on MVC
-* Project is open source since 2015 and relase as a LGPL licence
+IGO has multiple features supported and in current version: 
+* Web GIS viewer* Location, metadata and routing integration service
+* Spatial query
+* Geospatial data editing
+* Permission management and administration user interface
+* Real-time Web Map Conferencing and chat
 
 It develops WPS spatial analysis tools (based on Zoo Project), security management on layers, an API over OpenLayers, Geoext, MapServer using Phalcon as Integrator model. 
 This project will enable anyone to configure by a simple XML its own web map application including Base Map and WMS/GeoJSON overlays in a layer tree and adding different built-in functionalities (ex. adding WMS server on-demand, share permalink, location tool) to the apps without any lines of javascript. 
 The source code of IGO should be released in 2015 as a LGPL licence and the government of Quebec is looking at other public administration (local, regional and national) in Canada or elsewhere to get involve or contribute to the project.
 
-<a id="governance"></a>
-IGO Governance (based on UMN MapServer Community) : [<span class="octicon octicon-link"></span>](#governance)
-* 7 Ministries main contributors
-* 15 organisations as users
-* Other potential organisation
+done in French but do not hesitate to ask questions in English as most of the IGO Team is bilingual. The documentation and API-XML are mainly in French but if there is a strong demand, they could be translated, just contact us for more information at: info(a)igouverte.org
 
-4 levels of partners: 
-* Contributors
-* Committers
-* Technical committee
-* Management committee
-
-If you have any question and want to contribute, contact the main email of the project: info(a)igouverte.org or subscribe to the [mailing-list](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique) mainly in French. The documentation is mainly in French, but if there is a demand, IGO documentation can be translate.
+All contributions IGO are subject to copyright. External contributors who are not Quebec government public servants keep their copyright by agreeing to share their source code under the terms described in the LICENSE file. Upon contribution, you are encouraged to add your name or the name of your employer in the header of the modified file.
