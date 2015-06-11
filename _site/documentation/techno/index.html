@@ -50,6 +50,9 @@
 	<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	
+	<!-- Balise pour Google -->
+	<meta name="google-site-verification" content="tb9Q1FBCF-x1ul35k6Q8_-4OsL4IT0tge9FDeVfXG44" />
+	
 	<!-- Fichiers css-->
     	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
@@ -75,7 +78,8 @@
 
 
 	<body>
-		<header class="site-header" id="header">
+		<span itemscope itemtype="http://schema.org/SoftwareApplication">
+<header class="site-header" id="header">
 	
 	<nav class="navbar navbar-default">
 	<div>
@@ -84,7 +88,7 @@
 		<!-- Titre du site/ mettre le logo -->
 		<div class="navbar-header">
 			<a href="/">
-				<img class="logo-med" src="/assets/img/Igo_logoavec.png"  alt="Logo IGO" />
+				<img itemprop="image" class="logo-med" src="/assets/img/Igo_logoavec.png"  alt="Logo IGO" />
 			</a>
 						
 			<!--[if gt IE 8]><!-->
@@ -348,10 +352,10 @@
 
 			<!-- Page Content -->
 				<div id="page-content-wrapper">
-					<!-- Flèche pour ouvrir et fermer le menu de côté -->
+					<!-- Flèche pour ouvrir et fermer le menu de côté gauche -->
 					<!--[if gte IE 8)] -->
 					<button type="button" id="icone-sidebar" class="octicon octicon-move-right" data-toggle="offcanvas">
-						<!-- <span class="txtmenu"></span> -->
+						<!-- si on veut mettre du texte sur le bouton <span class="txtmenu"></span> -->
 					</button>
 					<!-- [endif]-->
 			
@@ -680,11 +684,12 @@
 	<small class="copyright text-center">&copy;IGO, 2015</small>
 
 </footer>
-
+</span> <!-- span de : <span itemscope itemtype="http://schema.org/SoftwareApplication"> dans le header -->
 
 	<!-- fin footer -->
 
-<!--	<script type="text/javascript" src="/assets/script/jquery-1.11.1.min.js"> </script>
+<!--	liens locaux
+	<script type="text/javascript" src="/assets/script/jquery-1.11.1.min.js"> </script>
 	<script type="text/javascript" src="/assets/script/bootstrap.min.js"> </script> -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"> </script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"> </script>

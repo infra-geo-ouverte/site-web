@@ -50,6 +50,9 @@
 	<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	
+	<!-- Balise pour Google -->
+	<meta name="google-site-verification" content="tb9Q1FBCF-x1ul35k6Q8_-4OsL4IT0tge9FDeVfXG44" />
+	
 	<!-- Fichiers css-->
     	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
@@ -75,7 +78,8 @@
 
 
 	<body>
-		<header class="site-header" id="header">
+		<span itemscope itemtype="http://schema.org/SoftwareApplication">
+<header class="site-header" id="header">
 	
 	<nav class="navbar navbar-default">
 	<div>
@@ -84,7 +88,7 @@
 		<!-- Titre du site/ mettre le logo -->
 		<div class="navbar-header">
 			<a href="/">
-				<img class="logo-med" src="/assets/img/Igo_logoavec.png"  alt="Logo IGO" />
+				<img itemprop="image" class="logo-med" src="/assets/img/Igo_logoavec.png"  alt="Logo IGO" />
 			</a>
 						
 			<!--[if gt IE 8]><!-->
@@ -356,10 +360,10 @@
 
 			<!-- Page Content -->
 				<div id="page-content-wrapper">
-					<!-- Flèche pour ouvrir et fermer le menu de côté -->
+					<!-- Flèche pour ouvrir et fermer le menu de côté gauche -->
 					<!--[if gte IE 8)] -->
 					<button type="button" id="icone-sidebar" class="octicon octicon-move-right" data-toggle="offcanvas">
-						<!-- <span class="txtmenu"></span> -->
+						<!-- si on veut mettre du texte sur le bouton <span class="txtmenu"></span> -->
 					</button>
 					<!-- [endif]-->
 			
@@ -368,7 +372,7 @@
 							<h1 id="contribuer">Contribuer</h1>
 
 <p>Nous sommes bien heureux que vous pensiez contribuer à IGO!
-Avant de le faire, nous vous encourageons à lire le guide de contribution (la page courante), la <a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">LICENCE</a> et la <a href="/faq/">FAQ</a>.
+Avant de le faire, nous vous encourageons à lire le guide de contribution (la page courante), la <a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/LICENCE.txt">LICENCE</a> et la <a href="/faq/">FAQ</a>.
 Si vous avez d&#39;autres questions, n&#39;hésitez pas à communiquer avec nous à l&#39;adresse suivante : info(a)igouverte.org ou à vous inscrire à la <a href="http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique">liste courriel</a>.</p>
 
 <p><a id="facon"></a></p>
@@ -381,7 +385,7 @@ Dans l&#39;esprit de collaboration des logiciels libres et ouverts, tout le mond
 
 <ul>
 <li>Si vous voulez contribuer, vous devez avoir un compte sur le site de <a href="http://github.com">GitHub</a>.</li>
-<li>Tous les contributeurs d&#39;IGO conserveront leurs droits d&#39;auteur, mais, en contribuant, l&#39;individu doit accepter les règles de la <a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">LICENCE</a> d&#39;IGO.</li>
+<li>Tous les contributeurs d&#39;IGO conserveront leurs droits d&#39;auteur, mais, en contribuant, l&#39;individu doit accepter les règles de la <a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/LICENCE.txt">LICENCE</a> d&#39;IGO.</li>
 </ul>
 
 <p>Voici de multiples façons de contribuer :</p>
@@ -401,14 +405,14 @@ Dans l&#39;esprit de collaboration des logiciels libres et ouverts, tout le mond
 
 <h2 id="rapporter-des-problèmes-majeurs-">Rapporter des problèmes majeurs <a href="#rapporter"><span class="octicon octicon-link"></span></a></h2>
 
-<p>Avant de soumettre un nouveau bogue ou un problème, soyez certain qu&#39;il n&#39;a pas déjà été soumis ou qu&#39;il n&#39;est pas déjà en suivi. Veuillez alors y contribuer en envoyant vos idées, propositions et commentaires au site <a href="http://github.com">Github</a>.<br>
+<p>Avant de soumettre un nouveau bogue ou un problème, soyez certain qu&#39;il n&#39;a pas déjà été soumis ou qu&#39;il n&#39;est pas déjà en suivi. Veuillez alors y contribuer en envoyant vos idées, propositions et commentaires au site <a href="https://github.com/infra-geo-ouverte/igo">GitHub</a>. 
 Quand vous soumettez un nouveau bogue ou problème, veuillez donner le plus de détails possible (ex. : copie d&#39;écran du problème, code d&#39;erreur retourné, technologie utilisée, hyperliens ou toute autre élément pertinent).  </p>
 
 <p><a id="auteur"></a></p>
 
 <h2 id="droits-d&#39;auteur-sur-les-contributions-">Droits d&#39;auteur sur les contributions <a href="#auteur"><span class="octicon octicon-link"></span></a></h2>
 
-<p>Tous les ajouts et modifications à IGO sont sujets aux droits d&#39;auteur. Les contributeurs externes au gouvernement du Québec peuvent conserver leurs droits d&#39;auteur en acceptant de partager leur code selon les termes décrits dans la <a href="https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt">LICENCE</a>.
+<p>Tous les ajouts et modifications à IGO sont sujets aux droits d&#39;auteur. Les contributeurs externes au gouvernement du Québec peuvent conserver leurs droits d&#39;auteur en acceptant de partager leur code selon les termes décrits dans la <a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/LICENCE.txt">LICENCE</a>.
 Vous êtes encouragés à ajouter votre nom ou le nom de votre employeur lors de contributions dans l&#39;entête du fichier modifié.</p>
                   
 						</div>
@@ -717,11 +721,12 @@ Vous êtes encouragés à ajouter votre nom ou le nom de votre employeur lors de
 	<small class="copyright text-center">&copy;IGO, 2015</small>
 
 </footer>
-
+</span> <!-- span de : <span itemscope itemtype="http://schema.org/SoftwareApplication"> dans le header -->
 
 	<!-- fin footer -->
 
-<!--	<script type="text/javascript" src="/assets/script/jquery-1.11.1.min.js"> </script>
+<!--	liens locaux
+	<script type="text/javascript" src="/assets/script/jquery-1.11.1.min.js"> </script>
 	<script type="text/javascript" src="/assets/script/bootstrap.min.js"> </script> -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"> </script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"> </script>
