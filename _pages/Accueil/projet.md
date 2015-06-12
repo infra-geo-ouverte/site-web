@@ -5,7 +5,7 @@ titre-projet: Infrastructure géomatique ouverte (IGO)
 ---
 
 #Infrastructure géomatique ouverte (IGO)
-IGO est une [solution Web gratuite en géomatique](https://github.com/infra-geo-ouverte/igo/). Elle a été conçue grâce à un réseau d’échange regroupant des spécialistes en géomatique provenant de plusieurs ministères et organismes du gouvernement du Québec. Elle permet de tirer profit d’une multitude de données géographiques (patrimoine culturel, territoires agricoles, écoles, casernes d’incendie, etc.) grâce à une interface cartographique accessible par un navigateur Web. Toute la communauté géomatique ainsi que les entreprises, les municipalités, les développeurs et même les citoyens peuvent en profiter.
+IGO est une [solution Web gratuite en géomatique](https://github.com/infra-geo-ouverte/igo/). Elle a été conçue grâce à un réseau d’échange regroupant des spécialistes en géomatique provenant de plusieurs ministères et organismes de l'Administration publique québécoise. Elle permet de tirer profit d’une multitude de données géographiques (patrimoine culturel, territoires agricoles, écoles, casernes d’incendie, etc.) grâce à une interface cartographique accessible par un navigateur Web. Toute la communauté géomatique ainsi que les entreprises, les municipalités, les développeurs et même les citoyens peuvent en profiter.
 
 Les internautes de partout dans le monde sont encouragés à contribuer à IGO de plusieurs façons en vue de l’améliorer, et ce, au bénéfice de ses utilisateurs. Ainsi, par son développement basé sur un modèle collaboratif (« open source »), il est en constante évolution.
 
