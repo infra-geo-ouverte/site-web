@@ -22,7 +22,7 @@ Consulter la [Procédure d'installation complète de base sous Ubuntu](https://g
 
 <a id="windows"></a>
 ### 3. Installation sous Windows avec WAMP [<span class="octicon octicon-link"></span>](#windows)
-Consulter la [Procédure d'installation sous Windows avec WAMP](https://github.com/infra-geo-ouverte/igo/blob/master/doc/installation/installation_windows.docm).
+Consulter la [Procédure d'installation sous Windows avec WAMP](https://github.com/infra-geo-ouverte/igo/blob/master/doc/installation/InstallationDeveloppementIGOWindows.md).
 
 
 <a id="telechargement"></a>
