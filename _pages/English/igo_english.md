@@ -16,7 +16,7 @@ Since this project is open source, anyone can contribute as long as they share t
 
 IGO support many Open Geospatial Consortium (OGC) standards (ex. : WMS, WFS, WPS) and is based on many open source software (ex. : OpenLayers, UMN MapServer, MapCache, Phalcon, Geoext, ExtJS, Jquery, Zoo project, PostgreSQL/PostGIS, Apache, Ubuntu). The source code of IGO is on [GitHub]([IGO](http://igouverte.org/)) and released under a [LGPL compatible licence](https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/LICENSE_ENGLISH.txt) (written by the government of Quebec). IGO is looking for involvement from other public administrations (local, regional and national), private enterprise, developer in Canada or elsewhere to contribute to the project.
 
-IGO has multiple features supported and in current version: 
+IGO has multiple features supported and in development phase: 
 
 - Web GIS viewer
 - Location, metadata and routing integration service
