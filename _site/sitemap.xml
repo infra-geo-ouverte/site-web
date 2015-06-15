@@ -1,123 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/404.html</loc>
+    <loc>[http://localhost]/404.html</loc>
   </url>
   <url>
-    <loc>/</loc>
+    <loc>[http://localhost]/</loc>
   </url>
   <url>
-    <loc>/communaute/</loc>
+    <loc>[http://localhost]/communaute/</loc>
   </url>
   <url>
-    <loc>/contribuer/</loc>
+    <loc>[http://localhost]/contribuer/</loc>
   </url>
   <url>
-    <loc>/courriel/</loc>
+    <loc>[http://localhost]/courriel/</loc>
   </url>
   <url>
-    <loc>/demo/</loc>
+    <loc>[http://localhost]/demo/</loc>
   </url>
   <url>
-    <loc>/documentation/doc_module/</loc>
+    <loc>[http://localhost]/documentation/doc_module/</loc>
   </url>
   <url>
-    <loc>/documentation/doc_panorama/</loc>
+    <loc>[http://localhost]/documentation/doc_panorama/</loc>
   </url>
   <url>
-    <loc>/documentation/doc_service/</loc>
+    <loc>[http://localhost]/documentation/doc_service/</loc>
   </url>
   <url>
-    <loc>/documentation/</loc>
+    <loc>[http://localhost]/documentation/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/faq/</loc>
+    <loc>[http://localhost]/faq/</loc>
   </url>
   <url>
-    <loc>/english/</loc>
+    <loc>[http://localhost]/english/</loc>
   </url>
   <url>
-    <loc>/installation/</loc>
+    <loc>[http://localhost]/installation/</loc>
   </url>
   <url>
-    <loc>/</loc>
+    <loc>[http://localhost]/</loc>
   </url>
   <url>
-    <loc>/documentation/module/</loc>
+    <loc>[http://localhost]/documentation/module/</loc>
   </url>
   <url>
-    <loc>/documentation/module/module_exporter_fichier_forme/</loc>
+    <loc>[http://localhost]/documentation/module/module_exporter_fichier_forme/</loc>
   </url>
   <url>
-    <loc>/documentation/module/module_exporter_gpx/</loc>
+    <loc>[http://localhost]/documentation/module/module_exporter_gpx/</loc>
   </url>
   <url>
-    <loc>/documentation/module/module_importer_fichier_geometrique/</loc>
+    <loc>[http://localhost]/documentation/module/module_importer_fichier_geometrique/</loc>
   </url>
   <url>
-    <loc>/documentation/panorama/panorama1_exporter_fichier_forme/</loc>
+    <loc>[http://localhost]/documentation/panorama/panorama1_exporter_fichier_forme/</loc>
   </url>
   <url>
-    <loc>/documentation/panorama/panorama1_exporter_gpx/</loc>
+    <loc>[http://localhost]/documentation/panorama/panorama1_exporter_gpx/</loc>
   </url>
   <url>
-    <loc>/documentation/panorama/panorama1_importer_fichier_geometrique/</loc>
+    <loc>[http://localhost]/documentation/panorama/panorama1_importer_fichier_geometrique/</loc>
   </url>
   <url>
-    <loc>/documentation/panorama/panorama2_importer_fichier_geometrique/</loc>
+    <loc>[http://localhost]/documentation/panorama/panorama2_importer_fichier_geometrique/</loc>
   </url>
   <url>
-    <loc>/</loc>
+    <loc>[http://localhost]/</loc>
   </url>
   <url>
-    <loc>/</loc>
+    <loc>[http://localhost]/</loc>
   </url>
   <url>
-    <loc>/</loc>
+    <loc>[http://localhost]/</loc>
   </url>
   <url>
-    <loc>/documentation/techno/</loc>
+    <loc>[http://localhost]/documentation/techno/</loc>
   </url>
 </urlset>

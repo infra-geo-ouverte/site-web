@@ -3,10 +3,10 @@
   <channel>
     <title>IGO Infrastructure Géomatique Ouverte</title>
     <description>Site web de l&#39;application IGO..</description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Jun 2015 11:32:23 -0400</pubDate>
-    <lastBuildDate>Mon, 15 Jun 2015 11:32:23 -0400</lastBuildDate>
+    <link>[http://localhost]/</link>
+    <atom:link href="[http://localhost]/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 15 Jun 2015 11:36:30 -0400</pubDate>
+    <lastBuildDate>Mon, 15 Jun 2015 11:36:30 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
   </channel>
