@@ -242,12 +242,8 @@ Logo
 #header .head-right .nav > li {
   display: inline-block; }
 
-#header .head-right .en {
-  margin-left: -15px; }
-
-#header .head-right .fr:last-child {
-  padding-left: 0;
-  margin-left: -40px; }
+#header .head-right li.headContact {
+  margin-right: 10px; }
 
 #header .logo-git {
   font-size: 12px;
@@ -377,6 +373,14 @@ Logo
     color: #4f4f4f;
     display: inline-block; }
 
+  #header .head-right .en:last-child {
+    display: none;
+    margin-right: -35px; }
+
+  #header .head-right .fr:last-child {
+    padding-left: 0;
+    margin-left: -40px; }
+
   /* ---
   * Navigation principale
   --- */
@@ -443,10 +447,20 @@ Logo
 css du footer
 ********************/
 #footer {
+  display: block;
   background-color: #002f50;
   color: #fff;
   padding: 1% 0;
   margin-top: 20px; }
+
+#footer hr {
+  width: 80%;
+  border-color: #4f4f4f;
+  margin: 5px 0;
+  margin: 0 auto; }
+
+#footer .wrapper {
+  margin-top: 0; }
 
 #footer ul {
   list-style-type: none;
@@ -458,20 +472,24 @@ css du footer
 #footer .logo-med {
   width: 60px; }
 
-#footer .footer-mail {
-  padding-top: 2% 0;
-  color: #fff;
-  display: block; }
+#footer .logo-med:hover {
+  -webkit-transform: scale(1.1) rotate(360deg);
+  -moz-transform: scale(1.1) rotate(360deg);
+  -ms-transform: scale(1.1) rotate(360deg);
+  -o-transform: scale(1.1) rotate(360deg);
+  transform: scale(1.1) rotate(360deg); }
 
-#footer .footer-mail .octicon {
-  padding-right: 1%; }
+#footer .footer-mail {
+  color: #fff;
+  display: block;
+  height: auto; }
 
 #footer .copyright {
-  padding-top: 20px;
+  padding-top: 10px;
   display: block; }
 
 /************************
-* reseaux sociaux
+* R├®seaux sociaux
 ********************/
 #footer .footer-reseau {
   color: #fff;
@@ -480,9 +498,9 @@ css du footer
 
 #footer .share-page {
   text-align: center;
-  padding-top: 15px; }
+  padding-top: 10px; }
 
-/* Grow animation*/
+/* animation*/
 #footer .fa {
   padding-left: 10px;
   font-size: 30px;
@@ -502,6 +520,60 @@ css du footer
   -webkit-transform: scale(1.5);
   transform: scale(1.5); }
 
+/************************
+* Formulaire
+********************/
+#footer #contact {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff; }
+
+#footer #contact h3 {
+  color: white; }
+
+#footer p {
+  margin: 0; }
+
+#footer .contact1, #footer .contact2, #footer .submitContact {
+  display: block;
+  width: 90%;
+  margin: 2% auto;
+  padding: 2%;
+  color: #111; }
+
+#footer .contact1 input {
+  width: 90%;
+  background-color: #fff;
+  border: none;
+  color: #111; }
+
+#footer .contact2 {
+  margin-top: 5px;
+  height: 150px;
+  background-color: #fff; }
+
+#footer .submitContact {
+  width: 40%;
+  background-color: #006bb6;
+  border: none;
+  color: #fff;
+  margin-top: 2%; }
+
+/* compatibilit├® ie */
+.holder-box {
+  position: relative; }
+
+.holder-box label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  color: black; }
+
 /*******************************************************/
 /************css pour tablette et ordinateur ***********/
 /*******************************************************/
@@ -509,10 +581,15 @@ css du footer
 /* ----------------768px-----------------------------  */
 @media screen and (min-width: 768px) {
   #footer .logo-med {
-    padding-top: 20px; }
+    padding-top: 90px;
+    width: 85px; }
 
-  #footer .logo-med {
-    width: 75px; } }
+  #footer .submitContact {
+    margin-right: 5%;
+    float: right; }
+
+  #footer .listGauche {
+    padding-top: 35px; } }
 /*****************************************
 css de l'accueil incluant la banniere
 ***************************************/
@@ -671,6 +748,7 @@ css de l'accueil incluant la banniere
 
   #accueil .modal-body ul li {
     margin-left: 25px; } }
+/* --------- DISCUS --- */
 /* ----------------992px----------------------------------  */
 @media screen and (min-width: 992px) {
   #banniere .banniere {

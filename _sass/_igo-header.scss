@@ -49,12 +49,9 @@ Logo
 #header .head-right .nav>li{
 	display: inline-block;
 }
-#header .head-right .en{
-	margin-left: -15px;
-}
-#header .head-right .fr:last-child{
-	padding-left: 0;
-	margin-left: -40px;
+
+#header .head-right li.headContact{
+	margin-right: 10px;
 }
 
 #header .logo-git{
@@ -72,6 +69,7 @@ Logo
 /***
 *Navigation principale
 ***/
+
 #header .menu-main a, #header .git-btn{ 
 	color: $blanc;
 	text-transform: uppercase;
@@ -214,7 +212,15 @@ Logo
 		color: $gris-fonce;
 		display: inline-block;
 	}
-
+	
+	#header .head-right .en:last-child{
+		display: none;
+		margin-right: -35px;
+	}
+	#header  .head-right .fr:last-child{
+		padding-left: 0;
+		margin-left: -40px;
+	}
 
 
 	/* ---

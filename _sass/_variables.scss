@@ -2,19 +2,19 @@
 // UTILISATION: EX: color: $bleu;
 
 $bleu: #006bb6;
-$bleu-pale: lighten($bleu, 60%); //pour background
-$bleu-fonce: darken($bleu, 20%);
+$bleu-pale: lighten($bleu, 60%); // pour background #ebf7ff 
+$bleu-fonce: darken($bleu, 20%); // #002d4d 
 
 $vert: #9fcb17;
-$vert-pale: lighten($vert, 40%); //pour background
-$vert-fonce: darken($vert, 20%);
+$vert-pale: lighten($vert, 40%); //pour background #e8f7ba
+$vert-fonce: darken($vert, 20%); // #566e0c
 
 $orange: #ffa84c;
-$orange-pale: lighten($orange, 25%);  //pour background
-$orange-fonce: darken($orange, 15%);
+$orange-pale: lighten($orange, 25%);  //pour background #566e0cc
+$orange-fonce: darken($orange, 15%); //#fa8000
 
 $gris: #828282;
-$gris-fonce: darken($gris, 20%);
+$gris-fonce: darken($gris, 20%); //#4d4d4d
 $gris-pale: #f8f8f8;
 
 $noir: #111;

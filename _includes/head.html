@@ -32,22 +32,22 @@
 	<!-- Favicon pour mobile, onglet du site.... 
 	<link rel="icon" sizes="228x228" href="{{ '/assets/img/igo_icone.png' | prepend: site.baseurl }}"> -->
 
-	<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-	<link rel="manifest" href="/assets/favicons/manifest.json">
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/img/favicons/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+	<meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	
 	<!-- Balise pour Google -->
@@ -58,20 +58,21 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="{{'/assets/fonts/octicons/octicons.css' | prepend: site.baseurl}}" />
 	<link rel="stylesheet" href="{{ '/css/print.css' | prepend: site.baseurl }}"  media="print">  	<!-- Pour l'impression de page du site -->
+
 	
 	<!-- CSS dépendant du navigateur IE -->
 	<!--[if lte IE 8]>
 		<link rel="stylesheet" href="{{ '/css/main_ie8.css' | prepend: site.baseurl }}" />
-		<script type="text/javascript" src="{{ '/assets/script/modernizr.custom.88836.js' | prepend: site.baseurl }}"> </script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"> </script>
 	<![endif]-->
-	<!--[if gt IE 8]><!-->
+	<!--[if (gte IE 9)|(!IE)]><!-->
 		<link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}" />
 	<!--<![endif]-->
 	
 	<!-- pour avoir un url clean et mieux indexé ref: https://support.google.com/webmasters/answer/139066?hl=fr -->	
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" >
 	  
 	<!-- pour le fil RSS à ajouter avec un blog http://joelglovier.com/writing/rss-for-jekyll/ -->
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" >
 
   </head>

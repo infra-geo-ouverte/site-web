@@ -497,12 +497,14 @@ css du footer
   color: #fff; }
 
 #footer .logo-med {
-  width: 75px; }
+  width: 85px;
+  padding-top: 30px; }
 
 #footer .footer-mail {
   padding-top: 2% 0;
   color: #fff;
-  display: block; }
+  display: block;
+  margin: 0; }
 
 #footer .footer-mail .octicon {
   display: none; }
@@ -512,8 +514,8 @@ css du footer
   display: block; }
 
 #footer .col-xs-12 {
-  width: 360px;
-  padding: 0 100px; }
+  width: 33%;
+  padding: 0 10px; }
 
 /************************
 * reseaux sociaux
@@ -530,6 +532,40 @@ css du footer
   padding-left: 10px;
   font-size: 30px;
   vertical-align: middle; }
+
+/************************
+* Formulaire
+********************/
+#footer #contact h3 {
+  color: white;
+  text-align: left; }
+
+#footer .submitContact {
+  color: white;
+  background-color: #006bb6;
+  margin-top: 5px;
+  border: none;
+  float: right; }
+
+#footer .holder-box label {
+  width: 30%;
+  text-align: left;
+  vertical-align: top; }
+
+#footer .holder-box input, #footer .holder-box textarea {
+  width: 70%;
+  color: black; }
+
+#footer .holder-box textarea {
+  height: 100px;
+  color: black; }
+
+#footer .hideForm {
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0; }
 
 /***************************************
 Note: ├ël├®ments gard├®s car utilis├®s par d'autres fichiers Jekyll

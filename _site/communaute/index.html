@@ -32,22 +32,22 @@
 	<!-- Favicon pour mobile, onglet du site.... 
 	<link rel="icon" sizes="228x228" href="/assets/img/igo_icone.png"> -->
 
-	<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-	<link rel="manifest" href="/assets/favicons/manifest.json">
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/img/favicons/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+	<meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	
 	<!-- Balise pour Google -->
@@ -58,27 +58,28 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="/assets/fonts/octicons/octicons.css" />
 	<link rel="stylesheet" href="/css/print.css"  media="print">  	<!-- Pour l'impression de page du site -->
+
 	
 	<!-- CSS dépendant du navigateur IE -->
 	<!--[if lte IE 8]>
 		<link rel="stylesheet" href="/css/main_ie8.css" />
-		<script type="text/javascript" src="/assets/script/modernizr.custom.88836.js"> </script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"> </script>
 	<![endif]-->
-	<!--[if gt IE 8]><!-->
+	<!--[if (gte IE 9)|(!IE)]><!-->
 		<link rel="stylesheet" href="/css/main.css" />
 	<!--<![endif]-->
 	
 	<!-- pour avoir un url clean et mieux indexé ref: https://support.google.com/webmasters/answer/139066?hl=fr -->	
-	<link rel="canonical" href="/communaute/" />
+	<link rel="canonical" href="/communaute/" >
 	  
 	<!-- pour le fil RSS à ajouter avec un blog http://joelglovier.com/writing/rss-for-jekyll/ -->
-	<link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="/feed.xml" />
+	<link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="/feed.xml" >
 
   </head>
 
 
 	<body>
-		<span itemscope itemtype="http://schema.org/SoftwareApplication">
+		<div itemscope itemtype="http://schema.org/SoftwareApplication">
 <header class="site-header" id="header">
 	
 	<nav class="navbar navbar-default">
@@ -133,6 +134,7 @@
 					<li class="page-link en"><a href="/"></a></li>
 					
 				    
+					<li class="headContact"><a href="#footer">Contact</a></li>
 				</ul> 
 				
 
@@ -718,6 +720,7 @@ Voici les membres actuels :</p>
 			<a href="/">
 				<img class="logo-med" src="/assets/img/logo_bleu_112.png"  alt="Logo IGO" />
 			</a>
+
 		</div>
 		<div class="col-xs-12 col-sm-4 text-center">
 			<ul class="footer listGauche">
@@ -845,138 +848,59 @@ Voici les membres actuels :</p>
 						Licence
 					</a>
 				</li>
+
+				
+					
+				<li class="page-link en"><a href="/faq/">FAQ</a></li>
+				
+				
+					
+				<li class="page-link en"><a href="/english/">English</a></li>
+				
+				
+					
+				<li class="page-link en"><a href="/"></a></li>
+				
+				
+				
 			</ul>
 		</div>
-		<div class="col-xs-12 col-sm-4 text-center">
-			<ul class="footer listGauche">
-			<!-- 	
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					 
-					<li>
-						<a class="page-link"  
-							href="/faq/" role="button" aria-expanded="false">FAQ
-						</a>
-					</li>
+		<div class="col-xs-12 col-sm-4 text-center col-form">			
+			
+			<!-- reference pour le formulaire avec Formspree: http://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites&#151;cms-23870 -->
+			<div id="contact">
+				<h3>Contactez-nous:</h3>
+				<form id="contactform" method="POST">
 
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					 
-					<li>
-						<a class="page-link"  
-							href="/english/" role="button" aria-expanded="false">English
-						</a>
-					</li>
+					<input type="text" class="contact1" name="name" placeholder="Nom" />
+					<input type="email" class="contact1" name="_replyto" placeholder="Courriel" /> <!-- reply to pour autorépondre -->		
 
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				 -->
-				
+					<textarea class="contact2" name="message" placeholder="Message"></textarea>
 
-				    
-				    	
-					<li class="page-link en"><a href="/faq/">FAQ</a></li>
+					<!-- Built into Formspree is a “honeypot” method of spam prevention. The honeypot technique is quite simple; you hide a field inside your form that users don’t see, but spambots do. 
+					The spambot will fill in the field, while users won’t. Any submission with this field filled in will be considered spam. 
+					By naming the field “_gotcha”, Formspree will recognise it and ignore any submissions made with this filled in. -->
 					
-				    
-				    	
-					<li class="page-link en"><a href="/english/">English</a></li>
 					
-				    
-				    	
-					<li class="page-link en"><a href="/"></a></li>
-					
-				    
-
+					<input type="submit" class="submitContact" value="Envoyer" />
+					<span class="hideForm">
+						<input type="text" name="_gotcha" style="display:none" /><!-- pour arrêter les spammeur robots -->
+						<input type="hidden" name="_subject" value="Demande d'information pour IGO" /> <!-- This field will not appear when a user views the form, but the value will be used for the subject line when I receive a submission. -->
+						<input type="hidden" name="_next" value="//localhost:4000/courriel/" />  <!--mettre une page de merci votre courriel est envoyé -->
+					</span>
+				</form>
 				
-			</ul>
+				<script>
+					var contactform =  document.getElementById('contactform');
+					contactform.setAttribute('action', '//formspree.io/' + 'kboisvert3' + '@' + 'gmail' + '.' + 'com');
+				
+				</script>
+			</div>					
 		</div>
 	</div>
-	<hr>
-	
-	<a class="footer-mail text-center" href="mailto:info[a]igouverte.org"><span class="octicon octicon-mail"></span>Communiquez avec nous à l’adresse suivante : info[a]igouverte.org </a>
-	
-	<div class="share-page">
+		<hr>
+		<p class="footer-mail text-center">Courriel: info[a]igouverte.org </p>
+		<div class="share-page">
     Partagez &rarr; 
     <a class="footer-reseau" href="https://twitter.com/intent/tweet?source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;text=IGO:%20http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a> 
     <a class="footer-reseau" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;t=IGO" title="Share on Facebook" target="_blank"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
@@ -1004,22 +928,24 @@ Voici les membres actuels :</p>
 	</div> -->
 	
 
-
-
-	<small class="copyright text-center">&copy;IGO, 2015</small>
+		<small class="copyright text-center">&copy;IGO, 2015</small>
 
 </footer>
-</span> <!-- span de : <span itemscope itemtype="http://schema.org/SoftwareApplication"> dans le header -->
+</div> <!-- span de : <span itemscope itemtype="http://schema.org/SoftwareApplication"> dans le header -->
 
 	<!-- fin footer -->
 
 <!--	liens locaux
 	<script type="text/javascript" src="/assets/script/jquery-1.11.1.min.js"> </script>
-	<script type="text/javascript" src="/assets/script/bootstrap.min.js"> </script> -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"> </script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"> </script>
+	<script type="text/javascript" src="/assets/script/bootstrap.min.js"> </script> 
+	
+	ne pas mettre http ou https en avant des liens car ça bloque sur certains postes avec Firefox  -->
+		
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"> </script>
 	<script type="text/javascript" src="/assets/script/main.js"> </script>
 	<script type="text/javascript" src="/assets/script/animation_banniere.js"> </script>
+
 	
 </body>
 

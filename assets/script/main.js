@@ -1,7 +1,43 @@
 $(document).ready (function(){
+	
+	//détecter la version de IE
+// ----------------------------------------------------------
+// If you're not in IE (or IE version is less than 5) then:
+// ie === undefined
+// If you're in IE (>=5) then you can determine which version:
+// ie === 7; // IE7
+// Thus, to detect IE:
+// if (ie) {}
+// And to detect the version:
+// ie === 6 // IE6
+// ie > 7 // IE8, IE9, IE10 ...
+// ie < 9 // Anything less than IE9
+// ----------------------------------------------------------
+var ie = (function(){
+    var undef,rv = -1; // Return value assumes failure.
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf('MSIE ');
+    var trident = ua.indexOf('Trident/');
+
+    if (msie > 0) {
+        // IE 10 or older => return version number
+        rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+    } else if (trident > 0) {
+        // IE 11 (or newer) => return version number
+        var rvNum = ua.indexOf('rv:');
+        rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
+    }
+
+    return ((rv > -1) ? rv : undef);
+}());
+//Message pour les utilisateurs de IE7 et moins
+if (ie < 8){
+	alert("Le site a été optimisé pour une utilisation avec IE8 et plus, Chrome et Firefox. Veuillez utiliser un navigateur plus récent.");
+};
+
 
 //Barre de menu de gauche qui ouvre et ferme
-	$('[data-toggle="tooltip"]').tooltip();
+	//$('[data-toggle="tooltip"]').tooltip();
 	
 	/*Variables */
 	var icone = $('#icone-sidebar'),
@@ -61,4 +97,26 @@ $(document).ready (function(){
     //}
   });
   
-});
+
+// pour les placeholder du formulaire pour tous les browser
+
+if (ie < 10){
+  $('input:not(:button,:submit,:reset,:file), textarea').each(function(){
+    var tag=$(this),
+        hold=$(tag).attr('placeholder'),
+        holdId=$(tag).attr('id');
+    $(tag).wrap('<div class="holder-box" />')
+    $(tag).before('<label for="'+holdId+'" />');
+    $(tag).prev().text(hold);
+    $(tag).focusin(function() {
+      $(tag).prev().hide();
+    }).focusout(function(){
+      if(this.value==='')$(tag).prev().show();
+    });
+  });
+};
+
+  
+ });
+
+  
