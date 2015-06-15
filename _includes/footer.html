@@ -1,12 +1,14 @@
 <footer class="site-footer" id="footer">
 
 	<div class="wrapper row">
+		<!-- LOGO -->
 		<div class="col-xs-12 col-sm-4 text-center">
 			<a href="/">
 				<img class="logo-med" src="{{ '/assets/img/logo_bleu_112.png'}}"  alt="Logo IGO" />
 			</a>
 
 		</div>
+		<!-- LISTE DE PAGES -->
 		<div class="col-xs-12 col-sm-4 text-center">
 			<ul class="footer listGauche">
 				{% for page in site.pages %}
@@ -34,6 +36,7 @@
 				
 			</ul>
 		</div>
+		<!-- FORMULAIRE -->
 		<div class="col-xs-12 col-sm-4 text-center col-form">			
 			
 			<!-- reference pour le formulaire avec Formspree: http://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites&#151;cms-23870 -->
@@ -55,13 +58,13 @@
 					<span class="hideForm">
 						<input type="text" name="_gotcha" style="display:none" /><!-- pour arrêter les spammeur robots -->
 						<input type="hidden" name="_subject" value="Demande d'information pour IGO" /> <!-- This field will not appear when a user views the form, but the value will be used for the subject line when I receive a submission. -->
-						<input type="hidden" name="_next" value="//localhost:4000/courriel/" />  <!--mettre une page de merci votre courriel est envoyé -->
+						<input type="hidden" name="_next" value="//igouverte.org/courriel/" />  <!--mettre une page de merci votre courriel est envoyé -->
 					</span>
 				</form>
 				
 				<script>
 					var contactform =  document.getElementById('contactform');
-					contactform.setAttribute('action', '//formspree.io/' + 'kboisvert3' + '@' + 'gmail' + '.' + 'com');
+					contactform.setAttribute('action', '//formspree.io/' + 'info' + '@' + 'igouverte' + '.' + 'org');
 				
 				</script>
 			</div>					
