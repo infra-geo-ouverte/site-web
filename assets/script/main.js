@@ -36,6 +36,12 @@ if (ie < 8){
 };
 
 
+// FAQ ouvrir le faq sélectionné
+    var anchor = window.location.hash.replace("#", "");
+    $(".collapse").collapse('hide');
+    $("#" + anchor).collapse('show');
+
+
 //Barre de menu de gauche qui ouvre et ferme
 	//$('[data-toggle="tooltip"]').tooltip();
 	
