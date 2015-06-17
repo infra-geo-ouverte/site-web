@@ -16,16 +16,17 @@
 	  	{% for page in site.pages %}
 			{% if page.faqsection%} 
 				{{ page.title-top }} 
-				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				
+				<div class="panel-group" id="{{page.faqsection}}" role="tablist" aria-multiselectable="true">
 					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingOne">
+						<div class="panel-heading" role="tab" id="heading{{page.faqsection}}">
 							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#no{{page.faqsection}}" aria-expanded="true" aria-controls="no{{page.faqsection}}">
+								<a data-toggle="collapse" data-parent="#{{page.faqsection}}" href="#no{{page.faqsection}}" aria-expanded="true" aria-controls="no{{page.faqsection}}">
 									{{ page.titre-faq }} 
 								</a>
 							</h4>
 						</div>
-						<div id="no{{page.faqsection}}" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+						<div id="no{{page.faqsection}}" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading{{page.faqsection}}">
 							<div class="panel-body">
 								{{ page.content }}
 							</div>
