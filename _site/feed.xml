@@ -2,12 +2,157 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IGO Infrastructure Géomatique Ouverte</title>
-    <description>Site web de l&#39;application IGO..</description>
+    <description>IGO est une solution Web gratuite en géomatique.</description>
     <link>[http://localhost]/</link>
     <atom:link href="[http://localhost]/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Jun 2015 11:36:30 -0400</pubDate>
-    <lastBuildDate>Mon, 15 Jun 2015 11:36:30 -0400</lastBuildDate>
+    <pubDate>Thu, 18 Jun 2015 10:04:19 -0400</pubDate>
+    <lastBuildDate>Thu, 18 Jun 2015 10:04:19 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Titre de la nouvelle 4</title>
+        <description>&lt;p&gt;Voici le contenu de mon blogue 2 janv&lt;/p&gt;
+
+&lt;p&gt;Image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/socialImg.jpg&quot; alt=&quot;Test image&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Fin de la nouvelle&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 Mar 2015 00:00:00 -0400</pubDate>
+        <link>[http://localhost]/website/2015/03/25/Nouvelle%20de%202015Feb/</link>
+        <guid isPermaLink="true">[http://localhost]/website/2015/03/25/Nouvelle%20de%202015Feb/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>website</category>
+        
+      </item>
+    
+      <item>
+        <title>Titre de la nouvelle 4</title>
+        <description>&lt;p&gt;Voici le contenu de mon blogue 2 janv&lt;/p&gt;
+
+&lt;p&gt;Image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/socialImg.jpg&quot; alt=&quot;Test image&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Fin de la nouvelle&lt;/p&gt;
+</description>
+        <pubDate>Sun, 25 Jan 2015 00:00:00 -0500</pubDate>
+        <link>[http://localhost]/website/cat%20test/2015/01/25/Nouvelle%20de%202015/</link>
+        <guid isPermaLink="true">[http://localhost]/website/cat%20test/2015/01/25/Nouvelle%20de%202015/</guid>
+        
+        <category>jekyll</category>
+        
+        <category>tags test</category>
+        
+        
+        <category>website</category>
+        
+        <category>cat test</category>
+        
+      </item>
+    
+      <item>
+        <title>Titre de la nouvelle 1</title>
+        <description>&lt;p&gt;Voici le contenu de mon blogue 2 janv&lt;/p&gt;
+
+&lt;p&gt;Image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/socialImg.jpg&quot; alt=&quot;Test image&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Fin de la nouvelle&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Mar 2014 00:00:00 -0400</pubDate>
+        <link>[http://localhost]/website/2014/03/15/Nouvelle%20de%20janvier15/</link>
+        <guid isPermaLink="true">[http://localhost]/website/2014/03/15/Nouvelle%20de%20janvier15/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>website</category>
+        
+      </item>
+    
+      <item>
+        <title>Titre de la nouvelle 1</title>
+        <description>&lt;p&gt;Voici le contenu de mon blogue 2 janv&lt;/p&gt;
+
+&lt;p&gt;Image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/socialImg.jpg&quot; alt=&quot;Test image&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Fin de la nouvelle&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Feb 2014 00:00:00 -0500</pubDate>
+        <link>[http://localhost]/website/2014/02/15/Nouvelle%20de%20janvier15/</link>
+        <guid isPermaLink="true">[http://localhost]/website/2014/02/15/Nouvelle%20de%20janvier15/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>website</category>
+        
+      </item>
+    
+      <item>
+        <title>Titre de la nouvelle 4</title>
+        <description>&lt;p&gt;Voici le contenu de mon blogue 2 janv&lt;/p&gt;
+
+&lt;p&gt;Image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/socialImg.jpg&quot; alt=&quot;Test image&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Fin de la nouvelle&lt;/p&gt;
+</description>
+        <pubDate>Sat, 25 Jan 2014 00:00:00 -0500</pubDate>
+        <link>[http://localhost]/website/2014/01/25/Nouvelle%20de%20janvier25/</link>
+        <guid isPermaLink="true">[http://localhost]/website/2014/01/25/Nouvelle%20de%20janvier25/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>website</category>
+        
+      </item>
+    
+      <item>
+        <title>Titre de la nouvelle 1</title>
+        <description>&lt;p&gt;Voici le contenu de mon blogue 2 janv&lt;/p&gt;
+
+&lt;p&gt;Image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/socialImg.jpg&quot; alt=&quot;Test image&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Fin de la nouvelle&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Jan 2014 00:00:00 -0500</pubDate>
+        <link>[http://localhost]/website/2014/01/02/Nouvelle%20de%20janvier2/</link>
+        <guid isPermaLink="true">[http://localhost]/website/2014/01/02/Nouvelle%20de%20janvier2/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>website</category>
+        
+      </item>
+    
+      <item>
+        <title>Titre de la nouvelle 2</title>
+        <description>&lt;p&gt;Voici le contenu de mon blogue de 31 dec&lt;/p&gt;
+</description>
+        <pubDate>Tue, 31 Dec 2013 00:00:00 -0500</pubDate>
+        <link>[http://localhost]/website/2013/12/31/Nouvelle%20de%20decembre/</link>
+        <guid isPermaLink="true">[http://localhost]/website/2013/12/31/Nouvelle%20de%20decembre/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>website</category>
+        
+      </item>
     
   </channel>
 </rss>

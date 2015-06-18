@@ -24,6 +24,9 @@ hr {
   border-color: #4f4f4f;
   margin: 2%; }
 
+.clear {
+  clear: both; }
+
 /****************************
 Style de base des pages
 *****************************/
@@ -135,8 +138,8 @@ pre {
  * Wrapper
 *****************************/
 .wrapper {
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
   margin-top: 20px; }
   @media screen and (max-width: 800px) {
     .wrapper {
@@ -590,6 +593,51 @@ css du footer
 
   #footer .listGauche {
     padding-top: 35px; } }
+/* CSS pour la barre de blogue Ó droite et la page contenu de blogue */
+#posts-sidebar hr {
+  border-color: #4f4f4f;
+  margin: 2%; }
+
+/*******************************************************/
+/************css pour tablette et ordinateur ***********/
+/*******************************************************/
+/* ---------------- 500px ---------------------------- */
+/* ----------------768px-----------------------------  */
+@media screen and (min-width: 768px) {
+  #posts-sidebar, #postContent {
+    margin-top: 70px; }
+
+  #postContent img {
+    width: 100%; }
+
+  #posts-sidebar div.h3, #archives h3 {
+    margin-top: 5px; }
+
+  #posts-sidebar h4 {
+    margin: 0; }
+
+  #posts-sidebar p.postDate {
+    color: #828282;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-style: italic; }
+
+  #posts-sidebar li, #archives li {
+    text-decoration: none;
+    list-style-type: none; }
+
+  #archives h3 {
+    padding-left: 15px;
+    margin-bottom: 5px; }
+
+  #archives h2 {
+    margin-top: 20px; }
+
+  #archives li {
+    padding-left: 30px; }
+
+  #posts-sidebar .postDate > p {
+    font-size: 14px; } }
 /*****************************************
 css de l'accueil incluant la banniere
 ***************************************/
@@ -680,6 +728,9 @@ css de l'accueil incluant la banniere
 #accueil .modal-body ul li {
   margin-left: 10px; }
 
+#accueil .wrapper p {
+  text-align: justify; }
+
 /*******************************************************/
 /************css pour tablette et ordinateur ***********/
 /*******************************************************/
@@ -741,7 +792,10 @@ css de l'accueil incluant la banniere
   #accueil .btn {
     font-size: 14px; }
 
-  #accueil .col-sm-6 {
+  #accueil .wrapper {
+    padding: 0 5%; }
+
+  #accueil .wrapper .col-sm-6 {
     padding: 0;
     width: 45%;
     margin: 1%; }
@@ -749,6 +803,9 @@ css de l'accueil incluant la banniere
   #accueil .modal-body ul li {
     margin-left: 25px; } }
 /* --------- DISCUS --- */
+#disqus_thread {
+  margin-top: 20px; }
+
 /* ----------------992px----------------------------------  */
 @media screen and (min-width: 992px) {
   #banniere .banniere {

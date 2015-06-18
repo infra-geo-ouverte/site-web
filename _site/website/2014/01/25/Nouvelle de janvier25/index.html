@@ -1,0 +1,808 @@
+<!-- page qui affiche le contenu d'un post -->
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<title>Titre de la nouvelle 4</title>
+
+		 
+	<!-- Balises meta régulières -->	 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)" />	
+	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur, igo, infrastructure" />
+	<meta name="description" content="Voici le contenu de mon blogue 2 janv" />
+
+	<!-- Reseaux sociaux-->
+	<meta property="og:title"       content="IGO Infrastructure Géomatique Ouverte" />
+	<meta property="og:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
+	<meta property="og:type"        content="website" />
+	<meta property="og:locale" 	content="fr_FR" />
+	<meta property="og:url"         content="http://igouverte.org/" />
+	<meta property="og:site_name"   content="IGO" />
+	<meta property="og:image"       content="http://infra-geo-ouverte.github.io/site-web/assets/img/socialImg.jpg" />
+
+	
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@igo" />
+	<meta name="twitter:title" content="IGO: Infrastructure Géomatique Ouverte" />
+	<meta name="twitter:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
+	<meta name="twitter:image" content="http://infra-geo-ouverte.github.io/site-web/assets/img/socialImg.jpg" />
+
+	<!-- Favicon pour mobile, onglet du site.... 
+	<link rel="icon" sizes="228x228" href="/assets/img/igo_icone.png"> -->
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/img/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!-- Balise pour Google -->
+	<meta name="google-site-verification" content="tb9Q1FBCF-x1ul35k6Q8_-4OsL4IT0tge9FDeVfXG44" />
+	
+	<!-- Fichiers css-->
+    	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/assets/fonts/octicons/octicons.css" />
+	<link rel="stylesheet" href="/css/print.css"  media="print">  	<!-- Pour l'impression de page du site -->
+
+	
+	<!-- CSS dépendant du navigateur IE -->
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="/css/main_ie8.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"> </script>
+	<![endif]-->
+	<!--[if (gte IE 9)|(!IE)]><!-->
+		<link rel="stylesheet" href="/css/main.css" />
+	<!--<![endif]-->
+	
+	<!-- pour avoir un url clean et mieux indexé ref: https://support.google.com/webmasters/answer/139066?hl=fr -->	
+	<link rel="canonical" href="[http://localhost]/website/2014/01/25/Nouvelle%20de%20janvier25/" >
+	  
+	<!-- pour le fil RSS à ajouter avec un blog http://joelglovier.com/writing/rss-for-jekyll/ -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="[http://localhost]/feed.xml" >
+
+  </head>
+
+
+  <body>  <!-- le body se ferme dans le footer -->
+
+    <div itemscope itemtype="http://schema.org/SoftwareApplication">
+<header class="site-header" id="header">
+	
+	<nav class="navbar navbar-default">
+	<div>
+		<!-- Menu mobile, 3 span pour les 3 lignes de l'icone -->
+		
+		<!-- Titre du site/ mettre le logo -->
+		<div class="navbar-header">
+			<a href="/">
+				<img itemprop="image" class="logo-med" src="/assets/img/Igo_logoavec.png"  alt="Logo IGO" />
+			</a>
+						
+			<!--[if gt IE 8]><!-->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			<!--<![endif]-->
+				<!-- Lien Github -->
+				<a class="git-btn btn btn-primary" href="https://github.com/infra-geo-ouverte/igo">Voir sur Github
+					
+					<!--[if lte IE 8]>
+						<img class="logo-git" src="/assets/img/GitHub-Mark-Light-32px.png" alt="Logo Github" />
+					<![endif]-->
+					<span class="logo-git octicon octicon-mark-github"></span>
+					
+				</a>
+					
+		</div>
+
+		<!-- Collect the nav links -->
+		<!--[if gt IE 8]><!-->
+		<div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<!--<![endif]-->
+			<div class="head-right">				
+				<!-- menu haut droit -->	
+				
+				 <ul class="nav navbar-nav menu-top">
+
+				    
+				    	
+					<li class="page-link en"><a href="/faq/">FAQ</a></li>
+					
+				    
+				    	
+					<li class="page-link en"><a href="/english/">English</a></li>
+					
+				    
+				    	
+					<li class="page-link en"><a href="/"></a></li>
+					
+				    
+					<li class="headContact"><a href="#footer">Contact</a></li>
+				</ul> 
+				
+
+			</div>	
+			<!-- menu principal -->
+			<div class="menu-main">
+				<ul class="nav navbar-nav">
+					
+						
+					
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/communaute/" role="button" aria-expanded="false">
+								
+								
+									<!-- <i class="fa fa-child fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.people.multiple.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-organization"></span>
+									Communauté 
+								
+								
+								
+								  
+							</a>
+
+						</li>
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/contribuer/" role="button" aria-expanded="false">
+								
+									<!-- <i class="fa fa-user-plus fa-lg "></i>  
+									<img class="icons" src="/assets/img/icons/appbar.layer.add.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-git-merge"></span>
+									Contribuer 
+								
+								
+								
+								
+								  
+							</a>
+
+						</li>
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/demo/" role="button" aria-expanded="false">
+								
+								
+								
+								
+								
+									<!-- <i class="fa fa-eye fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.cogs.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-eye"></span>
+									Démonstration 
+								  
+							</a>
+
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/documentation/" role="button" aria-expanded="false">
+								
+								
+								
+								
+									<!-- <i class="fa fa-file-text fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.page.text.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-file-text"></span>
+									Documentation 
+								
+								  
+							</a>
+
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/installation/" role="button" aria-expanded="false">
+								
+								
+								
+									<!-- <i class="fa fa-laptop fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.cabinet.in.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-move-down"></span>
+									Installation 
+								
+								
+								  
+							</a>
+
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li>
+						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/LICENCE.txt">
+							<span class="nav-icons octicon octicon-code"></span>
+							Licence
+						</a>
+					</li>
+				</ul>
+			</div>	
+		<!--[if gt IE 8]><!--></div><!--<![endif]-->	<!-- /.navbar-collapse -->		
+	</div> 
+	</nav>	
+
+</header>
+
+	
+	<div class="row-fluid">
+		<div class="col-sm-9" id="postContent">
+			<h1>Titre de la nouvelle 4</h1>
+			
+			<!-- Ajout de la date - format français  -->
+			<p class="postDate">
+				25 <!-- jour -->
+				Janvier
+					
+				2014  <!-- année -->
+			</p>
+
+			<p>Voici le contenu de mon blogue 2 janv</p>
+
+<p>Image:</p>
+
+<p><img src="http://localhost:4000/assets/img/socialImg.jpg" alt="Test image"></p>
+
+<p>Fin de la nouvelle</p>
+  <!-- contenu du fichier .md du post -->
+			<p>Tags: jekyll</p>
+			<p>Catégories: website</p>
+
+			<!-- ajout de disqus pour les commentaires -->
+
+			<div id="disqus_thread"></div> <!-- div qui contient l'outil de Disqus -->
+			<script type="text/javascript">
+				/* * * CONFIGURATION VARIABLES * * */
+				var disqus_shortname = 'igouverte';
+				var disqus_developer = 1; // Comment out when the site is live pour tester en local ref: http://schmidt-happens.com/articles/2011/09/26/adding-disqus-comments.html
+
+				/* * * DON'T EDIT BELOW THIS LINE * * */
+				(function() {
+					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+		</div>
+
+	<section id="posts-sidebar" class="col-sm-3">
+	<h3>Nouvelles</h3>
+<!-- Liste des nouvelles -->
+	<div>
+		<ul>
+			
+				<li><h4><a href="/website/2015/03/25/Nouvelle%20de%202015Feb/">Titre de la nouvelle 4</a></h4> <!-- titre de la nouvelle -->
+
+					<!-- Ajout de la date - format français - Whitespace added for readability -->
+					<p class="postDate"> <!-- date de la nouvelle -->
+						25 <!-- jour -->
+						Mars
+							
+						2015 <!-- année -->
+					</p>
+
+					Voici le contenu de mon blogue 2 janv
+
+ <!-- extrait de la nouvelle -->
+				</li>
+			
+				<li><h4><a href="/website/cat%20test/2015/01/25/Nouvelle%20de%202015/">Titre de la nouvelle 4</a></h4> <!-- titre de la nouvelle -->
+
+					<!-- Ajout de la date - format français - Whitespace added for readability -->
+					<p class="postDate"> <!-- date de la nouvelle -->
+						25 <!-- jour -->
+						Janvier
+							
+						2015 <!-- année -->
+					</p>
+
+					Voici le contenu de mon blogue 2 janv
+
+ <!-- extrait de la nouvelle -->
+				</li>
+			
+				<li><h4><a href="/website/2014/03/15/Nouvelle%20de%20janvier15/">Titre de la nouvelle 1</a></h4> <!-- titre de la nouvelle -->
+
+					<!-- Ajout de la date - format français - Whitespace added for readability -->
+					<p class="postDate"> <!-- date de la nouvelle -->
+						15 <!-- jour -->
+						Mars
+							
+						2014 <!-- année -->
+					</p>
+
+					Voici le contenu de mon blogue 2 janv
+
+ <!-- extrait de la nouvelle -->
+				</li>
+			
+		</ul>
+	</div>
+	<hr>
+	<div>
+	<!-- Liste des Archives -->
+		<h3>Archives</h3>
+		<ul>
+		
+			
+		
+			 <!-- archive dans archive.md -->
+				<li><a href="/archive/#2015">2015</a></li>
+				<li><a href="/archive/#2014">2014</a></li>
+				<li><a href="/archive/#2013">2013</a></li>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		</ul>		
+	</div>	
+</section>
+
+ <!-- inclure la barre de blogue du côté droit -->
+
+	</div>				
+	<div class="clear"></div>
+    <footer class="site-footer" id="footer">
+
+	<div class="wrapper row">
+		<!-- LOGO -->
+		<div class="col-xs-12 col-sm-4 text-center">
+			<a href="/">
+				<img class="logo-med" src="/assets/img/logo_bleu_112.png"  alt="Logo IGO" />
+			</a>
+
+		</div>
+		<!-- LISTE DE PAGES -->
+		<div class="col-xs-12 col-sm-4 text-center">
+			<ul class="footer listGauche">
+				
+					
+				
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/communaute/" role="button" aria-expanded="false">Communauté
+						</a>
+					</li>
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/contribuer/" role="button" aria-expanded="false">Contribuer
+						</a>
+					</li>
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/demo/" role="button" aria-expanded="false">Démonstration
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/documentation/" role="button" aria-expanded="false">Documentation
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/installation/" role="button" aria-expanded="false">Installation
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<li>
+					<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/LICENCE.txt">
+						Licence
+					</a>
+				</li>
+
+				
+					
+				<li class="page-link en"><a href="/faq/">FAQ</a></li>
+				
+				
+					
+				<li class="page-link en"><a href="/english/">English</a></li>
+				
+				
+					
+				<li class="page-link en"><a href="/"></a></li>
+				
+				
+				
+			</ul>
+		</div>
+		<!-- FORMULAIRE -->
+		<div class="col-xs-12 col-sm-4 text-center col-form">			
+			
+			<!-- reference pour le formulaire avec Formspree: http://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites&#151;cms-23870 -->
+			<div id="contact">
+				<h3>Contactez-nous:</h3>
+				<form id="contactform" method="POST">
+
+					<input type="text" class="contact1" name="name" placeholder="Nom" />
+					<input type="email" class="contact1" name="_replyto" placeholder="Courriel" /> <!-- reply to pour autorépondre -->		
+
+					<textarea class="contact2" name="message" placeholder="Message"></textarea>
+
+					<!-- Built into Formspree is a “honeypot” method of spam prevention. The honeypot technique is quite simple; you hide a field inside your form that users don’t see, but spambots do. 
+					The spambot will fill in the field, while users won’t. Any submission with this field filled in will be considered spam. 
+					By naming the field “_gotcha”, Formspree will recognise it and ignore any submissions made with this filled in. -->
+					
+					
+					<input type="submit" class="submitContact" value="Envoyer" />
+					<span class="hideForm">
+						<input type="text" name="_gotcha" style="display:none" /><!-- pour arrêter les spammeur robots -->
+						<input type="hidden" name="_subject" value="Demande d'information pour IGO" /> <!-- This field will not appear when a user views the form, but the value will be used for the subject line when I receive a submission. -->
+						<input type="hidden" name="_next" value="//igouverte.org/courriel/" />  <!--mettre une page de merci votre courriel est envoyé -->
+					</span>
+				</form>
+				
+				<script>
+					var contactform =  document.getElementById('contactform');
+					contactform.setAttribute('action', '//formspree.io/' + 'info' + '@' + 'igouverte' + '.' + 'org');
+				
+				</script>
+			</div>					
+		</div>
+	</div>
+		<hr>
+		<p class="footer-mail text-center">Courriel: info[a]igouverte.org </p>
+		<div class="share-page">
+    Partagez &rarr; 
+    <a class="footer-reseau" href="https://twitter.com/intent/tweet?source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;text=IGO:%20http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a> 
+    <a class="footer-reseau" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;t=IGO" title="Share on Facebook" target="_blank"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
+    <a class="footer-reseau" href="https://plus.google.com/share?url=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
+    <a class="footer-reseau" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;title=IGO&amp;summary=Infrastructure%20geomatique%20ouverte&amp;source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square" data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
+</div> 
+
+
+
+<!-- ref: http://codingtips.kanishkkunal.in/share-buttons-jekyll/ -->
+
+
+<!-- <div class="share-page">
+    Share this on &rarr; 
+    <a href="https://twitter.com/intent/tweet?text=Titre de la nouvelle 4&url=[http://localhost]/website/2014/01/25/Nouvelle%20de%20janvier25/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=[http://localhost]/website/2014/01/25/Nouvelle%20de%20janvier25/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url=[http://localhost]/website/2014/01/25/Nouvelle%20de%20janvier25/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+</div> -->
+	<!-- summary="Infrastructure de géomatique ouverte" source="http://infra-geo-ouverte.github.io/site-web/" -->
+	
+	<!-- bouton Linked in 	<i class="fa fa-linkedin-square"></i> 
+	<div class="footer-reseau">
+	<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: fr_FR</script>
+	<script type="IN/Share" data-url="http://infra-geo-ouverte.github.io/site-web/"></script>
+	</div> -->
+	
+
+		
+		<div><a href="/feed.xml" title="RSS">RSS</a></div>  <!-- ajouter le fil RSS -->
+		
+		<small class="copyright text-center">&copy;IGO, 2015</small>
+
+</footer>
+</div> <!-- span de : <span itemscope itemtype="http://schema.org/SoftwareApplication"> dans le header -->
+
+	<!-- fin footer -->
+
+<!--	liens locaux
+	<script type="text/javascript" src="/assets/script/jquery-1.11.1.min.js"> </script>
+	<script type="text/javascript" src="/assets/script/bootstrap.min.js"> </script> 
+	
+	ne pas mettre http ou https en avant des liens car ça bloque sur certains postes avec Firefox  -->
+		
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"> </script>
+	<script type="text/javascript" src="/assets/script/main.js"> </script>
+	<script type="text/javascript" src="/assets/script/animation_banniere.js"> </script>
+
+	
+</body>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//geoegl.msp.gouv.qc.ca/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 22]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//geoegl.msp.gouv.qc.ca/piwik/piwik.php?idsite=22" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</html>
+

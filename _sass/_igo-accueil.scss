@@ -90,6 +90,9 @@ css de l'accueil incluant la banniere
 #accueil .modal-body ul li{
 	margin-left: 10px;
 }
+#accueil .wrapper p{
+	text-align: justify;
+}
 
 /*******************************************************/
 
@@ -162,7 +165,10 @@ css de l'accueil incluant la banniere
 	#accueil .btn{
 		font-size: $h3*0.7;
 	}
-	#accueil .col-sm-6{
+	#accueil .wrapper{
+		padding: 0 5%;
+	}
+	#accueil .wrapper .col-sm-6{
 		padding: 0;
 		width: 45%;
 		margin: 1%;
@@ -174,7 +180,9 @@ css de l'accueil incluant la banniere
 
 /* --------- DISCUS --- */
 
-
+	#disqus_thread{
+		margin-top: 20px;
+	}
 
 /* ----------------992px----------------------------------  */
 
