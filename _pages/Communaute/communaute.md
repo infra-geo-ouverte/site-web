@@ -66,15 +66,15 @@ Nous entendons ici par contributeur, toute personne du domaine métier ou techni
 - architectes et intégrateurs;
 - tout autre type de contributeurs.
 
-#### 2.2.1. Validateurs de code
-Ce sont des programmeurs expérimentés et habilités à valider le travail des autres programmeurs. Ils approuvent et intègrent le code soumis au projet, puis s'assurent d'une documentation minimale au besoin. Les validateurs de code sont désignés par le CT. Un validateur de code doit être expert et s’engage à travailler pour garantir une meilleure stabilité du projet. Au moins un validateur de code doit faire partie du CT avec droit de vote. Pour plus d’information, voir [la section Principes et mécanisme de prise des décisions](#principes).
+#### 2.2.1. Valideurs de code
+Ce sont des programmeurs expérimentés et habilités à valider le travail des autres programmeurs. Ils approuvent et intègrent le code soumis au projet, puis s'assurent d'une documentation minimale au besoin. Les valideurs de code sont désignés par le CT. Un valideur de code doit être expert et s’engage à travailler pour garantir une meilleure stabilité du projet. Au moins un valideur de code doit faire partie du CT avec droit de vote. Pour plus d’information, voir [la section Principes et mécanisme de prise des décisions](#principes).
 
 ##### Exigences
 - Être un programmeur expérimenté avec une excellente connaissance du logiciel.
 
 ##### Statut
 - Le CT vote et approuve l'élection des validateurs de code.
-- Le statut du validateur de code peut être révoqué à tout moment par le CT et, par conséquent, celui-ci peut perdre les privilèges qui lui sont conférés.
+- Le statut du valideur de code peut être révoqué à tout moment par le CT et, par conséquent, celui-ci peut perdre les privilèges qui lui sont conférés.
 
 ##### Privilèges
 - Permission de contribuer au dépôt du code source directement dans le tronc commun du logiciel sans modération préalable.
