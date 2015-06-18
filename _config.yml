@@ -12,14 +12,12 @@ permalink: /:day-:month-:year-:title
 #Voir le document IGO_documentation.org
 #ref: http://imakewebthings.com/blog/github-pages-email/
 
-#baseurl pour site sur github: "/nomduprojet"  pour un site avec un cname mettre juste ""
+#baseurl pour site sur github: "/site-web"  pour un site avec un cname mettre juste ""
 baseurl: ""
 # url pour local : [http://localhost]
 url: "[http://localhost]"
 
 encoding: utf-8
-
-#paginate: 10
 
 #redcarpet:  redcarpet appears to be The Standard GitHub Flavored Markdown, sinon c'est Kramdown
 markdown: redcarpet
