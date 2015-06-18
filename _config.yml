@@ -11,7 +11,7 @@ description: Site web de l'application IGO..
 #ref: http://imakewebthings.com/blog/github-pages-email/
 
 #baseurl pour site sur github: "/site-web"  pour un site avec un cname mettre juste ""
-baseurl: "/site-web"
+baseurl: ""
 # url pour local : [http://localhost]
 url: ""
 
