@@ -35,8 +35,8 @@ include: ['_pages']
 relative_permalinks: false
 
 #Plugin redirect ref: https://github.com/jekyll/jekyll-redirect-from
-gems:
-  - jekyll-redirect-from
+#gems:
+#  - jekyll-redirect-from
 
 #plugin pour le sitemap
 gems:
