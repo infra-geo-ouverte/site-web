@@ -13,7 +13,7 @@ description: Site web de l'application IGO..
 #baseurl pour site sur github: "/site-web"  pour un site avec un cname mettre juste ""
 baseurl: ""
 # url pour local : [http://localhost]
-url: ""
+url: "/site-web"
 
 encoding: utf-8
 
