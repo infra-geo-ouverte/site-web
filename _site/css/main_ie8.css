@@ -233,6 +233,9 @@ Logo
 #header .btn {
   padding: 6px 12px; }
 
+#header .headContact {
+  margin-right: 25px; }
+
 #header .head-right .nav > li {
   display: inline-block; }
 
@@ -567,6 +570,77 @@ css du footer
   width: 0;
   height: 0; }
 
+/* CSS pour la barre de blogue Ó droite et la page contenu de blogue */
+.clear {
+  clear: both; }
+
+#post-content {
+  width: 75%; }
+
+#post-content img {
+  width: 85%; }
+
+#posts-sidebar, #post-content {
+  margin-top: 30px;
+  float: left; }
+
+#posts-sidebar .rss {
+  padding: 10px 0; }
+
+#posts-sidebar .rss:hover {
+  color: #002f50; }
+
+#posts-sidebar .rss .fa-rss {
+  margin-right: 5%; }
+
+#posts-sidebar .enSavoirPlus {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 15px;
+  padding-right: 5%; }
+
+#posts-sidebar {
+  padding-right: 10px;
+  width: 25%; }
+
+#posts-sidebar li, #archives li {
+  text-decoration: none;
+  list-style-type: none; }
+
+#posts-sidebar h4 {
+  margin: 0;
+  font-size: 16px; }
+
+#posts-sidebar p {
+  margin: 0; }
+
+#posts-sidebar p.postDate {
+  color: #828282;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 5px; }
+
+#posts-sidebar p.postDate + p {
+  font-size: 14px;
+  text-align: justify; }
+
+/* ---
+* Archives
+--- */
+#archives h3 {
+  margin-top: 5px;
+  padding-left: 15px;
+  margin-bottom: 5px; }
+
+#archives h2 {
+  margin-top: 20px; }
+
+#archives li {
+  padding-left: 30px; }
+
 /***************************************
 Note: ├ël├®ments gard├®s car utilis├®s par d'autres fichiers Jekyll
 ****************************************/
@@ -809,11 +883,18 @@ css de l'accueil incluant la banniere pour IE8
 /***
 * Accueil
 ***/
-#accueil .col-sm-6 {
+#accueil {
   padding: 0;
-  width: 45%;
+  width: 70%;
   margin: 1%;
-  display: inline-block; }
+  display: inline-block;
+  float: left; }
+
+#accueil .col-sm-6 {
+  float: left;
+  padding: 0;
+  margin: 1%;
+  width: 45%; }
 
 #accueil .btn {
   width: 100%;

@@ -1,0 +1,89 @@
+/* CSS pour la barre de blogue à droite et la page contenu de blogue */
+
+.clear{
+	clear: both;
+}
+#post-content{
+	width: 75%;
+}
+#post-content img{
+	width: 85%;
+}
+#posts-sidebar, #post-content{
+	margin-top: 30px;
+	float: left;
+}
+
+#posts-sidebar .rss{
+	padding: 10px 0;
+}
+#posts-sidebar .rss:hover{
+	color: $bleu-fonce;
+}
+#posts-sidebar .rss .fa-rss{
+	margin-right: 5%;
+}
+
+#posts-sidebar .enSavoirPlus{
+	display: block;
+	width: 100%;
+	text-align: right;
+	font-size: 12px;
+	font-style: italic;
+	margin-bottom: 15px; 
+	padding-right: 5%;
+}
+	
+#posts-sidebar{
+	padding-right: 10px;
+	width: 25%;
+}
+
+#posts-sidebar li, #archives li{
+	text-decoration: none;
+	list-style-type: none;
+}
+
+#posts-sidebar h4{
+	margin: 0;
+	font-size: 16px;
+}
+#posts-sidebar p{
+	margin: 0;
+}
+#posts-sidebar p.postDate{
+	color: $gris;
+	font-size: 12px;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+#posts-sidebar p.postDate+p{
+	font-size: 14px;
+	text-align: justify;
+}
+
+/* ---
+* Archives
+--- */
+
+#archives h3{
+
+	margin-top: 5px;
+	padding-left: 15px;
+	margin-bottom: 5px;
+}
+
+#archives h2{
+	margin-top: 20px;
+}
+#archives li{
+	padding-left: 30px;
+}
+
+
+
+
+
+
+
+

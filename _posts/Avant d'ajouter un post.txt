@@ -15,3 +15,4 @@ Le nom du post doit contenir la date et un titre, ne pas mettre d'accent dans le
 
 Tags et Catégories: Les tags sont des mots-clés qui sont contenu dans votre nouvelle, les catégories sont à définir selon les besoins
 Pourront servir pour une éventuelle recherche,
+

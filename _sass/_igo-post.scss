@@ -1,8 +1,64 @@
 /* CSS pour la barre de blogue à droite et la page contenu de blogue */
 
-#posts-sidebar hr{
-	border-color: $gris-fonce;
-	margin: 2%;
+#posts-content img{
+	width: 85%;
+}
+#posts-sidebar, #post-content{
+	margin-top: 20px;
+}
+
+#posts-sidebar .rss{
+	padding: 10px 0;
+}
+#posts-sidebar .rss:hover{
+	color: $bleu-fonce;
+}
+#posts-sidebar .rss .fa-rss{
+	margin-right: 5%;
+}
+
+#posts-sidebar .enSavoirPlus{
+	display: block;
+	width: 100%;
+	text-align: right;
+	font-size: 12px;
+	font-style: italic;
+	margin-bottom: 15px; 
+	padding-right: 5%;
+}
+	
+#posts-sidebar{
+	padding-right: 10px;
+}
+
+#posts-sidebar li, #archives li{
+	text-decoration: none;
+	list-style-type: none;
+}
+
+#posts-sidebar h4{
+	margin: 0;
+	font-size: 14px;
+}
+#posts-sidebar p{
+	margin: 0;
+}
+#posts-sidebar p.postDate{
+	color: $gris;
+	font-size: 12px;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+#posts-sidebar p.postDate+p{
+	font-size: 13px;
+}
+
+/* ---
+* Archives
+--- */
+
+#archives h3{
+	font-size: 16px;
 }
 
 /*******************************************************/
@@ -18,32 +74,21 @@
 /* ----------------768px-----------------------------  */
 
 @media screen and (min-width: $screen-sm-min) {
-	#posts-sidebar, #postContent{
-		margin-top: 70px;
+	#posts-sidebar, #posts-content{
+		margin-top: 30px;
 	}
 	
-	#postContent img{
-		width: 100%;
-	}
-
 	#posts-sidebar div.h3, #archives h3{
 		margin-top: 5px;
 	}
-	#posts-sidebar h4{
-		margin: 0;
-	}
 
 	#posts-sidebar p.postDate{
-		color: $gris;
-		font-size: 14px;
-		margin-bottom: 10px;
-		font-style: italic;
+		font-size: 12px;
+	}
+	#posts-sidebar h4{
+		font-size: 16px;
 	}
 
-	#posts-sidebar li, #archives li{
-		text-decoration: none;
-		list-style-type: none;
-	}
 	#archives h3{
 		padding-left: 15px;
 		margin-bottom: 5px;
@@ -54,8 +99,15 @@
 	#archives li{
 		padding-left: 30px;
 	}
-	#posts-sidebar .postDate>p{
+	#posts-sidebar p.postDate+p{
 		font-size: 14px;
+	}
+	#posts-content p.postDate+p{
+		text-align: justify;
+		width: 90%;
+	}
+	#posts-content{
+		padding-left: 3%;
 	}
 
 }

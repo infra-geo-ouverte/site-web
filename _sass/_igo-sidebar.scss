@@ -64,7 +64,6 @@
 /* Bouton ouvrir et fermer
 -------------------------------- */
 #page-content-wrapper button{
-
 	padding: 5px 5px;
 	background-color: $bleu;
 	border-style: solid;
@@ -72,13 +71,15 @@
 	border-color: $bleu;
 	border-radius: 50px;
 	color: $blanc;
+	box-shadow: 0px 5px 10px #888888;
 }
 #page-content-wrapper button:hover{
 	background-color: $bleu-fonce;
-	-webkit-transition: all 2s ease;
-  	   -moz-transition: all 2s ease;
-	     -o-transition: all 2s ease;
-	        transition: all 2s ease;
+	width: 10%;
+	-webkit-transition: all 1s ease;
+  	   -moz-transition: all 1s ease;
+	     -o-transition: all 1s ease;
+	        transition: all 1s ease;
 }
 
 #icone-sidebar{
@@ -132,25 +133,23 @@
     z-index: -1;
     height: 100%;
     width: 3px;
-    background-color: $bleu-fonce;
-    -webkit-transition: width .2s ease-in;
-      -moz-transition:  width .2s ease-in;
-       -ms-transition:  width .2s ease-in;
-            transition: width .2s ease-in;
+    background-color: $bleu;
+	color: #fff;
+    -webkit-transition: width .4s ease;
+      -moz-transition:  width .4s ease;
+       -ms-transition:  width .4s ease;
+            transition: width .4s ease;
 
 }
-.sidebar-nav li:before {
-    color: #fff;
-    background-color: $bleu;
-}
+
 
 .sidebar-nav li:hover:before,
 .sidebar-nav li.open:hover:before {
     width: 100%;
-    -webkit-transition: width .2s ease-in;
-      -moz-transition:  width .2s ease-in;
-       -ms-transition:  width .2s ease-in;
-            transition: width .2s ease-in;
+    -webkit-transition: width .4s ease;
+      -moz-transition:  width .4s ease;
+       -ms-transition:  width .4s ease;
+            transition: width .4s ease;
 
 }
 
@@ -255,6 +254,9 @@
 	#wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
 		position: relative;
 		margin-right: -250px;
+	}
+	#page-content-wrapper button:hover{
+		width: 5%;
 	}
 
 	#icone-sidebar{

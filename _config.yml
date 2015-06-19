@@ -45,7 +45,9 @@ gems:
 #plugin pour le sitemap
 gems:
   - jekyll-sitemap
-  
+ 
+#pour un résumé de post du blogue à droite
+#excerpt_separator: "<!-- excerpt -->"   
 
 # navigation dans l'entete	
 navigation:
