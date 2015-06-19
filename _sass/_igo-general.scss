@@ -170,7 +170,12 @@ pre {
 #page-content-wrapper span.octicon.octicon-link{
 	color: $bleu!important;
 }
-
+/****************************
+ * Images
+*****************************/
+img{
+	max-width: 300px;
+}
 /****************************
  * Clearfix - Gardé dans le fichier base aussi à vérifier *
 *****************************/
@@ -224,6 +229,12 @@ pre {
 	}
 	.container ol li{
 		margin-left: 35px;
+	}
+	/****************************
+	 * Images
+	*****************************/
+	img{
+		max-width: 400px;
 	}
 
 }
