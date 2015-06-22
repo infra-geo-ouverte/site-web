@@ -44,7 +44,7 @@ Le CT est composé de développeurs experts, de super-utilisateurs, de gestionna
 - Représenter la communauté auprès des organismes publics non membres et les partenaires extérieurs (incluant les fournisseurs de services, le cas échéant).
 - Étudier les demandes de changement et coordonner leurs réalisations par les contributeurs.
 - Gérer les droits d'accès au code.
-- Désigner les validateurs de code et les moyens techniques requis pour les projets de développement.
+- Désigner les valideurs de code et les moyens techniques requis pour les projets de développement.
 - S'assurer d'une production adéquate de documentation et d'une architecture commune.
 - Rédiger les conventions et règles de codage.
 - Établir un mécanisme de gestion des versions en lien avec la communauté d'utilisateurs.
@@ -61,7 +61,7 @@ Le coordonnateur du CT est nommé par les membres du CT sous une formule de pré
 ### 2.2. Contributeurs
 Nous entendons ici par contributeur, toute personne du domaine métier ou technique qui participe aux activités de la communauté. Les contributeurs incluent les :
 
-- développeurs : ce sont en  général des programmeurs qui participent à la programmation du code du logiciel. **Un validateur de code est un profil particulier de développeur**. Les développeurs sont tenus de respecter les conventions, l'architecture commune et les règles de codage;
+- développeurs : ce sont en  général des programmeurs qui participent à la programmation du code du logiciel. **Un valideur de code est un profil particulier de développeur**. Les développeurs sont tenus de respecter les conventions, l'architecture commune et les règles de codage;
 - super-utilisateurs et utilisateurs : ce sont les utilisateurs de la solution (simples utilisateurs, pilotes, testeurs, etc.);
 - architectes et intégrateurs;
 - tout autre type de contributeurs.
@@ -73,7 +73,7 @@ Ce sont des programmeurs expérimentés et habilités à valider le travail des 
 - Être un programmeur expérimenté avec une excellente connaissance du logiciel.
 
 ##### Statut
-- Le CT vote et approuve l'élection des validateurs de code.
+- Le CT vote et approuve l'élection des valideurs de code.
 - Le statut du valideur de code peut être révoqué à tout moment par le CT et, par conséquent, celui-ci peut perdre les privilèges qui lui sont conférés.
 
 ##### Privilèges
@@ -140,7 +140,7 @@ Le processus de demande de changement (RFC) doit suivre le processus suivant :
 ###6.7. Gestion des révisions 
 - Dépôt d'un plan de livraison.
 - Plan livraison -> gel de fonctionnalités -> version bêta -> RC (candidate release) -> livraison. 
-- Rôle de responsable de livraison (doit être un validateur de code). 
+- Rôle de responsable de livraison (doit être un valideur de code). 
 
 ###6.8. Cycle de révisions : 
 - Le cycle des révisions est basé sur la feuille de route (“roadmap”).
@@ -183,7 +183,7 @@ Le comité technique (CT) est chargé d'assurer le leadership technique pour la 
 - Représenter la communauté auprès des organismes publics non membres et les partenaires extérieurs (incluant les fournisseurs de services, le cas échéant).
 - Étudier les demandes de changement et coordonner leurs réalisations par les contributeurs.
 - Gérer les droits d'accès au code.
-- Désigner les validateurs de code et les moyens techniques requis pour les projets de développement.
+- Désigner les valideurs de code et les moyens techniques requis pour les projets de développement.
 - S'assurer d'une production adéquate de documentation et d'une architecture commune.
 - Rédiger les conventions et règles de codage.
 - Établir un mécanisme de gestion des versions en lien avec la communauté d'utilisateurs.
