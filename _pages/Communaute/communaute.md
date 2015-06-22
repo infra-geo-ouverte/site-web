@@ -233,13 +233,13 @@ L'amendement de cette présente charte du CT est proposé dans une motion spéci
 ##Annexe 2 : foire aux questions (FAQ) [<span class="octicon octicon-link"></span>](#annexe2)          
 
 ###Comment un développeur peut-il devenir un valideur de code?
-Les validateurs de code sont des développeurs expérimentés. Il est possible de devenir validateur de code en réalisant les étapes suivantes :
+Les valideurs de code sont des développeurs expérimentés. Il est possible de devenir valideur de code en réalisant les étapes suivantes :
 
 - Contribuer régulièrement à la validation de code en envoyant des ajouts ou des modifications par l’intermédiaire du système de suivi de bogues.
-- Faire réviser et endosser ces modifications par un ou des validateurs de code pour inclusion officielle dans le logiciel. Cela permet de gagner la confiance des autres validateurs de code.
-- Confirmer le désir de devenir validateur de code et de respecter les règles d'engagement.
-- Se faire attribuer le titre de validateur de code par un vote du CT.
-- Être un validateur de code actif et respecter les règles d'engagement. Dans le cas contraire, la personne peut se faire révoquer sa qualité de validateur de code par le CT et, par conséquent, perdre les privilèges qui lui sont conférés.
+- Faire réviser et endosser ces modifications par un ou des valideurs de code pour inclusion officielle dans le logiciel. Cela permet de gagner la confiance des autres valideurs de code.
+- Confirmer le désir de devenir valideur de code et de respecter les règles d'engagement.
+- Se faire attribuer le titre de valideur de code par un vote du CT.
+- Être un valideur de code actif et respecter les règles d'engagement. Dans le cas contraire, la personne peut se faire révoquer sa qualité de valideur de code par le CT et, par conséquent, perdre les privilèges qui lui sont conférés.
 
 ###Comment gagner la confiance des autres valideurs de code?
 
@@ -247,7 +247,7 @@ Les validateurs de code sont des développeurs expérimentés. Il est possible d
 - Écrire du code de qualité.
 - Avoir de bonnes aptitudes de communication.
 - Avoir l'intention de rester actif à moyen et à long terme.
-- Être disposé à suivre une formation ou à subir « un examen par les pairs » pour acquérir la qualité de validateur de code d'une façon accélérée.  
+- Être disposé à suivre une formation ou à subir « un examen par les pairs » pour acquérir la qualité de valideur de code d'une façon accélérée.  
 
 ###Numérotage des révisions 
 
