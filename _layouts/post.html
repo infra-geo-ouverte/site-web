@@ -1,6 +1,5 @@
-<!-- page qui affiche le contenu d'un post -->
 {% include head.html %}
-
+<!-- page qui affiche le contenu d'un post -->
   <body>  <!-- le body se ferme dans le footer -->
 
     {% include header.html %}
@@ -36,24 +35,25 @@
 			<!-- ajout de disqus pour les commentaires -->
 
 			<div id="disqus_thread"></div> <!-- div qui contient l'outil de Disqus -->
-			<script type="text/javascript">
-				/* * * CONFIGURATION VARIABLES * * */
-				var disqus_shortname = 'igouverte';
-				var disqus_developer = 1; // Comment out when the site is live pour tester en local ref: http://schmidt-happens.com/articles/2011/09/26/adding-disqus-comments.html
-
-				/* * * DON'T EDIT BELOW THIS LINE * * */
-				(function() {
-					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-				})();
-			</script>
-			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 		</div>
+	</div>	
 
 	{% include postSide.html %} <!-- inclure la barre de blogue du côté droit -->
-
-	</div>				
+				
 	<div class="clear"></div>
     {% include footer.html %}
+
+	<script type="text/javascript">
+		/* * * CONFIGURATION VARIABLES * * */
+		var disqus_shortname = 'igouverte';
+		var disqus_developer = 1; // Comment out when the site is live pour tester en local ref: http://schmidt-happens.com/articles/2011/09/26/adding-disqus-comments.html
+
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>

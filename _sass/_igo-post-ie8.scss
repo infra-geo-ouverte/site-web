@@ -1,15 +1,121 @@
 /* CSS pour la barre de blogue à droite et la page contenu de blogue */
 
+/* post de lancement d'IGO */
+
+#blogue-lancementjuin2015{
+	width: 75%!important;
+	background-color: #F5F5F5;
+}
+#blogue-lancementjuin2015 .bleu a{
+	color: #ebf7ff;
+	margin: 0;
+	text-decoration: underline;
+}
+#blogue-lancementjuin2015 .bleu a:visited{
+	color: $gris-pale;
+	text-decoration: underline;
+}
+#blogue-lancementjuin2015 .bleu a:hover{
+    color: $gris-fonce;
+    text-decoration: underline;
+}
+
+#blogue-lancementjuin2015 .bleu{
+	background-color: $bleu;
+	color: $blanc;
+	padding: 3%;
+	text-align: center;
+	margin: 25px auto;
+}
+#blogue-lancementjuin2015 .bleu h2{
+	color: $blanc;
+	margin: 0;
+	padding: 10px 0;
+}
+
+#blogue-lancementjuin2015 .bleu ul li, #blogue-lancementjuin2015 .bleu p{
+	text-align: left;
+}
+
+#blogue-lancementjuin2015 .bloc{
+	width: 75%;
+	margin: 30px auto;
+}
+
+#blogue-lancementjuin2015 h2{
+	color: $noir;
+}
+#blogue-lancementjuin2015 h2.acteurs{
+	text-align: center;
+}
+
+#blogue-lancementjuin2015 h3, #blogue-lancementjuin2015 h4{
+	padding-top: 30px;
+}
+#blogue-lancementjuin2015 ul{
+	margin-left: 30px;
+}
+
+#blogue-lancementjuin2015 .gauche{
+	float: left;
+	display: inline-block;
+	width: 45%;
+	margin-right: 5%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#blogue-lancementjuin2015 .droite{
+	float: right;
+	display: inline-block;
+	width: 45%;
+	margin-left: 5%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#blogue-lancementjuin2015 .separateur img{
+	display: block;
+	margin: 10px auto;
+}
+#blogue-lancementjuin2015 img.techno{
+	width: 50%;
+}
+#blogue-lancementjuin2015 img.pyramide{
+	width: 75%;
+	margin-left: 13%;
+	margin-bottom: 30px;
+}
+#blogue-lancementjuin2015 .separateur img{
+	display: block;
+	margin: 10px auto;
+}
+#blogue-lancementjuin2015 .entete{
+	display: block;
+	margin: 0 auto;
+}
+#blogue-lancementjuin2015 .github{
+	display: block;
+	margin: 15px auto;
+	width: 75%;
+}
+#blogue-lancementjuin2015 .footnote{
+	font-size: 12px;
+}
+
+/* --------
+*post général
+------- */
 .clear{
 	clear: both;
 }
-#post-content{
+#posts-content{
 	width: 75%;
+	padding-left: 30px;
 }
-#post-content img{
+#posts-content img{
 	width: 85%;
 }
-#posts-sidebar, #post-content{
+#posts-sidebar, #posts-content{
 	margin-top: 30px;
 	float: left;
 }

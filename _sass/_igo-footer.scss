@@ -17,7 +17,7 @@ css du footer
 }
 
 #footer .wrapper{
-	margin-top: 0;
+	margin: 0 ;
 }
 
 #footer ul{
@@ -161,7 +161,7 @@ css du footer
 
 @media screen and (min-width: $screen-sm-min) {
 	#footer .logo-med{
-		padding-top: 70px;
+		padding-top: 60px;
 		margin-left: 5%;
 		width: 85px;
 	}
@@ -176,6 +176,9 @@ css du footer
 	#footer .contact1, #footer .contact2, #footer {
 	margin: 2% auto;
 	padding: 2%;
+	}
+	#footer .wrapper{
+		padding: 0;
 	}
 
 }
