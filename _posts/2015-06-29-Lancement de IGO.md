@@ -8,7 +8,7 @@ categories:
 
 <div id="blogue-lancementjuin2015">
 	<div class="img entete" markdown="1" >
-		<img src="http://localhost:4000/assets/img/blogue/2015-06-entete.png" alt="séparateur"/>
+		<img itemprop="image" src="{{ '/assets/img/blogue/2015-06-entete.png' | prepend: site.baseurl }}"  alt="entête" />
 	</div>
 
 	<div class="bleu" markdown="1" >
@@ -26,7 +26,7 @@ categories:
 	</div> -->
 
 	<div class="img separateur" markdown="1" >
-		<img src="http://localhost:4000/assets/img/blogue/2015-06-separateur.png" alt="séparateur" />
+		<img itemprop="image" src="{{ '/assets/img/blogue/2015-06-separateur.png' | prepend: site.baseurl }}"  alt="séparateur" />
 	</div>
 	
 	<div class="gauche" markdown="1" >
