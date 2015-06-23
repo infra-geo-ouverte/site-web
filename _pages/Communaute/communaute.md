@@ -202,6 +202,7 @@ Voici les membres actuels :
 - Marie-Claude Couture (FADQ);
 - Olivier Bégin (MTQ);
 - Michel Champagne (MTQ);
+- Karl Gingras (CPTAQ);
 - À déterminer (CELL);
 - Anne Morel (MCC).
 
