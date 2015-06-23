@@ -26,7 +26,7 @@ categories:
 	</div> -->
 
 	<div class="img separateur" markdown="1" >
-		<img itemprop="image" src=" 'https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-separateur.png"  alt="séparateur" />
+		<img src="https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-separateur.png" alt="séparateur" />
 	</div>
 	
 	<div class="gauche" markdown="1" >
