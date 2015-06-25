@@ -5,15 +5,15 @@
     <description>IGO est une solution Web gratuite en géomatique.</description>
     <link>[http://localhost]/</link>
     <atom:link href="[http://localhost]/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Jun 2015 11:32:47 -0400</pubDate>
-    <lastBuildDate>Tue, 23 Jun 2015 11:32:47 -0400</lastBuildDate>
+    <pubDate>Thu, 25 Jun 2015 09:03:45 -0400</pubDate>
+    <lastBuildDate>Thu, 25 Jun 2015 09:03:45 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Lancement de IGO</title>
         <description>&lt;div id=&quot;blogue-lancementjuin2015&quot;&gt;
     &lt;div class=&quot;img entete&quot; markdown=&quot;1&quot; &gt;
-        &lt;img src=&quot;http://localhost:4000/assets/img/blogue/2015-06-entete.png&quot; alt=&quot;séparateur&quot;/&gt;
+        &lt;img itemprop=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-entete.png&quot;  alt=&quot;entête&quot; /&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;bleu&quot; markdown=&quot;1&quot; &gt;
@@ -31,7 +31,7 @@
     &lt;/div&gt; --&gt;
 
     &lt;div class=&quot;img separateur&quot; markdown=&quot;1&quot; &gt;
-        &lt;img src=&quot;http://localhost:4000/assets/img/blogue/2015-06-separateur.png&quot; alt=&quot;séparateur&quot; /&gt;
+        &lt;img src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-separateur.png&quot; alt=&quot;séparateur&quot; /&gt;
     &lt;/div&gt;
     
     &lt;div class=&quot;gauche&quot; markdown=&quot;1&quot; &gt;
@@ -49,7 +49,7 @@
     &lt;/div&gt;
 
     &lt;div class=&quot;img droite&quot; markdown=&quot;1&quot; &gt;
-        &lt;img src=&quot;http://localhost:4000/assets/img/blogue/2015-06-site.jpg&quot; alt=&quot;Impression écran&quot; /&gt;
+        &lt;img src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-site.jpg&quot; alt=&quot;Impression écran&quot; /&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;clear&quot;  &gt;&lt;/div&gt;
@@ -83,7 +83,7 @@
     &lt;/div&gt;
 
     &lt;div class=&quot;img gauche&quot; markdown=&quot;1&quot;  &gt;
-        &lt;img src=&quot;http://localhost:4000/assets/img/blogue/2015-06-ordinateur.jpg&quot; alt=&quot;Image écran&quot; /&gt;
+        &lt;img src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-ordinateur.jpg&quot; alt=&quot;Image écran&quot; /&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;droite&quot; markdown=&quot;1&quot; &gt;
@@ -103,7 +103,7 @@
             &lt;li&gt;La partie serveur :La partie serveur : &lt;a href=&quot;http://www.mapserver.org/&quot;&gt;MapServer&lt;/a&gt;, &lt;a href=&quot;https://phalconphp.com/fr/&quot;&gt;Phalcon&lt;/a&gt;,&lt;a href=&quot;http://www.apache.org/&quot;&gt; Apache&lt;/a&gt;, &lt;a href=&quot;http://project-osrm.org/&quot;&gt;Open Source Routing Machine&lt;/a&gt;,&lt;a href=&quot;http://mapserver.org/ja/mapcache/index.html&quot;&gt; MapCache&lt;/a&gt;. &lt;/li&gt;
             &lt;li&gt;La partie des librairies (IGO-Navigateur) : &lt;a href=&quot;http://openlayers.org/two/&quot;&gt;OpenLayers&lt;/a&gt;,&lt;a href=&quot;http://docs.sencha.com/extjs/3.4.0/&quot;&gt; ExtJS&lt;/a&gt;,&lt;a href=&quot;http://geoext.org/downloads.html&quot;&gt; GeoExt&lt;/a&gt; et &lt;a href=&quot;http://jquery.com/&quot;&gt; JQuery&lt;/a&gt;. Pour ce qui est de la base de données, &lt;a href=&quot;http://postgis.refractions.net/&quot;&gt;PostgreSQL/PostGIS&lt;/a&gt; et Oracle sont celles supportées et développées dans IGO. Les standards utilisés par la communauté IGO sont multiples, notamment les services Web cartographiques (WMS), les services Web d&#39;entités (WFS), les services Web de catalogage (CSW), les services Web de fond de carte en tuiles (WMTS) et les services Web de géotraitement (WPS). &lt;/li&gt;
         &lt;/ul&gt;
-        &lt;img class=&quot;techno&quot; src=&quot;http://localhost:4000/assets/img/blogue/2015-06-techno.png&quot; alt=&quot;Technologies utilisées&quot; /&gt;
+        &lt;img class=&quot;techno&quot; src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-techno.png&quot; alt=&quot;Technologies utilisées&quot; /&gt;
 
     &lt;/div&gt;
     
@@ -124,13 +124,13 @@
         &lt;p&gt;En ouvrant le code source au public et en partageant l&#39;expertise du gouvernement du Québec gratuitement avec le public, la communauté d&#39;IGO s&#39;agrandit et obtient des contributions non seulement des membres du public et d&#39;organisations externes au gouvernement du Québec, mais également de partout dans le monde.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&quot;img separateur&quot; markdown=&quot;1&quot; &gt;
-        &lt;img src=&quot;http://localhost:4000/assets/img/blogue/2015-06-separateur.png&quot; alt=&quot;séparateur&quot; /&gt;
+        &lt;img src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-separateur.png&quot; alt=&quot;séparateur&quot; /&gt;
     &lt;/div&gt;
 
     &lt;div markdown=&quot;1&quot;&gt;
         &lt;h2 class=&quot;acteurs&quot;&gt;Acteur de la communauté IGO&lt;/h2&gt;
 
-        &lt;img class=&quot;pyramide&quot; src=&quot;http://localhost:4000/assets/img/blogue/2015-06-pyramide.png&quot; alt=&quot;Acteurs&quot; /&gt;
+        &lt;img class=&quot;pyramide&quot; src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-pyramide.png&quot; alt=&quot;Acteurs&quot; /&gt;
     &lt;/div&gt;
 
     &lt;div markdown=&quot;1&quot;&gt;
@@ -148,7 +148,7 @@
         
         &lt;p&gt;Si vous avez des questions sur IGO, veuillez d&#39;abord vous référer à la &lt;a href=&quot;http://igouverte.org/faq/&quot;&gt;foire aux questions (FAQ)&lt;/a&gt; à ce sujet. L&#39;espace de partage du code source a été déposé dans le site d&#39;hébergement le plus répandu au monde, soit http://github.com notamment pour faciliter les contributions externes.&lt;/p&gt;
 
-        &lt;a href=&quot;https://github.com/infra-geo-ouverte/igo&quot;&gt;&lt;img class=&quot;github&quot; src=&quot;http://localhost:4000/assets/img/blogue/2015-06-github.png&quot; alt=&quot;github&quot;/&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://github.com/infra-geo-ouverte/igo&quot;&gt;&lt;img class=&quot;github&quot; src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-github.png&quot; alt=&quot;github&quot;/&gt;&lt;/a&gt;
 
         &lt;p&gt;N&#39;hésitez pas à communiquer avec l&#39;équipe d&#39;IGO pour plus d&#39;information : info[a]igouverte.org ou à vous inscrire à la liste courriel publique : http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique. &lt;/p&gt;
     &lt;/div&gt;
@@ -175,180 +175,6 @@
         
         
         <category>information</category>
-        
-      </item>
-    
-      <item>
-        <title>Lancement d&#39;IGO</title>
-        <description>&lt;p&gt;Lancement de IGO en juin??? janv &amp;quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi 
-ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;/p&gt;
-
-&lt;p&gt;Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;Image:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/socialImg.jpg&quot; alt=&quot;Test image&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Fin de la nouvelle&lt;/p&gt;
-</description>
-        <pubDate>Thu, 25 Jun 2015 00:00:00 -0400</pubDate>
-        <link>[http://localhost]/website/2015/06/25/Lancement%20de%20IGO/</link>
-        <guid isPermaLink="true">[http://localhost]/website/2015/06/25/Lancement%20de%20IGO/</guid>
-        
-        <category>lancement</category>
-        
-        
-        <category>website</category>
-        
-      </item>
-    
-      <item>
-        <title>Titre de la nouvelle 4</title>
-        <description>&lt;p&gt;Voici le contenu de mon blogue 2 janv &amp;quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi 
-ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;/p&gt;
-
-&lt;p&gt;Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;Image:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/socialImg.jpg&quot; alt=&quot;Test image&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Fin de la nouvelle&lt;/p&gt;
-</description>
-        <pubDate>Wed, 25 Mar 2015 00:00:00 -0400</pubDate>
-        <link>[http://localhost]/website/2015/03/25/Nouvelle%20de%202015Feb/</link>
-        <guid isPermaLink="true">[http://localhost]/website/2015/03/25/Nouvelle%20de%202015Feb/</guid>
-        
-        <category>jekyll</category>
-        
-        
-        <category>website</category>
-        
-      </item>
-    
-      <item>
-        <title>Titre de la nouvelle 4</title>
-        <description>&lt;p&gt;Voici le contenu de mon blogue 2 janv&lt;/p&gt;
-
-&lt;p&gt;Image:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/socialImg.jpg&quot; alt=&quot;Test image&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Fin de la nouvelle&lt;/p&gt;
-</description>
-        <pubDate>Sun, 25 Jan 2015 00:00:00 -0500</pubDate>
-        <link>[http://localhost]/website/cat%20test/2015/01/25/Nouvelle%20de%202015/</link>
-        <guid isPermaLink="true">[http://localhost]/website/cat%20test/2015/01/25/Nouvelle%20de%202015/</guid>
-        
-        <category>jekyll</category>
-        
-        <category>tags test</category>
-        
-        
-        <category>website</category>
-        
-        <category>cat test</category>
-        
-      </item>
-    
-      <item>
-        <title>Titre de la nouvelle 1</title>
-        <description>&lt;p&gt;Voici le contenu de mon blogue 2 janv&lt;/p&gt;
-
-&lt;p&gt;Image:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/socialImg.jpg&quot; alt=&quot;Test image&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Fin de la nouvelle&lt;/p&gt;
-</description>
-        <pubDate>Sat, 15 Mar 2014 00:00:00 -0400</pubDate>
-        <link>[http://localhost]/website/2014/03/15/Nouvelle%20de%20janvier15/</link>
-        <guid isPermaLink="true">[http://localhost]/website/2014/03/15/Nouvelle%20de%20janvier15/</guid>
-        
-        <category>jekyll</category>
-        
-        
-        <category>website</category>
-        
-      </item>
-    
-      <item>
-        <title>Titre de la nouvelle 1</title>
-        <description>&lt;p&gt;Voici le contenu de mon blogue 2 janv&lt;/p&gt;
-
-&lt;p&gt;Image:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/socialImg.jpg&quot; alt=&quot;Test image&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Fin de la nouvelle&lt;/p&gt;
-</description>
-        <pubDate>Sat, 15 Feb 2014 00:00:00 -0500</pubDate>
-        <link>[http://localhost]/website/2014/02/15/Nouvelle%20de%20janvier15/</link>
-        <guid isPermaLink="true">[http://localhost]/website/2014/02/15/Nouvelle%20de%20janvier15/</guid>
-        
-        <category>jekyll</category>
-        
-        
-        <category>website</category>
-        
-      </item>
-    
-      <item>
-        <title>Titre de la nouvelle 4</title>
-        <description>&lt;p&gt;Voici le contenu de mon blogue 2 janv&lt;/p&gt;
-
-&lt;p&gt;Image:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/socialImg.jpg&quot; alt=&quot;Test image&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Fin de la nouvelle&lt;/p&gt;
-</description>
-        <pubDate>Sat, 25 Jan 2014 00:00:00 -0500</pubDate>
-        <link>[http://localhost]/website/2014/01/25/Nouvelle%20de%20janvier25/</link>
-        <guid isPermaLink="true">[http://localhost]/website/2014/01/25/Nouvelle%20de%20janvier25/</guid>
-        
-        <category>jekyll</category>
-        
-        
-        <category>website</category>
-        
-      </item>
-    
-      <item>
-        <title>Titre de la nouvelle 1</title>
-        <description>&lt;p&gt;Voici le contenu de mon blogue 2 janv&lt;/p&gt;
-
-&lt;p&gt;Image:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/socialImg.jpg&quot; alt=&quot;Test image&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Fin de la nouvelle&lt;/p&gt;
-</description>
-        <pubDate>Thu, 02 Jan 2014 00:00:00 -0500</pubDate>
-        <link>[http://localhost]/website/2014/01/02/Nouvelle%20de%20janvier2/</link>
-        <guid isPermaLink="true">[http://localhost]/website/2014/01/02/Nouvelle%20de%20janvier2/</guid>
-        
-        <category>jekyll</category>
-        
-        
-        <category>website</category>
-        
-      </item>
-    
-      <item>
-        <title>Titre de la nouvelle 2</title>
-        <description>&lt;p&gt;Voici le contenu de mon blogue de 31 dec&lt;/p&gt;
-</description>
-        <pubDate>Tue, 31 Dec 2013 00:00:00 -0500</pubDate>
-        <link>[http://localhost]/website/2013/12/31/Nouvelle%20de%20decembre/</link>
-        <guid isPermaLink="true">[http://localhost]/website/2013/12/31/Nouvelle%20de%20decembre/</guid>
-        
-        <category>jekyll</category>
-        
-        
-        <category>website</category>
         
       </item>
     

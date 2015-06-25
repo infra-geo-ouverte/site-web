@@ -1,7 +1,21 @@
+---
+permalink: /documentation/glo/
+layout: general
+iconedocumentation: ""
+submenu:
+  - { hook: "introduction",    title: "Introduction" }
+  - { hook: "type", title: "Type de recherche" }
+  - { hook: "chaine", title: "Chaîne de caractères de recherche" }
+  - { hook: "mode", title: "Deux modes d’utilisation" }
+  - { hook: "requete", title: "Structure des requêtes SOAP (XML)" }
+  - { hook: "reponse", title: "Structure des réponses SOAP (XML)" }
+  - { hook: "version", title: "Versions du service Web ( GLO )" }
+---
+
 #Service web de "GéoLOcalisation (GLO)"
 
-
-##Introduction
+<a id="introduction"></a>
+##Introduction [<span class="octicon octicon-link"></span>](#introduction)
 
 Afin de faciliter le positionnement sur le territoire Québécois, le Ministère de la Sécurité Publique du Québec (MSP) à mis en place un service Web dédié à cette fin.Ce service de «  géolocalisation  » est entièrement interopérable et permet de localiser des adresses, des codes postaux, des rues, des municipalités, des  MRC , des toponymes, des édifices publics (écoles, hôpitaux,  CLSC , CPE), des entreprises et même des bornes kilométriques situées sur le réseau routier du Ministère des Transports ( MTQ ).  L’innovation de ce service repose sur sa haute fiabilité, son utilisation multiplateforme ainsi que sur la fréquence de ses mises à jour. 
 
@@ -14,8 +28,8 @@ Le contrôle d’accès au service Web se fait via une clé d’utilisation (sem
 
 #### Ce service ne doit pas être utilisé en mode lot. IL EST UN SERVICE EN LIGNE. Il est INTERDIT de lancer des appels par un programme, service, module quelconque qui permettrait de géocoder des milliers adresses. Si le besoin de votre organisation est de géocoder quelques centaines ou milliers d’adresses, veuillez communiquer avec nous pour l’utilisation du service  GLO  utilisable en mode lot, qui est beaucoup plus efficace. Si un organisme utilise le  GLO  pour un géocodage en lot, son accès lui sera retiré sans préavis.
 
-
-### Type de recherche
+<a id="type"></a>
+### Type de recherche [<span class="octicon octicon-link"></span>](#type)
 
 Le service Web supporte cinq types de recherche :
 
@@ -29,7 +43,8 @@ Le service Web supporte cinq types de recherche :
 
 Certaines recherches peuvent être limitées à une clientèle bien précise (ex : La recherche sur les éléments du réseau d’Hydro-Québec est disponible seulement par les intervenants en sécurité civile).  Cette gestion est  effectué  via la clé d’accès décrite ci haut. 
 
-### Chaîne de caractères de recherche
+<a id="chaine"></a>
+### Chaîne de caractères de recherche [<span class="octicon octicon-link"></span>](#chaine)
 
 Le service de recherche considère uniquement une seule chaîne de caractères par requête (paramètre <texte> ). Par contre, cette chaîne peut comporter plusieurs valeurs (ex : 1715 rue  Merlac , Québec). Contrairement à l’engin de recherche de Google, l’ordre dans lequel les paramètres sont placés dans la chaîne à une importance sur la performance et qualité des résultats obtenus. 
 
@@ -327,8 +342,8 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 	
 	Cette fonctionnalité de recherche donne le nom du territoire municipal dans lequel la coordonnée à été captée et donne également la distance a vol d'oiseau de la localité la plus proche.  
 
-
-### Deux modes d’utilisation
+<a id="mode"></a>
+### Deux modes d’utilisation [<span class="octicon octicon-link"></span>](#mode)
 
 1) La première façon d’utiliser le service est par un simple appel URL, directement dans un fureteur Internet.Cette méthode est plus simple, car elle ne nécessite pas de programmation (création d’un message ou d’un client en format SOAP).Cette méthode retourne l’information sous forme XML. 
 
@@ -390,8 +405,8 @@ Voici les méthodes présentement supportées par le service :
 
 **Note** : les recherches par coordonnées GPS et par borne kilométrique sont traitées dans des méthodes séparées, car elles requièrent une réponse et une structure particulière. 
 
-
-###Structure des requêtes SOAP (XML) 
+<a id="requete"></a>
+###Structure des requêtes SOAP (XML) [<span class="octicon octicon-link"></span>](#requete)
 
 
 Pour les requêtes d’adresse, de lieux ou d’éléments du réseau d’Hydro-Québec, la structure SOAP pour le message à envoyer prends la forme suivante : 
@@ -450,8 +465,8 @@ Requête par coordonnées GPS :
 	   </soapenv:Body>
 	</soapenv:Envelope>
 
- 
-####Structure des réponses SOAP (XML) 
+<a id="reponse"></a>
+####Structure des réponses SOAP (XML) [<span class="octicon octicon-link"></span>](#reponse)
 
 La réponse en format XML qui est retournée par le service (ou via l’URL) peut être facilement décortiquée par l’application appelante.Chaque type de requête retourne généralement; le nombre d’enregistrement, une liste d’attributs pour chacune des occurrences de la réponse correspondant à la chaîne de caractères reçue en paramètre.On retrouve aussi les coordonnées de la localisation de l’information obtenue de l’entrepôt de donné du  MSP . Enfin, on trouvera quelques métadonnées qualifiant la donnée. 
 
@@ -524,8 +539,8 @@ Extrait de la réponse XML d’une recherche d’adresse (par code postal soit 
 | 35 | Le géocodage a positionner l’adresse au centre du segment de la rue (absence de minimum/maximum) |
 
 
-
-####Versions du service Web ( GLO ) 
+<a id="version"></a>
+####Versions du service Web ( GLO )  [<span class="octicon octicon-link"></span>](#version)
 
 Version 1 : Version initiale 
  

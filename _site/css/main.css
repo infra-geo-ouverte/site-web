@@ -608,7 +608,7 @@ css du footer
 
   #footer .wrapper {
     padding: 0; } }
-/* CSS pour la barre de blogue Ó droite et la page contenu de blogue */
+/* CSS pour la barre de blogue ├á droite et la page contenu de blogue */
 /* post de lancement d'IGO */
 #blogue-lancementjuin2015 {
   width: 75% !important;
@@ -680,7 +680,7 @@ css du footer
 
 #blogue-lancementjuin2015 .entete {
   display: block;
-  margin: 0 auto; }
+  margin-left: 6%; }
 
 #blogue-lancementjuin2015 img.techno {
   width: 50%; }
@@ -703,7 +703,7 @@ css du footer
   font-size: 12px; }
 
 /* -----------
-* blogue en gÚnÚral
+* blogue en g├®n├®ral
 ----------  */
 #posts-content img {
   width: 85%; }
