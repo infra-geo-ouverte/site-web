@@ -34,6 +34,13 @@ highlighter: pygments
 include: ['_pages']
 relative_permalinks: false
 
+pages:
+- Home: index.md
+- About: about.md
+
+
+
+
 #Plugin redirect ref: https://github.com/jekyll/jekyll-redirect-from
 #gems:
 #  - jekyll-redirect-from
