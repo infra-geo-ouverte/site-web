@@ -35,8 +35,8 @@ include: ['_pages']
 relative_permalinks: false
 
 pages:
-- Home: index.md
-- About: about.md
+- test1: communaute.md
+- test2: contribuer.md
 
 
 
