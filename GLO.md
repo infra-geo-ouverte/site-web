@@ -459,61 +459,84 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 (création d’un message ou d’un client en format SOAP). Cette méthode retourne l’information sous forme XML, HTML, JSON*, CSV* ou EXCEL*. 
 Voici des exemples d’appel en mode REST pour les différentes versions.
 
-*---------------*-------------------------------*-----------------------------*----------------------- 
-Voici un exemple d’appel en mode HTTP. 
+** Dans la version 6 BETA seulement**
 
-Pour la version 5: 
+Version 5:
 
-	[Le lien ne fonctionne pas](http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=<votre clé>&indDebut=0&indFin=10&epsg=900913&format=xml "Lien")
+	http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=gps& texte=46,-72&cle=<votre clé>&indDebut=0&indFin=10& epsg=900913&format=xml
 
+Version 6 *BETA*:
 
-Liste des paramètres: 
+	http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=gps& texte=46,-72&cle=<votre clé>&indDebut=0&indFin=10& epsg=900913&format=xml
+
+**Liste des paramètres:**
 
 | | Variable | Valeurs possibles | Obligatoire |
 | ---- | ---- | ---- | ---- |
-| 1 | Texte   | Chaîne de caractères pour la recherche* | Oui|
-| 2 | cle     | Clé d’accès émise par le MSP  | Oui |
-| 3 | type    | adresse, lieu, borne, gps, hq A partir de la version 5, le type est obligatoire | Oui – « adresse »  par défaut |  
-| 4 | epsg    | Système de référence des coordonnées en sortie, (code EPSG de la donnée source par défaut) | Oui – système de coordonnées source par défaut |
-| 5 | indexDebut | Permet de spécifier l’index de départ de la réponse, (optionnel, 0 par défaut)  | Non - 0 par défaut |
-| 6 | indexFin | Permet de spécifier l’index de fin de la réponse, (optionnel 79 par défaut)  | Non - 79 par défaut |
-| 7 | version | Paramètre qui n’est plus utilisé.  | ---- |
-| 8 | format | Permet de spécifier le type de format de sortie du fichier. Pour le moment XML. (seront possible HTML, CSV ou autre un jour)  | Oui – XML par défaut |
+| 1 | Texte    |Chaîne de caractères pour la recherche* |Oui |
+| 2 | cle      | Clé d’accès émise par le MSP | Oui |
+| 3 | type     |adresse, lieu, borne, gps, hq, A partir de la version 5, le type est obligatoire |Oui – «adresse» par défaut|
+| 4 | epsg     |Système de référence des coordonnées en sortie, Les valeurs possibles sont ceux supporté par PostGIS v2.0.1 |Oui – système de coordonnées source par défaut|
+| 5 | indexDebut      | Permet de spécifier l’index de départ de la réponse, (optionnel, 0 par défaut) | Non - 0 par défaut |
+| 6 | indexFin      | Permet de spécifier l’index de fin de la réponse, (optionnel 79 par défaut) | Non - 79 par défaut |
+| 7 | version     | Permet de spécifier la version du service à utiliser (1 étant la première version et 2 étant la dernière version disponible depuis le 14 octobre 2009). Pour les versions 3 et plus qui sont disponibles depuis mars 2011 ce paramètre est inutile et ne sera plus utilisé.  Voir la section «Réponse XML du service SOAP» qui décrit les différences entre les différentes versions. | Non – version #1 par défaut, Les valeurs possible sont 1 et 2. |
+| 8 | format      | Permet de spécifier le type de format de sortie du fichier.  XML, HTML, JSON**, EXCEL** | Oui – XML par défaut |
+| 9 | epsg_entree**    | Le code EPSG des coordonnées en entrée. Les valeurs possibles sont ceux supporté par PostGIS v2.0.1| Non |
+| 10 | epsg_sortie**     | Le code EPSG des coordonnées en sortie.  Les valeurs possibles sont ceux supporté par PostGIS v2.0.1.  Le paramètre «epsg» et «epsg_sortie» sont égaux dans la version 6 BETA| Non (32198 par défaut) |
+| 11 | groupe**      | Permet de regrouper les adresses positionnées aux mêmes coordonnées.  1 = regrouper  0 = pas grouper | Non (0 par défaut) |
+
+*Si la chaîne de texte comprends des caractères non supportés par l’URL (les accents et les espaces entre autres), ces derniers doivent être encodés avant d’être soumis au service.
+En PHP, il existe une fonction pour effectuer automatiquement cette opération (urlencode).
+
+** Depuis la version 6 BETA
+
+Exemples qui retourne les 49 premiers enregistrements seulement
+
+Version 5:
+
+	http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse& texte=2525%20laurier%20qu%E9bec&cle=<votre clé>&indDebut=0&indFin=49& epsg=32198&format=xml
+
+Version 6 **BETA**:
+
+	http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse& texte=2525%20laurier%20qu%E9bec&cle=<votre clé>&indDebut=0&indFin=49& epsg=32198&format=xml
+
+Exemple qui retourne les enregistrements mais dont les coordonnées sont dans le système de projection de Google
+
+Version 5:
+
+	http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=<votre clé>&indDebut=0&indFin=10&epsg=900913&format=xml
+
+Version 6 BETA:
+
+	http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=<vot	re clé>&indDebut=0&indFin=10&epsg=900913&format=xml
+
+	ou
+
+	http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=<votre clé>&indDebut=0&indFin=10&epsg_sortie=900913&format=xml
 
  
-<span style="color:red">Si la chaîne de texte  comprends  des caractères non supportés par l’URL (les accents et les espaces entre autres), ces derniers doivent être encodés avant d’être soumis au service.En PHP, il existe une fonction pour effectuer automatiquement cette opération ( urlencode ).</span>
- 
-Exemple qui retourne les 49 premiers enregistrements seulement 
-
-Pour la version 5: 
-
-
-	[Lien à ajouter](http://glo.com "Lien à ajouter")
-
-
-Exemple qui retourne les enregistrements mais dont les coordonnées sont dans le système de projection de Google 
-
-
-Pour la version 5: 
-
-	[Lien à ajouter](http://glo.com "Lien à ajouter")
-
 
 2) La deuxième façon est d’appeler directement le service Web en utilisant un langage de programmation (Java, .Net, PHP,  etc …). Il requiert la création d’une requête (ou message) SOAP avec les paramètres requis. Les différents paramètres ainsi que les méthodes exposées par le service Web sont définies dans le fichier  WSDL  [Wen SErvice Definition Language](http://www.w3.org/TR/wsdl "Wen SErvice Definition Language")  
 
 
-pour la version 5 du service 
-	
-	[Le lien ne fonctionne pas](http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeur.php?WSDL) 
+Version 5
+
+	http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeur.php?WSDL
+
+Version 6 BETA
+
+	http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeur.php?WSDL
 
 
-Voici les méthodes présentement supportées par le service : 
+
+Voici les méthodes présentement supportées par le service SOAP:
 
 *     Geocoder    (  ) – _Pour les recherches d’adresses, de lieux ou des éléments du réseau d’Hydro-Québec_ 
 *     GeocoderBorne    ()  
 *     GeocoderGPS    ()  
+*     ReverseGeocoding()**  
 
- 
+** Depuis la version 6 BETA 
 
 **Note** : les recherches par coordonnées GPS et par borne kilométrique sont traitées dans des méthodes séparées, car elles requièrent une réponse et une structure particulière. 
 
@@ -545,13 +568,15 @@ Pour les requêtes d’adresse, de lieux ou d’éléments du réseau d’Hydro-
 
 Tout comme pour le mode par appel URL, les trois paramètres obligatoires sont :
 
-	le clé d’accès (<GLOCleAcces>);
-	le type : adresse, lieu, hq;
-	le texte à géocoder (<texte>)
+*	le clé d’accès (<GLOCleAcces>);
+*	le texte à géocoder (<texte>)
+
+	*	pour les lieux, le texte doit être préfixé du terme « lieu »;
+		
+	*	pour les élément d’Hydro-Québec, le texte doit être préfixé du terme « HQ »;
+		
+	*	pour les adresses, aucun préfixe n’est requis.
  
-
-**VERSION 5 :**
-
 
 Pour les deux autres types de géocodage (par borne ou coordonnées GPS), la structure est exactement la même excepté que le nom de la requête :
  
@@ -576,6 +601,9 @@ Requête par coordonnées GPS :
 	      </geo:GPSRequete>
 	   </soapenv:Body>
 	</soapenv:Envelope>
+
+**Version 6:**
+**/////////////////////////////////////////**////////////////////////////////////////////////**////////////////**
 
  
 ####Structure des réponses SOAP (XML) 
