@@ -10,22 +10,17 @@ Afin de faciliter le positionnement sur le territoire Québécois, le Ministère
 
 Le contrôle d’accès au service Web se fait via une clé d’utilisation (semblable à celle requise pour utiliser l’API de Google  Maps ).  Cette clé permet au  MSP  de contrôler les accès et par le fait même, le contenu de sa base de données.Les clés permettent également d’autoriser ou d’empêcher l’utilisation decertains types de recherche selon l’organisation ou l’utilisateur qui tente de se connecter.  Les clés d’accès sont émises par le  MSP  et sont contrôlées en fonction d’une suite d’adresses IP reliée au domaine Internet du requérant.Pour obtenir une clé, il suffit d’en faire la demande auprès du ministère via l’adresse de courriel suivante: [geomsp@msp.gouv.qc.ca](mailto:geomsp@msp.gouv.qc.ca). 
 
-### NOTE  IMPORTANTE 
-
-#### Ce service ne doit pas être utilisé en mode lot. IL EST UN SERVICE EN LIGNE. Il est INTERDIT de lancer des appels par un programme, service, module quelconque qui permettrait de géocoder des milliers adresses. Si le besoin de votre organisation est de géocoder quelques centaines ou milliers d’adresses, veuillez communiquer avec nous pour l’utilisation du service  GLO  utilisable en mode lot, qui est beaucoup plus efficace. Si un organisme utilise le  GLO  pour un géocodage en lot, son accès lui sera retiré sans préavis.
-
-
 ### Type de recherche
 
 Le service Web supporte cinq types de recherche :
 
 | | Type de recherche | Code |
 | ---- | ---- | ---- |
-| 1 | Par adresse (combinaison de code postal, no. civique, rue ou ville)         |adresse |
-| 2 | Par lieux d‘intérêts (restaurant, entreprise, école, etc…)                  |lieu  |
-| 3 | Par borne kilométrique (borne et no. de route)                              |borne |
-| 4 | Par coordonnées GPS (lat, lon) ou (lon, lat), UTM, MTM, format Bell         |gps   |
-| 5 | Infrastructure d’Hydro-Québec (poteau, barrage, centrale, etc…)             |hq    |
+| 1 | Par adresse (combinaison de code postal, no. civique, rue ou ville et intersection de rue)         |adresse |
+| 2 | Par lieux d‘intérêts (restaurant, entreprise, école, etc…)                  			 |lieu  |
+| 3 | Par borne kilométrique (borne et no. de route)                              		 	 |borne |
+| 4 | Par coordonnées GPS (lat, lon) ou (lon, lat), UTM, MTM, format Bell       			 |gps   |
+| 5 | Infrastructure d’Hydro-Québec (poteau, barrage, centrale, etc…)           			 |hq    |
 
 Certaines recherches peuvent être limitées à une clientèle bien précise (ex : La recherche sur les éléments du réseau d’Hydro-Québec est disponible seulement par les intervenants en sécurité civile).  Cette gestion est  effectué  via la clé d’accès décrite ci haut. 
 
@@ -35,13 +30,14 @@ Le service de recherche considère uniquement une seule chaîne de caractères p
 
 Depuis la version 5 du  GLO , il est possible de passer une chaine de caractères ne correspondant à aucun pattern pour la recherche par adresse. Une recherche de similarité phonétique est alors déclenchée. 
 
-Ex: 2525 Québec Laurier  G1V   2L2  boulevard 
+Ex: 2525 Québec Laurier  G1V 2L2  boulevard 
 
 La fonction cherche donc les mots demandés.Ces mots peuvent être coupés au début ou avec des fautes d’orthographe à l’intérieur des mots. Les mots sont alors affectés d’un poids et ceux le plus près de 100% sont retournés. 
 
 Cette nouvelle fonctionnalité est un peu plus lente que la recherche par pattern qui est beaucoup plus rapide. 
 
-<span style="background-color:lime;">**LES  VERSIONS  1, 2 ET 3 NE SONT PLUS SUPPORTÉES.**<span />  
+<span style="background-color:lime;">**LES  VERSIONS  1, 2 ET 3 NE SONT PLUS SUPPORTÉES.**<span /> 
+<span style="background-color:lime;">**LA VERSION 6 EST DISPONIBLE EN VERSION BETA POUR L'INSTANT.**<span />  
 
 Voici des exemples de chaîne qui peuvent être soumise au service (les informations retournées seront décrites en détail à la section du présent document): 
 
@@ -72,7 +68,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 	
   =  ►   Retourne seulement l’adresse qui correspond au numéro civique. 
 	
-		1715 Rue De  Merlac , Québec
+		1715 Rue De Merlac, Québec
 	
 	  
   Si le numéro civique n’existe pas,   Ex :   **<span style="color:blue">G1M 2L1, 1714**</span>
@@ -102,7 +98,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 		511 Boulevard Sabourin,  Vald’Or 
 		
 		
-  Si le numéro civique n’existe pas,   Ex:   **<span style="color:blue">J9P4X2 , 510 Sabourin**</span>
+  Si le numéro civique n’existe pas,   Ex:   **<span style="color:blue">J9P4X2,510 Sabourin**</span>
 		
   =  ►   Retourne les adresses en utilisant les tranches de numéros civiques (gauche ou droite) qui se retrouvent sur la rue spécifiée et à l’intérieur du code postal. 
 		
@@ -110,6 +106,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 		517 Boulevard Sabourin,  Vald’Or 
 		519 Boulevard Sabourin,  Vald’Or 
 		525 Boulevard Sabourin,  Vald’Or 
+		...
 		
 		
   Si aucun résultat n’est trouvé 
@@ -144,11 +141,12 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 		
   =  ►   Retournetoutes les adresses (no. civique, la rue et la ville) pour toutes les villes du Québec qui ont une rue et un numéro civique correspondant. 
 		
-		
+		100 1e rang Blais Sud, Saint-Tharcisius
 		100 Boulevard Blais Est, Berthier-sur-Mer
 		100 Chemin des Blais,  Sainte-Émélie-de-l'Énergie 
 		100 Rue Blais,  Amqui 
 		100 Rue Blais, Saint-Côme
+		100 Rue Noël-Blais, Granby
 		
   Si aucune combinaison numéro civique + rue existe… 
 		
@@ -163,17 +161,17 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 		
   Si une combinaison existe,
 		
-  Ex:**<span style="color:blue"> 100 Fortier,  Amqui** </span>
+  Ex:**<span style="color:blue"> 72 Fortier,  Amqui** </span>
 		
-  Ex: **<span style="color:blue">450 6<sup>e</sup>, Shawinigan**</span> 
+  Ex: **<span style="color:blue">450 116<sup>e</sup>, Shawinigan**</span> 
 		
   =  ►   Retourne seulement l’adresse qui correspond au numéro civique. 
 		
 		
-		100 rue Fortier,  Amqui
+		72 rue Fortier,  Amqui
 	ou
 	
-		450 6e Avenue, Shawinigan
+		450 116e Avenue, Shawinigan
 	
 	
   Note : 
@@ -196,15 +194,20 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 
   =  ►   Retourne toutes les adresses (no. civique, la rue ainsi que la ville) qui se retrouvent sur cette rue à l’intérieur de la ville spécifié. 
 		
+		Boulevard Fortier, Saint-Isidore-de-Clifton
 		101 Boulevard Fortier, Saint-Isidore-de-Clifton
 		105 Boulevard Fortier, Saint-Isidore-de-Clifton
+		106 Boulevard Fortier, Saint-Isidore-de-Clifton
 		109 Boulevard Fortier, Saint-Isidore-de-Clifton
 		110 Boulevard Fortier, Saint-Isidore-de-Clifton
+		111 Boulevard Fortier, Saint-Isidore-de-Clifton
+		115 Boulevard Fortier, Saint-Isidore-de-Clifton
+		116 Boulevard Fortier, Saint-Isidore-de-Clifton
+		...
+		200 Boulevard Fortier, Saint-Isidore-de-Clifton
+		Rue Fortier, Saint-Isidore
 		295 Rue Fortier, Saint-Isidore
-		299 Rue Fortier, Saint-Isidore
 		300 Rue Fortier, Saint-Isidore
-		301 Rue Fortier, Saint-Isidore
-		302 Rue Fortier, Saint-Isidore
 	
 	
   h) À partir d’**un seul mot** qui n’est pas un code postal (rue, municipalité,  MRC  ou région administrative)  
@@ -213,15 +216,15 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 	
 	 
   =  ►   Retourne un résultat provenant de toutes les bases de données disponibles soit: les territoires administratifs, le rues, les toponymes 
-		
+		La Vallée-du-Richelieu (MRC)
 	 
   i) Une fonctionnalité de recherche textuelle a été ajoutée dans les cas où le résultat pour tous les patterns précédents donne « 0 » ou « aucun résultat ».  
 	
 		
-		 Ex : 2525  boul  Laurier Québec  G1V   2L2  
+		 Ex : 2525  boul Laurier Québec  G1V 2L2  
 		
   = ►  Retourne un résultat provenant de la base de données d’adresses. La recherche se fait dans le champ <  RECHERCHE_TEXTUELLE  > qui contient l’adresse au complet, le code postal, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ. 
-
+		2525 Boulevard Laurier, Québec
 
 2. Lieu  
 
@@ -232,6 +235,44 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 	 
 	Retourne un résultat provenant de la base de données de Lieux d’intérêt. La recherche se fait dans le champ <  RECHERCHE_TEXTUELLE  > qui contient plusieurs informations concernant ce lieu : son nom,des mots clé, l’adresse s’il y a lieu, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ. 
 
+		»Chez Ashton (Québec) (Québec)
+		(MTO) - 640, Grande-Allée E.
+		»Chez Ashton (Québec)
+		(MRQ) - 830, boulevard Charest Est
+		»Ashton Casse-Croûte Inc. (Lévis)
+		(MRQ) - 455, route du Pont
+		»Chez Ashton (Lévis)
+		(MRQ) - 2301, boulevard de la Rive-Sud
+		»Ashton Casse-Croûte Inc. (Québec)
+		(MRQ) - 600, rue du Marais
+		»Ashton Casse-Croûte Inc. (Québec)
+		(MRQ) - 3065, chemin Sainte-Foy
+		»Ashton Casse-Croûte Inc. (Québec)
+		(MRQ) - 9375, boulevard de l'Ormière
+		»Ashton Casse-Croûte Inc. (Québec)
+		(MRQ) - 2690, 1e Avenue
+		»Chez Ashton (Québec)
+		(MRQ) - 2895, chemin Saint-Louis
+		»Chez Ashton (Saint-Georges)
+		
+		»** Mcdonald'S* Demenage 44 Kennedy** (LEVIS)
+		(Lévis) - 65 KENNEDY
+		»Restaurant Mcdonald'S (CHARNY)
+		(Lévis) - 8000 EGLISES DES (AVE)
+		»Mcdonald J (LEVIS)
+		(Lévis) - 5 VIGIE DE LA
+		»Restaurant Mcdonald'S (LEVIS)
+		(Lévis) - 44 KENNEDY
+		»Restaurant Mcdonald'S (LEVIS)
+		(Lévis) - 7400 A RIVE SUD DE LA (BD)
+		»Restaurant Mcdonald'S (LEVIS)
+		(Lévis) - 5303 LOUIS H LAFONTAINE
+		»Restaurant Mcdonald'S (ST-ROMUALD)
+		(Lévis) - 855 4E AVENUE
+		»Restaurant Mcdonald'S (ST-NICOLAS)
+		(Lévis) - 580 116 (RTE)
+		»Mcdonald'S (Charny) (Lévis)
+		(MTO) - 8000, av. des Églises
  
 3. Borne Kilométrique  
 
@@ -241,8 +282,13 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 	
 	Ex :  **<span style="color:blue">108, 73**</span>
 	
+		»Route 73 (Droite) km 108 à Saint-Isidore
+		»Route 73 (Gauche) km 108 à Saint-Isidore
+	
 	  
 	Note : Pour les bornes à chaque 100 mètres dans la région de Montréal, la syntaxe est la suivante : 66.9 40 = borne du 900e mètres au 66<sup>e </sup>kilomètre de la route 40\. 
+	
+	»Route 40 (Gauche) km 66,9 à Montréal
 	
 	b) À partir d’un  
 	
@@ -252,25 +298,78 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 		iv. **nom de municipalité seulement** 
 	
 	
-		Ex:  **<span style="color:blue">SORTIE 315**</span>
-		**<span style="color:blue">SORTIE 315 40**</span>
-		**<span style="color:blue">SORTIE 315 Québec**</span>
+		Ex:  **<span style="color:blue">SORTIE 305**</span>
+		**<span style="color:blue">SORTIE 305 40**</span>
+		**<span style="color:blue">SORTIE 305 Québec**</span>
 		**<span style="color:blue">SORTIE Québec**</span>
+		**<span style="color:blue">Panneau st-raymond**</span>
 		
-	
+		
+		»Route 20 Est - Sortie 305 - Affichage: Route 171, Rte Lagueux
+		»Route 20 Ouest - Sortie 305 - Affichage: Route 171, Route Lagueux, St-Gilles, Thetford Mines
+		»Route 40 Est - Sortie 305-S - Affichage: Aut. 20 et 540 sud, Aut. Duplessis sud, pont Pierre-Laporte
+		»Route 40 Est - Sortie 305-N - Affichage: Aut. 540 nord, Aut. Duplessis Nord, aéroport Jean-Lesage
+		»Route 40 Ouest - Sortie 305 - Affichage: Aut. 540, Aut. Duplessis, pont Pierre-Laporte, aéroport Jean-Lesage
+		
+		»Route 40 Ouest - Sortie 305 - Affichage: Aut. 540, Aut. Duplessis, pont Pierre-Laporte, aéroport Jean-Lesage
+		»Route 40 Est - Sortie 305-N - Affichage: Aut. 540 nord, Aut. Duplessis Nord, aéroport Jean-Lesage
+		»Route 40 Est - Sortie 305-S - Affichage: Aut. 20 et 540 sud, Aut. Duplessis sud, pont Pierre-Laporte
+
+		
+		» Route 40 Ouest - Sortie 305 - Affichage: Aut. 540, Aut. Duplessis, pont Pierre-Laporte, aéroport Jean-Lesage
+		» Route 40 Est - Sortie 305-N - Affichage: Aut. 540 nord, Aut. Duplessis Nord, aéroport Jean-Lesage
+		» Route 40 Est - Sortie 305-S - Affichage: Aut. 20 et 540 sud, Aut. Duplessis sud, pont Pierre-Laporte
+		
+		
+		» Route 40 Ouest - Sortie 300 - Affichage: Chemin du Lac
+		» Route 40 Ouest - Sortie 302 - Affichage: Route Jean-Gauvin
+		» Route 40 Est - Sortie 302 - Affichage: Route Jean-Gauvin
+		» Route 40 Est - Sortie 304 - Affichage: Av. Le Gendre
+		» Route 40 Ouest - Sortie 304 - Affichage: Av. Le Gendre
+		» Route 40 Ouest - Sortie 305 - Affichage: Aut. 540, Aut. Duplessis, pont Pierre-Laporte, aéroport Jean-Lesage
+		» Route 40 Est - Sortie 305-N - Affichage: Aut. 540 nord, Aut. Duplessis Nord, aéroport Jean-Lesage
+		» Route 40 Est - Sortie 305-S - Affichage: Aut. 20 et 540 sud, Aut. Duplessis sud, pont Pierre-Laporte
+		
+		» Route 5 Nord - Sortie 3 - Affichage: Boul. St-Raymond, boul. du Casino, Pontiac
+		» Route 5 Sud - Sortie 3 - Affichage: Boul. St-Raymond, boul. du Casino, Pontiac
+		» Route 40 Est - Sortie 281 - Affichage: Route 365, Pont-Rouge, Saint-Raymond, Neuville
+		» Route 40 Ouest - Sortie 281-N - Affichage: Route 365, Pont-Rouge, Saint-Raymond
+		» Route 85 Nord - Sortie 47 - Affichage: Rue Raymond, St-Elzéar-de-Témiscouata, Saint-Louis-du-Ha! Ha!
+		» Route 85 Sud - Sortie 47 - Affichage: Rue Raymond, St-Elzéar-de-Témiscouata, Saint-Louis-du-Ha! Ha!
+		...
 	
 	c) À partir d'une **valeur de mile du  CN**  
 	Ex :   **<span style="color:blue">CN, 50**</span>
 	
+		»Repère 50 (mi) à Alexandria (Via)
+		»Repère 50 (mi) à Bala
+		»Repère 50 (mi) à Beachburg
+		»Repère 50 (mi) à Bedford
+		»Repère 50 (mi) à Cascapedia
+		»Repère 50 (mi) à Chandler
+		»Repère 50 (mi) à Chapais
+		»Repère 50 (mi) à Charlevoix Sub
+		...
+	
 	d) À partir d’un **numéro d’une aide flottante de la garde côtière canadienne**  
 	Ex :   **<span style="color:blue">GCC H47**</span>
 
+		»Aide flottante H47 - Bouée lumineuse H47; RECIF DU NORD OUEST ILE DU BIC
 
 4. Coordonnées GPS  
 
 	a) À partir de coordonnées en Degrés décimaux 
 	
 	Ex:  **<span style="color:blue"> 48.843439, -67.930932**</span>
+	Possibilitées avec la version 6 BETA :
+	**<span style="color:blue"> 48,843439, -67,930932**</span>
+	**<span style="color:blue"> 48,843439 -67,930932**</span>
+	**<span style="color:blue"> 48,843439 67,930932**</span>
+	**<span style="color:blue"> 48.843439 -67.930932**</span>
+	**<span style="color:blue"> 48.843439 67.930932**</span>
+	**<span style="color:blue"> -67.930932 48.843439**</span>
+	**<span style="color:blue"> 67.930932 48.843439**</span>
+	ainsi de suite...
 	
 	= ► Retourne 
 	
@@ -279,6 +378,12 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 	b) À partir de coordonnées en Degrés minutes secondes  
 	
 	Ex :  **<span style="color:blue">48 22 23, -67 34 21**</span>
+	Possibilitées avec la version 6 BETA :
+	**<span style="color:blue"> 48 22 23. -67 34 21**</span>
+	**<span style="color:blue"> 48 22 23. 67 34 21**</span>
+	**<span style="color:blue"> -67 34 21 48 22 23**</span>
+	**<span style="color:blue"> 67 34 21 48 22 23**</span>
+	ainsi de suite...
 	
 	= ► Retourne 
 	
@@ -287,6 +392,12 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 	c) À partir de coordonnées en Degrés minutes décimales 
 	
 	Ex :  **<span style="color:blue">48 22.843, -67 34.932**</span>
+	Possibilitées avec la version 6 BETA :
+	**<span style="color:blue">48 22.843 -67 34.932**</span>
+	**<span style="color:blue">48 22.843 67 34.932**</span>
+	**<span style="color:blue">67 34.932 48 22.843**</span>
+	**<span style="color:blue">-67 34.932 48 22.843**</span>
+	ainsi de suite...
 	
 	= ► Retourne 
 	
@@ -296,6 +407,12 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 	d) À partir de coordonnées en UTM-fuseau  
 	
 	Ex :  **<span style="color:blue">UTM-18 1018490.56282, 5434191.46593**
+	Possibilitées avec la version 6 BETA :
+	**<span style="color:blue">UTM-18 1018490.56282 5434191.46593**</span>
+	**<span style="color:blue">UTM-18 1018490,56282 5434191,46593**</span>
+	**<span style="color:blue">utm-18 1018490,56282 5434191,46593**</span>
+	**<span style="color:blue">utm18 1018490,56282 5434191,46593**</span>
+	ainsi de suite...
 	
 	= ► Retourne 
 	
@@ -304,6 +421,12 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 	e) À partir de coordonnées en  MTM-fuseau   
 	
 	Ex :   **<span style="color:blue">MTM7  493344.550863, 5414859.14264**</span>
+	Possibilitées avec la version 6 BETA :
+	**<span style="color:blue">MTM-7 493344.550863 5414859.14264**</span>
+	**<span style="color:blue">MTM-7 493344,550863 5414859,14264**</span>
+	**<span style="color:blue">mtm-7 493344,550863 5414859,14264**</span>
+	**<span style="color:blue">MTM7 493344,550863 5414859,14264**</span>
+	ainsi de suite...
 	
 	= ► Retourne 
 	
@@ -312,7 +435,9 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 	f) À partir du format de Bell ( Lat :  dd.ddd  Long: dd.ddd UNC:  CONF :)  
 	
 	
-	Ex: **<span style="color:blue">Lat: 46 49 50.041N Long: 71 11 26.753W UNC:100  CONF :90**
+	Ex: **<span style="color:blue">Lat: 46 49 50.041N Long: 71 11 26.753W UNC:100  CONF :90**</span>
+	**<span style="color:blue">Lat 46 49 50.041N Long 71 11 26.753W UNC:100 CONF:90**</span>
+	**<span style="color:blue">LAT 46 49 50.041N LONG 71 11 26.753W UNC:100 CONF:90**</span>
 	
 	= ► Retourne 
 	
@@ -323,16 +448,18 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 	
 	On peut inscrire dans l'ordre  Lat /Long ou Long/ Lat  avec, ou sans le signe négatif. De plus, on peut utiliser le **point** ou **l'espace** pour séparer les degrés/minutes/secondes.  
 	
-	Le couple de coordonnées **doit absolument** être séparé par une virgule;  
+	Le coordonnées **doit absolument** être séparé par une virgule. La version 6 BETA permet une plus grand flexibilité dans la manière d'inscrire la paire de coordonnée.;  
 	
 	Cette fonctionnalité de recherche donne le nom du territoire municipal dans lequel la coordonnée à été captée et donne également la distance a vol d'oiseau de la localité la plus proche.  
 
 
 ### Deux modes d’utilisation
 
-1) La première façon d’utiliser le service est par un simple appel URL, directement dans un fureteur Internet.Cette méthode est plus simple, car elle ne nécessite pas de programmation (création d’un message ou d’un client en format SOAP).Cette méthode retourne l’information sous forme XML. 
+1) La première façon d’utiliser le service est par un simple appel URL, directement dans un fureteur Internet. Cette méthode est plus simple, car elle ne nécessite pas de programmation 
+(création d’un message ou d’un client en format SOAP). Cette méthode retourne l’information sous forme XML, HTML, JSON*, CSV* ou EXCEL*. 
+Voici des exemples d’appel en mode REST pour les différentes versions.
 
- 
+*---------------*-------------------------------*-----------------------------*----------------------- 
 Voici un exemple d’appel en mode HTTP. 
 
 Pour la version 5: 
