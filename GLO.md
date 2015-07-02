@@ -603,74 +603,377 @@ Requête par coordonnées GPS :
 	</soapenv:Envelope>
 
 **Version 6:**
-**/////////////////////////////////////////**////////////////////////////////////////////////**////////////////**
 
- 
+Requête par adresse:
+
+
+		<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
+<soapenv:Header/>
+	<soapenv:Body>
+		<geo:GeocoderRequete>
+			<GLOCleAcces>?</GLOCleAcces>
+			<texte>?</texte>
+			<type>?</type>
+			/*Optional*/
+			<codeEPSG>?</codeEPSG>
+			/*Optional*/
+			<codeEPSGEntree>?</codeEPSGEntree>
+			/*Optional*/
+			<codeEPSGSortie>?</codeEPSGSortie>
+			/*Optional*/
+			<index>
+				/*Optional*/
+				<debut>?</debut>
+				/*Optional*/
+				<fin>?</fin>
+			</index>
+			/*Optional*/
+			<groupe>?</groupe>
+		</geo:GeocoderRequete>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+    
+Requête par coordonnées GPS :
+
+
+		<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
+<soapenv:Header/>
+	<soapenv:Body>
+		<geo:GPSRequete>
+		<GLOCleAcces>?</GLOCleAcces>
+		<texte>?</texte>
+		<codeEPSGEntree>?</codeEPSGEntree>
+		<codeEPSGSortie>?</codeEPSGSortie>
+	</geo:GPSRequete>
+</soapenv:Body>
+</soapenv:Envelope>
+    
+Requête par borne kilométrique:
+
+
+		<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
+<soapenv:Header/>
+	<soapenv:Body>
+		<geo:BorneRequete>
+		<GLOCleAcces>?</GLOCleAcces>
+		<texte>?</texte>
+		<codeEPSG>?</codeEPSG>
+		/*Optional*/
+		<index>
+			/*Optional*/
+			<debut>?</debut>
+			/*Optional*/
+			<fin>?</fin>
+		</index>
+	</geo:BorneRequete>
+</soapenv:Body>
+</soapenv:Envelope>
+    
+Requête par coordonnée (reverse geocoding):
+
+
+		<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
+<soapenv:Header/>
+	<soapenv:Body>
+		<geo:ReverseGeocodingRequete>
+			<GLOCleAcces>?</GLOCleAcces>
+			<texte>?</texte>
+			<codeEPSGEntree>?</codeEPSGEntree>
+			<codeEPSGSortie>?</codeEPSGSortie>
+			/*Optional*/
+			<index>
+				/*Optional*/
+				<debut>?</debut>
+				/*Optional*/
+				<fin>?</fin>
+			</index>
+			/*Optional*/
+			<groupe>?</groupe>
+	</geo:ReverseGeocodingRequete>
+</soapenv:Body>
+</soapenv:Envelope>
+
+
 ####Structure des réponses SOAP (XML) 
 
-La réponse en format XML qui est retournée par le service (ou via l’URL) peut être facilement décortiquée par l’application appelante.Chaque type de requête retourne généralement; le nombre d’enregistrement, une liste d’attributs pour chacune des occurrences de la réponse correspondant à la chaîne de caractères reçue en paramètre.On retrouve aussi les coordonnées de la localisation de l’information obtenue de l’entrepôt de donné du  MSP . Enfin, on trouvera quelques métadonnées qualifiant la donnée. 
+La réponse en format XML qui est retournée par le service (ou via l’URL) peut être facilement décortiquée par l’application appelante.  Chaque type de requête retourne généralement; le nombre d’enregistrement, une liste d’attributs pour chacune des occurrences de la réponse correspondant à la chaîne de caractères reçue en paramètre.  On retrouve aussi les coordonnées de la localisation de l’information obtenue de l’entrepôt de donné du  MSP. Enfin, on trouvera quelques métadonnées qualifiant la donnée. 
 
 Extrait de la réponse XML d’une recherche d’adresse (par code postal soit «  **<span style="color:blue"> G1M2L1**</span>  »): 
 **Version 5 :**
 
-	<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://geoegl.msp.gouv.qc.ca/">
-	   <SOAP-ENV:Body>
-	      <ns1:GeocoderReponse>
-	         <nombreResultat>1</nombreResultat>
-	         <geocoderReponseListe>
-	            <borneDetail>
-	               <adresseLibre>1715 Rue De Merlac, Québec</adresseLibre>
-	               <geocodeMatchCode>100</geocodeMatchCode>
-	               <noCiviq>1715</noCiviq>
-	               <codeMuncp>23027</codeMuncp>
-	               <noMatricule>448690783110000000</noMatricule>
-	               <noSeqAdrCivique>1457606</noSeqAdrCivique>
-	               <nomRue>Rue De Merlac</nomRue>
-	               <noCivqSuffx/>
-	               <noApprt>0</noApprt>
-	               <noApprtSuffx>0</noApprtSuffx>
-	               <noCiviqDebutDroite>0</noCiviqDebutDroite>
-	               <noCiviqFinDroite>0</noCiviqFinDroite>
-	               <noCiviqDebutGauche>1701</noCiviqDebutGauche>
-	               <noCiviqFinGauche>1725</noCiviqFinGauche>
-	               <placeListe>
-	                  <borneDetail>
-	                     <type>Municipalité</type>
-	                     <nom>Québec</nom>
-	                  </borneDetail>
-	               </placeListe>
-	               <CP>
-	                  <codePostal>G1M2L1</codePostal>
-	                  <Copyright>Marque officielle de la Societe canadienne des postes</Copyright>
-	               </CP>
-	               <localisation>
-	                  <point>
-	                     <x>-212089.70453172</x>
-	                     <y>316975.67564502</y>
-	                     <SRS>
-	                        <codeEPSG>32198</codeEPSG>
-	                        <nom>EPSG</nom>
-	                        <WKT>+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs</WKT>
-	                     </SRS>
-	                  </point>
-	                  <enveloppe>
-	                     <SRS>
-	                        <codeEPSG>0</codeEPSG>
-	                        <nom/>
-	                        <WKT/>
-	                     </SRS>
-	                  </enveloppe>
-	               </localisation>
-	               <metadonnee>
-	                  <classe>Adresse Québec version 09</classe>
-	                  <source>AQ</source>
-	                  <date>2012/11/08 00:00:00</date>
-	               </metadonnee>
-	            </borneDetail>
-	         </geocoderReponseListe>
-	      </ns1:GeocoderReponse>
-	   </SOAP-ENV:Body>
-	</SOAP-ENV:Envelope>
+Requête par adresse:
+
+
+
+		<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
+<soapenv:Header/>
+<soapenv:Body>
+	<ns1:GeocoderReponse>
+		<nombreResultat>10</nombreResultat>
+		<geocoderReponseListe>
+		
+			<adresseLibre>1681 Rue De Merlac, Québec</adresseLibre>
+			<geocodeMatchCode>100</geocodeMatchCode>
+			<noCiviq>1681</noCiviq>
+			<codeMuncp>23027</codeMuncp>
+			<noMatricule>458600488610000000</noMatricule>
+			<noSeqAdrCivique>1457596</noSeqAdrCivique>
+			<nomRue>Rue De Merlac</nomRue>
+			<noCivqSuffx/>
+			<noApprt>0</noApprt>
+			<noApprtSuffx>0</noApprtSuffx>
+			<noCiviqDebutDroite>0</noCiviqDebutDroite>
+			<noCiviqFinDroite>0</noCiviqFinDroite>
+			<noCiviqDebutGauche>1681</noCiviqDebutGauche>
+			<noCiviqFinGauche>1695</noCiviqFinGauche>
+			<placeListe>
+				
+					<type>Municipalité</type>
+					<nom>Québec</nom>
+				</borneDetail>
+			</placeListe>
+			<CP>
+				<codePostal>G1M2L1</codePostal>
+				<Copyright>Marque officielle de la Societe canadienne des postes</Copyright>
+			</CP>
+			<localisation>
+				<point>
+					<x>-212018.25334787</x>
+					<y>317028.54533727</y>
+					<SRS>
+						<codeEPSG>32198</codeEPSG>
+						<nom>EPSG</nom>
+						<WKT>+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</WKT>
+					</SRS>
+				</point>
+				<enveloppe>
+					<SRS>
+						<codeEPSG>0</codeEPSG>
+						<nom/>
+						<WKT/>
+					</SRS>
+				</enveloppe>
+			</localisation>
+			<metadonnee>
+				<classe>Adresse Québec version 09</classe>
+				<source>AQ</source>
+				<date>2014/12/02 00:00:00</date>
+			</metadonnee>
+		</borneDetail>
+		...
+</soapenv:Body>
+</soapenv:Envelope>
+
+
+Requête par borne kilométrique:
+
+
+		<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
+<soapenv:Header/>
+<soapenv:Body>
+	<ns1:BorneReponse>
+		<nombreResultat>1</nombreResultat>
+		
+		
+			<detail>Aide flottante H47 - Bouée lumineuse H47; RECIF DU NORD OUEST ILE DU BIC</detail>
+			<localisation>
+				<point>
+					<x>-32054.965270581</x>
+					<y>489924.2759782</y>
+					<SRS>
+						<codeEPSG>32198</codeEPSG>
+						<nom>EPSG</nom>
+						<WKT>+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</WKT>
+					</SRS>
+				</point>
+				<enveloppe>
+					<SRS>
+						<codeEPSG>0</codeEPSG>
+						<nom/>
+						<WKT/>
+					</SRS>
+				</enveloppe>
+			</localisation>
+			<metadonnee>
+				<classe>Repères kilométriques  MTQ</classe>
+				<source>MTQ</source>
+				<date>2014/12/15 00:00:00</date>
+			</metadonnee>
+		</borneDetail>
+		</borneReponseListe>
+	</ns1:BorneReponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+    
+Requête par coordonnées GPS :
+
+
+		<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
+<soapenv:Header/>
+<soapenv:Body>
+	<ns1:GPSReponse>
+		<nombreResultat>1</nombreResultat>
+		<patternCoordInput>degrés minutes décimales</patternCoordInput>
+		<formatCoordInput>dd mm.mmm</formatCoordInput>
+		<coteCertitude>0</coteCertitude>
+		<rayonIncertitude>0</rayonIncertitude>
+		<localisation>
+			<municipalite>Saint-Léon-le-Grand (Bas-Saint-Laurent)</municipalite>
+			<localite>Saint-Léon-le-Grand</localite>
+			<distance>5.7</distance>
+			<point>
+				<x>67709.232742384</x>
+				<y>487286.2746338</y>
+				<SRS>
+					<codeEPSG>32198</codeEPSG>
+					<nom>EPSG</nom>
+					<WKT>+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</WKT>
+				</SRS>
+			</point>
+		</localisation>
+	</ns1:GPSReponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+   
+Version 6:
+
+Requête par adresse:
+
+
+		<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
+<soapenv:Header/>
+<soapenv:Body>
+	<ns1:GeocoderReponse>
+		<nombreResultat>1</nombreResultat>
+		<geocoderReponseListe>
+			
+				<adresseLibre>2525 Boulevard Laurier, Québec</adresseLibre>
+				<geocodeMatchCode>100</geocodeMatchCode>
+				<noCiviq>2525</noCiviq>
+				<codeMuncp>23027</codeMuncp>
+				<noMatricule>458147961610000000</noMatricule>
+				<noSeqAdrCivique>3933017</noSeqAdrCivique>
+				<nomRue>Boulevard Laurier</nomRue>
+				<noCivqSuffx/>
+				<noApprt>0</noApprt>
+				<noApprtSuffx>0</noApprtSuffx>
+				<noCiviqDebutDroite>0</noCiviqDebutDroite>
+				<noCiviqFinDroite>0</noCiviqFinDroite>
+				<noCiviqDebutGauche>2505</noCiviqDebutGauche>
+				<noCiviqFinGauche>2535</noCiviqFinGauche>
+				<placeListe>
+					
+						<type>Municipalité</type>
+						<nom>Québec</nom>
+					</borneDetail>
+				</placeListe>
+				<CP>
+					<codePostal>G1V2L2</codePostal>
+					<Copyright>Marque officielle de la Societe canadienne des postes</Copyright>
+				</CP>
+				<localisation>
+					<point>
+						<x>-211697.30075628</x>
+						<y>312653.86267632</y>
+						<SRS>
+							<codeEPSG>32198</codeEPSG>
+							<nom>EPSG</nom>
+							<WKT>+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</WKT>
+						</SRS>
+					</point>
+					<enveloppe>
+						<SRS>
+							<codeEPSG>0</codeEPSG>
+							<nom/>
+							<WKT/>
+						</SRS>
+					</enveloppe>
+				</localisation>
+				<metadonnee>
+					<classe>Adresse Québec version 09</classe>
+					<source>AQ</source>
+					<date>2014/12/02 00:00:00</date>
+				</metadonnee>
+			</borneDetail>
+		</geocoderReponseListe>
+</ns1:GeocoderReponse>
+</soapenv:Body>
+</soapenv:Envelope>
+	
+Requête par borne kilométrique:
+
+
+		<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
+<soapenv:Header/>
+<soapenv:Body>
+	<ns1:BorneReponse>
+		<nombreResultat>1</nombreResultat>
+		
+			
+				<detail>Aide flottante H47 - Bouée lumineuse H47; RECIF DU NORD OUEST ILE DU BIC</detail>
+				<localisation>
+					<point>
+						<x>-32054.965270581</x>
+						<y>489924.2759782</y>
+						<SRS>
+							<codeEPSG>32198</codeEPSG>
+							<nom>EPSG</nom>
+							<WKT>+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</WKT>
+						</SRS>
+					</point>
+					<enveloppe>
+						<SRS>
+							<codeEPSG>0</codeEPSG>
+							<nom/>
+							<WKT/>
+						</SRS>
+					</enveloppe>
+				</localisation>
+				<metadonnee>
+					<classe>Repères kilométriques  MTQ</classe>
+					<source>MTQ</source>
+					<date>2014/12/15 00:00:00</date>
+				</metadonnee>
+			</borneDetail>
+		</borneReponseListe>
+</ns1:BorneReponse>
+</soapenv:Body>
+</soapenv:Envelope>
+	
+Requête par coordonnées GPS :
+
+
+		<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
+<soapenv:Header/>
+<soapenv:Body>
+	<ns1:GPSReponse>
+		<nombreResultat>1</nombreResultat>
+		<patternCoordInput>degrés minutes décimales</patternCoordInput>
+		<formatCoordInput>dd mm.mmm</formatCoordInput>
+		<coteCertitude>0</coteCertitude>
+		<rayonIncertitude>0</rayonIncertitude>
+		<localisation>
+			<municipalite>Saint-Léon-le-Grand (Bas-Saint-Laurent)</municipalite>
+			<localite>Saint-Léon-le-Grand</localite>
+			<distance>5.7</distance>
+			<point>
+				<x>67709.232742384</x>
+				<y>487286.2746338</y>
+				<SRS>
+					<codeEPSG>32198</codeEPSG>
+					<nom>EPSG</nom>
+					<WKT>+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</WKT>
+				</SRS>
+			</point>
+		</localisation>
+	</ns1:GPSReponse>
+</soapenv:Body>
+</soapenv:Envelope>
+	
+
 
 *cote de précision 
 
@@ -729,100 +1032,131 @@ Champs de la version #3:
 	
 	<  noCiviqFinGauche  > 
 	
-	<  code_muncp  > 
-	
-	<  no_matricule  > 
-	
-	<  no_seq_adr_civique  > 
+		<  code_muncp  > 
+		
+		<  no_matricule  > 
+		
+		<  no_seq_adr_civique  > 
 
  
 **Version 5 : novembre 2012 **
 
+Cette version comprend également l’ajout d’une recherche d'adresse de similarité phonétique améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté.
 
-Cette version comprend également l’ajout d’une recherche d'adresse de similarité phonétique améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté. 
+Champs de la version #5:
 
+ajout en sortie du tag :
 
-Champs de la version #5: 
+<RemarqueListe/>
 
-	  ajout    en sortie du tag :**<span style="background:lime;mso-highlight:lime">< RemarqueListe />** 
+Correspond aux suggestions de similarité phonétique suggérées si aucun résultat n’est trouvé.
 
- Correspond aux suggestions de similarité phonétique suggérées si aucun résultat n’est trouvé. 
+ajout en sortie dans le résultat XML:
 
+<borneDetail>
 
-	  ajout en sortie dans le résultat XML: 
+	<noCiviqDebut/> champ à valider si nécessaire à conserver
 	
-	 <  borneDetail  > 
+	<noCiviqFin/>  champ à valider si nécessaire à conserver
 
-	< noCiviqDebut />champ à valider si nécessaire à conserver 
+<CP>
 
-	<span style="background:olive;mso-highlight:olive">< noCiviqFin />champ à valider si nécessaire à conserver 
+	<codePostal>G1V2L2</codePostal>
+	
+		<Copyright>
+		
+			Marque officielle de la Societe canadienne des postes
+		
+		</Copyright>
 
-	 <CP>
-	     <codePostal>G1V2L2</codePostal>
-	     <Copyright> Marque officielle de la Societe canadienne des postes</Copyright>
-	 </CP>
-	      <localisation>
-	          <point>
-	               <x>-7934466.89847387</x>
-	               <y>5904997.4000787</y>
-	               <SRS>
-	                   <nom>spatialreferencing.org</nom>     
-	                   <codeEPSG>900913</codeEPSG>
-	                   <WKT>
-	                        +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +units=m +k=1.0 +nadgrids=@null +no_defs
-	                  </WKT>
-	                </SRS>
-	           </point>
-		        <enveloppe>
-	               <Xmin/>
-	               <Ymin/>
-	               <Xmax/>
-	               <Ymax/>
-	               <SRS>
-	                   <nom/>
-	                   <codeEPSG>0</codeEPSG>
-	                   <WKT/>
-	               </SRS>
-		        </enveloppe>
-		</localisation>
+</CP>
+
+<localisation>
+
+	<point>
+
+		<x>-7934466.89847387</x>
+
+		<y>5904997.4000787</y>
+
+		<SRS>
+
+			<nom>spatialreferencing.org</nom>
+	
+			<codeEPSG>900913</codeEPSG>
+	
+			<WKT>
+
+				+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +units=m +k=1.0 +nadgrids=@null +no_defs
+
+			</WKT>
+
+		</SRS>
+
+	</point>
+
+	<enveloppe>
+	
+		<Xmin/>
+	
+		<Ymin/>
+	
+		<Xmax/>
+	
+		<Ymax/>
+	
+			<SRS>
+	
+				<nom/>
+	
+				<codeEPSG>0</codeEPSG>
+	
+				<WKT/>
+	
+			</SRS>
+
+	</enveloppe>
+
+</localisation>
   
 
 **<u> Ajout janvier 2014 </u>**
 
-ajout en sortie du tag :<span style="background:lime;mso-highlight:lime">`<statut/> `
-	
-	 Correspond aux informations sur les municipalités. 
-	  etat   	: Officiel ou Non officiel. 
-	  description   : Valide, Supprimé. 
-	  commentaire   : correspondant à une Ancienne limite ou la ville correspondant Maintenant. 
+ajout en sortie du tag :
 
-	<statut>
-		<etat>Non officiel</etat>
-		<description>Supprimé</description>
-		<commentaire>Ancienne limite</commentaire>
-	</statut>
-	
-	<statut>
-		<etat>Officiel</etat>
-		<description>Valide</description>
-		<commentaire/>
-	</statut>
-	 
-	<statut><etat>Non officiel</etat>
-		<description>Supprimé</description>
-		<commentaire>Maintenant Shawinigan</commentaire>
-	</statut>
-	 
-	<statut><etat>Non officiel</etat>
-		<description>Supprimé</description>
-		<commentaire>Ancienne limite</commentaire>
-	</statut>
+<statut/>
 
- 
+Correspond aux informations sur les municipalités.
+
+etat : Officiel ou Non officiel.
+
+description : Valide, Supprimé.
+
+commentaire : correspondant à une Ancienne limite ou la ville correspondant Maintenant.
+
 Correspond également aux informations sur les adresses.
 
-etat           : Officiel ou Non officiel.
+etat : Officiel ou Non officiel.
 
-description    : Ajouté, Modification sur description seulement, Modification sur géométrie seulement, Modification sur géométrie et description.
+description : Ajouté, Modification sur description seulement, Modification sur géométrie seulement,Modification sur géométrie et description.
 
-commentaire    : aucun.
+commentaire : commentaire quelconque.
+
+
+**Version 6 BETA janvier 2015:**
+
+Parmi les améliorations :
+
+- le générique et l'orientation de l'odonyme est maintenant utilisé pour préciser la rechercher par adresse.
+
+- un option permettant le regroupement des adresses pour une même coordonnées. Permettant ainsi d'avoir un seul résutltat pour "1 place ville-marie montréal" par exemple
+
+- amélioration de la recherche par intersection. La municipalité n'est plus obligatoire et l'intersection par numéro de route et autoroute est maintenant possible.
+
+- un retour en JSON (excel devrait être possible dans un futur proche)
+
+- une recherche de 'reverse geocoding' (recherche d'adresse par coordonnée)
+
+- plus de possibilités pour la recherche par GPS en définissant le code EPSG en entrée (paramètre: epsg_entree).
+
+- optimisation du code qui permet un amélioration de la vitesse de la requête d'environ 200%
