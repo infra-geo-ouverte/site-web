@@ -30,7 +30,7 @@ Le service de recherche considère uniquement une seule chaîne de caractères p
 
 Depuis la version 5 du  GLO , il est possible de passer une chaine de caractères ne correspondant à aucun pattern pour la recherche par adresse. Une recherche de similarité phonétique est alors déclenchée. 
 
-Ex: 2525 Québec Laurier  G1V 2L2  boulevard 
+Ex: <span style="color:blue">2525 Québec Laurier  G1V 2L2  boulevard</span> 
 
 La fonction cherche donc les mots demandés.Ces mots peuvent être coupés au début ou avec des fautes d’orthographe à l’intérieur des mots. Les mots sont alors affectés d’un poids et ceux le plus près de 100% sont retournés. 
 
@@ -161,7 +161,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 		
   Si une combinaison existe,
 		
-  Ex:**<span style="color:blue"> 72 Fortier,  Amqui** </span>
+  Ex:**<span style="color:blue"> 72 Fortier,  Amqui** </span>ou
 		
   Ex: **<span style="color:blue">450 116<sup>e</sup>, Shawinigan**</span> 
 		
@@ -278,7 +278,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 
 	Note : avec un espace ou une virgule comme séparation 
  
-	a) À partir d'une **valeur de kilométrage et d’un numéro de route**  
+	a) À partir d'une valeur de kilométrage et d’un numéro de route  
 	
 	Ex :  **<span style="color:blue">108, 73**</span>
 	
@@ -475,20 +475,20 @@ Version 6 *BETA*:
 | ---- | ---- | ---- | ---- |
 | 1 | Texte    |Chaîne de caractères pour la recherche* |Oui |
 | 2 | cle      | Clé d’accès émise par le MSP | Oui |
-| 3 | type     |adresse, lieu, borne, gps, hq, A partir de la version 5, le type est obligatoire |Oui – «adresse» par défaut|
+| 3 | type     |adresse, lieu, borne, gps, hq,<span style="background-color:lime;"> A partir de la version 5, le type est obligatoire</span> |Oui – «adresse» par défaut|
 | 4 | epsg     |Système de référence des coordonnées en sortie, Les valeurs possibles sont ceux supporté par PostGIS v2.0.1 |Oui – système de coordonnées source par défaut|
 | 5 | indexDebut      | Permet de spécifier l’index de départ de la réponse, (optionnel, 0 par défaut) | Non - 0 par défaut |
 | 6 | indexFin      | Permet de spécifier l’index de fin de la réponse, (optionnel 79 par défaut) | Non - 79 par défaut |
-| 7 | version     | Permet de spécifier la version du service à utiliser (1 étant la première version et 2 étant la dernière version disponible depuis le 14 octobre 2009). Pour les versions 3 et plus qui sont disponibles depuis mars 2011 ce paramètre est inutile et ne sera plus utilisé.  Voir la section «Réponse XML du service SOAP» qui décrit les différences entre les différentes versions. | Non – version #1 par défaut, Les valeurs possible sont 1 et 2. |
+| 7 | version     | Permet de spécifier la version du service à utiliser (1 étant la première version et 2 étant la dernière version disponible depuis le 14 octobre 2009). <span style="background-color:lime;">Pour les versions 3 et plus qui sont disponibles depuis mars 2011 ce paramètre est inutile et ne sera plus utilisé. </span> Voir la section «Réponse XML du service SOAP» qui décrit les différences entre les différentes versions. | Non – version #1 par défaut, <span style="background-color:lime;">Les valeurs possible sont 1 et 2.</span> |
 | 8 | format      | Permet de spécifier le type de format de sortie du fichier.  XML, HTML, JSON**, EXCEL** | Oui – XML par défaut |
 | 9 | epsg_entree**    | Le code EPSG des coordonnées en entrée. Les valeurs possibles sont ceux supporté par PostGIS v2.0.1| Non |
 | 10 | epsg_sortie**     | Le code EPSG des coordonnées en sortie.  Les valeurs possibles sont ceux supporté par PostGIS v2.0.1.  Le paramètre «epsg» et «epsg_sortie» sont égaux dans la version 6 BETA| Non (32198 par défaut) |
 | 11 | groupe**      | Permet de regrouper les adresses positionnées aux mêmes coordonnées.  1 = regrouper  0 = pas grouper | Non (0 par défaut) |
 
-*Si la chaîne de texte comprends des caractères non supportés par l’URL (les accents et les espaces entre autres), ces derniers doivent être encodés avant d’être soumis au service.
+<span style="color:red">*Si la chaîne de texte comprends des caractères non supportés par l’URL (les accents et les espaces entre autres), ces derniers doivent être encodés avant d’être soumis au service.
 En PHP, il existe une fonction pour effectuer automatiquement cette opération (urlencode).
 
-** Depuis la version 6 BETA
+** Depuis la version 6 BETA</span>
 
 Exemples qui retourne les 49 premiers enregistrements seulement
 
@@ -518,14 +518,14 @@ Version 6 BETA:
 
 2) La deuxième façon est d’appeler directement le service Web en utilisant un langage de programmation (Java, .Net, PHP,  etc …). Il requiert la création d’une requête (ou message) SOAP avec les paramètres requis. Les différents paramètres ainsi que les méthodes exposées par le service Web sont définies dans le fichier  WSDL  [Wen SErvice Definition Language](http://www.w3.org/TR/wsdl "Wen SErvice Definition Language")  
 
-
-Version 5
-
-	http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeur.php?WSDL
-
-Version 6 BETA
-
-	http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeur.php?WSDL
+	
+	Version 5
+	
+		http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeur.php?WSDL
+	
+	Version 6 BETA
+	
+		http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeur.php?WSDL
 
 
 
@@ -536,7 +536,7 @@ Voici les méthodes présentement supportées par le service SOAP:
 *     GeocoderGPS    ()  
 *     ReverseGeocoding()**  
 
-** Depuis la version 6 BETA 
+<span style="color:red">** Depuis la version 6 BETA </span>
 
 **Note** : les recherches par coordonnées GPS et par borne kilométrique sont traitées dans des méthodes séparées, car elles requièrent une réponse et une structure particulière. 
 
@@ -975,15 +975,15 @@ Requête par coordonnées GPS :
 	
 
 
-*cote de précision 
+<span style="color:red">*cote de précision 
 
 | 100 | Le géocodage a réussis à associer l’adresse au rôle d’évaluation |
 | 50 | Le géocodage a positionner l’adresse entre le minimum et le maximum de la tranche d’adresse du segment par extrapolation mathématique |
 | 35 | Le géocodage a positionner l’adresse au centre du segment de la rue (absence de minimum/maximum) |
+</span>
 
 
-
-####Versions du service Web ( GLO ) 
+####<span style="color:blue">Versions du service Web ( GLO ) </span>
 
 Version 1 : Version initiale 
  
@@ -1047,7 +1047,7 @@ Champs de la version #5:
 
 ajout en sortie du tag :
 
-<RemarqueListe/>
+<span style="background-color:lime;"><RemarqueListe/></span>
 
 Correspond aux suggestions de similarité phonétique suggérées si aucun résultat n’est trouvé.
 
@@ -1055,21 +1055,21 @@ ajout en sortie dans le résultat XML:
 
 <borneDetail>
 
-	<noCiviqDebut/> champ à valider si nécessaire à conserver
+	<span style="background-color:#808000;"><noCiviqDebut/> champ à valider si nécessaire à conserver</span>
 	
-	<noCiviqFin/>  champ à valider si nécessaire à conserver
+	<span style="background-color:#808000;"><noCiviqFin/>  champ à valider si nécessaire à conserver</span>
 
-<CP>
+<span style="background-color:lime;"><CP></span>
 
 	<codePostal>G1V2L2</codePostal>
 	
-		<Copyright>
+		<span style="background-color:lime;"><Copyright>
 		
 			Marque officielle de la Societe canadienne des postes
 		
 		</Copyright>
 
-</CP>
+</CP></span>
 
 <localisation>
 
@@ -1124,7 +1124,7 @@ ajout en sortie dans le résultat XML:
 
 ajout en sortie du tag :
 
-<statut/>
+<span style="background-color:lime;"><statut/></span>
 
 Correspond aux informations sur les municipalités.
 
