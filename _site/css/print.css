@@ -30,8 +30,11 @@ dl, dd, ol, ul, figure {
   padding: 0; }
 
 hr {
-  border-color: #4f4f4f;
-  margin: 2%; }
+  border-color: #828282;
+  margin: 5%; }
+
+.clear {
+  clear: both; }
 
 /****************************
 Style de base des pages
@@ -144,8 +147,8 @@ pre {
  * Wrapper
 *****************************/
 .wrapper {
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
   margin-top: 20px; }
   @media screen and (max-width: 800px) {
     .wrapper {

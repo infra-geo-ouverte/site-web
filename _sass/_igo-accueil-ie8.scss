@@ -68,11 +68,18 @@ css de l'accueil incluant la banniere pour IE8
 * Accueil
 ***/
 
-#accueil .col-sm-6{
+#accueil{
 	padding: 0;
-	width: 45%;
+	width: 70%;
 	margin: 1%;
 	display: inline-block;
+	float: left;
+}
+#accueil .col-sm-6{
+	float: left;
+	padding: 0;
+	margin: 1%;
+	width: 45%;
 }
 
 #accueil .btn{

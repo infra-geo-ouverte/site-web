@@ -21,8 +21,11 @@ dl, dd, ol, ul, figure {
   padding: 0; }
 
 hr {
-  border-color: #4f4f4f;
-  margin: 2%; }
+  border-color: #828282;
+  margin: 5%; }
+
+.clear {
+  clear: both; }
 
 /****************************
 Style de base des pages
@@ -135,8 +138,8 @@ pre {
  * Wrapper
 *****************************/
 .wrapper {
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
   margin-top: 20px; }
   @media screen and (max-width: 800px) {
     .wrapper {
@@ -207,13 +210,38 @@ body .site-header {
   background-color: #f8f8f8;
   border: none; }
 
-/***********************
+/*******
 Logo
-**********************/
+*******/
 #header .logo-med {
   padding: 10px 0 0 10px;
   width: 180px; }
 
+/*****
+GIT
+********/
+#header .git-btn {
+  display: block;
+  font-weight: 700;
+  background-color: #006bb6;
+  margin: 15px auto 0 auto;
+  width: 100%;
+  font-size: 12px;
+  padding: 1%; }
+
+#header .logo-git {
+  font-size: 12px;
+  padding-left: 5px; }
+
+#header .git-btn:hover {
+  background-color: #002f50; }
+
+#header .btn {
+  padding: 5px 5px; }
+
+/*****
+Menu faq
+*****/
 #header .navbar-right {
   padding-top: 5px;
   margin-right: 0; }
@@ -224,30 +252,11 @@ Logo
   background-color: #006bb6;
   padding-left: 2%; }
 
-#header .git-btn {
-  display: block;
-  font-weight: 700;
-  background-color: #006bb6;
-  margin: 15px auto 0 auto;
-  width: 100%;
-  font-size: 12px;
-  padding: 1%; }
-
-#header .git-btn:hover {
-  background-color: #002f50; }
-
-#header .btn {
-  padding: 5px 5px; }
-
 #header .head-right .nav > li {
   display: inline-block; }
 
 #header .head-right li.headContact {
   margin-right: 10px; }
-
-#header .logo-git {
-  font-size: 12px;
-  padding-left: 5px; }
 
 #header .navbar-toggle {
   position: absolute;
@@ -359,6 +368,7 @@ Logo
   #header .btn {
     padding: 6px 12px; }
 
+  /***** menu faq *****/
   #header .navbar-nav {
     float: right; }
 
@@ -373,13 +383,8 @@ Logo
     color: #4f4f4f;
     display: inline-block; }
 
-  #header .head-right .en:last-child {
-    display: none;
-    margin-right: -35px; }
-
-  #header .head-right .fr:last-child {
-    padding-left: 0;
-    margin-left: -40px; }
+  #header .menu-top .page-link {
+    margin-right: -15px; }
 
   /* ---
   * Navigation principale
@@ -387,9 +392,10 @@ Logo
   #header .menu-main {
     padding: 0;
     width: 100%;
-    font-size: 14px;
+    font-size: 12.6px;
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    box-shadow: 0px 2px 5px #888888; }
 
   #header .menu-main ul {
     margin: 0 auto;
@@ -451,16 +457,16 @@ css du footer
   background-color: #002f50;
   color: #fff;
   padding: 1% 0;
-  margin-top: 20px; }
+  margin-top: 20px;
+  box-shadow: 0px -3px 5px #888888; }
 
 #footer hr {
   width: 80%;
   border-color: #4f4f4f;
-  margin: 5px 0;
-  margin: 0 auto; }
+  margin: 10px auto; }
 
 #footer .wrapper {
-  margin-top: 0; }
+  margin: 0; }
 
 #footer ul {
   list-style-type: none;
@@ -470,7 +476,8 @@ css du footer
   color: #fff; }
 
 #footer .logo-med {
-  width: 60px; }
+  width: 60px;
+  margin-top: 20px; }
 
 #footer .logo-med:hover {
   -webkit-transform: scale(1.1) rotate(360deg);
@@ -487,6 +494,16 @@ css du footer
 #footer .copyright {
   padding-top: 10px;
   display: block; }
+
+/************************
+* Formulaire
+********************/
+#footer .contact1, #footer .contact2, #footer .submitContact {
+  display: block;
+  width: 90%;
+  margin: 1% auto;
+  padding: 1%;
+  color: #111; }
 
 /************************
 * R├®seaux sociaux
@@ -536,13 +553,6 @@ css du footer
 #footer p {
   margin: 0; }
 
-#footer .contact1, #footer .contact2, #footer .submitContact {
-  display: block;
-  width: 90%;
-  margin: 2% auto;
-  padding: 2%;
-  color: #111; }
-
 #footer .contact1 input {
   width: 90%;
   background-color: #fff;
@@ -581,7 +591,8 @@ css du footer
 /* ----------------768px-----------------------------  */
 @media screen and (min-width: 768px) {
   #footer .logo-med {
-    padding-top: 90px;
+    padding-top: 60px;
+    margin-left: 5%;
     width: 85px; }
 
   #footer .submitContact {
@@ -589,7 +600,201 @@ css du footer
     float: right; }
 
   #footer .listGauche {
-    padding-top: 35px; } }
+    padding-top: 35px; }
+
+  #footer .contact1, #footer .contact2, #footer {
+    margin: 2% auto;
+    padding: 2%; }
+
+  #footer .wrapper {
+    padding: 0; } }
+/* CSS pour la barre de blogue Ó droite et la page contenu de blogue */
+/* post de lancement d'IGO */
+#blogue-lancementjuin2015 {
+  width: 75% !important;
+  background-color: #F5F5F5; }
+
+#blogue-lancementjuin2015 .bleu a {
+  color: #ebf7ff;
+  margin: 0;
+  text-decoration: underline; }
+
+#blogue-lancementjuin2015 .bleu a:visited {
+  color: #f8f8f8;
+  text-decoration: underline; }
+
+#blogue-lancementjuin2015 .bleu a:hover {
+  color: #4f4f4f;
+  text-decoration: underline; }
+
+#blogue-lancementjuin2015 .bleu {
+  background-color: #006bb6;
+  color: #fff;
+  padding: 3%;
+  text-align: center;
+  margin: 25px auto; }
+
+#blogue-lancementjuin2015 .bleu h2 {
+  color: #fff;
+  margin: 0;
+  padding: 10px 0; }
+
+#blogue-lancementjuin2015 .bleu ul li, #blogue-lancementjuin2015 .bleu p {
+  text-align: left; }
+
+#blogue-lancementjuin2015 .bloc {
+  width: 75%;
+  margin: 30px auto; }
+
+#blogue-lancementjuin2015 h2 {
+  color: #111; }
+
+#blogue-lancementjuin2015 h2.acteurs {
+  text-align: center; }
+
+#blogue-lancementjuin2015 h3, #blogue-lancementjuin2015 h4 {
+  padding-top: 30px; }
+
+#blogue-lancementjuin2015 ul {
+  margin-left: 30px; }
+
+#blogue-lancementjuin2015 .gauche {
+  float: left;
+  display: inline-block;
+  width: 45%;
+  margin-right: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+#blogue-lancementjuin2015 .droite {
+  float: right;
+  display: inline-block;
+  width: 45%;
+  margin-left: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+#blogue-lancementjuin2015 .separateur img {
+  display: block;
+  margin: 10px auto; }
+
+#blogue-lancementjuin2015 .entete {
+  display: block;
+  margin: 0 auto; }
+
+#blogue-lancementjuin2015 img.techno {
+  width: 50%; }
+
+#blogue-lancementjuin2015 img.pyramide {
+  width: 75%;
+  margin-left: 13%;
+  margin-bottom: 30px; }
+
+#blogue-lancementjuin2015 .separateur img {
+  display: block;
+  margin: 10px auto; }
+
+#blogue-lancementjuin2015 .github {
+  display: block;
+  margin: 15px auto;
+  width: 75%; }
+
+#blogue-lancementjuin2015 .footnote {
+  font-size: 12px; }
+
+/* -----------
+* blogue en gÚnÚral
+----------  */
+#posts-content img {
+  width: 85%; }
+
+#posts-sidebar, #post-content {
+  margin-top: 20px; }
+
+#posts-sidebar .rss {
+  padding: 10px 0; }
+
+#posts-sidebar .rss:hover {
+  color: #002f50; }
+
+#posts-sidebar .rss .fa-rss {
+  margin-right: 5%; }
+
+#posts-sidebar .enSavoirPlus {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 15px;
+  padding-right: 5%; }
+
+#posts-sidebar {
+  padding-right: 10px; }
+
+#posts-sidebar li, #archives li {
+  text-decoration: none;
+  list-style-type: none; }
+
+#posts-sidebar h4 {
+  margin: 0;
+  font-size: 14px; }
+
+#posts-sidebar p {
+  margin: 0; }
+
+#posts-sidebar p.postDate {
+  color: #828282;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 5px; }
+
+#posts-sidebar p.postDate + p {
+  font-size: 13px; }
+
+/* ---
+* Archives
+--- */
+#archives h3 {
+  font-size: 16px; }
+
+/*******************************************************/
+/************css pour tablette et ordinateur ***********/
+/*******************************************************/
+/* ---------------- 500px ---------------------------- */
+/* ----------------768px-----------------------------  */
+@media screen and (min-width: 768px) {
+  #posts-sidebar, #posts-content {
+    margin-top: 30px; }
+
+  #posts-sidebar div.h3, #archives h3 {
+    margin-top: 5px; }
+
+  #posts-sidebar p.postDate {
+    font-size: 12px; }
+
+  #posts-sidebar h4 {
+    font-size: 16px; }
+
+  #archives h3 {
+    padding-left: 15px;
+    margin-bottom: 5px; }
+
+  #archives h2 {
+    margin-top: 20px; }
+
+  #archives li {
+    padding-left: 30px; }
+
+  #posts-sidebar p.postDate + p {
+    font-size: 14px; }
+
+  #posts-content p.postDate + p {
+    text-align: justify;
+    width: 90%; }
+
+  #posts-content {
+    padding-left: 3%; } }
 /*****************************************
 css de l'accueil incluant la banniere
 ***************************************/
@@ -680,6 +885,9 @@ css de l'accueil incluant la banniere
 #accueil .modal-body ul li {
   margin-left: 10px; }
 
+#accueil .wrapper p {
+  text-align: justify; }
+
 /*******************************************************/
 /************css pour tablette et ordinateur ***********/
 /*******************************************************/
@@ -741,7 +949,10 @@ css de l'accueil incluant la banniere
   #accueil .btn {
     font-size: 14px; }
 
-  #accueil .col-sm-6 {
+  #accueil .wrapper {
+    padding: 0 5%; }
+
+  #accueil .wrapper .col-sm-6 {
     padding: 0;
     width: 45%;
     margin: 1%; }
@@ -749,6 +960,9 @@ css de l'accueil incluant la banniere
   #accueil .modal-body ul li {
     margin-left: 25px; } }
 /* --------- DISCUS --- */
+#disqus_thread {
+  margin-top: 20px; }
+
 /* ----------------992px----------------------------------  */
 @media screen and (min-width: 992px) {
   #banniere .banniere {
@@ -827,14 +1041,16 @@ css de l'accueil incluant la banniere
   border-width: 1px;
   border-color: #006bb6;
   border-radius: 50px;
-  color: #fff; }
+  color: #fff;
+  box-shadow: 0px 5px 10px #888888; }
 
 #page-content-wrapper button:hover {
   background-color: #002f50;
-  -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  -o-transition: all 2s ease;
-  transition: all 2s ease; }
+  width: 10%;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 #icone-sidebar {
   display: inline-block;
@@ -881,23 +1097,20 @@ css de l'accueil incluant la banniere
   z-index: -1;
   height: 100%;
   width: 3px;
-  background-color: #002f50;
-  -webkit-transition: width .2s ease-in;
-  -moz-transition: width .2s ease-in;
-  -ms-transition: width .2s ease-in;
-  transition: width .2s ease-in; }
-
-.sidebar-nav li:before {
+  background-color: #006bb6;
   color: #fff;
-  background-color: #006bb6; }
+  -webkit-transition: width .4s ease;
+  -moz-transition: width .4s ease;
+  -ms-transition: width .4s ease;
+  transition: width .4s ease; }
 
 .sidebar-nav li:hover:before,
 .sidebar-nav li.open:hover:before {
   width: 100%;
-  -webkit-transition: width .2s ease-in;
-  -moz-transition: width .2s ease-in;
-  -ms-transition: width .2s ease-in;
-  transition: width .2s ease-in; }
+  -webkit-transition: width .4s ease;
+  -moz-transition: width .4s ease;
+  -ms-transition: width .4s ease;
+  transition: width .4s ease; }
 
 .sidebar-nav li a {
   display: block;
@@ -979,6 +1192,9 @@ css de l'accueil incluant la banniere
   #wrapper.toggled #page-content-wrapper {
     position: relative;
     margin-right: -250px; }
+
+  #page-content-wrapper button:hover {
+    width: 5%; }
 
   #icone-sidebar {
     top: 325px; }

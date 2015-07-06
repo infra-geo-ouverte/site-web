@@ -35,6 +35,10 @@ if (ie < 8){
 	alert("Le site a été optimisé pour une utilisation avec IE8 et plus, Chrome et Firefox. Veuillez utiliser un navigateur plus récent.");
 };
 
+// FAQ ouvrir le faq sélectionné
+    var anchor = window.location.hash.replace("#", "");
+    $(".collapse").collapse('hide');
+    $("#" + anchor).collapse('show');
 
 //Barre de menu de gauche qui ouvre et ferme
 	//$('[data-toggle="tooltip"]').tooltip();

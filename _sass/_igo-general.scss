@@ -14,8 +14,12 @@ dl, dd, ol, ul, figure {
 }
 
 hr{
-	border-color: $gris-fonce;
-	margin: 2%;
+	border-color: $gris;
+	margin: 5%;
+}
+
+.clear{
+	clear: both;
 }
 
 /****************************
@@ -150,8 +154,8 @@ pre {
  * Wrapper
 *****************************/
 .wrapper {
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
     @extend %clearfix;
 	margin-top: 20px;
 

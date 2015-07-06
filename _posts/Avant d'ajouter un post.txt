@@ -1,0 +1,18 @@
+Notes:
+
+Il faut ajouter l'entête:
+
+---
+layout: post                                 	: ne pas changer
+title: Titre de la nouvelle 4					: Titre de votre nouvelle
+tags: [jekyll] 									: Ajouter des tags
+categories:										: Ajouter des catégories 
+- website
+---
+
+
+Le nom du post doit contenir la date et un titre, ne pas mettre d'accent dans le nom .md
+
+Tags et Catégories: Les tags sont des mots-clés qui sont contenu dans votre nouvelle, les catégories sont à définir selon les besoins
+Pourront servir pour une éventuelle recherche,
+
