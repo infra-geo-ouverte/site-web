@@ -28,7 +28,7 @@ Supporter le développement d’IGO afin d’assurer le respect des hauts standa
 <a id="structure"></a>
 ## 2. Structure[<span class="octicon octicon-link"></span>](#structure)
 
-La communauté est composée de contributeurs, d’utilisateurs et d'un *comité technique* (CT). Le CT assure le leadership technique du projet dans son ensemble et s'assure de la bonne compréhension des besoins des utilisateurs et de leur satisfaction. Les développeurs, les utilisateurs et tout autre contributeur qui participent aux projets sont des acteurs aussi importants que les membres du comité. 
+La communauté est composée de contributeurs, d’utilisateurs et d'un *comité technique* (CT). Le CT assure le leadership technique du projet dans son ensemble et s'assure de la bonne compréhension des besoins des utilisateurs et de leur satisfaction. Les développeurs, les utilisateurs et tout autre contributeur qui participent aux projets sont des acteurs aussi importants que les membres du comité. Cette structure de gouvernance ouverte est basée sur le fonctionnement du  [comité technique ou *Steering Comittee* du projet MapServer](http://mapserver.org/fr/development/rfc/ms-rfc-1.html).
 
 ### 2.1. Comité technique (CT)
 
