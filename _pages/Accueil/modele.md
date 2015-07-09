@@ -14,4 +14,4 @@ titre-accueil: IGO, un modèle collaboratif
   - documentation,
   - évaluations.
 
-Voir la [section Foire aux questions (FAQ)](/site-web/faq/) pour plus d'information.
+Voir la [section Foire aux questions (FAQ)](/faq/) pour plus d'information.
