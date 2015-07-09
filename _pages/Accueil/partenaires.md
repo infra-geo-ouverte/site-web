@@ -5,7 +5,7 @@ accueilsection: 3
 titre-accueil: Partenaires actuels
 ---
 
-- [Centre de service partagés du Québec (CSPQ)](http://www.cspq.gouv.qc.ca/a-propos-du-cspq/centre-dexpertise-en-logiciel-libre/);
+- [Centre de services partagés du Québec (CSPQ)](http://www.cspq.gouv.qc.ca/a-propos-du-cspq/centre-dexpertise-en-logiciel-libre/);
 - [Commission de protection du territoire agricole (CPTAQ)](http://www.cptaq.gouv.qc.ca/);
 - [La Financière agricole du Québec (FADQ)](http://www.fadq.qc.ca/);
 - [Institut national de santé publique du Québec (INSPQ)](http://www.inspq.qc.ca/);
