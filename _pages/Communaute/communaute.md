@@ -203,7 +203,7 @@ Voici les membres actuels :
 - Olivier Bégin (MTQ);
 - Michel Champagne (MTQ);
 - Karl Gingras (CPTAQ);
-- À déterminer (CELL);
+- À déterminer (CSPQ);
 - Anne Morel (MCC).
 
 ###4. Coordonnateur du CT
