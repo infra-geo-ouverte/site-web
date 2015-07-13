@@ -637,10 +637,6 @@ css du footer
   display: block;
   margin: 10px auto; }
 
-#blogue-lancementjuin2015 .entete {
-  display: block;
-  margin-left: 6%; }
-
 #blogue-lancementjuin2015 img.techno {
   width: 50%; }
 
@@ -653,6 +649,10 @@ css du footer
   display: block;
   margin: 10px auto; }
 
+#blogue-lancementjuin2015 .entete {
+  display: block;
+  margin: 0 auto; }
+
 #blogue-lancementjuin2015 .github {
   display: block;
   margin: 15px auto;
@@ -661,14 +661,22 @@ css du footer
 #blogue-lancementjuin2015 .footnote {
   font-size: 12px; }
 
-/* -----------
-* blogue en g├®n├®ral
-----------  */
+/* --------
+*post g├®n├®ral
+------- */
+.clear {
+  clear: both; }
+
+#posts-content {
+  width: 75%;
+  padding-left: 30px; }
+
 #posts-content img {
   width: 85%; }
 
-#posts-sidebar, #post-content {
-  margin-top: 20px; }
+#posts-sidebar, #posts-content {
+  margin-top: 30px;
+  float: left; }
 
 #posts-sidebar .rss {
   padding: 10px 0; }
@@ -689,7 +697,8 @@ css du footer
   padding-right: 5%; }
 
 #posts-sidebar {
-  padding-right: 10px; }
+  padding-right: 10px;
+  width: 25%; }
 
 #posts-sidebar li, #archives li {
   text-decoration: none;
@@ -697,7 +706,7 @@ css du footer
 
 #posts-sidebar h4 {
   margin: 0;
-  font-size: 14px; }
+  font-size: 16px; }
 
 #posts-sidebar p {
   margin: 0; }
@@ -709,51 +718,23 @@ css du footer
   margin-bottom: 5px; }
 
 #posts-sidebar p.postDate + p {
-  font-size: 13px; }
+  font-size: 14px;
+  text-align: justify; }
 
 /* ---
 * Archives
 --- */
 #archives h3 {
-  font-size: 16px; }
+  margin-top: 5px;
+  padding-left: 15px;
+  margin-bottom: 5px; }
 
-/*******************************************************/
-/************css pour tablette et ordinateur ***********/
-/*******************************************************/
-/* ---------------- 500px ---------------------------- */
-/* ----------------768px-----------------------------  */
-@media screen and (min-width: 768px) {
-  #posts-sidebar, #posts-content {
-    margin-top: 30px; }
+#archives h2 {
+  margin-top: 20px; }
 
-  #posts-sidebar div.h3, #archives h3 {
-    margin-top: 5px; }
+#archives li {
+  padding-left: 30px; }
 
-  #posts-sidebar p.postDate {
-    font-size: 12px; }
-
-  #posts-sidebar h4 {
-    font-size: 16px; }
-
-  #archives h3 {
-    padding-left: 15px;
-    margin-bottom: 5px; }
-
-  #archives h2 {
-    margin-top: 20px; }
-
-  #archives li {
-    padding-left: 30px; }
-
-  #posts-sidebar p.postDate + p {
-    font-size: 14px; }
-
-  #posts-content p.postDate + p {
-    text-align: justify;
-    width: 90%; }
-
-  #posts-content {
-    padding-left: 3%; } }
 /***************************************
 Note: ├ël├®ments gard├®s car utilis├®s par d'autres fichiers Jekyll
 ****************************************/
