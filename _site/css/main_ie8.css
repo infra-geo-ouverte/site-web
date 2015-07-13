@@ -145,8 +145,7 @@ pre {
  * Wrapper
 *****************************/
 .wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
+  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
@@ -154,8 +153,7 @@ pre {
   margin-top: 20px; }
   @media screen and (max-width: 800px) {
     .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
+      max-width: 800px;
       padding-right: 15px;
       padding-left: 15px; } }
 
@@ -488,7 +486,7 @@ css du footer
 #footer {
   background-color: #002f50;
   color: #fff;
-  padding: 1% 0;
+  padding: 5px 0;
   margin-top: 20px;
   margin-left: 0 !important; }
 
@@ -504,7 +502,7 @@ css du footer
   padding-top: 30px; }
 
 #footer .footer-mail {
-  padding-top: 2% 0;
+  padding-top: 10px;
   color: #fff;
   display: block;
   margin: 0; }
@@ -1009,9 +1007,9 @@ css de l'accueil incluant la banniere pour IE8
 #accueil .modal-header {
   background-color: #e7f7b7; }
 
-#accueil .in.modal-backdrop {
-  filter: alpha(opacity=0); }
-
+/*#accueil .in.modal-backdrop{
+	filter: alpha(opacity=0);
+}*/
 #accueil .modal-content {
   width: 500px; }
 
