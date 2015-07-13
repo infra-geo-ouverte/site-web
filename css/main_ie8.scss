@@ -6,7 +6,6 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu|Muli);
 
 
-
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
