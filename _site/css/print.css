@@ -165,6 +165,12 @@ pre {
   color: #006bb6 !important; }
 
 /****************************
+ * Images
+*****************************/
+img {
+  max-width: 300px; }
+
+/****************************
  * Clearfix - Gard├® dans le fichier base aussi ├á v├®rifier *
 *****************************/
 .wrapper:after {
@@ -208,7 +214,13 @@ pre {
     margin-left: 35px; }
 
   .container ol li {
-    margin-left: 35px; } }
+    margin-left: 35px; }
+
+  /****************************
+   * Images
+  *****************************/
+  img {
+    max-width: 400px; } }
 /***************************************
 Note: ├ël├®ments gard├®s car utilis├®s par d'autres fichiers Jekyll
 ****************************************/
