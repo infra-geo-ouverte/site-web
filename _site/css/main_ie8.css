@@ -4,11 +4,6 @@ body .page-content .wrapper {
   padding-right: 10px;
   padding-left: 10px; }
 
-/*@mixin media-query($device) {
-    @media screen and (max-width: 1000px) {
-        @content;
-    }
-}*/
 /* Import partials from `sass_dir` (defaults to `_sass`) ***  l'ordre d'importation est important!!! */
 /*******************************************************/
 /************css pour tablette et ordinateur ***********/
