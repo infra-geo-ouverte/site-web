@@ -764,7 +764,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
  */
 .highlight {
   background: #fff;
-  /*Mozilla specific*/
+  /*.lineno::-moz-selection {background-color: transparent;}Mozilla specific*/
   /*.lineno::selection {background-color: transparent;}Other major browsers*/ }
   .highlight .c {
     color: #998;
@@ -913,8 +913,6 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
     -webkit-user-select: none;
     -moz-user-select: none;
     -o-user-select: none; }
-  .highlight .lineno::-moz-selection {
-    background-color: transparent; }
 
 /*****************************************
 css de l'accueil incluant la banniere pour IE8
