@@ -162,16 +162,16 @@ pre {
     max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    padding-right: 10px;
+    padding-left: 10px;
     @extend %clearfix;
 	margin-top: 20px;
 
-  /*  @include media-query($on-laptop) {
+    @include media-query($on-laptop) {
         max-width: 800px;
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }*/
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }
 
 /****************************

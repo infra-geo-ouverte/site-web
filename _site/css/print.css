@@ -242,9 +242,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
  * Syntax highlighting styles
  */
 .highlight {
-  background: #fff;
-  /*.lineno::-moz-selection {background-color: transparent;}Mozilla specific*/
-  /*.lineno::selection {background-color: transparent;}Other major browsers*/ }
+  background: #fff; }
   .highlight .c {
     color: #998;
     font-style: italic; }
@@ -388,7 +386,3 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
     white-space: pre;
     overflow-x: auto;
     word-wrap: normal; }
-  .highlight .lineno {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none; }
