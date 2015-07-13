@@ -167,11 +167,11 @@ pre {
     @extend %clearfix;
 	margin-top: 20px;
 
-    @include media-query($on-laptop) {
+  /*  @include media-query($on-laptop) {
         max-width: 800px;
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
-    }
+    }*/
 }
 
 /****************************

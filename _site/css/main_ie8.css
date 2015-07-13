@@ -4,6 +4,11 @@ body .page-content .wrapper {
   padding-right: 10px;
   padding-left: 10px; }
 
+/*@mixin media-query($device) {
+    @media screen and (max-width: 1000px) {
+        @content;
+    }
+}*/
 /* Import partials from `sass_dir` (defaults to `_sass`) ***  l'ordre d'importation est important!!! */
 /*******************************************************/
 /************css pour tablette et ordinateur ***********/
@@ -151,12 +156,12 @@ pre {
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px;
-  margin-top: 20px; }
-  @media screen and (max-width: 1000px) {
-    .wrapper {
-      max-width: 800px;
-      padding-right: 15px;
-      padding-left: 15px; } }
+  margin-top: 20px;
+  /*  @include media-query($on-laptop) {
+        max-width: 800px;
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }*/ }
 
 /****************************
  * Icons
