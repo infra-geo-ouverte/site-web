@@ -1260,7 +1260,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
 .highlight {
   background: #fff;
   /*Mozilla specific*/
-  /*Other major browsers*/ }
+  /*.lineno::selection {background-color: transparent;}Other major browsers*/ }
   .highlight .c {
     color: #998;
     font-style: italic; }
@@ -1409,6 +1409,4 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
     -moz-user-select: none;
     -o-user-select: none; }
   .highlight .lineno::-moz-selection {
-    background-color: transparent; }
-  .highlight .lineno::selection {
     background-color: transparent; }
