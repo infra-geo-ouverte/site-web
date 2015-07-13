@@ -1,57 +1,15 @@
 {% include head.html %}
 
-  <body>
+  <body>  <!-- le body se ferme dans le footer -->
 
     {% include header.html %}
 	{% include banniere.html %}
 
-    <section class="page-content" id="accueil">
-
-		<div class="wrapper">
-		  
-			{% for page in site.pages %}
-				{% if page.titre-projet %}
-				{{ page.content }}
-				{% endif %}
-			{% endfor %}
-			{% for page in site.pages %}
-
-				{% if page.accueilsection%} 
-				
-					<div class="col-sm-6" >	
-						<!-- 4 Button trigger modal 4 sections qui popup -->
-						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#no{{page.accueilsection}}">
-						{{ page.titre-accueil}}
-						</button>
-						
-						<!-- Modal -->
-						<div class="modal fade" id="no{{page.accueilsection}}" tabindex="-1" role="dialog" aria-labelledby="no{{page.accueilsection}}" aria-hidden="true">
-						  <div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-									<h3 class="modal-title">{{ page.titre-accueil}}</h3>
-									
-								</div>
-							  <div class="modal-body">
-							  	<div>
-									{{ page.content}}
-								</div>
-							  </div>
-							</div>
-						  </div>
-						</div>						
-					</div>
-				{% endif %}
-			{% endfor %}
+	{% include accueil.html %}
+	
+	{% include postSide.html %}
 			
-			
-		</div>
-		
-
-		
-    </section>
-
+	<div class="clear"></div>
 
     {% include footer.html %}
 

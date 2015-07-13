@@ -29,4 +29,5 @@ Cet espace comprend toute la documentation et les gabarits communs d'IGO.
 ## Autres documents :
 * [technologies utilisées](/documentation/techno)
 * [architecture](https://github.com/infra-geo-ouverte/igo/blob/master/doc/IGO-CIBLE-v2014_aveclogo.png)
-* [modules](/documentation/module).
+* [modules](/documentation/module)
+* [GLO](/documentation/glo).

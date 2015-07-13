@@ -11,8 +11,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)" />	
 	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur, igo, infrastructure" />
-	<meta name="description" content="Site web de l'application IGO.." />
-
+	<meta name="description" content="IGO est une solution Web gratuite en géomatique." />
+	<meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>   
+	
 	<!-- Reseaux sociaux-->
 	<meta property="og:title"       content="IGO Infrastructure Géomatique Ouverte" />
 	<meta property="og:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
@@ -142,6 +144,10 @@
 			<!-- menu principal -->
 			<div class="menu-main">
 				<ul class="nav navbar-nav">
+					
+						
+					
+						
 					
 						
 					
@@ -413,14 +419,20 @@
     <footer class="site-footer" id="footer">
 
 	<div class="wrapper row">
-		<div class="col-xs-12 col-sm-4 text-center">
+		<!-- LOGO -->
+		<div class="col-xs-12 col-sm-3 text-center">
 			<a href="/">
 				<img class="logo-med" src="/assets/img/logo_bleu_112.png"  alt="Logo IGO" />
 			</a>
 
 		</div>
-		<div class="col-xs-12 col-sm-4 text-center">
+		<!-- LISTE DE PAGES -->
+		<div class="col-xs-12 col-sm-6 text-center">
 			<ul class="footer listGauche">
+				
+					
+				
+					
 				
 					
 				
@@ -564,7 +576,8 @@
 				
 			</ul>
 		</div>
-		<div class="col-xs-12 col-sm-4 text-center col-form">			
+		<!-- FORMULAIRE -->
+		<div class="col-xs-12 col-sm-3 text-center col-form">			
 			
 			<!-- reference pour le formulaire avec Formspree: http://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites&#151;cms-23870 -->
 			<div id="contact">
@@ -585,13 +598,13 @@
 					<span class="hideForm">
 						<input type="text" name="_gotcha" style="display:none" /><!-- pour arrêter les spammeur robots -->
 						<input type="hidden" name="_subject" value="Demande d'information pour IGO" /> <!-- This field will not appear when a user views the form, but the value will be used for the subject line when I receive a submission. -->
-						<input type="hidden" name="_next" value="//localhost:4000/courriel/" />  <!--mettre une page de merci votre courriel est envoyé -->
+						<input type="hidden" name="_next" value="//igouverte.org/courriel/" />  <!--mettre une page de merci votre courriel est envoyé -->
 					</span>
 				</form>
 				
 				<script>
 					var contactform =  document.getElementById('contactform');
-					contactform.setAttribute('action', '//formspree.io/' + 'kboisvert3' + '@' + 'gmail' + '.' + 'com');
+					contactform.setAttribute('action', '//formspree.io/' + 'info' + '@' + 'igouverte' + '.' + 'org');
 				
 				</script>
 			</div>					
@@ -627,10 +640,11 @@
 	</div> -->
 	
 
+		
 		<small class="copyright text-center">&copy;IGO, 2015</small>
 
 </footer>
-</div> <!-- span de : <span itemscope itemtype="http://schema.org/SoftwareApplication"> dans le header -->
+</div> <!-- div de : <div itemscope itemtype="http://schema.org/SoftwareApplication"> dans le header -->
 
 	<!-- fin footer -->
 

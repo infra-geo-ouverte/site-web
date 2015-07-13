@@ -1,0 +1,225 @@
+/* CSS pour la barre de blogue à droite et la page contenu de blogue */
+
+/* post de lancement d'IGO */
+
+#blogue-lancementjuin2015{
+	width: 75%!important;
+	background-color: #F5F5F5;
+}
+#blogue-lancementjuin2015 .bleu a{
+	color: #ebf7ff;
+	margin: 0;
+	text-decoration: underline;
+}
+#blogue-lancementjuin2015 .bleu a:visited{
+	color: $gris-pale;
+	text-decoration: underline;
+}
+#blogue-lancementjuin2015 .bleu a:hover{
+    color: $gris-fonce;
+    text-decoration: underline;
+}
+
+
+#blogue-lancementjuin2015 .bleu{
+	background-color: $bleu;
+	color: $blanc;
+	padding: 3%;
+	text-align: center;
+	margin: 25px auto;
+}
+#blogue-lancementjuin2015 .bleu h2{
+	color: $blanc;
+	margin: 0;
+	padding: 10px 0;
+}
+
+#blogue-lancementjuin2015 .bleu ul li, #blogue-lancementjuin2015 .bleu p{
+	text-align: left;
+}
+
+#blogue-lancementjuin2015 .bloc{
+	width: 75%;
+	margin: 30px auto;
+}
+
+#blogue-lancementjuin2015 h2{
+	color: $noir;
+}
+#blogue-lancementjuin2015 h2.acteurs{
+	text-align: center;
+}
+
+#blogue-lancementjuin2015 h3, #blogue-lancementjuin2015 h4{
+	padding-top: 30px;
+}
+#blogue-lancementjuin2015 ul{
+	margin-left: 30px;
+}
+
+#blogue-lancementjuin2015 .gauche{
+	float: left;
+	display: inline-block;
+	width: 45%;
+	margin-right: 5%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#blogue-lancementjuin2015 .droite{
+	float: right;
+	display: inline-block;
+	width: 45%;
+	margin-left: 5%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#blogue-lancementjuin2015 .separateur img{
+	display: block;
+	margin: 10px auto;
+}
+#blogue-lancementjuin2015 .entete{
+	display: block;
+	margin-left: 6%;
+}
+#blogue-lancementjuin2015 img.techno{
+	width: 50%;
+}
+#blogue-lancementjuin2015 img.pyramide{
+	width: 75%;
+	margin-left: 13%;
+	margin-bottom: 30px;
+}
+#blogue-lancementjuin2015 .separateur img{
+	display: block;
+	margin: 10px auto;
+}
+#blogue-lancementjuin2015 .github{
+	display: block;
+	margin: 15px auto;
+	width: 75%;
+}
+#blogue-lancementjuin2015 .footnote{
+	font-size: 12px;
+}
+
+/* -----------
+* blogue en général
+----------  */
+
+#posts-content img{
+	width: 85%;
+}
+#posts-sidebar, #post-content{
+	margin-top: 20px;
+}
+
+#posts-sidebar .rss{
+	padding: 10px 0;
+}
+#posts-sidebar .rss:hover{
+	color: $bleu-fonce;
+}
+#posts-sidebar .rss .fa-rss{
+	margin-right: 5%;
+}
+
+#posts-sidebar .enSavoirPlus{
+	display: block;
+	width: 100%;
+	text-align: right;
+	font-size: 12px;
+	font-style: italic;
+	margin-bottom: 15px; 
+	padding-right: 5%;
+}
+	
+#posts-sidebar{
+	padding-right: 10px;
+}
+
+#posts-sidebar li, #archives li{
+	text-decoration: none;
+	list-style-type: none;
+}
+
+#posts-sidebar h4{
+	margin: 0;
+	font-size: 14px;
+}
+#posts-sidebar p{
+	margin: 0;
+}
+#posts-sidebar p.postDate{
+	color: $gris;
+	font-size: 12px;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+#posts-sidebar p.postDate+p{
+	font-size: 13px;
+}
+
+/* ---
+* Archives
+--- */
+
+#archives h3{
+	font-size: 16px;
+}
+
+/*******************************************************/
+
+/************css pour tablette et ordinateur ***********/
+
+/*******************************************************/
+/* ---------------- 500px ---------------------------- */
+@media screen and (min-width: $screen-xs-min) {
+
+
+}
+/* ----------------768px-----------------------------  */
+
+@media screen and (min-width: $screen-sm-min) {
+	#posts-sidebar, #posts-content{
+		margin-top: 30px;
+	}
+	
+	#posts-sidebar div.h3, #archives h3{
+		margin-top: 5px;
+	}
+
+	#posts-sidebar p.postDate{
+		font-size: 12px;
+	}
+	#posts-sidebar h4{
+		font-size: 16px;
+	}
+
+	#archives h3{
+		padding-left: 15px;
+		margin-bottom: 5px;
+	}
+	#archives h2{
+		margin-top: 20px;
+	}
+	#archives li{
+		padding-left: 30px;
+	}
+	#posts-sidebar p.postDate+p{
+		font-size: 14px;
+	}
+	#posts-content p.postDate+p{
+		text-align: justify;
+		width: 90%;
+	}
+	#posts-content{
+		padding-left: 3%;
+	}
+
+}
+
+
+
+
+

@@ -8,16 +8,16 @@ css du footer
 	color: $blanc;
 	padding: 1% 0;
 	margin-top: 20px;
+	box-shadow: 0px -3px 5px #888888;
 }
 #footer hr{
 	width: 80%;
 	border-color: $gris-fonce;
-	margin: 5px 0;
-	margin: 0 auto;
+	margin: 10px auto;
 }
 
 #footer .wrapper{
-	margin-top: 0;
+	margin: 0 ;
 }
 
 #footer ul{
@@ -30,6 +30,7 @@ css du footer
 
 #footer .logo-med{
 	width: 60px;
+	margin-top: 20px;
 }
 
 #footer .logo-med:hover{ 
@@ -49,6 +50,16 @@ css du footer
 #footer .copyright{
 	padding-top: 10px;
 	display: block;
+}
+/************************
+* Formulaire
+********************/
+#footer .contact1, #footer .contact2, #footer .submitContact {
+	display: block;
+	width: 90%;
+	margin: 1% auto;
+	padding: 1%;
+	color: $noir;
 }
 /************************
 * Réseaux sociaux
@@ -102,13 +113,7 @@ css du footer
 #footer p{
 	margin: 0;
 }
-#footer .contact1, #footer .contact2, #footer .submitContact {
-	display: block;
-	width: 90%;
-	margin: 2% auto;
-	padding: 2%;
-	color: $noir;
-}
+
 #footer .contact1 input{
 	width: 90%;
 	background-color: $blanc;
@@ -156,7 +161,8 @@ css du footer
 
 @media screen and (min-width: $screen-sm-min) {
 	#footer .logo-med{
-		padding-top: 90px;
+		padding-top: 60px;
+		margin-left: 5%;
 		width: 85px;
 	}
 
@@ -166,6 +172,13 @@ css du footer
 	}
 	#footer .listGauche{
 		padding-top: 35px;
+	}
+	#footer .contact1, #footer .contact2, #footer {
+	margin: 2% auto;
+	padding: 2%;
+	}
+	#footer .wrapper{
+		padding: 0;
 	}
 
 }

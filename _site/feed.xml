@@ -2,12 +2,181 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IGO Infrastructure Géomatique Ouverte</title>
-    <description>Site web de l&#39;application IGO..</description>
+    <description>IGO est une solution Web gratuite en géomatique.</description>
     <link>[http://localhost]/</link>
     <atom:link href="[http://localhost]/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Jun 2015 11:36:30 -0400</pubDate>
-    <lastBuildDate>Mon, 15 Jun 2015 11:36:30 -0400</lastBuildDate>
+    <pubDate>Thu, 25 Jun 2015 09:03:45 -0400</pubDate>
+    <lastBuildDate>Thu, 25 Jun 2015 09:03:45 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Lancement de IGO</title>
+        <description>&lt;div id=&quot;blogue-lancementjuin2015&quot;&gt;
+    &lt;div class=&quot;img entete&quot; markdown=&quot;1&quot; &gt;
+        &lt;img itemprop=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-entete.png&quot;  alt=&quot;entête&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;bleu&quot; markdown=&quot;1&quot; &gt;
+        &lt;p&gt;Le premier logiciel à utiliser une licence libre en français produite par le gouvernement du Québec est de nature géomatique. En effet, cette solution libre et gratuite, nommée Infrastructure Géomatique Ouverte (IGO), a été conçue grâce à un réseau d’échanges regroupant des spécialistes et des utilisateurs en géomatique provenant de plusieurs ministères et organismes de l&#39;Administration publique québécoise.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;p&gt;IGO permet, entre autres, de tirer profit d’une multitude de données géographiques (patrimoine culturel, territoires agricoles, écoles, casernes de pompiers, etc.) grâce à une interface cartographique accessible par un navigateur Web. Toute la communauté géomatique ainsi que les entreprises, les municipalités, les développeurs et même les citoyens peuvent en profiter.&lt;/p&gt;
+
+        &lt;p&gt;Les internautes de partout dans le monde sont également encouragés à contribuer à IGO de plusieurs façons en vue de l’améliorer, et ce, au bénéfice de ses utilisateurs et du gouvernement du Québec. Modèle inspirant et en constante évolution, IGO est basé sur un modèle collaboratif (« open source »).&lt;/p&gt;
+
+        &lt;p&gt;IGO respecte les standards ouverts internationaux (ex. : Open Geospatial Consortium) en géomatique et s&#39;appuie sur des logiciels libres à maturité (ex. OpenLayers, MapServer).&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;!--&lt;div class=&quot;bleu bloc&quot;  &gt;
+        &lt;h2&gt;&lt;a href=&quot;igouverte.org&quot;  &gt;Consultez le site Web d&#39;IGO&lt;/a&gt;&lt;h2&gt;
+    &lt;/div&gt; --&gt;
+
+    &lt;div class=&quot;img separateur&quot; markdown=&quot;1&quot; &gt;
+        &lt;img src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-separateur.png&quot; alt=&quot;séparateur&quot; /&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;gauche&quot; markdown=&quot;1&quot; &gt;
+
+        &lt;h4&gt;Fonctionnalités développées et en développement dans IGO&lt;/h4&gt;
+
+        &lt;ul&gt;
+            &lt;li&gt;Navigation cartographique &lt;/li&gt;
+            &lt;li&gt;Service de géolocalisation et d’itinéraires &lt;/li&gt; 
+            &lt;li&gt;Requêtes spatiales &lt;/li&gt;
+            &lt;li&gt;Mises à jour en ligne des données géographiques &lt;/li&gt;
+            &lt;li&gt;Gestion de la sécurité et interface d&#39;administration &lt;/li&gt;
+            &lt;li&gt;Conférence sur carte et clavardage en temps réel &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;img droite&quot; markdown=&quot;1&quot; &gt;
+        &lt;img src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-site.jpg&quot; alt=&quot;Impression écran&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;clear&quot;  &gt;&lt;/div&gt;
+
+    &lt;div class=&quot;&quot; markdown=&quot;1&quot; &gt;
+        &lt;h3&gt;Le développement d’IGO a été rendu possible grâce au travail en géomatique de plusieurs organisations publiques du gouvernement du Québec :&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Centre d&#39;expertise en logiciel libre du Québec (CELL); &lt;/li&gt;
+            &lt;li&gt;Commission de protection du territoire agricole (CPTAQ); &lt;/li&gt;
+            &lt;li&gt;Financière agricole du Québec (FADQ); &lt;/li&gt;
+            &lt;li&gt;Institut national de santé publique du Québec (INSPQ); &lt;/li&gt;
+            &lt;li&gt;Ministère de la Culture et des Communications (MCC); &lt;/li&gt;
+            &lt;li&gt;Ministère de la Sécurité publique (MSP); &lt;/li&gt;
+            &lt;li&gt;Ministère des Transports (MTQ). &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;bleu&quot; markdown=&quot;1&quot; &gt;
+
+        &lt;h2&gt;Bénéfices&lt;/h2&gt;
+
+        Plus précisément, IGO permet :
+            &lt;ul&gt;
+                &lt;li&gt;d’avoir accès au code source libre de qualité qui peut être réutilisé par tous;&lt;/li&gt; 
+                &lt;li&gt;d&#39;échanger avec une communauté d&#39;experts actifs; &lt;/li&gt;
+                &lt;li&gt;de mettre en commun des besoins similaires en géomatique; &lt;/li&gt;
+                &lt;li&gt;de partager les responsabilités et les coûts de développement; &lt;/li&gt;
+                &lt;li&gt;d&#39;optimiser l&#39;utilisation des ressources au gouvernement et de répartir les efforts; &lt;/li&gt;
+                &lt;li&gt;d&#39;encourager la libre circulation des idées, le dialogue et l&#39;innovation. &lt;/li&gt;
+            &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;img gauche&quot; markdown=&quot;1&quot;  &gt;
+        &lt;img src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-ordinateur.jpg&quot; alt=&quot;Image écran&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;droite&quot; markdown=&quot;1&quot; &gt;
+        &lt;ul&gt;
+            &lt;li&gt;Le projet IGO découle du projet G.O.LOC (système de Gestion des opérations de localisation et de cartographie) du &lt;a href=&quot;http://geoegl.msp.gouv.qc.ca/accueil/portail_geo/goloc.htm&quot;&gt;MSP&lt;/a&gt; et de l&#39;INSPQ avec l&#39;objectif d&#39;en faire un projet commun, modulaire, utilisant les logiciels libres et se fondant sur un &lt;a href=&quot;http://geoegl.msp.gouv.qc.ca/blogue/?p=608&quot;&gt;modèle de gouvernance ouverte interorganisationnel&lt;/a&gt;. &lt;/li&gt;
+
+            &lt;li&gt;Un exemple de l&#39;interface cartographique d&#39;IGO-Navigateur en action se trouve dans la rubrique Application du site &lt;a href=&quot;http://www.donnees.gouv.qc.ca/?node=/applications-geomatique&quot;&gt;des données ouvertes du gouvernement du Québec&lt;/a&gt;.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;clear&quot;  &gt;&lt;/div&gt;
+
+    &lt;div class=&quot;bleu&quot; markdown=&quot;1&quot; &gt;
+        &lt;h2&gt;Technologie et outils&lt;/h2&gt;
+        &lt;p&gt;La technologie utilisée par IGO est associée à plusieurs logiciels libres. Ils se divisent en deux parties : &lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;La partie serveur :La partie serveur : &lt;a href=&quot;http://www.mapserver.org/&quot;&gt;MapServer&lt;/a&gt;, &lt;a href=&quot;https://phalconphp.com/fr/&quot;&gt;Phalcon&lt;/a&gt;,&lt;a href=&quot;http://www.apache.org/&quot;&gt; Apache&lt;/a&gt;, &lt;a href=&quot;http://project-osrm.org/&quot;&gt;Open Source Routing Machine&lt;/a&gt;,&lt;a href=&quot;http://mapserver.org/ja/mapcache/index.html&quot;&gt; MapCache&lt;/a&gt;. &lt;/li&gt;
+            &lt;li&gt;La partie des librairies (IGO-Navigateur) : &lt;a href=&quot;http://openlayers.org/two/&quot;&gt;OpenLayers&lt;/a&gt;,&lt;a href=&quot;http://docs.sencha.com/extjs/3.4.0/&quot;&gt; ExtJS&lt;/a&gt;,&lt;a href=&quot;http://geoext.org/downloads.html&quot;&gt; GeoExt&lt;/a&gt; et &lt;a href=&quot;http://jquery.com/&quot;&gt; JQuery&lt;/a&gt;. Pour ce qui est de la base de données, &lt;a href=&quot;http://postgis.refractions.net/&quot;&gt;PostgreSQL/PostGIS&lt;/a&gt; et Oracle sont celles supportées et développées dans IGO. Les standards utilisés par la communauté IGO sont multiples, notamment les services Web cartographiques (WMS), les services Web d&#39;entités (WFS), les services Web de catalogage (CSW), les services Web de fond de carte en tuiles (WMTS) et les services Web de géotraitement (WPS). &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;img class=&quot;techno&quot; src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-techno.png&quot; alt=&quot;Technologies utilisées&quot; /&gt;
+
+    &lt;/div&gt;
+    
+    &lt;div markdown=&quot;1&quot;&gt;
+        &lt;h3&gt;IGO, un modèle collaboratif&lt;/h3&gt;
+        &lt;p&gt;Code source entièrement géré dans GitHub.com, une plate-forme Web spécialisée dans l’hébergement et le développement de logiciels libres, permettant plus d&#39;interactions directes avec la communauté.&lt;/p&gt;
+
+        &lt;p&gt;Processus de validation des contributions par la communauté afin d’assurer la qualité du code.&lt;/p&gt;
+
+        &lt;p&gt;Types de contributions :&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;soumissions de code &lt;/li&gt;
+                &lt;li&gt;gabarits de conception &lt;/li&gt;
+                &lt;li&gt;problèmes et suggestions &lt;/li&gt;
+                &lt;li&gt;documentation &lt;/li&gt;
+                &lt;li&gt;évaluations &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;p&gt;En ouvrant le code source au public et en partageant l&#39;expertise du gouvernement du Québec gratuitement avec le public, la communauté d&#39;IGO s&#39;agrandit et obtient des contributions non seulement des membres du public et d&#39;organisations externes au gouvernement du Québec, mais également de partout dans le monde.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;img separateur&quot; markdown=&quot;1&quot; &gt;
+        &lt;img src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-separateur.png&quot; alt=&quot;séparateur&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div markdown=&quot;1&quot;&gt;
+        &lt;h2 class=&quot;acteurs&quot;&gt;Acteur de la communauté IGO&lt;/h2&gt;
+
+        &lt;img class=&quot;pyramide&quot; src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-pyramide.png&quot; alt=&quot;Acteurs&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div markdown=&quot;1&quot;&gt;
+        &lt;p&gt;Si vous désirez &lt;a href=&quot;http://www.igouverte.org/contribuer/&quot;&gt;contribuer&lt;/a&gt; à IGO, vous pouvez le faire en : &lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;signalant des erreurs informatiques (bogues); &lt;/li&gt;
+            &lt;li&gt;suggérant de nouvelles fonctionnalités, de nouveaux modules ou de nouveaux services; &lt;/li&gt;
+            &lt;li&gt;traduisant du contenu dans une autre langue; &lt;/li&gt;
+            &lt;li&gt;produisant et modifiant de la documentation; &lt;/li&gt;
+            &lt;li&gt;produisant du nouveau code source; &lt;/li&gt;
+            &lt;li&gt;effectuant une revue des demandes de changements; &lt;/li&gt;
+            &lt;li&gt;signalant qu&#39;un problème a été réglé; &lt;/li&gt;
+            &lt;li&gt;etc. &lt;/li&gt;
+        &lt;/ul&gt;
+        
+        &lt;p&gt;Si vous avez des questions sur IGO, veuillez d&#39;abord vous référer à la &lt;a href=&quot;http://igouverte.org/faq/&quot;&gt;foire aux questions (FAQ)&lt;/a&gt; à ce sujet. L&#39;espace de partage du code source a été déposé dans le site d&#39;hébergement le plus répandu au monde, soit http://github.com notamment pour faciliter les contributions externes.&lt;/p&gt;
+
+        &lt;a href=&quot;https://github.com/infra-geo-ouverte/igo&quot;&gt;&lt;img class=&quot;github&quot; src=&quot;https://raw.githubusercontent.com/infra-geo-ouverte/site-web/KB_ajout_Blogue/assets/img/blogue/2015-06-github.png&quot; alt=&quot;github&quot;/&gt;&lt;/a&gt;
+
+        &lt;p&gt;N&#39;hésitez pas à communiquer avec l&#39;équipe d&#39;IGO pour plus d&#39;information : info[a]igouverte.org ou à vous inscrire à la liste courriel publique : http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique. &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;bleu&quot; markdown=&quot;1&quot; &gt;
+        &lt;h2&gt; Qu&#39;est-ce qu’un logiciel libre ?&lt;/h2&gt;
+
+        &lt;p&gt;Il s’agit d’un logiciel livré avec son code source de manière à ce qu&#39;il puisse être copié, modifié et redistribué, évoluant ainsi de façon continue vers une version plus perfectionnée, dans un contexte de développement coopératif et communautaire &lt;sup&gt;1&lt;/sup&gt;.&lt;/p&gt;
+        &lt;p class=&quot;footnote&quot;&gt;1 Définition de l&#39;Office québécois de la langue française&lt;/p&gt;
+    &lt;/div&gt;
+
+        &lt;p class=&quot;footnote&quot;&gt;Source : &lt;/p&gt;
+
+        &lt;a href=&quot;http://geoegl.msp.gouv.qc.ca/blogue/?p=886&quot;&gt;&lt;p class=&quot;footnote&quot;&gt;IGO : un modèle inspirant de développement inter-organisationnel:&lt;/p&gt;
+
+        &lt;p class=&quot;footnote&quot;&gt;LA GESTION DES DONNÉES GÉOSPATIALES AU MTQ &lt;/p&gt;&lt;/a&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 29 Jun 2015 00:00:00 -0400</pubDate>
+        <link>[http://localhost]/information/2015/06/29/Lancement%20de%20IGO/</link>
+        <guid isPermaLink="true">[http://localhost]/information/2015/06/29/Lancement%20de%20IGO/</guid>
+        
+        <category>lancement</category>
+        
+        
+        <category>information</category>
+        
+      </item>
     
   </channel>
 </rss>
