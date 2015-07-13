@@ -6,14 +6,15 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu|Muli);
 
 
-
-body .page-content .wrapper {
-	padding-right: 10px;
-	padding-left: 10px;
-}
-
-@mixin media-query() {
-    @media screen and (max-width: 1000px) {
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
         @content;
     }
 }
