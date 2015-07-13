@@ -20,7 +20,6 @@
     text-decoration: underline;
 }
 
-
 #blogue-lancementjuin2015 .bleu{
 	background-color: $bleu;
 	color: $blanc;
@@ -78,10 +77,6 @@
 	display: block;
 	margin: 10px auto;
 }
-#blogue-lancementjuin2015 .entete{
-	display: block;
-	margin-left: 6%;
-}
 #blogue-lancementjuin2015 img.techno{
 	width: 50%;
 }
@@ -94,6 +89,10 @@
 	display: block;
 	margin: 10px auto;
 }
+#blogue-lancementjuin2015 .entete{
+	display: block;
+	margin: 0 auto;
+}
 #blogue-lancementjuin2015 .github{
 	display: block;
 	margin: 15px auto;
@@ -103,15 +102,22 @@
 	font-size: 12px;
 }
 
-/* -----------
-* blogue en général
-----------  */
-
+/* --------
+*post général
+------- */
+.clear{
+	clear: both;
+}
+#posts-content{
+	width: 75%;
+	padding-left: 30px;
+}
 #posts-content img{
 	width: 85%;
 }
-#posts-sidebar, #post-content{
-	margin-top: 20px;
+#posts-sidebar, #posts-content{
+	margin-top: 30px;
+	float: left;
 }
 
 #posts-sidebar .rss{
@@ -136,6 +142,7 @@
 	
 #posts-sidebar{
 	padding-right: 10px;
+	width: 25%;
 }
 
 #posts-sidebar li, #archives li{
@@ -145,7 +152,7 @@
 
 #posts-sidebar h4{
 	margin: 0;
-	font-size: 14px;
+	font-size: 16px;
 }
 #posts-sidebar p{
 	margin: 0;
@@ -157,7 +164,8 @@
 	margin-bottom: 5px;
 }
 #posts-sidebar p.postDate+p{
-	font-size: 13px;
+	font-size: 14px;
+	text-align: justify;
 }
 
 /* ---
@@ -165,61 +173,15 @@
 --- */
 
 #archives h3{
-	font-size: 16px;
+
+	margin-top: 5px;
+	padding-left: 15px;
+	margin-bottom: 5px;
 }
 
-/*******************************************************/
-
-/************css pour tablette et ordinateur ***********/
-
-/*******************************************************/
-/* ---------------- 500px ---------------------------- */
-@media screen and (min-width: $screen-xs-min) {
-
-
+#archives h2{
+	margin-top: 20px;
 }
-/* ----------------768px-----------------------------  */
-
-@media screen and (min-width: $screen-sm-min) {
-	#posts-sidebar, #posts-content{
-		margin-top: 30px;
-	}
-	
-	#posts-sidebar div.h3, #archives h3{
-		margin-top: 5px;
-	}
-
-	#posts-sidebar p.postDate{
-		font-size: 12px;
-	}
-	#posts-sidebar h4{
-		font-size: 16px;
-	}
-
-	#archives h3{
-		padding-left: 15px;
-		margin-bottom: 5px;
-	}
-	#archives h2{
-		margin-top: 20px;
-	}
-	#archives li{
-		padding-left: 30px;
-	}
-	#posts-sidebar p.postDate+p{
-		font-size: 14px;
-	}
-	#posts-content p.postDate+p{
-		text-align: justify;
-		width: 90%;
-	}
-	#posts-content{
-		padding-left: 3%;
-	}
-
+#archives li{
+	padding-left: 30px;
 }
-
-
-
-
-
