@@ -6,7 +6,7 @@ name: "IGO Infrastructure Géomatique Ouverte"
 email: info@igouverte.org
 description: IGO est une solution Web gratuite en géomatique.
 
-permalink: /:day-:month-:year-:title
+# permalink: /:day-:month-:year-:title
   
 # -------  URL  ------- # 
 #Voir le document IGO_documentation.org
