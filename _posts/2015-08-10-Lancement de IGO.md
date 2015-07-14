@@ -26,7 +26,7 @@ categories:
 	</div> -->
 
 	<div class="img separateur" markdown="1" >
-		<img src="https://raw.githubusercontent.com/infra-geo-ouverte/site-web/site-web/assets/img/blogue/2015-06-separateur.png" alt="séparateur" />
+		<img src="../assets/img/blogue/2015-06-separateur.png" alt="séparateur" />
 	</div>
 	
 	<div class="gauche" markdown="1" >
@@ -44,7 +44,7 @@ categories:
 	</div>
 
 	<div class="img droite" markdown="1" >
-		<img src="https://raw.githubusercontent.com/infra-geo-ouverte/site-web/site-web/assets/img/blogue/2015-06-site.jpg" alt="Impression écran" />
+		<img src="../assets/img/blogue/2015-06-site.jpg" alt="Impression écran" />
 	</div>
 
 	<div class="clear"  ></div>
@@ -78,7 +78,7 @@ categories:
 	</div>
 
 	<div class="img gauche" markdown="1"  >
-		<img src="https://raw.githubusercontent.com/infra-geo-ouverte/site-web/site-web/assets/img/blogue/2015-06-ordinateur.jpg" alt="Image écran" />
+		<img src="../assets/img/blogue/2015-06-ordinateur.jpg" alt="Image écran" />
 	</div>
 
 	<div class="droite" markdown="1" >
@@ -98,7 +98,7 @@ categories:
 			<li>La partie serveur :La partie serveur : <a href="http://www.mapserver.org/">MapServer</a>, <a href="https://phalconphp.com/fr/">Phalcon</a>,<a href="http://www.apache.org/"> Apache</a>, <a href="http://project-osrm.org/">Open Source Routing Machine</a>,<a href="http://mapserver.org/ja/mapcache/index.html"> MapCache</a>. </li>
 			<li>La partie des librairies (IGO-Navigateur) : <a href="http://openlayers.org/two/">OpenLayers</a>,<a href="http://docs.sencha.com/extjs/3.4.0/"> ExtJS</a>,<a href="http://geoext.org/downloads.html"> GeoExt</a> et <a href="http://jquery.com/"> JQuery</a>. Pour ce qui est de la base de données, <a href="http://postgis.refractions.net/">PostgreSQL/PostGIS</a> et Oracle sont celles supportées et développées dans IGO. Les standards utilisés par la communauté IGO sont multiples, notamment les services Web cartographiques (WMS), les services Web d'entités (WFS), les services Web de catalogage (CSW), les services Web de fond de carte en tuiles (WMTS) et les services Web de géotraitement (WPS). </li>
 		</ul>
-		<img class="techno" src="https://raw.githubusercontent.com/infra-geo-ouverte/site-web/site-web/assets/img/blogue/2015-06-techno.png" alt="Technologies utilisées" />
+		<img class="techno" src="../assets/img/blogue/2015-06-techno.png" alt="Technologies utilisées" />
 
 	</div>
 	
@@ -119,13 +119,13 @@ categories:
 		<p>En ouvrant le code source au public et en partageant l'expertise du gouvernement du Québec gratuitement avec le public, la communauté d'IGO s'agrandit et obtient des contributions non seulement des membres du public et d'organisations externes au gouvernement du Québec, mais également de partout dans le monde.</p>
 	</div>
 	<div class="img separateur" markdown="1" >
-		<img src="https://raw.githubusercontent.com/infra-geo-ouverte/site-web/site-web/assets/img/blogue/2015-06-separateur.png" alt="séparateur" />
+		<img src="../assets/img/blogue/2015-06-separateur.png" alt="séparateur" />
 	</div>
 
 	<div markdown="1">
 		<h2 class="acteurs">Acteur de la communauté IGO</h2>
 
-		<img class="pyramide" src="https://raw.githubusercontent.com/infra-geo-ouverte/site-web/site-web/assets/img/blogue/2015-06-pyramide.png" alt="Acteurs" />
+		<img class="pyramide" src="../assets/img/blogue/2015-06-pyramide.png" alt="Acteurs" />
 	</div>
 
 	<div markdown="1">
@@ -143,7 +143,7 @@ categories:
 		
 		<p>Si vous avez des questions sur IGO, veuillez d'abord vous référer à la <a href="http://igouverte.org/faq/">foire aux questions (FAQ)</a> à ce sujet. L'espace de partage du code source a été déposé dans le site d'hébergement le plus répandu au monde, soit http://github.com notamment pour faciliter les contributions externes.</p>
 
-		<a href="https://github.com/infra-geo-ouverte/igo"><img class="github" src="https://raw.githubusercontent.com/infra-geo-ouverte/site-web/site-web/assets/img/blogue/2015-06-github.png" alt="github"/></a>
+		<a href="https://github.com/infra-geo-ouverte/igo"><img class="github" src="../assets/img/blogue/2015-06-github.png" alt="github"/></a>
 
 		<p>N'hésitez pas à communiquer avec l'équipe d'IGO pour plus d'information : info[a]igouverte.org ou à vous inscrire à la liste courriel publique : http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique. </p>
 	</div>
