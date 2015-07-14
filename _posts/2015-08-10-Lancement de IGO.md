@@ -12,7 +12,7 @@ categories:
 	</div>
 
 	<div class="bleu" markdown="1" >
-		<p>Le premier logiciel à utiliser une licence libre en français produite par le gouvernement du Québec est de nature géomatique. En effet, cette solution libre et gratuite, nommée Infrastructure Géomatique Ouverte (IGO), a été conçue grâce à un réseau d’échanges regroupant des spécialistes et des utilisateurs en géomatique provenant de plusieurs ministères et organismes de l'Administration publique québécoise.</p>
+		<p>Le premier logiciel à utiliser une licence libre en français produite par le gouvernement du Québec est de nature géomatique. En effet, cette solution libre et gratuite, nommée Infrastructure Géomatique Ouverte (IGO), a été conçue grâce à un réseau d’échanges regroupant des spécialistes et des utilisateurs en géomatique provenant de plusieurs ministères et organismes de l'administration publique québécoise.</p>
 	</div>
 	<div>
 		<p>IGO permet, entre autres, de tirer profit d’une multitude de données géographiques (patrimoine culturel, territoires agricoles, écoles, casernes de pompiers, etc.) grâce à une interface cartographique accessible par un navigateur Web. Toute la communauté géomatique ainsi que les entreprises, les municipalités, les développeurs et même les citoyens peuvent en profiter.</p>
@@ -50,15 +50,15 @@ categories:
 	<div class="clear"  ></div>
 
 	<div class="" markdown="1" >
-		<h3>Le développement d’IGO a été rendu possible grâce au travail en géomatique de plusieurs organisations publiques du gouvernement du Québec :</h3>
+		<h3>Le développement d’IGO a été rendu possible grâce au travail en géomatique de plusieurs organisations publiques de l'administration publique québécoise:</h3>
 		<ul>
-			<li>Centre d'expertise en logiciel libre du Québec (CELL); </li>
-			<li>Commission de protection du territoire agricole (CPTAQ); </li>
-			<li>Financière agricole du Québec (FADQ); </li>
-			<li>Institut national de santé publique du Québec (INSPQ); </li>
-			<li>Ministère de la Culture et des Communications (MCC); </li>
-			<li>Ministère de la Sécurité publique (MSP); </li>
-			<li>Ministère des Transports (MTQ). </li>
+			<li>le Centre de services partagés du Québec (CSPQ); </li>
+			<li>la Commission de protection du territoire agricole (CPTAQ); </li>
+			<li>la Financière agricole du Québec (FADQ); </li>
+			<li>l'Institut national de santé publique du Québec (INSPQ); </li>
+			<li>le Ministère de la Culture et des Communications (MCC); </li>
+			<li>le Ministère de la Sécurité publique (MSP); </li>
+			<li>le Ministère des Transports (MTQ). </li>
 		</ul>
 	</div>
 
@@ -83,9 +83,9 @@ categories:
 
 	<div class="droite" markdown="1" >
 		<ul>
-			<li>Le projet IGO découle du projet G.O.LOC (système de Gestion des opérations de localisation et de cartographie) du <a href="http://geoegl.msp.gouv.qc.ca/accueil/portail_geo/goloc.htm">MSP</a> et de l'INSPQ avec l'objectif d'en faire un projet commun, modulaire, utilisant les logiciels libres et se fondant sur un <a href="http://geoegl.msp.gouv.qc.ca/blogue/?p=608">modèle de gouvernance ouverte interorganisationnel</a>. </li>
-
-			<li>Un exemple de l'interface cartographique d'IGO-Navigateur en action se trouve dans la rubrique Application du site <a href="http://www.donnees.gouv.qc.ca/?node=/applications-geomatique">des données ouvertes du gouvernement du Québec</a>.</li>
+			<li>IGO découle du projet G.O.LOC (<a href="http://geoegl.msp.gouv.qc.ca/accueil/portail_geo/goloc.htm">système de Gestion des opérations de localisation et de cartographie</a>) mis en oeuvre par des des spécialistes en géomatique du MSP et par la suite en collaboration avec des experts de l’Institut national de santé publique du Québec (INSPQ).Ce projet G.O.LOC a ensuite attiré l’attention d’autres ministères et organismes gouvernementaux. Cet intérêt, qui s’est traduit par la mise en place d’un réseau d’échanges entre le MSP, l’INSPQ, le MCC, la FADQ, le MTQ, la CPTAQ et le CSPQ, a mené à la création commune d'IGO comme solution Web gratuite en géomatique adaptée aux besoins de la communauté qui en est membre. Comme IGO est une évolution de G.O.LOC développée par le MSP et l'INSPQ entre 2010 et 2013, plusieurs parties de son code source ouvert ont été réutilisées dans IGO.
+</li>
+			<li>Un exemple de l'interface cartographique d'IGO-Navigateur en action se trouve dans la rubrique Application du <a href="http://www.donnees.gouv.qc.ca/?node=/applications-geomatique">site des données ouvertes du gouvernement du Québec</a>. Il y a, entre autres, les casernes de pompiers, les sites et immeubles patrimoniaux répertoriés au Québec, les territoires agricoles et les îlots de chaleur où IGO est utilisé comme solution Web en géomatique pour visualiser les données. Cette interface est donc destinée notamment aux organisations de l'administration publique québécoise voulant mettre en valeur leurs données géographiques.</li>
 		</ul>
 	</div>
 
