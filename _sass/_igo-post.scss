@@ -108,7 +108,7 @@
 ----------  */
 
 #posts-content img{
-	width: 85%;
+	width: 100%;
 }
 #posts-sidebar, #post-content{
 	margin-top: 20px;
@@ -181,6 +181,9 @@
 /* ----------------768px-----------------------------  */
 
 @media screen and (min-width: $screen-sm-min) {
+	#posts-content img{
+	max-width: 800px;
+	}
 	#posts-sidebar, #posts-content{
 		margin-top: 30px;
 	}
