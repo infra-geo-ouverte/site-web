@@ -8,7 +8,7 @@ categories:
 
 <div id="blogue-lancementjuin2015">
 	<div class="img entete" markdown="1" >
-		<img itemprop="image" src="https://raw.githubusercontent.com/infra-geo-ouverte/site-web/site-web/assets/img/blogue/2015-06-entete.png"  alt="entête" />
+		<img itemprop="image" src="../assets/img/blogue/2015-06-entete.png"  alt="entête" />
 	</div>
 
 	<div class="bleu" markdown="1" >
