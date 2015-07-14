@@ -82,11 +82,9 @@ categories:
 	</div>
 
 	<div class="droite" markdown="1" >
-		<ul>
 			<li>IGO découle du projet G.O.LOC (<a href="http://geoegl.msp.gouv.qc.ca/accueil/portail_geo/goloc.htm">système de Gestion des opérations de localisation et de cartographie</a>) mis en oeuvre par des des spécialistes en géomatique du MSP et par la suite en collaboration avec des experts de l’Institut national de santé publique du Québec (INSPQ).Ce projet G.O.LOC a ensuite attiré l’attention d’autres ministères et organismes gouvernementaux. Cet intérêt, qui s’est traduit par la mise en place d’un réseau d’échanges entre le MSP, l’INSPQ, le MCC, la FADQ, le MTQ, la CPTAQ et le CSPQ, a mené à la création commune d'IGO comme solution Web gratuite en géomatique adaptée aux besoins de la communauté qui en est membre. Comme IGO est une évolution de G.O.LOC développée par le MSP et l'INSPQ entre 2010 et 2013, plusieurs parties de son code source ouvert ont été réutilisées dans IGO.
 </li>
 			<li>Un exemple de l'interface cartographique d'IGO-Navigateur en action se trouve dans la rubrique Application du <a href="http://www.donnees.gouv.qc.ca/?node=/applications-geomatique">site des données ouvertes du gouvernement du Québec</a>. Il y a, entre autres, les casernes de pompiers, les sites et immeubles patrimoniaux répertoriés au Québec, les territoires agricoles et les îlots de chaleur où IGO est utilisé comme solution Web en géomatique pour visualiser les données. Cette interface est donc destinée notamment aux organisations de l'administration publique québécoise voulant mettre en valeur leurs données géographiques.</li>
-		</ul>
 	</div>
 
 	<div class="clear"  ></div>
@@ -116,7 +114,7 @@ categories:
 				<li>documentation </li>
 				<li>évaluations </li>
 			</ul>
-		<p>En ouvrant le code source au public et en partageant l'expertise du gouvernement du Québec gratuitement avec le public, la communauté d'IGO s'agrandit et obtient des contributions non seulement des membres du public et d'organisations externes au gouvernement du Québec, mais également de partout dans le monde.</p>
+		<p>En ouvrant le code source au public et en partageant l'expertise du gouvernement du Québec gratuitement avec le public, la communauté d'IGO s'agrandit et obtient des contributions non seulement des membres du public et d'organisations externes l'administration publique québécoise, mais également de partout dans le monde.</p>
 	</div>
 	<div class="img separateur" markdown="1" >
 		<img src="/assets/img/blogue/2015-06-separateur.png" alt="séparateur" />
