@@ -12,7 +12,7 @@ submenu:
   - { hook: "version", title: "Versions du service Web ( GLO )" }
 ---
 
-#Service web de "GéoLOcalisation (GLO)"
+#Service web de "GéoLtesttttOcalisation (GLO)"
 
 <a id="introduction"></a>
 ##Introduction [<span class="octicon octicon-link"></span>](#introduction)
