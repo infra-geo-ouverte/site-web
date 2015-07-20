@@ -5,10 +5,13 @@ iconedocumentation: ""
 submenu:
   - hook: "introduction"
     title: "Introduction"
-    - submenu2:
-        hook2: "patate"
+    submenu2:
+      - hook2: "patate"
         title2: "test"
-
+      - hook2: "pasdas"
+        title2: "asdasd"
+  - hook: "test"
+    title: "test2"
 ---
 
 #Service web de "GéoLOcalisation (GLO)"
