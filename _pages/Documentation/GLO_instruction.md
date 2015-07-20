@@ -5,6 +5,9 @@ iconedocumentation: ""
 submenu:
   - hook: "introduction"
     title: "Introduction"
+    - submenu:
+      - hook: "patate"
+        title: "test"
 
 ---
 
