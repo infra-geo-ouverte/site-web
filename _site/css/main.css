@@ -1146,7 +1146,7 @@ css de l'accueil incluant la banniere
   top: 0px;
   position: relative;}
 
-.sidebar-nav li a > .sidebar-submenu2 {
+.sidebar-nav li > .sidebar-submenu2 {
   padding: 0 0 0 35px; }
 
 #wrapper .hautpage {
