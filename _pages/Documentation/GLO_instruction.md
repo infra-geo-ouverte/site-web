@@ -3,13 +3,9 @@ permalink: /documentation/glo/
 layout: general
 iconedocumentation: ""
 submenu:
-  - { hook: "introduction",    title: "Introduction" }
-  - { hook: "type", title: "Type de recherche"}
-  - { hook: "chaine", title: "Chaîne de caractères de recherche" }
-  - { hook: "mode", title: "Deux modes d’utilisation" }
-  - { hook: "requete", title: "Structure des requêtes SOAP (XML)" }
-  - { hook: "reponse", title: "Structure des réponses SOAP (XML)" }
-  - { hook: "version", title: "Versions du service Web ( GLO )" }
+  - hook: "introduction"
+    title: "Introduction"
+
 ---
 
 #Service web de "GéoLOcalisation (GLO)"
