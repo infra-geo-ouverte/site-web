@@ -50,7 +50,7 @@ ul, ol, dl, figure,
   margin-bottom: 15px; }
 
 /****************************
-Liens 
+Liens
 *****************************/
 a {
   color: #006bb6;
@@ -213,7 +213,7 @@ img {
   img {
     max-width: 400px; } }
 /***************************
-***  CSS 
+***  CSS
 **************************/
 body .site-header {
   border: none; }
@@ -1141,6 +1141,13 @@ css de l'accueil incluant la banniere
   font-size: 12px;
   line-height: 1.5;
   list-style: none; }
+
+.sidebar-nav > .sidebar-submenu1 {
+  top: 0px;
+  position: relative;}
+
+.sidebar-nav li a > .sidebar-submenu2 {
+  padding: 0 0 0 35px; }
 
 #wrapper .hautpage {
   color: #002f50;

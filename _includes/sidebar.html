@@ -7,9 +7,9 @@
 		  {% for item in page.submenu %}
 			   <li class="sidebar-brand "><a class="smooth-scroll" href="#{{ item.hook }}">{{ item.title }}</a></li>
          {% if item.submenu %}
-            <ul class="nav sidebar-nav">
+            <ul class="sidebar-submenu">
                {% for item in item.submenu %}
-                    <li class="sidebar-brand "><a class="smooth-scroll" href="#{{ item.hook }}">{{ item.title }}</a></li>
+                    <li class="sidebar-submenu2"><a class="smooth-scroll" href="#{{ item.hook }}">{{ item.title }}</a></li>
                {% endfor %}
              </ul>
           {% endif %}
