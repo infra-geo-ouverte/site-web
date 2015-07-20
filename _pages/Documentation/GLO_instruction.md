@@ -6,13 +6,13 @@ submenu:
   -
     hook: "introduction"
     title: "Introduction"
-    submenu2:
+    submenu:
       -
-        hook2: "patate"
-        title2: "test"
+        hook: "patate"
+        title: "test"
       -
-        hook2: "pasdas"
-        title2: "asdasd"
+        hook: "pasdas"
+        title: "asdasd"
   -
     hook: "test"
     title: "test2"
