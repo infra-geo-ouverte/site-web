@@ -8,9 +8,9 @@
 			   <li class="sidebar-brand "><a class="smooth-scroll" href="#{{ item.hook }}">{{ item.title }}</a></li>
          {% if item.submenu %}
             <ul class="nav sidebar-nav">
-               {% for item2 in item.submenu %}
-                    <li class="sidebar-brand "><a class="smooth-scroll" href="#{{ item2.hook }}">{{ item2.title }}</a></li>
-               {%endfor%}
+               {% for item in item.submenu %}
+                    <li class="sidebar-brand "><a class="smooth-scroll" href="#{{ item.hook }}">{{ item.title }}</a></li>
+               {% endfor %}
              </ul>
           {% endif %}
 		  {% endfor %}
