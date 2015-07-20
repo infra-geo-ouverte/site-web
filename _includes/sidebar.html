@@ -6,13 +6,13 @@
 		<ul class="nav sidebar-nav">
 		  {% for item in page.submenu %}
 			   <li class="sidebar-brand "><a class="smooth-scroll" href="#{{ item.hook }}">{{ item.title }}</a></li>
-         {% if item.submenu %}
+      <!--   {% if item.submenu %}
             <ul class="nav sidebar-nav">
                {% for item in item.submenu %}
                     <li class="sidebar-brand "><a class="smooth-scroll" href="#{{ item.hook }}">{{ item.title }}</a></li>
                {% endfor %}
              </ul>
-          {% endif %}
+          {% endif %}-->
 		  {% endfor %}
 
 			<li class="sidebar-brand">
