@@ -2,16 +2,23 @@
  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
 
 	{% if page.submenu %}
-		
+
 		<ul class="nav sidebar-nav">
 		  {% for item in page.submenu %}
-			<li class="sidebar-brand "><a class="smooth-scroll" href="#{{ item.hook }}">{{ item.title }}</a></li>
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#{{ item.hook }}">{{ item.title }}</a></li>
+         {% if item.submenu %}
+            <ul class="nav sidebar-nav">
+               {% for item2 in item.submenu %}
+                    <li class="sidebar-brand "><a class="smooth-scroll" href="#{{ item2.hook }}">{{ item2.title }}</a></li>
+               {%endfor%}
+             </ul>
+          {% endif %}
 		  {% endfor %}
 
 			<li class="sidebar-brand">
 				<a href="#header" class="back-to-top smooth-scroll octicon octicon-chevron-up">
 					<span class="hautpage">Haut de la page </span>
-					
+
 				</a>
 			</li>
 		</ul>
@@ -28,5 +35,3 @@
 	{% endif %}
 
 </nav>
-
-        

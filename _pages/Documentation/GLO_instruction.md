@@ -4,7 +4,12 @@ layout: general
 iconedocumentation: ""
 submenu:
   - { hook: "introduction",    title: "Introduction" }
-  - { hook: "type", title: "Type de recherche" }
+  - { hook: "type", title: "Type de recherche",
+      submenu: {
+            hook: "test", title: "test",
+            hook: "test2", title:"test2"
+      } 
+    }
   - { hook: "chaine", title: "Chaîne de caractères de recherche" }
   - { hook: "mode", title: "Deux modes d’utilisation" }
   - { hook: "requete", title: "Structure des requêtes SOAP (XML)" }
@@ -184,14 +189,12 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 
   =  ►   Retourne seulement l’adresse qui correspond au numéro civique.  
 
+    ```
     100 rue Fortier,  Amqui
-
-
-
-
-
-
-    450 6e Avenue, Shawinigan  
+    ```
+    ```
+    450 6e Avenue, Shawinigan
+    ```  
 
   Note :
   Il n’est pas nécessaire d’écrire 'rue', 'route', 'rang', 'avenue', etc.  
@@ -211,6 +214,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 
   = ►   Retourne toutes les adresses (no. civique, la rue ainsi que la ville) qui se retrouvent sur cette rue à l’intérieur de la ville spécifié.
 
+```
     Boulevard Fortier, Saint-Isidore-de-Clifton
     101 Boulevard Fortier, Saint-Isidore-de-Clifton
     105 Boulevard Fortier, Saint-Isidore-de-Clifton
@@ -226,7 +230,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
     295 Rue Fortier, Saint-Isidore
     300 Rue Fortier, Saint-Isidore
     ...
-
+```
 
   h) À partir d’**un seul mot** qui n’est pas un code postal (rue, municipalité,  MRC  ou région administrative)  
 
@@ -242,7 +246,9 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 
   = ►  Retourne un résultat provenant de la base de données d’adresses. La recherche se fait dans le champ <  RECHERCHE_TEXTUELLE  > qui contient l’adresse au complet, le code postal, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.
 
+      ```
       2525 Boulevard Laurier, Québec
+      ```
 
 2. Lieu  
 
@@ -440,6 +446,7 @@ Pour les deux autres types de géocodage (par borne ou coordonnées GPS), la str
 
 Requête par borne kilométrique:
 
+```xml
 	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
 	   <soapenv:Header/>
 	   <soapenv:Body>
@@ -459,6 +466,7 @@ Requête par coordonnées GPS :
 	      </geo:GPSRequete>
 	   </soapenv:Body>
 	</soapenv:Envelope>
+```
 
 <a id="reponse"></a>
 ####Structure des réponses SOAP (XML) [<span class="octicon octicon-link"></span>](#reponse)
@@ -468,6 +476,7 @@ La réponse en format XML qui est retournée par le service (ou via l’URL) peu
 Extrait de la réponse XML d’une recherche d’adresse (par code postal soit «  <span style="color:blue">**G1M2L1**</span>  »):
 **Version 5 :**
 
+```xml
 	<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://geoegl.msp.gouv.qc.ca/">
 	   <SOAP-ENV:Body>
 	      <ns1:GeocoderReponse>
@@ -526,6 +535,7 @@ Extrait de la réponse XML d’une recherche d’adresse (par code postal soit 
 	      </ns1:GeocoderReponse>
 	   </SOAP-ENV:Body>
 	</SOAP-ENV:Envelope>
+```
 
 *cote de précision*
 
@@ -544,51 +554,37 @@ Version 2 : 14 octobre 2009
 La différence majeure entre les deux versions se retrouve au niveau des recherches par adresse.Le géocodage est maintenant plus précis c’est à dire que le positionnement peut se faire directement sur le numéro civique (grâce au rôle d’évaluation) et non plus sur une tranche d’adresse seulement comme c’était le cas avec la version #1 du service :
 
 Ancien champs de la version #1:
-
+```xml
 	<  noCiviqDebut  >
-
 	<  noCiviqFin  >
+```
 
 Remplacés par les nouveaux champs de la version #2:
-
+```xml
 	<  geocodeMatchCode  >
-
 	<  noCiviq  >
-
 	<  noCiviqDebutDroite  >
-
 	<  noCiviqFinDroite  >
-
 	<  noCiviqDebutGauche  >
-
 	<  noCiviqFinGauche  >
+```
 
-
-Version 3 : décembre 2010 (Seulement à l’intérieur du  MSP )
+Version 3 : décembre 2010
 
 La version 3 du  GLO  comprend l’ajout des champs suivants:  CODE_MUNCP ,  NO_MATRICULE ,  NO_SEQ_ODONM  du  DGE .   Cette version comprend également l’ajout d’une recherche d'adresse textuelle améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté. La recherche par Lieux d’intérêt est également grandement améliorée.
 
-
 Champs de la version #3:
-
+```xml
 	<  geocodeMatchCode  >
-
 	<  noCiviq  >
-
 	<  noCiviqDebutDroite  >
-
 	<  noCiviqFinDroite  >
-
 	<  noCiviqDebutGauche  >
-
 	<  noCiviqFinGauche  >
-
 	<  code_muncp  >
-
 	<  no_matricule  >
-
 	<  no_seq_adr_civique  >
-
+```
 
 **Version 5 : novembre 2012**
 
@@ -596,85 +592,73 @@ Cette version comprend également l’ajout d’une recherche d'adresse de simil
 
 Champs de la version #5:
 
-	  ajout en sortie du tag :<span style="background:lime;mso-highlight:lime">**<RemarqueListe/>** </span>
+	ajout en sortie du tag :  
+  <span style="background:lime;mso-highlight:lime">**<RemarqueListe/>** </span>
 
  Correspond aux suggestions de similarité phonétique suggérées si aucun résultat n’est trouvé.
 
+ ajout en sortie dans le résultat XML:  
 
-	  ajout en sortie dans le résultat XML:
-
-	 <  borneDetail  >
-
-	< noCiviqDebut />champ à valider si nécessaire à conserver
-
-	<span style="background:olive;mso-highlight:olive">< noCiviqFin />champ à valider si nécessaire à conserver
-
+```xml
+	 <borneDetail>  
+     <noCiviqDebut/>
+     <noCiviqFin/>  
+     ...
 	 <CP>
 	     <codePostal>G1V2L2</codePostal>
 	     <Copyright> Marque officielle de la Societe canadienne des postes</Copyright>
 	 </CP>
-	      <localisation>
-	          <point>
-	               <x>-7934466.89847387</x>
-	               <y>5904997.4000787</y>
-	               <SRS>
-	                   <nom>spatialreferencing.org</nom>
-	                   <codeEPSG>900913</codeEPSG>
-	                   <WKT>
-	                        +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +units=m +k=1.0 +nadgrids=@null +no_defs
-	                  </WKT>
-	                </SRS>
-	           </point>
-		        <enveloppe>
-	               <Xmin/>
-	               <Ymin/>
-	               <Xmax/>
-	               <Ymax/>
-	               <SRS>
-	                   <nom/>
-	                   <codeEPSG>0</codeEPSG>
-	                   <WKT/>
-	               </SRS>
-		        </enveloppe>
-		</localisation>
-
+   ...
+  <localisation>
+      <point>
+           <x>-7934466.89847387</x>
+           <y>5904997.4000787</y>
+           <SRS>
+               <nom>spatialreferencing.org</nom>
+               <codeEPSG>900913</codeEPSG>
+               <WKT>
+                    +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +units=m +k=1.0 +nadgrids=@null +no_defs
+              </WKT>
+            </SRS>
+       </point>
+      <enveloppe>
+           <Xmin/>
+           <Ymin/>
+           <Xmax/>
+           <Ymax/>
+           <SRS>
+               <nom/>
+               <codeEPSG>0</codeEPSG>
+               <WKT/>
+           </SRS>
+      </enveloppe>
+  </localisation>
+```
 
 **<u> Ajout janvier 2014 </u>**
 
-ajout en sortie du tag :<span style="background:lime;mso-highlight:lime">`<statut/> `</span>
+ajout en sortie du tag :  
+<span style="background:lime;mso-highlight:lime">`<statut/> `</span>  
 
-	 Correspond aux informations sur les municipalités.
-	  etat   	: Officiel ou Non officiel.
-	  description   : Valide, Supprimé.
-	  commentaire   : correspondant à une Ancienne limite ou la ville correspondant Maintenant.
-
-	<statut>
-		<etat>Non officiel</etat>
-		<description>Supprimé</description>
-		<commentaire>Ancienne limite</commentaire>
-	</statut>
-
-	<statut>
-		<etat>Officiel</etat>
-		<description>Valide</description>
-		<commentaire/>
-	</statut>
-
-	<statut><etat>Non officiel</etat>
-		<description>Supprimé</description>
-		<commentaire>Maintenant Shawinigan</commentaire>
-	</statut>
-
-	<statut><etat>Non officiel</etat>
-		<description>Supprimé</description>
-		<commentaire>Ancienne limite</commentaire>
-	</statut>
-
+Correspond aux informations sur les municipalités.  
+etat	: Officiel ou Non officiel.  
+description   : Valide, Supprimé.  
+commentaire   : correspondant à une Ancienne limite ou la ville correspondant Maintenant.
 
 Correspond également aux informations sur les adresses.
-
 etat           : Officiel ou Non officiel.
-
 description    : Ajouté, Modification sur description seulement, Modification sur géométrie seulement, Modification sur géométrie et description.
+commentaire    : commentaire quelconque.  
 
-commentaire    : aucun.
+
+Version 6 BETA janvier 2015:
+
+Parmi les améliorations :
+- le générique et l'orientation de l'odonyme est maintenant utilisé pour préciser la rechercher par adresse.
+- un option permettant le regroupement des adresses pour une même coordonnées. Permettant ainsi d'avoir un seul résutltat pour "1 place ville-marie montréal" par exemple
+- amélioration de la recherche par intersection. La municipalité n'est plus obligatoire et l'intersection par numéro de route et autoroute est maintenant possible.
+- un retour en JSON (excel devrait être possible dans un futur proche)
+- une recherche de 'reverse geocoding' (recherche d'adresse par coordonnée)
+- plus de possibilités pour la recherche par GPS en définissant le code EPSG en entrée (paramètre: epsg_entree).
+- recherche par GPS retourne mainteannt la mrc, région administrative(plus clairement) et la localité qui fait référence au toponyme le plus près (avant bdga_habit_point_p)
+- optimisation du code qui permet un amélioration de la vitesse de la requête d'environ 200% dans la plupart des cas
