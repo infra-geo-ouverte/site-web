@@ -6,16 +6,31 @@ submenu:
   -
     hook: "introduction"
     title: "Introduction"
+  -  
+    hook: "type"
+    title: "Type de recherche"
+  -  
+    hook: "chaine"
+    title: "Chaîne de caractères de recherche"
+  -  
+    hook: "mode"
+    title: "Deux modes d’utilisation"
+  -  
+    hook: "requete"
+    title: "Structure des requêtes SOAP (XML)"
+  -  
+    hook: "reponse"
+    title: "Structure des réponses SOAP (XML)"
+  -  
+    hook: "version"
+    title: "Versions du service Web ( GLO )"
     submenu:
-      -
-        hook: "patate"
-        title: "test"
-      -
-        hook: "pasdas"
-        title: "asdasd"
-  -
-    hook: "test"
-    title: "test2"
+        -
+            hook: "test"
+            title: "test"
+        -
+            hook: "test2"
+            title: "test2" 
 ---
 
 #Service web de "GéoLOcalisation (GLO)"
@@ -23,7 +38,7 @@ submenu:
 <a id="introduction"></a>
 ##Introduction [<span class="octicon octicon-link"></span>](#introduction)
 
-Afin de faciliter le positionnement sur le territoire Québécois, le Ministère de la Sécurité Publique du Québec (MSP) à mis en place un service Web dédié à cette fin.Ce service de «  géolocalisation  » est entièrement interopérable et permet de localiser des adresses, des codes postaux, des rues, des municipalités, des  MRC , des toponymes, des édifices publics (écoles, hôpitaux,  CLSC , CPE), des entreprises et même des bornes kilométriques situées sur le réseau routier du Ministère des Transports ( MTQ ).  L’innovation de ce service repose sur sa haute fiabilité, son utilisation multiplateforme ainsi que sur la fréquence de ses mises à jour.
+Afin de faciliter le positionnement sur le territoire Québécois, le Ministère de la Sécurité Publique du Québec (MSP) à mis en place un service Web dédié à cette fin.Ce service de «  géolocalisation  » est entièrement interopérable et permet de localiser des adresses, des codes postaux, des rues, des municipalités, des  MRC , des toponymes, des édifices publics (écoles, hôpitaux,  CLSC , CPE), des entreprises et même des bornes kilométriques situées sur le réseau routier du Ministère des Transports ( MTQ ).  L’innovation de ce service repose sur sa haute fiabilité, son utilisation multiplateforme ainsi que sur la fréquence de ses mises à jour.
 
 
 ###Sécurité d’accès
@@ -37,7 +52,7 @@ Le contrôle d’accès au service Web se fait via une clé d’utilisation (sem
 <a id="type"></a>
 ### Type de recherche [<span class="octicon octicon-link"></span>](#type)
 
-Le service Web supporte cinq types de recherche :
+Le service Web supporte cinq types de recherche :
 
 | | Type de recherche | Code |
 | ---- | ---- | ---- |
@@ -47,12 +62,12 @@ Le service Web supporte cinq types de recherche :
 | 4 | Par coordonnées GPS (lat, lon) ou (lon, lat), UTM, MTM, format Bell         |gps   |
 | 5 | Infrastructure d’Hydro-Québec (poteau, barrage, centrale, etc…)             |hq    |
 
-Certaines recherches peuvent être limitées à une clientèle bien précise (ex : La recherche sur les éléments du réseau d’Hydro-Québec est disponible seulement par les intervenants en sécurité civile).  Cette gestion est  effectué  via la clé d’accès décrite ci haut.
+Certaines recherches peuvent être limitées à une clientèle bien précise (ex : La recherche sur les éléments du réseau d’Hydro-Québec est disponible seulement par les intervenants en sécurité civile).  Cette gestion est  effectué  via la clé d’accès décrite ci haut.
 
 <a id="chaine"></a>
 ### Chaîne de caractères de recherche [<span class="octicon octicon-link"></span>](#chaine)
 
-Le service de recherche considère uniquement une seule chaîne de caractères par requête (paramètre <texte> ). Par contre, cette chaîne peut comporter plusieurs valeurs (ex : 1715 rue  Merlac , Québec). Contrairement à l’engin de recherche de Google, l’ordre dans lequel les paramètres sont placés dans la chaîne à une importance sur la performance et qualité des résultats obtenus.
+Le service de recherche considère uniquement une seule chaîne de caractères par requête (paramètre <texte> ). Par contre, cette chaîne peut comporter plusieurs valeurs (ex : 1715 rue  Merlac , Québec). Contrairement à l’engin de recherche de Google, l’ordre dans lequel les paramètres sont placés dans la chaîne à une importance sur la performance et qualité des résultats obtenus.
 
 Depuis la version 5 du  GLO , il est possible de passer une chaine de caractères ne correspondant à aucun pattern pour la recherche par adresse. Une recherche de similarité phonétique est alors déclenchée.
 
@@ -64,7 +79,7 @@ Cette nouvelle fonctionnalité est un peu plus lente que la recherche par patter
 
 <span style="background-color:lime;">**LES  VERSIONS  1, 2 ET 3 NE SONT PLUS SUPPORTÉES.**<span />  
 
-Voici des exemples de chaîne qui peuvent être soumise au service (les informations retournées seront décrites en détail à la section du présent document):
+Voici des exemples de chaîne qui peuvent être soumise au service (les informations retournées seront décrites en détail à la section du présent document):
 
 1. Adresse  
 
@@ -89,14 +104,14 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
   b) À partir d’un **code postal et un numéro civique**  
 
 
-  Si le numéro civique existe, Ex :  <span style="color:blue">**G1M 2L1, 1715**</span>
+  Si le numéro civique existe, Ex :  <span style="color:blue">**G1M 2L1, 1715**</span>
 
   =  ►   Retourne seulement l’adresse qui correspond au numéro civique.
 
 		1715 Rue De  Merlac , Québec
 
 
-  Si le numéro civique n’existe pas,   Ex : <span style="color:blue">**G1M 2L1, 1714**</span>
+  Si le numéro civique n’existe pas,   Ex : <span style="color:blue">**G1M 2L1, 1714**</span>
 
   =  ►   Retourne les adresses en utilisant les tranches de numéros civiques (gauche ou droite) qui se retrouvent à l’intérieur du code postal.
 
@@ -123,7 +138,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 		511 Boulevard Sabourin,  Vald’Or
 
 
-  Si le numéro civique n’existe pas,   Ex:   <span style="color:blue">**J9P4X2 , 510 Sabourin**</span>
+  Si le numéro civique n’existe pas,   Ex:   <span style="color:blue">**J9P4X2 , 510 Sabourin**</span>
 
   =  ►   Retourne les adresses en utilisant les tranches de numéros civiques (gauche ou droite) qui se retrouvent sur la rue spécifiée et à l’intérieur du code postal.
 
@@ -160,7 +175,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
   e) À partir d’un **numéro civique et un nom de rue**  
 
 
-  Si la combinaison numéro civique + rue existe, Ex : **<span style="color:  blue">100, Blais**</span>
+  Si la combinaison numéro civique + rue existe, Ex : **<span style="color:  blue">100, Blais**</span>
 
   =  ►   Retournetoutes les adresses (no. civique, la rue et la ville) pour toutes les villes du Québec qui ont une rue et un numéro civique correspondant.
 
@@ -197,7 +212,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
     450 6e Avenue, Shawinigan
     ```  
 
-  Note :
+  Note :
   Il n’est pas nécessaire d’écrire 'rue', 'route', 'rang', 'avenue', etc.  
   *La version 6 prend en compte les génériques*
 
@@ -241,9 +256,9 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 
       La Vallée-du-Richelieu (MRC)
 
-  i) Une fonctionnalité de recherche textuelle a été ajoutée dans les cas où le résultat pour tous les patterns précédents donne « 0 » ou « aucun résultat ».  
+  i) Une fonctionnalité de recherche textuelle a été ajoutée dans les cas où le résultat pour tous les patterns précédents donne « 0 » ou « aucun résultat ».  
 
-		 Ex : 2525  boul  Laurier Québec  G1V   2L2  
+		 Ex : 2525  boul  Laurier Québec  G1V   2L2  
 
   = ►  Retourne un résultat provenant de la base de données d’adresses. La recherche se fait dans le champ <  RECHERCHE_TEXTUELLE  > qui contient l’adresse au complet, le code postal, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.
 
@@ -257,18 +272,18 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 
 	Ex :   <span style="color:blue">**LacPoulin**</span> ou <span style="color:blue">**Mcdo Lévis**</span>  
 
-	Retourne un résultat provenant de la base de données de Lieux d’intérêt. La recherche se fait dans le champ <  RECHERCHE_TEXTUELLE  > qui contient plusieurs informations concernant ce lieu : son nom,des mots clé, l’adresse s’il y a lieu, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.
+	Retourne un résultat provenant de la base de données de Lieux d’intérêt. La recherche se fait dans le champ <  RECHERCHE_TEXTUELLE  > qui contient plusieurs informations concernant ce lieu : son nom,des mots clé, l’adresse s’il y a lieu, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.
 
 
 3. Borne Kilométrique  
 
-	Note : avec un espace ou une virgule comme séparation
+	Note : avec un espace ou une virgule comme séparation
 
 	a) À partir d'une **valeur de kilométrage et d’un numéro de route**  
 
 	Ex :  <span style="color:blue">**108, 73**</span>
 
-	Note : Pour les bornes à chaque 100 mètres dans la région de Montréal, la syntaxe est la suivante : 66.9 40 = borne du 900e mètres au 66<sup>e </sup>kilomètre de la route 40.
+	Note : Pour les bornes à chaque 100 mètres dans la région de Montréal, la syntaxe est la suivante : 66.9 40 = borne du 900e mètres au 66<sup>e </sup>kilomètre de la route 40.
 
 	b) À partir d’un  
 
@@ -284,10 +299,10 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 		<span style="color:blue">**SORTIE Québec**</span>  
 
 	c) À partir d'une **valeur de mile du  CN**  
-	Ex :   <span style="color:blue">**CN, 50**</span>
+	Ex :   <span style="color:blue">**CN, 50**</span>
 
 	d) À partir d’un **numéro d’une aide flottante de la garde côtière canadienne**  
-	Ex : <span style="color:blue">**GCC H47**</span>
+	Ex : <span style="color:blue">**GCC H47**</span>
 
 
 4. Coordonnées GPS  
@@ -300,7 +315,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 
 		Dans la municipalité de (Bas-Saint-Laurent), à 13.9Km de Baie-des-Sables
 
-	b) À partir de coordonnées en Degrés minutes secondes 
+	b) À partir de coordonnées en Degrés minutes secondes 
 
 	Ex :  <span style="color:blue">**48 22 23, -67 34 21**</span>
 
@@ -343,7 +358,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informa
 		__certitude de 90% dans un rayon de 100m__ Dans la municipalité de (Chaudière-Appalaches), à 2.3Km de Québec
 
 
-	**Notes pour la recherche par GPS:**
+	**Notes pour la recherche par GPS:**
 
 	On peut inscrire dans l'ordre  Lat /Long ou Long/ Lat  avec, ou sans le signe négatif. De plus, on peut utiliser le **point** ou **l'espace** pour séparer les degrés/minutes/secondes.  
 
@@ -400,20 +415,20 @@ pour la version 5 du service
 	[Le lien ne fonctionne pas](http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeur.php?WSDL)
 
 
-Voici les méthodes présentement supportées par le service :
+Voici les méthodes présentement supportées par le service :
 
 *     Geocoder() – _Pour les recherches d’adresses, de lieux ou des éléments du réseau d’Hydro-Québec_
 *     GeocoderBorne()  
 *     GeocoderGPS()  
 
 
-**Note** : les recherches par coordonnées GPS et par borne kilométrique sont traitées dans des méthodes séparées, car elles requièrent une réponse et une structure particulière.
+**Note** : les recherches par coordonnées GPS et par borne kilométrique sont traitées dans des méthodes séparées, car elles requièrent une réponse et une structure particulière.
 
 <a id="requete"></a>
 ###Structure des requêtes SOAP (XML) [<span class="octicon octicon-link"></span>](#requete)
 
 
-Pour les requêtes d’adresse, de lieux ou d’éléments du réseau d’Hydro-Québec, la structure SOAP pour le message à envoyer prends la forme suivante :
+Pour les requêtes d’adresse, de lieux ou d’éléments du réseau d’Hydro-Québec, la structure SOAP pour le message à envoyer prends la forme suivante :
 
 **Version 5 :**
 
@@ -440,7 +455,7 @@ Tout comme pour le mode par appel URL, les trois paramètres obligatoires sont :
 	le texte à géocoder (<texte>)
 
 
-**VERSION 5 :**
+**VERSION 5 :**
 
 
 Pour les deux autres types de géocodage (par borne ou coordonnées GPS), la structure est exactement la même excepté que le nom de la requête :
@@ -474,7 +489,7 @@ Requête par coordonnées GPS :
 
 La réponse en format XML qui est retournée par le service (ou via l’URL) peut être facilement décortiquée par l’application appelante.Chaque type de requête retourne généralement; le nombre d’enregistrement, une liste d’attributs pour chacune des occurrences de la réponse correspondant à la chaîne de caractères reçue en paramètre.On retrouve aussi les coordonnées de la localisation de l’information obtenue de l’entrepôt de donné du  MSP . Enfin, on trouvera quelques métadonnées qualifiant la donnée.
 
-Extrait de la réponse XML d’une recherche d’adresse (par code postal soit «  <span style="color:blue">**G1M2L1**</span>  »):
+Extrait de la réponse XML d’une recherche d’adresse (par code postal soit «  <span style="color:blue">**G1M2L1**</span>  »):
 **Version 5 :**
 
 ```xml
@@ -548,11 +563,11 @@ Extrait de la réponse XML d’une recherche d’adresse (par code postal soit 
 <a id="version"></a>
 ####Versions du service Web ( GLO )  [<span class="octicon octicon-link"></span>](#version)
 
-Version 1 : Version initiale
+Version 1 : Version initiale
 
-Version 2 : 14 octobre 2009
+Version 2 : 14 octobre 2009
 
-La différence majeure entre les deux versions se retrouve au niveau des recherches par adresse.Le géocodage est maintenant plus précis c’est à dire que le positionnement peut se faire directement sur le numéro civique (grâce au rôle d’évaluation) et non plus sur une tranche d’adresse seulement comme c’était le cas avec la version #1 du service :
+La différence majeure entre les deux versions se retrouve au niveau des recherches par adresse.Le géocodage est maintenant plus précis c’est à dire que le positionnement peut se faire directement sur le numéro civique (grâce au rôle d’évaluation) et non plus sur une tranche d’adresse seulement comme c’était le cas avec la version #1 du service :
 
 Ancien champs de la version #1:
 ```xml
@@ -570,7 +585,7 @@ Remplacés par les nouveaux champs de la version #2:
 	<  noCiviqFinGauche  >
 ```
 
-Version 3 : décembre 2010
+Version 3 : décembre 2010
 
 La version 3 du  GLO  comprend l’ajout des champs suivants:  CODE_MUNCP ,  NO_MATRICULE ,  NO_SEQ_ODONM  du  DGE .   Cette version comprend également l’ajout d’une recherche d'adresse textuelle améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté. La recherche par Lieux d’intérêt est également grandement améliorée.
 
