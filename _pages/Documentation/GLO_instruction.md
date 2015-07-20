@@ -4,7 +4,11 @@ layout: general
 iconedocumentation: ""
 submenu:
   - { hook: "introduction",    title: "Introduction" }
-  - { hook: "type", title: "Type de recherche"}
+  - { hook: "type", title: "Type de recherche",
+      submenu:
+        - {hook: "test", title: "test"}
+        - { hook: "test2", title:"test2"}
+    }
   - { hook: "chaine", title: "Chaîne de caractères de recherche" }
   - { hook: "mode", title: "Deux modes d’utilisation" }
   - { hook: "requete", title: "Structure des requêtes SOAP (XML)" }
