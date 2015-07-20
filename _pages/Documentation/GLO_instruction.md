@@ -4,7 +4,7 @@ layout: general
 iconedocumentation: ""
 submenu:
   - { hook: "introduction",    title: "Introduction" }
-  - { hook: "type", title: "Type de recherche", test:"pateae"}
+  - { hook: "type", title: "Type de recherche"}
   - { hook: "chaine", title: "Chaîne de caractères de recherche" }
   - { hook: "mode", title: "Deux modes d’utilisation" }
   - { hook: "requete", title: "Structure des requêtes SOAP (XML)" }
