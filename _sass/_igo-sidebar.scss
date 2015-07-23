@@ -41,7 +41,7 @@
 #wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
     width: 250px;
 	position: fixed;
-	top: 200px;
+	top: 50px;
 	opacity: 0.9;
 }
 
@@ -86,7 +86,7 @@
 	display: inline-block;
 	float: left;
 	position: fixed;
-	top: 155px;
+	top: 50px;
 	z-index: 999;
 	display: block;
 	width: auto;
@@ -176,11 +176,11 @@
 	list-style: none;
 }
 
-.sidebar-nav > .sidebar-submenu1 {
+.sidebar-nav > .sidebar-submenu2 {
   top: 0px;
   position: relative;}
 
-.sidebar-nav li > .sidebar-submenu2 {
+.sidebar-submenu2 > .sidebar-brand2 {
   padding: 0 0 0 35px; }
 
 #wrapper .hautpage{ //Lien retourner en haut de la page
@@ -206,13 +206,13 @@
 /* ---------------- 500px ---------------------------- */
 @media screen and (min-width: $screen-xs-min) {
  	#icone-sidebar{
-		top: 150px;
+		top: 25px;
 	}
 	#sidebar-wrapper {
-		top: 150px;
+		top: 25px;
 	}
 	#page-content-wrapper { // Contenu principal, incluant le bouton, position à partir du header
-		padding-top: 40px;
+		padding-top: 20px;
 	}
 	#wrapper .container{
 		margin-left: 45px;
@@ -242,7 +242,7 @@
 		left: 250px;
 		width: 0;
 		height: 100%;
-		top: 280px;
+		top: 50px;
 		margin-left: -250px;
 		overflow-y: auto;
 		overflow-x: hidden;
@@ -255,7 +255,7 @@
 
 	#wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
 		width: 250px;
-		top: 280px;
+		top: 50px;
 	}
 
 	#wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
@@ -300,7 +300,7 @@
 		top: 325px;
 	}
 	#sidebar-wrapper {
-		top: 280px;
+		top: 50px;
 	}
 
 }
