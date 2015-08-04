@@ -3,17 +3,17 @@
   <channel>
     <title>IGO Infrastructure Géomatique Ouverte</title>
     <description>IGO est une solution Web gratuite en géomatique.</description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Aug 2015 15:43:39 -0400</pubDate>
-    <lastBuildDate>Tue, 04 Aug 2015 15:43:39 -0400</lastBuildDate>
+    <link>http://igouverte.org/</link>
+    <atom:link href="http://igouverte.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 04 Aug 2015 16:26:18 -0400</pubDate>
+    <lastBuildDate>Tue, 04 Aug 2015 16:26:18 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Lancement de IGO</title>
         <description>&lt;div id=&quot;blogue-lancementjuin2015&quot;&gt;
     &lt;div class=&quot;img entete&quot; markdown=&quot;1&quot; &gt;
-        &lt;img itemprop=&quot;image&quot; src=&quot;/assets/img/blogue/2015-06-entete.png&quot;  alt=&quot;entête&quot; /&gt;
+        &lt;img itemprop=&quot;image&quot; src=&quot;http://igouverte.org/assets/img/blogue/2015-06-entete.png&quot;  alt=&quot;entête&quot; /&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;bleu&quot; markdown=&quot;1&quot; &gt;
@@ -31,7 +31,7 @@
     &lt;/div&gt; --&gt;
 
     &lt;div class=&quot;img separateur&quot; markdown=&quot;1&quot; &gt;
-        &lt;img src=&quot;/assets/img/blogue/2015-06-separateur.png&quot; alt=&quot;séparateur&quot; /&gt;
+        &lt;img src=&quot;http://igouverte.org/assets/img/blogue/2015-06-separateur.png&quot; alt=&quot;séparateur&quot; /&gt;
     &lt;/div&gt;
     
     &lt;div class=&quot;gauche&quot; markdown=&quot;1&quot; &gt;
@@ -49,13 +49,13 @@
     &lt;/div&gt;
 
     &lt;div class=&quot;img droite&quot; markdown=&quot;1&quot; &gt;
-        &lt;img src=&quot;/assets/img/blogue/2015-06-site.jpg&quot; alt=&quot;Impression écran&quot; /&gt;
+        &lt;img src=&quot;http://igouverte.org/assets/img/blogue/2015-06-site.jpg&quot; alt=&quot;Capture écran&quot; /&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;clear&quot;  &gt;&lt;/div&gt;
 
     &lt;div class=&quot;&quot; markdown=&quot;1&quot; &gt;
-        &lt;h3&gt;Le développement d’IGO a été rendu possible grâce au travail en géomatique de plusieurs organisations publiques de l&#39;administration publique québécoise:&lt;/h3&gt;
+        &lt;h3&gt;Le développement d’IGO a été rendu possible grâce au travail en géomatique de plusieurs organisations publiques de l&#39;administration publique québécoise :&lt;/h3&gt;
         &lt;ul&gt;
             &lt;li&gt;le Centre de services partagés du Québec (CSPQ); &lt;/li&gt;
             &lt;li&gt;la Commission de protection du territoire agricole (CPTAQ); &lt;/li&gt;
@@ -83,13 +83,13 @@
     &lt;/div&gt;
 
     &lt;div class=&quot;img gauche&quot; markdown=&quot;1&quot;  &gt;
-        &lt;img src=&quot;/assets/img/blogue/2015-06-ordinateur.jpg&quot; alt=&quot;Image écran&quot; /&gt;
+        &lt;img src=&quot;http://igouverte.org/assets/img/blogue/2015-06-ordinateur.jpg&quot; alt=&quot;Image d&#39;un ordinateur&quot; /&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;droite&quot; markdown=&quot;1&quot; &gt;
-&lt;p&gt;         IGO découle du projet G.O.LOC (&lt;a href=&quot;http://geoegl.msp.gouv.qc.ca/accueil/portail_geo/goloc.htm&quot;&gt;système de Gestion des opérations de localisation et de cartographie&lt;/a&gt;) mis en oeuvre par des des spécialistes en géomatique du MSP et par la suite en collaboration avec des experts de l’Institut national de santé publique du Québec (INSPQ).Ce projet G.O.LOC a ensuite attiré l’attention d’autres ministères et organismes gouvernementaux. Cet intérêt, qui s’est traduit par la mise en place d’un réseau d’échanges entre le MSP, l’INSPQ, le MCC, la FADQ, le MTQ, la CPTAQ et le CSPQ, a mené à la création commune d&#39;IGO comme solution Web gratuite en géomatique adaptée aux besoins de la communauté qui en est membre. Comme IGO est une évolution de G.O.LOC développée par le MSP et l&#39;INSPQ entre 2010 et 2013, plusieurs parties de son code source ouvert ont été réutilisées dans IGO.
+&lt;p&gt;IGO découle du projet G.O.LOC (&lt;a href=&quot;http://geoegl.msp.gouv.qc.ca/accueil/portail_geo/goloc.htm&quot;&gt;système de Gestion des opérations de localisation et de cartographie&lt;/a&gt;) mis en oeuvre par des des spécialistes en géomatique du MSP et par la suite en collaboration avec des experts de l’Institut national de santé publique du Québec (INSPQ).Ce projet G.O.LOC a ensuite attiré l’attention d’autres ministères et organismes gouvernementaux. Cet intérêt, qui s’est traduit par la mise en place d’un réseau d’échanges entre le MSP, l’INSPQ, le MCC, la FADQ, le MTQ, la CPTAQ et le CSPQ, a mené à la création commune d&#39;IGO comme solution Web gratuite en géomatique adaptée aux besoins de la communauté qui en est membre. Comme IGO est une évolution de G.O.LOC développée par le MSP et l&#39;INSPQ entre 2010 et 2013, plusieurs parties de son code source ouvert ont été réutilisées dans IGO.
 &lt;/p&gt;
-&lt;p&gt;         Un exemple de l&#39;interface cartographique d&#39;IGO-Navigateur en action se trouve dans la rubrique Application du &lt;a href=&quot;http://www.donnees.gouv.qc.ca/?node=/applications-geomatique&quot;&gt;site des données ouvertes du gouvernement du Québec&lt;/a&gt;. Il y a, entre autres, les casernes de pompiers, les sites et immeubles patrimoniaux répertoriés au Québec, les territoires agricoles, les îlots de chaleur et les villages relais où IGO est utilisé comme solution Web en géomatique pour visualiser les données. Cette interface est donc destinée notamment aux organisations de l&#39;administration publique québécoise voulant mettre en valeur leurs données géographiques.
+&lt;p&gt;Un exemple de l&#39;interface cartographique d&#39;IGO-Navigateur en action se trouve dans la rubrique Application du &lt;a href=&quot;http://www.donnees.gouv.qc.ca/?node=/applications-geomatique&quot;&gt;site des données ouvertes du gouvernement du Québec&lt;/a&gt;. Il y a, entre autres, les casernes de pompiers, les sites et immeubles patrimoniaux répertoriés au Québec, les territoires agricoles, les îlots de chaleur et les villages relais où IGO est utilisé comme solution Web en géomatique pour visualiser les données. Cette interface est donc destinée notamment aux organisations de l&#39;administration publique québécoise voulant mettre en valeur leurs données géographiques.
 &lt;/p&gt;
     &lt;/div&gt;
 
@@ -99,10 +99,10 @@
         &lt;h2&gt;Technologie et outils&lt;/h2&gt;
         &lt;p&gt;La technologie utilisée par IGO est associée à plusieurs logiciels libres. Ils se divisent en deux parties : &lt;/p&gt;
         &lt;ul&gt;
-            &lt;li&gt;La partie serveur :La partie serveur : &lt;a href=&quot;http://www.mapserver.org/&quot;&gt;MapServer&lt;/a&gt;, &lt;a href=&quot;https://phalconphp.com/fr/&quot;&gt;Phalcon&lt;/a&gt;,&lt;a href=&quot;http://www.apache.org/&quot;&gt; Apache&lt;/a&gt;, &lt;a href=&quot;http://project-osrm.org/&quot;&gt;Open Source Routing Machine&lt;/a&gt;,&lt;a href=&quot;http://mapserver.org/ja/mapcache/index.html&quot;&gt; MapCache&lt;/a&gt;. &lt;/li&gt;
+            &lt;li&gt;La partie serveur : &lt;a href=&quot;http://www.mapserver.org/&quot;&gt;MapServer&lt;/a&gt;, &lt;a href=&quot;https://phalconphp.com/fr/&quot;&gt;Phalcon&lt;/a&gt;,&lt;a href=&quot;http://www.apache.org/&quot;&gt; Apache&lt;/a&gt;, &lt;a href=&quot;http://project-osrm.org/&quot;&gt;Open Source Routing Machine&lt;/a&gt;,&lt;a href=&quot;http://mapserver.org/ja/mapcache/index.html&quot;&gt; MapCache&lt;/a&gt;. &lt;/li&gt;
             &lt;li&gt;La partie des librairies (IGO-Navigateur) : &lt;a href=&quot;http://openlayers.org/two/&quot;&gt;OpenLayers&lt;/a&gt;,&lt;a href=&quot;http://docs.sencha.com/extjs/3.4.0/&quot;&gt; ExtJS&lt;/a&gt;,&lt;a href=&quot;http://geoext.org/downloads.html&quot;&gt; GeoExt&lt;/a&gt; et &lt;a href=&quot;http://jquery.com/&quot;&gt; JQuery&lt;/a&gt;. Pour ce qui est de la base de données, &lt;a href=&quot;http://postgis.refractions.net/&quot;&gt;PostgreSQL/PostGIS&lt;/a&gt; et Oracle sont celles supportées et développées dans IGO. Les standards utilisés par la communauté IGO sont multiples, notamment les services Web cartographiques (WMS), les services Web d&#39;entités (WFS), les services Web de catalogage (CSW), les services Web de fond de carte en tuiles (WMTS) et les services Web de géotraitement (WPS). &lt;/li&gt;
         &lt;/ul&gt;
-        &lt;img class=&quot;techno&quot; src=&quot;/assets/img/blogue/2015-06-techno.png&quot; alt=&quot;Technologies utilisées&quot; /&gt;
+        &lt;img class=&quot;techno&quot; src=&quot;http://igouverte.org/assets/img/blogue/2015-06-techno.png&quot; alt=&quot;Technologies utilisées&quot; /&gt;
 
     &lt;/div&gt;
     
@@ -123,17 +123,17 @@
         &lt;p&gt;En ouvrant le code source au public et en partageant l&#39;expertise du gouvernement du Québec gratuitement avec le public, la communauté d&#39;IGO s&#39;agrandit et obtient des contributions non seulement des membres du public et d&#39;organisations externes l&#39;administration publique québécoise, mais également de partout dans le monde.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&quot;img separateur&quot; markdown=&quot;1&quot; &gt;
-        &lt;img src=&quot;/assets/img/blogue/2015-06-separateur.png&quot; alt=&quot;séparateur&quot; /&gt;
+        &lt;img src=&quot;http://igouverte.org/assets/img/blogue/2015-06-separateur.png&quot; alt=&quot;séparateur&quot; /&gt;
     &lt;/div&gt;
 
     &lt;div markdown=&quot;1&quot;&gt;
         &lt;h2 class=&quot;acteurs&quot;&gt;Acteur de la communauté IGO&lt;/h2&gt;
 
-        &lt;img class=&quot;pyramide&quot; src=&quot;/assets/img/blogue/2015-06-pyramide.png&quot; alt=&quot;Acteurs&quot; /&gt;
+        &lt;img class=&quot;pyramide&quot; src=&quot;http://igouverte.org/assets/img/blogue/2015-06-pyramide.png&quot; alt=&quot;Acteurs&quot; /&gt;
     &lt;/div&gt;
 
     &lt;div markdown=&quot;1&quot;&gt;
-        &lt;p&gt;Si vous désirez &lt;a href=&quot;http://www.igouverte.org/contribuer/&quot;&gt;contribuer&lt;/a&gt; à IGO, vous pouvez le faire en : &lt;/p&gt;
+        &lt;p&gt;Si vous désirez &lt;a href=&quot;http://igouverte.org/contribuer/&quot;&gt;contribuer&lt;/a&gt; à IGO, vous pouvez le faire en : &lt;/p&gt;
         &lt;ul&gt;
             &lt;li&gt;signalant des erreurs informatiques (bogues); &lt;/li&gt;
             &lt;li&gt;suggérant de nouvelles fonctionnalités, de nouveaux modules ou de nouveaux services; &lt;/li&gt;
@@ -147,7 +147,7 @@
         
         &lt;p&gt;Si vous avez des questions sur IGO, veuillez d&#39;abord vous référer à la &lt;a href=&quot;http://igouverte.org/faq/&quot;&gt;foire aux questions (FAQ)&lt;/a&gt; à ce sujet. L&#39;espace de partage du code source a été déposé dans le site d&#39;hébergement le plus répandu au monde, soit http://github.com notamment pour faciliter les contributions externes.&lt;/p&gt;
 
-        &lt;a href=&quot;https://github.com/infra-geo-ouverte/igo&quot;&gt;&lt;img class=&quot;github&quot; src=&quot;/assets/img/blogue/2015-06-github.png&quot; alt=&quot;github&quot;/&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://github.com/infra-geo-ouverte/igo&quot;&gt;&lt;img class=&quot;github&quot; src=&quot;http://igouverte.org/assets/img/blogue/2015-06-github.png&quot; alt=&quot;github&quot;/&gt;&lt;/a&gt;
 
         &lt;p&gt;N&#39;hésitez pas à communiquer avec l&#39;équipe d&#39;IGO pour plus d&#39;information : info[a]igouverte.org ou à vous inscrire à la liste courriel publique : http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique. &lt;/p&gt;
     &lt;/div&gt;
@@ -161,14 +161,14 @@
 
         &lt;p class=&quot;footnote&quot;&gt;Source : &lt;/p&gt;
 
-        &lt;a href=&quot;http://geoegl.msp.gouv.qc.ca/blogue/?p=886&quot;&gt;&lt;p class=&quot;footnote&quot;&gt;IGO : un modèle inspirant de développement inter-organisationnel:&lt;/p&gt;
+        &lt;a href=&quot;http://geoegl.msp.gouv.qc.ca/blogue/?p=886&quot;&gt;&lt;p class=&quot;footnote&quot;&gt;IGO : un modèle inspirant de développement inter-organisationnel :&lt;/p&gt;
 
         &lt;p class=&quot;footnote&quot;&gt;LA GESTION DES DONNÉES GÉOSPATIALES AU MTQ &lt;/p&gt;&lt;/a&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 10 Aug 2015 00:00:00 -0400</pubDate>
-        <link>/information/2015/08/10/Lancement%20de%20IGO/</link>
-        <guid isPermaLink="true">/information/2015/08/10/Lancement%20de%20IGO/</guid>
+        <link>http://igouverte.org/information/2015/08/10/Lancement%20de%20IGO/</link>
+        <guid isPermaLink="true">http://igouverte.org/information/2015/08/10/Lancement%20de%20IGO/</guid>
         
         <category>lancement</category>
         
