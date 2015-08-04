@@ -1,5 +1,5 @@
 Notes concernant l'installation de Jekyll:  
-Vérifier que vous avez les bonnes versions pour l'installation des différents modules.  Pour les utilisateurs d'Ubuntu, le paquet qui vient avec par défaut n'est peut-être pas à jour.
+Vérifier que vous avez les bonnes versions pour l'installation des différents modules.  Pour les utilisateurs d'Ubuntu, le paquet qui vient avec par défaut n'est peut-être pas à jour.  J'ai utilisé Ruby v.2.1.6 et Jekyll 3.0.0. Redcarpet v.3.3.2
 
 1- Installation: Voir les instructions particulières pour Windows: http://jekyll-windows.juthilo.com/
 S'il y a un problème d'encodage entrer chcp 65001 dans la ligne de commande
