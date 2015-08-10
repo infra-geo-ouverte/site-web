@@ -718,7 +718,7 @@ css du footer
 * blogue en g├®n├®ral
 ----------  */
 #posts-content img {
-  width: 85%; }
+  width: 100%; }
 
 #posts-sidebar, #post-content {
   margin-top: 20px; }
@@ -776,6 +776,9 @@ css du footer
 /* ---------------- 500px ---------------------------- */
 /* ----------------768px-----------------------------  */
 @media screen and (min-width: 768px) {
+  #posts-content img {
+    max-width: 800px; }
+
   #posts-sidebar, #posts-content {
     margin-top: 30px; }
 
