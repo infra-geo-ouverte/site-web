@@ -39,7 +39,7 @@
 }
 
 #wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
-    width: 250px;
+    	width: 250px;
 	position: fixed;
 	top: 0;
 }
@@ -55,8 +55,8 @@
 	padding-top: 30px;
 }
 #page-content-wrapper { // Contenu principal, incluant le bouton, position à partir du header
-    width: 100%;
-    padding-top: 30px;
+    	width: 100%;
+    	padding-top: 30px;
 	display: inline-block;
 }
 /* ----------------------------- */
@@ -85,7 +85,7 @@
 	display: inline-block;
 	float: left;
 	position: fixed;
-	top: 50px;
+	top: 0;
 	z-index: 999;
 	display: block;
 	width: auto;
