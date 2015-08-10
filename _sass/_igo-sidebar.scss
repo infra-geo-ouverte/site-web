@@ -41,8 +41,7 @@
 #wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
     width: 250px;
 	position: fixed;
-	top: 50px;
-	opacity: 0.9;
+	top: 0;
 }
 
 #wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
@@ -170,7 +169,7 @@
     background-color: transparent;
 }
 
-.sidebar-nav > .sidebar-brand {
+.sidebar-nav > .sidebar-brand, .sidebar-brand2 a {
     font-size: 12px;
     line-height: $base-line-height;
 	list-style: none;
