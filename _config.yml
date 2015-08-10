@@ -13,7 +13,7 @@ permalink: /:day-:month-:year-:title
 #ref: http://imakewebthings.com/blog/github-pages-email/
 
 #baseurl pour site sur github: "/site-web"  pour un site avec un cname mettre juste ""
-baseurl: ""
+baseurl: "/site-web"
 # url pour local : [http://localhost]
 url: ""
 
