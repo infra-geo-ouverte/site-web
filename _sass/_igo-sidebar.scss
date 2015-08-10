@@ -85,13 +85,13 @@
 	display: inline-block;
 	float: left;
 	position: fixed;
-	top: 0;
+	top: 175px;
 	z-index: 999;
 	display: block;
 	width: auto;
 	margin-left: 5px;
 	margin-right: 5px;
-	left: 275px;
+	
 
 }
 #page-content-wrapper .octicon{
@@ -207,6 +207,7 @@
 @media screen and (min-width: $screen-xs-min) {
  	#icone-sidebar{
 		top: 25px;
+		
 	}
 	#sidebar-wrapper {
 		top: 0;
