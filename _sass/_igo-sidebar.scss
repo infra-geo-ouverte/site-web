@@ -208,7 +208,7 @@
 		top: 25px;
 	}
 	#sidebar-wrapper {
-		top: 25px;
+		top: 0;
 	}
 	#page-content-wrapper { // Contenu principal, incluant le bouton, position à partir du header
 		padding-top: 20px;
@@ -241,7 +241,7 @@
 		left: 250px;
 		width: 0;
 		height: 100%;
-		top: 50px;
+		top: 0;
 		margin-left: -250px;
 		overflow-y: auto;
 		overflow-x: hidden;
