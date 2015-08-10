@@ -254,7 +254,7 @@
 
 	#wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
 		width: 250px;
-		top: 50px;
+		top: 0;
 	}
 
 	#wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
@@ -299,7 +299,7 @@
 		top: 325px;
 	}
 	#sidebar-wrapper {
-		top: 50px;
+		top: 0;
 	}
 
 }
