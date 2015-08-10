@@ -81,6 +81,10 @@
 	        transition: all 1s ease;
 }
 
+#wrapper.toggled #icone-sidebar{
+	left: 275px;
+}
+
 #icone-sidebar{
 	display: inline-block;
 	float: left;
@@ -206,7 +210,7 @@
 /* ---------------- 500px ---------------------------- */
 @media screen and (min-width: $screen-xs-min) {
  	#icone-sidebar{
-		top: 25px;
+		top: 175px;
 		
 	}
 	#sidebar-wrapper {
