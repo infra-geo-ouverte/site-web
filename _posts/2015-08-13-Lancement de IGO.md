@@ -6,7 +6,7 @@ categories:
 - information
 ---
 
-<div id="blogue-lancementjuin2015">
+<div id="blogue-lancementaout2015">
 	<div class="img entete" markdown="1" >
 		<img itemprop="image" src="{{ site.url }}{{ site.baseurl }}/assets/img/blogue/2015-06-entete.png"  alt="entête" />
 	</div>
