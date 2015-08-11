@@ -31,6 +31,12 @@ css du footer
 #footer .logo-med{
 	width: 60px;
 	margin-top: 20px;
+	vertical-align: top;
+	float: right;
+}
+#footer .listMenu{
+	display: inline-block;
+	margin-left: 10%;
 }
 
 #footer .logo-med:hover{ 
@@ -162,7 +168,7 @@ css du footer
 @media screen and (min-width: $screen-sm-min) {
 	#footer .logo-med{
 		padding-top: 60px;
-		margin-left: 15%;
+		margin-left: 25%;
 		width: 85px;
 		vertical-align: top;
 	}
