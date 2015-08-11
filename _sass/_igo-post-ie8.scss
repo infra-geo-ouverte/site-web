@@ -3,7 +3,7 @@
 /* post de lancement d'IGO */
 
 #blogue-lancementjuin2015{
-	width: 75%!important;
+	width: 95%!important;
 	background-color: #F5F5F5;
 }
 #blogue-lancementjuin2015 .bleu a{
@@ -59,19 +59,28 @@
 #blogue-lancementjuin2015 .gauche{
 	float: left;
 	display: inline-block;
-	width: 45%;
+	width: 100%;
 	margin-right: 5%;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+#blogue-lancementjuin2015 .gauche p{
+	display: inline-block;
+}
+#blogue-lancementjuin2015 .gauche img{
+	width: 35%;
 }
 
 #blogue-lancementjuin2015 .droite{
 	float: right;
 	display: inline-block;
 	width: 45%;
-	margin-left: 5%;
+	padding-left: 5%;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+#blogue-lancementjuin2015 .fonctionalite{
+	display: inline-block;
 }
 #blogue-lancementjuin2015 .separateur img{
 	display: block;
@@ -113,7 +122,7 @@
 	padding-left: 30px;
 }
 #posts-content img{
-	width: 85%;
+	width: 65%;
 }
 #posts-sidebar, #posts-content{
 	margin-top: 30px;
