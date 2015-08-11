@@ -20,8 +20,10 @@ css du footer
 
 #footer .logo-med{
 	width: 85px;
-	padding-top: 30px;
-    	margin-left: 400px;
+	position: absolute;
+    	left: 500px;
+    	vertical-align: top;
+    	display: inline-block;
 }
 #footer .listMenu{
 	display: inline-block;
@@ -70,7 +72,9 @@ css du footer
 * Formulaire
 ********************/
 #footer #contact{
-	float: right;
+	position: absolute;
+	width: 300px;
+	left: 300px;
 }
 #footer #contact h3{
 	color: white;
