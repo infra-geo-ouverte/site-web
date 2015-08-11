@@ -29,7 +29,7 @@ categories:
 		<img src="{{ site.url }}{{ site.baseurl }}/assets/img/blogue/2015-06-separateur.png" alt="séparateur" />
 	</div>
 	
-	<div class="gauche" markdown="1" >
+	<div class="fonctionalite" markdown="1" >
 
 		<h4>Fonctionnalités développées et en développement dans IGO</h4>
 
