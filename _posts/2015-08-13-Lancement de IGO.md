@@ -15,7 +15,7 @@ categories:
 		<p>Le premier logiciel à utiliser une licence libre en français produite par le gouvernement du Québec est de nature géomatique. En effet, cette solution libre et gratuite, nommée Infrastructure Géomatique Ouverte (IGO), a été conçue grâce à un réseau d’échanges regroupant des spécialistes et des utilisateurs en géomatique provenant de plusieurs ministères et organismes de l'administration publique québécoise.</p>
 	</div>
 	<div>
-		<p>IGO permet, entre autres, de tirer profit d’une multitude de données géographiques (patrimoine culturel, territoires agricoles, écoles, casernes de pompiers, etc.) grâce à une interface cartographique accessible par un navigateur Web. Toute la communauté géomatique ainsi que les entreprises, les municipalités, les développeurs et même les citoyens peuvent en profiter.</p>
+		<p>IGO permet, entre autres, de tirer profit d’une multitude de données géographiques (patrimoine culturel, territoires agricoles, écoles, casernes de pompiers, villages relais, etc.) grâce à une interface cartographique accessible par un navigateur Web. Toute la communauté géomatique ainsi que les entreprises, les municipalités, les développeurs et même les citoyens peuvent en profiter.</p>
 
 		<p>Les internautes de partout dans le monde sont également encouragés à contribuer à IGO de plusieurs façons en vue de l’améliorer, et ce, au bénéfice de ses utilisateurs et du gouvernement du Québec. Modèle inspirant et en constante évolution, IGO est basé sur un modèle collaboratif (« open source »).</p>
 
