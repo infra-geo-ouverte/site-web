@@ -17,7 +17,7 @@ submenu:
   - { hook: "annexe1", title: "Annexe 1: Charte du comité technique" }
   - { hook: "annexe2", title: "Annexe 2: Foire aux Questions" }
 ---
-<div id="communaute">
+
 # Acte constitutif
 
 <a id="mission"></a>
@@ -168,8 +168,9 @@ Toute personne qui souhaite participer à la communauté IGO est tenue de respec
 
 <a id="acteur" ></a>
 ##11. Schéma de gouvernance [<span class="octicon octicon-link"></span>](#acteur)
+<span id="accteurs">
 ![Acteurs de la communauté](https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/doc/Acteurs_CommunauteIGO.png)
-
+</span>
 <a id="annexe1" ></a>
 ##Annexe 1 : Charte du CT [<span class="octicon octicon-link"></span>](#annexe1)
 
@@ -257,4 +258,4 @@ Les valideurs de code sont des développeurs expérimentés. Il est possible de 
 - Mineur impair = développement (ex: 5.5). 
 - Patch = résolutions bogues = 5.4.1, 5.4.2, etc.
 
-</div>
+
