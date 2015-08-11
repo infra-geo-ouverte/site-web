@@ -167,8 +167,9 @@ Outils de communication : si vous avez d'autres questions, n'hésitez pas à co
 Toute personne qui souhaite participer à la communauté IGO est tenue de respecter cet acte constitutif. Le CT se réserve le droit d’amender cet acte à tout moment sauf dans la partie Licence du logiciel IGO où les termes de la  [licence](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt) dominent.  
 
 <a id="acteur" ></a>
+<div id="acteurs">
 ##11. Schéma de gouvernance [<span class="octicon octicon-link"></span>](#acteur)
-
+</div>
 ![Acteurs de la communauté](https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/doc/Acteurs_CommunauteIGO.png)
 
 <a id="annexe1" ></a>
