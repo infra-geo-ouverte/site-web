@@ -164,6 +164,11 @@ css du footer
 		padding-top: 60px;
 		margin-left: 5%;
 		width: 85px;
+		vertical-align: top;
+	}
+	#footer .listMenu{
+		display: inline-block;
+		margin-left: 10%;
 	}
 
 	#footer .submitContact{
