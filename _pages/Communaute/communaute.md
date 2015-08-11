@@ -17,7 +17,7 @@ submenu:
   - { hook: "annexe1", title: "Annexe 1: Charte du comité technique" }
   - { hook: "annexe2", title: "Annexe 2: Foire aux Questions" }
 ---
-
+<div id="communaute">
 # Acte constitutif
 
 <a id="mission"></a>
@@ -256,3 +256,5 @@ Les valideurs de code sont des développeurs expérimentés. Il est possible de 
 - Mineur pair = stable (ex. : 5.4, 5.6).
 - Mineur impair = développement (ex: 5.5). 
 - Patch = résolutions bogues = 5.4.1, 5.4.2, etc.
+
+</div>
