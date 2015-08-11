@@ -59,7 +59,7 @@
 #blogue-lancementjuin2015 .fonctionalite{
 	float: right;
 	display: inline-block;
-	width: 45%;
+	width: 95%;
 	margin-right: 5%;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -192,7 +192,15 @@
 /*******************************************************/
 /* ---------------- 500px ---------------------------- */
 @media screen and (min-width: $screen-xs-min) {
-
+	#blogue-lancementjuin2015 .fonctionalite{
+		float: right;
+		display: inline-block;
+		width: 45%;
+		margin-right: 5%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: justify;	
+	}
 
 }
 /* ----------------768px-----------------------------  */
