@@ -15,7 +15,7 @@ permalink: /:day-:month-:year-:title
 #baseurl pour site sur github: "/site-web"  pour un site avec un cname mettre juste ""
 baseurl: ""
 # url pour local : [http://localhost:4000]
-url: "http://igouverte.org"
+url: ""
 
 encoding: utf-8
 
