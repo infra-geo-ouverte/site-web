@@ -36,12 +36,6 @@ highlighter: pygments
 include: ['_pages']
 relative_permalinks: false
 
-pages:
-- test1: communaute.md
-- test2: contribuer.md
-
-
-
 
 #Plugin redirect ref: https://github.com/jekyll/jekyll-redirect-from
 #archives pour les archives du blogue : https://github.com/jekyll/jekyll-archives
