@@ -14,12 +14,12 @@
 	 <h2>Projet IGO</h2> 
 	  
 	  	{% for page in site.pages %}
-			{% if page.faqsection%} 
-				{{ page.title-top }} 
+			{% if page.faqsection%} <!-- si la page markdown a faqsection dans son entete -->
+				{{ page.title-top }} <!-- ajouter le nom de la page ex: FAQ (se trouve dans l'entête de faq.md) -->
 				
 				<div class="panel-group" id="{{page.faqsection}}" role="tablist" aria-multiselectable="true">
 					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="heading{{page.faqsection}}">
+						<div class="panel-heading" role="tab" id="heading{{page.faqsection}}"> <!-- entête de la faq -->
 							<h4 class="panel-title">
 								<a href="#no{{page.faqsection}}" data-toggle="collapse" data-parent="#{{page.faqsection}}" aria-expanded="true" aria-controls="no{{page.faqsection}}">
 									{{ page.titre-faq }} 
@@ -35,11 +35,6 @@
 				</div>		
 			{% endif %}
 		{% endfor %}
-
-	  
-
-	  
-        
       </div>
     </div>
 
