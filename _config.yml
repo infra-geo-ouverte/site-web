@@ -32,7 +32,7 @@ highlighter: pygments
 # ref: http://pixelcog.com/blog/2013/jekyll-from-scratch-core-architecture/
 
 include: ['_pages']
-relative_permalinks: true
+relative_permalinks: false
 
 #Plugin redirect ref: https://github.com/jekyll/jekyll-redirect-from
 #archives pour les archives du blogue : https://github.com/jekyll/jekyll-archives
