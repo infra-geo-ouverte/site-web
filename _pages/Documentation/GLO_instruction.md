@@ -385,7 +385,7 @@ b) À partir d’un **numéro de sortie et d'un numéro de route ou nom de munic
   ii. numéro de sortie d’autoroute et d’un numéro de route  
   iii. descriptif "aut" (autoroute) et numéro de l'autoroute
   iv. nom de municipalité seulement  
-  v. numéro de sortie d’autoroute et d’un nom de municipalité (Version 6 BETA)
+  v. numéro de sortie d’autoroute et d’un nom de municipalité (Version 6)
 
 Ex:  
 <span style="color:blue">**SORTIE 315**</span>  
@@ -490,7 +490,7 @@ Route 40 Est - Sortie 321 - Affichage: Boul. Raymond, rue Labelle, Ste-Brigitte-
 a) À partir de coordonnées en Degrés décimaux  
 
 Ex: <span style="color:blue">**48.843439, -67.930932**</span>  
-Possibilitées avec la version 6 BETA :  
+Possibilitées avec la version 6 :  
 <span style="color:blue">**48,843439, -67,930932**  
 **48,843439 -67,930932**  
 **48,843439 67,930932**  
@@ -508,7 +508,7 @@ Dans la municipalité de (Bas-Saint-Laurent), à 13.9Km de Baie-des-Sables
 b) À partir de coordonnées en Degrés minutes secondes
 
 Ex :  <span style="color:blue">**48 22 23, -67 34 21**</span>  
-Possibilitées avec la version 6 BETA :  
+Possibilitées avec la version 6 :  
 <span style="color:blue">
 **48 22 23. -67 34 21**  
 **48 22 23. 67 34 21**  
@@ -524,7 +524,7 @@ Dans la municipalité de Saint-Léon-le-Grand (Bas-Saint-Laurent), à 5.1Km de S
 c) À partir de coordonnées en Degrés minutes décimales
 
 Ex :  <span style="color:blue">**48 22.843, -67 34.932**</span>  
-Possibilitées avec la version 6 BETA :  
+Possibilitées avec la version 6 :  
 <span style="color:blue">
 **48 22.843 -67 34.932**  
 **48 22.843 67 34.932**  
@@ -540,7 +540,7 @@ Dans la municipalité de Saint-Léon-le-Grand (Bas-Saint-Laurent), à 5.7Km de S
 d) À partir de coordonnées en UTM-fuseau
 
 Ex :  <span style="color:blue">**UTM-18 1018490.56282, 5434191.46593**</span>
-Possibilitées avec la version 6 BETA :  
+Possibilitées avec la version 6 :  
 <span style="color:blue">
 **UTM-18 1018490.56282 5434191.46593**  
 **UTM-18 1018490,56282 5434191,46593**  
@@ -555,7 +555,7 @@ Dans la municipalité de (Bas-Saint-Laurent), à 13.9Km de Baie-des-Sables
 e) À partir de coordonnées en  MTM-fuseau
 
 Ex :   <span style="color:blue">**MTM7  493344.550863, 5414859.14264**</span>
-Possibilitées avec la version 6 BETA :  
+Possibilitées avec la version 6 :  
 <span style="color:blue">
 **MTM-7 493344.550863 5414859.14264**  
 **MTM-7 493344,550863 5414859,14264**  
@@ -581,10 +581,10 @@ __certitude de 90% dans un rayon de 100m__ Dans la municipalité de (Chaudière-
 On peut inscrire dans l'ordre  Lat /Long ou Long/ Lat  avec, ou sans le signe négatif. De plus, on peut utiliser le **point** ou **l'espace** pour séparer les degrés/minutes/secondes.  
 
 Le coordonnées doit **absolument** être séparé par une **virgule**.  
-**La version 6 BETA permet une plus grand flexibilité dans la manière d'inscrire la paire de coordonnée.**  
+**La version 6 permet une plus grand flexibilité dans la manière d'inscrire la paire de coordonnée.**  
 
 Cette fonctionnalité de recherche donne la municipalité, le toponyme le plus près et la distance à vol d'oiseau de ce dernier.  
-La version 6 BETA retourne aussi la région administrative et la MRC.  
+La version 6 retourne aussi la région administrative et la MRC.  
 
 <a id="reverse_geocoding"></a>
 ####5. Recherche inversée par coordonnée
@@ -624,7 +624,7 @@ Voici un exemple d’appel en mode HTTP.
 Pour la version 5:  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
 
-Pour la version 6 BETA:  
+Pour la version 6 :  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=JSON
 
 Liste des paramètres:
@@ -640,13 +640,13 @@ Liste des paramètres:
 | 7 | version | Paramètre qui n’est plus utilisé.  | ---- |
 | 8 | format | Permet de spécifier le type de format de sortie du fichier.  XML  HTML  JSON**  EXCEL**  JSONP**  | Oui – XML par défaut |
 | 9 | epsg_entree** | Le code EPSG des coordonnées en entrée.  Les valeurs possibles sont ceux supporté par PostGIS v2.0.1 | Non |
-| 10 | epsg_sortie** | Le code EPSG des coordonnées en sortie.  Les valeurs possibles sont ceux supporté par PostGIS v2.0.1.  Le paramètre "epsg" et "epsg_sortie" sont égaux dans la version 6 BETA | Non (32198 par défaut)|
+| 10 | epsg_sortie** | Le code EPSG des coordonnées en sortie.  Les valeurs possibles sont ceux supporté par PostGIS v2.0.1.  Le paramètre "epsg" et "epsg_sortie" sont égaux dans la version 6 | Non (32198 par défaut)|
 | 11 | groupe** | Permet de regrouper les adresses positionnées aux mêmes coordonnées et possédant les mêmes attributs.  1=regrouper  0=pas grouper | Non  (0 par défaut) |
 | 12 | callback** | Nom de la méthode à utiliser (côté client) lors du retour de la réponse. Ce paramètre est lié au format 'JSONP' | Non |
 
 <span style="color:red">
 * Si la chaîne de texte  comprends  des caractères non supportés par l’URL (les accents et les espaces entre autres), ces derniers doivent être encodés avant d’être soumis au service.En PHP, il existe une fonction pour effectuer automatiquement cette opération ( urlencode ).  
-** Avec la version 6 BETA seulement
+** Avec la version 6 seulement
 
 </span>
 
@@ -660,7 +660,7 @@ Exemple qui retourne les enregistrements mais dont les coordonnées sont dans le
 Pour la version 5:  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
 
-Pour la version 6 BETA:  
+Pour la version 6 :  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
 ou
 http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=xml
@@ -671,7 +671,7 @@ La deuxième façon est d’appeler directement le service Web en utilisant un l
 
 pour la version 5 du service:  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeur.php?WSDL
-Version 6 BETA :
+Version 6 :
 http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeur.php?WSDL  
 
 Voici les méthodes présentement supportées par le service :
@@ -682,7 +682,7 @@ Voici les méthodes présentement supportées par le service :
 *     GeocoderReverseGeocoding()**  
 *     GeocoderLieu()**
 
-** Depuis la version 6 BETA
+** Depuis la version 6 
 
 
 <a id="requete"></a>
@@ -698,7 +698,7 @@ Tout comme pour le mode par appel URL, les trois* paramètres obligatoires sont 
     *   pour les élément d’Hydro-Québec, le texte doit être préfixé du terme « HQ »;
     *   pour les adresses, aucun préfixe n’est requis.
     *   pour les bornes. les préfixes 'sortie', 'panneau', 'CN' et 'GCC' sont possibles en utilisant le bon pattern.
-    *   pour les recherches par coordonnées GPS. Certains patterns sont possibles et la version 6 BETA est plus permissive.  
+    *   pour les recherches par coordonnées GPS. Certains patterns sont possibles et la version 6 est plus permissive.  
  * le type de requête (adresse, lieu, borne, GPS)
 
 *le paramètre "type" n'est pas requis pour les requêtes borne, GPS dans la version 5. Dans la version 6, le paramère "type" n'est  
@@ -1284,7 +1284,7 @@ description    : Ajouté, Modification sur description seulement, Modification s
 commentaire    : commentaire quelconque.  
 
 <a id="v6"></a>
-**Version 6 BETA janvier 2015:**
+**Version 6 janvier 2015:**
 
 Parmi les améliorations :  
 
