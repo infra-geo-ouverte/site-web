@@ -325,9 +325,12 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informat
 <a id="lieu"></a>
 ####2. Lieu  
 
+Version 5 :  
+
 À partir de **plusieurs mots clé** (l'ordre n'a pas d'importance)  
 
-Retourne un résultat provenant de la base de données de Lieux d’intérêt. La recherche se fait dans le champ <  RECHERCHE_TEXTUELLE  > qui contient plusieurs informations concernant ce lieu : son nom,des mots clé, l’adresse s’il y a lieu, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.
+Retourne un résultat provenant de la base de données de Lieux d’intérêt. La recherche se fait dans le champ <  RECHERCHE_TEXTUELLE  > qui contient plusieurs informations concernant ce lieu : son nom,des mots clé, l’adresse s’il y a lieu, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.  
+
 
 <span style="color:blue">**Lac Poulin**</span>  
 
@@ -340,7 +343,8 @@ Retourne un résultat provenant de la base de données de Lieux d’intérêt. L
       (MDEIE) - 51 Route du Lac-Poulin, Saint-Benoît-Labre
     Pharmacie Uniprix - Élizabeth Poulin Et Jean-François Trudel (Saint-Georges (V)) (Chaudière-Appalaches)
       (MSSS) - 14650, boulevard Lacroix
-    Clinique Dr Harnois Et Poulin (Alma (V)) (Saguenay - Lac-Saint-Jean)
+    Clinique Dr Harnois Et Poulin (Alma (V)) (Saguenay - Lac-Saint-Jean)  
+    ...
   ```
 <span style="color:blue">**Mcdo Lévis**</span>  
 
@@ -364,6 +368,86 @@ Retourne un résultat provenant de la base de données de Lieux d’intérêt. L
     Mcdonald'S (Charny) (Lévis)
       (MTO) - 8000, av. des Églises
   ```
+Version 6 : 
+
+À partir de similarité entre le texte entré et la contenu du champ < RECHERCHE_TEXTUELLE >. Un poids plus grand est apporté au nom du lieu 
+comparé aux informations supplémentaires compris dans le champs < RECHERCHE_TEXTUELLE >. 
+Contrairement à la version 5, la version 6 est plus souple et trouve ses résultats selon la similarité des mots.   
+La recherche est limité à 80 résultats.
+
+<span style="color:blue">**Lac Poulin**</span>  
+
+```
+    Lac-Poulin (Lac Des Poulin ( Poulin, Lac ) )
+        (CTOP) - Chaudière-Appalaches
+    Lac-Poulin (Lac Des Poulins ( Poulin, Lac ) )
+        (CTOP) - Chaudière-Appalaches
+    Lac-Poulin (Lac Poulin )
+        (CTOP) - Chaudière-Appalaches
+    Mont-Valin (Lac Poulin De Courval ( Poulin-De Courval, Lac ) )
+        (CTOP) - Saguenay-Lac-Saint-Jean
+    Québec (Lac Poulin ( Alain, Lac ) )
+        (CTOP) - Capitale-Nationale
+    Lac-Croche (Lac Poulin ( Paulin, Lac ) )  
+    ...
+  ```
+<span style="color:blue">**Mcdo Lévis**</span>  
+
+```
+  Lévis (Bpd De Lévis *- Lévis)
+    (MSG) - 44, route du Président-Kennedy
+  Lévis (Uqar : Campus De Lévis - Lévis)
+    (MSG) - 55, rue du Mont-Marie
+  Lévis (Société De Développement Économique De Lévis (Cld) - Lévis)
+    (MSG) - 13, rue Saint-Louis (Lévis) bureau 302
+  LÉVIS (Bpd De Lévis *- Lévis)
+    (RGS) - Bureau de la publicité des droits de Lévis
+    Les promenades Lévis
+    44, route Kennedy
+    LÉVIS (Québec)
+  Lévis (Cle De Lévis (020) *- Lévis)
+    (MSG) - 1200, boulevard Alphonse-Desjardins bureau 200
+  Lévis (Hôtel-Dieu De Lévis - Lévis)
+    (MSG) - 143, rue Wolfe
+    ...
+```
+  
+<span style="color:blue">**Mcdonald Lévis**</span>  
+
+```
+    Lévis (Mcdonald ®)
+        (MRQ) - 44, route du Président-Kennedy
+    LEVIS (Restaurant Mcdonald'S)
+        (Lévis) - 7400 A RIVE SUD DE LA (BD)
+    LEVIS (** Mcdonald'S* Demenage 44 Kennedy**)
+        (Lévis) - 65 KENNEDY
+    LEVIS (Mcdonald J)
+        (Lévis) - 5 VIGIE DE LA
+    LEVIS (Restaurant Mcdonald'S)
+        (Lévis) - 5303 LOUIS H LAFONTAINE
+    ST-ROMUALD (Restaurant Mcdonald'S)
+        (Lévis) - 855 4E AVENUE
+    LEVIS (Restaurant Mcdonald'S)
+        (Lévis) - 44 KENNEDY
+    Lévis (Mcdonald ®)
+        (MRQ) - 12, rue Baribeau
+    Lévis (Mcdonald'S (St-Romuald))
+        (MTO) - 855 Av. 4
+    ST-NICOLAS (Restaurant Mcdonald'S)
+        (Lévis) - 580 116 (RTE)
+    Lévis (Mcdonald ®)
+        (MRQ) - 7400, boulevard de la Rive-Sud
+    Lévis (Restaurant Mcdonald'S)
+        (MRQ) - 527, rue Trudelle
+    Lévis (Mcdonald ®)
+        (MRQ) - 5303, rue Louis-H.-La Fontaine
+    Lévis (Mcdonald'S (Charny))
+        (MTO) - 8000, av. des Églises
+    CHARNY (Restaurant Mcdonald'S)
+        (Lévis) - 8000 EGLISES DES (AVE)
+    Lévis (Mcdonald'S (Saint-Nicolas))
+        (MTO) - 580, rte 116
+```
 
 <a id="borne_kilo"></a>
 ####3. Borne Kilométrique  
@@ -667,7 +751,8 @@ http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&tex
 
 <a id="soap"></a>
 ####2) SOAP  
-La deuxième façon est d’appeler directement le service Web en utilisant un langage de programmation (Java, .Net, PHP,  etc …). Il requiert la création d’une requête (ou message) SOAP avec les paramètres requis. Les différents paramètres ainsi que les méthodes exposées par le service Web sont définies dans le fichier  WSDL (Web Service Definition Language](http://www.w3.org/TR/wsdl "Web Service Definition Language")
+La deuxième façon est d’appeler directement le service Web en utilisant un langage de programmation (Java, .Net, PHP,  etc …). Il requiert la création d’une requête (ou message) SOAP avec les paramètres requis. 
+Les différents paramètres ainsi que les méthodes exposées par le service Web sont définies dans le fichier  WSDL (Web Service Definition Language](http://www.w3.org/TR/wsdl "Web Service Definition Language")
 
 pour la version 5 du service:  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeur.php?WSDL
@@ -1298,6 +1383,7 @@ Parmi les améliorations :
 * plus de possibilités pour la recherche par GPS en définissant le code EPSG en entrée (paramètre: epsg_entree).  
 * recherche par GPS retourne mainteannt la mrc, région administrative ( plus clairement, car elle était comprise entre paranthèse dans le noeud 'municipalite' ) et la localité qui fait référence au toponyme le plus près.
 * optimisation du code qui permet de doubler la vitesse dans la plupart des cas.  
+* le résultat de la recherche par lieu est maintenant obtenu par une recherche par similarité. Le module de postgreSQL, "pg_trgm" est utilisé.
 
 Changement dans les paramètres d'entrée :  
 
