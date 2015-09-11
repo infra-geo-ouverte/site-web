@@ -7,6 +7,25 @@ submenu:
     hook: "introduction"
     title: "Introduction"
   -
+    hook: "version"
+    title: "Historique des versions du service Web ( GLO )"
+    submenu:
+        -
+            hook: "v1"
+            title: "Version #1"
+        -
+            hook: "v2"
+            title: "Version #2"
+        -
+            hook: "v3"
+            title: "Version #3"
+        -
+            hook: "v5"
+            title: "Version #5"
+        -
+            hook: "v6"
+            title: "Version #6"
+  -
     hook: "type"
     title: "Type de recherche"
     submenu:
@@ -55,25 +74,6 @@ submenu:
         -
             hook: "reponsev6"
             title: "Version #6"
-  -
-    hook: "version"
-    title: "Versions du service Web ( GLO )"
-    submenu:
-        -
-            hook: "v1"
-            title: "Version #1"
-        -
-            hook: "v2"
-            title: "Version #2"
-        -
-            hook: "v3"
-            title: "Version #3"
-        -
-            hook: "v5"
-            title: "Version #5"
-        -
-            hook: "v6"
-            title: "Version #6"
 ---
 
 #Service web de "GéoLOcalisation (GLO)"
@@ -91,6 +91,161 @@ Le contrôle d’accès au service Web se fait via une clé d’utilisation (sem
 ### NOTE  IMPORTANTE
 
 #### Ce service ne doit pas être utilisé en mode lot. IL EST UN SERVICE EN LIGNE. Il est INTERDIT de lancer des appels par un programme, service, module quelconque qui permettrait de géocoder des milliers adresses. Si le besoin de votre organisation est de géocoder quelques centaines ou milliers d’adresses, veuillez communiquer avec nous pour l’utilisation du service  GLO  utilisable en mode lot, qui est beaucoup plus efficace. Si un organisme utilise le  GLO  pour un géocodage en lot, son accès lui sera retiré sans préavis.
+
+<a id="version"></a>
+###Historique des versions du service Web ( GLO )  [<span class="octicon octicon-link"></span>](#version)
+
+<a id="v1"></a>
+**Version 1 : Version initiale**
+
+<a id="v2"></a>
+**Version 2 : 14 octobre 2009**
+
+La différence majeure entre les deux versions se retrouve au niveau des recherches par adresse.  
+Le géocodage est maintenant plus précis c’est à dire que le positionnement peut se faire directement  
+sur le numéro civique (grâce au rôle d’évaluation) et non plus sur une tranche d’adresse seulement  
+comme c’était le cas avec la version #1 du service :  
+
+Ancien champs de la version #1:
+
+```xml
+< noCiviqDebut />  
+< noCiviqFin />
+```
+
+Remplacés par les nouveaux champs de la version #2:  
+
+```xml
+< geocodeMatchCode />  
+< noCiviq />  
+< noCiviqDebutDroite />  
+< noCiviqFinDroite />  
+< noCiviqDebutGauche />  
+< noCiviqFinGauche/ >  
+```
+<a id="v3"></a>
+**Version 3 : décembre 2010**  
+
+La version 3 du  GLO comprend l’ajout des champs suivants:
+CODE_MUNCP ,  NO_MATRICULE ,  NO_SEQ_ODONM  du  DGE .  
+Cette version comprend également l’ajout d’une recherche d'adresse textuelle améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté. La recherche par Lieux d’intérêt est également grandement améliorée.
+
+Champs de la version #3:  
+
+```xml
+< geocodeMatchCode />  
+< noCiviq />  
+< noCiviqDebutDroite />  
+< noCiviqFinDroite />  
+< noCiviqDebutGauche />  
+< noCiviqFinGauche />  
+< code_muncp />  
+< no_matricule />  
+< no_seq_adr_civique />  
+```
+
+<a id="v5"></a>
+**Version 5 : novembre 2012**
+
+Cette version comprend également l’ajout d’une recherche d'adresse de similarité phonétique améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté.
+
+Champs supplémentaire de la version #5:
+
+RemarqueListe:
+
+```xml
+<GeocoderReponse>
+  <RemarqueListe>
+    <borneDetail>
+      <texte>*Texte spécifiant la remarque*</texte>
+      <vieu>*Texte de la recherche pouvant être remplacé par le noeud 'nouveau'*</vieu>
+      <nouveau>*Texte pouvant remplacer le texte contenu dans le noeud 'vieu'*</nouveau>
+      <requeteGLO>*Le texte donné en entrée*</requeteGLO>
+    </borneDetail>
+    ...
+  <RemarqueListe/>
+<GeocoderReponse/>
+```
+
+noCiviqDebut et noCiviqFin:
+
+```xml
+<GeocoderReponse>
+  <geocoderReponseListe>
+    <borneDetail>
+      <noCiviqDebut/>
+      <noCiviqFin/>
+      ...
+    <borneDetail/>
+  <geocoderReponseListe/>
+<GeocoderReponse/>
+```
+
+CP:
+
+```xml
+<GeocoderReponse>
+  <geocoderReponseListe>
+    <borneDetail>
+          <CP>
+            <codePostal>G1V2L2</codePostal>
+            <Copyright> Marque officielle de la Societe canadienne des postes</Copyright>
+          </CP>
+          ...
+      <borneDetail/>
+    <geocoderReponseListe/>
+<GeocoderReponse/>
+
+```
+
+**<u> Ajout janvier 2014 </u>**  
+
+statut:  
+
+```xml
+<GeocoderReponse>
+  <geocoderReponseListe>
+    <borneDetail>
+      <statut>
+        <etat/>
+        <description/>
+        <commentaire/>
+      <statut/>
+    <borneDetail/>
+  <geocoderReponseListe/>
+<GeocoderReponse/>
+```
+
+Correspond aux informations sur les municipalités.  
+etat	: Officiel ou Non officiel.  
+description   : Valide, Supprimé.  
+commentaire   : correspondant à une Ancienne limite ou la ville correspondant Maintenant.  
+
+Correspond également aux informations sur les adresses.  
+etat           : Officiel ou Non officiel.  
+description    : Ajouté, Modification sur description seulement, Modification sur géométrie seulement, Modification sur géométrie et description.  
+commentaire    : commentaire quelconque.  
+
+<a id="v6"></a>
+**Version 6 janvier 2015:**
+
+Parmi les améliorations :  
+
+* le générique et l'orientation de l'odonyme est maintenant utilisé pour préciser la rechercher par adresse.  
+* un option permettant le regroupement des adresses pour une même coordonnées. Par exemple, permet ainsi d'avoir un seul résutltat pour "1 place ville-marie montréal".  
+* amélioration de la recherche par borne avec le mot clé "panneau". Ex: "panneau 40 st-raymond" permettant de donner tous les panneaux sur la route #40 contenant le mot "st-raymond".  
+* ajout du centroîde du code postal comme premier résultat lors d'une recherche par code postal seul.
+* amélioration de la recherche par intersection. La municipalité n'est plus obligatoire et l'intersection par numéro de route et autoroute est maintenant possible.  
+* un retour en JSON.  
+* une recherche de 'reverse geocoding' (recherche d'adresse par coordonnée).  
+* plus de possibilités pour la recherche par GPS en définissant le code EPSG en entrée (paramètre: epsg_entree).  
+* recherche par GPS retourne mainteannt la mrc, région administrative ( plus clairement, car elle était comprise entre paranthèse dans le noeud 'municipalite' ) et la localité qui fait référence au toponyme le plus près.
+* optimisation du code qui permet de doubler la vitesse dans la plupart des cas.  
+* le résultat de la recherche par lieu est maintenant obtenu par une recherche par similarité. Le module de postgreSQL, "pg_trgm" est utilisé.
+
+Changement dans les paramètres d'entrée :  
+
+* le code EPSG en entrée peut maintenant être fourni par "epsg_entree". L'ancien paramètre "epsg" est encore maintenu mais fait maintenant référence au nouveau paramètre "epsg_sortie".
 
 <a id="type"></a>
 ### Type de recherche [<span class="octicon octicon-link"></span>](#type)
@@ -1232,159 +1387,3 @@ Requête par coordonnées GPS :
 | 100 | Le géocodage a réussis à associer l’adresse au rôle d’évaluation |  
 | 50 | Le géocodage a positionner l’adresse entre le minimum et le maximum de la tranche d’adresse du segment par extrapolation mathématique |  
 | 35 | Le géocodage a positionner l’adresse au centre du segment de la rue (absence de minimum/maximum) |  
-
-
-<a id="version"></a>
-####Versions du service Web ( GLO )  [<span class="octicon octicon-link"></span>](#version)
-
-<a id="v1"></a>
-**Version 1 : Version initiale**
-
-<a id="v2"></a>
-**Version 2 : 14 octobre 2009**
-
-La différence majeure entre les deux versions se retrouve au niveau des recherches par adresse.  
-Le géocodage est maintenant plus précis c’est à dire que le positionnement peut se faire directement  
-sur le numéro civique (grâce au rôle d’évaluation) et non plus sur une tranche d’adresse seulement  
-comme c’était le cas avec la version #1 du service :  
-
-Ancien champs de la version #1:
-
-```xml
-< noCiviqDebut />  
-< noCiviqFin />
-```
-
-Remplacés par les nouveaux champs de la version #2:  
-
-```xml
-< geocodeMatchCode />  
-< noCiviq />  
-< noCiviqDebutDroite />  
-< noCiviqFinDroite />  
-< noCiviqDebutGauche />  
-< noCiviqFinGauche/ >  
-```
-<a id="v3"></a>
-**Version 3 : décembre 2010**  
-
-La version 3 du  GLO comprend l’ajout des champs suivants:
-CODE_MUNCP ,  NO_MATRICULE ,  NO_SEQ_ODONM  du  DGE .  
-Cette version comprend également l’ajout d’une recherche d'adresse textuelle améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté. La recherche par Lieux d’intérêt est également grandement améliorée.
-
-Champs de la version #3:  
-
-```xml
-< geocodeMatchCode />  
-< noCiviq />  
-< noCiviqDebutDroite />  
-< noCiviqFinDroite />  
-< noCiviqDebutGauche />  
-< noCiviqFinGauche />  
-< code_muncp />  
-< no_matricule />  
-< no_seq_adr_civique />  
-```
-
-<a id="v5"></a>
-**Version 5 : novembre 2012**
-
-Cette version comprend également l’ajout d’une recherche d'adresse de similarité phonétique améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté.
-
-Champs supplémentaire de la version #5:
-
-RemarqueListe:
-
-```xml
-<GeocoderReponse>
-  <RemarqueListe>
-    <borneDetail>
-      <texte>*Texte spécifiant la remarque*</texte>
-      <vieu>*Texte de la recherche pouvant être remplacé par le noeud 'nouveau'*</vieu>
-      <nouveau>*Texte pouvant remplacer le texte contenu dans le noeud 'vieu'*</nouveau>
-      <requeteGLO>*Le texte donné en entrée*</requeteGLO>
-    </borneDetail>
-    ...
-  <RemarqueListe/>
-<GeocoderReponse/>
-```
-
-noCiviqDebut et noCiviqFin:
-
-```xml
-<GeocoderReponse>
-  <geocoderReponseListe>
-    <borneDetail>
-      <noCiviqDebut/>
-      <noCiviqFin/>
-      ...
-    <borneDetail/>
-  <geocoderReponseListe/>
-<GeocoderReponse/>
-```
-
-CP:
-
-```xml
-<GeocoderReponse>
-  <geocoderReponseListe>
-    <borneDetail>
-          <CP>
-            <codePostal>G1V2L2</codePostal>
-            <Copyright> Marque officielle de la Societe canadienne des postes</Copyright>
-          </CP>
-          ...
-      <borneDetail/>
-    <geocoderReponseListe/>
-<GeocoderReponse/>
-
-```
-
-**<u> Ajout janvier 2014 </u>**  
-
-statut:  
-
-```xml
-<GeocoderReponse>
-  <geocoderReponseListe>
-    <borneDetail>
-      <statut>
-        <etat/>
-        <description/>
-        <commentaire/>
-      <statut/>
-    <borneDetail/>
-  <geocoderReponseListe/>
-<GeocoderReponse/>
-```
-
-Correspond aux informations sur les municipalités.  
-etat	: Officiel ou Non officiel.  
-description   : Valide, Supprimé.  
-commentaire   : correspondant à une Ancienne limite ou la ville correspondant Maintenant.  
-
-Correspond également aux informations sur les adresses.  
-etat           : Officiel ou Non officiel.  
-description    : Ajouté, Modification sur description seulement, Modification sur géométrie seulement, Modification sur géométrie et description.  
-commentaire    : commentaire quelconque.  
-
-<a id="v6"></a>
-**Version 6 janvier 2015:**
-
-Parmi les améliorations :  
-
-* le générique et l'orientation de l'odonyme est maintenant utilisé pour préciser la rechercher par adresse.  
-* un option permettant le regroupement des adresses pour une même coordonnées. Par exemple, permet ainsi d'avoir un seul résutltat pour "1 place ville-marie montréal".  
-* amélioration de la recherche par borne avec le mot clé "panneau". Ex: "panneau 40 st-raymond" permettant de donner tous les panneaux sur la route #40 contenant le mot "st-raymond".  
-* ajout du centroîde du code postal comme premier résultat lors d'une recherche par code postal seul.
-* amélioration de la recherche par intersection. La municipalité n'est plus obligatoire et l'intersection par numéro de route et autoroute est maintenant possible.  
-* un retour en JSON.  
-* une recherche de 'reverse geocoding' (recherche d'adresse par coordonnée).  
-* plus de possibilités pour la recherche par GPS en définissant le code EPSG en entrée (paramètre: epsg_entree).  
-* recherche par GPS retourne mainteannt la mrc, région administrative ( plus clairement, car elle était comprise entre paranthèse dans le noeud 'municipalite' ) et la localité qui fait référence au toponyme le plus près.
-* optimisation du code qui permet de doubler la vitesse dans la plupart des cas.  
-* le résultat de la recherche par lieu est maintenant obtenu par une recherche par similarité. Le module de postgreSQL, "pg_trgm" est utilisé.
-
-Changement dans les paramètres d'entrée :  
-
-* le code EPSG en entrée peut maintenant être fourni par "epsg_entree". L'ancien paramètre "epsg" est encore maintenu mais fait maintenant référence au nouveau paramètre "epsg_sortie".
