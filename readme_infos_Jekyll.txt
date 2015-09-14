@@ -1,11 +1,18 @@
-Étapes pour Jekyll:
+Notes concernant l'installation de Jekyll:  
+Vérifier que vous avez les bonnes versions pour l'installation des différents modules.  Pour les utilisateurs d'Ubuntu, le paquet qui vient avec par défaut n'est peut-être pas à jour.  J'ai utilisé Ruby v.2.1.6 et Jekyll 3.0.0. Redcarpet v.3.3.2
 
-1- Installation: Voir les instructions particulières pour Windows
+1- Installation: Voir les instructions particulières pour Windows: http://jekyll-windows.juthilo.com/
 S'il y a un problème d'encodage entrer chcp 65001 dans la ligne de commande
 S'il y a un problème pour installer un gem: mettre la source http au lieu de https:
 gem sources -r http://rubygems.org
 gem sources -a https://rubygems.org
+Il faut installer Redcarpet, c'est ce qui a été utilisé pour le format de markdown
 
+pour ubuntu 14.04:
+sudo apt-get install ruby ruby-dev make gcc nodejs
+sudo gem install jekyll --no-rdoc --no-ri
+sudo gem install github-pages --no-rdoc --no-ri 
+apres le 'jekyll serve' répond de la bonne façon
 
 2- Références générales:
 http://jekyllrb.com/docs/installation/  - site officiel de jekyll
@@ -16,6 +23,7 @@ https://www.andrewmunsell.com/tutorials/jekyll-by-example - Tutoriel
 Sinon les liens ne fonctionnent pas.  
 Ou ajuster url: "[http://localhost]" dans le _config.yml
 http://christopheducamp.com/2013/12/21/demarrer-avec-pages-github/  - Tutoriel pour installer Jekyll avec localhost et utiliser le lien: http://localhost:4000/IGO-gh-pages//
+Vous pourrez ensuite accéder au site local à l'adresse: localhost:4000  (on doit avoir mis Jekyll en mode serve pour visualiser le site sur le localhost, voir note 5)
 
 4- Référence pour Github:
 https://help.github.com/articles/user-organization-and-project-pages/ 
@@ -29,14 +37,15 @@ Faire un build et un serve ou autres commande dépendant de ce qu'on veut faire
 
 FICHIERS:
 
-_config.yml : fichier de configuration Jekyll
+_config.yml : fichier de configuration Jekyll, lire la documentation à l'intérieur du ficier avant de changer quoi que ce soit.
+En principe, seulement le localhost devrait être ajouté ou enlevé dépendant de l'environnement de travail.
 
 Dossiers:
--includes: template partiel comme le header, footer...
+-includes: templates partiels comme le header, footer...
 _layouts: fichier html, différents layouts pour différents type de page, c'est là qu'on met les html autour du contenu des .md
 _posts ou _pages: pour les markdown ou html/textile, (pages pour le site, post s'il y a un blogue)
 
-Quand on change quelque chose dans le _config.yml il faut refaire un jekyll build
+Quand on change quelque chose dans le _config.yml il faut refaire un jekyll build dans la console.
 Faire un jekyll serve dans la boite de commandes pour que la mise à jour du site se fasse au fur et à mesure (contenu)
 
 jekyll serve --watch  : pour faire le build automatiquement à chaque fois,  ctrl-c pour arrêter/sortir
@@ -46,7 +55,7 @@ CRÉER UN THEME
 
 Créer un nouveau fichier dans le dossier _layouts nommez le default.html. Ceci sera le layout par défaut utilisé par la majorité des pages. 
 
-Jekyll has three main “global” variables that are always available for Liquid templates to use: ---  site, page, and content ---.
+Jekyll a trois variable globales principales qui sont toujours disponible pour le "templating" avec Liquid  ---  site, page, and content ---.
 
 ---------------  _config.yml ----------------------------------
 
@@ -94,7 +103,6 @@ Support Préprocesseur
 
 Jekyll supporte désormais Sass et CoffeeScript sans quelque besoin de plug-ins ou de fichiers Grunt. 
 Vous pouvez inclure vos fichiers .sass, .scss et .coffee n’importe où dans votre répertoire de site web, et Jekyll les traitera, en produisant un fichier .css dans ce même répertoire.
-It’s Sass time ! (Crédit Image : Sass)
 
 Pour vous assurer que vos fichiers .sass, .scss et .coffee soient traités, démarrez le fichier avec deux lignes de trois tirets, comme ceci :
 
@@ -113,7 +121,8 @@ sass:
   
 ---------------- Images --------------------------
 
-Je stocke mes images dans un répertoire /images/ et n’ai pas encore connu quelque problème de performance. Si votre site web est hébergé sur GitHub Pages, alors les images seront servies par le réseau de contenu super rapide de GitHub. Je n’ai pas trouvé le besoin de les stocker ailleurs à cette heure, mais si je voulais migrer mes images vers un endroit comme CloudFront, alors le fait de pointer simplement tous mes liens images vers un répertoire sur ce serveur serait suffisamment aisé.
+Je stocke mes images dans un répertoire /images/ et n’ai pas encore connu quelque problème de performance. Si votre site web est hébergé sur GitHub Pages, alors les images seront servies par le réseau de contenu super rapide de GitHub. 
+Je n’ai pas trouvé le besoin de les stocker ailleurs à cette heure, mais si je voulais migrer mes images vers un endroit comme CloudFront, alors le fait de pointer simplement tous mes liens images vers un répertoire sur ce serveur serait suffisamment aisé.
 
 J’aime la simplicité de sauvegarder une image vers le dossier /images/ et puis de faire un lien vers elle dans le contenu. Le Markdown pour inclure une image dans le contenu est simple :
 
@@ -123,7 +132,7 @@ FICHIERS Markdown
 
 Les fichiers .md doivent être placés dans le dossier _pages ou _posts (voir la nomenclature de post au besoin date - )
 Avec le build Jekyll va transformer les fichiers pour faire des html du site, le tout sera créé dans le dossier _site.
-Ne pas modifier les fichiers du dossier _site, ce sont les fichiers créés par Jekyll qui seront utilisé pour publié le site.
+*Ne pas modifier les fichiers du dossier _site, ce sont les fichiers créés par Jekyll qui seront utilisé pour publié le site.
 
 La page d'accueil incluera le .md qui aura dans le front matter 
 ---

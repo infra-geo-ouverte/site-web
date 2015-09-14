@@ -20,8 +20,14 @@ css du footer
 
 #footer .logo-med{
 	width: 85px;
-	padding-top: 30px;
-    margin-left: 175px;
+	position: absolute;
+    	left: 500px;
+    	vertical-align: top;
+    	display: inline-block;
+}
+#footer .listMenu{
+	display: inline-block;
+	margin-left: 275px;
 }
 
 #footer .footer-mail{
@@ -39,7 +45,7 @@ css du footer
 }
 
 #footer .col-xs-12{
-	width: 33%;
+	width: 45%;
 	padding: 0 10px;
 }
 
@@ -65,7 +71,11 @@ css du footer
 /************************
 * Formulaire
 ********************/
-
+#footer #contact{
+	position: absolute;
+	width: 400px;
+	left: 200px;
+}
 #footer #contact h3{
 	color: white;
 	text-align: left;

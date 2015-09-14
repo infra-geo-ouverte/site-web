@@ -167,9 +167,11 @@ Outils de communication : si vous avez d'autres questions, n'hésitez pas à co
 Toute personne qui souhaite participer à la communauté IGO est tenue de respecter cet acte constitutif. Le CT se réserve le droit d’amender cet acte à tout moment sauf dans la partie Licence du logiciel IGO où les termes de la  [licence](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt) dominent.  
 
 <a id="acteur" ></a>
-##11. Schéma de gouvernance [<span class="octicon octicon-link"></span>](#acteur)
-![Acteurs de la communauté](https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/doc/Acteurs_CommunauteIGO.png)
 
+##11. Schéma de gouvernance [<span class="octicon octicon-link"></span>](#acteur)
+<span id="acteurs">
+![Acteurs de la communauté](https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/doc/Acteurs_CommunauteIGO.png)
+</span>
 <a id="annexe1" ></a>
 ##Annexe 1 : Charte du CT [<span class="octicon octicon-link"></span>](#annexe1)
 
@@ -256,3 +258,5 @@ Les valideurs de code sont des développeurs expérimentés. Il est possible de 
 - Mineur pair = stable (ex. : 5.4, 5.6).
 - Mineur impair = développement (ex: 5.5). 
 - Patch = résolutions bogues = 5.4.1, 5.4.2, etc.
+
+

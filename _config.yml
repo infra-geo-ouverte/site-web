@@ -5,16 +5,14 @@ name: "IGO Infrastructure Géomatique Ouverte"
 
 email: info@igouverte.org
 description: IGO est une solution Web gratuite en géomatique.
-
-permalink: /:day-:month-:year-:title
   
 # -------  URL  ------- # 
-#Voir le document IGO_documentation.org
+
 #ref: http://imakewebthings.com/blog/github-pages-email/
 
 #baseurl pour site sur github: "/site-web"  pour un site avec un cname mettre juste ""
-baseurl: "/site-web"
-# url pour local : [http://localhost]
+baseurl: ""
+# url pour local : [http://localhost:4000]
 url: ""
 
 encoding: utf-8
@@ -35,13 +33,6 @@ highlighter: pygments
 
 include: ['_pages']
 relative_permalinks: false
-
-pages:
-- test1: communaute.md
-- test2: contribuer.md
-
-
-
 
 #Plugin redirect ref: https://github.com/jekyll/jekyll-redirect-from
 #archives pour les archives du blogue : https://github.com/jekyll/jekyll-archives

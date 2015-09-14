@@ -39,10 +39,9 @@
 }
 
 #wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
-    width: 250px;
+    	width: 250px;
 	position: fixed;
-	top: 50px;
-	opacity: 0.9;
+	top: 0;
 }
 
 #wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
@@ -56,8 +55,8 @@
 	padding-top: 30px;
 }
 #page-content-wrapper { // Contenu principal, incluant le bouton, position à partir du header
-    width: 100%;
-    padding-top: 30px;
+    	width: 100%;
+    	padding-top: 30px;
 	display: inline-block;
 }
 /* ----------------------------- */
@@ -82,16 +81,21 @@
 	        transition: all 1s ease;
 }
 
+#wrapper.toggled #icone-sidebar{
+	left: 275px;
+}
+
 #icone-sidebar{
 	display: inline-block;
 	float: left;
 	position: fixed;
-	top: 50px;
+	top: 175px;
 	z-index: 999;
 	display: block;
 	width: auto;
 	margin-left: 5px;
 	margin-right: 5px;
+	
 
 }
 #page-content-wrapper .octicon{
@@ -170,7 +174,7 @@
     background-color: transparent;
 }
 
-.sidebar-nav > .sidebar-brand {
+.sidebar-nav > .sidebar-brand, .sidebar-brand2 a {
     font-size: 12px;
     line-height: $base-line-height;
 	list-style: none;
@@ -206,10 +210,11 @@
 /* ---------------- 500px ---------------------------- */
 @media screen and (min-width: $screen-xs-min) {
  	#icone-sidebar{
-		top: 25px;
+		top: 175px;
+		
 	}
 	#sidebar-wrapper {
-		top: 25px;
+		top: 0;
 	}
 	#page-content-wrapper { // Contenu principal, incluant le bouton, position à partir du header
 		padding-top: 20px;
@@ -242,7 +247,7 @@
 		left: 250px;
 		width: 0;
 		height: 100%;
-		top: 50px;
+		top: 0;
 		margin-left: -250px;
 		overflow-y: auto;
 		overflow-x: hidden;
@@ -255,7 +260,7 @@
 
 	#wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
 		width: 250px;
-		top: 50px;
+		top: 0;
 	}
 
 	#wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
@@ -300,7 +305,7 @@
 		top: 325px;
 	}
 	#sidebar-wrapper {
-		top: 50px;
+		top: 0;
 	}
 
 }

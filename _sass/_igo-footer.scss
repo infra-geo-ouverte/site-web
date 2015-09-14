@@ -31,6 +31,13 @@ css du footer
 #footer .logo-med{
 	width: 60px;
 	margin-top: 20px;
+	vertical-align: top;
+	float: right;
+	margin-right: 10%;
+}
+#footer .listMenu{
+	display: inline-block;
+	margin-left: 10%;
 }
 
 #footer .logo-med:hover{ 
@@ -162,8 +169,13 @@ css du footer
 @media screen and (min-width: $screen-sm-min) {
 	#footer .logo-med{
 		padding-top: 60px;
-		margin-left: 5%;
+		margin-right: 18%;
 		width: 85px;
+		vertical-align: top;
+	}
+	#footer .listMenu{
+		display: inline-block;
+		margin-left: 10%;
 	}
 
 	#footer .submitContact{
@@ -174,8 +186,9 @@ css du footer
 		padding-top: 35px;
 	}
 	#footer .contact1, #footer .contact2, #footer {
-	margin: 2% auto;
-	padding: 2%;
+		margin: 2% auto;
+		padding: 1%;
+		font-weight: bold;
 	}
 	#footer .wrapper{
 		padding: 0;

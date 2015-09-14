@@ -1,15 +1,10 @@
 <footer class="site-footer" id="footer">
 
 	<div class="wrapper row">
-		<!-- LOGO -->
-		<div class="col-xs-12 col-sm-3 text-center">
-			<a href="/">
-				<img class="logo-med" src="{{ '/assets/img/logo_bleu_112.png'| prepend: site.baseurl }}"  alt="Logo IGO" />
-			</a>
+	
+		<div class="col-xs-12 col-sm-6 text-left">
 
-		</div>
-		<!-- LISTE DE PAGES -->
-		<div class="col-xs-12 col-sm-6 text-center">
+			<div class="listMenu">
 			<ul class="footer listGauche">
 				{% for page in site.pages %}
 					{% if page.title-main %} 
@@ -35,13 +30,20 @@
 				{% endfor %}
 				
 			</ul>
-		</div>
+				<!-- LOGO -->
+			</div>
+			<a href="/">
+				<img class="logo-med" src="{{ '/assets/img/logo_bleu_112.png'| prepend: site.baseurl }}"  alt="Logo IGO" />
+			</a>
+
+			</div>
+		
 		<!-- FORMULAIRE -->
-		<div class="col-xs-12 col-sm-3 text-center col-form">			
+		<div class="col-xs-12 col-sm-6 text-center col-form">			
 			
 			<!-- reference pour le formulaire avec Formspree: http://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites&#151;cms-23870 -->
 			<div id="contact">
-				<h3>Contactez-nous:</h3>
+				<h3>Contactez-nous :</h3>
 				<form id="contactform" method="POST">
 
 					<input type="text" class="contact1" name="name" placeholder="Nom" />
@@ -71,7 +73,7 @@
 		</div>
 	</div>
 		<hr>
-		<p class="footer-mail text-center">Courriel: info[a]igouverte.org </p>
+		<p class="footer-mail text-center">Courriel: info[@]igouverte.org </p>
 		{% include reseau_sociaux.html %}
 		
 		<small class="copyright text-center">&copy;IGO, 2015</small>
