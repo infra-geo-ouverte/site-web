@@ -7,7 +7,7 @@ iconedemo: ""
 
 #Démonstration
 
-Vous pouvez voir un exemple de l'interface d'IGO-Navigateur en action sur le site **[des données ouvertes du gouvernement du Québec](http://geoegl.msp.gouv.qc.ca/gouvouvert/)** et un exemple de son XML pour une configuration de base : http://geoegl.msp.gouv.qc.ca/gouvouvert/
+Vous pouvez voir un exemple de l'interface d'IGO-Navigateur en action sur le site **[des données ouvertes du gouvernement du Québec](http://geoegl.msp.gouv.qc.ca/gouvouvert/)** (http://geoegl.msp.gouv.qc.ca/gouvouvert/) et un exemple de son XML pour une configuration de base : 
 
 {% highlight xml linenos %}
 <navigateur authentification="false" 
