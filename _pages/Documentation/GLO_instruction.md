@@ -7,6 +7,25 @@ submenu:
     hook: "introduction"
     title: "Introduction"
   -
+    hook: "version"
+    title: "Historique des versions du service Web ( GLO )"
+    submenu:
+        -
+            hook: "v1"
+            title: "Version #1"
+        -
+            hook: "v2"
+            title: "Version #2"
+        -
+            hook: "v3"
+            title: "Version #3"
+        -
+            hook: "v5"
+            title: "Version #5"
+        -
+            hook: "v6"
+            title: "Version #6"
+  -
     hook: "type"
     title: "Type de recherche"
     submenu:
@@ -55,25 +74,6 @@ submenu:
         -
             hook: "reponsev6"
             title: "Version #6"
-  -
-    hook: "version"
-    title: "Versions du service Web ( GLO )"
-    submenu:
-        -
-            hook: "v1"
-            title: "Version #1"
-        -
-            hook: "v2"
-            title: "Version #2"
-        -
-            hook: "v3"
-            title: "Version #3"
-        -
-            hook: "v5"
-            title: "Version #5"
-        -
-            hook: "v6"
-            title: "Version #6"
 ---
 
 #Service web de "GéoLOcalisation (GLO)"
@@ -91,6 +91,161 @@ Le contrôle d’accès au service Web se fait via une clé d’utilisation (sem
 ### NOTE  IMPORTANTE
 
 #### Ce service ne doit pas être utilisé en mode lot. IL EST UN SERVICE EN LIGNE. Il est INTERDIT de lancer des appels par un programme, service, module quelconque qui permettrait de géocoder des milliers adresses. Si le besoin de votre organisation est de géocoder quelques centaines ou milliers d’adresses, veuillez communiquer avec nous pour l’utilisation du service  GLO  utilisable en mode lot, qui est beaucoup plus efficace. Si un organisme utilise le  GLO  pour un géocodage en lot, son accès lui sera retiré sans préavis.
+
+<a id="version"></a>
+###Historique des versions du service Web ( GLO )  [<span class="octicon octicon-link"></span>](#version)
+
+<a id="v1"></a>
+**Version 1 : Version initiale**
+
+<a id="v2"></a>
+**Version 2 : 14 octobre 2009**
+
+La différence majeure entre les deux versions se retrouve au niveau des recherches par adresse.  
+Le géocodage est maintenant plus précis c’est à dire que le positionnement peut se faire directement  
+sur le numéro civique (grâce au rôle d’évaluation) et non plus sur une tranche d’adresse seulement  
+comme c’était le cas avec la version #1 du service :  
+
+Ancien champs de la version #1:
+
+```xml
+< noCiviqDebut />  
+< noCiviqFin />
+```
+
+Remplacés par les nouveaux champs de la version #2:  
+
+```xml
+< geocodeMatchCode />  
+< noCiviq />  
+< noCiviqDebutDroite />  
+< noCiviqFinDroite />  
+< noCiviqDebutGauche />  
+< noCiviqFinGauche/ >  
+```
+<a id="v3"></a>
+**Version 3 : décembre 2010**  
+
+La version 3 du  GLO comprend l’ajout des champs suivants:
+CODE_MUNCP ,  NO_MATRICULE ,  NO_SEQ_ODONM  du  DGE .  
+Cette version comprend également l’ajout d’une recherche d'adresse textuelle améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté. La recherche par Lieux d’intérêt est également grandement améliorée.
+
+Champs de la version #3:  
+
+```xml
+< geocodeMatchCode />  
+< noCiviq />  
+< noCiviqDebutDroite />  
+< noCiviqFinDroite />  
+< noCiviqDebutGauche />  
+< noCiviqFinGauche />  
+< code_muncp />  
+< no_matricule />  
+< no_seq_adr_civique />  
+```
+
+<a id="v5"></a>
+**Version 5 : novembre 2012**
+
+Cette version comprend également l’ajout d’une recherche d'adresse de similarité phonétique améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté.
+
+Champs supplémentaire de la version #5:
+
+RemarqueListe:
+
+```xml
+<GeocoderReponse>
+  <RemarqueListe>
+    <borneDetail>
+      <texte>*Texte spécifiant la remarque*</texte>
+      <vieu>*Texte de la recherche pouvant être remplacé par le noeud 'nouveau'*</vieu>
+      <nouveau>*Texte pouvant remplacer le texte contenu dans le noeud 'vieu'*</nouveau>
+      <requeteGLO>*Le texte donné en entrée*</requeteGLO>
+    </borneDetail>
+    ...
+  <RemarqueListe/>
+<GeocoderReponse/>
+```
+
+noCiviqDebut et noCiviqFin:
+
+```xml
+<GeocoderReponse>
+  <geocoderReponseListe>
+    <borneDetail>
+      <noCiviqDebut/>
+      <noCiviqFin/>
+      ...
+    <borneDetail/>
+  <geocoderReponseListe/>
+<GeocoderReponse/>
+```
+
+CP:
+
+```xml
+<GeocoderReponse>
+  <geocoderReponseListe>
+    <borneDetail>
+          <CP>
+            <codePostal>G1V2L2</codePostal>
+            <Copyright> Marque officielle de la Societe canadienne des postes</Copyright>
+          </CP>
+          ...
+      <borneDetail/>
+    <geocoderReponseListe/>
+<GeocoderReponse/>
+
+```
+
+**<u> Ajout janvier 2014 </u>**  
+
+statut:  
+
+```xml
+<GeocoderReponse>
+  <geocoderReponseListe>
+    <borneDetail>
+      <statut>
+        <etat/>
+        <description/>
+        <commentaire/>
+      <statut/>
+    <borneDetail/>
+  <geocoderReponseListe/>
+<GeocoderReponse/>
+```
+
+Correspond aux informations sur les municipalités.  
+etat	: Officiel ou Non officiel.  
+description   : Valide, Supprimé.  
+commentaire   : correspondant à une Ancienne limite ou la ville correspondant Maintenant.  
+
+Correspond également aux informations sur les adresses.  
+etat           : Officiel ou Non officiel.  
+description    : Ajouté, Modification sur description seulement, Modification sur géométrie seulement, Modification sur géométrie et description.  
+commentaire    : commentaire quelconque.  
+
+<a id="v6"></a>
+**Version 6 janvier 2015:**
+
+Parmi les améliorations :  
+
+* le générique et l'orientation de l'odonyme est maintenant utilisé pour préciser la rechercher par adresse.  
+* un option permettant le regroupement des adresses pour une même coordonnées. Par exemple, permet ainsi d'avoir un seul résutltat pour "1 place ville-marie montréal".  
+* amélioration de la recherche par borne avec le mot clé "panneau". Ex: "panneau 40 st-raymond" permettant de donner tous les panneaux sur la route #40 contenant le mot "st-raymond".  
+* ajout du centroîde du code postal comme premier résultat lors d'une recherche par code postal seul.
+* amélioration de la recherche par intersection. La municipalité n'est plus obligatoire et l'intersection par numéro de route et autoroute est maintenant possible.  
+* un retour en JSON.  
+* une recherche de 'reverse geocoding' (recherche d'adresse par coordonnée).  
+* plus de possibilités pour la recherche par GPS en définissant le code EPSG en entrée (paramètre: epsg_entree).  
+* recherche par GPS retourne mainteannt la mrc, région administrative ( plus clairement, car elle était comprise entre paranthèse dans le noeud 'municipalite' ) et la localité qui fait référence au toponyme le plus près.
+* optimisation du code qui permet de doubler la vitesse dans la plupart des cas.  
+* le résultat de la recherche par lieu est maintenant obtenu par une recherche par similarité. Le module de postgreSQL, "pg_trgm" est utilisé.
+
+Changement dans les paramètres d'entrée :  
+
+* le code EPSG en entrée peut maintenant être fourni par "epsg_entree". L'ancien paramètre "epsg" est encore maintenu mais fait maintenant référence au nouveau paramètre "epsg_sortie".
 
 <a id="type"></a>
 ### Type de recherche [<span class="octicon octicon-link"></span>](#type)
@@ -325,9 +480,12 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informat
 <a id="lieu"></a>
 ####2. Lieu  
 
+Version 5 :  
+
 À partir de **plusieurs mots clé** (l'ordre n'a pas d'importance)  
 
-Retourne un résultat provenant de la base de données de Lieux d’intérêt. La recherche se fait dans le champ <  RECHERCHE_TEXTUELLE  > qui contient plusieurs informations concernant ce lieu : son nom,des mots clé, l’adresse s’il y a lieu, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.
+Retourne un résultat provenant de la base de données de Lieux d’intérêt. La recherche se fait dans le champ <  RECHERCHE_TEXTUELLE  > qui contient plusieurs informations concernant ce lieu : son nom,des mots clé, l’adresse s’il y a lieu, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.  
+
 
 <span style="color:blue">**Lac Poulin**</span>  
 
@@ -340,7 +498,8 @@ Retourne un résultat provenant de la base de données de Lieux d’intérêt. L
       (MDEIE) - 51 Route du Lac-Poulin, Saint-Benoît-Labre
     Pharmacie Uniprix - Élizabeth Poulin Et Jean-François Trudel (Saint-Georges (V)) (Chaudière-Appalaches)
       (MSSS) - 14650, boulevard Lacroix
-    Clinique Dr Harnois Et Poulin (Alma (V)) (Saguenay - Lac-Saint-Jean)
+    Clinique Dr Harnois Et Poulin (Alma (V)) (Saguenay - Lac-Saint-Jean)  
+    ...
   ```
 <span style="color:blue">**Mcdo Lévis**</span>  
 
@@ -364,6 +523,86 @@ Retourne un résultat provenant de la base de données de Lieux d’intérêt. L
     Mcdonald'S (Charny) (Lévis)
       (MTO) - 8000, av. des Églises
   ```
+Version 6 : 
+
+À partir de similarité entre le texte entré et la contenu du champ < RECHERCHE_TEXTUELLE >. Un poids plus grand est apporté au nom du lieu 
+comparé aux informations supplémentaires compris dans le champs < RECHERCHE_TEXTUELLE >. 
+Contrairement à la version 5, la version 6 est plus souple et trouve ses résultats selon la similarité des mots.   
+La recherche est limité à 80 résultats.
+
+<span style="color:blue">**Lac Poulin**</span>  
+
+```
+    Lac-Poulin (Lac Des Poulin ( Poulin, Lac ) )
+        (CTOP) - Chaudière-Appalaches
+    Lac-Poulin (Lac Des Poulins ( Poulin, Lac ) )
+        (CTOP) - Chaudière-Appalaches
+    Lac-Poulin (Lac Poulin )
+        (CTOP) - Chaudière-Appalaches
+    Mont-Valin (Lac Poulin De Courval ( Poulin-De Courval, Lac ) )
+        (CTOP) - Saguenay-Lac-Saint-Jean
+    Québec (Lac Poulin ( Alain, Lac ) )
+        (CTOP) - Capitale-Nationale
+    Lac-Croche (Lac Poulin ( Paulin, Lac ) )  
+    ...
+  ```
+<span style="color:blue">**Mcdo Lévis**</span>  
+
+```
+  Lévis (Bpd De Lévis *- Lévis)
+    (MSG) - 44, route du Président-Kennedy
+  Lévis (Uqar : Campus De Lévis - Lévis)
+    (MSG) - 55, rue du Mont-Marie
+  Lévis (Société De Développement Économique De Lévis (Cld) - Lévis)
+    (MSG) - 13, rue Saint-Louis (Lévis) bureau 302
+  LÉVIS (Bpd De Lévis *- Lévis)
+    (RGS) - Bureau de la publicité des droits de Lévis
+    Les promenades Lévis
+    44, route Kennedy
+    LÉVIS (Québec)
+  Lévis (Cle De Lévis (020) *- Lévis)
+    (MSG) - 1200, boulevard Alphonse-Desjardins bureau 200
+  Lévis (Hôtel-Dieu De Lévis - Lévis)
+    (MSG) - 143, rue Wolfe
+    ...
+```
+  
+<span style="color:blue">**Mcdonald Lévis**</span>  
+
+```
+    Lévis (Mcdonald ®)
+        (MRQ) - 44, route du Président-Kennedy
+    LEVIS (Restaurant Mcdonald'S)
+        (Lévis) - 7400 A RIVE SUD DE LA (BD)
+    LEVIS (** Mcdonald'S* Demenage 44 Kennedy**)
+        (Lévis) - 65 KENNEDY
+    LEVIS (Mcdonald J)
+        (Lévis) - 5 VIGIE DE LA
+    LEVIS (Restaurant Mcdonald'S)
+        (Lévis) - 5303 LOUIS H LAFONTAINE
+    ST-ROMUALD (Restaurant Mcdonald'S)
+        (Lévis) - 855 4E AVENUE
+    LEVIS (Restaurant Mcdonald'S)
+        (Lévis) - 44 KENNEDY
+    Lévis (Mcdonald ®)
+        (MRQ) - 12, rue Baribeau
+    Lévis (Mcdonald'S (St-Romuald))
+        (MTO) - 855 Av. 4
+    ST-NICOLAS (Restaurant Mcdonald'S)
+        (Lévis) - 580 116 (RTE)
+    Lévis (Mcdonald ®)
+        (MRQ) - 7400, boulevard de la Rive-Sud
+    Lévis (Restaurant Mcdonald'S)
+        (MRQ) - 527, rue Trudelle
+    Lévis (Mcdonald ®)
+        (MRQ) - 5303, rue Louis-H.-La Fontaine
+    Lévis (Mcdonald'S (Charny))
+        (MTO) - 8000, av. des Églises
+    CHARNY (Restaurant Mcdonald'S)
+        (Lévis) - 8000 EGLISES DES (AVE)
+    Lévis (Mcdonald'S (Saint-Nicolas))
+        (MTO) - 580, rte 116
+```
 
 <a id="borne_kilo"></a>
 ####3. Borne Kilométrique  
@@ -385,7 +624,7 @@ b) À partir d’un **numéro de sortie et d'un numéro de route ou nom de munic
   ii. numéro de sortie d’autoroute et d’un numéro de route  
   iii. descriptif "aut" (autoroute) et numéro de l'autoroute
   iv. nom de municipalité seulement  
-  v. numéro de sortie d’autoroute et d’un nom de municipalité (Version 6 BETA)
+  v. numéro de sortie d’autoroute et d’un nom de municipalité (Version 6)
 
 Ex:  
 <span style="color:blue">**SORTIE 315**</span>  
@@ -490,7 +729,7 @@ Route 40 Est - Sortie 321 - Affichage: Boul. Raymond, rue Labelle, Ste-Brigitte-
 a) À partir de coordonnées en Degrés décimaux  
 
 Ex: <span style="color:blue">**48.843439, -67.930932**</span>  
-Possibilitées avec la version 6 BETA :  
+Possibilitées avec la version 6 :  
 <span style="color:blue">**48,843439, -67,930932**  
 **48,843439 -67,930932**  
 **48,843439 67,930932**  
@@ -508,7 +747,7 @@ Dans la municipalité de (Bas-Saint-Laurent), à 13.9Km de Baie-des-Sables
 b) À partir de coordonnées en Degrés minutes secondes
 
 Ex :  <span style="color:blue">**48 22 23, -67 34 21**</span>  
-Possibilitées avec la version 6 BETA :  
+Possibilitées avec la version 6 :  
 <span style="color:blue">
 **48 22 23. -67 34 21**  
 **48 22 23. 67 34 21**  
@@ -524,7 +763,7 @@ Dans la municipalité de Saint-Léon-le-Grand (Bas-Saint-Laurent), à 5.1Km de S
 c) À partir de coordonnées en Degrés minutes décimales
 
 Ex :  <span style="color:blue">**48 22.843, -67 34.932**</span>  
-Possibilitées avec la version 6 BETA :  
+Possibilitées avec la version 6 :  
 <span style="color:blue">
 **48 22.843 -67 34.932**  
 **48 22.843 67 34.932**  
@@ -540,7 +779,7 @@ Dans la municipalité de Saint-Léon-le-Grand (Bas-Saint-Laurent), à 5.7Km de S
 d) À partir de coordonnées en UTM-fuseau
 
 Ex :  <span style="color:blue">**UTM-18 1018490.56282, 5434191.46593**</span>
-Possibilitées avec la version 6 BETA :  
+Possibilitées avec la version 6 :  
 <span style="color:blue">
 **UTM-18 1018490.56282 5434191.46593**  
 **UTM-18 1018490,56282 5434191,46593**  
@@ -555,7 +794,7 @@ Dans la municipalité de (Bas-Saint-Laurent), à 13.9Km de Baie-des-Sables
 e) À partir de coordonnées en  MTM-fuseau
 
 Ex :   <span style="color:blue">**MTM7  493344.550863, 5414859.14264**</span>
-Possibilitées avec la version 6 BETA :  
+Possibilitées avec la version 6 :  
 <span style="color:blue">
 **MTM-7 493344.550863 5414859.14264**  
 **MTM-7 493344,550863 5414859,14264**  
@@ -581,10 +820,10 @@ __certitude de 90% dans un rayon de 100m__ Dans la municipalité de (Chaudière-
 On peut inscrire dans l'ordre  Lat /Long ou Long/ Lat  avec, ou sans le signe négatif. De plus, on peut utiliser le **point** ou **l'espace** pour séparer les degrés/minutes/secondes.  
 
 Le coordonnées doit **absolument** être séparé par une **virgule**.  
-**La version 6 BETA permet une plus grand flexibilité dans la manière d'inscrire la paire de coordonnée.**  
+**La version 6 permet une plus grand flexibilité dans la manière d'inscrire la paire de coordonnée.**  
 
 Cette fonctionnalité de recherche donne la municipalité, le toponyme le plus près et la distance à vol d'oiseau de ce dernier.  
-La version 6 BETA retourne aussi la région administrative et la MRC.  
+La version 6 retourne aussi la région administrative et la MRC.  
 
 <a id="reverse_geocoding"></a>
 ####5. Recherche inversée par coordonnée
@@ -624,7 +863,7 @@ Voici un exemple d’appel en mode HTTP.
 Pour la version 5:  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
 
-Pour la version 6 BETA:  
+Pour la version 6 :  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=JSON
 
 Liste des paramètres:
@@ -640,13 +879,13 @@ Liste des paramètres:
 | 7 | version | Paramètre qui n’est plus utilisé.  | ---- |
 | 8 | format | Permet de spécifier le type de format de sortie du fichier.  XML  HTML  JSON**  EXCEL**  JSONP**  | Oui – XML par défaut |
 | 9 | epsg_entree** | Le code EPSG des coordonnées en entrée.  Les valeurs possibles sont ceux supporté par PostGIS v2.0.1 | Non |
-| 10 | epsg_sortie** | Le code EPSG des coordonnées en sortie.  Les valeurs possibles sont ceux supporté par PostGIS v2.0.1.  Le paramètre "epsg" et "epsg_sortie" sont égaux dans la version 6 BETA | Non (32198 par défaut)|
+| 10 | epsg_sortie** | Le code EPSG des coordonnées en sortie.  Les valeurs possibles sont ceux supporté par PostGIS v2.0.1.  Le paramètre "epsg" et "epsg_sortie" sont égaux dans la version 6 | Non (32198 par défaut)|
 | 11 | groupe** | Permet de regrouper les adresses positionnées aux mêmes coordonnées et possédant les mêmes attributs.  1=regrouper  0=pas grouper | Non  (0 par défaut) |
 | 12 | callback** | Nom de la méthode à utiliser (côté client) lors du retour de la réponse. Ce paramètre est lié au format 'JSONP' | Non |
 
 <span style="color:red">
 * Si la chaîne de texte  comprends  des caractères non supportés par l’URL (les accents et les espaces entre autres), ces derniers doivent être encodés avant d’être soumis au service.En PHP, il existe une fonction pour effectuer automatiquement cette opération ( urlencode ).  
-** Avec la version 6 BETA seulement
+** Avec la version 6 seulement
 
 </span>
 
@@ -660,18 +899,19 @@ Exemple qui retourne les enregistrements mais dont les coordonnées sont dans le
 Pour la version 5:  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
 
-Pour la version 6 BETA:  
+Pour la version 6 :  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
 ou
 http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=xml
 
 <a id="soap"></a>
 ####2) SOAP  
-La deuxième façon est d’appeler directement le service Web en utilisant un langage de programmation (Java, .Net, PHP,  etc …). Il requiert la création d’une requête (ou message) SOAP avec les paramètres requis. Les différents paramètres ainsi que les méthodes exposées par le service Web sont définies dans le fichier  WSDL (Web Service Definition Language](http://www.w3.org/TR/wsdl "Web Service Definition Language")
+La deuxième façon est d’appeler directement le service Web en utilisant un langage de programmation (Java, .Net, PHP,  etc …). Il requiert la création d’une requête (ou message) SOAP avec les paramètres requis. 
+Les différents paramètres ainsi que les méthodes exposées par le service Web sont définies dans le fichier  WSDL (Web Service Definition Language](http://www.w3.org/TR/wsdl "Web Service Definition Language")
 
 pour la version 5 du service:  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeur.php?WSDL
-Version 6 BETA :
+Version 6 :
 http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeur.php?WSDL  
 
 Voici les méthodes présentement supportées par le service :
@@ -682,7 +922,7 @@ Voici les méthodes présentement supportées par le service :
 *     GeocoderReverseGeocoding()**  
 *     GeocoderLieu()**
 
-** Depuis la version 6 BETA
+** Depuis la version 6 
 
 
 <a id="requete"></a>
@@ -698,7 +938,7 @@ Tout comme pour le mode par appel URL, les trois* paramètres obligatoires sont 
     *   pour les élément d’Hydro-Québec, le texte doit être préfixé du terme « HQ »;
     *   pour les adresses, aucun préfixe n’est requis.
     *   pour les bornes. les préfixes 'sortie', 'panneau', 'CN' et 'GCC' sont possibles en utilisant le bon pattern.
-    *   pour les recherches par coordonnées GPS. Certains patterns sont possibles et la version 6 BETA est plus permissive.  
+    *   pour les recherches par coordonnées GPS. Certains patterns sont possibles et la version 6 est plus permissive.  
  * le type de requête (adresse, lieu, borne, GPS)
 
 *le paramètre "type" n'est pas requis pour les requêtes borne, GPS dans la version 5. Dans la version 6, le paramère "type" n'est  
@@ -1147,158 +1387,3 @@ Requête par coordonnées GPS :
 | 100 | Le géocodage a réussis à associer l’adresse au rôle d’évaluation |  
 | 50 | Le géocodage a positionner l’adresse entre le minimum et le maximum de la tranche d’adresse du segment par extrapolation mathématique |  
 | 35 | Le géocodage a positionner l’adresse au centre du segment de la rue (absence de minimum/maximum) |  
-
-
-<a id="version"></a>
-####Versions du service Web ( GLO )  [<span class="octicon octicon-link"></span>](#version)
-
-<a id="v1"></a>
-**Version 1 : Version initiale**
-
-<a id="v2"></a>
-**Version 2 : 14 octobre 2009**
-
-La différence majeure entre les deux versions se retrouve au niveau des recherches par adresse.  
-Le géocodage est maintenant plus précis c’est à dire que le positionnement peut se faire directement  
-sur le numéro civique (grâce au rôle d’évaluation) et non plus sur une tranche d’adresse seulement  
-comme c’était le cas avec la version #1 du service :  
-
-Ancien champs de la version #1:
-
-```xml
-< noCiviqDebut />  
-< noCiviqFin />
-```
-
-Remplacés par les nouveaux champs de la version #2:  
-
-```xml
-< geocodeMatchCode />  
-< noCiviq />  
-< noCiviqDebutDroite />  
-< noCiviqFinDroite />  
-< noCiviqDebutGauche />  
-< noCiviqFinGauche/ >  
-```
-<a id="v3"></a>
-**Version 3 : décembre 2010**  
-
-La version 3 du  GLO comprend l’ajout des champs suivants:
-CODE_MUNCP ,  NO_MATRICULE ,  NO_SEQ_ODONM  du  DGE .  
-Cette version comprend également l’ajout d’une recherche d'adresse textuelle améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté. La recherche par Lieux d’intérêt est également grandement améliorée.
-
-Champs de la version #3:  
-
-```xml
-< geocodeMatchCode />  
-< noCiviq />  
-< noCiviqDebutDroite />  
-< noCiviqFinDroite />  
-< noCiviqDebutGauche />  
-< noCiviqFinGauche />  
-< code_muncp />  
-< no_matricule />  
-< no_seq_adr_civique />  
-```
-
-<a id="v5"></a>
-**Version 5 : novembre 2012**
-
-Cette version comprend également l’ajout d’une recherche d'adresse de similarité phonétique améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté.
-
-Champs supplémentaire de la version #5:
-
-RemarqueListe:
-
-```xml
-<GeocoderReponse>
-  <RemarqueListe>
-    <borneDetail>
-      <texte>*Texte spécifiant la remarque*</texte>
-      <vieu>*Texte de la recherche pouvant être remplacé par le noeud 'nouveau'*</vieu>
-      <nouveau>*Texte pouvant remplacer le texte contenu dans le noeud 'vieu'*</nouveau>
-      <requeteGLO>*Le texte donné en entrée*</requeteGLO>
-    </borneDetail>
-    ...
-  <RemarqueListe/>
-<GeocoderReponse/>
-```
-
-noCiviqDebut et noCiviqFin:
-
-```xml
-<GeocoderReponse>
-  <geocoderReponseListe>
-    <borneDetail>
-      <noCiviqDebut/>
-      <noCiviqFin/>
-      ...
-    <borneDetail/>
-  <geocoderReponseListe/>
-<GeocoderReponse/>
-```
-
-CP:
-
-```xml
-<GeocoderReponse>
-  <geocoderReponseListe>
-    <borneDetail>
-          <CP>
-            <codePostal>G1V2L2</codePostal>
-            <Copyright> Marque officielle de la Societe canadienne des postes</Copyright>
-          </CP>
-          ...
-      <borneDetail/>
-    <geocoderReponseListe/>
-<GeocoderReponse/>
-
-```
-
-**<u> Ajout janvier 2014 </u>**  
-
-statut:  
-
-```xml
-<GeocoderReponse>
-  <geocoderReponseListe>
-    <borneDetail>
-      <statut>
-        <etat/>
-        <description/>
-        <commentaire/>
-      <statut/>
-    <borneDetail/>
-  <geocoderReponseListe/>
-<GeocoderReponse/>
-```
-
-Correspond aux informations sur les municipalités.  
-etat	: Officiel ou Non officiel.  
-description   : Valide, Supprimé.  
-commentaire   : correspondant à une Ancienne limite ou la ville correspondant Maintenant.  
-
-Correspond également aux informations sur les adresses.  
-etat           : Officiel ou Non officiel.  
-description    : Ajouté, Modification sur description seulement, Modification sur géométrie seulement, Modification sur géométrie et description.  
-commentaire    : commentaire quelconque.  
-
-<a id="v6"></a>
-**Version 6 BETA janvier 2015:**
-
-Parmi les améliorations :  
-
-* le générique et l'orientation de l'odonyme est maintenant utilisé pour préciser la rechercher par adresse.  
-* un option permettant le regroupement des adresses pour une même coordonnées. Par exemple, permet ainsi d'avoir un seul résutltat pour "1 place ville-marie montréal".  
-* amélioration de la recherche par borne avec le mot clé "panneau". Ex: "panneau 40 st-raymond" permettant de donner tous les panneaux sur la route #40 contenant le mot "st-raymond".  
-* ajout du centroîde du code postal comme premier résultat lors d'une recherche par code postal seul.
-* amélioration de la recherche par intersection. La municipalité n'est plus obligatoire et l'intersection par numéro de route et autoroute est maintenant possible.  
-* un retour en JSON.  
-* une recherche de 'reverse geocoding' (recherche d'adresse par coordonnée).  
-* plus de possibilités pour la recherche par GPS en définissant le code EPSG en entrée (paramètre: epsg_entree).  
-* recherche par GPS retourne mainteannt la mrc, région administrative ( plus clairement, car elle était comprise entre paranthèse dans le noeud 'municipalite' ) et la localité qui fait référence au toponyme le plus près.
-* optimisation du code qui permet de doubler la vitesse dans la plupart des cas.  
-
-Changement dans les paramètres d'entrée :  
-
-* le code EPSG en entrée peut maintenant être fourni par "epsg_entree". L'ancien paramètre "epsg" est encore maintenu mais fait maintenant référence au nouveau paramètre "epsg_sortie".
