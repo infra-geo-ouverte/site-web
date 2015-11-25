@@ -22,9 +22,9 @@ Depuis ce lancement, plusieurs développements ont eu lieu en cette fin d'année
 
 Au cours des quatre prochaines semaines, des nouvelles seront publiées pour présenter ces nouveautés.
 
-Si vous avez des questions sur IGO, consultez notre foire aux questions ([FAQ](http://igouverte.org/faq/)).
-
 Pour faciliter les contributions externes, l'espace de partage du code source a été déposé dans le [site d'hébergement GitHub](https://github.com).
+
+Si vous avez des questions sur IGO, consultez notre foire aux questions ([FAQ](http://igouverte.org/faq/)).
 
 Pour plus d'information, communiquez avec l'équipe d'IGO :
 <div class="contact" markdown="1" >
