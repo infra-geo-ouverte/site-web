@@ -22,4 +22,14 @@ Depuis ce lancement, plusieurs développements ont eu lieu en cette fin d'année
 
 Au cours des quatre prochaines semaines, des nouvelles seront publiées pour présenter ces nouveautés.
 
-Si vous avez des questions sur IGO, référez-vous à la foire aux questions ([FAQ](http://igouverte.org/faq/)). L'espace de partage du code source a été déposé dans le [site d'hébergement le plus répandu au monde, GitHub](https://github.com), pour faciliter les contributions externes. N'hésitez pas à communiquer avec l'équipe d'IGO pour plus d'information : info[a]igouverte.org ou à vous abonner à la [liste courriel publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique) 
+Si vous avez des questions sur IGO, consultez notre foire aux questions ([FAQ](http://igouverte.org/faq/)).
+
+Pour faciliter les contributions externes, l'espace de partage du code source a été déposé dans le [site d'hébergement GitHub](https://github.com).
+
+Pour plus d'information, communiquez avec l'équipe d'IGO :
+<div class="contact" markdown="1" >
+<ul>
+			<li>par courriel : info[a]igouverte.org</li>
+			<li>en vous abonnant  à la [liste courriel publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique) </li>
+		</ul>
+</div>
