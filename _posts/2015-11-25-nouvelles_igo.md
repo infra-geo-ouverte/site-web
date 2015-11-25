@@ -6,7 +6,7 @@ categories:
 - information
 ---
 
-Le ministère de la Sécurité publique (MSP) et ses partenaires ont annoncé en août dernier la mise en ligne d’[IGO](http://igouverte.org/) 
+Le ministère de la Sécurité publique (MSP) et ses partenaires ont annoncé en août dernier la mise en ligne d’[IGO](http://www.securitepublique.gouv.qc.ca/ministere/salle-presse/communiques/communiques.html?tx_ttnews%5Btt_news%5D=12517) 
 (Infrastructure géomatique ouverte), le premier logiciel gratuit en géomatique produit par l'administration publique 
 québécoise et utilisant une licence libre en français.
 
