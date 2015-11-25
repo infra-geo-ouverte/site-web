@@ -14,7 +14,7 @@ québécoise et utilisant une licence libre en français.
 Depuis ce lancement, plusieurs développements ont eu lieu en cette fin d'année, notamment :
 		<ul>
 			<li>le démarrage d'un nouveau projet avec des partenaires externes au gouvernement </li>
-			<li>les présentations d'IGO à Montréal et Québec </li> 
+			<li>les présentations d'IGO à Montréal et à Québec </li> 
 			<li>l'élargissement de la communauté IGO </li>
 			<li>la licence libre choisie est en voie d'être reconnue à l'internationale par l'Open Source Initiative (OSI) </li>
 		</ul>
