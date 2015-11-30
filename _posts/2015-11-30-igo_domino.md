@@ -3,7 +3,7 @@ layout: post
 title: Annonce du projet IGO sur l'effet domino (2015-2017)
 tags: [annonce-domino2015] 
 categories:
-- information, domino, sécurité publique
+- information
 ---
 
 Au début de 2015, le *Centre risque & performance* de Polytechnique Montréal, la *Direction de la sécurité civile* de la Ville de Montréal et le ministère de la Sécurité publique (MSP) ont lancé un projet géomatique qui utilise l'Infrastructure géomatique ouverte (IGO) comme solution Web.
