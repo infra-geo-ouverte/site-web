@@ -7,6 +7,57 @@ submenu:
     hook: "introduction"
     title: "Introduction"
   -
+    hook: "mode"
+    title: "Mode d’utilisation"
+    submenu:
+        -
+            hook: "http_rest_get"
+            title: "HTTP en mode GET"
+        -
+            hook: "soap"
+            title: "SOAP"
+  -
+    hook: "type"
+    title: "Type de recherche"
+  -
+    hook: "reponse"
+    title: "Réponse (JSON)"
+    submenu:
+        -
+            hook: "rep_adresse"
+            title: "Recherche d'adresse"
+        -
+            hook: "rep_lieu"
+            title: "Recherche de lieu"
+        -
+            hook: "rep_borne_kilo"
+            title: "Recherche de borne kilométrique"
+        -
+            hook: "rep_coord_gps"
+            title: "Recherche par coordonnée"
+        -
+            hook: "rep_reverse_geocoding"
+            title: "Recherche inversée par coordonnée"
+  - 
+    hook: "exemple"
+    title: "Exemple"
+    submenu:
+        -
+            hook: "adresse"
+            title: "Recherche d'adresse"
+        -
+            hook: "lieu"
+            title: "Recherche de lieu"
+        -
+            hook: "borne_kilo"
+            title: "Recherche de borne kilométrique"
+        -
+            hook: "coord_gps"
+            title: "Recherche par coordonnée"
+        -
+            hook: "reverse_geocoding"
+            title: "Recherche inversée par coordonnée"
+  -
     hook: "version"
     title: "Historique des versions du service Web ( GLO )"
     submenu:
@@ -25,55 +76,6 @@ submenu:
         -
             hook: "v6"
             title: "Version #6"
-  -
-    hook: "type"
-    title: "Type de recherche"
-    submenu:
-        -
-            hook: "adresse"
-            title: "Recherche d'adresse"
-        -
-            hook: "lieu"
-            title: "Recherche de lieu"
-        -
-            hook: "borne_kilo"
-            title: "Recherche de borne kilométrique"
-        -
-            hook: "coord_gps"
-            title: "Recherche par coordonnée"
-        -
-            hook: "reverse_geocoding"
-            title: "Recherche inversée par coordonnée"
-  -
-    hook: "mode"
-    title: "Deux modes d’utilisation"
-    submenu:
-        -
-            hook: "http_rest_get"
-            title: "HTTP"
-        -
-            hook: "soap"
-            title: "SOAP"
-  -
-    hook: "requete"
-    title: "Structure des requêtes SOAP (XML)"
-    submenu:
-        -
-            hook: "requetev5"
-            title: "Version #5"
-        -
-            hook: "requetev6"
-            title: "Version #6"
-  -
-    hook: "reponse"
-    title: "Structure des réponses SOAP (XML)"
-    submenu:
-        -
-            hook: "reponsev5"
-            title: "Version #5"
-        -
-            hook: "reponsev6"
-            title: "Version #6"
 ---
 
 #Service web de "GéoLOcalisation (GLO)"
@@ -81,186 +83,107 @@ submenu:
 <a id="introduction"></a>
 ##Introduction [<span class="octicon octicon-link"></span>](#introduction)
 
-Afin de faciliter le positionnement sur le territoire Québécois, le Ministère de la Sécurité Publique du Québec (MSP) à mis en place un service Web dédié à cette fin.Ce service de «  géolocalisation  » est entièrement interopérable et permet de localiser des adresses, des codes postaux, des rues, des municipalités, des  MRC , des toponymes, des édifices publics (écoles, hôpitaux,  CLSC , CPE), des entreprises et même des bornes kilométriques situées sur le réseau routier du Ministère des Transports ( MTQ ).  L’innovation de ce service repose sur sa haute fiabilité, son utilisation multiplateforme ainsi que sur la fréquence de ses mises à jour.
+Afin de faciliter le positionnement sur le territoire Québécois, le Ministère de la Sécurité Publique du Québec (MSP) à mis en place un service Web dédié à cette fin. Ce service de «  géolocalisation  » est entièrement interopérable et permet de localiser des adresses, des codes postaux, des rues, des municipalités, des  MRC , des toponymes, des édifices publics (écoles, hôpitaux,  CLSC , CPE), des entreprises et même des bornes kilométriques situées sur le réseau routier du Ministère des Transports ( MTQ ).  L’innovation de ce service repose sur sa haute fiabilité, son utilisation multiplateforme ainsi que sur la fréquence de ses mises à jour.
 
 
 ###Sécurité d’accès
 
-Le contrôle d’accès au service Web se fait via une clé d’utilisation (semblable à celle requise pour utiliser l’API de Google  Maps ).  Cette clé permet au  MSP  de contrôler les accès et par le fait même, le contenu de sa base de données.Les clés permettent également d’autoriser ou d’empêcher l’utilisation decertains types de recherche selon l’organisation ou l’utilisateur qui tente de se connecter.  Les clés d’accès sont émises par le  MSP  et sont contrôlées en fonction d’une suite d’adresses IP reliée au domaine Internet du requérant.Pour obtenir une clé, il suffit d’en faire la demande auprès du ministère via l’adresse de courriel suivante: [geomsp@msp.gouv.qc.ca](mailto:geomsp@msp.gouv.qc.ca).
+Le contrôle d’accès au service Web se fait via une clé d’utilisation (semblable à celle requise pour utiliser l’API de Google Maps ). Cette clé permet au  MSP  de contrôler les accès et par le fait même, le contenu de sa base de données. Les clés permettent également d’autoriser ou d’empêcher l’utilisation de certains types de recherche selon l’organisation ou l’utilisateur qui tente de se connecter.  Les clés d’accès sont émises par le  MSP  et sont contrôlées en fonction d’une suite d’adresses IP reliée au domaine Internet du requérant.Pour obtenir une clé, il suffit d’en faire la demande auprès du ministère via l’adresse de courriel suivante: [geomsp@msp.gouv.qc.ca](mailto:geomsp@msp.gouv.qc.ca).
 
 ### NOTE  IMPORTANTE
 
-#### Ce service ne doit pas être utilisé en mode lot. IL EST UN SERVICE EN LIGNE. Il est INTERDIT de lancer des appels par un programme, service, module quelconque qui permettrait de géocoder des milliers adresses. Si le besoin de votre organisation est de géocoder quelques centaines ou milliers d’adresses, veuillez communiquer avec nous pour l’utilisation du service  GLO  utilisable en mode lot, qui est beaucoup plus efficace. Si un organisme utilise le  GLO  pour un géocodage en lot, son accès lui sera retiré sans préavis.
+#### Ce service ne doit pas être utilisé en mode lot. IL EST UN SERVICE EN LIGNE. Il est INTERDIT de lancer des appels par un programme, service, module quelconque qui permettrait de géocoder des milliers adresses. Si le besoin de votre organisation est de géocoder quelques centaines ou milliers d’adresses, veuillez communiquer avec nous pour l’utilisation du service  GLO  utilisable en mode lot, qui est beaucoup plus efficace. Si un organisme utilise le  GLO  pour un géocodage en lot, son accès lui sera retiré sans préavis.  
+  
+  
+<a id="mode"></a>
+### Mode d’utilisation [<span class="octicon octicon-link"></span>](#mode)
 
-<a id="version"></a>
-###Historique des versions du service Web ( GLO )  [<span class="octicon octicon-link"></span>](#version)
+<a id="http_rest_get"></a>
+####1) HTTP en mode GET
+La première façon d’utiliser le service est par un simple appel URL (REST) en mode GET, directement dans un fureteur Internet.Cette méthode est plus simple, car elle ne nécessite pas de programmation (création d’un message ou d’un client en format SOAP).Cette méthode retourne l’information sous plusieurs formes possibles.
 
-<a id="v1"></a>
-**Version 1 : Version initiale**
 
-<a id="v2"></a>
-**Version 2 : 14 octobre 2009**
+Voici un exemple d’appel en mode HTTP.
 
-La différence majeure entre les deux versions se retrouve au niveau des recherches par adresse.  
-Le géocodage est maintenant plus précis c’est à dire que le positionnement peut se faire directement  
-sur le numéro civique (grâce au rôle d’évaluation) et non plus sur une tranche d’adresse seulement  
-comme c’était le cas avec la version #1 du service :  
+Pour la version 5:  
+http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
 
-Ancien champs de la version #1:
+Pour la version 6 :  
+http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=JSON
 
-```xml
-< noCiviqDebut />  
-< noCiviqFin />
-```
+Liste des paramètres:
 
-Remplacés par les nouveaux champs de la version #2:  
+| Variable | Valeurs possibles | Obligatoire |
+| ---- | ---- | ---- |
+| Texte   | Chaîne de caractères pour la recherche | Oui|
+| cle     | Clé d’accès émise par le MSP  | Oui |
+| type    | 'adresse'<br>'lieu'<br>'borne'<br>'gps'<br>'hq | Oui – « adresse »  par défaut |
+| epsg    | Système de référence des coordonnées en sortie.<br>Les valeurs possibles sont ceux supporté par PostGIS v2.0.1 | Oui¹<br>(système de coordonnée de la source par défaut) |
+| indexDebut | Permet de spécifier l’index de départ de la réponse, (optionnel, 0 par défaut)  | Non<br>(0 par défaut) |
+| indexFin | Permet de spécifier l’index de fin de la réponse, (optionnel 79 par défaut)  | Non<br>(79 par défaut) |
+| format | Permet de spécifier le type de format de sortie du fichier :<br>- XML<br>- HTML<br>- JSON²<br>- EXCEL²<br>- JSONP²  | Oui<br>(XML par défaut) |
+| epsg_entree² | Le code EPSG des coordonnées en entrée.<br>Les valeurs possibles sont ceux supporté par PostGIS v2.0.1 | Non |
+| epsg_sortie² | Le code EPSG des coordonnées en sortie.<br>Les valeurs possibles sont ceux supporté par PostGIS v2.0.1.  Le paramètre "epsg" et "epsg_sortie" sont égaux dans la version 6 | Non<br>(32198 par défaut)|
+| groupe² | Permet de regrouper les adresses positionnées aux mêmes coordonnées et possédant les mêmes attributs.  1=regrouper  0=pas grouper | Non<br>(0 par défaut) |
+| callback² | Nom de la méthode à utiliser (côté client) lors du retour de la réponse.<br>Ce paramètre est lié au format 'JSONP' | Non |
 
-```xml
-< geocodeMatchCode />  
-< noCiviq />  
-< noCiviqDebutDroite />  
-< noCiviqFinDroite />  
-< noCiviqDebutGauche />  
-< noCiviqFinGauche/ >  
-```
-<a id="v3"></a>
-**Version 3 : décembre 2010**  
+<span style="color:red">
+¹ Avec la version 5 seulement  
+² Avec la version 6 seulement
 
-La version 3 du  GLO comprend l’ajout des champs suivants:
-CODE_MUNCP ,  NO_MATRICULE ,  NO_SEQ_ODONM  du  DGE .  
-Cette version comprend également l’ajout d’une recherche d'adresse textuelle améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté. La recherche par Lieux d’intérêt est également grandement améliorée.
+</span>
 
-Champs de la version #3:  
+Exemple qui retourne les 49 premiers enregistrements seulement
 
-```xml
-< geocodeMatchCode />  
-< noCiviq />  
-< noCiviqDebutDroite />  
-< noCiviqFinDroite />  
-< noCiviqDebutGauche />  
-< noCiviqFinGauche />  
-< code_muncp />  
-< no_matricule />  
-< no_seq_adr_civique />  
-```
+Pour la version 5:  
+http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=49&epsg=32198&format=xml
 
-<a id="v5"></a>
-**Version 5 : novembre 2012**
+Exemple qui retourne les enregistrements mais dont les coordonnées sont dans le système de projection de Google :
 
-Cette version comprend également l’ajout d’une recherche d'adresse de similarité phonétique améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté.
+Pour la version 5:  
+http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml  
 
-Champs supplémentaire de la version #5:
+Pour la version 6 :  
+http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml  
+ou  
+http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=xml
 
-RemarqueListe:
+<a id="soap"></a>
+####2) SOAP  
+La deuxième façon est d’appeler le service Web en utilisant un langage de programmation (Java, .Net, PHP,  etc …) et le protocole SOAP. Il requiert la création d’une requête (ou message) SOAP avec les paramètres requis. 
+Les différents paramètres ainsi que les méthodes exposées par le service Web sont définies dans le fichier  WSDL (Web Service Definition Language](http://www.w3.org/TR/wsdl "Web Service Definition Language")
 
-```xml
-<GeocoderReponse>
-  <RemarqueListe>
-    <borneDetail>
-      <texte>*Texte spécifiant la remarque*</texte>
-      <vieu>*Texte de la recherche pouvant être remplacé par le noeud 'nouveau'*</vieu>
-      <nouveau>*Texte pouvant remplacer le texte contenu dans le noeud 'vieu'*</nouveau>
-      <requeteGLO>*Le texte donné en entrée*</requeteGLO>
-    </borneDetail>
-    ...
-  <RemarqueListe/>
-<GeocoderReponse/>
-```
+Version 5 :  
+http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeur.php?WSDL  
+Version 6 :  
+http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeur.php?WSDL  
 
-noCiviqDebut et noCiviqFin:
+Voici les méthodes présentement supportées par le service :
 
-```xml
-<GeocoderReponse>
-  <geocoderReponseListe>
-    <borneDetail>
-      <noCiviqDebut/>
-      <noCiviqFin/>
-      ...
-    <borneDetail/>
-  <geocoderReponseListe/>
-<GeocoderReponse/>
-```
+*     Geocoder() : Pour les recherches d’adresses, de lieux ou des éléments du réseau d’Hydro-Québec.¹
+*     GeocoderBorne() : Pour les recherches de type 'borne'
+*     GeocoderGPS() : Pour les recherches de type 'gps'
+*     GeocoderReverseGeocoding()² : Pour les recherches inversées par coordonnées.
+*     GeocoderLieu()² : Pour les recherches de type 'lieu'
 
-CP:
-
-```xml
-<GeocoderReponse>
-  <geocoderReponseListe>
-    <borneDetail>
-          <CP>
-            <codePostal>G1V2L2</codePostal>
-            <Copyright> Marque officielle de la Societe canadienne des postes</Copyright>
-          </CP>
-          ...
-      <borneDetail/>
-    <geocoderReponseListe/>
-<GeocoderReponse/>
-
-```
-
-**<u> Ajout janvier 2014 </u>**  
-
-statut:  
-
-```xml
-<GeocoderReponse>
-  <geocoderReponseListe>
-    <borneDetail>
-      <statut>
-        <etat/>
-        <description/>
-        <commentaire/>
-      <statut/>
-    <borneDetail/>
-  <geocoderReponseListe/>
-<GeocoderReponse/>
-```
-
-Correspond aux informations sur les municipalités.  
-etat	: Officiel ou Non officiel.  
-description   : Valide, Supprimé.  
-commentaire   : correspondant à une Ancienne limite ou la ville correspondant Maintenant.  
-
-Correspond également aux informations sur les adresses.  
-etat           : Officiel ou Non officiel.  
-description    : Ajouté, Modification sur description seulement, Modification sur géométrie seulement, Modification sur géométrie et description.  
-commentaire    : commentaire quelconque.  
-
-<a id="v6"></a>
-**Version 6 janvier 2015:**
-
-Parmi les améliorations :  
-
-* le générique et l'orientation de l'odonyme est maintenant utilisé pour préciser la rechercher par adresse.  
-* un option permettant le regroupement des adresses pour une même coordonnées. Par exemple, permet ainsi d'avoir un seul résutltat pour "1 place ville-marie montréal".  
-* amélioration de la recherche par borne avec le mot clé "panneau". Ex: "panneau 40 st-raymond" permettant de donner tous les panneaux sur la route #40 contenant le mot "st-raymond".  
-* ajout du centroîde du code postal comme premier résultat lors d'une recherche par code postal seul.
-* amélioration de la recherche par intersection. La municipalité n'est plus obligatoire et l'intersection par numéro de route et autoroute est maintenant possible.  
-* un retour en JSON.  
-* une recherche de 'reverse geocoding' (recherche d'adresse par coordonnée).  
-* plus de possibilités pour la recherche par GPS en définissant le code EPSG en entrée (paramètre: epsg_entree).  
-* recherche par GPS retourne mainteannt la mrc, région administrative ( plus clairement, car elle était comprise entre paranthèse dans le noeud 'municipalite' ) et la localité qui fait référence au toponyme le plus près.
-* optimisation du code qui permet de doubler la vitesse dans la plupart des cas.  
-* le résultat de la recherche par lieu est maintenant obtenu par une recherche par similarité. Le module de postgreSQL, "pg_trgm" est utilisé.
-
-Changement dans les paramètres d'entrée :  
-
-* le code EPSG en entrée peut maintenant être fourni par "epsg_entree". L'ancien paramètre "epsg" est encore maintenu mais fait maintenant référence au nouveau paramètre "epsg_sortie".
+¹ La recherche de lieu se fait avec 'GeocoderLieu' dans la version 6.  
+² Depuis la version 6 
 
 <a id="type"></a>
 ### Type de recherche [<span class="octicon octicon-link"></span>](#type)
 
 Le service Web supporte cinq types de recherche :
 
-| | Type de recherche | Code |
-| ---- | ---- | ---- |
-| 1 | Par adresse (combinaison de code postal, no. civique, rue ou ville)         |adresse |
-| 2 | Par lieux d‘intérêts (restaurant, entreprise, école, etc…)                  |lieu  |
-| 3 | Par borne kilométrique (borne et no. de route)                              |borne |
-| 4 | Par coordonnées GPS (lat, lon) ou (lon, lat), UTM, MTM, format Bell         |gps   |
-| 5 | Infrastructure d’Hydro-Québec (poteau, barrage, centrale, etc…)             |hq    |
-| 6 | Recherche inversée par coordonnée (reverse geocoding)                       | reversegeocoding |  
+| Type de recherche | Code |
+| ---- | ---- |
+| Par adresse (combinaison de code postal, no. civique, rue ou ville)         | adresse |
+| Par lieux d‘intérêts (restaurant, entreprise, école, etc…)                  | lieu  |
+| Par borne kilométrique (borne et no. de route)                              | borne |
+| Par coordonnées GPS (lat, lon) ou (lon, lat), UTM, MTM, format Bell         | gps   |
+| Infrastructure d’Hydro-Québec (poteau, barrage, centrale, etc…)             | hq    |
+| Recherche inversée par coordonnée (reverse geocoding)                       | reversegeocoding |  
 
+<br>
 
 Certaines recherches peuvent être limitées à une clientèle bien précise (ex : La recherche sur les éléments du réseau d’Hydro-Québec est disponible seulement par les intervenants en sécurité civile).  Cette gestion est  effectué  via la clé d’accès décrite ci haut.  
 
@@ -274,10 +197,583 @@ La fonction cherche donc les mots demandés.Ces mots peuvent être coupés au d�
 
 Cette nouvelle fonctionnalité est un peu plus lente que la recherche par pattern qui est beaucoup plus rapide.
 
-<span style="background-color:lime;">**LES  VERSIONS  1, 2 ET 3 NE SONT PLUS SUPPORTÉES.**<span />
+<a id="reponse"></a>
+### Réponse (JSON)[<span class="octicon octicon-link"></span>](#reponse)
+<a id="rep_adresse"></a>
+####1. Adresse  
 
-Voici des exemples de chaîne qui peuvent être soumise au service (les informations retournées seront décrites en détail à la section du présent document):
+```JSON
+{
+entree: "G1M 2L1",
+geocoderReponseListe: [
+{
+  adresseLibre: "Code postal : G1M2L1",
+  noCiviqDebut: null,
+  noCiviqFin: null,
+  nomRue: null,
+  placeListe: [
+    {
+      type: "Municipalité",
+      nom: "Québec"
+    }
+  ],
+  metadonnee: {
+    classe: "Adresse Québec version 09",
+    source: "AQ",
+    date: "2015/04/07 00:00:00"
+  },
+  CP: {
+    codePostal: "G1M2L1",
+    Copyright: "Marque officielle de la Societe canadienne des postes",
+    estValide: true
+  },
+  localisation: {
+    point: {
+      x: "-212066.364694469",
+      y: "317000.733309207",
+      SRS: {
+        nom: "EPSG",
+        codeEPSG: "32198",
+        WKT: "+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs "
+      }
+    },
+    enveloppe: {
+      Xmin: null,
+      Ymin: null,
+      Xmax: null,
+      Ymax: null,
+      SRS: {
+        nom: "",
+        codeEPSG: 0,
+        WKT: ""
+      }
+    }
+  },
+  geocodeMatchCode: null,
+  noCiviq: null,
+  noCiviqDebutDroite: 0,
+  noCiviqFinDroite: 0,
+  noCiviqDebutGauche: 0,
+  noCiviqFinGauche: 0,
+  codeMuncp: "23027",
+  noMatricule: null,
+  noSeqAdrCivique: null,
+  noCivqSuffx: "",
+  noApprt: 0,
+  noApprtSuffx: "",
+  statut: {
+    etat: "Officiel",
+    description: "Valide",
+    commentaire: "Centroïde du code postal"
+  },
+  idStat: "59418"
+},
+{
+  adresseLibre: "1685 Rue De Merlac, Québec",
+  noCiviqDebut: null,
+  noCiviqFin: null,
+  nomRue: "Rue De Merlac",
+  placeListe: [
+    {
+      type: "Municipalité",
+      nom: "Québec"
+    }
+  ],
+  metadonnee: {
+    classe: "Adresse Québec version 09",
+    source: "AQ",
+    date: "2015/04/07 00:00:00"
+  },
+  CP: {
+    codePostal: "G1M2L1",
+    Copyright: "Marque officielle de la Societe canadienne des postes",
+    estValide: true
+  },
+  localisation: {
+    point: {
+      x: "-212029.399202871",
+      y: "317022.878817326",
+      SRS: {
+        nom: "EPSG",
+        codeEPSG: "32198",
+        WKT: "+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs "
+      }
+    },
+    enveloppe: {
+      Xmin: null,
+      Ymin: null,
+      Xmax: null,
+      Ymax: null,
+      SRS: {
+        nom: "",
+        codeEPSG: 0,
+        WKT: ""
+      }
+    }
+  },
+  geocodeMatchCode: "100",
+  noCiviq: "1685",
+  noCiviqDebutDroite: 0,
+  noCiviqFinDroite: 0,
+  noCiviqDebutGauche: 1681,
+  noCiviqFinGauche: 1695,
+  codeMuncp: "23027",
+  noMatricule: "458600378010000000",
+  noSeqAdrCivique: "1457598",
+  noCivqSuffx: "null",
+  noApprt: 0,
+  noApprtSuffx: "0",
+  statut: {
+    etat: "Officiel",
+    description: "Valide",
+    commentaire: null
+  },
+  idStat: "1cbe225a984536bee05358f2298ed5fe"
+},
+  ...
+],
+nombreResultat: 10,
+RemarqueListe: [ ]
+}
+```  
 
+* `entree` : Chaine de caractère entrée en paramètre.
+* `geocoderReponseListe` : Liste des adresses sous cette forme:`[{adresseLibre}, {nomRue}, {noCiviq}, {noCiviqDebutDroite}, {noCiviqFinDroite}, {noCiviqDebutGauche}, {noCiviqFinGauche}, {codeMuncp}, {noMatricule}, {noSeqAdrCivique}, {noCivqSuffx}, {noApprt}, {noApprtSuffx}, {idStat}, {placeListe}, {metadonnee}, {CP}, {localisation}, {statut}, {noCiviqDebut},{noCiviqFin}, {geocodeMatchCode}]`
+  * `adresseLibre` : Chaine de caractère identifiant l'adresse pouvant prendre plusieurs formes.  
+                      Pour une adresse normale : {Numéro civique} {odonyme}, {Nom dela municipalité}  
+                      Pour une municipalité : {Nom de la municipalité} - {désignation} ({région administrative})  
+                      Pour un arrondissement : {Nom} (Arrondissement de {nom de la municipalité})  
+                      ... 
+  * `nomRue` : Odonyme.
+  * `noCiviq` : Numéro civique.
+  * `noCiviqDebutDroite` : Numéro civique minimale à droite du segment de route auquel l'adresse est associé.
+  * `noCiviqFinDroite` : Numéro civique maximale à droite du segment de route auquel l'adresse est associé.
+  * `noCiviqDebutGauche` : Numéro civique minimale à gauche du segment de route auquel l'adresse est associé.
+  * `noCiviqFinGauche` : Numéro civique maximale à gauche du segment de route auquel l'adresse est associé.
+  * `codeMuncp` : Code de municipalité.
+  * `noMatricule` : Numéro de matricule. 
+  * `noSeqAdrCivique` : identifiant unique des adresses du référentiel du DGE.
+  * `noApprt` : Numéro d'appartement.
+  * `noApprtSuffx` : Suffixe d'appartement. 
+  * `idStat` : identifiant unique du MSP
+  * `placeListe` : Liste de lieu relié à l'adresse représenté sous cette forme : `[{type}, {nom}]`
+    * `type` : Descriptif du lieu. Les valeurs possibles sont : 'Lieu', 'Municipalité', 'MRC', 'Région administrative'
+    * `nom` : Nom du lieu.
+  * `metadonnee` : Métadonnée sous la forme :  `{classe}, {source}, {date}`
+    * `classe` : Descriptif de la donnée.
+    * `source` : Descriptif du producteur de la donnée.
+    * `date` : Date de la dernière mise à jour.
+  * `CP` : Code postal sous la forme : `{codePostal},{Copyright},{estValide}`
+    * `codePostal` : le code postal.
+    * `Copyright` : Description des droits d'auteurs de Poste Canada.
+    * `estValide` : Confirme ou non que le code postal est contenu dans Adresse Québec.
+  * `localisation` : Localisation de l'adresse sous la forme : `{point}, {enveloppe}`
+    * `point` : Coordonnée de la localisation sous la former : `{x},{y},{SRS}`
+      * `x` : Coordonnée X de la localisation.
+      * `y` : Coordonnée X de la localisation.
+      * `SRS` : Système de coordonnée du point sous la forme :
+        `{nom},{codeEPSG},{WKT}`
+        * `nom`: Nom de l'instance définissant le système de coordonnée.
+        * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
+        * `WKT`: système de coordonnée en format WKT (Well Known Text).
+    * `enveloppe` : étendue rectangulaire de l'entité sous la forme : `{Xmin}, {Ymin}, {Xmax}, {Ymax}, {SRS}`
+      * `Xmin` : Coordonnée minimum en X.
+      * `Ymin` : Coordonnée minimum en Y.
+      * `Xmax` : Coordonnée maximum en X.
+      * `Ymax` : Coordonnée maximum en Y.
+      * `SRS` : Système de coordonnée de l'étendue sous la forme : `{nom},{codeEPSG},{WKT}`
+        * `nom`: Nom de l'instance définissant le système de coordonnée.
+        * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
+        * `WKT`: système de coordonnée en format WKT (Well Known Text).
+  * `statut` : Numéro civique.
+  * `noCiviqDebut` : N'EST PLUS MAINTENU. Sera supprimé lors de la prochaine version.
+  * `noCiviqFin` : N'EST PLUS MAINTENU. Sera supprimé lors de la prochaine version.
+  * `geocodeMatchCode` : N'EST PLUS MAINTENU. Sera supprimé lors de la prochaine version.
+* `nombreResultat` : Nombre total d'adresse retournée par le service.
+* `RemarqueListe` : Liste de recherche alternative possible.
+
+
+<a id="rep_lieu"></a>
+####2. Lieu 
+
+```JSON
+{
+  entree: "pizzeria paquet",
+  geocoderReponseListe: [
+  {
+    adresseLibre: "(MRQ) - 251A, rue Saint-Pierre",
+    nomRue: "Saint-Pierre",
+    placeListe: [
+      {
+        type: "Lieu",
+        nom: "Pizzéria Chez Paquet Inc."
+      },
+      {
+        type: "Municipalité",
+        nom: "Saint-Raymond"
+      },
+      {
+        type: "Région Administrative",
+        nom: "Capitale-Nationale"
+      },
+      {
+        type: "MRC",
+        nom: "Portneuf"
+      }
+    ],
+    metadonnee: {
+      classe: "",
+      source: "MRQ",
+      date: "2010-11-09"
+    },
+    CP: {
+      codePostal: "G1L1R1",
+      Copyright: "Marque officielle de la Societe canadienne des postes",
+      estValide: true
+    },
+    localisation: {
+      point: {
+        x: "-253862.396031291",
+        y: "327269.032328114",
+        SRS: {
+          nom: "EPSG",
+          codeEPSG: "32198",
+          WKT: "+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs "
+        }
+      },
+      enveloppe: {
+        Xmin: null,
+        Ymin: null,
+        Xmax: null,
+        Ymax: null,
+        SRS: {
+          nom: "",
+          codeEPSG: 0,
+          WKT: ""
+        }
+      }
+    },
+    geocodeMatchCode: null,
+    noCiviq: "251",
+    noCiviqDebutDroite: null,
+    noCiviqFinDroite: null,
+    noCiviqDebutGauche: null,
+    noCiviqFinGauche: null,
+    codeMuncp: null,
+    noMatricule: null,
+    noSeqAdrCivique: null,
+    noCivqSuffx: null,
+    noApprt: null,
+    noApprtSuffx: null,
+    statut: {
+      etat: null,
+      description: null,
+      commentaire: null
+    },
+    idStat: null
+  },
+  {},
+  {},
+  {},
+  {},
+  {}
+  ],
+  nombreResultat: 6,
+  RemarqueListe: [ ]
+}
+```
+La réponse est la même qu'une recherche d'adresse. 
+
+<a id="rep_borne_kilo"></a>
+####3. Borne Kilométrique 
+
+```JSON
+{
+  borneReponseListe: [
+  {
+    detail: "Route 40 Est - Sortie 254 - Affichage: Route 363, Saint-Alban, Saint-Marc-des-Carrières, Route Dussault",
+    localisation: {
+      point: {
+        x: "-267342.792338539",
+        y: "300379.376077055",
+        SRS: {
+          nom: "EPSG",
+          codeEPSG: "32198",
+          WKT: "+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs "
+        }
+      },
+      enveloppe: {
+        Xmin: null,
+        Ymin: null,
+        Xmax: null,
+        Ymax: null,
+        SRS: {
+          nom: "",
+          codeEPSG: 0,
+          WKT: ""
+        }
+      }
+    },
+    metadonnee: {
+      classe: "Repères kilométriques MTQ",
+      source: "MTQ",
+      date: "2014/12/15 00:00:00"
+    }
+  },
+  {
+    ...
+  }
+  ],
+  nombreResultat: 2,
+  RemarqueListe: [ ],
+  entree: "SORTIE_254_40"
+}
+```
+
+* `borneReponseListe` : Liste des bornes sous cette forme: `[{detail}, {localisation}, {metadonnee}]`  
+  * `detail` : Chaine de caractère identifiant bornes pouvant prendre plusieurs formes selon la recherche.
+  * `localisation` : Localisation de l'adresse sous la forme : `{point}, {enveloppe}`
+  * `point` : Coordonnée de la localisation sous la former : `{x},{y},{SRS}`
+    * `x` : Coordonnée X de la localisation.
+    * `y` : Coordonnée X de la localisation.
+    * `SRS` : Système de coordonnée du point sous la forme : `{nom},{codeEPSG},{WKT}`
+      * `nom`: Nom de l'instance définissant le système de coordonnée.
+      * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
+      * `WKT`: système de coordonnée en format WKT (Well Known Text).
+  * `enveloppe` : étendue rectangulaire de l'entité sous la forme : `{Xmin}, {Ymin}, {Xmax}, {Ymax}, {SRS}`
+    * `Xmin` : Coordonnée minimum en X.
+    * `Ymin` : Coordonnée minimum en Y.
+    * `Xmax` : Coordonnée maximum en X.
+    * `Ymax` : Coordonnée maximum en Y.
+    * `SRS` : Système de coordonnée de l'étendue sous la forme : `{nom},{codeEPSG},{WKT}`
+      * `nom`: Nom de l'instance définissant le système de coordonnée.
+      * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
+      * `WKT`: système de coordonnée en format WKT (Well Known Text).
+  * `metadonnee` : Métadonné sur le lieu sous la forme : `{classe}, {source}, {date}`
+    * `classe` : Description de la donnée.
+    * `source` : Nom désignant la source de la donnée.
+    * `date` : Date de la dernière mise à jour.
+* `nombreResultat` : Nombre total de lieu retourné par le service.
+* `RemarqueListe` : Liste de recherche alternative possible.
+* `entree` : Chaine de caractère entrée en paramètre.
+
+<a id="rep_coord_gps"></a>
+####4. Coordonnées GPS  
+
+```JSON
+{
+  entree: {
+    x: -68.223274883333,
+    y: 49.0859605,
+    SRS: {
+      nom: "EPSG",
+      codeEPSG: "4269",
+      WKT: "+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs "
+    }
+  },
+  patternCoordInput: "degrés minutes décimales",
+  rayonIncertitude: "",
+  coteCertitude: "",
+  formatCoordInput: "dd mm.mmm",
+  localisation: {
+    municipalite: "Pointe-Lebel",
+    regionAdministrative: "Côte-Nord",
+    mrc: "Manicouagan",
+    agglomeration: "",
+    localite: "Pointe Paradis",
+    distance: 0.7,
+    metadonnee: null,
+    point: {
+      x: "20112.8015548701",
+      y: "564966.596538928",
+      SRS: {
+        nom: "EPSG",
+        codeEPSG: "32198",
+        WKT: "+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs "
+      }
+    }
+  },
+  nombreResultat: 1,
+  RemarqueListe: [ ]
+}
+```
+
+* `entree` : Chaine de caractère entrée par l'utilisateur sous la forme : `{'x'},{y},{SRS}`
+    * `x` : Coordonnée X de la localisation.
+    * `y` : Coordonnée X de la localisation.
+    * `SRS` : Système de coordonnée du point sous la forme : `{nom},{codeEPSG},{WKT}`
+      * `nom`: Nom de l'instance définissant le système de coordonnée.
+      * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
+      * `WKT`: système de coordonnée en format WKT (Well Known Text).
+* `patternCoordInput` : Pattern des coordonnées en entrée. Les valeurs possibles sont : 'UTM fuseau "code_fuseau"', 'MTM fuseau "code_fuseau"', 'degrés décimaux', 'degrés minutes décimales', 'Degrés minutes secondes', 'BELL-E911-SSF', 'Metre Metre' 
+* `rayonIncertitude` : Rayon d'incertitude pour le pattern 'BELL-E911-SSF'
+* `coteCertitude` : Cote d'incertitude sur le rayon pour le pattern 'BELL-E911-SSF'
+* `formatCoordInput` : Description du pattern. Les valeurs possibles sont : 'X, Y','dd.ddd','dd mm.mmm','dd mm ss.s','Lat: dd mm ss.s Long: dd mm ss.s UNC: CONF:'
+* `localisation` : Localisation du point sous la forme : `{point}, {municipalite},{regionAdministrative},{mrc},{agglomeration},{localite},{distance},{metadonnee}`
+  * `point` : Coordonnée de la localisation sous la former : `{x},{y},{SRS}`
+    * `x` : Coordonnée X de la localisation.
+    * `y` : Coordonnée X de la localisation.
+    * `SRS` : Système de coordonnée du point sous la forme : `{nom},{codeEPSG},{WKT}`
+      * `nom`: Nom de l'instance définissant le système de coordonnée.
+      * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
+      * `WKT`: système de coordonnée en format WKT (Well Known Text).
+  * `municipalite` : Nom de la municipalité contenant le point.
+  * `regionAdministrative` : Région administrative contenant le point.
+  * `mrc` : MRC contenant le point.
+  * `agglomeration` : Agglomération contenant le point.
+  * `localite` : Nom du lieu le plus près du point provenant de la Commission de la toponymie.
+  * `distance` : Distance du lieu le plus près.
+  * `metadonnee` : Métadonnée.
+* `nombreResultat` : Nombre total d'adresse retournée par le service.
+* `RemarqueListe` : Liste de recherche alternative possible.
+
+<a id="rep_reverse_geocoding"></a>
+####5. Recherche inversée par coordonnée
+
+```JSON
+{
+  entree: {
+    x: -68.223274888889,
+    y: 49.0859605,
+    SRS: {
+      nom: "EPSG",
+      codeEPSG: "4269",
+      WKT: "+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs "
+    }
+  },
+  geocoderReponseListe: [
+  {
+    distance: 648.82904027354,
+    adresseLibre: "1529 Rue Granier, Pointe-Lebel",
+    nomRue: "Rue Granier",
+    placeListe: [
+      {
+        type: "Municipalité",
+        nom: "Pointe-Lebel"
+      }
+    ],
+    metadonnee: {
+      classe: "Adresse Québec version 09",
+      source: "AQ",
+      date: "2015/04/07 00:00:00"
+    },
+    CP: {
+      codePostal: "G0H1N0",
+      Copyright: "Marque officielle de la Societe canadienne des postes",
+      estValide: null
+    },
+    localisation: {
+      point: {
+        x: "19779.5323438489",
+        y: "565523.293066587",
+        SRS: {
+        nom: "EPSG",
+        codeEPSG: "32198",
+        WKT: "+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs "
+      }
+      },
+      enveloppe: {
+        Xmin: null,
+        Ymin: null,
+        Xmax: null,
+        Ymax: null,
+        SRS: {
+        nom: "",
+        codeEPSG: 0,
+        WKT: ""
+      }
+      }
+    },
+    geocodeMatchCode: "100",
+    noCiviq: "1529",
+    noCiviqDebutDroite: 1356,
+    noCiviqFinDroite: 1510,
+    noCiviqDebutGauche: 1351,
+    noCiviqFinGauche: 1533,
+    codeMuncp: null,
+    noMatricule: "513952963700000000",
+    noSeqAdrCivique: "4267163",
+    noCivqSuffx: "null",
+    noApprt: 0,
+    noApprtSuffx: "0",
+    statut: {
+    etat: null,
+    description: null,
+    commentaire: null
+    },
+    idStat: "90048045"
+  },
+    ...
+  ,
+  nombreResultat: 78,
+  RemarqueListe: [ ]
+}
+```
+* `entree` : Chaine de caractère entrée par l'utilisateur sous la forme : `{x},{y},{SRS}`
+    * `x` : Coordonnée X de la localisation.
+    * `y` : Coordonnée X de la localisation.
+    * `SRS` : Système de coordonnée du point sous la forme : `{nom},{codeEPSG},{WKT}`
+      * `nom`: Nom de l'instance définissant le système de coordonnée.
+      * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
+      * `WKT`: système de coordonnée en format WKT (Well Known Text).
+* `geocoderReponseListe` : Liste des adresses sous cette forme: `[{distance}, {adresseLibre}, {nomRue}, {noCiviq}, {noCiviqDebutDroite}, {noCiviqFinDroite}, {noCiviqDebutGauche}, , {noCiviqFinGauche}, {codeMuncp}, {noMatricule}, {noSeqAdrCivique}, {noCivqSuffx}, {noApprt}, {noApprtSuffx}, {idStat}, {placeListe}, {metadonnee}, {CP}, {localisation}, {statut}, {noCiviqDebut},{noCiviqFin}, {geocodeMatchCode}]`
+  * `distance` : distance entre le point et l'adresse.
+  * `adresseLibre` : Chaine de caractère identifiant l'adresse pouvant prendre plusieurs formes.  
+                      Pour une adresse normale : {Numéro civique} {odonyme}, {Nom dela municipalité}  
+                      Pour une municipalité : {Nom de la municipalité} - {désignation} ({région administrative})  
+                      Pour un arrondissement : {Nom} (Arrondissement de {nom de la municipalité})  
+                      ...
+  * `nomRue` : Odonyme.
+  * `noCiviq` : Numéro civique.
+  * `noCiviqDebutDroite` : Numéro civique minimale à droite du segment de route auquel l'adresse est associé.
+  * `noCiviqFinDroite` : Numéro civique maximale à droite du segment de route auquel l'adresse est associé.
+  * `noCiviqDebutGauche` : Numéro civique minimale à gauche du segment de route auquel l'adresse est associé.
+  * `noCiviqFinGauche` : Numéro civique maximale à gauche du segment de route auquel l'adresse est associé.
+  * `codeMuncp` : Code de municipalité.
+  * `noMatricule` : Numéro de matricule.
+  * `noSeqAdrCivique` : identifiant unique des adresses du référentiel du DGE.
+  * `noApprt` : Numéro d'appartement.
+  * `noApprtSuffx` : Suffixe d'appartement.
+  * `idStat` : identifiant unique du MSP
+  * `placeListe` : Liste de lieu relié à l'adresse représenté sous cette forme : `[{type}, {nom}]`
+    * `type` : Descriptif du lieu. Les valeurs possibles sont : 'Lieu', 'Municipalité', 'MRC', 'Région administrative'
+    * `nom` : Nom du lieu.
+  * `metadonnee` : Métadonnée sous la forme : `{classe}, {source}, {date}`
+    * `classe` : Descriptif de la donnée.
+    * `source` : Descriptif du producteur de la donnée.
+    * `date` : Date de la dernière mise à jour.
+  * `CP` : Code postal sous la forme : `{codePostal},{Copyright},{estValide}`
+    * `codePostal` : le code postal.
+    * `Copyright` : Description des droits d'auteurs de Poste Canada.
+    * `estValide` : Confirme ou non que le code postal est contenu dans Adresse Québec.
+  * `localisation` : Localisation de l'adresse sous la forme : `{point}, {enveloppe}`
+    * `point` : Coordonnée de la localisation sous la former : `{x},{y},{SRS}`
+      * `x` : Coordonnée X de la localisation.
+      * `y` : Coordonnée X de la localisation.
+      * `SRS` : Système de coordonnée du point sous la forme : `{nom},{codeEPSG},{WKT}`
+        * `nom` : Nom de l'instance définissant le système de coordonnée.
+        * `codeEPSG` : identifiant unique du système de coordonnée défini par l'instance.
+        * `WKT` : système de coordonnée en format WKT (Well Known Text).
+    * `enveloppe` : étendue rectangulaire de l'entité sous la forme : `{Xmin}, {Ymin}, {Xmax}, {Ymax}, {SRS}`
+      * `Xmin` : Coordonnée minimum en X.
+      * `Ymin` : Coordonnée minimum en Y.
+      * `Xmax` : Coordonnée maximum en X.
+      * `Ymax` : Coordonnée maximum en Y.
+      * `SRS` : Système de coordonnée de l'étendue sous la forme : `{nom},{codeEPSG},{WKT}`
+        * `nom` : Nom de l'instance définissant le système de coordonnée.
+        * `codeEPSG` : identifiant unique du système de coordonnée défini par l'instance.
+        * `WKT` : système de coordonnée en format WKT (Well Known Text).
+  * `statut` : Numéro civique.
+  * `noCiviqDebut` : N'EST PLUS MAINTENU. Sera supprimé lors de la prochaine version.
+  * `noCiviqFin` : N'EST PLUS MAINTENU. Sera supprimé lors de la prochaine version.
+  * `geocodeMatchCode` : N'EST PLUS MAINTENU. Sera supprimé lors de la prochaine version.
+* `nombreResultat` : Nombre total d'adresse retournée par le service.
+* `RemarqueListe` : Liste de recherche alternative possible.
+
+
+<a id="exemple"></a>
+### Exemple [<span class="octicon octicon-link"></span>](#exemple)
+Voici des exemples de chaîne qui peuvent être soumise au service :
 <a id="adresse"></a>
 ####1. Adresse
 
@@ -374,7 +870,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informat
 
   Si la combinaison numéro civique + rue existe, Ex : **<span style="color:  blue">100, Blais**</span>
 
-  = ►   Retournetoutes les adresses (no. civique, la rue et la ville) pour toutes les villes du Québec qui ont une rue et un numéro civique correspondant.
+  = ►   Retourne toutes les adresses (no. civique, la rue et la ville) pour toutes les villes du Québec qui ont une rue et un numéro civique correspondant.
 
   ```
       100 1e rang Blais Sud, Saint-Tharcisius
@@ -411,9 +907,9 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informat
     450 116e Avenue, Shawinigan
   ```
 
-  Note :
-  Il n’est pas nécessaire d’écrire 'rue', 'route', 'rang', 'avenue', etc.
-  **La version 6 prend en compte les génériques**
+  Note : 
+  Pour la version 5, il n’est pas nécessaire le générique d'odonyme ('rue', 'route', 'rang', 'avenue', etc.)
+  Pour la version 6, le générique d'odonyme est pris en compte.
 
   Si aucune combinaison numéro civique + rue + ville existe…
 
@@ -457,7 +953,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informat
   La Vallée-du-Richelieu (MRC)
   ```
 
-  i) Dans les cas où le résultat pour tous les patterns précédents donne « aucun résultat ». La recherche passe ensuite dans une recherche **phonétique** en utilisant les outils de similarités de textes fournient par PostgreSQL (http://www.postgresql.org/docs/9.3/static/pgtrgm.html). Le script doit d'abord avoir détecté un numéro civique ou un code postal.
+  i) Dans les cas où le résultat pour tous les patterns précédents donne « aucun résultat ». La recherche passe ensuite dans une recherche **phonétique** en utilisant les outils de similarités de textes fournient par PostgreSQL (http://www.postgresql.org/docs/9.3/static/pgtrgm.html). Le script doit d'abord avoir détecté un numéro civique ou un code postal pour permettre un temps de réponse respectable.
 
   Ex : <span style="color:blue">**2525 laurire quebce**</span>
 
@@ -471,7 +967,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service (les informat
 
   Ex : <span style="color:blue">**2525 boul Laurier Québec G1V 2L2**</span>
 
-  = ►  Retourne un résultat provenant de la base de données d’adresses. La recherche se fait dans le champ < RECHERCHE_TEXTUELLE > qui contient l’adresse au complet, le code postal, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.
+  = ►  Retourne un résultat provenant de la base de données d’adresses du MSP. La recherche se fait dans un champ qui contient l’adresse au complet, le code postal, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.
 
   ```
   2525 Boulevard Laurier, Québec
@@ -484,7 +980,7 @@ Version 5 :
 
 À partir de **plusieurs mots clé** (l'ordre n'a pas d'importance)  
 
-Retourne un résultat provenant de la base de données de Lieux d’intérêt. La recherche se fait dans le champ <  RECHERCHE_TEXTUELLE  > qui contient plusieurs informations concernant ce lieu : son nom,des mots clé, l’adresse s’il y a lieu, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.  
+Retourne un résultat provenant de la base de données de Lieux d’intérêt. La recherche se fait un champ qui contient plusieurs informations concernant ce lieu : son nom,des mots clé, l’adresse s’il y a lieu, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.  
 
 
 <span style="color:blue">**Lac Poulin**</span>  
@@ -525,8 +1021,7 @@ Retourne un résultat provenant de la base de données de Lieux d’intérêt. L
   ```
 Version 6 : 
 
-À partir de similarité entre le texte entré et la contenu du champ < RECHERCHE_TEXTUELLE >. Un poids plus grand est apporté au nom du lieu 
-comparé aux informations supplémentaires compris dans le champs < RECHERCHE_TEXTUELLE >. 
+À partir de similarité entre le texte entré et la contenu du champ < RECHERCHE_TEXTUELLE >. Un poids plus grand est apporté au nom du lieu comparé aux informations supplémentaires compris dans le champs < RECHERCHE_TEXTUELLE >. 
 Contrairement à la version 5, la version 6 est plus souple et trouve ses résultats selon la similarité des mots.   
 La recherche est limité à 80 résultats.
 
@@ -704,7 +1199,7 @@ Route 5 Nord - Sortie 3 - Affichage: Boul. St-Raymond, boul. du Casino, Pontiac
 Route 40 Ouest - Sortie 281-N - Affichage: Route 365, Pont-Rouge, Saint-Raymond
 ```  
 
-<span style="color:blue">**PANNEAU 40 st-raymond**</span>  
+Ex: <span style="color:blue">**PANNEAU 40 st-raymond**</span>  
 Version 5 :
 
 ```
@@ -778,7 +1273,7 @@ Dans la municipalité de Saint-Léon-le-Grand (Bas-Saint-Laurent), à 5.7Km de S
 
 d) À partir de coordonnées en UTM-fuseau
 
-Ex :  <span style="color:blue">**UTM-18 1018490.56282, 5434191.46593**</span>
+Ex :  <span style="color:blue">**UTM-18 1018490.56282, 5434191.46593**</span>  
 Possibilitées avec la version 6 :  
 <span style="color:blue">
 **UTM-18 1018490.56282 5434191.46593**  
@@ -793,7 +1288,7 @@ Dans la municipalité de (Bas-Saint-Laurent), à 13.9Km de Baie-des-Sables
 
 e) À partir de coordonnées en  MTM-fuseau
 
-Ex :   <span style="color:blue">**MTM7  493344.550863, 5414859.14264**</span>
+Ex :   <span style="color:blue">**MTM7  493344.550863, 5414859.14264**</span>  
 Possibilitées avec la version 6 :  
 <span style="color:blue">
 **MTM-7 493344.550863 5414859.14264**  
@@ -850,536 +1345,6 @@ Ex: <span style="color:blue">**48 22 23, -67 34 21**</span>
   329 5e-et-6e Rang, Sainte-Irène
 ```
 
-<a id="mode"></a>
-### Deux modes d’utilisation [<span class="octicon octicon-link"></span>](#mode)
-
-<a id="http_rest_get"></a>
-####1) HTTP  
-La première façon d’utiliser le service est par un simple appel URL (REST) en mode GET, directement dans un fureteur Internet.Cette méthode est plus simple, car elle ne nécessite pas de programmation (création d’un message ou d’un client en format SOAP).Cette méthode retourne l’information sous plusieurs formes possibles.
-
-
-Voici un exemple d’appel en mode HTTP.
-
-Pour la version 5:  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
-
-Pour la version 6 :  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=JSON
-
-Liste des paramètres:
-
-| | Variable | Valeurs possibles | Obligatoire |
-| ---- | ---- | ---- | ---- |
-| 1 | Texte   | Chaîne de caractères pour la recherche | Oui|
-| 2 | cle     | Clé d’accès émise par le MSP  | Oui |
-| 3 | type    | adresse, lieu, borne, gps, hq A partir de la version 5, le type est obligatoire | Oui – « adresse »  par défaut |
-| 4 | epsg    | Système de référence des coordonnées en sortie  Les valeurs possibles sont ceux supporté par PostGIS v2.0.1 | Oui – système de coordonnées source par défaut |
-| 5 | indexDebut | Permet de spécifier l’index de départ de la réponse, (optionnel, 0 par défaut)  | Non - 0 par défaut |
-| 6 | indexFin | Permet de spécifier l’index de fin de la réponse, (optionnel 79 par défaut)  | Non - 79 par défaut |
-| 7 | version | Paramètre qui n’est plus utilisé.  | ---- |
-| 8 | format | Permet de spécifier le type de format de sortie du fichier.  XML  HTML  JSON**  EXCEL**  JSONP**  | Oui – XML par défaut |
-| 9 | epsg_entree** | Le code EPSG des coordonnées en entrée.  Les valeurs possibles sont ceux supporté par PostGIS v2.0.1 | Non |
-| 10 | epsg_sortie** | Le code EPSG des coordonnées en sortie.  Les valeurs possibles sont ceux supporté par PostGIS v2.0.1.  Le paramètre "epsg" et "epsg_sortie" sont égaux dans la version 6 | Non (32198 par défaut)|
-| 11 | groupe** | Permet de regrouper les adresses positionnées aux mêmes coordonnées et possédant les mêmes attributs.  1=regrouper  0=pas grouper | Non  (0 par défaut) |
-| 12 | callback** | Nom de la méthode à utiliser (côté client) lors du retour de la réponse. Ce paramètre est lié au format 'JSONP' | Non |
-
-<span style="color:red">
-* Si la chaîne de texte  comprends  des caractères non supportés par l’URL (les accents et les espaces entre autres), ces derniers doivent être encodés avant d’être soumis au service.En PHP, il existe une fonction pour effectuer automatiquement cette opération ( urlencode ).  
-** Avec la version 6 seulement
-
-</span>
-
-Exemple qui retourne les 49 premiers enregistrements seulement
-
-Pour la version 5:  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=49&epsg=32198&format=xml
-
-Exemple qui retourne les enregistrements mais dont les coordonnées sont dans le système de projection de Google :
-
-Pour la version 5:  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
-
-Pour la version 6 :  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
-ou
-http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=xml
-
-<a id="soap"></a>
-####2) SOAP  
-La deuxième façon est d’appeler directement le service Web en utilisant un langage de programmation (Java, .Net, PHP,  etc …). Il requiert la création d’une requête (ou message) SOAP avec les paramètres requis. 
-Les différents paramètres ainsi que les méthodes exposées par le service Web sont définies dans le fichier  WSDL (Web Service Definition Language](http://www.w3.org/TR/wsdl "Web Service Definition Language")
-
-pour la version 5 du service:  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeur.php?WSDL
-Version 6 :
-http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeur.php?WSDL  
-
-Voici les méthodes présentement supportées par le service :
-
-*     Geocoder() – _Pour les recherches d’adresses, de lieux ou des éléments du réseau d’Hydro-Québec_
-*     GeocoderBorne()
-*     GeocoderGPS()
-*     GeocoderReverseGeocoding()**  
-*     GeocoderLieu()**
-
-** Depuis la version 6 
-
-
-<a id="requete"></a>
-###Structure des requêtes SOAP (XML) [<span class="octicon octicon-link"></span>](#requete)
-
-Tout comme pour le mode par appel URL, les trois* paramètres obligatoires sont :
-
-* la clé d’accès (GLOCleAcces)
-
-* le texte à géocoder (texte)
-
-    *   pour les lieux, le texte doit être préfixé du terme « lieu » (verison antérieure à 6);
-    *   pour les élément d’Hydro-Québec, le texte doit être préfixé du terme « HQ »;
-    *   pour les adresses, aucun préfixe n’est requis.
-    *   pour les bornes. les préfixes 'sortie', 'panneau', 'CN' et 'GCC' sont possibles en utilisant le bon pattern.
-    *   pour les recherches par coordonnées GPS. Certains patterns sont possibles et la version 6 est plus permissive.  
- * le type de requête (adresse, lieu, borne, GPS)
-
-*le paramètre "type" n'est pas requis pour les requêtes borne, GPS dans la version 5. Dans la version 6, le paramère "type" n'est  
-pas requis en mode SOAP considérant que vous utilisez la bonne fonction.  
-
-<a id="requetev5"></a>
-**Version 5 :**  
-Requête par adresse:
-
-```xml
-	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
-	   <soapenv:Header/>
-	   <soapenv:Body>
-	      <geo:GeocoderRequete>
-	         <GLOCleAcces>votre clé</GLOCleAcces>
-	         <texte>">1715 rue Merlac Québec</texte>
-	         <type>adresse</type>
-	         <codeEPSG>32198</codeEPSG>
-	         <index>
-	            <debut>0</debut>
-	            <fin>10</fin>
-	         </index>
-	      </geo:GeocoderRequete>
-	   </soapenv:Body>
-	</soapenv:Envelope>
-```
-Pour les deux autres types de géocodage, la structure est exactement la même excepté que le nom de la requête :
-
-Requête par borne kilométrique:  
-
-```xml
-	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
-	   <soapenv:Header/>
-	   <soapenv:Body>
-	      <geo:BorneRequete>
-	...
-	      </geo:BorneRequete>
-	   </soapenv:Body>
-	</soapenv:Envelope>
-```
-Requête par coordonnées GPS:  
-
-```xml
-	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
-	   <soapenv:Header/>
-	   <soapenv:Body>
-	      <geo:GPSRequete>
-	             ...
-	      </geo:GPSRequete>
-	   </soapenv:Body>
-	</soapenv:Envelope>
-```
-<a id="requetev6"></a>
-**Version 6 :**
-
-Requête par adresse:
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
-<soapenv:Header/>
-	<soapenv:Body>
-		<geo:GeocoderRequete>
-			<GLOCleAcces>?</GLOCleAcces>
-			<texte>?</texte>
-			<type>?</type>
-			/*Optional*/
-			<codeEPSG>?</codeEPSG>
-			/*Optional*/
-			<codeEPSGEntree>?</codeEPSGEntree>
-			/*Optional*/
-			<codeEPSGSortie>?</codeEPSGSortie>
-			/*Optional*/
-			<index>
-				/*Optional*/
-				<debut>?</debut>
-				/*Optional*/
-				<fin>?</fin>
-			</index>
-			/*Optional*/
-			<groupe>?</groupe>
-		</geo:GeocoderRequete>
-	</soapenv:Body>
-</soapenv:Envelope>
-```
-
-Requête par coordonnées GPS :
-
-```xml
-		<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
-<soapenv:Header/>
-	<soapenv:Body>
-		<geo:GPSRequete>
-		<GLOCleAcces>?</GLOCleAcces>
-		<texte>?</texte>
-		<codeEPSGEntree>?</codeEPSGEntree>
-		<codeEPSGSortie>?</codeEPSGSortie>
-	</geo:GPSRequete>
-</soapenv:Body>
-</soapenv:Envelope>
-```
-
-Requête par borne kilométrique:
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
-<soapenv:Header/>
-	<soapenv:Body>
-		<geo:BorneRequete>
-		<GLOCleAcces>?</GLOCleAcces>
-		<texte>?</texte>
-		<codeEPSG>?</codeEPSG>
-		/*Optional*/
-		<index>
-			/*Optional*/
-			<debut>?</debut>
-			/*Optional*/
-			<fin>?</fin>
-		</index>
-	</geo:BorneRequete>
-</soapenv:Body>
-</soapenv:Envelope>
-```  
-
-Requête par coordonnée (reverse geocoding):  
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
-<soapenv:Header/>
-	<soapenv:Body>
-		<geo:ReverseGeocodingRequete>
-			<GLOCleAcces>?</GLOCleAcces>
-			<texte>?</texte>
-			<codeEPSGEntree>?</codeEPSGEntree>
-			<codeEPSGSortie>?</codeEPSGSortie>
-			/*Optional*/
-			<index>
-				/*Optional*/
-				<debut>?</debut>
-				/*Optional*/
-				<fin>?</fin>
-			</index>
-			/*Optional*/
-			<groupe>?</groupe>
-	</geo:ReverseGeocodingRequete>
-</soapenv:Body>
-</soapenv:Envelope>
-```  
-
-Requête par lieu :
-
-```xml
-	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
-	   <soapenv:Header/>
-	   <soapenv:Body>
-	      <geo:LieuRequete>
-	             ...
-	      </geo:LieuRequete>
-	   </soapenv:Body>
-	</soapenv:Envelope>
-```
-
-
-<a id="reponse"></a>
-####Structure des réponses SOAP (XML) [<span class="octicon octicon-link"></span>](#reponse)
-
-La réponse en format XML qui est retournée par le service (ou via l’URL) peut être facilement décortiquée par l’application appelante.  
-Chaque type de requête retourne généralement; le nombre d’enregistrement, une liste d’attributs pour chacune des occurrences de la
-réponse correspondant à la chaîne de caractères reçue en paramètre.On retrouve aussi les coordonnées de la localisation de l’information
-obtenue de l’entrepôt de donné du  MSP . Enfin, on trouvera quelques métadonnées qualifiant la donnée.
-
-Extrait de la réponse XML d’une recherche d’adresse (par code postal soit «  <span style="color:blue">**G1M2L1**</span>  »):  
-
-<a id="reponsev5"></a>
-**Version 5** :  
-Requête par adresse:  
-
-```xml
-	<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://geoegl.msp.gouv.qc.ca/">
-	   <SOAP-ENV:Body>
-	      <ns1:GeocoderReponse>
-	         <nombreResultat>1</nombreResultat>
-	         <geocoderReponseListe>
-	            <borneDetail>
-	               <adresseLibre>1715 Rue De Merlac, Québec</adresseLibre>
-	               <geocodeMatchCode>100</geocodeMatchCode>
-	               <noCiviq>1715</noCiviq>
-	               <codeMuncp>23027</codeMuncp>
-	               <noMatricule>448690783110000000</noMatricule>
-	               <noSeqAdrCivique>1457606</noSeqAdrCivique>
-	               <nomRue>Rue De Merlac</nomRue>
-	               <noCivqSuffx/>
-	               <noApprt>0</noApprt>
-	               <noApprtSuffx>0</noApprtSuffx>
-	               <noCiviqDebutDroite>0</noCiviqDebutDroite>
-	               <noCiviqFinDroite>0</noCiviqFinDroite>
-	               <noCiviqDebutGauche>1701</noCiviqDebutGauche>
-	               <noCiviqFinGauche>1725</noCiviqFinGauche>
-	               <placeListe>
-	                  <borneDetail>
-	                     <type>Municipalité</type>
-	                     <nom>Québec</nom>
-	                  </borneDetail>
-	               </placeListe>
-	               <CP>
-	                  <codePostal>G1M2L1</codePostal>
-	                  <Copyright>Marque officielle de la Societe canadienne des postes</Copyright>
-	               </CP>
-	               <localisation>
-	                  <point>
-	                     <x>-212089.70453172</x>
-	                     <y>316975.67564502</y>
-	                     <SRS>
-	                        <codeEPSG>32198</codeEPSG>
-	                        <nom>EPSG</nom>
-	                        <WKT>+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs</WKT>
-	                     </SRS>
-	                  </point>
-	                  <enveloppe>
-	                     <SRS>
-	                        <codeEPSG>0</codeEPSG>
-	                        <nom/>
-	                        <WKT/>
-	                     </SRS>
-	                  </enveloppe>
-	               </localisation>
-	               <metadonnee>
-	                  <classe>Adresse Québec version 09</classe>
-	                  <source>AQ</source>
-	                  <date>2012/11/08 00:00:00</date>
-	               </metadonnee>
-	            </borneDetail>
-	         </geocoderReponseListe>
-	      </ns1:GeocoderReponse>
-	   </SOAP-ENV:Body>
-	</SOAP-ENV:Envelope>
-```
-
-Requête par borne kilométrique:
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
-<soapenv:Header/>
-<soapenv:Body>
-	<ns1:BorneReponse>
-		<nombreResultat>1</nombreResultat>
-			<detail>Aide flottante H47 - Bouée lumineuse H47; RECIF DU NORD OUEST ILE DU BIC</detail>
-			<localisation>
-				<point>
-					<x>-32054.965270581</x>
-					<y>489924.2759782</y>
-					<SRS>
-						<codeEPSG>32198</codeEPSG>
-						<nom>EPSG</nom>
-						<WKT>+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</WKT>
-					</SRS>
-				</point>
-				<enveloppe>
-					<SRS>
-						<codeEPSG>0</codeEPSG>
-						<nom/>
-						<WKT/>
-					</SRS>
-				</enveloppe>
-			</localisation>
-			<metadonnee>
-				<classe>Repères kilométriques  MTQ</classe>
-				<source>MTQ</source>
-				<date>2014/12/15 00:00:00</date>
-			</metadonnee>
-		</borneDetail>
-		</borneReponseListe>
-	</ns1:BorneReponse>
-</soapenv:Body>
-</soapenv:Envelope>
-```
-
-Requête par coordonnées GPS :
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
-<soapenv:Header/>
-<soapenv:Body>
-	<ns1:GPSReponse>
-		<nombreResultat>1</nombreResultat>
-		<patternCoordInput>degrés minutes décimales</patternCoordInput>
-		<formatCoordInput>dd mm.mmm</formatCoordInput>
-		<coteCertitude>0</coteCertitude>
-		<rayonIncertitude>0</rayonIncertitude>
-		<localisation>
-			<municipalite>Saint-Léon-le-Grand (Bas-Saint-Laurent)</municipalite>
-			<localite>Saint-Léon-le-Grand</localite>
-			<distance>5.7</distance>
-			<point>
-				<x>67709.232742384</x>
-				<y>487286.2746338</y>
-				<SRS>
-					<codeEPSG>32198</codeEPSG>
-					<nom>EPSG</nom>
-					<WKT>+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</WKT>
-				</SRS>
-			</point>
-		</localisation>
-	</ns1:GPSReponse>
-</soapenv:Body>
-</soapenv:Envelope>
-```
-
-<a id="reponsev6"></a>
-**Version 6**:
-
-Requête par adresse:  
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
-<soapenv:Header/>
-<soapenv:Body>
-	<ns1:GeocoderReponse>
-		<nombreResultat>1</nombreResultat>
-		<geocoderReponseListe>
-				<adresseLibre>2525 Boulevard Laurier, Québec</adresseLibre>
-				<geocodeMatchCode>100</geocodeMatchCode>
-				<noCiviq>2525</noCiviq>
-				<codeMuncp>23027</codeMuncp>
-				<noMatricule>458147961610000000</noMatricule>
-				<noSeqAdrCivique>3933017</noSeqAdrCivique>
-				<nomRue>Boulevard Laurier</nomRue>
-				<noCivqSuffx/>
-				<noApprt>0</noApprt>
-				<noApprtSuffx>0</noApprtSuffx>
-				<noCiviqDebutDroite>0</noCiviqDebutDroite>
-				<noCiviqFinDroite>0</noCiviqFinDroite>
-				<noCiviqDebutGauche>2505</noCiviqDebutGauche>
-				<noCiviqFinGauche>2535</noCiviqFinGauche>
-				<placeListe>
-						<type>Municipalité</type>
-						<nom>Québec</nom>
-					</borneDetail>
-				</placeListe>
-				<CP>
-					<codePostal>G1V2L2</codePostal>
-					<Copyright>Marque officielle de la Societe canadienne des postes</Copyright>
-				</CP>
-				<localisation>
-					<point>
-						<x>-211697.30075628</x>
-						<y>312653.86267632</y>
-						<SRS>
-							<codeEPSG>32198</codeEPSG>
-							<nom>EPSG</nom>
-							<WKT>+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</WKT>
-						</SRS>
-					</point>
-					<enveloppe>
-						<SRS>
-							<codeEPSG>0</codeEPSG>
-							<nom/>
-							<WKT/>
-						</SRS>
-					</enveloppe>
-				</localisation>
-				<metadonnee>
-					<classe>Adresse Québec version 09</classe>
-					<source>AQ</source>
-					<date>2014/12/02 00:00:00</date>
-				</metadonnee>
-			</borneDetail>
-		</geocoderReponseListe>
-</ns1:GeocoderReponse>
-</soapenv:Body>
-</soapenv:Envelope>
-```
-Requête par borne kilométrique:  
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
-<soapenv:Header/>
-<soapenv:Body>
-	<ns1:BorneReponse>
-		<nombreResultat>1</nombreResultat>
-				<detail>Aide flottante H47 - Bouée lumineuse H47; RECIF DU NORD OUEST ILE DU BIC</detail>
-				<localisation>
-					<point>
-						<x>-32054.965270581</x>
-						<y>489924.2759782</y>
-						<SRS>
-							<codeEPSG>32198</codeEPSG>
-							<nom>EPSG</nom>
-							<WKT>+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</WKT>
-						</SRS>
-					</point>
-					<enveloppe>
-						<SRS>
-							<codeEPSG>0</codeEPSG>
-							<nom/>
-							<WKT/>
-						</SRS>
-					</enveloppe>
-				</localisation>
-				<metadonnee>
-					<classe>Repères kilométriques  MTQ</classe>
-					<source>MTQ</source>
-					<date>2014/12/15 00:00:00</date>
-				</metadonnee>
-			</borneDetail>
-		</borneReponseListe>
-</ns1:BorneReponse>
-</soapenv:Body>
-</soapenv:Envelope>
-```
-
-Requête par coordonnées GPS :  
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:geo="http://geoegl.msp.gouv.qc.ca/">
-<soapenv:Header/>
-<soapenv:Body>
-	<ns1:GPSReponse>
-		<nombreResultat>1</nombreResultat>
-		<patternCoordInput>degrés minutes décimales</patternCoordInput>
-		<formatCoordInput>dd mm.mmm</formatCoordInput>
-		<coteCertitude>0</coteCertitude>
-		<rayonIncertitude>0</rayonIncertitude>
-		<localisation>
-			<municipalite>Saint-Léon-le-Grand (Bas-Saint-Laurent)</municipalite>
-			<localite>Saint-Léon-le-Grand</localite>
-			<distance>5.7</distance>
-			<point>
-				<x>67709.232742384</x>
-				<y>487286.2746338</y>
-				<SRS>
-					<codeEPSG>32198</codeEPSG>
-					<nom>EPSG</nom>
-					<WKT>+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</WKT>
-				</SRS>
-			</point>
-		</localisation>
-	</ns1:GPSReponse>
-</soapenv:Body>
-</soapenv:Envelope>
-```
-
 *cote de précision (geocodeMatchCode)*
 
 | Code | Description |
@@ -1387,3 +1352,161 @@ Requête par coordonnées GPS :
 | 100 | Le géocodage a réussis à associer l’adresse au rôle d’évaluation |  
 | 50 | Le géocodage a positionner l’adresse entre le minimum et le maximum de la tranche d’adresse du segment par extrapolation mathématique |  
 | 35 | Le géocodage a positionner l’adresse au centre du segment de la rue (absence de minimum/maximum) |  
+
+
+<a id="version"></a>
+###Historique des versions du service Web ( GLO )  [<span class="octicon octicon-link"></span>](#version)  
+
+<span style="background-color:lime;">**LES  VERSIONS  1, 2 ET 3 NE SONT PLUS SUPPORTÉES.**<span />
+
+<a id="v1"></a>
+**Version 1 : Version initiale**
+
+<a id="v2"></a>
+**Version 2 : 14 octobre 2009**
+
+La différence majeure entre les deux versions se retrouve au niveau des recherches par adresse.  
+Le géocodage est maintenant plus précis c’est à dire que le positionnement peut se faire directement  
+sur le numéro civique (grâce au rôle d’évaluation) et non plus sur une tranche d’adresse seulement  
+comme c’était le cas avec la version #1 du service :  
+
+Ancien champs de la version #1:
+
+```xml
+< noCiviqDebut />  
+< noCiviqFin />
+```
+
+Remplacés par les nouveaux champs de la version #2:  
+
+```xml
+< geocodeMatchCode />  
+< noCiviq />  
+< noCiviqDebutDroite />  
+< noCiviqFinDroite />  
+< noCiviqDebutGauche />  
+< noCiviqFinGauche/ >  
+```
+<a id="v3"></a>
+**Version 3 : décembre 2010**  
+
+La version 3 du  GLO comprend l’ajout des champs suivants:
+CODE_MUNCP ,  NO_MATRICULE ,  NO_SEQ_ODONM  du  DGE .  
+Cette version comprend également l’ajout d’une recherche d'adresse textuelle améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté. La recherche par Lieux d’intérêt est également grandement améliorée.
+
+Champs de la version #3:  
+
+```xml
+< geocodeMatchCode />  
+< noCiviq />  
+< noCiviqDebutDroite />  
+< noCiviqFinDroite />  
+< noCiviqDebutGauche />  
+< noCiviqFinGauche />  
+< code_muncp />  
+< no_matricule />  
+< no_seq_adr_civique />  
+```
+
+<a id="v5"></a>
+**Version 5 : novembre 2012**
+
+Cette version comprend également l’ajout d’une recherche d'adresse de similarité phonétique améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté.
+
+Champs supplémentaire de la version #5:
+
+RemarqueListe:
+
+```xml
+<GeocoderReponse>
+  <RemarqueListe>
+    <borneDetail>
+      <texte>*Texte spécifiant la remarque*</texte>
+      <vieu>*Texte de la recherche pouvant être remplacé par le noeud 'nouveau'*</vieu>
+      <nouveau>*Texte pouvant remplacer le texte contenu dans le noeud 'vieu'*</nouveau>
+      <requeteGLO>*Le texte donné en entrée*</requeteGLO>
+    </borneDetail>
+    ...
+  <RemarqueListe/>
+<GeocoderReponse/>
+```
+
+noCiviqDebut et noCiviqFin:
+
+```xml
+<GeocoderReponse>
+  <geocoderReponseListe>
+    <borneDetail>
+      <noCiviqDebut/>
+      <noCiviqFin/>
+      ...
+    <borneDetail/>
+  <geocoderReponseListe/>
+<GeocoderReponse/>
+```
+
+CP:
+
+```xml
+<GeocoderReponse>
+  <geocoderReponseListe>
+    <borneDetail>
+          <CP>
+            <codePostal>G1V2L2</codePostal>
+            <Copyright> Marque officielle de la Societe canadienne des postes</Copyright>
+          </CP>
+          ...
+      <borneDetail/>
+    <geocoderReponseListe/>
+<GeocoderReponse/>
+
+```
+
+**<u> Ajout janvier 2014 </u>**  
+
+statut:  
+
+```xml
+<GeocoderReponse>
+  <geocoderReponseListe>
+    <borneDetail>
+      <statut>
+        <etat/>
+        <description/>
+        <commentaire/>
+      <statut/>
+    <borneDetail/>
+  <geocoderReponseListe/>
+<GeocoderReponse/>
+```
+
+Correspond aux informations sur les municipalités.  
+etat  : Officiel ou Non officiel.  
+description   : Valide, Supprimé.  
+commentaire   : correspondant à une Ancienne limite ou la ville correspondant Maintenant.  
+
+Correspond également aux informations sur les adresses.  
+etat           : Officiel ou Non officiel.  
+description    : Ajouté, Modification sur description seulement, Modification sur géométrie seulement, Modification sur géométrie et description.  
+commentaire    : commentaire quelconque.  
+
+<a id="v6"></a>
+**Version 6 janvier 2015:**
+
+Parmi les améliorations :  
+
+* le générique et l'orientation de l'odonyme est maintenant utilisé pour préciser la rechercher par adresse.  
+* un option permettant le regroupement des adresses pour une même coordonnées. Par exemple, permet ainsi d'avoir un seul résutltat pour "1 place ville-marie montréal".  
+* amélioration de la recherche par borne avec le mot clé "panneau". Ex: "panneau 40 st-raymond" permettant de donner tous les panneaux sur la route #40 contenant le mot "st-raymond".  
+* ajout du centroîde du code postal comme premier résultat lors d'une recherche par code postal seul.
+* amélioration de la recherche par intersection. La municipalité n'est plus obligatoire et l'intersection par numéro de route et autoroute est maintenant possible.  
+* un retour en JSON.  
+* une recherche de 'reverse geocoding' (recherche d'adresse par coordonnée).  
+* plus de possibilités pour la recherche par GPS en définissant le code EPSG en entrée (paramètre: epsg_entree).  
+* recherche par GPS retourne mainteannt la mrc, région administrative ( plus clairement, car elle était comprise entre paranthèse dans le noeud 'municipalite' ) et la localité qui fait référence au toponyme le plus près fourni par la Commission de la toponymie du Québec.
+* optimisation du code qui permet de doubler la vitesse dans la plupart des cas.  
+* le résultat de la recherche par lieu est maintenant obtenu par une recherche par similarité. Le module de postgreSQL, "pg_trgm" est utilisé.
+
+Changement dans les paramètres d'entrée :  
+
+* le code EPSG en entrée peut maintenant être fourni par "epsg_entree". L'ancien paramètre "epsg" est encore maintenu mais fait maintenant référence au nouveau paramètre "epsg_sortie".
