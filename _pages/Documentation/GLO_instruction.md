@@ -141,11 +141,11 @@ http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&tex
 Exemple qui retourne les enregistrements mais dont les coordonnées sont dans le système de projection de Google :
 
 Pour la version 5:  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
+http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml  
 
 Pour la version 6 :  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
-ou
+http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml  
+ou  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=xml
 
 <a id="soap"></a>
@@ -154,8 +154,8 @@ La deuxième façon est d’appeler le service Web en utilisant un langage de pr
 Les différents paramètres ainsi que les méthodes exposées par le service Web sont définies dans le fichier  WSDL (Web Service Definition Language](http://www.w3.org/TR/wsdl "Web Service Definition Language")
 
 Version 5 :  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeur.php?WSDL
-Version 6 :
+http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeur.php?WSDL  
+Version 6 :  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeur.php?WSDL  
 
 Voici les méthodes présentement supportées par le service :
@@ -166,7 +166,7 @@ Voici les méthodes présentement supportées par le service :
 *     GeocoderReverseGeocoding()² : Pour les recherches inversées par coordonnées.
 *     GeocoderLieu()² : Pour les recherches de type 'lieu'
 
-¹ La recherche de lieu se fait avec 'GeocoderLieu' dans la version 6.
+¹ La recherche de lieu se fait avec 'GeocoderLieu' dans la version 6.  
 ² Depuis la version 6 
 
 <a id="type"></a>
@@ -330,14 +330,7 @@ geocoderReponseListe: [
   },
   idStat: "1cbe225a984536bee05358f2298ed5fe"
 },
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
+  ...
 ],
 nombreResultat: 10,
 RemarqueListe: [ ]
@@ -877,7 +870,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service :
 
   Si la combinaison numéro civique + rue existe, Ex : **<span style="color:  blue">100, Blais**</span>
 
-  = ►   Retournetoutes les adresses (no. civique, la rue et la ville) pour toutes les villes du Québec qui ont une rue et un numéro civique correspondant.
+  = ►   Retourne toutes les adresses (no. civique, la rue et la ville) pour toutes les villes du Québec qui ont une rue et un numéro civique correspondant.
 
   ```
       100 1e rang Blais Sud, Saint-Tharcisius
@@ -914,9 +907,9 @@ Voici des exemples de chaîne qui peuvent être soumise au service :
     450 116e Avenue, Shawinigan
   ```
 
-  Note :
-  Il n’est pas nécessaire d’écrire 'rue', 'route', 'rang', 'avenue', etc.
-  **La version 6 prend en compte les génériques**
+  Note : 
+  Pour la version 5, il n’est pas nécessaire le générique d'odonyme ('rue', 'route', 'rang', 'avenue', etc.)
+  Pour la version 6, le générique d'odonyme est pris en compte.
 
   Si aucune combinaison numéro civique + rue + ville existe…
 
@@ -960,7 +953,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service :
   La Vallée-du-Richelieu (MRC)
   ```
 
-  i) Dans les cas où le résultat pour tous les patterns précédents donne « aucun résultat ». La recherche passe ensuite dans une recherche **phonétique** en utilisant les outils de similarités de textes fournient par PostgreSQL (http://www.postgresql.org/docs/9.3/static/pgtrgm.html). Le script doit d'abord avoir détecté un numéro civique ou un code postal.
+  i) Dans les cas où le résultat pour tous les patterns précédents donne « aucun résultat ». La recherche passe ensuite dans une recherche **phonétique** en utilisant les outils de similarités de textes fournient par PostgreSQL (http://www.postgresql.org/docs/9.3/static/pgtrgm.html). Le script doit d'abord avoir détecté un numéro civique ou un code postal pour permettre un temps de réponse respectable.
 
   Ex : <span style="color:blue">**2525 laurire quebce**</span>
 
@@ -974,7 +967,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service :
 
   Ex : <span style="color:blue">**2525 boul Laurier Québec G1V 2L2**</span>
 
-  = ►  Retourne un résultat provenant de la base de données d’adresses. La recherche se fait dans le champ < RECHERCHE_TEXTUELLE > qui contient l’adresse au complet, le code postal, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.
+  = ►  Retourne un résultat provenant de la base de données d’adresses du MSP. La recherche se fait dans un champ qui contient l’adresse au complet, le code postal, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.
 
   ```
   2525 Boulevard Laurier, Québec
@@ -987,7 +980,7 @@ Version 5 :
 
 À partir de **plusieurs mots clé** (l'ordre n'a pas d'importance)  
 
-Retourne un résultat provenant de la base de données de Lieux d’intérêt. La recherche se fait dans le champ <  RECHERCHE_TEXTUELLE  > qui contient plusieurs informations concernant ce lieu : son nom,des mots clé, l’adresse s’il y a lieu, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.  
+Retourne un résultat provenant de la base de données de Lieux d’intérêt. La recherche se fait un champ qui contient plusieurs informations concernant ce lieu : son nom,des mots clé, l’adresse s’il y a lieu, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ.  
 
 
 <span style="color:blue">**Lac Poulin**</span>  
@@ -1028,8 +1021,7 @@ Retourne un résultat provenant de la base de données de Lieux d’intérêt. L
   ```
 Version 6 : 
 
-À partir de similarité entre le texte entré et la contenu du champ < RECHERCHE_TEXTUELLE >. Un poids plus grand est apporté au nom du lieu 
-comparé aux informations supplémentaires compris dans le champs < RECHERCHE_TEXTUELLE >. 
+À partir de similarité entre le texte entré et la contenu du champ < RECHERCHE_TEXTUELLE >. Un poids plus grand est apporté au nom du lieu comparé aux informations supplémentaires compris dans le champs < RECHERCHE_TEXTUELLE >. 
 Contrairement à la version 5, la version 6 est plus souple et trouve ses résultats selon la similarité des mots.   
 La recherche est limité à 80 résultats.
 
@@ -1281,7 +1273,7 @@ Dans la municipalité de Saint-Léon-le-Grand (Bas-Saint-Laurent), à 5.7Km de S
 
 d) À partir de coordonnées en UTM-fuseau
 
-Ex :  <span style="color:blue">**UTM-18 1018490.56282, 5434191.46593**</span>
+Ex :  <span style="color:blue">**UTM-18 1018490.56282, 5434191.46593**</span>  
 Possibilitées avec la version 6 :  
 <span style="color:blue">
 **UTM-18 1018490.56282 5434191.46593**  
@@ -1296,7 +1288,7 @@ Dans la municipalité de (Bas-Saint-Laurent), à 13.9Km de Baie-des-Sables
 
 e) À partir de coordonnées en  MTM-fuseau
 
-Ex :   <span style="color:blue">**MTM7  493344.550863, 5414859.14264**</span>
+Ex :   <span style="color:blue">**MTM7  493344.550863, 5414859.14264**</span>  
 Possibilitées avec la version 6 :  
 <span style="color:blue">
 **MTM-7 493344.550863 5414859.14264**  
@@ -1511,7 +1503,7 @@ Parmi les améliorations :
 * un retour en JSON.  
 * une recherche de 'reverse geocoding' (recherche d'adresse par coordonnée).  
 * plus de possibilités pour la recherche par GPS en définissant le code EPSG en entrée (paramètre: epsg_entree).  
-* recherche par GPS retourne mainteannt la mrc, région administrative ( plus clairement, car elle était comprise entre paranthèse dans le noeud 'municipalite' ) et la localité qui fait référence au toponyme le plus près.
+* recherche par GPS retourne mainteannt la mrc, région administrative ( plus clairement, car elle était comprise entre paranthèse dans le noeud 'municipalite' ) et la localité qui fait référence au toponyme le plus près fourni par la Commission de la toponymie du Québec.
 * optimisation du code qui permet de doubler la vitesse dans la plupart des cas.  
 * le résultat de la recherche par lieu est maintenant obtenu par une recherche par similarité. Le module de postgreSQL, "pg_trgm" est utilisé.
 
