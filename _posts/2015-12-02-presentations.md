@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Présentations IGO 2015
-tags: [annonce-domino2015] 
+tags: [presentation] 
 categories:
 - information
 ---
