@@ -9,7 +9,7 @@ categories:
 Lors de la [Journée internationale du logiciel libre](http://jill.facil.qc.ca/) qui a eu lieu à Montréal le 19 septembre dernier, M. Pierre Lessard du ministère des Transports (MTQ) a présenté le projet IGO afin d'informer la communauté des logiciels libres de l'approche de développement inédite au gouvernement et du contexte d'intégration d'IGO au MTQ. 
 Il a présenté IGO au [Salon des Logiciels Libres](http://s2lq.com/) à Montréal quelques jours plus tard. IGO a également été présenté au congrès de l'[Association Québécoise de Télédétection dans le cadre d'un atelier sur la sécurité civile et les drones](http://www.ete.inrs.ca/evenements/ateliers-securite-civile-drones-teledetection)  en octobre dernier. À chacun des événements, l’assistance s’est montrée très enthousiaste.
 
-Pour plus d’information sur ces présentations, consultez ce ([site de partage](http://fr.slideshare.net/igouverte).
+Pour plus d’information sur ces présentations, consultez ce [site de partage](http://fr.slideshare.net/igouverte).
 
 Si vous avez des questions sur IGO, consultez notre foire aux questions ([FAQ](http://igouverte.org/faq/)).
 
