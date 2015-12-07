@@ -7,7 +7,7 @@ categories:
 ---
 La communauté d'organismes utilisateurs d'IGO s'est élargie dans les derniers mois. 
 <div class="liste_service" markdown="1" >
-Parmi ceux-ci, mentionnons les services uitlisés: 
+Parmi ceux-ci, mentionnons ces trois services en ligne IGO utilisés actuellement: 
 <ul>
 			<li>Le  ([service web de « GéoLOcalisation (GLO)](http://igouverte.org/documentation/glo/)) : il utilise la banque de données Adresses Québec et peut maintenant être implanté dans les différents systèmes de mission des organismes publics. À ce jour, une vingtaine d’organismes publics l’utilisent, ce qui génère entre 2 000 et 5 000 appels par jour.</li> 
 <li>Un fond de cartes officielles du  Gouvernement du Québec :  créé dans IGO à partir de données cartographiques du territoire du Québec provenant de plusieurs organismes publics, il est l’un des plus précis et des plus à jour parmi ceux qui sont offerts sur le web. Il est utilisé dans quelques sites Internet gouvernementaux, notamment : le ([portail des données ouvertes du gouvernement](http://www.donnees.gouv.qc.ca/?node=/applications-geomatique)), le ([site du ministère de la Sécurité publique](http://www.securitepublique.gouv.qc.ca/securite-incendie/bottin-services-incendie.html)), le ([site du ministère de l'Énergie et des Ressources naturelles](https://appli.mern.gouv.qc.ca/Gagq/Info/CarteInteractive)), le ([service en ligne Greffe de l'arpenteur général du Québec]( https://gagq.mern.gouv.qc.ca/)) et  le ([site de la Commission de la toponymie](http://www.toponymie.gouv.qc.ca/ct/ToposWeb/fiche.aspx?no_seq=151227)).</li> 
