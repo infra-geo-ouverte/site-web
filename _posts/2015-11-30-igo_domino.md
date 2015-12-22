@@ -13,7 +13,7 @@ Financé par le ministère de l’Économie, de l’Innovation et des Exportatio
 Voici un schéma qui présente les blocs et les relations entre DOMINO et IGO :
 ![schéma](http://igouverte.org/assets/img/IGO_DOMINO_GIT.png)
 
-Pour plus d’information sur ce projet des effets dominos, consultez le site [Internet de Polytechnique Montréal](http://www.polymtl.ca/crp/recherche/projet.php) et cette nouvelle le site [du CRP](http://www.polymtl.ca/salle-de-presse/nouvelles/simulation-deffets-domino-sur-une-solution-de-geomatique-ouverte-acces-restreint?utm_source=web&utm_medium=twitter&utm_campaign=SDP) .
+Pour plus d’information sur ce projet des effets dominos, consultez le site [Internet de Polytechnique Montréal](http://www.polymtl.ca/crp/recherche/projet.php) et cette nouvelle sur le site [du CRP](http://www.polymtl.ca/salle-de-presse/nouvelles/simulation-deffets-domino-sur-une-solution-de-geomatique-ouverte-acces-restreint?utm_source=web&utm_medium=twitter&utm_campaign=SDP) .
 
 Si vous avez des questions sur IGO, consultez notre foire aux questions ([FAQ](http://igouverte.org/faq/)).
 
