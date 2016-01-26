@@ -126,6 +126,7 @@ Liste des paramètres:
 | epsg_sortie² | Le code EPSG des coordonnées en sortie.<br>Les valeurs possibles sont ceux supporté par PostGIS v2.0.1.  Le paramètre "epsg" et "epsg_sortie" sont égaux dans la version 6 | Non<br>(32198 par défaut)|
 | groupe² | Permet de regrouper les adresses positionnées aux mêmes coordonnées et possédant les mêmes attributs.  1=regrouper  0=pas grouper | Non<br>(0 par défaut) |
 | callback² | Nom de la méthode à utiliser (côté client) lors du retour de la réponse.<br>Ce paramètre est lié au format 'JSONP' | Non |
+| param_output² | Liste des attributs séparé par une virgule qui seront compris dans la réponse du service.<br>L'utilisation de "\*" permet de choisir tous les attributs possibles.<br>Les attributs listés après "\*" seront écartés.<br>Pour le contenu de 'placeListe', les possibilités sont :<br>regadmin, regtourisme, agglomeration, mrc, toponyme, mun et placeliste pour l'ensemble des lieux.<br><br><b>DISPONIBLE SEULEMENT POUR LES RECHERCHES DE TYPE 'adresse'</b> | Non<br>(* par défaut) |
 
 <span style="color:red">
 ¹ Avec la version 5 seulement  
@@ -146,7 +147,15 @@ http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&tex
 Pour la version 6 :  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml  
 ou  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=xml
+http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=xml  
+
+Exemple qui retourne que l'attribut 'addresseLibre' :  
+Pour la version 6 :  
+http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=json&param_output=adresselibre  
+
+Exemple qui retourne que tous sauf l'attribut 'addresseLibre' :  
+Pour la version 6 :  
+http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=json&param_output=*,adresselibre
 
 <a id="soap"></a>
 ####2) SOAP  
@@ -211,12 +220,30 @@ geocoderReponseListe: [
   noCiviqDebut: null,
   noCiviqFin: null,
   nomRue: null,
-  placeListe: [
-    {
+  placeListe: [{
+      type: "Région administrative",
+      nom: "Capitale-Nationale",
+      code: "03"
+    }, {
+      type: "Région touristique",
+      nom: "Région de Québec",
+      code: "04"
+    }, {
+      type: "Agglomération",
+      nom: "Agglomération de Québec"
+    }, {
+      type: "MRC",
+      nom: "Québec",
+      code: "23"
+    }, {
+      type: "Toponyme",
+      nom: "Domaine-Saint-Charles",
+      distance: 0.1
+    }, {
       type: "Municipalité",
-      nom: "Québec"
-    }
-  ],
+      nom: "Québec",
+      code: "23027"
+  }],
   metadonnee: {
     classe: "Adresse Québec version 09",
     source: "AQ",
@@ -273,12 +300,30 @@ geocoderReponseListe: [
   noCiviqDebut: null,
   noCiviqFin: null,
   nomRue: "Rue De Merlac",
-  placeListe: [
-    {
+  placeListe: [{
+      type: "Région administrative",
+      nom: "Capitale-Nationale",
+      code: "03"
+    }, {
+      type: "Région touristique",
+      nom: "Région de Québec",
+      code: "04"
+    }, {
+      type: "Agglomération",
+      nom: "Agglomération de Québec"
+    }, {
+      type: "MRC",
+      nom: "Québec",
+      code: "23"
+    }, {
+      type: "Toponyme",
+      nom: "Domaine-Saint-Charles",
+      distance: 0.1
+    }, {
       type: "Municipalité",
-      nom: "Québec"
-    }
-  ],
+      nom: "Québec",
+      code: "23027"
+  }],
   metadonnee: {
     classe: "Adresse Québec version 09",
     source: "AQ",
@@ -356,35 +401,37 @@ RemarqueListe: [ ]
   * `noApprt` : Numéro d'appartement.
   * `noApprtSuffx` : Suffixe d'appartement. 
   * `idStat` : identifiant unique du MSP
-  * `placeListe` : Liste de lieu relié à l'adresse représenté sous cette forme : `[{type}, {nom}]`
-    * `type` : Descriptif du lieu. Les valeurs possibles sont : 'Lieu', 'Municipalité', 'MRC', 'Région administrative'
-    * `nom` : Nom du lieu.
+  * `placeListe` : Liste de lieu relié à l'adresse représenté sous cette forme : `[{type}, {nom}, {code}, {distance}]`
+      * `type` : Descriptif du lieu. Les valeurs possibles sont : 'Lieu', 'Municipalité', 'MRC', 'Région administrative', 'Région touristique', 'Toponyme', 'Agglomération'
+      * `nom` : Nom du lieu.
+      * `distance` : Distance du toponyme, s'il y a lieu.
+      * `code` : Code représentant le lieu, s'il y a lieu.
   * `metadonnee` : Métadonnée sous la forme :  `{classe}, {source}, {date}`
-    * `classe` : Descriptif de la donnée.
-    * `source` : Descriptif du producteur de la donnée.
-    * `date` : Date de la dernière mise à jour.
+      * `classe` : Descriptif de la donnée.
+      * `source` : Descriptif du producteur de la donnée.
+      * `date` : Date de la dernière mise à jour.
   * `CP` : Code postal sous la forme : `{codePostal},{Copyright},{estValide}`
-    * `codePostal` : le code postal.
-    * `Copyright` : Description des droits d'auteurs de Poste Canada.
-    * `estValide` : Confirme ou non que le code postal est contenu dans Adresse Québec.
+      * `codePostal` : le code postal.
+      * `Copyright` : Description des droits d'auteurs de Poste Canada.
+      * `estValide` : Confirme ou non que le code postal est contenu dans Adresse Québec.
   * `localisation` : Localisation de l'adresse sous la forme : `{point}, {enveloppe}`
-    * `point` : Coordonnée de la localisation sous la former : `{x},{y},{SRS}`
-      * `x` : Coordonnée X de la localisation.
-      * `y` : Coordonnée X de la localisation.
-      * `SRS` : Système de coordonnée du point sous la forme :
-        `{nom},{codeEPSG},{WKT}`
-        * `nom`: Nom de l'instance définissant le système de coordonnée.
-        * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
-        * `WKT`: système de coordonnée en format WKT (Well Known Text).
-    * `enveloppe` : étendue rectangulaire de l'entité sous la forme : `{Xmin}, {Ymin}, {Xmax}, {Ymax}, {SRS}`
-      * `Xmin` : Coordonnée minimum en X.
-      * `Ymin` : Coordonnée minimum en Y.
-      * `Xmax` : Coordonnée maximum en X.
-      * `Ymax` : Coordonnée maximum en Y.
-      * `SRS` : Système de coordonnée de l'étendue sous la forme : `{nom},{codeEPSG},{WKT}`
-        * `nom`: Nom de l'instance définissant le système de coordonnée.
-        * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
-        * `WKT`: système de coordonnée en format WKT (Well Known Text).
+      * `point` : Coordonnée de la localisation sous la former : `{x},{y},{SRS}`
+          * `x` : Coordonnée X de la localisation.
+          * `y` : Coordonnée X de la localisation.
+          * `SRS` : Système de coordonnée du point sous la forme :
+            `{nom},{codeEPSG},{WKT}`
+              * `nom`: Nom de l'instance définissant le système de coordonnée.
+              * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
+              * `WKT`: système de coordonnée en format WKT (Well Known Text).
+      * `enveloppe` : étendue rectangulaire de l'entité sous la forme : `{Xmin}, {Ymin}, {Xmax}, {Ymax}, {SRS}`
+          * `Xmin` : Coordonnée minimum en X.
+          * `Ymin` : Coordonnée minimum en Y.
+          * `Xmax` : Coordonnée maximum en X.
+          * `Ymax` : Coordonnée maximum en Y.
+          * `SRS` : Système de coordonnée de l'étendue sous la forme : `{nom},{codeEPSG},{WKT}`
+              * `nom`: Nom de l'instance définissant le système de coordonnée.
+              * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
+              * `WKT`: système de coordonnée en format WKT (Well Known Text).
   * `statut` : Numéro civique.
   * `noCiviqDebut` : N'EST PLUS MAINTENU. Sera supprimé lors de la prochaine version.
   * `noCiviqFin` : N'EST PLUS MAINTENU. Sera supprimé lors de la prochaine version.
@@ -534,25 +581,25 @@ La réponse est la même qu'une recherche d'adresse.
   * `detail` : Chaine de caractère identifiant bornes pouvant prendre plusieurs formes selon la recherche.
   * `localisation` : Localisation de l'adresse sous la forme : `{point}, {enveloppe}`
   * `point` : Coordonnée de la localisation sous la former : `{x},{y},{SRS}`
-    * `x` : Coordonnée X de la localisation.
-    * `y` : Coordonnée X de la localisation.
-    * `SRS` : Système de coordonnée du point sous la forme : `{nom},{codeEPSG},{WKT}`
-      * `nom`: Nom de l'instance définissant le système de coordonnée.
-      * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
-      * `WKT`: système de coordonnée en format WKT (Well Known Text).
+      * `x` : Coordonnée X de la localisation.
+      * `y` : Coordonnée X de la localisation.
+      * `SRS` : Système de coordonnée du point sous la forme : `{nom},{codeEPSG},{WKT}`
+          * `nom`: Nom de l'instance définissant le système de coordonnée.
+          * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
+          * `WKT`: système de coordonnée en format WKT (Well Known Text).
   * `enveloppe` : étendue rectangulaire de l'entité sous la forme : `{Xmin}, {Ymin}, {Xmax}, {Ymax}, {SRS}`
-    * `Xmin` : Coordonnée minimum en X.
-    * `Ymin` : Coordonnée minimum en Y.
-    * `Xmax` : Coordonnée maximum en X.
-    * `Ymax` : Coordonnée maximum en Y.
-    * `SRS` : Système de coordonnée de l'étendue sous la forme : `{nom},{codeEPSG},{WKT}`
-      * `nom`: Nom de l'instance définissant le système de coordonnée.
-      * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
-      * `WKT`: système de coordonnée en format WKT (Well Known Text).
+      * `Xmin` : Coordonnée minimum en X.
+      * `Ymin` : Coordonnée minimum en Y.
+      * `Xmax` : Coordonnée maximum en X.
+      * `Ymax` : Coordonnée maximum en Y.
+      * `SRS` : Système de coordonnée de l'étendue sous la forme : `{nom},{codeEPSG},{WKT}`
+          * `nom`: Nom de l'instance définissant le système de coordonnée.
+          * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
+          * `WKT`: système de coordonnée en format WKT (Well Known Text).
   * `metadonnee` : Métadonné sur le lieu sous la forme : `{classe}, {source}, {date}`
-    * `classe` : Description de la donnée.
-    * `source` : Nom désignant la source de la donnée.
-    * `date` : Date de la dernière mise à jour.
+      * `classe` : Description de la donnée.
+      * `source` : Nom désignant la source de la donnée.
+      * `date` : Date de la dernière mise à jour.
 * `nombreResultat` : Nombre total de lieu retourné par le service.
 * `RemarqueListe` : Liste de recherche alternative possible.
 * `entree` : Chaine de caractère entrée en paramètre.
@@ -583,6 +630,7 @@ La réponse est la même qu'une recherche d'adresse.
     localite: "Pointe Paradis",
     distance: 0.7,
     metadonnee: null,
+    regionTouristique: "Manicouagan",
     point: {
       x: "20112.8015548701",
       y: "564966.596538928",
@@ -591,7 +639,28 @@ La réponse est la même qu'une recherche d'adresse.
         codeEPSG: "32198",
         WKT: "+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs "
       }
-    }
+    },
+    placeListe: [{
+      type: "Municipalité",
+      nom: "Pointe-Lebel",
+      code: "96025"
+    }, {
+      type: "Région administrative",
+      nom: "Côte-Nord",
+      code: "09"
+    }, {
+      type: "MRC",
+      nom: "Manicouagan",
+      code: "96"
+    }, {
+      type: "Toponyme",
+      nom: "Pointe Paradis",
+      distance: 0.7
+    }, {
+      type: "Région touristique",
+      nom: "Manicouagan",
+      code: "16"
+    }],
   },
   nombreResultat: 1,
   RemarqueListe: [ ]
@@ -609,21 +678,27 @@ La réponse est la même qu'une recherche d'adresse.
 * `rayonIncertitude` : Rayon d'incertitude pour le pattern 'BELL-E911-SSF'
 * `coteCertitude` : Cote d'incertitude sur le rayon pour le pattern 'BELL-E911-SSF'
 * `formatCoordInput` : Description du pattern. Les valeurs possibles sont : 'X, Y','dd.ddd','dd mm.mmm','dd mm ss.s','Lat: dd mm ss.s Long: dd mm ss.s UNC: CONF:'
-* `localisation` : Localisation du point sous la forme : `{point}, {municipalite},{regionAdministrative},{mrc},{agglomeration},{localite},{distance},{metadonnee}`
+* `localisation` : Localisation du point sous la forme : `{point}, {municipalite},{regionAdministrative},{mrc},{agglomeration},{localite},{regionTouristique},{distance},{metadonnee},{placeListe}`
   * `point` : Coordonnée de la localisation sous la former : `{x},{y},{SRS}`
-    * `x` : Coordonnée X de la localisation.
-    * `y` : Coordonnée X de la localisation.
-    * `SRS` : Système de coordonnée du point sous la forme : `{nom},{codeEPSG},{WKT}`
-      * `nom`: Nom de l'instance définissant le système de coordonnée.
-      * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
-      * `WKT`: système de coordonnée en format WKT (Well Known Text).
+      * `x` : Coordonnée X de la localisation.
+      * `y` : Coordonnée X de la localisation.
+      * `SRS` : Système de coordonnée du point sous la forme : `{nom},{codeEPSG},{WKT}`
+          * `nom`: Nom de l'instance définissant le système de coordonnée.
+          * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
+          * `WKT`: système de coordonnée en format WKT (Well Known Text).
   * `municipalite` : Nom de la municipalité contenant le point.
   * `regionAdministrative` : Région administrative contenant le point.
   * `mrc` : MRC contenant le point.
   * `agglomeration` : Agglomération contenant le point.
+  * `regionTouristique` : Région touristique contenant le point.
   * `localite` : Nom du lieu le plus près du point provenant de la Commission de la toponymie.
   * `distance` : Distance du lieu le plus près.
   * `metadonnee` : Métadonnée.
+  * `placeListe` : Liste de lieu relié à l'adresse représenté sous cette forme : `[{type}, {nom}]`
+      * `type` : Descriptif du lieu. Les valeurs possibles sont : 'Lieu', 'Municipalité', 'MRC', 'Région administrative', 'Région touristique', 'Toponyme', 'Agglomération'
+      * `nom` : Nom du lieu.
+      * `distance` : Distance du toponyme s'il y a lieu.
+      * `code` : Code représentant le lieu.
 * `nombreResultat` : Nombre total d'adresse retournée par le service.
 * `RemarqueListe` : Liste de recherche alternative possible.
 
@@ -736,33 +811,33 @@ La réponse est la même qu'une recherche d'adresse.
   * `noApprtSuffx` : Suffixe d'appartement.
   * `idStat` : identifiant unique du MSP
   * `placeListe` : Liste de lieu relié à l'adresse représenté sous cette forme : `[{type}, {nom}]`
-    * `type` : Descriptif du lieu. Les valeurs possibles sont : 'Lieu', 'Municipalité', 'MRC', 'Région administrative'
-    * `nom` : Nom du lieu.
+      * `type` : Descriptif du lieu. Les valeurs possibles sont : 'Lieu', 'Municipalité', 'MRC', 'Région administrative'
+      * `nom` : Nom du lieu.
   * `metadonnee` : Métadonnée sous la forme : `{classe}, {source}, {date}`
-    * `classe` : Descriptif de la donnée.
-    * `source` : Descriptif du producteur de la donnée.
-    * `date` : Date de la dernière mise à jour.
+      * `classe` : Descriptif de la donnée.
+      * `source` : Descriptif du producteur de la donnée.
+      * `date` : Date de la dernière mise à jour.
   * `CP` : Code postal sous la forme : `{codePostal},{Copyright},{estValide}`
-    * `codePostal` : le code postal.
-    * `Copyright` : Description des droits d'auteurs de Poste Canada.
-    * `estValide` : Confirme ou non que le code postal est contenu dans Adresse Québec.
+      * `codePostal` : le code postal.
+      * `Copyright` : Description des droits d'auteurs de Poste Canada.
+      * `estValide` : Confirme ou non que le code postal est contenu dans Adresse Québec.
   * `localisation` : Localisation de l'adresse sous la forme : `{point}, {enveloppe}`
-    * `point` : Coordonnée de la localisation sous la former : `{x},{y},{SRS}`
-      * `x` : Coordonnée X de la localisation.
-      * `y` : Coordonnée X de la localisation.
-      * `SRS` : Système de coordonnée du point sous la forme : `{nom},{codeEPSG},{WKT}`
-        * `nom` : Nom de l'instance définissant le système de coordonnée.
-        * `codeEPSG` : identifiant unique du système de coordonnée défini par l'instance.
-        * `WKT` : système de coordonnée en format WKT (Well Known Text).
+      * `point` : Coordonnée de la localisation sous la former : `{x},{y},{SRS}`
+        * `x` : Coordonnée X de la localisation.
+        * `y` : Coordonnée X de la localisation.
+        * `SRS` : Système de coordonnée du point sous la forme : `{nom},{codeEPSG},{WKT}`
+            * `nom` : Nom de l'instance définissant le système de coordonnée.
+            * `codeEPSG` : identifiant unique du système de coordonnée défini par l'instance.
+            * `WKT` : système de coordonnée en format WKT (Well Known Text).
     * `enveloppe` : étendue rectangulaire de l'entité sous la forme : `{Xmin}, {Ymin}, {Xmax}, {Ymax}, {SRS}`
       * `Xmin` : Coordonnée minimum en X.
       * `Ymin` : Coordonnée minimum en Y.
       * `Xmax` : Coordonnée maximum en X.
       * `Ymax` : Coordonnée maximum en Y.
       * `SRS` : Système de coordonnée de l'étendue sous la forme : `{nom},{codeEPSG},{WKT}`
-        * `nom` : Nom de l'instance définissant le système de coordonnée.
-        * `codeEPSG` : identifiant unique du système de coordonnée défini par l'instance.
-        * `WKT` : système de coordonnée en format WKT (Well Known Text).
+          * `nom` : Nom de l'instance définissant le système de coordonnée.
+          * `codeEPSG` : identifiant unique du système de coordonnée défini par l'instance.
+          * `WKT` : système de coordonnée en format WKT (Well Known Text).
   * `statut` : Numéro civique.
   * `noCiviqDebut` : N'EST PLUS MAINTENU. Sera supprimé lors de la prochaine version.
   * `noCiviqFin` : N'EST PLUS MAINTENU. Sera supprimé lors de la prochaine version.
@@ -1503,10 +1578,13 @@ Parmi les améliorations :
 * un retour en JSON.  
 * une recherche de 'reverse geocoding' (recherche d'adresse par coordonnée).  
 * plus de possibilités pour la recherche par GPS en définissant le code EPSG en entrée (paramètre: epsg_entree).  
-* recherche par GPS retourne mainteannt la mrc, région administrative ( plus clairement, car elle était comprise entre paranthèse dans le noeud 'municipalite' ) et la localité qui fait référence au toponyme le plus près fourni par la Commission de la toponymie du Québec.
+* recherche par GPS et Adresse retourne mainteannt la mrc, région administrative ( plus clairement, car elle était comprise entre paranthèse dans le noeud 'municipalite' ), la municipalité, la région touristique, l'agglomération et la localité qui fait référence au toponyme le plus près fourni par la Commission de la toponymie du Québec.
 * optimisation du code qui permet de doubler la vitesse dans la plupart des cas.  
 * le résultat de la recherche par lieu est maintenant obtenu par une recherche par similarité. Le module de postgreSQL, "pg_trgm" est utilisé.
+* faciliter la possibilitée d'ajout d'information pour des besoins spécifiques par l'attribut 'placeListe'.
+
 
 Changement dans les paramètres d'entrée :  
 
 * le code EPSG en entrée peut maintenant être fourni par "epsg_entree". L'ancien paramètre "epsg" est encore maintenu mais fait maintenant référence au nouveau paramètre "epsg_sortie".
+* Ajout d'un paramètre ('param_output') permettant de choisir les attributs de l'adresse contenuent dans la réponse du service.
