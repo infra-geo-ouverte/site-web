@@ -149,11 +149,11 @@ http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&tex
 ou  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=xml  
 
-Exemple qui retourne que l'attribut 'addresseLibre' :  
+Exemple qui ne retourne que l'attribut 'addresseLibre' :  
 Pour la version 6 :  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=json&param_output=adresselibre  
 
-Exemple qui retourne que tous sauf l'attribut 'addresseLibre' :  
+Exemple qui retourne l'ensemble des attributs exempté 'addresseLibre' :  
 Pour la version 6 :  
 http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=json&param_output=*,adresselibre
 
