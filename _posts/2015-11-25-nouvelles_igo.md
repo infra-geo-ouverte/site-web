@@ -13,9 +13,9 @@ québécoise et utilisant une licence libre en français.
 <div class="liste_nouvelle" markdown="1" >
 Depuis ce lancement, plusieurs développements ont eu lieu en cette fin d'année, notamment :
 		<ul>
-			<li>le démarrage d'un nouveau projet avec des partenaires externes au gouvernement. </li>
-			<li>les présentations d'IGO à Montréal et à Québec. </li> 
-			<li>l'élargissement de la communauté IGO. </li>
+			<li>le démarrage d'un  <a href="http://igouverte.org/information/2015/11/30/igo_domino/">nouveau projet avec des partenaires externes au gouvernement</a>. </li>
+			<li>les <a href="http://igouverte.org/information/2015/12/02/presentations/">présentations d'IGO à Montréal et à Québec</a>. </li> 
+			<li>l'<a href="http://igouverte.org/information/2015/12/06/elargissement/">élargissement de la communauté IGO</a>. </li>
 			<li>la licence libre choisie est en voie d'être reconnue à l'internationale par l'Open Source Initiative (OSI). </li>
 		</ul>
 </div>
