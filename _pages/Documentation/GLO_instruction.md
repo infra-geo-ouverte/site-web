@@ -432,7 +432,10 @@ RemarqueListe: [ ]
               * `nom`: Nom de l'instance définissant le système de coordonnée.
               * `codeEPSG`: identifiant unique du système de coordonnée défini par l'instance.
               * `WKT`: système de coordonnée en format WKT (Well Known Text).
-  * `statut` : Numéro civique.
+  * `statut` : statut sous la forme : `{etat},{description},{commentaire}`
+      * `etat` : Valeurs possibles : 'Officiel' et 'Non-Officiel'.
+      * `description` : Description de l'état. Valeurs possibles : 'Valide', 'Supprimé', 'Ajouté', 'Modification sur description seulement', 'Modification sur géométrie seulement', 'Modification sur géométrie et description','Résultat dérivé de l'historique'.
+      * `commentaire` : Commentaire supplémentaire pouvant contenir diverse informtaion comme l'ancien nom de rue ou une explication des modifications apportées à l'adresse.
   * `noCiviqDebut` : N'EST PLUS MAINTENU. Sera supprimé lors de la prochaine version.
   * `noCiviqFin` : N'EST PLUS MAINTENU. Sera supprimé lors de la prochaine version.
   * `geocodeMatchCode` : N'EST PLUS MAINTENU. Sera supprimé lors de la prochaine version.
