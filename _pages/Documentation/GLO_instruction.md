@@ -190,7 +190,7 @@ Le service Web supporte cinq types de recherche :
 | Par borne kilométrique (borne et no. de route)                              | borne |
 | Par coordonnées GPS (lat, lon) ou (lon, lat), UTM, MTM, format Bell         | gps   |
 | Infrastructure d’Hydro-Québec (poteau, barrage, centrale, etc…)             | hq    |
-| Recherche inversée par coordonnée (reverse geocoding)                       | reversegeocoding |  
+| Recherche inversée par coordonnée (reverse geocoding)                       | reverse |  
 
 <br>
 
