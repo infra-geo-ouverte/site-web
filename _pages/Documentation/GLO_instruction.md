@@ -119,8 +119,8 @@ Liste des paramètres:
 | cle     | Clé d’accès émise par le MSP  | Oui |
 | type    | 'adresse'<br>'lieu'<br>'borne'<br>'gps'<br>'hq | Oui – « adresse »  par défaut |
 | epsg    | Système de référence des coordonnées en sortie.<br>Les valeurs possibles sont ceux supporté par PostGIS v2.0.1 | Oui¹<br>(système de coordonnée de la source par défaut) |
-| indexDebut | Permet de spécifier l’index de départ de la réponse, (optionnel, 0 par défaut)  | Non<br>(0 par défaut) |
-| indexFin | Permet de spécifier l’index de fin de la réponse, (optionnel 79 par défaut)  | Non<br>(79 par défaut) |
+| indDebut | Permet de spécifier l’index de départ de la réponse, (optionnel, 0 par défaut)  | Non<br>(0 par défaut) |
+| indFin | Permet de spécifier l’index de fin de la réponse, (optionnel 79 par défaut)  | Non<br>(79 par défaut) |
 | format | Permet de spécifier le type de format de sortie du fichier :<br>- XML<br>- HTML<br>- JSON²<br>- EXCEL²<br>- JSONP²  | Oui<br>(XML par défaut) |
 | epsg_entree² | Le code EPSG des coordonnées en entrée.<br>Les valeurs possibles sont ceux supporté par PostGIS v2.0.1 | Non |
 | epsg_sortie² | Le code EPSG des coordonnées en sortie.<br>Les valeurs possibles sont ceux supporté par PostGIS v2.0.1.  Le paramètre "epsg" et "epsg_sortie" sont égaux dans la version 6 | Non<br>(32198 par défaut)|
