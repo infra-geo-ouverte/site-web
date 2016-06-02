@@ -90,7 +90,7 @@ Vous pouvez voir un exemple de l'interface d'IGO-Navigateur en action sur le sit
             <couche titre="Fond blanc" protocole="Blanc"/>  
         </groupe-couches>
         <groupe-couches>
-            <couche url="http://geoegl.msp.gouv.qc.ca/cgi-wms/igo_gouvouvertqc.fcgi?" protocole="WMS" mode="getCapabilities"/>
+            <couche url="http://geoegl.msp.gouv.qc.ca/cgi-wms/igo_gouvouvert.fcgi?" protocole="WMS" mode="getCapabilities"/>
         </groupe-couches>
     </couches>
 
