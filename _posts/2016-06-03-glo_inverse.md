@@ -21,6 +21,6 @@ Exemple : Quelles sont les adresses en proximité de ce point géographique : 71
 
 Il est posssible de voir en action la recherche inversée dans une carte interactive avec IGO-Navigateur qui est disponible (panneau « Outil de localisation » : Inv. Adr.)  dans le portail Données Québec et basé sur la solution Infrastructure géomatique ouverte (IGO) : http://igouverte.org/demo/ disponible sur GitHub.
 
-Vous pouvez consulter pour ce billet de blkogue de l'équipe géomatqiue du MSP pour plus de détails : http://geoegl.msp.gouv.qc.ca/blogue/?p=1043
+Vous pouvez consulter pour ce billet de blogue de l'équipe géomatqiue du MSP pour plus de détails : http://geoegl.msp.gouv.qc.ca/blogue/?p=1043
 
 Si vous avez d’autres questions, n’hésitez pas à communiquer avec nous à l’adresse suivante : info(a)igouverte.org ou à vous inscrire à la liste courriel d’IGO.
