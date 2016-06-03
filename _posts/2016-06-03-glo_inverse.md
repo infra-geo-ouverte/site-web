@@ -14,4 +14,10 @@ Il est posssible de voir en action la recherche inversée dans une carte interac
 
 Vous pouvez consulter pour ce billet de blogue de l'équipe géomatqiue du MSP pour plus de détails : http://geoegl.msp.gouv.qc.ca/blogue/?p=1043
 
-Si vous avez d’autres questions, n’hésitez pas à communiquer avec nous à l’adresse suivante : info(a)igouverte.org ou à vous inscrire à la liste courriel d’IGO.
+Pour plus d'information, communiquez avec l'équipe d'IGO :
+<div class="contact" markdown="1" >
+<ul>
+			<li>par courriel : info[a]igouverte.org</li>
+			<li>en vous abonnant  à la [liste courriel publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique) </li>
+		</ul>
+</div>
