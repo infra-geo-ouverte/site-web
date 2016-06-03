@@ -10,7 +10,7 @@ Le Service web de [Géolocalisation du MSP (GLO)](http://geoegl.msp.gouv.qc.ca/b
 
 La nouvelle fonctionnalité de recherche géographique inversée permet de trouver une liste d’adresses en proximité de coordonnées géographiques en format X et Y.
 
-Il est posssible de voir en action la recherche inversée dans une carte interactive avec IGO-Navigateur qui est disponible (panneau « Outil de localisation » : Inv. Adr.)  dans le portail Données Québec et basé sur la solution Infrastructure géomatique ouverte (IGO) : http://igouverte.org/demo/ disponible sur GitHub.
+Il est posssible de voir en action la recherche inversée dans une carte interactive avec IGO-Navigateur qui est disponible (panneau « Outil de localisation » : Inv. Adr.)  dans le portail [Données Québec](https://www.donneesquebec.ca) et basé sur la solution Infrastructure géomatique ouverte (IGO) : http://igouverte.org/demo/ disponible sur GitHub.
 
 Vous pouvez consulter pour ce billet de blogue de l'équipe géomatqiue du MSP pour plus de détails : http://geoegl.msp.gouv.qc.ca/blogue/?p=1043
 
