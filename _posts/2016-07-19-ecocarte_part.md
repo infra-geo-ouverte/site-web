@@ -30,7 +30,7 @@ Les ministères et organismes au sein d'IGO sont maintenant les suivants:
 <li>Ministère de l'Énergie et des Ressources naturelles (MERN);</li>
 <li>Ministère des Forêts, de la Faune et des Parcs (MFFP);</li>
 <li>Ministère de la Sécurité publique (MSP);</li>
-<li>Ministère des Transports (MTQ);</li>
+<li>Ministère des Transports, de la Mobilité durable et de l'Électrification des transports (MTMDET);</li>
 <li>Secrétariat du conseil du Trésor (SCT).</li>
 		</ul>
 </div>
