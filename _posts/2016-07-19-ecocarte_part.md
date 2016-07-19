@@ -12,8 +12,8 @@ En août 2015, le Ministère de la Sécurité publique et six partenaires de l'a
 <div class="liste_nouveau_igo" markdown="1" >
 Ces deux nouveaux partenaires sont :
 <ol>
-			<li>Le ministère des Forêts, de la Faune et des Parcs (MFFP), volet des inventaires forestiers </li>;
-<li>Le ministère de l'Énergie et des Ressources naturelles (MERN), volet développement informatique</li>.
+			<li>Le ministère des Forêts, de la Faune et des Parcs (MFFP), volet des inventaires forestiers; </li>
+<li>Le ministère de l'Énergie et des Ressources naturelles (MERN), volet développement informatique.</li>
 		</ol>
 </div>
 
