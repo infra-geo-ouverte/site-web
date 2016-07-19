@@ -20,18 +20,20 @@ Ces deux nouveaux partenaires sont :
 Avec ces deux nouveaux partenaires, IGO étend sa communauté d'utilisateurs et de contributeurs à d'autres organismes publics qui ont à cœur la collaboration inter-organisationnelle en géomatique.
 
 À titre d'exemple, [en juillet 2016](http://geoegl.msp.gouv.qc.ca/blogue/?p=1067), la Direction des inventaires forestiers du MFFP a publié une carte interactive et un service de cartographie Web (WMS) présentant les données écoforestières du Québec avec [IGO](http://geoegl.msp.gouv.qc.ca/igo/mffpecofor/). Cette carte interactive présente une interface conviviale qui donne un aperçu global et à jour des produits et données écoforestières du Québec, dont la carte écoforestière. Il est possible de visualiser et d’interroger chaque élément, d’en obtenir une description simplifiée et de créer des cartes personnalisées. De plus, cette carte interactive permet le téléchargement de certaines données actuellement diffusées gratuitement (ex. : classification écologique du territoire québécois). Ces données gratuites sont aussi téléchargeables sur le site  [Données Québec](http://www.donneesquebec.ca/recherche/fr/organization/mffp) incluant des données ouvertes du gouvernement du Québec et des grandes villes.
-
+<div class="liste_partenaire" markdown="1" >
 Les ministères et organismes au sein d'IGO sont maintenant les suivants:
-- Commission de protection du territoire agricole (CPTAQ);
-- La Financière agricole du Québec (FADQ);
-- Institut national de santé publique du Québec (INSPQ);
-- Ministère de la Culture et des Communications (MCC);
-- Ministère de l'Énergie et des Ressources naturelles (MERN);
-- Ministère des Forêts, de la Faune et des Parcs (MFFP);
-- Ministère de la Sécurité publique (MSP);
-- Ministère des Transports (MTQ);
-- Secrétariat du conseil du Trésor (SCT).
-
+<ul>
+<li>Commission de protection du territoire agricole (CPTAQ);</li>
+<li>La Financière agricole du Québec (FADQ);</li>
+<li>Institut national de santé publique du Québec (INSPQ);</li>
+<li>Ministère de la Culture et des Communications (MCC);</li>
+<li>Ministère de l'Énergie et des Ressources naturelles (MERN);</li>
+<li>Ministère des Forêts, de la Faune et des Parcs (MFFP);</li>
+<li>Ministère de la Sécurité publique (MSP);</li>
+<li>Ministère des Transports (MTQ);</li>
+<li>Secrétariat du conseil du Trésor (SCT).</li>
+		</ul>
+</div>
 Au cours des prochains mois, différents projets impliquant les partenaires dans IGO pour la diffusion de données géomatique seront annoncés et présentés à des événements d'intérêt.
 
 Si vous avez des questions sur IGO, consultez notre foire aux questions (FAQ).
