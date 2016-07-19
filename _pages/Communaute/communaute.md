@@ -201,9 +201,11 @@ Voici les membres actuels (un par organisation) :
 - Frédérick Goupil (FADQ);
 - Steve Toutant (INSPQ);
 - Anne Morel (MCC);
-- Nicolas Gignac (MSP);
-- Olivier Bégin (MTQ);
-- À déterminer (CSPQ).
+- Carl Pelletier (MERN);
+- Pierre-Étienne L. (MFFP);
+- Nicolas G. (MSP);
+- Olivier Bégin (MTMDET);
+- À déterminer (SCT).
 
 ###4. Coordonnateur du CT
 Après chaque élection, le CT propose un de ses membres pour agir à titre de coordonnateur du CT sous une présidence tournante. En cas de plusieurs candidats, le choix du candidat se fait selon le mécanisme de vote de la communauté IGO. Les responsabilités du  coordonnateur du CT sont :
