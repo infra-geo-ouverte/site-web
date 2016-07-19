@@ -202,8 +202,8 @@ Voici les membres actuels (un par organisation) :
 - Steve Toutant (INSPQ);
 - Anne Morel (MCC);
 - Carl Pelletier (MERN);
-- Pierre-Étienne L. (MFFP);
-- Nicolas G. (MSP);
+- Pierre-Étienne Lord (MFFP);
+- Nicolas Gignac (MSP);
 - Olivier Bégin (MTMDET);
 - À déterminer (SCT).
 
