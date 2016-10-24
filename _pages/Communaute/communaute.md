@@ -200,7 +200,7 @@ Voici les membres actuels (un par organisation) :
 - Karl Gingras (CPTAQ);
 - Frédérick Goupil (FADQ);
 - Steve Toutant (INSPQ);
-- Anne Morel (MCC);
+- Sylvie Girouard (MCC);
 - Carl Pelletier (MERN);
 - Pierre-Étienne Lord (MFFP);
 - Nicolas Gignac (MSP);
