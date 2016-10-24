@@ -193,7 +193,7 @@ Le comité technique (CT) est chargé d'assurer le leadership technique pour la 
 - Animer la communauté, la tenir informée et faire en sorte de la garder dynamique.
 - Produire, au besoin, des rapports du projet.
 
-###3. Comité initial    
+###3. Représentants du CT    
 Le CT actuel a pour mandat d'assurer le leadership technique de la communauté. 
 Voici les membres actuels (un par organisation) :
 
