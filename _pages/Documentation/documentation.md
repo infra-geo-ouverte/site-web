@@ -27,7 +27,7 @@ Cet espace comprend toute la documentation et les gabarits communs d'IGO.
 * [panorama](/documentation/doc_panorama).
 
 <a id="presentation"></a>
-## Présentations IGO sur SlideShare : [<span class="octicon octicon-link"></span>](#gabarit)
+## Présentations IGO sur SlideShare : [<span class="octicon octicon-link"></span>](#presentation)
 * [http://www.slideshare.net/igouverte](http://www.slideshare.net/igouverte)
 
 ## Autres documents :
