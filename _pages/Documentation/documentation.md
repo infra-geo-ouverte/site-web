@@ -26,6 +26,10 @@ Cet espace comprend toute la documentation et les gabarits communs d'IGO.
 * [service](/documentation/doc_service)
 * [panorama](/documentation/doc_panorama).
 
+<a id="presentation"></a>
+## Présentations IGO sur SlideShare : [<span class="octicon octicon-link"></span>](#gabarit)
+* [http://www.slideshare.net/igouverte](http://www.slideshare.net/igouverte)
+
 ## Autres documents :
 * [technologies utilisées](/documentation/techno)
 * [architecture](https://github.com/infra-geo-ouverte/igo/blob/master/doc/IGO-CIBLE-v2014_aveclogo.png)
