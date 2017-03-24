@@ -1,3 +1,5 @@
+![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=<badge_key>)
+
 Dépôt de code source du site web et pages jekyll d'IGO disponible à : http://www.igouverte.org
 ***
 Source code of the web site and pages of jekyll of IGO available at: http://www.igouverte.org/english/
@@ -20,3 +22,7 @@ IGO has multiple features, such as Web GIS viewer, layer tree Manager and many m
 Since this project is open source, anyone can contribute as long as they share their work on the same open source [LICENCE LGPL-Style](LICENSE_ENGLISH.txt). All contributors in IGO keep their property rights.
 
 ***
+
+## BrowserStack
+
+![Image of Yaktocat](https://www.browserstack.com/automate/badge.svg?badge_key=<badge_key>)
