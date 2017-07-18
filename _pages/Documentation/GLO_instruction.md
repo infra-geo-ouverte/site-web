@@ -12,7 +12,7 @@ submenu:
     submenu:
         -
             hook: "http_rest_get"
-            title: "HTTP en mode GET"
+            title: "HTTPs en mode GET"
         -
             hook: "soap"
             title: "SOAP"
@@ -99,17 +99,17 @@ Le contrôle d’accès au service Web se fait via une clé d’utilisation (sem
 ### Mode d’utilisation [<span class="octicon octicon-link"></span>](#mode)
 
 <a id="http_rest_get"></a>
-####1) HTTP en mode GET
+####1) HTTPs en mode GET
 La première façon d’utiliser le service est par un simple appel URL (REST) en mode GET, directement dans un fureteur Internet.Cette méthode est plus simple, car elle ne nécessite pas de programmation (création d’un message ou d’un client en format SOAP).Cette méthode retourne l’information sous plusieurs formes possibles.
 
 
-Voici un exemple d’appel en mode HTTP.
+Voici un exemple d’appel en mode HTTPs.
 
 Pour la version 5:  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
+https://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
 
 Pour la version 6 :  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=JSON
+https://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=JSON
 
 Liste des paramètres:
 
@@ -137,35 +137,35 @@ Liste des paramètres:
 Exemple qui retourne les 49 premiers enregistrements seulement
 
 Pour la version 5:  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=49&epsg=32198&format=xml
+https://geoegl.msp.gouv.qc.ca/services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=49&epsg=32198&format=xml
 
 Exemple qui retourne les enregistrements mais dont les coordonnées sont dans le système de projection de Google :
 
 Pour la version 5:  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml  
+https://geoegl.msp.gouv.qc.ca/services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml  
 
 Pour la version 6 :  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml  
+https://geoegl.msp.gouv.qc.ca/services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml  
 ou  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=xml  
+https://geoegl.msp.gouv.qc.ca/services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=xml  
 
 Exemple qui ne retourne que l'attribut 'addresseLibre' :  
 Pour la version 6 :  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=json&param_output=adresselibre  
+https://geoegl.msp.gouv.qc.ca/services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=json&param_output=adresselibre  
 
 Exemple qui retourne l'ensemble des attributs exempté 'addresseLibre' :  
 Pour la version 6 :  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=json&param_output=*,adresselibre
+https://geoegl.msp.gouv.qc.ca/services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=json&param_output=*,adresselibre
 
 <a id="soap"></a>
 ####2) SOAP  
 La deuxième façon est d’appeler le service Web en utilisant un langage de programmation (Java, .Net, PHP,  etc …) et le protocole SOAP. Il requiert la création d’une requête (ou message) SOAP avec les paramètres requis. 
-Les différents paramètres ainsi que les méthodes exposées par le service Web sont définies dans le fichier  WSDL (Web Service Definition Language](http://www.w3.org/TR/wsdl "Web Service Definition Language")
+Les différents paramètres ainsi que les méthodes exposées par le service Web sont définies dans le fichier  WSDL (Web Service Definition Language](https://www.w3.org/TR/wsdl "Web Service Definition Language")
 
 Version 5 :  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeur.php?WSDL  
+https://geoegl.msp.gouv.qc.ca/services/glo/V5/gloServeur.php?WSDL  
 Version 6 :  
-http://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeur.php?WSDL  
+https://geoegl.msp.gouv.qc.ca/services/glo/V6/gloServeur.php?WSDL  
 
 Voici les méthodes présentement supportées par le service :
 
@@ -1031,7 +1031,7 @@ Voici des exemples de chaîne qui peuvent être soumise au service :
   La Vallée-du-Richelieu (MRC)
   ```
 
-  i) Dans les cas où le résultat pour tous les patterns précédents donne « aucun résultat ». La recherche passe ensuite dans une recherche **phonétique** en utilisant les outils de similarités de textes fournient par PostgreSQL (http://www.postgresql.org/docs/9.3/static/pgtrgm.html). Le script doit d'abord avoir détecté un numéro civique ou un code postal pour permettre un temps de réponse respectable.
+  i) Dans les cas où le résultat pour tous les patterns précédents donne « aucun résultat ». La recherche passe ensuite dans une recherche **phonétique** en utilisant les outils de similarités de textes fournient par PostgreSQL (https://www.postgresql.org/docs/9.3/static/pgtrgm.html). Le script doit d'abord avoir détecté un numéro civique ou un code postal pour permettre un temps de réponse respectable.
 
   Ex : <span style="color:blue">**2525 laurire quebce**</span>
 
