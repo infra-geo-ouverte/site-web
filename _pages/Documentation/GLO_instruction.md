@@ -106,10 +106,10 @@ La première façon d’utiliser le service est par un simple appel URL (REST) e
 Voici un exemple d’appel en mode HTTPs.
 
 Pour la version 5:  
-https://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
+https://geoegl.msp.gouv.qc.ca/services/glo/V5/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg=900913&format=xml
 
 Pour la version 6 :  
-https://geoegl.msp.gouv.qc.ca/Services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=JSON
+https://geoegl.msp.gouv.qc.ca/services/glo/V6/gloServeurHTTP.php?type=adresse&texte=2525%20laurier%20qu%E9bec&cle=votre_clé&indDebut=0&indFin=10&epsg_sortie=900913&format=JSON
 
 Liste des paramètres:
 
