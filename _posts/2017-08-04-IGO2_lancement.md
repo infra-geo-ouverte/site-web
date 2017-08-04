@@ -6,8 +6,8 @@ categories:
 - information
 ---
 
-À l’automne 2016 et en accord avec les autres partenaires d’IGO, les organisations dans IGO ont décidé de revoir l’architecture d’IGO. 
-Les ateliers IGO visait donc l'orientation d'une nouvelle version 2.0 d'IGO et d’épurer les fonctionnalités de la solution, notamment du navigateur cartographique IGO2 de manière à permettre son utilisation sur des appareils mobiles. 
+À l’automne 2016, en accord avec tous les partenaires d’IGO, il a été décidé de revoir l’architecture d’IGO. 
+Les ateliers IGO visaient donc l'orientation d'une nouvelle version 2.0 d'IGO et d’épurer les fonctionnalités de la solution, notamment du navigateur cartographique IGO2 de manière à permettre son utilisation sur des appareils mobiles. 
 Une version préliminaire d’IGO2 a donc été développée à l’hiver 2017 selon les dernières tendances de l’industrie (ex. : application adaptative, API, analyse temporelle). 
 La  version  mobile  d’[IGO2](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/) vise à augmenter le potentiel de collaboration et d’utilisation auprès des partenaires actuels d’IGO ainsi qu’auprès d’autres organisations, utilisateurs et développeurs, d’ici et d’ailleurs.
 
