@@ -1,0 +1,43 @@
+---
+layout: post
+title:  Développement du nouveau navigateur IGO2 de nouvelle génération maintenant en ligne
+tags: [igo2_lancement] 
+categories:
+- information
+---
+
+À l’automne 2016 et en accord avec les autres partenaires d’IGO, le MSP décide de revoir l’architecture d’IGO. 
+Les ateliers IGO visait donc l'orientation d'une nouvelle version 2.0 d'IGO et d’épurer les fonctionnalités de la solution, notamment du navigateur cartographique IGO2 de manière à permettre son utilisation sur des appareils mobiles. 
+Une version préliminaire d’IGO2 a donc été développée à l’hiver 2017 selon les dernières tendances de l’industrie (ex. : application adaptative, API, analyse temporelle). 
+La  version  mobile  d’[IGO2](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/) vise à augmenter le potentiel de collaboration et d’utilisation auprès des partenaires actuels d’IGO ainsi qu’auprès d’autres organisations, utilisateurs et développeurs, d’ici et d’ailleurs.
+
+Au cours du mois de mai 2017, le MSP a également pu tester cette toute nouvelle application cartographique [IGO2 afin de suivre l’évolution des événements d'inondation](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=inondation) qui ont frappé le sud-ouest du Québec.
+Une nouvelle version 2.0 d’IGO (IGO2) a été développée en 2017 permet d’étendre son utilisation à des appareils mobiles et suit maintenant les dernières tendances du Web (ex. application adaptative, API, analyse temporelle). La version adaptée pour le mobile d’IGO tendra à augmenter le potentiel de collaboration et d’utilisation auprès des partenaires actuels d’IGO.
+
+En juillet, IGO2 était maintenant en ligne dans la [rubrique application](https://www.donneesquebec.ca/fr/applications/) dans le portail Données Québec.
+
+<div class="liste_igo2" markdown="1" >
+Voici certaines fonctionnalités dans le nouveau navigateur IGO2 :
+<ul>
+<li>Un outil de partage de votre localisation permet de voir votre position en temps-réel sur le carte au démarrage selon la localisation de votre appareil (ex. GPS, adresse IP);</li>
+<li>La boîte de recherche permet de chercher rapidement des adresses, des lieux et des couches rapidement au sein d’une même recherche textuelle;</li>
+<li>Le menu « Contexte » permet de charger des couches propres à un type d’intervention 9-1-1, soit santé, police-incendie ou la desserte;</li>
+<li>Le menu d’impression permet de conserver une carte en PDF sur le téléphone et la consulter plus tard sans être connecté;</li>
+<li>Ce navigateur est aussi fonctionnel sur un poste de travail, si vous voulez le tester;</li>
+<li>L’analyse temporelle dans le cas de données historiques ou en temps réel.</li>
+		</ul>
+</div>
+
+IGO2 est une solution à code source ouvert : https://github.com/infra-geo-ouverte/igo2 et fondée sur OpenLayers 4, IGO2lib Google Angular 4 et Google Material.
+
+D’autres fonctionnalités sont à venir dans les prochains mois, pour plus d’information sur IGO2, veuillez consulter le site d'IGO : www.igouverte.org
+
+Si vous avez des questions sur IGO, consultez notre foire aux questions (FAQ).
+
+Pour plus d'information, communiquez avec l'équipe d'IGO :
+<div class="contact" markdown="1" >
+<ul>
+			<li>par courriel : info[a]igouverte.org</li>
+			<li>en vous abonnant  à la [liste courriel publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique) </li>
+		</ul>
+</div>
