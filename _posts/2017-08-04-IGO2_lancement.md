@@ -28,7 +28,7 @@ Voici certaines fonctionnalités dans le nouveau navigateur IGO2 :
 		</ul>
 </div>
 
-IGO2 est une [solution à code source ouvert](https://github.com/infra-geo-ouverte/igo2) et est fondée sur [OpenLayers 4](https://openlayers.org/), [IGO2lib](https://github.com/infra-geo-ouverte/igo2-lib), [Google Angular 4](https://angular.io/) et [Google Material](https://material.io/) Google Angular 4 .
+IGO2 est une [solution à code source ouvert](https://github.com/infra-geo-ouverte/igo2) et est fondée sur [OpenLayers 4](https://openlayers.org/), [IGO2lib](https://github.com/infra-geo-ouverte/igo2-lib), [Google Angular 4](https://angular.io/) et [Google Material](https://material.io/).
 
 D’autres fonctionnalités sont à venir dans les prochains mois.
 
