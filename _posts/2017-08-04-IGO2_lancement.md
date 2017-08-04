@@ -20,10 +20,10 @@ Depuis juillet, IGO2 est maintenant en ligne et présente dans la [rubrique appl
 Voici certaines fonctionnalités dans le nouveau navigateur IGO2 :
 <ul>
 <li>Un outil de partage de votre localisation permet de voir votre position en temps-réel sur le carte au démarrage selon la localisation de votre appareil (ex. GPS, adresse IP);</li>
-<li>La boîte de recherche permet de chercher rapidement des adresses, des lieux et des couches rapidement au sein d’une même recherche textuelle;</li>
-<li>Le menu « Contexte » permet de charger des couches propres à un type d’intervention 9-1-1, soit santé, police-incendie ou la desserte;</li>
+<li>La boîte de recherche permet de chercher rapidement des adresses et des couches rapidement au sein d’une même recherche textuelle;</li>
+<li>Le menu « Contexte » permet de charger des couches propres à un type de thème, soit agriculture, santé publique, inondation, etc.;</li>
 <li>Le menu d’impression permet de conserver une carte en PDF sur le téléphone et la consulter plus tard sans être connecté;</li>
-<li>Ce navigateur est aussi fonctionnel sur un poste de travail, si vous voulez le tester;</li>
+<li>Ce navigateur est aussi fonctionnel sur un poste de travail;</li>
 <li>L’analyse temporelle dans le cas de données historiques ou en temps réel.</li>
 		</ul>
 </div>
