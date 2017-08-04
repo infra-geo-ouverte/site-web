@@ -7,7 +7,7 @@ categories:
 ---
 
 
-Une nouvelle [étude de l'ÉNAP](http://archives.enap.ca/bibliotheques/2017/06/031515711.pdf) [du chercheur Christian Boudreau](http://enap.ca/enap/fr/EnseignantUniversite.aspx?sortcode=1.2.11.17.21.24&view=publications&indid=307 vient d'être publiée sur le projet du gouvernement du Québec nommé IGO et qui s'inspire fortement du mode de fonctionnement des logiciels libres.
+Une nouvelle [étude](http://archives.enap.ca/bibliotheques/2017/06/031515711.pdf) de l'ÉNAP rédigée par le [chercheur Christian Boudreau](http://enap.ca/enap/fr/EnseignantUniversite.aspx?sortcode=1.2.11.17.21.24&view=publications&indid=307) vient d'être publiée sur le projet du gouvernement du Québec nommé IGO et qui s'inspire fortement du mode de fonctionnement des logiciels libres.
 
 Cette étude sur l'infrastructure géomatique ouverte (IGO) fait des constats intéressant pour d'actuels et futurs projets de collaboration au gouvernement.
 
