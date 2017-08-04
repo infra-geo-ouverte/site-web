@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Développement du nouveau navigateur IGO2 de nouvelle génération maintenant en ligne
+title:  Nouveau navigateur de nouvelle génération (IGO2) maintenant en ligne
 tags: [igo2_lancement] 
 categories:
 - information
