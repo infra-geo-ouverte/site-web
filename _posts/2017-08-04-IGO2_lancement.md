@@ -12,9 +12,9 @@ Une version préliminaire d’IGO2 a donc été développée à l’hiver 2017 s
 La  version  mobile  d’[IGO2](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/) vise à augmenter le potentiel de collaboration et d’utilisation auprès des partenaires actuels d’IGO ainsi qu’auprès d’autres organisations, utilisateurs et développeurs, d’ici et d’ailleurs.
 
 Au cours du mois de mai 2017, le MSP a également pu tester cette toute nouvelle application cartographique [IGO2 afin de suivre l’évolution des événements d'inondation](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=inondation) qui ont frappé le sud-ouest du Québec.
-Une nouvelle version 2.0 d’IGO (IGO2) a été développée en 2017 permet d’étendre son utilisation à des appareils mobiles et suit maintenant les dernières tendances du Web (ex. application adaptative, API, analyse temporelle). La version adaptée pour le mobile d’IGO tendra à augmenter le potentiel de collaboration et d’utilisation auprès des partenaires actuels d’IGO.
+Cette nouvelle version 2.0 d’IGO (IGO2) permet d’étendre son utilisation à des appareils mobiles et suit maintenant les dernières tendances du Web (ex. application adaptative, API, analyse temporelle).
 
-En juillet, IGO2 était maintenant en ligne dans la [rubrique application](https://www.donneesquebec.ca/fr/applications/) dans le portail Données Québec.
+Depuis juillet, IGO2 est maintenant en ligne et présente dans la [rubrique application](https://www.donneesquebec.ca/fr/applications/) dans le portail Données Québec.
 
 <div class="liste_igo2" markdown="1" >
 Voici certaines fonctionnalités dans le nouveau navigateur IGO2 :
