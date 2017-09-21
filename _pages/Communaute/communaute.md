@@ -156,15 +156,15 @@ La convention de codage est un document interne rédigé par le CT. On peut s’
 
 <a id="depot"></a>
 ##9. Dépôt du code source et outils de communication     [<span class="octicon octicon-link"></span>](#depot)
-Dépôts du code source : [https://github.com/infra-geo-ouverte/igo](https://github.com/infra-geo-ouverte/igo)
- et [https://github.com/infra-geo-ouverte/puppet-igo](https://github.com/infra-geo-ouverte/puppet-igo)
+Dépôts du code source : [https://github.com/infra-geo-ouverte/igo2](https://github.com/infra-geo-ouverte/igo2)
+ et [https://github.com/infra-geo-ouverte/igo](https://github.com/infra-geo-ouverte/igo)
 
 Outils de communication : si vous avez d'autres questions, n'hésitez pas à communiquer avec nous à l'adresse suivante : info(a)igouverte.org ou à vous inscrire à la [liste courriel](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique).
 
 <a id="amendement" ></a>
 ##10. Amendement de ce présent acte constitutif [<span class="octicon octicon-link"></span>](#amendement)
 
-Toute personne qui souhaite participer à la communauté IGO est tenue de respecter cet acte constitutif. Le CT se réserve le droit d’amender cet acte à tout moment sauf dans la partie Licence du logiciel IGO où les termes de la  [licence](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt) dominent.  
+Toute personne qui souhaite participer à la communauté IGO est tenue de respecter cet acte constitutif. Le CT se réserve le droit d’amender cet acte à tout moment sauf dans la partie Licence du logiciel IGO où les termes de la  [licence](https://github.com/infra-geo-ouverte/igo2/blob/master/LICENCE.txt) dominent.  
 
 <a id="acteur" ></a>
 
@@ -198,13 +198,14 @@ Le CT actuel a pour mandat d'assurer le leadership technique de la communauté.
 Voici les membres actuels (un par organisation) :
 
 - Karl Gingras (CPTAQ);
-- Frédérick Goupil (FADQ);
-- Steve Toutant (INSPQ);
+- Marie-Claude Couture (FADQ);
+- Nathalie Gravel (INSPQ);
 - Sylvie Girouard (MCC);
 - Carl Pelletier (MERN);
-- Pierre-Étienne Lord (MFFP);
+- Josée Martel (MFFP);
 - Nicolas Gignac (MSP);
 - Olivier Bégin (MTMDET);
+- À déterminer (MSSS).
 - À déterminer (SCT).
 
 ###4. Coordonnateur du CT
