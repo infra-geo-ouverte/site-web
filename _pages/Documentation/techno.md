@@ -6,7 +6,18 @@ iconedocumentation: ""
 
 # Technologies utilisées
 
-## Voici la liste des logiciels utilisées et librairies supportant IGO : 
+## Voici la liste des logiciels utilisés et librairies supportant IGO 2.0 : 
+* [Angular 4](https://github.com/angular/angular)
+* [Angular Material](https://github.com/angular/material2)
+* [OpenLayers 4](https://github.com/openlayers/openlayers)
+* [IGO2lib](https://github.com/infra-geo-ouverte/igo2-lib)
+Projets optionnels :
+* [API d'IGO2](https://github.com/infra-geo-ouverte/igo2-api)
+* [Kong](https://getkong.org/)
+
+Pour plus de détails voir la dispositive #9 : [https://www.slideshare.net/igouverte/1er-atelier-technique-igo2-17-mai-2017](https://www.slideshare.net/igouverte/1er-atelier-technique-igo2-17-mai-2017)
+
+## Voici la liste des logiciels utilisés et librairies supportant IGO1 : 
 
 * Système d'exploitation : OS Ubuntu / CentOS
 * Serveur web : Apache
@@ -19,4 +30,4 @@ iconedocumentation: ""
 * Service de métadonnée : GeoNetwork et CKAN
 * Service de Géo-traitement : Zoo project
 * Language de programmation : PHP et JavaScript
-* Adapté pour de futurs changements de libraries du côté client (OpenLayers 3, Leaflet, etc.)
+
