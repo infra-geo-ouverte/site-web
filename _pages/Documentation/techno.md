@@ -11,6 +11,7 @@ iconedocumentation: ""
 * [Angular Material](https://github.com/angular/material2)
 * [OpenLayers 4](https://github.com/openlayers/openlayers)
 * [IGO2lib](https://github.com/infra-geo-ouverte/igo2-lib)
+
 Projets optionnels :
 * [API d'IGO2](https://github.com/infra-geo-ouverte/igo2-api)
 * [Kong](https://getkong.org/)
