@@ -5,8 +5,6 @@ title-main: Démonstration
 iconedemo: ""
 ---
 
-# Démonstrations
-
 ## IGO2
 
 La dernière version d'IGO2 [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/) est maintenant en ligne et présente dans la rubrique [application dans le portail Données Québec](https://www.donneesquebec.ca/fr/applications/). Cette nouvelle version 2.0 d’IGO (IGO2) : [https://github.com/infra-geo-ouverte/igo2](https://github.com/infra-geo-ouverte/igo2) permet d’étendre son utilisation à des appareils mobiles et suit maintenant les dernières tendances du Web (ex. application adaptative, API, analyse temporelle). IGO2 est une solution Web gratuite en géomatique basée sur Angular 4 - Material, OpenLayers 4 et [IGO2lib](https://github.com/infra-geo-ouverte/igo2-lib).
