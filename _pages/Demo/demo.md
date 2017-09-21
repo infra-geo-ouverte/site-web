@@ -17,4 +17,6 @@ Voici des exemples de l'interface d'IGO-Navigateur 1.0 toujours en action :
 - CPTAQ : [https://geoegl.msp.gouv.qc.ca/igo/cptaq_demeter/](https://geoegl.msp.gouv.qc.ca/igo/cptaq_demeter/);
 - Inventaire forestier : [https://geoegl.msp.gouv.qc.ca/igo/mffpecofor/](https://geoegl.msp.gouv.qc.ca/igo/mffpecofor/).
 
-Voici un exemple de fichier de configuration pour IGO1 en XML : [https://github.com/infra-geo-ouverte/igo/blob/master/xml/defaut.xml](https://github.com/infra-geo-ouverte/igo/blob/master/xml/defaut.xml). IGO1 est basé sur : OpenLayers 2, ExtJS, GeoExt, JQuery, PHP/PHalcon et Bootstrap.
+Voici un exemple de fichier de configuration pour IGO1 en XML : [https://github.com/infra-geo-ouverte/igo/blob/master/xml/defaut.xml](https://github.com/infra-geo-ouverte/igo/blob/master/xml/defaut.xml). 
+
+IGO1 est basé sur : OpenLayers 2, ExtJS, GeoExt, JQuery, PHP/PHalcon et Bootstrap.
