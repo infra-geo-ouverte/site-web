@@ -7,93 +7,16 @@ iconedemo: ""
 
 #Démonstration
 
-Vous pouvez voir un exemple de l'interface d'IGO-Navigateur en action sur le site **[des données ouvertes du gouvernement du Québec](http://geoegl.msp.gouv.qc.ca/gouvouvert/)** (http://geoegl.msp.gouv.qc.ca/gouvouvert/) et un exemple de son XML pour une configuration de base : 
+## IGO2
 
-{% highlight xml linenos %}
-<navigateur authentification="false" 
-            titre="I.G.O. - Données ouvertes - Gouvernement du Québec"
-            baseUri="/gouvouvert/public/" 
-            serviceUri="../services/" 
-            apiUri="../api/" 
-            libUri="../librairie/">
-    <presentation>
-           <panneaux>
-                <panneau classe="PanneauCarte" titre="" />
-                 <panneau id="InfoPanneau" classe="PanneauInfo" />
-                 <panneau classe="PanneauEntete" image="images/bandeau/bandeau_donnees_ouv_goloc.png"/>
+La dernière version d'IGO2 [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/) est maintenant en ligne et présente dans la rubrique [application dans le portail Données Québec](https://www.donneesquebec.ca/fr/applications/). Cette nouvelle version 2.0 d’IGO (IGO2) : [https://github.com/infra-geo-ouverte/igo2](https://github.com/infra-geo-ouverte/igo2) permet d’étendre son utilisation à des appareils mobiles et suit maintenant les dernières tendances du Web (ex. application adaptative, API, analyse temporelle). IGO2 est une solution Web gratuite en géomatique basée sur Angular 4 - Material, OpenLayers 4 et [IGO2lib](https://github.com/infra-geo-ouverte/igo2-lib).
 
-                <panneau classe="PanneauMenu" ouvert="true" >
-                    <element-accordeon classe="Arborescence" ouvert="true"/>
-                    <element-accordeon classe="Localisation" id="localisation">
-                        <element classe="RechercheAdresse"/>
-                        <element classe="RechercheLieu"/>
-                        <element classe="RechercheGPS"/>
-                        <element classe="RechercheBorne"/>
-                    </element-accordeon>
-                    <element-accordeon classe="Impression" ouvert="true"/>
-                </panneau>
+Son fichier de configuration est en JSON. Sa documentation est disponible ici : [http://igo2.readthedocs.io/fr/latest/config_json.html#json](http://igo2.readthedocs.io/fr/latest/config_json.html#json) et dans ce dépôt GitHub : [https://github.com/geo-msp/apercu-qc/blob/master/contexts/_default.json](https://github.com/geo-msp/apercu-qc/blob/master/contexts/_default.json) 
 
-            </panneaux>
-         <outils>
-            <groupe-outils>
-                <outil classe="OutilZoomEtendueMaximale"/>
-                <outil classe="OutilZoomRectangle" type="avant"/>
-                <outil classe="OutilZoomRectangle" type="arriere"/>
-                <outil classe="OutilDeplacement"/>
-            </groupe-outils>
-            <groupe-outils>
-                <outil classe="OutilHistoriqueNavigation" type="precedent"/>
-                <outil classe="OutilHistoriqueNavigation" type="suivant"/>
-            </groupe-outils>
-             <groupe-outils>
-                <menu titre="Zoom sur une région">
-                    <outil classe="OutilZoomPreselection" type="region-adm" titre="Par région administrative"/>
-                    <outil classe="OutilZoomPreselection" type="mrc" titre="Par MRC"/>
-                    <outil classe="OutilZoomPreselection" type="mun" titre="Par municipalité"/>
-                </menu>
-            </groupe-outils>
-            <groupe-outils>
-                <outil classe="OutilMesure" type="lineaire"/>
-                <outil classe="OutilMesure" type="surface"/>
-            </groupe-outils>
-            <groupe-outils>
-                <outil classe="OutilInfo" />
-            </groupe-outils>
-	    <groupe-outils>
-                <outil classe="OutilAide"/>
-                <outil classe="OutilDeplacerCentre" />
-            </groupe-outils>
-            <groupe-outils position="droite" division="false">
-                <outil classe="OutilAjoutWMS"/>
-            </groupe-outils>
-            <groupe-outils position="droite">
-                <outil classe="OutilPartagerCarte"/>
-            </groupe-outils>
-        </outils>
-    </presentation>
-    <contexte code="gouvouvert" centre="-7994004,6034079" zoom="7"></contexte>
-    <couches>
-        <groupe-couches groupe="Fond de carte">
-            <couche  
-                    titre="Gouvernement du Québec" 
-                    url="/cgi-wms/mapcache.fcgi/tms/" 
-                    nom="carte_gouv_qc_ro@EPSG_3857" 
-                    fond="true" protocole="TMS" 
-                    active="vrai"
-                    zoomMax="17"
-                    impressionUrl="/cgi-wms/carte_gouv_qc.fcgi?" 
-                    impressionNom="CARTE_GOUV_QC" 
-                    droit= "&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.droitauteur.gouv.qc.ca/copyright.php&quot;&gt;&lt;img width=&quot;70/&quot; height=&quot;21&quot; src=&quot;/gouvouvert/public/images/quebec/gouv_qc_logo.gif&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.droitauteur.gouv.qc.ca/copyright.php&quot; class=&quot;styleAttributionTable&quot;&gt;&amp;copy; Gouvernement du Qu&#233;bec&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;"
-            /> 
-            <couche titre="OpenStreetMap" protocole="OSM"/>
-            <couche titre="OpenStreetMap-Humanitaire" protocole="OSM" nom="humanitaire"/> 
-            <couche titre="Fond blanc" protocole="Blanc"/>  
-        </groupe-couches>
-        <groupe-couches>
-            <couche url="http://geoegl.msp.gouv.qc.ca/cgi-wms/igo_gouvouvert.fcgi?" protocole="WMS" mode="getCapabilities"/>
-        </groupe-couches>
-    </couches>
+## IGO1
 
-</navigateur>
-{% endhighlight %}
- 
+Voici des exemples de l'interface d'IGO-Navigateur 1.0 toujours en action :
+- CPTAQ : https://geoegl.msp.gouv.qc.ca/igo/cptaq_demeter/
+- Inventaire forestier : https://geoegl.msp.gouv.qc.ca/igo/mffpecofor/
+- Données Québec dans IGO1 : http://geoegl.msp.gouv.qc.ca/gouvouvert/
+ Son fichier de configuration pour IGO1 est en XML. En voici un exemple : [https://github.com/infra-geo-ouverte/igo/blob/master/xml/defaut.xml](https://github.com/infra-geo-ouverte/igo/blob/master/xml/defaut.xml). IGO1 est basé sur : OpenLayers 2, ExtJS, GeoExt, JQuery, PHP/PHalcon et Bootstrap.
