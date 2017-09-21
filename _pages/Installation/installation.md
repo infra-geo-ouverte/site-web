@@ -23,7 +23,7 @@ Consulter la [Procédure d'installation rapide](https://github.com/infra-geo-ouv
 Consulter la [Procédure d'installation rapide la librarie d'IGO2](https://github.com/infra-geo-ouverte/igo2-lib#installation)  pour démarrer IGO2 (sans l'assemblage IGO2) avec NodeJS.
 
 <a id="telechargement"></a>
-##Téléchargement : [<span class="octicon octicon-link"></span>](#telechargement)
+#### Téléchargement : [<span class="octicon octicon-link"></span>](#telechargement)
 Consulter [GitHub](https://github.com/infra-geo-ouverte/igo2) pour télécharger le code source d'IGO2.
 
 
@@ -43,5 +43,5 @@ Consulter la [Procédure d'installation sous Windows avec WAMP](https://github.c
 
 
 <a id="telechargement"></a>
-##Téléchargement : [<span class="octicon octicon-link"></span>](#telechargement)
+#### Téléchargement : [<span class="octicon octicon-link"></span>](#telechargement)
 Consulter [GitHub](https://github.com/infra-geo-ouverte/igo) pour télécharger le code source d'IGO.
