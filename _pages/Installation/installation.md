@@ -13,7 +13,7 @@ submenu:
 # Procédures d'installations possibles et supportées :
 
 
-## IGO2
+## A- IGO2
 
 <a id="igo2"></a>
 #### 1.1 Installation de l'assemblage d'IGO2  [<span class="octicon octicon-link"></span>](#igo2)
@@ -27,7 +27,7 @@ Consulter la [Procédure d'installation rapide la librarie d'IGO2](https://githu
 #### Téléchargement : [<span class="octicon octicon-link"></span>](#telechargement)
 Consulter [GitHub](https://github.com/infra-geo-ouverte/) pour télécharger le code source de l'assemblage d'IGO2 et d'IGO2Lib.
 
-## IGO1
+## B- IGO1
 
 <a id="virtuelle"></a>
 #### 2.1 Installation *recommandée* dans une machine virtuelle [<span class="octicon octicon-link"></span>](#virtuelle)
