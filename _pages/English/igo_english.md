@@ -19,21 +19,12 @@ IGO2 (for Open GIS Infrastructure - version 2.0) is a free open source Web Geosp
 
 The source code of IGO2Lib is on [GitHub](https://github.com/infra-geo-ouverte/igo2lib) and released under a [LGPL compatible licence](https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/LICENSE_ENGLISH.txt) (written by the government of Quebec). IGO2 is looking for involvement from other public administrations (local, regional and national), private enterprises, developers in Canada or elsewhere to contribute to the project.
 
-IGO has multiple features supported and in development phase: 
-
-- Web GIS viewer
-- Location, metadata and routing integration service
-- Spatial query
-- Geospatial data editing
-- Permission management and administration user interface
-- Real-time Web Map Conferencing and chat
-
 
 This project will enable anyone to configure by a simple JSON its own web map application including Base Map and WMS/WFS/GeoJSON overlays in a layer tree and adding different built-in functionalities (ex. adding WMS server on-demand, share permalink, location tool) to the apps without any lines of javascript.
 
 See this documentaton on how to install IGO2 (NodeJS): [https://github.com/infra-geo-ouverte/igo2#table-of-content-english](https://github.com/infra-geo-ouverte/igo2#table-of-content-english) 
 
-[Demonstration ](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/) is available and [example of JSON configuration](http://igo2.readthedocs.io/fr/latest/english.html).
+[Demonstration ](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/) is available: [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/) and [example of JSON configuration](http://igo2.readthedocs.io/fr/latest/english.html).
 
 If you have any question and want to contribute, contact the main email of the project: info(a)igouverte.org or subscribe to the mailing-list (http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique). Communications are mainly done in French but do not hesitate to ask questions in English as most of the IGO Team is bilingual. The documentation and API-XML are mainly in French but if there is a strong demand, it could be translated, just contact us for more information at: info(a)igouverte.org
 
