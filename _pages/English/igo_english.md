@@ -20,7 +20,7 @@ IGO2 (for Open GIS Infrastructure - version 2.0) is a free open source Web Geosp
 The source code of IGO2Lib is on [GitHub](https://github.com/infra-geo-ouverte/igo2lib) and released under a [LGPL compatible licence](https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/LICENSE_ENGLISH.txt) (written by the government of Quebec). IGO2 is looking for involvement from other public administrations (local, regional and national), private enterprises, developers in Canada or elsewhere to contribute to the project.
 
 
-This project will enable anyone to configure by a simple JSON its own web map application including Base Map and WMS/WFS/GeoJSON overlays in a layer tree and adding different built-in functionalities (ex. adding WMS server on-demand, share permalink, location tool) to the apps without any lines of javascript.
+This project will enable anyone to configure by a simple JSON its own web map application including Base Map and WMS/WFS/GeoJSON overlays in a layer tree and adding different built-in functionalities (ex. adding WMS server on-demand, share permalink, location tool) to the apps without any lines of javascript. 
 
 See this documentaton on how to install IGO2 (NodeJS): [https://github.com/infra-geo-ouverte/igo2#table-of-content-english](https://github.com/infra-geo-ouverte/igo2#table-of-content-english) 
 
