@@ -78,15 +78,15 @@ submenu:
             title: "Version #6"
 ---
 
-#Service web de "GéoLOcalisation (GLO)"
+# Service web de "GéoLOcalisation (GLO)"
 
 <a id="introduction"></a>
-##Introduction [<span class="octicon octicon-link"></span>](#introduction)
+## Introduction [<span class="octicon octicon-link"></span>](#introduction)
 
 Afin de faciliter le positionnement sur le territoire Québécois, le Ministère de la Sécurité Publique du Québec (MSP) à mis en place un service Web dédié à cette fin. Ce service de «  géolocalisation  » est entièrement interopérable et permet de localiser des adresses, des codes postaux, des rues, des municipalités, des  MRC , des toponymes, des édifices publics (écoles, hôpitaux,  CLSC , CPE), des entreprises et même des bornes kilométriques situées sur le réseau routier du Ministère des Transports ( MTQ ).  L’innovation de ce service repose sur sa haute fiabilité, son utilisation multiplateforme ainsi que sur la fréquence de ses mises à jour.
 
 
-###Sécurité d’accès
+### Sécurité d’accès
 
 Le contrôle d’accès au service Web se fait via une clé d’utilisation (semblable à celle requise pour utiliser l’API de Google Maps ). Cette clé permet au  MSP  de contrôler les accès et par le fait même, le contenu de sa base de données. Les clés permettent également d’autoriser ou d’empêcher l’utilisation de certains types de recherche selon l’organisation ou l’utilisateur qui tente de se connecter.  Les clés d’accès sont émises par le  MSP  et sont contrôlées en fonction d’une suite d’adresses IP reliée au domaine Internet du requérant.Pour obtenir une clé, il suffit d’en faire la demande auprès du ministère via l’adresse de courriel suivante: [geomsp@msp.gouv.qc.ca](mailto:geomsp@msp.gouv.qc.ca).
 
