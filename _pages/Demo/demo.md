@@ -19,4 +19,4 @@ Voici des exemples de l'interface d'IGO-Navigateur 1.0 toujours en action :
 
 Voici un exemple de fichier de configuration pour IGO1 en XML : [https://github.com/infra-geo-ouverte/igo/blob/master/xml/defaut.xml](https://github.com/infra-geo-ouverte/igo/blob/master/xml/defaut.xml). 
 
-IGO1 est basé sur : OpenLayers 2, ExtJS, GeoExt, JQuery, PHP/PHalcon et Bootstrap.
+IGO1 est basé sur : OpenLayers 2, ExtJS, GeoExt, jQuery, [Phalcon](https://phalconphp.com/fr/) et Bootstrap.
