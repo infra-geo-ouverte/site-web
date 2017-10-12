@@ -21,8 +21,8 @@ Voici certaines fonctionnalités du nouveau navigateur IGO2 :
 <ul>
 <li>Un outil de partage de votre localisation permet de voir votre position en temps réel sur la carte au démarrage selon la localisation de votre appareil (par ex. : GPS, adresse IP);</li>
 <li>La boîte de recherche permet de chercher rapidement des adresses et des couches dans une même recherche textuelle;</li>
-<li>Le menu « Contexte » permet de charger des couches propres à un type de thème, soit agriculture, santé publique, inondations 2017, etc.;</li>
-<li>Le menu d’impression permet de conserver une carte en PDF sur le téléphone et la consulter plus tard sans être connecté;</li>
+<li>Le menu « Vue ou Contexte » permet de charger des couches propres à un type de thème, soit agriculture, santé publique, inondations 2017, etc.;</li>
+<li>Le menu « Impression » permet de conserver une carte en PDF sur le téléphone et la consulter plus tard sans être connecté;</li>
 <li>Ce navigateur est aussi fonctionnel sur un poste de travail;</li>
 <li>L’analyse temporelle peut être effectuée pour les données historiques ou en temps réel.</li>
 		</ul>
