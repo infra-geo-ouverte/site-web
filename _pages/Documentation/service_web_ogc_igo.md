@@ -8,8 +8,8 @@ iconedocumentation: ""
 ## Voici la liste des services OGC (WMS, WFS, WMTS, WCS) offerts par IGO:
 
 ##### A) WMTS - Fond de carte : 
-+ dans ArcGIS : https://geoegl.msp.gouv.qc.ca/carto/wmts/1.0.0/wmts?service=wmts&request=getcapabilities&version=1.0.0
-+ dans QGIS : https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetCapabilities&VERSION=1.0.0
++ dans ArcGIS : [https://geoegl.msp.gouv.qc.ca/carto/wmts/1.0.0/wmts?service=wmts&request=getcapabilities&version=1.0.0](https://geoegl.msp.gouv.qc.ca/carto/wmts/1.0.0/wmts?service=wmts&request=getcapabilities&version=1.0.0)
++ dans QGIS : [https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetCapabilities&VERSION=1.0.0](https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetCapabilities&VERSION=1.0.0)
 
 ##### B) WMS/WFS - Données Québec : [https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?)
 ##### C) WMS/WFS - Débit niveau (https://geoegl.msp.gouv.qc.ca/adnv2/) : [https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?)
