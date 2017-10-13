@@ -87,7 +87,7 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 + de  [géocoder des points, à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (par ex. : csv)](https://geoegl.msp.gouv.qc.ca/GeocodageLot/). Le fichier doit minimalement contenir un champ contenant l'adresse complète ou le © code postal. 
 
 <a id="2.13"></a>
-#### 2.13. [<span class="octicon octicon-link"></span>](#2.13)*Sécuriser sur les services Web* permet :
+#### 2.13. [<span class="octicon octicon-link"></span>](#2.13)*Sécuriser les services Web* permet :
 + de gérer les permissions des usagers sur les services Web (interne et externe). Cette interface A.P.I. est basée sur la solution [Kong](https://getkong.org/).
 
 <a id="2.14"></a>
