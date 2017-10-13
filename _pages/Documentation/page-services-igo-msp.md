@@ -1,7 +1,7 @@
 ---
 permalink: /documentation/page-services-igo-msp/
 layout: general
-title-main: Services offerts dans IGO au MSP
+title-main: Services IGO-MSP
 iconedocumentation: ""
 ---
 
