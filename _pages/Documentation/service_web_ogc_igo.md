@@ -24,7 +24,7 @@ iconedocumentation: ""
 ##### E) [<span class="octicon octicon-link"></span>](#e)WMS - Transports ([https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq)) : [https://ws.mapserver.transports.gouv.qc.ca/swtq?service=WMS&version=1.3.0&request=GetCapabilities](https://ws.mapserver.transports.gouv.qc.ca/swtq?service=WMS&version=1.3.0&request=GetCapabilities) 
 
 <a id="f"></a>
-##### F) [<span class="octicon octicon-link"></span>](#f)WMS - CPTAQ ([http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1) : [https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?service=WMS&version=1.3.0&request=GetCapabilities](https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?service=WMS&version=1.3.0&request=GetCapabilities)  
+##### F) [<span class="octicon octicon-link"></span>](#f)WMS - CPTAQ ([http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1)) : [https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?service=WMS&version=1.3.0&request=GetCapabilities](https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?service=WMS&version=1.3.0&request=GetCapabilities)  
 
 <a id="g"></a>
 ##### G) [<span class="octicon octicon-link"></span>](#g)WMS - BDGA ([https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives-a-lechelle-de-1-1-000-000](https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives-a-lechelle-de-1-1-000-000)) : [https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
