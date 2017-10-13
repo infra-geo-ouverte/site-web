@@ -72,11 +72,11 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 
 <a id="2.9"></a>
 #### 2.9. [<span class="octicon octicon-link"></span>](#2.9)Hébergement de services OGC : [WMS](https://fr.wikipedia.org/wiki/Web_Map_Service) et [WFS](https://fr.wikipedia.org/wiki/Web_Feature_Service)
-+ Voici la [liste des services OGC disponibles](services-web-ogc-igo/#b)
++ Voici la [liste des services OGC disponibles](http://igouverte.org/documentation/services-web-ogc-igo/#b)
 
 <a id="2.10"></a>
 #### 2.10. [<span class="octicon octicon-link"></span>](#2.10)Service de fonds de cartes ([WMTS](https://fr.wikipedia.org/wiki/Web_Map_Tile_Service)) tuilés.
-+ Voici la [liste des services WMTS disponibles](services-web-ogc-igo/#a)
++ Voici la [liste des services WMTS disponibles](http://igouverte.org/documentation/services-web-ogc-igo/#a)
 
 <a id="2.11"></a>
 #### 2.11. [<span class="octicon octicon-link"></span>](#2.11)*Le service de calcul et de gestion d’itinéraire* (A.P.I.) permet :
