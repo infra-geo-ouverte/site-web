@@ -16,7 +16,7 @@ Les services Web et [A.P.I. (interface de programmation d’applications)](http:
 | ------------- |:-------------:| -----:|----:|----:|
 | 1. [ICherche géocode](#21-icherche-géocode-api-permet-) (remplacera le [GLO](http://igouverte.org/documentation/glo/))|X|X|X|$|
 | 2. [ICherche XY](#22-icherche-xy-api-permet-)|X|-|X|$|
-| 3. [ICherche par id](#23-icherche-par-id-api-permet-) |X|-|X|$|
+| 3. [ICherche par ID](#23-icherche-par-id-api-permet-) |X|-|X|$|
 |  4. [Hébergement ](#24-lhébergement-du-navigateur-igo2-sans-sécurité-permet-) du [navigateur IGO2](http://igouverte.org/information/2017/08/04/IGO2_lancement/) |X |- |X |$|
 | 5. Hébergement du [navigateur IGO2 *avec* sécurité ](#25-lhébergement-du-navigateur-igo2-avec-sécurité-permet-)|- |- |X|$|
 | 6. [Hébergement de données géomatiques et diffusion Web](#26-lhébergement-et-lintégration-de-données-géomatiques-permet-)|-|-|X|$|
