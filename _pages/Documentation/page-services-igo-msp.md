@@ -18,7 +18,7 @@ Les services Web et [A.P.I. (interface de programmation d’applications)](http:
 | 2. [ICherche XY](#22-icherche-xy-api-permet-)|X|-|X|$|
 | 3. [ICherche par ID](#23-icherche-par-id-api-permet-) |X|-|X|$|
 |  4. [Hébergement ](#24-lhébergement-du-navigateur-igo2-sans-sécurité-permet-) du [navigateur IGO2](http://igouverte.org/information/2017/08/04/IGO2_lancement/) |X |- |X |$|
-| 5. Hébergement du [navigateur IGO2 *avec* sécurité ]#2.5)|- |- |X|$|
+| 5. Hébergement du [navigateur IGO2 *avec* sécurité ](#2.5)|- |- |X|$|
 | 6. [Hébergement de données géomatiques et diffusion Web](#2.6)|-|-|X|$|
 | 7. [Intégration de services Web dans le navigateur IGO2](#2.7)|-|-|X|$|
 | 8. [Développement sur mesure](#28-le-développement-doutils-sur-mesure-permet-)|-|-|-|$|
