@@ -119,10 +119,10 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 + Ils sont disponibles 24 heures par jour, 7 jours sur 7, à l'exception des périodes de mises à jour qui seront annoncées 3 jours ouvrables en avance. Un soutien est assuré du lundi au vendredi, soit de 8 h 30 à 16 h 30 lors de ces heures normales, à l’exception des jours fériés. S'il y a un problème majeur à l'extérieur de ces heures ouvrables, la demande sera traitée à la prochaine période de 8 h 30 à 16 h 30 du lundi au vendredi, à l’exception des jours fériés.
 
 ##### **E) Que faire si je veux m'abonner aux annonces de mises à jour sur les services ?** 
-+ Pour ce faire, il serait opportun pour chaque client d'un de ces services de s'inscrire à cette liste courriel afin d’être mis au courant des annonces et arrêts des services faits en avance : http://listes.securitepublique.gouv.qc.ca/sympa/subscribe/igo-publique
++ Pour ce faire, il serait opportun pour chaque client d'un de ces services de s'inscrire à cette liste courriel afin d’être mis au courant des annonces et arrêts des services faits en avance : [http://listes.securitepublique.gouv.qc.ca/sympa/subscribe/igo-publique](http://listes.securitepublique.gouv.qc.ca/sympa/subscribe/igo-publique)
 
 ##### **F) Si j'ai d’autres questions sur ces services avec qui puis-je communiquer ?** 
-+ N’hésitez pas à communiquer avec nous à l’adresse courriel suivante : info(a)igouverte.org ou consulter le site igouverte.org et cliquez sur Contact dans le site Web d'IGO : http://igouverte.org/#footer
++ N’hésitez pas à communiquer avec nous à l’adresse courriel suivante : info(a)igouverte.org ou consulter le site igouverte.org et cliquez sur : [Contact dans le site Web d'IGO](http://igouverte.org/#footer).
 
 <a id="3.2"></a>
 ## 3.2. [<span class="octicon octicon-link"></span>](#3.2)Clientèle des centres d'urgence (CU) 9-1-1 du Québec
