@@ -16,6 +16,6 @@ iconedocumentation: ""
 ##### D) WMS - Inventaire Forestier : [https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?)
 ##### E) WMS - Transports : [https://ws.mapserver.transports.gouv.qc.ca/swtq?](https://ws.mapserver.transports.gouv.qc.ca/swtq?) 
 ##### F) WMS - CPTAQ : [https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?](https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?)  
-##### G) WMS - BDGA (https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives-a-lechelle-de-1-1-000-000) : [https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?) 
+##### G) WMS - BDGA ([https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives-a-lechelle-de-1-1-000-000](https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives-a-lechelle-de-1-1-000-000)) : [https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?) 
 ##### H) WMS-WCS - Carte de glace : [https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?) 
 ##### I) WMS-WFS - Statistiques régionales de criminalités au Québec  : [https://geoegl.msp.gouv.qc.ca/ws/dpop.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/dpop.fcgi?) 
