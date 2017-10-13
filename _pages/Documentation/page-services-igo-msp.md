@@ -12,7 +12,7 @@ Les services Web et [A.P.I. (interface de programmation d’applications)](http:
 <a id="1"></a>
 # 1. [<span class="octicon octicon-link"></span>](#1)Tableau comparatif des accès aux services/A.P.I. 
 
-| **A.P.I. & services Web offerts par IGO-MSP**      | **Accès grand public aux applications des ministères/organismes et réseau**| **Accès aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Accès seulement dans le réseau intranet-RITM/extranet aux ministères et organismes du gouvernement du Québec**  | **[Sur demande seulement](#f-si-jai-dautres-questions-sur-ces-services-avec-qui-je-peux-communiquer-)** | 
+| **A.P.I. & services Web offerts par IGO-MSP**      | **Accès grand public aux applications des ministères/organismes et réseau**| **Accès aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Accès seulement dans le réseau intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/)/extranet aux ministères et organismes du gouvernement du Québec**  | **[Sur demande seulement](http://igouverte.org/documentation/page-services-igo-msp/#footer)** | 
 | ------------- |:-------------:| -----:|----:|----:|
 | 1. [ICherche géocode](#21-icherche-géocode-api-permet-) (remplacera le [GLO](http://igouverte.org/documentation/glo/))|X|X|X|$|
 | 2. [ICherche XY](#22-icherche-xy-api-permet-)|X|-|X|$|
