@@ -9,6 +9,7 @@ iconedocumentation: ""
 
 Les services Web et [A.P.I. (interface de programmation d’applications)](http://granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=26508293) offerts au [ministère de la Sécurité publique du Québec (MSP)](https://geoegl.msp.gouv.qc.ca/blogue/) par l'Infrastructure géomatique ouverte ([IGO](http://www.igouverte.org/)) sont documentés dans cette page. Les [conditions d'utilisation sont détaillées au bas de ce tableau ](#a-quelles-sont-les-conditions-dutilisations-de-ces-services-). Ces services sont offerts soit aux ministères/organismes et leur réseau dans leurs applications grand public, aux détenteurs de licences d'Adresses Québec, aux partenaires du MSP (par ex. : centres d’urgence 9-1-1) ou aux organismes publics du gouvernement du Québec dans leur application interne. Chaque client est responsable de mettre à jour ses systèmes en fonction des améliorations et nouveautés de ces services.
 
+<a id="1"></a>
 # 1. Tableau comparatif des accès aux services/A.P.I.
 
 | **A.P.I. & services Web offerts par IGO-MSP**      | **Accès grand public aux applications des ministères/organismes et réseau**| **Accès aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Accès seulement dans le réseau intranet-RITM/extranet aux ministères et organismes du gouvernement du Québec**  | **[Sur demande seulement](#f-si-jai-dautres-questions-sur-ces-services-avec-qui-je-peux-communiquer-)** | **État** | 
@@ -29,17 +30,22 @@ Les services Web et [A.P.I. (interface de programmation d’applications)](http:
 | 14. [Suivi de flottes véhiculaires avec GPS](#214-le-suivi-de-flottes-véhiculaires-permet-)|- |- |X |$||
 | 15. [Recherche de lots rénovés](#215-la-recherche-de-lots-rénovés-permet-)|- |- |X |$ ||
 
+<a id="2"></a>
 # 2. Description des services/A.P.I.
 
+<a id="2.1"></a>
 #### 2.1. *ICherche géocode* (A.P.I.) permet :
 + la [géolocalisation par adresse](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/geocode),  © code postal, territoire administratif, [lieu](https://gitlab.forge.gouv.qc.ca/geomatique/espace_public_description_projet_igo/wikis/icherche-lieu) et offre des requêtes en lot. Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/). Il remplacera à terme le service de géolocalisation [GLO](http://igouverte.org/documentation/glo/) qui ne sera plus amélioré à partir de 2017, mais supporté jusqu'à la fin 2019. ICherche est plus performant (par ex. : autocomplétion) que le GLO et plus précis dans ses résultats trouvés.
 
+<a id="2.2"></a>
 #### 2.2. *ICherche XY* (A.P.I.) permet :
 + de rechercher par XY en permettant la [géolocalisation par XY](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/xy). Il retourne les éléments qui intersectent le point XY passé en arguments. Ce service peut également retourner les éléments qui sont à une distance donnée du point XY. Comme la municipalité, la MRC, l’adresse, le code postal, etc. le plus près du XY.
 
+<a id="2.3"></a>
 #### 2.3. *ICherche par ID* (A.P.I.) permet :
 + de rechercher par [identifiant la géolocalisation associée](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/id). Il retourne les éléments qui intersectent l'élément "source" dont l'identifiant (ID) est spécifié, par ex. : obtenir les municipalités contenues dans un territoire de CLSC ou de savoir quelle est la région touristique d’une municipalité, etc.
 
+<a id="2.4"></a>
 #### 2.4. *L'hébergement du navigateur IGO2* sans sécurité permet :
 + de tirer profit d’une multitude de données géographiques grâce à une interface cartographique accessible par un navigateur Web et adaptée à un appareil mobile avec la version IGO 2.0 (https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/). 
 Voici des exemples d'applications IGO disponible pour le grand public :
