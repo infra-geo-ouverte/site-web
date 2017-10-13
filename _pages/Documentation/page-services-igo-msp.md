@@ -166,18 +166,18 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 
 ##### **G) Comment obtenir les données brutes?**
 + Pour obtenir des données brutes, vous pouvez vous adresser à ces entités, soit :
-Données Québec : un portail commun de données ouvertes résultant d’une collaboration entre le gouvernement du Québec et plusieurs municipalités afin de fournir aux citoyens une seule porte d’entrée aux jeux de données ouvertes du Québec. Nous vous invitons à consulter le site Web : www.donneesquebec.ca
-+ Adresses Québec : une géobase routière qui couvre tout le Québec. Elle offre un réseau routier complet comprenant les odonymes officiels, les adresses par tranches et par points, l'information permettant la gestion de parcours, les codes postaux et un contexte cartographique. Nous vous invitons à consulter le site Web : www.adressesquebec.gouv.qc.ca
-+ Géoboutique du ministère de l’Énergie et des Ressources naturelles : permet de fournir des services d’informations géographiques utiles à ses clientèles publiques et privées dans le domaine de la connaissance, de l'aménagement, de la gestion de la mise en valeur et de la protection du territoire québécois et de ses ressources. Nous vous invitons à consulter le site Web : www.geoboutique.mern.gouv.qc.ca
+Données Québec : un portail commun de données ouvertes résultant d’une collaboration entre le gouvernement du Québec et plusieurs municipalités afin de fournir aux citoyens une seule porte d’entrée aux jeux de données ouvertes du Québec. Nous vous invitons à consulter le site Web : [www.donneesquebec.ca](www.donneesquebec.ca)
++ Adresses Québec : une géobase routière qui couvre tout le Québec. Elle offre un réseau routier complet comprenant les odonymes officiels, les adresses par tranches et par points, l'information permettant la gestion de parcours, les codes postaux et un contexte cartographique. Nous vous invitons à consulter le site Web : [www.adressesquebec.gouv.qc.ca](www.adressesquebec.gouv.qc.ca)
++ Géoboutique du ministère de l’Énergie et des Ressources naturelles : permet de fournir des services d’informations géographiques utiles à ses clientèles publiques et privées dans le domaine de la connaissance, de l'aménagement, de la gestion de la mise en valeur et de la protection du territoire québécois et de ses ressources. Nous vous invitons à consulter le site Web : [www.geoboutique.mern.gouv.qc.ca](www.geoboutique.mern.gouv.qc.ca)
 
 ##### **H) Mon centre d'urgence 9-1-1 utilise déjà les services de géomatique par le biais de son fournisseur de répartition assistée par ordinateur. Quels sont les avantages à utiliser les services offerts par IGO ?**
 + Vous aurez accès à des informations relatives à toute la province ainsi qu’à de l’information spécifique par des partenaires (ex. : Hydro-Québec) 
 
 ##### **I) Je n’ai pas pu me connecter à IGO 911, à qui dois-je m’adresser?**
-+ Écrire à MSP911@msp.gouv.qc.ca
++ Écrire à MSP911(a)msp.gouv.qc.ca
 
 ##### **J) Est-ce que je peux accéder à l’application cartographique de l’extranet adapté pour appareil mobile?**
 + Oui avec le même lien dans l’extranet, il faut choisir le profil: « IGO2-Mobile-9-1-1 ».
 
 ##### **K) Commentaires ou suggestions d’amélioration?** 
-+ Écrire à MSP911@msp.gouv.qc.ca 
++ Écrire à MSP911(a)msp.gouv.qc.ca 
