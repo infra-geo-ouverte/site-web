@@ -1,7 +1,6 @@
 ---
 permalink: /documentation/services-web-ogc-igo/
 layout: general
-title-main: Liste des services Web OGC offerts dans IGO au MSP
 iconedocumentation: ""
 ---
 
