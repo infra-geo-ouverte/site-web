@@ -22,7 +22,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 | 6. [Hébergement de données géomatiques et diffusion Web](#2.6)|-|-|&#x2713;|$|
 | 7. [Intégration de services Web dans le navigateur IGO2](#2.7)|-|-|&#x2713;|$|
 | 8. [Développement sur mesure](#28-le-développement-doutils-sur-mesure-permet-)|-|-|-|$|
-| 9. [Service web de cartes (WMS & WFS)](#2.9)  |&#x2713;|&#x2713;|&#x2713;|$|
+| 9. [Service web de cartes (WMS & WFS)](#2.9)  |&#x2713;|-|&#x2713;|$|
 | 10. [Service de fonds de cartes (WMTS) tuilés](#2.10)|&#x2713;, seulement le fond de carte du gouvernement du Québec (carte_gouv_public)|&#x2713;|&#x2713;|$|
 | 11. Outil de [gestion d’itinéraire](#2.11)|&#x2713;|&#x2713;|&#x2713;|$|
 | 12. Outil de [géocodage en lot](#2.12) avec fichier CSV|-|&#x2713;|&#x2713;|$|
