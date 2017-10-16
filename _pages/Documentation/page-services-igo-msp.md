@@ -35,7 +35,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 <a id="2.1"></a>
 #### 2.1. [<span class="octicon octicon-link"></span>](#2.1)*ICherche géocode* (API) permet :
-+ la [géolocalisation par adresse](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/geocode),  <p>code postal<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, [lieu](https://gitlab.forge.gouv.qc.ca/geomatique/espace_public_description_projet_igo/wikis/icherche-lieu) et offre des requêtes en lot. Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/). Il remplacera à terme le service de géolocalisation [GLO](http://igouverte.org/documentation/glo/) qui ne sera plus amélioré à partir de 2017, mais supporté jusqu'à la fin 2019. ICherche est plus performant (par ex. : autocomplétion) que le GLO et plus précis dans ses résultats trouvés.
++ la [géolocalisation par adresse](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/geocode),  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, [lieu](https://gitlab.forge.gouv.qc.ca/geomatique/espace_public_description_projet_igo/wikis/icherche-lieu) et offre des requêtes en lot. Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/). Il remplacera à terme le service de géolocalisation [GLO](http://igouverte.org/documentation/glo/) qui ne sera plus amélioré à partir de 2017, mais supporté jusqu'à la fin 2019. ICherche est plus performant (par ex. : autocomplétion) que le GLO et plus précis dans ses résultats trouvés.
 
 <a id="2.2"></a>
 #### 2.2. [<span class="octicon octicon-link"></span>](#2.2)*ICherche XY* (API) permet :
@@ -84,7 +84,7 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 
 <a id="2.12"></a>
 #### 2.12. [<span class="octicon octicon-link"></span>](#2.12)*Le service de géocodage en lot* permet :
-+ de  [géocoder des points, à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (par ex. : csv)](https://geoegl.msp.gouv.qc.ca/GeocodageLot/). Le fichier doit minimalement contenir un champ contenant l'adresse complète ou le <p>code postal<sup><abbr title="marque officielle">MO</abbr></sup>. 
++ de  [géocoder des points, à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (par ex. : csv)](https://geoegl.msp.gouv.qc.ca/GeocodageLot/). Le fichier doit minimalement contenir un champ contenant l'adresse complète ou le  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>. 
 
 <a id="2.13"></a>
 #### 2.13. [<span class="octicon octicon-link"></span>](#2.13)*Sécuriser les services Web* permet :
