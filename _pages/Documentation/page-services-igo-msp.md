@@ -39,7 +39,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 <a id="2.2"></a>
 #### 2.2. [<span class="octicon octicon-link"></span>](#2.2)*ICherche XY* (API) permet :
-+ de rechercher par XY en permettant la [géolocalisation par XY](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/xy). Il retourne les éléments qui intersectent le point XY passé en arguments. Ce service peut également retourner les éléments qui sont à une distance donnée du point XY. Comme la municipalité, la MRC, l’adresse, le code postal, etc. le plus près du XY.
++ de rechercher par XY en permettant la [géolocalisation par XY](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/xy). Il retourne les éléments qui intersectent le point XY passé en arguments. Ce service peut également retourner les éléments qui sont à une distance donnée du point XY. Comme la municipalité, la MRC, l’adresse, etc. le plus près du XY.
 
 <a id="2.3"></a>
 #### 2.3. [<span class="octicon octicon-link"></span>](#2.3)*ICherche par ID* (API) permet :
@@ -84,7 +84,7 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 
 <a id="2.12"></a>
 #### 2.12. [<span class="octicon octicon-link"></span>](#2.12)*Le service de géocodage en lot* permet :
-+ de  [géocoder des points, à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (par ex. : csv)](https://geoegl.msp.gouv.qc.ca/GeocodageLot/). Le fichier doit minimalement contenir un champ contenant l'adresse complète ou le © code postal. 
++ de  [géocoder des points, à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (par ex. : csv)](https://geoegl.msp.gouv.qc.ca/GeocodageLot/). Le fichier doit minimalement contenir un champ contenant l'adresse complète ou le <p>code postal<sup><abbr title="marque officielle">MO</abbr></sup>. 
 
 <a id="2.13"></a>
 #### 2.13. [<span class="octicon octicon-link"></span>](#2.13)*Sécuriser les services Web* permet :
