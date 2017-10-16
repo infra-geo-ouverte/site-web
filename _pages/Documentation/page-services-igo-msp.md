@@ -14,21 +14,21 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 | **API & services Web offerts par IGO-MSP**      | **Accès grand public aux applications des ministères/organismes et réseau**| **Accès aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Accès seulement dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/) ou extranet aux ministères et organismes du gouvernement du Québec [(à la demande)](http://igouverte.org/documentation/page-services-igo-msp/#footer)**  | **[Sur demande seulement](http://igouverte.org/documentation/page-services-igo-msp/#footer)** | 
 | ------------- |:-------------:| -----:|----:|----:|
-| 1. [ICherche géocode](#21-icherche-géocode-api-permet-) (remplacera le [GLO](http://igouverte.org/documentation/glo/))|X|X|X|$|
-| 2. [ICherche XY](#22-icherche-xy-api-permet-)|&#x2713;|-|X|$|
-| 3. [ICherche par ID](#23-icherche-par-id-api-permet-) |X|-|X|$|
-|  4. [Hébergement ](#24-lhébergement-du-navigateur-igo2-sans-sécurité-permet-) du [navigateur IGO2](http://igouverte.org/information/2017/08/04/IGO2_lancement/) |X |- |X |$|
-| 5. Hébergement du [navigateur IGO2 *avec* sécurité ](#2.5)|- |- |X|$|
-| 6. [Hébergement de données géomatiques et diffusion Web](#2.6)|-|-|X|$|
-| 7. [Intégration de services Web dans le navigateur IGO2](#2.7)|-|-|X|$|
+| 1. [ICherche géocode](#21-icherche-géocode-api-permet-) (remplacera le [GLO](http://igouverte.org/documentation/glo/))|&#x2713;|&#x2713;|&#x2713;|$|
+| 2. [ICherche XY](#22-icherche-xy-api-permet-)|&#x2713;|-|&#x2713;|$|
+| 3. [ICherche par ID](#23-icherche-par-id-api-permet-) |&#x2713;|-|&#x2713;|$|
+|  4. [Hébergement ](#24-lhébergement-du-navigateur-igo2-sans-sécurité-permet-) du [navigateur IGO2](http://igouverte.org/information/2017/08/04/IGO2_lancement/) |&#x2713;|- |&#x2713;|$|
+| 5. Hébergement du [navigateur IGO2 *avec* sécurité ](#2.5)|- |- |&#x2713;|$|
+| 6. [Hébergement de données géomatiques et diffusion Web](#2.6)|-|-|&#x2713;|$|
+| 7. [Intégration de services Web dans le navigateur IGO2](#2.7)|-|-|&#x2713;|$|
 | 8. [Développement sur mesure](#28-le-développement-doutils-sur-mesure-permet-)|-|-|-|$|
-| 9. [Service web de cartes (WMS & WFS)](#2.9)  |X|X|X|$|
-| 10. [Service de fonds de cartes (WMTS) tuilés](#2.10)|X, seulement le fond de carte du gouvernement du Québec (carte_gouv_public)|X|X|$|
-| 11. Outil de [gestion d’itinéraire](#2.11)|X|X |X |$|
-| 12. Outil de [géocodage en lot](#2.12) avec fichier CSV|-|X|X |$|
-| 13. [Sécuriser les services Web](#2.13)|- |- |X |$|
-| 14. [Suivi de flottes véhiculaires avec GPS](#2.14)|- |- |X |$|
-| 15. [Recherche de lots rénovés](#2.15)|- |- |X |$|
+| 9. [Service web de cartes (WMS & WFS)](#2.9)  |&#x2713;|&#x2713;|&#x2713;|$|
+| 10. [Service de fonds de cartes (WMTS) tuilés](#2.10)|X, seulement le fond de carte du gouvernement du Québec (carte_gouv_public)|&#x2713;|&#x2713;|$|
+| 11. Outil de [gestion d’itinéraire](#2.11)|&#x2713;|&#x2713;|&#x2713;|$|
+| 12. Outil de [géocodage en lot](#2.12) avec fichier CSV|-|&#x2713;|&#x2713;|$|
+| 13. [Sécuriser les services Web](#2.13)|- |- |&#x2713;|$|
+| 14. [Suivi de flottes véhiculaires avec GPS](#2.14)|- |- |&#x2713;|$|
+| 15. [Recherche de lots rénovés](#2.15)|- |- |&#x2713;|$|
 
 <a id="2"></a>
 # 2. [<span class="octicon octicon-link"></span>](#2) Description des services/API
