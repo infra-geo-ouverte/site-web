@@ -1,18 +1,18 @@
 ---
 permalink: /documentation/page-services-igo-msp/
 layout: general
-title-main: Services Web
+title-main: Services
 iconedocumentation: ""
 ---
 
-# Services Web et A.P.I. offerts dans IGO au MSP
+# Services Web et API offerts dans IGO au MSP
 
-Les services Web et [A.P.I. (interface de programmation d’applications)](http://granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=26508293) offerts au [ministère de la Sécurité publique du Québec (MSP)](https://geoegl.msp.gouv.qc.ca/blogue/) par l'Infrastructure géomatique ouverte ([IGO](http://www.igouverte.org/)) sont documentés dans cette page. Les [conditions d'utilisation sont détaillées au bas de ce tableau ](#a-quelles-sont-les-conditions-dutilisations-de-ces-services-). Ces services sont offerts soit aux ministères/organismes et leur réseau dans leurs applications grand public, aux détenteurs de licences d'Adresses Québec, aux partenaires du MSP (par ex. : centres d’urgence 9-1-1) ou aux organismes publics du gouvernement du Québec dans leur application interne. Chaque client est responsable de mettre à jour ses systèmes en fonction des améliorations et nouveautés de ces services.
+Les services Web et [API (interface de programmation d’applications)](http://granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=26508293) offerts au [ministère de la Sécurité publique du Québec (MSP)](https://geoegl.msp.gouv.qc.ca/blogue/) par l'Infrastructure géomatique ouverte ([IGO](http://www.igouverte.org/)) sont documentés dans cette page. Les [conditions d'utilisation sont détaillées au bas de ce tableau ](#a-quelles-sont-les-conditions-dutilisations-de-ces-services-). Ces services sont offerts soit aux ministères/organismes et leur réseau dans leurs applications grand public, aux détenteurs de licences d'Adresses Québec, aux partenaires du MSP (par ex. : centres d’urgence 9-1-1) ou aux organismes publics du gouvernement du Québec dans leur application interne. Chaque client est responsable de mettre à jour ses systèmes en fonction des améliorations et nouveautés de ces services.
 
 <a id="1"></a>
-# 1. [<span class="octicon octicon-link"></span>](#1)Tableau comparatif des accès aux services/A.P.I. 
+# 1. [<span class="octicon octicon-link"></span>](#1)Tableau comparatif des accès aux services/API 
 
-| **A.P.I. & services Web offerts par IGO-MSP**      | **Accès grand public aux applications des ministères/organismes et réseau**| **Accès aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Accès seulement dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/) ou extranet aux ministères et organismes du gouvernement du Québec [(à la demande)](http://igouverte.org/documentation/page-services-igo-msp/#footer)**  | **[Sur demande seulement](http://igouverte.org/documentation/page-services-igo-msp/#footer)** | 
+| **API & services Web offerts par IGO-MSP**      | **Accès grand public aux applications des ministères/organismes et réseau**| **Accès aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Accès seulement dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/) ou extranet aux ministères et organismes du gouvernement du Québec [(à la demande)](http://igouverte.org/documentation/page-services-igo-msp/#footer)**  | **[Sur demande seulement](http://igouverte.org/documentation/page-services-igo-msp/#footer)** | 
 | ------------- |:-------------:| -----:|----:|----:|
 | 1. [ICherche géocode](#21-icherche-géocode-api-permet-) (remplacera le [GLO](http://igouverte.org/documentation/glo/))|X|X|X|$|
 | 2. [ICherche XY](#22-icherche-xy-api-permet-)|X|-|X|$|
@@ -31,18 +31,18 @@ Les services Web et [A.P.I. (interface de programmation d’applications)](http:
 | 15. [Recherche de lots rénovés](#2.15)|- |- |X |$|
 
 <a id="2"></a>
-# 2. [<span class="octicon octicon-link"></span>](#2) Description des services/A.P.I.
+# 2. [<span class="octicon octicon-link"></span>](#2) Description des services/API
 
 <a id="2.1"></a>
-#### 2.1. [<span class="octicon octicon-link"></span>](#2.1)*ICherche géocode* (A.P.I.) permet :
+#### 2.1. [<span class="octicon octicon-link"></span>](#2.1)*ICherche géocode* (API) permet :
 + la [géolocalisation par adresse](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/geocode),  © code postal, territoire administratif, [lieu](https://gitlab.forge.gouv.qc.ca/geomatique/espace_public_description_projet_igo/wikis/icherche-lieu) et offre des requêtes en lot. Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/). Il remplacera à terme le service de géolocalisation [GLO](http://igouverte.org/documentation/glo/) qui ne sera plus amélioré à partir de 2017, mais supporté jusqu'à la fin 2019. ICherche est plus performant (par ex. : autocomplétion) que le GLO et plus précis dans ses résultats trouvés.
 
 <a id="2.2"></a>
-#### 2.2. [<span class="octicon octicon-link"></span>](#2.2)*ICherche XY* (A.P.I.) permet :
+#### 2.2. [<span class="octicon octicon-link"></span>](#2.2)*ICherche XY* (API) permet :
 + de rechercher par XY en permettant la [géolocalisation par XY](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/xy). Il retourne les éléments qui intersectent le point XY passé en arguments. Ce service peut également retourner les éléments qui sont à une distance donnée du point XY. Comme la municipalité, la MRC, l’adresse, le code postal, etc. le plus près du XY.
 
 <a id="2.3"></a>
-#### 2.3. [<span class="octicon octicon-link"></span>](#2.3)*ICherche par ID* (A.P.I.) permet :
+#### 2.3. [<span class="octicon octicon-link"></span>](#2.3)*ICherche par ID* (API) permet :
 + de rechercher par [identifiant la géolocalisation associée](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/id). Il retourne les éléments qui intersectent l'élément "source" dont l'identifiant (ID) est spécifié, par ex. : obtenir les municipalités contenues dans un territoire de CLSC ou de savoir quelle est la région touristique d’une municipalité, etc.
 
 <a id="2.4"></a>
@@ -79,7 +79,7 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 + Voici la [liste des services WMTS disponibles](http://igouverte.org/documentation/services-web-ogc-igo/#a)
 
 <a id="2.11"></a>
-#### 2.11. [<span class="octicon octicon-link"></span>](#2.11)*Le service de calcul et de gestion d’itinéraire* (A.P.I.) permet :
+#### 2.11. [<span class="octicon octicon-link"></span>](#2.11)*Le service de calcul et de gestion d’itinéraire* (API) permet :
 + de gérer des [itinéraires optimisés](https://gitlab.forge.gouv.qc.ca/geomatique/itineraire/wikis/home) (ex. meilleur parcours entre deux points) avec des requêtes en lot possibles. Il repose sur les données de la base géographique routière (BGR) de Transports Québec et d'Adresse Québec. Le service est basé sur la solution [OSRM](http://project-osrm.org/).
 
 <a id="2.12"></a>
@@ -88,7 +88,7 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 
 <a id="2.13"></a>
 #### 2.13. [<span class="octicon octicon-link"></span>](#2.13)*Sécuriser les services Web* permet :
-+ de gérer les permissions des usagers sur les services Web (interne et externe). Cette interface A.P.I. est basée sur la solution [Kong](https://getkong.org/).
++ de gérer les permissions des usagers sur les services Web (interne et externe). Cette interface API est basée sur la solution [Kong](https://getkong.org/).
 
 <a id="2.14"></a>
 #### 2.14. [<span class="octicon octicon-link"></span>](#2.14)Le *suivi de flottes véhiculaires* permet :
@@ -110,7 +110,7 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 + Le ministère de la Sécurité publique du Québec (MSP) et ses partenaires gouvernementaux dans IGO ne peuvent garantir l’exactitude des services de données et ils ne peuvent être tenus responsables des conclusions obtenues à la suite de l’utilisation de ceux-ci. Le MSP et ses partenaires gouvernementaux dans IGO n’assumeront aucune responsabilité à l’égard de tout dommage subi par l’utilisateur ou ses employés, agents, représentants ou sous-traitants à la suite de l’utilisation de ces services de données.
 
 ##### **B) Quelles sont les URL des serveurs hôte pour tous ces services ?** 
-+ Si vous êtes à l'extérieur du gouvernement, le serveur hôte en production sera : { https://geoegl.msp.gouv.qc.ca } (et préproduction : { https://pregeoegl.msp.gouv.qc.ca }) et si vous êtes physiquement dans un bâtiment du gouvernement du Québec dans le réseau intranet (RITM), en production ce sera : { http://www.geomsp.qc } (et préproduction : { http://rc.geomsp.qc }). Ces adresses de serveurs hôte doivent être utilisées comme URL et elles doivent remplacer la valeur pour : {serveur} dans la documentation des différents services ou A.P.I.
++ Si vous êtes à l'extérieur du gouvernement, le serveur hôte en production sera : { https://geoegl.msp.gouv.qc.ca } (et préproduction : { https://pregeoegl.msp.gouv.qc.ca }) et si vous êtes physiquement dans un bâtiment du gouvernement du Québec dans le réseau intranet (RITM), en production ce sera : { http://www.geomsp.qc } (et préproduction : { http://rc.geomsp.qc }). Ces adresses de serveurs hôte doivent être utilisées comme URL et elles doivent remplacer la valeur pour : {serveur} dans la documentation des différents services ou API.
 
 ##### **C) Que faire si le service n'est plus disponible ou que son état est indisponible ?**
 + Le service est disponible 24 heures par jour, 7 jours sur 7, à l'exception des périodes nécessitant des mises à jour annoncées d'avance. Par contre, si le service est non disponible, vous pouvez utiliser le serveur hôte de préproduction (voir réponse à la question B) qui est une image similaire à la production.
@@ -174,10 +174,10 @@ Données Québec : un portail commun de données ouvertes résultant d’une col
 + Vous aurez accès à des informations relatives à toute la province ainsi qu’à de l’information spécifique par des partenaires (ex. : Hydro-Québec) 
 
 ##### **I) Je n’ai pas pu me connecter à IGO 911, à qui dois-je m’adresser?**
-+ Écrire à MSP911(a)msp.gouv.qc.ca
++ Écrire à msp911(a)msp.gouv.qc.ca
 
 ##### **J) Est-ce que je peux accéder à l’application cartographique de l’extranet adapté pour appareil mobile?**
 + Oui avec le même lien dans l’extranet, il faut choisir le profil: « IGO2-Mobile-9-1-1 ».
 
 ##### **K) Commentaires ou suggestions d’amélioration?** 
-+ Écrire à MSP911(a)msp.gouv.qc.ca 
++ Écrire à msp911(a)msp.gouv.qc.ca 
