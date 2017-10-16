@@ -15,7 +15,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 | **API & services Web offerts par IGO-MSP**      | **Accès grand public aux applications des ministères/organismes et réseau**| **Accès aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Accès seulement dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/) ou extranet aux ministères et organismes du gouvernement du Québec [(à la demande)](http://igouverte.org/documentation/page-services-igo-msp/#footer)**  | **[Sur demande seulement](http://igouverte.org/documentation/page-services-igo-msp/#footer)** | 
 | ------------- |:-------------:| -----:|----:|----:|
 | 1. [ICherche géocode](#21-icherche-géocode-api-permet-) (remplacera le [GLO](http://igouverte.org/documentation/glo/))|X|X|X|$|
-| 2. [ICherche XY](#22-icherche-xy-api-permet-)|X|-|X|$|
+| 2. [ICherche XY](#22-icherche-xy-api-permet-)|&#x2713;|-|X|$|
 | 3. [ICherche par ID](#23-icherche-par-id-api-permet-) |X|-|X|$|
 |  4. [Hébergement ](#24-lhébergement-du-navigateur-igo2-sans-sécurité-permet-) du [navigateur IGO2](http://igouverte.org/information/2017/08/04/IGO2_lancement/) |X |- |X |$|
 | 5. Hébergement du [navigateur IGO2 *avec* sécurité ](#2.5)|- |- |X|$|
