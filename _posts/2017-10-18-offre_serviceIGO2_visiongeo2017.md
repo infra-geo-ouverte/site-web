@@ -21,15 +21,15 @@ Cette nouvelle [offre complète des services d'IGO au MSP est maintenant disponi
 
 Le résumé de la présentation est la suivante :
 <br>
-Depuis une dizaine d’années, le MSP s’est bâti une infrastructure géomatique plutôt originale au gouvernement et basée sur l’ouverture, la standardisation des services Web et la collaboration inter-organisation. 
+Depuis une dizaine d’années, le MSP s’est bâti une infrastructure géomatique plutôt originale au gouvernement et basée sur l’ouverture, la standardisation des services Web et la collaboration inter-organisation.
 <br>
 Cette infrastructure de géomatique ouverte offre plusieurs services utilisés par plusieurs partenaires du Gouvernement du Québec supportant des technologies variées, mais également pour le grand public sans contrainte d’accès (ex. portail de Données Québec). 
-Les dernières tendances du Web (ex. mobilité, API, recherche rapide d’information, virtualisation, etc.) et la demande sans cesse grandissante pour de nouveaux services géomatique performants ont demandé à cette infrastructure de passer à une nouvelle version 2.0. 
+Les dernières tendances du Web (ex. mobilité, API, recherche rapide d’information, virtualisation, etc.) et la demande sans cesse grandissante pour de nouveaux services de géomatique performants ont demandé à cette infrastructure de passer à une nouvelle version 2.0. 
 <br>
-Ces nouveaux horizons sont maintenant d’offrir des application cartographiques adaptées pour mobile (IGO2), des API sophistiqués d’assemblage de données (contexte cartographique) et des services de recherches d’information géographique optimisés (ICherche, analyse spatiale). 
+Ces nouveaux horizons sont maintenant d’offrir des applications cartographiques adaptées pour mobile (IGO2), des API sophistiqués d’assemblage de données (contexte cartographique) et des services de recherche d’information géographique optimisés (ICherche, analyse spatiale). 
 <br>
 Or, lors des fortes inondations printanières que le Québec a connu en 2017, cette infrastructure de géomatique 2.0 a dû répondre à la forte demande du gouvernement, des municipalités, des médias et du grand public pour de l’information à jour afin de suivre l’évolution géographique de l’événement. 
-Cette forte demande a été une occasion de démontrer l’importance du nouveau rôle de la géomatique à mieux répondre à une clientèle non experte en la matière qui désire toujours de données à jour et en temps-réel.
+Cette forte demande a été une occasion de démontrer l’importance du nouveau rôle de la géomatique à mieux répondre à une clientèle non experte en la matière qui désire toujours des données à jour et en temps-réel.
 
 Si vous avez des questions sur IGO, consultez notre foire aux questions (FAQ).
 
