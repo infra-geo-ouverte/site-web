@@ -11,11 +11,13 @@ une présentation inédite au sujet d'IGO a été faite pour l'occasion.
 <div class="liste_igo2" markdown="1" >
 Cette présentation d'[IGO 2.0 : les nouveaux horizons de collaboration](https://www.slideshare.net/igouverte/igo-20-nouveaux-horizons) a permis d'annoncer en primeur :
 <ul>
-<li>La nouvelle [offre complète des services d'IGO au MSP](http://igouverte.org/documentation/page-services-igo-msp/);</li>
-<li>La disponibilité du nouveau service ICherche qui remplacera à terme (fin 2019) l'[actuel service web de géolocalisation - GLO](http://igouverte.org/documentation/glo/);</li>
-<li>L'horizon des développements d'IGO2;</li>
+<li>La nouvelle offre complète des services d'IGO au MSP;</li>
+<li>La disponibilité du nouveau service ICherche qui remplacera à terme (fin 2019) l'actuel service web de géolocalisation - GLO;</li>
+<li>L'horizon des développements d'IGO2.</li>
 		</ul>
 </div>
+
+Cette nouvelle [offre complète des services d'IGO au MSP est maintenant disponible dans le site web sous "Services"](http://igouverte.org/documentation/page-services-igo-msp/).
 
 Le résumé de la présentation est la suivante :
 Depuis une dizaine d’années, le MSP s’est bâti une infrastructure géomatique plutôt originale au gouvernement et basée sur l’ouverture, la standardisation des services Web et la collaboration inter-organisation. 
