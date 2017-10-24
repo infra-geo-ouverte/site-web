@@ -30,9 +30,8 @@ Cette forte demande a été une occasion de démontrer l’importance du nouveau
 Si vous avez des questions sur IGO, consultez notre foire aux questions (FAQ).
 
 Pour plus d'informations, communiquez avec l'équipe d'IGO :
-<div class="contact" markdown="1" >
-<ul>
-			<li>par courriel : info[a]igouverte.org</li>
-			<li>en vous abonnant  à la [liste courriel publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique) </li>
-		</ul>
-</div>
+<br>
+- par courriel : info[a]igouverte.org
+<br>
+- en vous abonnant  à la [liste courriel publique](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique) </li>
+<br>
