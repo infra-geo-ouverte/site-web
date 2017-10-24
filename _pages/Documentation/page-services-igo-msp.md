@@ -49,10 +49,10 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 #### 2.4. [<span class="octicon octicon-link"></span>](#2.4)*L'hébergement du navigateur IGO2* sans sécurité permet :
 + de tirer profit d’une multitude de données géographiques grâce à une interface cartographique accessible par un navigateur Web et adaptée à un appareil mobile avec la version IGO 2.0 (https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/). 
 Voici des exemples d'applications IGO disponible pour le grand public :
-- Données Québec : [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/)
-- Données Québec - Transports : [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq)
-- Commission de protection du territoire agricole du Québec : [http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1)
-- Inventaire forestier : [https://geoegl.msp.gouv.qc.ca/igo/mffpecofor/](https://geoegl.msp.gouv.qc.ca/igo/mffpecofor/)
+- Données Québec (IGO2) : [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/)
+- Données Québec - Transports (IGO2) : [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq)
+- Commission de protection du territoire agricole du Québec (IGO1) : [http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1)
+- Inventaire forestier (IGO1) : [https://geoegl.msp.gouv.qc.ca/igo/mffpecofor/](https://geoegl.msp.gouv.qc.ca/igo/mffpecofor/)
 
 <a id="2.5"></a>
 #### 2.5. [<span class="octicon octicon-link"></span>](#2.5)*L'hébergement du navigateur IGO2 avec sécurité* permet :
