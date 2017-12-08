@@ -24,3 +24,5 @@ Pour consulter la liste complète des données diffusée dans [IGO](https://geoe
 des données ouvertes ([Données Québec](https://www.donneesquebec.ca/recherche/fr/group/d61e0cae-e722-4000-8fb1-88b28399e20c?organization=mffp&page=1)) 
 ou au [site Web du MFFP](http://mffp.gouv.qc.ca/le-ministere/acces-aux-donnees-gratuites/). 
 Pour obtenir de plus amples renseignements, n'hésitez pas à communiquer avec le [service à la clientèle du MFFP](http://mffp.gouv.qc.ca/le-ministere/service-clientele/). 
+
+![accès aux données mffp](http://mffp.gouv.qc.ca/wp-content/uploads/Donnees-440x220.jpg)
