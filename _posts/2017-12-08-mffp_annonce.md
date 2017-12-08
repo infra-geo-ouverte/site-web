@@ -25,4 +25,4 @@ des données ouvertes ([Données Québec](https://www.donneesquebec.ca/recherche
 ou au [site Web du MFFP](http://mffp.gouv.qc.ca/le-ministere/acces-aux-donnees-gratuites/). 
 Pour obtenir de plus amples renseignements, n'hésitez pas à communiquer avec le [service à la clientèle du MFFP](http://mffp.gouv.qc.ca/le-ministere/service-clientele/). 
 
-<img src="http://mffp.gouv.qc.ca/wp-content/uploads/Donnees-440x220.jpg" height="20%" width="20%">
+<img src="http://mffp.gouv.qc.ca/wp-content/uploads/Donnees-440x220.jpg" height="100" width="100">
