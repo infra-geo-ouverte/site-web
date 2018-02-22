@@ -105,7 +105,7 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 # 3.1. [<span class="octicon octicon-link"></span>](#3.1)Section générale
 
 ##### **A) Quelles sont les conditions d'utilisations de ces services ?** 
-+ L'utilisateur doit inclure la mention des droits d’auteur du Gouvernement du Québec sur chaque copie de la totalité ou d’une partie de ces services de données. La mention à inscrire est « © gouvernement du Québec » avec un hyperlien vers cette page : [https://www.droitauteur.gouv.qc.ca/copyright.php](https://www.droitauteur.gouv.qc.ca/copyright.php).
++ L'utilisateur doit inclure la mention des droits d’auteur du Gouvernement du Québec sur chaque copie de la totalité ou d’une partie de ces services de données. La mention à inscrire est « © gouvernement du Québec » avec un hyperlien vers cette page : [http://www.droitauteur.gouv.qc.ca/copyright.php](http://www.droitauteur.gouv.qc.ca/copyright.php).
 
 + Le ministère de la Sécurité publique du Québec (MSP) et ses partenaires gouvernementaux dans IGO ne peuvent garantir l’exactitude des services de données et ils ne peuvent être tenus responsables des conclusions obtenues à la suite de l’utilisation de ceux-ci. Le MSP et ses partenaires gouvernementaux dans IGO n’assumeront aucune responsabilité à l’égard de tout dommage subi par l’utilisateur ou ses employés, agents, représentants ou sous-traitants à la suite de l’utilisation de ces services de données.
 
