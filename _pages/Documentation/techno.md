@@ -7,7 +7,7 @@ iconedocumentation: ""
 # Technologies utilisées
 
 ## Voici la liste des logiciels utilisés et librairies supportant IGO 2.0 : 
-* [Angular 4](https://github.com/angular/angular)
+* [Angular 5](https://github.com/angular/angular)
 * [Angular Material](https://github.com/angular/material2)
 * [OpenLayers 4](https://github.com/openlayers/openlayers)
 * [IGO2lib](https://github.com/infra-geo-ouverte/igo2-lib)
