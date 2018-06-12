@@ -8,7 +8,7 @@ iconedocumentation: ""
 
 <a id="a"></a>
 ##### A) [<span class="octicon octicon-link"></span>](#a)WMTS - Fond de carte : 
-+ dans ArcGIS : [https://geoegl.msp.gouv.qc.ca/carto/wmts/1.0.0/wmts?service=wmts&request=getcapabilities&version=1.0.0](https://geoegl.msp.gouv.qc.ca/carto/wmts/1.0.0/wmts?service=wmts&request=getcapabilities&version=1.0.0) ou [https://geoegl.msp.gouv.qc.ca/carto/wmts/1.0.0/](https://geoegl.msp.gouv.qc.ca/carto/wmts/1.0.0/)
++ dans ArcGIS : [https://geoegl.msp.gouv.qc.ca/carto/wmts/1.0.0/](https://geoegl.msp.gouv.qc.ca/carto/wmts/1.0.0/) ou [https://geoegl.msp.gouv.qc.ca/carto/wmts/1.0.0/wmts?service=wmts&request=getcapabilities&version=1.0.0](https://geoegl.msp.gouv.qc.ca/carto/wmts/1.0.0/wmts?service=wmts&request=getcapabilities&version=1.0.0) 
 + dans QGIS : [https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetCapabilities&VERSION=1.0.0](https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetCapabilities&VERSION=1.0.0)
 
 <a id="b"></a>
