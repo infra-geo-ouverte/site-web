@@ -20,7 +20,7 @@ Bonne navigation !
 Pour plus d'informations :
 <div class="contact" markdown="1" >
 <ul>
-			<li><a href="http://www.fil-information.gouv.qc.ca/Pages/Article.aspx?aiguillage=ajd&type=1&lang=fr&idArticle=2607058541">Communiqué de presse officiel du gouvernement du Québec</a>/li>
+			<li><a href="http://www.fil-information.gouv.qc.ca/Pages/Article.aspx?aiguillage=ajd&type=1&lang=fr&idArticle=2607058541">Communiqué de presse officiel du gouvernement du Québec</a></li>
 			<li><a href="https://github.com/infra-geo-ouverte/igo2-lib">Dépôt de code source d'IGO2-lib utilisée dans Géo-Inondations</a></li>
       <li>Article de <a href="https://ici.radio-canada.ca/premiere/emissions/Les-matins-d-ici/segments/entrevue/79081/application-carte-inondations-quebec">ICI-Radio-Canada concernant Géo-Inondations</a></li>
 		</ul>
