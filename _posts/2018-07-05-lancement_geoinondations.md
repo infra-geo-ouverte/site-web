@@ -14,6 +14,18 @@ Géo-Inondations rend aisément accessible à la population de l'information rel
 Le repérage par une adresse précise est aussi disponible et l'utilisateur peut visualiser, au choix, le résultat en mode « plan » ou « satellite ». 
 Il peut, enfin, partager une vue cartographique, consulter un glossaire pour mieux comprendre les termes utilisés et accéder à d'autres sources d'information pertinentes et utiles. 
 
+Géo-Inondations vous permet de consulter :
+<ul>
+			<li>les zones inondables d’un lieu donné : une adresse, un code postal ou une municipalité.</li>
+			<li>l’historique des inondations signalées aux directions régionales du ministère de la Sécurité publique.</li>
+      <li>des informations relatives à votre positionnement.</li>
+		</ul>
+
+
+
+
+Géo-Inondations permet d’être redirigé vers les sources officielles d’information gouvernementales ou municipales liées aux inondations.
+
 Bonne navigation !
 
 
