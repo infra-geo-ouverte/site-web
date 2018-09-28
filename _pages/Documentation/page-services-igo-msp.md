@@ -80,7 +80,7 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 
 <a id="2.11"></a>
 #### 2.11. [<span class="octicon octicon-link"></span>](#2.11)*Le service de calcul et de gestion d’itinéraire* (API) permet :
-+ de gérer des [itinéraires optimisés](https://gitlab.forge.gouv.qc.ca/geomatique/itineraire/wikis/home) (ex. meilleur parcours entre deux points) avec des requêtes en lot possibles. Il repose sur les données de la base géographique routière (BGR) de Transports Québec et d'Adresse Québec. Le service est basé sur la solution [OSRM](http://project-osrm.org/).
++ de gérer des [itinéraires optimisés](http://igouverte.org/documentation/doc_itineraire/) (ex. meilleur parcours entre deux points) avec des requêtes en lot possibles. Il repose sur les données de la base géographique routière (BGR) de Transports Québec et d'Adresse Québec. Le service est basé sur la solution [OSRM](http://project-osrm.org/).
 
 <a id="2.12"></a>
 #### 2.12. [<span class="octicon octicon-link"></span>](#2.12)*Le service de géocodage en lot* permet :
