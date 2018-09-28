@@ -4,7 +4,8 @@ layout: general
 iconedocumentation: ""
 ---
 
-[Comment utiliser le service d'itinéraire du gouvernement du Québec hébergé au MSP].
+# Comment utiliser le service d'itinéraire du gouvernement du Québec hébergé au MSP.
+
 =====================
 
 ## Référence pour l'API
@@ -14,33 +15,7 @@ IMPORTANT : Il s'agit de changer l'URL de l'hôte : http://router.project-osrm.o
 
 =====================
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-**1. viaroute**
+### viaroute
 
 Calcul du chemin le plus court entre deux coordonnées et d'une liste ordonnée de point intermédiaire.
 
