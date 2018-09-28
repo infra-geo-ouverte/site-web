@@ -25,9 +25,9 @@ Paramètres:
 - Pour choisir le mode de transport : &graph=valeur  
   Liste des valeurs: voiture
 - Formatter le résulat en [JSONP](http://en.wikipedia.org/wiki/JSONP) : &JSONP=FonctionCallback
-- Obtenir les information de navigation: &instructions=false|true
-- Obtenir une route alternative: &alt=false|true
-- Désactiver la compression : &compression=false|true  (La compression [Encoded Polyline Algorithm Format](https://developers.google.com/maps/documentation/utilities/polylinealgorithm) de l'API google est utilisé par défaut.)
+- Obtenir les information de navigation: &instructions= false ou true
+- Obtenir une route alternative: &alt= false ou true
+- Désactiver la compression : &compression= false ou true  (La compression [Encoded Polyline Algorithm Format](https://developers.google.com/maps/documentation/utilities/polylinealgorithm) de l'API google est utilisée par défaut.)
 
 Le JSON retourné ressemblera à ceci:
 > {"status":0, 
