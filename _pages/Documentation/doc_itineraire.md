@@ -15,7 +15,7 @@ IMPORTANT : Il s'agit de changer l'URL de l'hôte : http://router.project-osrm.o
 
 =====================
 
-### viaroute
+### Exemple avec "viaroute"
 
 Calcul du chemin le plus court entre deux coordonnées et d'une liste ordonnée de point intermédiaire.
 
