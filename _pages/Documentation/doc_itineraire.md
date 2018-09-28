@@ -41,5 +41,3 @@ Le JSON retourné ressemblera à ceci:
 "via_points":[[46.548358,-71.099907],[46.543012,-71.070463],[46.537205,-71.080196]], "via_indices":[0,59,95],
 "alternative_indices":[], 
 "hint_data":{"checksum":-460876609,  "locations":["2tgJALngCQDHBQAAOgAAAKYAAAAAAAAALwUAAJMqBwCGRcYC_RnD-wAA2SU","-N8JAFzlCQCyAQAAAwAAAAQAAABpAwAArQAAAJwwBwCkMMYCAY3D-wwA2SU","998JABjhCQA3BgAAPwAAACcBAAAOAAAAjwMAAH4vBwD1GcYC_GbD-wEAAAA"] }}
-
-Consultez la description du JSON retourné par viaroute [ici](viarouteJSON).
