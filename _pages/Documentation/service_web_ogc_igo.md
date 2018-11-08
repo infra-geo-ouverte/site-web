@@ -8,7 +8,7 @@ iconedocumentation: ""
 
 <a id="a"></a>
 ##### A) [<span class="octicon octicon-link"></span>](#a)WMTS - Fond de carte : 
-+ Les thématiques de fond de carte disponibles sont les suivants : **carte_gouv_qc_public** et **orthos**. Ils peuvent être accédés par l'entremise de cet URL de service WMTS : [https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetCapabilities&VERSION=1.0.0](https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetCapabilities&VERSION=1.0.0)
++ La thématique de fond de carte disponible est le suivant : **carte_gouv_qc_public**. Il peut être accédé par l'entremise de cet URL de service WMTS : [https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetCapabilities&VERSION=1.0.0](https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetCapabilities&VERSION=1.0.0)
 
 <a id="b"></a>
 ##### B) [<span class="octicon octicon-link"></span>](#b)WMS/WFS - Données Québec ([https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/)) : [https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?)
