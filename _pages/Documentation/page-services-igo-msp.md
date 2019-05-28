@@ -15,8 +15,8 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 | **API & services Web offerts par IGO-MSP**      | **Accès grand public aux applications des ministères/organismes et réseau**| **Accès aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Accès seulement dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/) ou extranet aux ministères et organismes du gouvernement du Québec [(à la demande)](http://igouverte.org/documentation/page-services-igo-msp/#footer)**  | **[Sur demande seulement](http://igouverte.org/documentation/page-services-igo-msp/#footer)** | 
 | ------------- |:-------------:| -----:|----:|----:|
 | 1. [ICherche géocode](#21-icherche-géocode-api-permet-) (remplacera le [GLO](http://igouverte.org/documentation/glo/))|&#x2713;|&#x2713;|&#x2713;|$|
-| 2. [ICherche XY](#22-icherche-xy-api-permet-)|&#x2713;|-|&#x2713;|$|
-| 3. [ICherche par ID](#23-icherche-par-id-api-permet-) |&#x2713;|-|&#x2713;|$|
+| 2. [Rercherche territoires par XY](#22-territoire-xy-api-permet-)|&#x2713;|-|&#x2713;|$|
+| 3. [Rercherche territoires par intersection](#23-territoire-par-intersection-api-permet-) |&#x2713;|-|&#x2713;|$|
 |  4. [Hébergement ](#24-lhébergement-du-navigateur-igo2-sans-sécurité-permet-) du [navigateur IGO2](http://igouverte.org/information/2017/08/04/IGO2_lancement/) |&#x2713;|- |&#x2713;|$|
 | 5. Hébergement du [navigateur IGO2 *avec* sécurité ](#2.5)|- |- |&#x2713;|$|
 | 6. [Hébergement de données géomatiques et diffusion Web](#2.6)|-|-|&#x2713;|$|
@@ -38,12 +38,12 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 + la [géolocalisation par adresse](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/geocode),  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, [lieu](https://gitlab.forge.gouv.qc.ca/geomatique/espace_public_description_projet_igo/wikis/icherche-lieu) et offre des requêtes en lot. Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/). Il remplacera à terme le service de géolocalisation [GLO](http://igouverte.org/documentation/glo/) qui ne sera plus amélioré à partir de 2017, mais supporté jusqu'à la fin 2019. ICherche est plus performant (par ex. : autocomplétion) que le GLO et plus précis dans ses résultats trouvés.
 
 <a id="2.2"></a>
-#### 2.2. [<span class="octicon octicon-link"></span>](#2.2)*ICherche XY* (API) permet :
-+ de rechercher par XY en permettant la [géolocalisation par XY](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/xy). Il retourne les éléments qui intersectent le point XY passé en arguments. Ce service peut également retourner les éléments qui sont à une distance donnée du point XY. Comme la municipalité, la MRC, l’adresse, etc. le plus près du XY.
+#### 2.2. [<span class="octicon octicon-link"></span>](#2.2)*Territoire XY* (API) permet :
++ de rechercher par XY en permettant la [géolocalisation par XY](https://geoegl.msp.gouv.qc.ca/apis/territoires/docs/locate). Il retourne les éléments qui intersectent le point XY passé en arguments. Ce service peut également retourner les éléments qui sont à une distance donnée du point XY comme la municipalité, la MRC, l’adresse, etc.
 
 <a id="2.3"></a>
-#### 2.3. [<span class="octicon octicon-link"></span>](#2.3)*ICherche par ID* (API) permet :
-+ de rechercher par [identifiant la géolocalisation associée](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/id). Il retourne les éléments qui intersectent l'élément "source" dont l'identifiant (ID) est spécifié, par ex. : obtenir les municipalités contenues dans un territoire de CLSC ou de savoir quelle est la région touristique d’une municipalité, etc.
+#### 2.3. [<span class="octicon octicon-link"></span>](#2.3)*Territoire par intersection* (API) permet :
++ de rechercher par [identifiant la géolocalisation associée](https://geoegl.msp.gouv.qc.ca/apis/territoires/docs/intersect). Il retourne les éléments qui intersectent l'élément "source" dont l'identifiant (ID) est spécifié, par ex. : obtenir les municipalités contenues dans un territoire de CLSC ou de savoir quelle est la région touristique d’une municipalité, etc.
 
 <a id="2.4"></a>
 #### 2.4. [<span class="octicon octicon-link"></span>](#2.4)*L'hébergement du navigateur IGO2* sans sécurité permet :
