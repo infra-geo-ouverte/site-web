@@ -18,7 +18,7 @@ url: ""
 encoding: utf-8
 
 #redcarpet:  redcarpet appears to be The Standard GitHub Flavored Markdown, sinon c'est Kramdown
-markdown: redcarpet
+
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 permalink: pretty
