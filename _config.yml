@@ -26,7 +26,7 @@ permalink: pretty
 # rouge: plus facile d'installation pour windows  sinon en general c'est pygments qui est utilisé
 # note: As of August 1, commiting a _config.yml that uses rouge now causes "Page build failure" on GitHub with a misleading error message like "The file _posts/2014-08-01-blah.md contains syntax errors." Before you commit & push, you must set highlighter: pygments in _config.yml, even if you don't care to install pygments locally.
 #ref: http://loyc.net/2014/blogging-on-github.html
-highlighter: pygments
+highlighter: rouge
 #rouge pas supporté par github mettre pygments
 
 # ref: http://pixelcog.com/blog/2013/jekyll-from-scratch-core-architecture/
