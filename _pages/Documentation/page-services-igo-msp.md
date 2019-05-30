@@ -122,13 +122,13 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 + Pour ce faire, il serait opportun pour chaque client d'un de ces services de s'inscrire à cette liste courriel afin d’être mis au courant des annonces et arrêts des services faits en avance : [http://listes.securitepublique.gouv.qc.ca/sympa/subscribe/igo-publique](http://listes.securitepublique.gouv.qc.ca/sympa/subscribe/igo-publique)
 
 ##### **F) Si j'ai d’autres questions sur ces services avec qui puis-je communiquer ?** 
-+ N’hésitez pas à communiquer avec nous à l’adresse courriel suivante : info(a)igouverte.org ou consulter le site igouverte.org et cliquez sur : [Contact dans le site Web d'IGO](http://igouverte.org/#footer).
++ N’hésitez pas à communiquer avec nous à l’adresse courriel suivante : info@igouverte.org ou consulter le site igouverte.org et cliquez sur : [Contact dans le site Web d'IGO](http://igouverte.org/#footer).
 
 <a id="3.2"></a>
 ## 3.2. [<span class="octicon octicon-link"></span>](#3.2)Clientèle des centres d'urgence (CU) 9-1-1 du Québec
 
 ##### **A) Qui contacter en cas de questions concernant ces services pour les CU-911 ?** 
-+ N’hésitez pas à communiquer avec nous à l’adresse courriel suivante : msp911(a)msp.gouv.qc.ca
++ N’hésitez pas à communiquer avec nous à l’adresse courriel suivante : msp911@msp.gouv.qc.ca
 
 ##### **B) Pourquoi utiliser l'application extranet qui inclut le navigateur IGO et IGO2 ?**
 + C’est gratuit
@@ -141,7 +141,7 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 + Aucune programmation et aucun logiciel à installer
 
 ##### **C) Si je veux avoir accès au guide de formation, à qui dois-je m’adresser ?**
-+ Vous pouvez accéder au guide de formation en cliquant sur le "I" dans l’application Extranet IGO 9-1-1. Vous pouvez également vous adresser à msp911(a)msp.gouv.qc.ca pour obtenir de l’information au sujet de la formation IGO 9-1-1.
++ Vous pouvez accéder au guide de formation en cliquant sur le "I" dans l’application Extranet IGO 9-1-1. Vous pouvez également vous adresser à msp911@msp.gouv.qc.ca pour obtenir de l’information au sujet de la formation IGO 9-1-1.
 
 ##### **D)  Quels sont les avantages d’utiliser les services Web de carte – WMS ?**
 + C’est gratuit
@@ -174,10 +174,10 @@ Données Québec : un portail commun de données ouvertes résultant d’une col
 + Vous aurez accès à des informations relatives à toute la province ainsi qu’à de l’information spécifique par des partenaires (ex. : Hydro-Québec) 
 
 ##### **I) Je n’ai pas pu me connecter à IGO 911, à qui dois-je m’adresser?**
-+ Écrire à msp911(a)msp.gouv.qc.ca
++ Écrire à msp911@msp.gouv.qc.ca
 
 ##### **J) Est-ce que je peux accéder à l’application cartographique de l’extranet adapté pour appareil mobile?**
 + Oui avec le même lien dans l’extranet, il faut choisir le profil: « IGO2-Mobile-9-1-1 ».
 
 ##### **K) Commentaires ou suggestions d’amélioration?** 
-+ Écrire à msp911(a)msp.gouv.qc.ca 
++ Écrire à msp911@msp.gouv.qc.ca 
