@@ -7,7 +7,7 @@ css de l'accueil incluant la banniere
 ***/
 
 #banniere{
-	background-image: url("../assets/img/banniere_carte.jpg");
+	background-image: url("../assets/img/blurred_igo_carte_accueil.jpg");
 	@include background-img;
 	background-attachment: local;
 	height: 300px;
