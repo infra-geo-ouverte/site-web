@@ -14,7 +14,7 @@ titre-accueil: Partenaires actuels
 - [Ministère des Forêts, de la Faune et des Parcs (MFFP)](http://www.mffp.gouv.qc.ca/);
 - [Ministère de la Sécurité publique (MSP)](http://www.securitepublique.gouv.qc.ca/);
 - [Ministère de la Santé et des Services sociaux (MSSS)](http://www.msss.gouv.qc.ca/);
-- [Ministère des Transports, de la Mobilité durable et de l'Électrification des transports (MTMDET)](https://www.transports.gouv.qc.ca);
+- [Ministère des Transports, de la Mobilité durable et de l'Électrification des transports (MTQ)](https://www.transports.gouv.qc.ca);
 - [Secrétariat du conseil du Trésor (SCT)](http://www.tresor.gouv.qc.ca/).
 
 
