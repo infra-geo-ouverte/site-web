@@ -90,33 +90,33 @@ Ce sont des programmeurs expérimentés et habilités à valider le travail des 
 Les sources de financement de la communauté se traduisent par une participation financière et/ou matérielle et/ou humaine.
 
 <a id="licence"></a>
-##4. Licence  [<span class="octicon octicon-link"></span>](#licence)
+## 4. Licence  [<span class="octicon octicon-link"></span>](#licence)
 
 - Consulter la [LICENCE](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt)
 
 <a id="droitauteur"></a>
-##5. Droits d'auteur   [<span class="octicon octicon-link"></span>](#droitauteur)
+## 5. Droits d'auteur   [<span class="octicon octicon-link"></span>](#droitauteur)
 
 À la lumière des définitions données dans les termes de la licence :
 « concédant » : le titulaire du droit d'auteur sur le logiciel, ou toute personne dûment autorisée par ce dernier à accorder la présente licence;
 « contributeur » : le titulaire du droit d'auteur ou toute personne autorisée par ce dernier à soumettre au concédant une contribution. **Un contributeur dont sa contribution est incorporée au logiciel est considéré comme un concédant en regard de sa contribution**.
 
 <a id="principes"></a>
-##6. Principes et mécanismes de prise des décisions   [<span class="octicon octicon-link"></span>](#principes)
+## 6. Principes et mécanismes de prise des décisions   [<span class="octicon octicon-link"></span>](#principes)
 
-###6.1. Chercher le consensus
+### 6.1. Chercher le consensus
 Il est préférable que les décisions soient prises à la suite d'un consensus entre les différents membres du CT. Le vote servira dans ce cas à officialiser ce consensus.
 
-###6.2. Membre votant
+### 6.2. Membre votant
 Est considéré comme membre votant, un membre qui apporte une contribution substantielle (financière et/ou matérielle et\ou humaine) pour la communauté.
 
-###6.3. Membre observateur
+### 6.3. Membre observateur
 Un membre  « observateur » est un contributeur qui n'a pas le droit de vote.
 
-###6.4. Poids du vote
+### 6.4. Poids du vote
 Un membre = une voix.
 
-###6.5. Mécanisme de vote
+### 6.5. Mécanisme de vote
 - Les motions sont inscrites sur une  liste de discussion et les votes se font en public, sauf dans les cas exigeant la confidentialité.
 - Le vote est habituellement ouvert pour une période relativement courte (ex. : trois jours ouvrables).
 - La notation suivante pour le vote est adoptée : +1, 0, -1 : 
@@ -127,7 +127,7 @@ Un membre = une voix.
 - Si une proposition reçoit un veto (-1) et qu'il est impossible de satisfaire toutes les parties après révision et discussion, la proposition peut être soumise pour un second vote ultime et, dans ce cas, un vote positif de la majorité absolue de tous les membres du comité est requis pour que la proposition soit acceptée. Dans ce cas, le veto ne s'applique plus.
 - Le résultat du vote est compilé et publié.
 
-###6.6. Gestion des demandes de changements (RFC) 
+### 6.6. Gestion des demandes de changements (RFC) 
 Le processus de demande de changement (RFC) doit suivre le processus suivant :
 
 - discussions préliminaires sur la liste de discussion; 
@@ -137,48 +137,48 @@ Le processus de demande de changement (RFC) doit suivre le processus suivant :
 - vote du CT au besoin;
 - publication des documents de demande de changement sur le site GitHub d'IGO.
 
-###6.7. Gestion des révisions 
+### 6.7. Gestion des révisions 
 - Dépôt d'un plan de livraison.
 - Plan livraison -> gel de fonctionnalités -> version bêta -> RC (candidate release) -> livraison. 
 - Rôle de responsable de livraison (doit être un valideur de code). 
 
-###6.8. Cycle de révisions : 
+### 6.8. Cycle de révisions : 
 - Le cycle des révisions est basé sur la feuille de route (“roadmap”).
 
 <a id="charte"></a>
-##7. Charte du comité technique    [<span class="octicon octicon-link"></span>](#charte)
+## 7. Charte du comité technique    [<span class="octicon octicon-link"></span>](#charte)
 
 Se référer à [l'annexe 1](#annexe1)
 
 <a id="codage"></a>
-##8. Convention et règles de codage [<span class="octicon octicon-link"></span>](#codage)
+## 8. Convention et règles de codage [<span class="octicon octicon-link"></span>](#codage)
 La convention de codage est un document interne rédigé par le CT. On peut s’en servir ou se servir de tout autre document que le CT juge utile. Cette convention doit être respectée par les développeurs et vise à uniformiser le code et les méthodes de travail (ex. : règles d'écriture du code source, d'architecture, du modèle de données, etc.).
 
 <a id="depot"></a>
-##9. Dépôt du code source et outils de communication     [<span class="octicon octicon-link"></span>](#depot)
+## 9. Dépôt du code source et outils de communication     [<span class="octicon octicon-link"></span>](#depot)
 Dépôts du code source : [https://github.com/infra-geo-ouverte/igo2](https://github.com/infra-geo-ouverte/igo2)
  et [https://github.com/infra-geo-ouverte/igo](https://github.com/infra-geo-ouverte/igo)
 
 Outils de communication : si vous avez d'autres questions, n'hésitez pas à communiquer avec nous à l'adresse suivante : info(a)igouverte.org ou à vous inscrire à la [liste courriel](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique).
 
 <a id="amendement" ></a>
-##10. Amendement de ce présent acte constitutif [<span class="octicon octicon-link"></span>](#amendement)
+## 10. Amendement de ce présent acte constitutif [<span class="octicon octicon-link"></span>](#amendement)
 
 Toute personne qui souhaite participer à la communauté IGO est tenue de respecter cet acte constitutif. Le CT se réserve le droit d’amender cet acte à tout moment sauf dans la partie Licence du logiciel IGO où les termes de la  [licence](https://github.com/infra-geo-ouverte/igo2/blob/master/LICENCE.txt) dominent.  
 
 <a id="acteur" ></a>
 
-##11. Schéma de gouvernance [<span class="octicon octicon-link"></span>](#acteur)
+## 11. Schéma de gouvernance [<span class="octicon octicon-link"></span>](#acteur)
 <span id="acteurs">
 ![Acteurs de la communauté](https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/doc/Acteurs_CommunauteIGO.png)
 </span>
 <a id="annexe1" ></a>
-##Annexe 1 : Charte du CT [<span class="octicon octicon-link"></span>](#annexe1)
+## Annexe 1 : Charte du CT [<span class="octicon octicon-link"></span>](#annexe1)
 
-###1. Mission 
+### 1. Mission 
 Le comité technique (CT) est chargé d'assurer le leadership technique pour la gestion d’IGO et il prend les décisions concernant les questions liées aux aspects techniques. Il constitue le comité ultime d'appel des décisions techniques.
 
-###2. Responsabilités du CT
+### 2. Responsabilités du CT
 - Rédiger, modifier et amender la charte du CT et s'assurer de son respect par les membres de ce comité.
 - Tenir un calendrier d'évolution et le transmettre à la communauté pour information.
 - Identifier, collecter et consolider les besoins des utilisateurs.
@@ -193,49 +193,49 @@ Le comité technique (CT) est chargé d'assurer le leadership technique pour la 
 - Animer la communauté, la tenir informée et faire en sorte de la garder dynamique.
 - Produire, au besoin, des rapports du projet.
 
-###3. Représentants du CT    
+### 3. Représentants du CT    
 Le CT actuel a pour mandat d'assurer le leadership technique de la communauté. 
 Voici les membres actuels (un par organisation) :
 
-- Karl Gingras (CPTAQ);
-- Marie-Claude Couture (FADQ);
-- Nathalie Gravel (INSPQ);
-- Sylvie Girouard (MCC);
-- Carl Pelletier (MERN);
-- Josée Martel (MFFP);
-- Nicolas Gignac (MSP);
-- Olivier Bégin (MTMDET);
-- À déterminer (MSSS).
-- À déterminer (SCT).
+- CPTAQ : Karl Gingras
+- FADQ : Jean-François Martineau
+- INSPQ : Matthieu Tandonnet
+- MCC : Sylvie Girouard 
+- MFFP-Forêts : Josée Martel
+- MTMDET : Pierre-Étienne Lord
+- MERN : Carl Pelletier
+- MSP : Véronique Payan
+- MSSS : Hans Grisé
+- SCT : Claude Durocher
 
-###4. Coordonnateur du CT
+### 4. Coordonnateur du CT
 Après chaque élection, le CT propose un de ses membres pour agir à titre de coordonnateur du CT sous une présidence tournante. En cas de plusieurs candidats, le choix du candidat se fait selon le mécanisme de vote de la communauté IGO. Les responsabilités du  coordonnateur du CT sont :
 
 - d'organiser les rencontres du CT;
 - de publier les comptes rendus des réunions du CT.
 
-###5. Réunions 
+### 5. Réunions 
 - Les réunions se déroulent au moins tous les mois.
 - Le CT maintient un ordre du jour ouvert sur la liste de diffusion.
 - Une réunion spéciale du CT peut être convoquée si un de ses membres en fait la demande sur la liste de diffusion au moins deux jours avant l'heure de réunion.
 - La tenue d'une réunion est conditionnelle à la participation d'au moins 50 % des membres du CT.
 
-###6. Motions 
+### 6. Motions 
 Avant d'être soumises à un vote, les motions doivent être présentées et discutées publiquement à la recherche d'un consensus sur la liste de diffusion des développeurs, pour un minimum de deux jours ouvrables.
 
-###7. Délégation du droit du vote 
+### 7. Délégation du droit du vote 
 Un membre du CT qui se trouve dans l'impossibilité d'assister à une réunion peut mandater un représentant de son opinion qui votera en son nom.
 
-###8. Candidatures au CT 
+### 8. Candidatures au CT 
 Tout contributeur technique actif ou super-utilisateur peut soumettre sa candidature pour devenir membre du CT.
 
-###9. Amendement
+### 9. Amendement
 L'amendement de cette présente charte du CT est proposé dans une motion spéciale qui, pour être acceptée, doit être approuvée selon les principes et les mécanismes de prise de décisions de la communauté.
 
 <a id="annexe2"></a>
-##Annexe 2 : foire aux questions (FAQ) [<span class="octicon octicon-link"></span>](#annexe2)          
+## Annexe 2 : foire aux questions (FAQ) [<span class="octicon octicon-link"></span>](#annexe2)          
 
-###Comment un développeur peut-il devenir un valideur de code?
+### Comment un développeur peut-il devenir un valideur de code?
 Les valideurs de code sont des développeurs expérimentés. Il est possible de devenir valideur de code en réalisant les étapes suivantes :
 
 - Contribuer régulièrement à la validation de code en envoyant des ajouts ou des modifications par l’intermédiaire du système de suivi de bogues.
@@ -244,7 +244,7 @@ Les valideurs de code sont des développeurs expérimentés. Il est possible de 
 - Se faire attribuer le titre de valideur de code par un vote du CT.
 - Être un valideur de code actif et respecter les règles d'engagement. Dans le cas contraire, la personne peut se faire révoquer sa qualité de valideur de code par le CT et, par conséquent, perdre les privilèges qui lui sont conférés.
 
-###Comment gagner la confiance des autres valideurs de code?
+### Comment gagner la confiance des autres valideurs de code?
 
 - Avoir une bonne compréhension de l'architecture, des outils et des méthodes de fonctionnement du projet.
 - Écrire du code de qualité.
@@ -252,7 +252,7 @@ Les valideurs de code sont des développeurs expérimentés. Il est possible de 
 - Avoir l'intention de rester actif à moyen et à long terme.
 - Être disposé à suivre une formation ou à subir « un examen par les pairs » pour acquérir la qualité de valideur de code d'une façon accélérée.  
 
-###Numérotage des révisions 
+### Numérotage des révisions 
 
 - Version = x.y.z (majeur.mineur.patch).
 - Mineur pair = stable (ex. : 5.4, 5.6).
