@@ -25,7 +25,7 @@ Consulter la [Procédure d'installation rapide la librarie d'IGO2](https://githu
 
 <a id="telechargement_igo2"></a>
 #### Téléchargement : [<span class="octicon octicon-link"></span>](#telechargement)
-Consulter [GitHub](https://github.com/infra-geo-ouverte/) pour télécharger le code source de l'assemblage d'IGO2 et d'IGO2Lib.
+Consulter [GitHub](https://github.com/infra-geo-ouverte/) pour télécharger le code source de l'assemblage d'IGO2 et d'IGO2-Lib.
 
 ## B- IGO1
 
