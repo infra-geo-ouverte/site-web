@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d480f851-0d5f-444b-91e3-d01d18b2fedd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/Communaute/communaute.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/Communaute/communaute.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,18 +17,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_pages/Documentation/page-services-igo-msp.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2584">
-                <caret line="152" column="50" selection-start-line="152" selection-start-column="50" selection-end-line="152" selection-end-column="50" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
@@ -36,20 +25,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_site/communaute/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="984" column="13" selection-start-line="984" selection-start-column="13" selection-end-line="984" selection-end-column="13" />
+            <state relative-caret-position="2411">
+              <caret line="668" column="52" selection-start-line="668" selection-start-column="52" selection-end-line="668" selection-end-column="52" />
               <folding>
-                <element signature="e#22152#22156#0" expanded="true" />
-                <element signature="e#22181#22185#0" expanded="true" />
-                <element signature="e#22200#22204#0" expanded="true" />
-                <element signature="e#22229#22233#0" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#span#0;n#form#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#34748#34754#0" expanded="true" />
-                <element signature="e#37095#37101#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_pages/Communaute/communaute.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="510">
+                <caret line="87" column="3" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -59,6 +54,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>(a)</find>
+      <find>Kar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,6 +66,7 @@
         <option value="$PROJECT_DIR$/_pages/Documentation/page-services-igo-msp.md" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_site/communaute/index.html" />
+        <option value="$PROJECT_DIR$/_pages/Communaute/communaute.md" />
       </list>
     </option>
   </component>
@@ -94,13 +91,13 @@
             <path>
               <item name="site-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="site-web" type="462c0819:PsiDirectoryNode" />
-              <item name="_site" type="462c0819:PsiDirectoryNode" />
+              <item name="_pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="site-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="site-web" type="462c0819:PsiDirectoryNode" />
-              <item name="_site" type="462c0819:PsiDirectoryNode" />
-              <item name="communaute" type="462c0819:PsiDirectoryNode" />
+              <item name="_pages" type="462c0819:PsiDirectoryNode" />
+              <item name="Communaute" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -139,14 +136,16 @@
       <updated>1559231976499</updated>
       <workItem from="1559231977968" duration="1877000" />
       <workItem from="1559310579076" duration="2946000" />
+      <workItem from="1559581899899" duration="2025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4823000" />
+    <option name="totallyTimeSpent" value="6848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -174,8 +173,8 @@
     <entry file="file://$PROJECT_DIR$/_pages/Documentation/page-services-igo-msp.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2584">
-            <caret line="152" column="50" selection-start-line="152" selection-start-column="50" selection-end-line="152" selection-end-column="50" />
+          <first_editor relative-caret-position="414">
+            <caret line="127" column="29" lean-forward="true" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
           </first_editor>
           <second_editor />
         </state>
@@ -190,17 +189,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_site/communaute/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="984" column="13" selection-start-line="984" selection-start-column="13" selection-end-line="984" selection-end-column="13" />
+        <state relative-caret-position="2411">
+          <caret line="668" column="52" selection-start-line="668" selection-start-column="52" selection-end-line="668" selection-end-column="52" />
           <folding>
-            <element signature="e#22152#22156#0" expanded="true" />
-            <element signature="e#22181#22185#0" expanded="true" />
-            <element signature="e#22200#22204#0" expanded="true" />
-            <element signature="e#22229#22233#0" expanded="true" />
             <element signature="n#style#0;n#input#0;n#span#0;n#form#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#34748#34754#0" expanded="true" />
-            <element signature="e#37095#37101#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_pages/Communaute/communaute.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="510">
+            <caret line="87" column="3" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

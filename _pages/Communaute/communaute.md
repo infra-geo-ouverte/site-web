@@ -85,7 +85,7 @@ Ce sont des programmeurs expérimentés et habilités à valider le travail des 
 - S'assurer d'avoir une documentation adéquate concernant les changements effectués.
 
 <a id="financement"></a>
-##3. Sources de financement  [<span class="octicon octicon-link"></span>](#financement)
+## 3. Sources de financement  [<span class="octicon octicon-link"></span>](#financement)
  
 Les sources de financement de la communauté se traduisent par une participation financière et/ou matérielle et/ou humaine.
 
