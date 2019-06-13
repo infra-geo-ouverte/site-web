@@ -170,15 +170,15 @@ Toute personne qui souhaite participer à la communauté IGO est tenue de respec
 
 ## 11. Schéma de gouvernance [<span class="octicon octicon-link"></span>](#acteur)
 <span id="acteurs">
-![Acteurs de la communauté](https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/doc/Acteurs_CommunauteIGO.png)
+![Acteurs de la communauté](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/igo_icone.png)
 </span>
 <a id="annexe1" ></a>
 ## Annexe 1 : Charte du CT [<span class="octicon octicon-link"></span>](#annexe1)
 
-### 1. Mission 
+### A1. Mission 
 Le comité technique (CT) est chargé d'assurer le leadership technique pour la gestion d’IGO et il prend les décisions concernant les questions liées aux aspects techniques. Il constitue le comité ultime d'appel des décisions techniques.
 
-### 2. Responsabilités du CT
+### A2. Responsabilités du CT
 - Rédiger, modifier et amender la charte du CT et s'assurer de son respect par les membres de ce comité.
 - Tenir un calendrier d'évolution et le transmettre à la communauté pour information.
 - Identifier, collecter et consolider les besoins des utilisateurs.
@@ -193,7 +193,7 @@ Le comité technique (CT) est chargé d'assurer le leadership technique pour la 
 - Animer la communauté, la tenir informée et faire en sorte de la garder dynamique.
 - Produire, au besoin, des rapports du projet.
 
-### 3. Représentants du CT    
+### A3. Représentants du CT    
 Le CT actuel a pour mandat d'assurer le leadership technique de la communauté. 
 Voici les membres actuels (un par organisation) :
 
@@ -208,28 +208,28 @@ Voici les membres actuels (un par organisation) :
 - MSSS : Hans Grisé
 - SCT : Claude Durocher
 
-### 4. Coordonnateur du CT
-Après chaque élection, le CT propose un de ses membres pour agir à titre de coordonnateur du CT sous une présidence tournante. En cas de plusieurs candidats, le choix du candidat se fait selon le mécanisme de vote de la communauté IGO. Les responsabilités du  coordonnateur du CT sont :
+### A4. Coordonnateur du CT
+Après chaque réunion, le CT propose un de ses membres pour agir à titre de coordonnateur du CT sous une présidence tournante (ordre défini par l'ordre alphabétique des organismes partenaires). En cas de plusieurs candidats, le choix du candidat se fait selon le mécanisme de vote de la communauté IGO. Les responsabilités du  coordonnateur du CT sont :
 
 - d'organiser les rencontres du CT;
 - de publier les comptes rendus des réunions du CT.
 
-### 5. Réunions 
-- Les réunions se déroulent au moins tous les mois.
-- Le CT maintient un ordre du jour ouvert sur la liste de diffusion.
+### A5. Réunions 
+- Les réunions se déroulent tous les 4 mois environs (3 par an) soit en septembre, janvier, mai, sept.
+- Le coordonnateur du CT doit proposer un ordre du jour deux semaines à l'avance.
 - Une réunion spéciale du CT peut être convoquée si un de ses membres en fait la demande sur la liste de diffusion au moins deux jours avant l'heure de réunion.
 - La tenue d'une réunion est conditionnelle à la participation d'au moins 50 % des membres du CT.
 
-### 6. Motions 
+### A6. Motions 
 Avant d'être soumises à un vote, les motions doivent être présentées et discutées publiquement à la recherche d'un consensus sur la liste de diffusion des développeurs, pour un minimum de deux jours ouvrables.
 
-### 7. Délégation du droit du vote 
+### A7. Délégation du droit du vote 
 Un membre du CT qui se trouve dans l'impossibilité d'assister à une réunion peut mandater un représentant de son opinion qui votera en son nom.
 
-### 8. Candidatures au CT 
+### A8. Candidatures au CT 
 Tout contributeur technique actif ou super-utilisateur peut soumettre sa candidature pour devenir membre du CT.
 
-### 9. Amendement
+### A9. Amendement
 L'amendement de cette présente charte du CT est proposé dans une motion spéciale qui, pour être acceptée, doit être approuvée selon les principes et les mécanismes de prise de décisions de la communauté.
 
 <a id="annexe2"></a>
