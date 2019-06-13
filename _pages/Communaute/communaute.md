@@ -170,7 +170,7 @@ Toute personne qui souhaite participer à la communauté IGO est tenue de respec
 
 ## 11. Schéma de gouvernance [<span class="octicon octicon-link"></span>](#acteur)
 <span id="acteurs">
-![Acteurs de la communauté](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/igo_icone.png)
+![Acteurs de la communauté](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/gouvernanceExterne.jpg)
 </span>
 <a id="annexe1" ></a>
 ## Annexe 1 : Charte du CT [<span class="octicon octicon-link"></span>](#annexe1)

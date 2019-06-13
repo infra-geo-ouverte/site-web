@@ -19,20 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_site/communaute/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2411">
-              <caret line="668" column="52" selection-start-line="668" selection-start-column="52" selection-end-line="668" selection-end-column="52" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#span#0;n#form#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -41,8 +29,8 @@
         <entry file="file://$PROJECT_DIR$/_pages/Communaute/communaute.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="510">
-                <caret line="87" column="3" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
+              <first_editor relative-caret-position="561">
+                <caret line="171" column="19" lean-forward="true" selection-start-line="171" selection-start-column="19" selection-end-line="171" selection-end-column="19" />
               </first_editor>
               <second_editor />
             </state>
@@ -81,6 +69,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,18 +86,34 @@
               <item name="site-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="site-web" type="462c0819:PsiDirectoryNode" />
               <item name="_pages" type="462c0819:PsiDirectoryNode" />
+              <item name="Accueil" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site-web" type="462c0819:PsiDirectoryNode" />
+              <item name="_pages" type="462c0819:PsiDirectoryNode" />
               <item name="Communaute" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site-web" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site-web" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../theme-ckan" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -136,12 +141,14 @@
       <updated>1559231976499</updated>
       <workItem from="1559231977968" duration="1877000" />
       <workItem from="1559310579076" duration="2946000" />
-      <workItem from="1559581899899" duration="2025000" />
+      <workItem from="1559581899899" duration="3457000" />
+      <workItem from="1559741756227" duration="1218000" />
+      <workItem from="1560448592525" duration="1481000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6848000" />
+    <option name="totallyTimeSpent" value="10979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -180,28 +187,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_site/communaute/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2411">
-          <caret line="668" column="52" selection-start-line="668" selection-start-column="52" selection-end-line="668" selection-end-column="52" />
+        <state relative-caret-position="456">
+          <caret line="652" column="53" lean-forward="true" selection-start-line="652" selection-start-column="53" selection-end-line="652" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#input#0;n#span#0;n#form#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_pages/Communaute/communaute.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="510">
-            <caret line="87" column="3" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
+          <first_editor relative-caret-position="561">
+            <caret line="171" column="19" lean-forward="true" selection-start-line="171" selection-start-column="19" selection-end-line="171" selection-end-column="19" />
           </first_editor>
           <second_editor />
         </state>
