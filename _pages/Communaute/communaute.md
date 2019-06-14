@@ -202,7 +202,8 @@ Voici les membres actuels (un par organisation) :
 - INSPQ : Matthieu Tandonnet
 - MCC : Sylvie Girouard 
 - MFFP-Forêts : Josée Martel
-- MTMDET : Pierre-Étienne Lord
+- MFFP-Faune : Nicolas Gignac
+- MTQ : Pierre-Étienne Lord
 - MERN : Carl Pelletier
 - MSP : Véronique Payan
 - MSSS : Hans Grisé
@@ -215,7 +216,7 @@ Après chaque réunion, le CT propose un de ses membres pour agir à titre de co
 - de publier les comptes rendus des réunions du CT.
 
 ### A5. Réunions 
-- Les réunions se déroulent tous les 4 mois environs (3 par an) soit en septembre, janvier, mai, sept.
+- Les réunions se déroulent tous les 4 mois environs (3 par an) soit en septembre, janvier, mai.
 - Le coordonnateur du CT doit proposer un ordre du jour deux semaines à l'avance.
 - Une réunion spéciale du CT peut être convoquée si un de ses membres en fait la demande sur la liste de diffusion au moins deux jours avant l'heure de réunion.
 - La tenue d'une réunion est conditionnelle à la participation d'au moins 50 % des membres du CT.
