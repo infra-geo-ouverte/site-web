@@ -1,5 +1,5 @@
 ---
-permalink: /documentation/module/
+permalink: 
 layout: general
 iconedocumentation: ""
 ---
