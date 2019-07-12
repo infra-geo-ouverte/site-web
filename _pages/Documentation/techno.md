@@ -5,30 +5,30 @@ iconedocumentation: ""
 ---
 
 # Technologies utilisées
-
-## Voici la liste des logiciels utilisés et librairies supportant IGO 2.0 : 
-* [Angular 5](https://github.com/angular/angular)
+La solution d’IGO2 est  modulaire et adaptable à l’environnement dans laquelle elle est déployée.
+## Voici la liste des librairies utilisées par IGO2 (obligatoires):
+* [Angular](https://github.com/angular/angular) 
 * [Angular Material](https://github.com/angular/material2)
-* [OpenLayers 4](https://github.com/openlayers/openlayers)
-* [IGO2lib](https://github.com/infra-geo-ouverte/igo2-lib)
+* [OpenLayers](https://github.com/openlayers/openlayers) 
+* NodeJS (seulement pour le développement)
 
-Projets optionnels :
-* [API d'IGO2](https://github.com/infra-geo-ouverte/igo2-api)
-* [Kong](https://getkong.org/)
+ Technologies supportant la gestion des contextes d’utilisation :
+* Configuration par fichier : JSON
+**ou**
+* [API de gestion des contextes](https://github.com/infra-geo-ouverte/igo2-api) : Développé en NodeJs, supporte PostgreSQL ou  SQLite pour les données 
+Langage de programmation : Typescript, html, Sass
+## Services supportés par IGO2 
 
-Pour plus de détails voir la dispositive #9 : [https://www.slideshare.net/igouverte/1er-atelier-technique-igo2-17-mai-2017](https://www.slideshare.net/igouverte/1er-atelier-technique-igo2-17-mai-2017)
+* Services cartographiques web respectant la norme OGC : WMS, WFS, WMTS, TMS 
+* Outil d’itinéraire : OpenStreetMap Routing Machine (OSRM)
+* Service de recherche : Icherche, OSM 
 
-## Voici la liste des logiciels utilisés et librairies supportant IGO1 : 
-
-* Système d'exploitation : OS Ubuntu / CentOS
-* Serveur web : Apache
-* Serveur cartographique : UMN MapServer
-* Librairie PHP : Phalcon
-* Librairies Javascript : [OpenLayers 2](https://github.com/openlayers/openlayers), [ExtJS](http://docs.sencha.com/extjs/3.4.0/), [GeoExt](http://geoext.org/downloads.html),  [JQuery](https://github.com/jquery/jquery), et Bootstrap
-* Fond de carte : MapCache
-* Bases de données : PostgreSQL/PostGIS (et Oracle)
-* Itinéraire OpenStreetMap Routing Machine
-* Service de métadonnée : GeoNetwork et CKAN
-* Service de Géo-traitement : Zoo project
-* Language de programmation : PHP et JavaScript
+## Exemple d’environnements technologiques utilisant IGO2 
+* [Exemple avec configuration locale des contextes avec fichiers JSON](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/gouvernanceExterne.png)
+* [Exemple avec configuration des contextes au niveau serveur](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/gouvernanceExterne.png)
+      
+Solutions de diffusion des données géospatiales possibles :
+* MapServer, Geoserver, ArcGIS Server...
+Solutions de gestion des données  possibles  :
+* PostgreSQL/PostGIS,  SQLite ou Oracle...
 
