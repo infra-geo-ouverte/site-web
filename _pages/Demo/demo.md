@@ -10,7 +10,7 @@ iconedemo: ""
 La nouvelle version 2.0 d’IGO (IGO2) : [https://github.com/infra-geo-ouverte/igo2](https://github.com/infra-geo-ouverte/igo2) permet d’étendre son utilisation à des appareils mobiles et suit maintenant les dernières tendances du Web (ex. application adaptative, API, analyse temporelle). IGO2 est une solution Web gratuite en géomatique basée sur [Angular 4](https://github.com/angular/angular) - [Material](https://github.com/angular/material2), [OpenLayers 4](https://github.com/openlayers/openlayers) et [IGO2lib](https://github.com/infra-geo-ouverte/igo2-lib). 
 
 Voici deux exemples d'instances d'IGO2 utilisant différents assemblages
-* [Foret ouverte](https://foretouverte.gouv.ca)
+* [Foret ouverte](https://foretouverte.gouv.qc.ca)
 * [GeoInondations](https://geoinondations.gouv.qc.ca)
 * Visualisateur de données ouvertes pour le portail Données Québec
 
