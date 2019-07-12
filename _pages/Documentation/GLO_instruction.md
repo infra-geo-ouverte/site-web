@@ -1,5 +1,5 @@
 ---
-permalink: /documentation/glo/
+permalink: 
 layout: general
 iconedocumentation: ""
 submenu:
