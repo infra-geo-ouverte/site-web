@@ -25,8 +25,8 @@ Langage de programmation : Typescript, html, Sass
 * Service de recherche : Icherche, OSM 
 
 ## Exemple d’environnements technologiques utilisant IGO2 
-* [Exemple avec configuration locale des contextes avec fichiers JSON](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/gouvernanceExterne.png)
-* [Exemple avec configuration des contextes au niveau serveur](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/gouvernanceExterne.png)
+* [Exemple avec configuration locale des contextes avec fichiers JSON](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/IGO2_archiJson.png)
+* [Exemple avec configuration des contextes au niveau serveur](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/IGO2_archi_Authentification.png)
       
 Solutions de diffusion des données géospatiales possibles :
 * MapServer, Geoserver, ArcGIS Server...
