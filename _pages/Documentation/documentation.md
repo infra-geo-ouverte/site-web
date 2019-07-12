@@ -25,7 +25,7 @@ submenu:
     
 ## [Technologies utilisées et supportées](http://www.igouverte.org/documentation/techno/)
 ## Présentations IGO sur SlideShare 
-    * http://www.slideshare.net/igouverte
-    * http://www.igouverte.org/documentation/techno/
+* http://www.slideshare.net/igouverte
+* http://www.igouverte.org/documentation/techno/
     
 
