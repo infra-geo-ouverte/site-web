@@ -21,4 +21,4 @@ Installation locale pour développeur
 3. Installation de l’assemblage d’IGO2  
    Consulter la [Procédure d'installation rapide](https://github.com/infra-geo-ouverte/igo2#installation-et-d%C3%A9marrage) pour démarrer    l’assemblage d’IGO2 avec NodeJS.
 
-Pour une version plus détaillée de la procédure d’installation avec les prérequis sous Windows voir ce document (lien vers doc Procedure_installation_IGO2_win_v1.pdf).
+Pour une version plus détaillée de la procédure d’installation avec les prérequis sous Windows voir ce [document](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/IGO2_archiJson.png).
