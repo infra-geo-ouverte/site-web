@@ -14,7 +14,8 @@ La solution d’IGO2 est  modulaire et adaptable à l’environnement dans laque
 
  Technologies supportant la gestion des contextes d’utilisation :
 * Configuration par fichier : JSON
-**ou**
+
+   **ou**
 * [API de gestion des contextes](https://github.com/infra-geo-ouverte/igo2-api) : Développé en NodeJs, supporte PostgreSQL ou  SQLite pour les données 
 Langage de programmation : Typescript, html, Sass
 ## Services supportés par IGO2 
