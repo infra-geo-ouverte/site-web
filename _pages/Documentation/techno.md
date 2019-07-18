@@ -19,18 +19,21 @@ La solution d’IGO2 est  modulaire et adaptable à l’environnement dans laque
 
 Langage de programmation : Typescript, html, Sass
 
-## Services supportés par IGO2 
+## Supportés par IGO2 
 
+### Services
 * Services cartographiques web respectant la norme OGC : WMS, WFS, WMTS, TMS 
 * Outil d’itinéraire : OpenStreetMap Routing Machine (OSRM)
 * Service de recherche : Icherche, OSM 
+
+### Solutions de diffusion des données géospatiales possibles :
+* MapServer, Geoserver, ArcGIS Server...
+### Solutions de gestion des données  possibles  :
+* PostgreSQL/PostGIS,  SQLite ou Oracle...
 
 ## Exemple d’environnements technologiques utilisant IGO2 
 * [Exemple avec configuration locale des contextes avec fichiers JSON](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/IGO2_archiJson.png)
 * [Exemple avec configuration des contextes au niveau serveur](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/IGO2_archi_Authentification.png)
       
-Solutions de diffusion des données géospatiales possibles :
-* MapServer, Geoserver, ArcGIS Server...
-Solutions de gestion des données  possibles  :
-* PostgreSQL/PostGIS,  SQLite ou Oracle...
+
 
