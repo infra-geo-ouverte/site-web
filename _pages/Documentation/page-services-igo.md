@@ -1,5 +1,5 @@
 ---
-permalink: /documentation/page-services-igo-msp/
+permalink: /documentation/page-services-igo/
 layout: general
 title-main: Services
 iconedocumentation: ""
