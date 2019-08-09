@@ -12,23 +12,19 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 <a id="1"></a>
 # 1. [<span class="octicon octicon-link"></span>](#1)Tableau comparatif des accès aux services/API 
 
-| **API & services Web offerts par IGO-MSP**      | **Accès grand public aux applications des ministères/organismes et réseau**| **Accès aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Accès seulement dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/) ou extranet aux ministères et organismes du gouvernement du Québec [(à la demande)](http://igouverte.org/documentation/page-services-igo-msp/#footer)**  | **[Sur demande seulement](http://igouverte.org/documentation/page-services-igo-msp/#footer)** | 
+| **API & services Web disponibles**      | **Accès grand public aux applications des ministères/organismes et réseau**| **Utilisation autorisée aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Utilisation autorisée dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/)**  | **[Sur demande seulement](http://igouverte.org/documentation/page-services-igo-msp/#footer)** | 
 | ------------- |:-------------:| -----:|----:|----:|
-| 1. [ICherche géocode](#21-icherche-géocode-api-permet-) (remplacera le [GLO](http://igouverte.org/documentation/glo/))|&#x2713;|&#x2713;|&#x2713;|$|
-| 2. [Rercherche territoires par XY](#22-territoire-xy-api-permet-)|&#x2713;|-|&#x2713;|$|
-| 3. [Rercherche territoires par intersection](#23-territoire-par-intersection-api-permet-) |&#x2713;|-|&#x2713;|$|
-|  4. [Hébergement ](#24-lhébergement-du-navigateur-igo2-sans-sécurité-permet-) du [navigateur IGO2](http://igouverte.org/information/2017/08/04/IGO2_lancement/) |&#x2713;|- |&#x2713;|$|
-| 5. Hébergement du [navigateur IGO2 *avec* sécurité ](#2.5)|- |- |&#x2713;|$|
-| 6. [Hébergement de données géomatiques et diffusion Web](#2.6)|-|-|&#x2713;|$|
-| 7. [Intégration de services Web dans le navigateur IGO2](#2.7)|-|-|&#x2713;|$|
-| 8. [Développement sur mesure](#28-le-développement-doutils-sur-mesure-permet-)|-|-|-|$|
-| 9. [Service web de cartes (WMS & WFS)](#2.9)  |&#x2713;|-|&#x2713;|$|
-| 10. [Service de fonds de cartes (WMTS) tuilés](#2.10)|&#x2713;, seulement le fond de carte du gouvernement du Québec (carte_gouv_public)|&#x2713;|&#x2713;|$|
-| 11. Outil de [gestion d’itinéraire](#2.11)|&#x2713;|&#x2713;|&#x2713;|$|
-| 12. Outil de [géocodage en lot](#2.12) avec fichier CSV|-|&#x2713;|&#x2713;|$|
-| 13. [Sécuriser les services Web](#2.13)|- |- |&#x2713;|$|
-| 14. [Suivi de flottes véhiculaires avec GPS](#2.14)|- |- |&#x2713;|$|
-| 15. [Recherche de lots rénovés](#2.15)|- |- |&#x2713;|$|
+| 1. [iCherche/géocode](#1.1-icherche-géocode-api-permet-) (remplacera le [GLO](http://igouverte.org/documentation/glo/))|&#x2713;|&#x2713;|&#x2713;|$|
+| 2. [iCherche/Territoires](#1.2-territoire-xy-api-permet-)|&#x2713;|-|&#x2713;|$|
+| 3. [Service web de cartes (WMS & WFS)](#1.3) |&#x2713;|-|&#x2713;|$|
+| 4. [Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec](#1.4)|&#x2713;, seulement le fond de carte du gouvernement du Québec (carte_gouv_public)|&#x2713;|&#x2713;|$|
+| 5. [Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec](#1.5)|-|-|&#x2713;|$|
+| 6. Outil de [gestion d’itinéraire](#1.6)|&#x2713;|&#x2713;|&#x2713;|$|
+| 7. Outil de [géocodage en lot](#1.7) avec fichier CSV|-|&#x2713;|&#x2713;|$|
+| 8. [Sécuriser les services Web](#1.8)|- |- |&#x2713;|$|
+| 9. [Suivi de flottes véhiculaires avec GPS](#1.9)|- |- |&#x2713;|$|
+| 10. [Recherche de lots rénovés](#1.10)|- |- |&#x2713;|$|
+
 
 <a id="2"></a>
 # 2. [<span class="octicon octicon-link"></span>](#2) Description des services/API
