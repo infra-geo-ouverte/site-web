@@ -5,9 +5,9 @@ title-main: Services
 iconedocumentation: ""
 ---
 
-# Services Web et API offerts dans IGO au MSP
+# Services Web et API offerts dans IGO
 
-Les services Web et [API (interface de programmation d’applications)](http://granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=26508293) offerts au [ministère de la Sécurité publique du Québec (MSP)](https://geoegl.msp.gouv.qc.ca/blogue/) par l'Infrastructure géomatique ouverte ([IGO](http://www.igouverte.org/)) sont documentés dans cette page. Les [conditions d'utilisation sont détaillées au bas de ce tableau ](#a-quelles-sont-les-conditions-dutilisations-de-ces-services-). Ces services sont offerts soit aux ministères/organismes et leur réseau dans leurs applications grand public, aux détenteurs de licences d'Adresses Québec, aux partenaires du MSP (par ex. : centres d’urgence 9-1-1) ou aux organismes publics du gouvernement du Québec dans leur application interne. Chaque client est responsable de mettre à jour ses systèmes en fonction des améliorations et nouveautés de ces services.
+Les services Web et [API (interface de programmation d’applications)](http://granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=26508293) disponibles via l'Infrastructure géomatique ouverte ([IGO](http://www.igouverte.org/)) sont documentés dans cette page. Les [conditions d'utilisation sont détaillées au bas de ce tableau ](#a-quelles-sont-les-conditions-dutilisations-de-ces-services-). Ces services sont offerts soit aux ministères/organismes et leur réseau dans leurs applications grand public, aux détenteurs de licences d'Adresses Québec, aux partenaires du MSP (par ex. : centres d’urgence 9-1-1) ou aux organismes publics du gouvernement du Québec dans leurs applications internes. Chaque client est responsable de mettre à jour ses systèmes en fonction des améliorations et nouveautés de ces services.
 
 <a id="1"></a>
 # 1. [<span class="octicon octicon-link"></span>](#1)Tableau comparatif des accès aux services/API 
