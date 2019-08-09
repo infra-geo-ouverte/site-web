@@ -53,7 +53,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 + de  [géocoder des points, à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (par ex. : csv)](https://geoegl.msp.gouv.qc.ca/GeocodageLot/). Le fichier doit minimalement contenir un champ contenant l'adresse complète ou le  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>. 
 
 <a id="2.7"></a>
-#### 2.7. [<span class="octicon octicon-link"></span>](#2.7)*La recherche de lots rénovés permet :
+#### 2.7. [<span class="octicon octicon-link"></span>](#2.7)*La recherche de lots rénovés* permet :
 +  de trouver la localisation par numéro de lots rénovés au Québec. Ce service est offert par le service de la géomatique de la [Commission de protection du territoire agricole du Québec](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1).
 
 <a id="3"></a>
@@ -75,71 +75,10 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 + Si vous êtes à l'extérieur du gouvernement, le serveur hôte en production sera : { https://geoegl.msp.gouv.qc.ca } (et préproduction : { https://pregeoegl.msp.gouv.qc.ca }) et si vous êtes physiquement dans un bâtiment du gouvernement du Québec dans le réseau intranet (RITM), en production ce sera : { http://www.geomsp.qc } (et préproduction : { http://rc.geomsp.qc }). Ces adresses de serveurs hôte doivent être utilisées comme URL et elles doivent remplacer la valeur pour : {serveur} dans la documentation des différents services ou API.
 
 ##### **C) Que faire si le service n'est plus disponible ou que son état est indisponible ?**
-+ Le service est disponible 24 heures par jour, 7 jours sur 7, à l'exception des périodes nécessitant des mises à jour annoncées d'avance. Par contre, si le service est non disponible, vous pouvez utiliser le serveur hôte de préproduction (voir réponse à la question B) qui est une image similaire à la production.
++ Le service est disponible 24 heures par jour, 7 jours sur 7, à l'exception des périodes nécessitant des mises à jour annoncées d'avance. De manière exceptionnelle, si le service est non disponible, vous pouvez utiliser le serveur hôte de préproduction (voir réponse à la question B) qui est une image similaire à la production. Cependant, aucune garantie n'est donnée car il est possible que ce serveur soit utilisé pour l'évolution des services.
 
 ##### **D) Quel est le degré de soutien de ces services ?**
 + Ils sont disponibles 24 heures par jour, 7 jours sur 7, à l'exception des périodes de mises à jour qui seront annoncées 3 jours ouvrables en avance. Un soutien est assuré du lundi au vendredi, soit de 8 h 30 à 16 h 30 lors de ces heures normales, à l’exception des jours fériés. S'il y a un problème majeur à l'extérieur de ces heures ouvrables, la demande sera traitée à la prochaine période de 8 h 30 à 16 h 30 du lundi au vendredi, à l’exception des jours fériés.
 
-##### **E) Que faire si je veux m'abonner aux annonces de mises à jour sur les services ?** 
-+ Pour ce faire, il serait opportun pour chaque client d'un de ces services de s'inscrire à cette liste courriel afin d’être mis au courant des annonces et arrêts des services faits en avance : [http://listes.securitepublique.gouv.qc.ca/sympa/subscribe/igo-publique](http://listes.securitepublique.gouv.qc.ca/sympa/subscribe/igo-publique)
-
-##### **F) Si j'ai d’autres questions sur ces services avec qui puis-je communiquer ?** 
+##### **E) Si j'ai d’autres questions sur ces services avec qui puis-je communiquer ?** 
 + N’hésitez pas à communiquer avec nous à l’adresse courriel suivante : info@igouverte.org ou consulter le site igouverte.org et cliquez sur : [Contact dans le site Web d'IGO](http://igouverte.org/#footer).
-
-<a id="4.2"></a>
-## 4.2. [<span class="octicon octicon-link"></span>](#4.2)Clientèle des centres d'urgence (CU) 9-1-1 du Québec
-
-##### **A) Qui contacter en cas de questions concernant ces services pour les CU-911 ?** 
-+ N’hésitez pas à communiquer avec nous à l’adresse courriel suivante : msp911@msp.gouv.qc.ca
-
-##### **B) Pourquoi utiliser l'application extranet qui inclut le navigateur IGO et IGO2 ?**
-+ C’est gratuit
-+ Près de 400 couches sont disponibles
-+ Utilisation d’un moteur de recherche performant 
-+ Outil d’itinéraire intégré
-+ Partage de contexte cartographique
-+ Adapté pour appareil mobile (IGO2)
-+ Fonds de cartes rapides et performants
-+ Aucune programmation et aucun logiciel à installer
-
-##### **C) Si je veux avoir accès au guide de formation, à qui dois-je m’adresser ?**
-+ Vous pouvez accéder au guide de formation en cliquant sur le "I" dans l’application Extranet IGO 9-1-1. Vous pouvez également vous adresser à msp911@msp.gouv.qc.ca pour obtenir de l’information au sujet de la formation IGO 9-1-1.
-
-##### **D)  Quels sont les avantages d’utiliser les services Web de carte – WMS ?**
-+ C’est gratuit
-+ Près de 400 couches sont disponibles individuellement et à la pièce
-+ Données le plus à jour possible et symbologie standardisée à tous les CU-911
-
-##### **E)  Quels sont les avantages d’utiliser les services Web de fonds de carte - WMTS ?**
-+ C’est gratuit
-+ Près de 50 couches sont disponibles dans un même fond de carte
-+ Très rapides et performants
-+ Données toujours à jour et symbologie standardisée à tous les CU-911
-
-##### **F)  Quels sont les avantages d’utiliser les services Web géolocalisation - GLO ?**
-+ C’est gratuit
-+ Utilisation d’un moteur de recherche performant 
-+ Données toujours à jour et standardisées à tous les CU-911.
-
-##### **G) Quels sont les avantages d’utiliser les services d'itinéraire ?**
-+ C’est gratuit
-+ Utilisation d’un outil de gestion de parcours très performant
-+ Données toujours à jour et standardisées à tous les CU-911.
-
-##### **H) Comment obtenir les données brutes?**
-+ Pour obtenir des données brutes, vous pouvez vous adresser à ces entités, soit :
-Données Québec : un portail commun de données ouvertes résultant d’une collaboration entre le gouvernement du Québec et plusieurs municipalités afin de fournir aux citoyens une seule porte d’entrée aux jeux de données ouvertes du Québec. Nous vous invitons à consulter le site Web : [www.donneesquebec.ca](www.donneesquebec.ca)
-+ Adresses Québec : une géobase routière qui couvre tout le Québec. Elle offre un réseau routier complet comprenant les odonymes officiels, les adresses par tranches et par points, l'information permettant la gestion de parcours, les codes postaux et un contexte cartographique. Nous vous invitons à consulter le site Web : [www.adressesquebec.gouv.qc.ca](www.adressesquebec.gouv.qc.ca)
-+ Géoboutique du ministère de l’Énergie et des Ressources naturelles : permet de fournir des services d’informations géographiques utiles à ses clientèles publiques et privées dans le domaine de la connaissance, de l'aménagement, de la gestion de la mise en valeur et de la protection du territoire québécois et de ses ressources. Nous vous invitons à consulter le site Web : [www.geoboutique.mern.gouv.qc.ca](www.geoboutique.mern.gouv.qc.ca)
-
-##### **I) Mon centre d'urgence 9-1-1 utilise déjà les services de géomatique par le biais de son fournisseur de répartition assistée par ordinateur. Quels sont les avantages à utiliser les services offerts par IGO ?**
-+ Vous aurez accès à des informations relatives à toute la province ainsi qu’à de l’information spécifique par des partenaires (ex. : Hydro-Québec) 
-
-##### **J) Je n’ai pas pu me connecter à IGO 911, à qui dois-je m’adresser?**
-+ Écrire à msp911@msp.gouv.qc.ca
-
-##### **K) Est-ce que je peux accéder à l’application cartographique de l’extranet adapté pour appareil mobile?**
-+ Oui avec le même lien dans l’extranet, il faut choisir le profil: « IGO2-Mobile-9-1-1 ».
-
-##### **L) Commentaires ou suggestions d’amélioration?** 
-+ Écrire à msp911@msp.gouv.qc.ca 
