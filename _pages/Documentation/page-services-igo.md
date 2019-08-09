@@ -12,19 +12,18 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 <a id="1"></a>
 # 1. [<span class="octicon octicon-link"></span>](#1)Tableau comparatif des accès aux services/API 
 
-| **API & services Web disponibles**      | **Accès grand public aux applications des ministères/organismes et réseau**| **Utilisation autorisée aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Utilisation autorisée dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/)**  | **[Sur demande seulement](http://igouverte.org/documentation/page-services-igo-msp/#footer)** | 
-| ------------- |:-------------:| -----:|----:|----:|
-| 1. [iCherche/géocode](#1.1-icherche-géocode-api-permet-) (remplacera le [GLO](http://igouverte.org/documentation/glo/))|&#x2713;|&#x2713;|&#x2713;|$|
-| 2. [iCherche/Territoires](#1.2-territoire-xy-api-permet-)|&#x2713;|-|&#x2713;|$|
-| 3. [Service web de cartes (WMS & WFS)](#1.3) |&#x2713;|-|&#x2713;|$|
-| 4. [Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec](#1.4)|&#x2713;, seulement le fond de carte du gouvernement du Québec (carte_gouv_public)|&#x2713;|&#x2713;|$|
-| 5. [Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec](#1.5)|-|-|&#x2713;|$|
-| 6. Outil de [gestion d’itinéraire](#1.6)|&#x2713;|&#x2713;|&#x2713;|$|
-| 7. Outil de [géocodage en lot](#1.7) avec fichier CSV|-|&#x2713;|&#x2713;|$|
-| 8. [Sécuriser les services Web](#1.8)|- |- |&#x2713;|$|
-| 9. [Suivi de flottes véhiculaires avec GPS](#1.9)|- |- |&#x2713;|$|
-| 10. [Recherche de lots rénovés](#1.10)|- |- |&#x2713;|$|
-
+| **API & services Web disponibles**      | **Accès grand public aux applications des ministères/organismes et réseau**| **Utilisation autorisée aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Utilisation autorisée dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/)** | 
+| ------------- |:-------------:| -----:|----:|
+| 1. [iCherche/géocode](#1.1-icherche-géocode-api-permet-) (remplacera le [GLO](http://igouverte.org/documentation/glo/))|&#x2713;|&#x2713;|&#x2713;|
+| 2. [iCherche/Territoires XY](#1.2-territoire-xy-api-permet-)|&#x2713;|-|&#x2713;|
+| 3. [Service web de cartes (WMS & WFS)](#1.3) |&#x2713;|-|&#x2713;|
+| 4. [Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec](#1.4)|&#x2713;, seulement le fond de carte du gouvernement du Québec (carte_gouv_public)|&#x2713;|&#x2713;|
+| 5. [Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec](#1.5)|-|-|&#x2713;|
+| 6. Outil de [gestion d’itinéraire](#1.6)|&#x2713;|&#x2713;|&#x2713;|
+| 7. Outil de [géocodage en lot](#1.7) avec fichier CSV|-|&#x2713;|&#x2713;|
+| 8. [Sécuriser les services Web](#1.8)|- |- |&#x2713;|
+| 9. [Suivi de flottes véhiculaires avec GPS](#1.9)|- |- |&#x2713;|
+| 10. [Recherche de lots rénovés](#1.10)|- |- |&#x2713;|
 
 <a id="2"></a>
 # 2. [<span class="octicon octicon-link"></span>](#2) Description des services/API
@@ -42,63 +41,30 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 + de rechercher par [identifiant la géolocalisation associée](https://geoegl.msp.gouv.qc.ca/apis/territoires/docs/intersect). Il retourne les éléments qui intersectent l'élément "source" dont l'identifiant (ID) est spécifié, par ex. : obtenir les municipalités contenues dans un territoire de CLSC ou de savoir quelle est la région touristique d’une municipalité, etc.
 
 <a id="2.4"></a>
-#### 2.4. [<span class="octicon octicon-link"></span>](#2.4)*L'hébergement du navigateur IGO2* sans sécurité permet :
-+ de tirer profit d’une multitude de données géographiques grâce à une interface cartographique accessible par un navigateur Web et adaptée à un appareil mobile avec la version IGO 2.0 (https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/). 
-Voici des exemples d'applications IGO disponible pour le grand public :
-- Données Québec (IGO2) : [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/)
-- Données Québec - Transports (IGO2) : [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq)
-- Commission de protection du territoire agricole du Québec (IGO1) : [http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1)
-- Inventaire forestier (IGO1) : [https://geoegl.msp.gouv.qc.ca/igo/mffpecofor/](https://geoegl.msp.gouv.qc.ca/igo/mffpecofor/)
-
-<a id="2.5"></a>
-#### 2.5. [<span class="octicon octicon-link"></span>](#2.5)*L'hébergement du navigateur IGO2 avec sécurité* permet :
-+ de sécuriser les services et la gestion de profils par utilisateur dans le navigateur IGO2. Cette solution est basée sur le logiciel libre appelé [Kong](https://getkong.org/).
-
-<a id="2.6"></a>
-#### 2.6. [<span class="octicon octicon-link"></span>](#2.6)*L'hébergement et l'intégration de données géomatiques* permettent :
-+ la diffusion Web sous forme de standard OGC comme : [WMS](https://fr.wikipedia.org/wiki/Web_Map_Service) & [WFS](https://fr.wikipedia.org/wiki/Web_Feature_Service) en hébergeant ces données dans l'infrastructure géomatique ouverte (IGO) du MSP.
-
-<a id="2.7"></a>
-#### 2.7. [<span class="octicon octicon-link"></span>](#2.7)*L'intégration de services Web dans un navigateur IGO2* permet :
-+ l'intégration de services Web externes dans un navigateur IGO2 hébergé au MSP. Le navigateur IGO2 sera hébergé au MSP alors que les services Web intégrés seront assumés par le client.
-
-<a id="2.8"></a>
-#### 2.8. [<span class="octicon octicon-link"></span>](#2.8)*Le développement d'outils sur mesure* permet :
-+ la programmation et l'ajout d'outils spécifiques n'étant pas disponibles en ce moment dans les services (par ex. : ICherche, navigateur IGO2).
-
-<a id="2.9"></a>
-#### 2.9. [<span class="octicon octicon-link"></span>](#2.9)Hébergement de services OGC : [WMS](https://fr.wikipedia.org/wiki/Web_Map_Service) et [WFS](https://fr.wikipedia.org/wiki/Web_Feature_Service)
-+ Voici la [liste des services OGC disponibles](http://igouverte.org/documentation/services-web-ogc-igo/#b)
-
-<a id="2.10"></a>
-#### 2.10. [<span class="octicon octicon-link"></span>](#2.10)Service de fonds de cartes ([WMTS](https://fr.wikipedia.org/wiki/Web_Map_Tile_Service)) tuilés.
+#### 2.4. [<span class="octicon octicon-link"></span>](#2.4)Service de fonds de cartes ([WMTS](https://fr.wikipedia.org/wiki/Web_Map_Tile_Service)) tuilés.
 + Voici la [liste des services WMTS disponibles](http://igouverte.org/documentation/services-web-ogc-igo/#a)
 
-<a id="2.11"></a>
-#### 2.11. [<span class="octicon octicon-link"></span>](#2.11)*Le service de calcul et de gestion d’itinéraire* (API) permet :
+<a id="2.5"></a>
+#### 2.5. [<span class="octicon octicon-link"></span>](#2.5)*Le service de calcul et de gestion d’itinéraire* (API) permet :
 + de gérer des [itinéraires optimisés](http://igouverte.org/documentation/doc_itineraire/) (ex. meilleur parcours entre deux points) avec des requêtes en lot possibles. Il repose sur les données de la base géographique routière (BGR) de Transports Québec et d'Adresse Québec. Le service est basé sur la solution [OSRM](http://project-osrm.org/).
 
-<a id="2.12"></a>
-#### 2.12. [<span class="octicon octicon-link"></span>](#2.12)*Le service de géocodage en lot* permet :
+<a id="2.6"></a>
+#### 2.6. [<span class="octicon octicon-link"></span>](#2.6)*Le service de géocodage en lot* permet :
 + de  [géocoder des points, à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (par ex. : csv)](https://geoegl.msp.gouv.qc.ca/GeocodageLot/). Le fichier doit minimalement contenir un champ contenant l'adresse complète ou le  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>. 
 
-<a id="2.13"></a>
-#### 2.13. [<span class="octicon octicon-link"></span>](#2.13)*Sécuriser les services Web* permet :
-+ de gérer les permissions des usagers sur les services Web (interne et externe). Cette interface API est basée sur la solution [Kong](https://getkong.org/).
-
-<a id="2.14"></a>
-#### 2.14. [<span class="octicon octicon-link"></span>](#2.14)Le *suivi de flottes véhiculaires* permet :
-+ de faire le suivi des flottes véhiculaires munies de GPS afin d'afficher la localisation X,Y envoyée en temps réel.
-
-<a id="2.15"></a>
-#### 2.15. [<span class="octicon octicon-link"></span>](#2.15)La recherche de lots rénovés permet :
+<a id="2.7"></a>
+#### 2.7. [<span class="octicon octicon-link"></span>](#2.7)*La recherche de lots rénovés permet :
 +  de trouver la localisation par numéro de lots rénovés au Québec. Ce service est offert par le service de la géomatique de la [Commission de protection du territoire agricole du Québec](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1).
 
 <a id="3"></a>
-# 3. [<span class="octicon octicon-link"></span>](#3)Foire aux questions (FAQ)
+# 3. [<span class="octicon octicon-link"></span>](#3) Partage d'expertise
++ [<span class="octicon octicon-link"></span>](#3.1) **Développement de solutions de suivi de flottes véhiculaires**
 
-<a id="3.1"></a>
-# 3.1. [<span class="octicon octicon-link"></span>](#3.1)Section générale
+<a id="4"></a>
+# 4. [<span class="octicon octicon-link"></span>](#4)Foire aux questions (FAQ)
+
+<a id="4.1"></a>
+# 4.1. [<span class="octicon octicon-link"></span>](#4.1)Section générale
 
 ##### **A) Quelles sont les conditions d'utilisations de ces services ?** 
 + L'utilisateur doit inclure la mention des droits d’auteur du Gouvernement du Québec sur chaque copie de la totalité ou d’une partie de ces services de données. La mention à inscrire est « © Gouvernement du Québec » avec un hyperlien vers cette page : [http://www.droitauteur.gouv.qc.ca/copyright.php](http://www.droitauteur.gouv.qc.ca/copyright.php).
@@ -120,8 +86,8 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 ##### **F) Si j'ai d’autres questions sur ces services avec qui puis-je communiquer ?** 
 + N’hésitez pas à communiquer avec nous à l’adresse courriel suivante : info@igouverte.org ou consulter le site igouverte.org et cliquez sur : [Contact dans le site Web d'IGO](http://igouverte.org/#footer).
 
-<a id="3.2"></a>
-## 3.2. [<span class="octicon octicon-link"></span>](#3.2)Clientèle des centres d'urgence (CU) 9-1-1 du Québec
+<a id="4.2"></a>
+## 4.2. [<span class="octicon octicon-link"></span>](#4.2)Clientèle des centres d'urgence (CU) 9-1-1 du Québec
 
 ##### **A) Qui contacter en cas de questions concernant ces services pour les CU-911 ?** 
 + N’hésitez pas à communiquer avec nous à l’adresse courriel suivante : msp911@msp.gouv.qc.ca
@@ -155,25 +121,25 @@ Voici des exemples d'applications IGO disponible pour le grand public :
 + Utilisation d’un moteur de recherche performant 
 + Données toujours à jour et standardisées à tous les CU-911.
 
-##### **F) Quels sont les avantages d’utiliser les services d'itinéraire ?**
+##### **G) Quels sont les avantages d’utiliser les services d'itinéraire ?**
 + C’est gratuit
 + Utilisation d’un outil de gestion de parcours très performant
 + Données toujours à jour et standardisées à tous les CU-911.
 
-##### **G) Comment obtenir les données brutes?**
+##### **H) Comment obtenir les données brutes?**
 + Pour obtenir des données brutes, vous pouvez vous adresser à ces entités, soit :
 Données Québec : un portail commun de données ouvertes résultant d’une collaboration entre le gouvernement du Québec et plusieurs municipalités afin de fournir aux citoyens une seule porte d’entrée aux jeux de données ouvertes du Québec. Nous vous invitons à consulter le site Web : [www.donneesquebec.ca](www.donneesquebec.ca)
 + Adresses Québec : une géobase routière qui couvre tout le Québec. Elle offre un réseau routier complet comprenant les odonymes officiels, les adresses par tranches et par points, l'information permettant la gestion de parcours, les codes postaux et un contexte cartographique. Nous vous invitons à consulter le site Web : [www.adressesquebec.gouv.qc.ca](www.adressesquebec.gouv.qc.ca)
 + Géoboutique du ministère de l’Énergie et des Ressources naturelles : permet de fournir des services d’informations géographiques utiles à ses clientèles publiques et privées dans le domaine de la connaissance, de l'aménagement, de la gestion de la mise en valeur et de la protection du territoire québécois et de ses ressources. Nous vous invitons à consulter le site Web : [www.geoboutique.mern.gouv.qc.ca](www.geoboutique.mern.gouv.qc.ca)
 
-##### **H) Mon centre d'urgence 9-1-1 utilise déjà les services de géomatique par le biais de son fournisseur de répartition assistée par ordinateur. Quels sont les avantages à utiliser les services offerts par IGO ?**
+##### **I) Mon centre d'urgence 9-1-1 utilise déjà les services de géomatique par le biais de son fournisseur de répartition assistée par ordinateur. Quels sont les avantages à utiliser les services offerts par IGO ?**
 + Vous aurez accès à des informations relatives à toute la province ainsi qu’à de l’information spécifique par des partenaires (ex. : Hydro-Québec) 
 
-##### **I) Je n’ai pas pu me connecter à IGO 911, à qui dois-je m’adresser?**
+##### **J) Je n’ai pas pu me connecter à IGO 911, à qui dois-je m’adresser?**
 + Écrire à msp911@msp.gouv.qc.ca
 
-##### **J) Est-ce que je peux accéder à l’application cartographique de l’extranet adapté pour appareil mobile?**
+##### **K) Est-ce que je peux accéder à l’application cartographique de l’extranet adapté pour appareil mobile?**
 + Oui avec le même lien dans l’extranet, il faut choisir le profil: « IGO2-Mobile-9-1-1 ».
 
-##### **K) Commentaires ou suggestions d’amélioration?** 
+##### **L) Commentaires ou suggestions d’amélioration?** 
 + Écrire à msp911@msp.gouv.qc.ca 
