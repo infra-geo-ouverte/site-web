@@ -43,7 +43,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 <a id="2.3"></a>
 #### 2.3. [<span class="octicon octicon-link"></span>](#2.3)Service de fonds de cartes ([WMTS](https://fr.wikipedia.org/wiki/Web_Map_Tile_Service)) tuilés.
-+ Voici la [liste des services WMTS disponibles](http://igouverte.org/documentation/services-web-ogc-igo/#a)
++ Voici la [liste des services WMTS disponibles](http://igouverte.org/documentation/services-web-ogc-igo/)
 
 <a id="2.4"></a>
 #### 2.4. [<span class="octicon octicon-link"></span>](#2.4)*Le service de calcul et de gestion d’itinéraire* (API) permet :
