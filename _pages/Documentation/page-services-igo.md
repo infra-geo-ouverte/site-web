@@ -12,12 +12,12 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 <a id="1"></a>
 # 1. [<span class="octicon octicon-link"></span>](#1)Tableau comparatif des accès aux services/API 
 
-| **API & services Web disponibles**      | **Accès grand public aux applications des ministères/organismes et réseau**| **Utilisation autorisée aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Utilisation autorisée dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/)** | 
+| **API & services Web disponibles**      | **Utilisation autorisée dans les applications grand publiques des ministères/organismes et réseau**| **Utilisation autorisée aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Utilisation autorisée dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/)** | 
 | ------------- |:-------------:| -----:|----:|
 | 1. [<span class="octicon octicon-link"></span>](#1.1) iCherche/géocode (remplacera le [GLO](http://igouverte.org/documentation/glo/))|&#x2713;|&#x2713;|&#x2713;|
-| 2. [iCherche/Territoires XY](#1.2-territoire-xy-api-permet-)|&#x2713;|-|&#x2713;|
-| 3. [Service web de cartes (WMS & WFS)](#1.3) |&#x2713;|-|&#x2713;|
-| 4. [Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec](#1.4)|&#x2713;, seulement le fond de carte du gouvernement du Québec (carte_gouv_public)|&#x2713;|&#x2713;|
+| 2. [<span class="octicon octicon-link"></span>](#1.2)API&Territoire|&#x2713;|&#x2713;|&#x2713;|
+| 3. (#1.3) Service web de cartes (WMS & WFS)[<span class="octicon octicon-link"></span>](#4.2) |&#x2713;|-|&#x2713;|
+| 4. [Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec](#1.4)|&#x2713;|&#x2713;|&#x2713;|
 | 5. [Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec](#1.5)|-|-|&#x2713;|
 | 6. Outil de [gestion d’itinéraire](#1.6)|&#x2713;|&#x2713;|&#x2713;|
 | 7. Outil de [géocodage en lot](#1.7) avec fichier CSV|-|&#x2713;|&#x2713;|
@@ -66,7 +66,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 <a id="4.1"></a>
 # 4.1. [<span class="octicon octicon-link"></span>](#4.1)Section générale
 
-##### **A) Quelles sont les conditions d'utilisations de ces services ?** 
+##### **A) [<span class="octicon octicon-link"></span>](#4.2) Quelles sont les conditions d'utilisations de ces services ?** 
 + L'utilisateur doit inclure la mention des droits d’auteur du Gouvernement du Québec sur chaque copie de la totalité ou d’une partie de ces services de données. La mention à inscrire est « © Gouvernement du Québec » avec un hyperlien vers cette page : [http://www.droitauteur.gouv.qc.ca/copyright.php](http://www.droitauteur.gouv.qc.ca/copyright.php).
 
 + Le ministère de la Sécurité publique du Québec (MSP) et ses partenaires gouvernementaux dans IGO ne peuvent garantir l’exactitude des services de données et ils ne peuvent être tenus responsables des conclusions obtenues à la suite de l’utilisation de ceux-ci. Le MSP et ses partenaires gouvernementaux dans IGO n’assumeront aucune responsabilité à l’égard de tout dommage subi par l’utilisateur ou ses employés, agents, représentants ou sous-traitants à la suite de l’utilisation de ces services de données.
