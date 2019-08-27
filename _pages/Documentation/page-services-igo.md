@@ -14,7 +14,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 | **API & services Web disponibles**      | **Utilisation autorisée dans les applications grand publiques des ministères/organismes et réseau**| **Utilisation autorisée aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Utilisation autorisée dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/)** | 
 | ------------- |:-------------:| -----:|----:|
-| 1. [<span class="octicon octicon-link"></span>](#t1) [iCherche/géocode](#2-1) (remplacera le [GLO](http://igouverte.org/documentation/glo/))|&#x2713;|&#x2713;|&#x2713;|
+| 1. [<span class="octicon octicon-link"></span>][#t1][iCherche/géocode][#2-1] (remplacera le [GLO](http://igouverte.org/documentation/glo/))|&#x2713;|&#x2713;|&#x2713;|
 | 2. [<span class="octicon octicon-link"></span>](#t2)API&Territoire|&#x2713;|&#x2713;|&#x2713;|
 | 3. [<span class="octicon octicon-link"></span>](#t3) Service web de cartes (WMS & WFS)[<span class="iconify" data-icon="octicon:file-symlink-file" data-inline="false"></span>](#4.2) |&#x2713;|-|&#x2713;|
 | 4. [<span class="octicon octicon-link"></span>](#t4)Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec|&#x2713;|&#x2713;|&#x2713;|
@@ -27,7 +27,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 # 2. [<span class="octicon octicon-link"></span>](#2) Description des services/API
 
 <a id="2.1"></a>
-#### 2.1. [<span class="octicon octicon-link"></span>](#2-1)*ICherche géocode* (API) permet :
+#### 2.1. [<span class="octicon octicon-link"></span>][#2-1]*ICherche géocode* (API) permet :
 + la [géolocalisation par adresse](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/geocode),  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, [lieu](https://gitlab.forge.gouv.qc.ca/geomatique/espace_public_description_projet_igo/wikis/icherche-lieu) et offre des requêtes en lot. Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/). Il remplacera à terme le service de géolocalisation [GLO](http://igouverte.org/documentation/glo/) qui ne sera plus amélioré à partir de 2017, mais supporté jusqu'à la fin 2019. ICherche est plus performant (par ex. : autocomplétion) que le GLO et plus précis dans ses résultats trouvés.
 
 <a id="2.2"></a>
