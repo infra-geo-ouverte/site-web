@@ -16,7 +16,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 | ------------- |:-------------:| -----:|----:|
 | 1. [<span class="octicon octicon-link"></span>](#1.1) iCherche/géocode (remplacera le [GLO](http://igouverte.org/documentation/glo/))|&#x2713;|&#x2713;|&#x2713;|
 | 2. [<span class="octicon octicon-link"></span>](#1.2)API&Territoire|&#x2713;|&#x2713;|&#x2713;|
-| 3. (#1.3) Service web de cartes (WMS & WFS)[<span class="octicon octicon-link"></span>](#4.2) |&#x2713;|-|&#x2713;|
+| 3. [<span class="octicon octicon-link"></span>](#1.3) Service web de cartes (WMS & WFS)[<span class="iconify" data-icon="octicon:file-symlink-file" data-inline="false"></span>](#4.2) |&#x2713;|-|&#x2713;|
 | 4. [Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec](#1.4)|&#x2713;|&#x2713;|&#x2713;|
 | 5. [Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec](#1.5)|-|-|&#x2713;|
 | 6. Outil de [gestion d’itinéraire](#1.6)|&#x2713;|&#x2713;|&#x2713;|
