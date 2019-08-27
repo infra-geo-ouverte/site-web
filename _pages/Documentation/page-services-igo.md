@@ -59,16 +59,14 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 <a id="3"></a>
 # 3. [<span class="octicon octicon-link"></span>](#3) Partage d'expertise
-#### Les partenaires IGO peuvent échanger de l'expertise dans le développement des solutions géomatiques basées sur IGO[^2]. Par exemple :
+#### Les partenaires IGO peuvent échanger de l'expertise dans le développement des solutions géomatiques basées sur IGO[^2].
+### Par exemple :
 + [<span class="octicon octicon-link"></span>](#3.1) Développement de solutions de suivi de flottes véhiculaires
 
 [^2]: Contacter les partenaires IGO pour plus de détails.
 
 <a id="4"></a>
 # 4. [<span class="octicon octicon-link"></span>](#4)Foire aux questions (FAQ)
-
-<a id="4.1"></a>
-# 4.1. [<span class="octicon octicon-link"></span>](#4.1)Section générale
 
 ##### **A) [<span class="octicon octicon-link"></span>](#A) Quelles sont les conditions d'utilisations de ces services ?** 
 + L'utilisateur doit inclure la mention des droits d’auteur du Gouvernement du Québec sur chaque copie de la totalité ou d’une partie de ces services de données. La mention à inscrire est « © Gouvernement du Québec » avec un hyperlien vers cette page : [http://www.droitauteur.gouv.qc.ca/copyright.php](http://www.droitauteur.gouv.qc.ca/copyright.php).
