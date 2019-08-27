@@ -10,24 +10,24 @@ iconedocumentation: ""
 Les services Web et [API (interface de programmation d’applications)](http://granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=26508293) disponibles via l'Infrastructure géomatique ouverte ([IGO](http://www.igouverte.org/)) sont documentés dans cette page. Les [conditions d'utilisation sont détaillées au bas de ce tableau ](#a-quelles-sont-les-conditions-dutilisations-de-ces-services-). Ces services sont offerts soit aux ministères/organismes et leur réseau dans leurs applications grand public, aux détenteurs de licences d'Adresses Québec, aux partenaires du MSP (par ex. : centres d’urgence 9-1-1) ou aux organismes publics du gouvernement du Québec dans leurs applications internes. Chaque client est responsable de mettre à jour ses systèmes en fonction des améliorations et nouveautés de ces services.
 
 <a id="1"></a>
-# 1. [<span class="octicon octicon-link"></span>](#header-tableau)Tableau comparatif des accès aux services/API 
+# 1. [<span class="octicon octicon-link"></span>](#1)Tableau comparatif des accès aux services/API 
 
 | **API & services Web disponibles**      | **Utilisation autorisée dans les applications grand publiques des ministères/organismes et réseau**| **Utilisation autorisée aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Utilisation autorisée dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/)** | 
 | ------------- |:-------------:| -----:|----:|
-| 1. [<span class="octicon octicon-link"></span>][#t1][iCherche/géocode][#2-1] (remplacera le [GLO](http://igouverte.org/documentation/glo/))|&#x2713;|&#x2713;|&#x2713;|
-| 2. [<span class="octicon octicon-link"></span>](#t2)API&Territoire|&#x2713;|&#x2713;|&#x2713;|
-| 3. [<span class="octicon octicon-link"></span>](#t3) Service web de cartes (WMS & WFS)[<span class="iconify" data-icon="octicon:file-symlink-file" data-inline="false"></span>](#4.2) |&#x2713;|-|&#x2713;|
-| 4. [<span class="octicon octicon-link"></span>](#t4)Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec|&#x2713;|&#x2713;|&#x2713;|
-| 5. [<span class="octicon octicon-link"></span>](#t5)Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec|-|-|&#x2713;|
-| 6. [<span class="octicon octicon-link"></span>](#t6)Outil de [gestion d’itinéraire]|&#x2713;|&#x2713;|&#x2713;|
-| 7. [<span class="octicon octicon-link"></span>](#t7)Outil de [géocodage en lot] avec fichier CSV|-|&#x2713;|&#x2713;|
-| 8. [<span class="octicon octicon-link"></span>](#t8)Recherche de lots rénovés|- |- |&#x2713;|
+| 1. [<span class="octicon octicon-link"></span>](#1.1)iCherche/géocode (remplacera le [GLO](http://igouverte.org/documentation/glo/))|&#x2713;|&#x2713;|&#x2713;|
+| 2. API&Territoire|&#x2713;|&#x2713;|&#x2713;|
+| 3. Service web de cartes (WMS & WFS) |&#x2713;|-|&#x2713;|
+| 4. Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec|&#x2713;|&#x2713;|&#x2713;|
+| 5. Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec|&#x2713;|-|&#x2713;|
+| 6. Outil de [gestion d’itinéraire]|&#x2713;|&#x2713;|&#x2713;|
+| 7. Outil de [géocodage en lot] avec fichier CSV|-|&#x2713;|&#x2713;|
+| 8. Recherche de lots rénovés|- |- |&#x2713;|
 
 <a id="2"></a>
 # 2. [<span class="octicon octicon-link"></span>](#2) Description des services/API
 
 <a id="2.1"></a>
-#### 2.1. [<span class="octicon octicon-link"></span>][#2-1]*ICherche géocode* (API) permet :
+#### 2.1. [<span class="octicon octicon-link"></span>](#2.1)*ICherche géocode* (API) permet :
 + la [géolocalisation par adresse](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/geocode),  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, [lieu](https://gitlab.forge.gouv.qc.ca/geomatique/espace_public_description_projet_igo/wikis/icherche-lieu) et offre des requêtes en lot. Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/). Il remplacera à terme le service de géolocalisation [GLO](http://igouverte.org/documentation/glo/) qui ne sera plus amélioré à partir de 2017, mais supporté jusqu'à la fin 2019. ICherche est plus performant (par ex. : autocomplétion) que le GLO et plus précis dans ses résultats trouvés.
 
 <a id="2.2"></a>
@@ -64,7 +64,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 <a id="4.1"></a>
 # 4.1. [<span class="octicon octicon-link"></span>](#4.1)Section générale
 
-##### **A) [<span class="octicon octicon-link"></span>](#4.2) Quelles sont les conditions d'utilisations de ces services ?** 
+##### **A) [<span class="octicon octicon-link"></span>](#A) Quelles sont les conditions d'utilisations de ces services ?** 
 + L'utilisateur doit inclure la mention des droits d’auteur du Gouvernement du Québec sur chaque copie de la totalité ou d’une partie de ces services de données. La mention à inscrire est « © Gouvernement du Québec » avec un hyperlien vers cette page : [http://www.droitauteur.gouv.qc.ca/copyright.php](http://www.droitauteur.gouv.qc.ca/copyright.php).
 
 + Le ministère de la Sécurité publique du Québec (MSP) et ses partenaires gouvernementaux dans IGO ne peuvent garantir l’exactitude des services de données et ils ne peuvent être tenus responsables des conclusions obtenues à la suite de l’utilisation de ceux-ci. Le MSP et ses partenaires gouvernementaux dans IGO n’assumeront aucune responsabilité à l’égard de tout dommage subi par l’utilisateur ou ses employés, agents, représentants ou sous-traitants à la suite de l’utilisation de ces services de données.
