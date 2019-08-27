@@ -59,7 +59,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 <a id="3"></a>
 # 3. [<span class="octicon octicon-link"></span>](#3) Partage d'expertise
-** Les partenaires IGO peuvent échanger de l'expertise dans le développement des solutions géomatiques basées sur IGO[^2]. Par exemple : **
+#### Les partenaires IGO peuvent échanger de l'expertise dans le développement des solutions géomatiques basées sur IGO[^2]. Par exemple :
 + [<span class="octicon octicon-link"></span>](#3.1) Développement de solutions de suivi de flottes véhiculaires
 
 [^2]: Contacter les partenaires IGO pour plus de détails.
