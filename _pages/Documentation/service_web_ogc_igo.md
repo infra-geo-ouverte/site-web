@@ -9,7 +9,7 @@ iconedocumentation: ""
 <a id="a"></a>
 #### A) [<span class="octicon octicon-link"></span>](#a)WMTS - Fond de carte : 
 ##### Les fonds de carte peuvent être accédés par l'entremise de cet URL de service WMTS : [https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetCapabilities&VERSION=1.0.0](https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetCapabilities&VERSION=1.0.0).
-##### Le service de fond de carte public se nomme "carte_gouv_qc_public". Il présente un fond de carte de base (routes, hydrographie, lieux d'intérêt) basé sur des données gouvernementales mises à jour régulièrement.  
+##### Le service de fond de carte public se nomme "carte_gouv_qc_public". Il présente un fond de carte (routes, hydrographie, lieux d'intérêt) basé sur des données gouvernementales mises à jour régulièrement.  
 + Pour l'utiliser dans l'application mobile **[OSMAnd](https://osmand.net/)**, voici l'URL à utiliser pour configurer le WMTS comme source en ligne dans les fonds de carte : [https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=carte_gouv_qc_public&STYLE=default&TILEMATRIXSET=EPSG_3857&TILEMATRIX={0}&TILEROW={2}&TILECOL={1}&FORMAT=image%2Fpng](https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=carte_gouv_qc_public&STYLE=default&TILEMATRIXSET=EPSG_3857&TILEMATRIX={0}&TILEROW={2}&TILECOL={1}&FORMAT=image%2Fpng) avec le module "[online maps](https://osmand.net/features/online-maps-plugin).
 
 ##### Le service de fond de carte - Imagerie du gouvernement du Québec se nomme "orthos". Il s'agit d'une mosaïque d'images aériennes acquises dans le cadre du partenariat d'acquisition d'orthophographies gouvernemental.
