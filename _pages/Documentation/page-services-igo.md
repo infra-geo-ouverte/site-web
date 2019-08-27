@@ -12,7 +12,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 <a id="1"></a>
 # 1. [<span class="octicon octicon-link"></span>](#1)Tableau comparatif des accès aux services/API 
 
-| **API & services Web disponibles**      | **Utilisation autorisée dans les applications grand public des ministères/organismes et réseau**| **Utilisation autorisée aux détenteurs de licences d'[Adresse Québec](http://adressesquebec.gouv.qc.ca/)**  | **Utilisation autorisée dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/)** | 
+| **API & services Web disponibles**      | **Utilisation autorisée dans les applications grand public des ministères/organismes et réseau**| **Utilisation autorisée aux détenteurs de licences d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/)**  | **Utilisation autorisée dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/)** | 
 | ------------- |:-------------:| -----:|----:|
 | 1. [<span class="octicon octicon-link"></span>](#1.1)iCherche/géocode (remplacera le [GLO](http://igouverte.org/documentation/glo/))|&#x2713;|&#x2713;|&#x2713;|
 | 2. [<span class="octicon octicon-link"></span>](#1.2)Territoire-API|&#x2713;|&#x2713;|&#x2713;|
