@@ -25,7 +25,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 
 
-[<span class="octicon octicon-link"></span>](#1.9) : périmètre acrigéo
+[<span class="octicon octicon-link">&#42;</span>](#1.9) : périmètre acrigéo
 
 <a id="2"></a>
 # 2. [<span class="octicon octicon-link"></span>](#2) Description des services/API
