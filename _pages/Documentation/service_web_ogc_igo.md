@@ -27,7 +27,7 @@ iconedocumentation: ""
 <a id="d"></a>
 ##### D) [<span class="octicon octicon-link"></span>](#debitniveau)Débit niveau (Surveillance des crues)  
 + Visualisation : [https://geoegl.msp.gouv.qc.ca/adnv2/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=crue)<br/>
-+ Service WMS/WFS : [https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?)
++ Service WMS/WFS : [https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
 
 <a id="e"></a>
 ##### E) [<span class="octicon octicon-link"></span>](#foretouverte)Forêt Ouverte  
@@ -35,16 +35,24 @@ iconedocumentation: ""
 + Service WMS : [https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
 
 <a id="f"></a>
-##### F) [<span class="octicon octicon-link"></span>](#transport)WMS - Transports ([https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq)) : [https://ws.mapserver.transports.gouv.qc.ca/swtq?service=WMS&version=1.3.0&request=GetCapabilities](https://ws.mapserver.transports.gouv.qc.ca/swtq?service=WMS&version=1.3.0&request=GetCapabilities) 
+##### F) [<span class="octicon octicon-link"></span>](#transport)Transports  
++ Visualisation : [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq)<br/>  
++ Service WMS : [https://ws.mapserver.transports.gouv.qc.ca/swtq?service=WMS&version=1.3.0&request=GetCapabilities](https://ws.mapserver.transports.gouv.qc.ca/swtq?service=WMS&version=1.3.0&request=GetCapabilities) 
 
 <a id="g"></a>
-##### G) [<span class="octicon octicon-link"></span>](#cptaq)WMS - CPTAQ ([http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1)) : [https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?service=WMS&version=1.3.0&request=GetCapabilities](https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?service=WMS&version=1.3.0&request=GetCapabilities)  
+##### G) [<span class="octicon octicon-link"></span>](#cptaq)CPTAQ  
++ Visualisation : [http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1)<br/>  
++ Service WMS : [https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?service=WMS&version=1.3.0&request=GetCapabilities](https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?service=WMS&version=1.3.0&request=GetCapabilities)  
 
 <a id="h"></a>
-##### H) [<span class="octicon octicon-link"></span>](#bdga)WMS - BDGA ([https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives](https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives)) : [https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
+##### H) [<span class="octicon octicon-link"></span>](#bdga)BDGA  
++ Visualisation [https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives](https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives))<br/>  
++ Service WMS : [https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
 
 <a id="i"></a>
-##### I) [<span class="octicon octicon-link"></span>](#glace)WMS-WCS - Carte de glace : [https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?) 
+##### I) [<span class="octicon octicon-link"></span>](#glace)Carte de glace  
++ Service WMS/WCS : [https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
 
 <a id="j"></a>
-##### J) [<span class="octicon octicon-link"></span>](#statregcriminalite)WMS-WFS - Statistiques régionales de criminalités au Québec  : [https://geoegl.msp.gouv.qc.ca/ws/dpop.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/dpop.fcgi?) 
+##### J) [<span class="octicon octicon-link"></span>](#statregcriminalite)Statistiques régionales de criminalités au Québec  
++ Service WMS/WFS : [https://geoegl.msp.gouv.qc.ca/ws/dpop.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/dpop.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
