@@ -25,7 +25,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 
 
-<a name="nbt">&#42;</a> : périmètre acrigéo
+<a name="nbt">&#42;</a> : périmètre ACRIgéo
 
 <a id="2"></a>
 # 2. [<span class="octicon octicon-link"></span>](#2) Description des services/API
