@@ -18,12 +18,12 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 | 2. [Territoire-API](#2.2)|&#x2713;|&#x2713;|&#x2713;|
 | 3. [Service web de cartes (WMS & WFS)](#2.3)|&#x2713;|-|&#x2713;|
 | 4. [Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec](#2.3)|&#x2713;|&#x2713;|&#x2713;|
-| 5. [Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec](#2.3)|&#x2713;[^1]|-|&#x2713;[^1]|
+| 5. [Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec](#2.3)|&#x2713;[&#42;](#nbt)|-|&#x2713;[&#42;](#nbt)|
 | 6. Outil de [gestion d’itinéraire](#2.4)|&#x2713;|&#x2713;|&#x2713;|
 | 7. Outil de [géocodage en lot](#2.5) avec fichier CSV|-|&#x2713;|&#x2713;|
 | 8. [Recherche de lots rénovés](#2.6)|- |- |&#x2713;|
 
-[^1]: périmètre acrigéo
+[&#42;](#nbt) périmètre acrigéo
 
 <a id="2"></a>
 # 2. [<span class="octicon octicon-link"></span>](#2) Description des services/API
