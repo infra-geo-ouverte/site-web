@@ -15,13 +15,13 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 | **API & services Web disponibles**      | **Utilisation autorisée dans les applications grand public des ministères/organismes et réseau**| **Utilisation autorisée aux détenteurs de licences d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/)**  | **Utilisation autorisée dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/)** | 
 | ------------- |:-------------:| -----:|----:|
 | 1. [iCherche/géocode](#2.1)(remplacera le [GLO](http://igouverte.org/documentation/glo/))|&#x2713;|&#x2713;|&#x2713;|
-| 2. [<span class="octicon octicon-link"></span>](#1.2)Territoire-API|&#x2713;|&#x2713;|&#x2713;|
-| 3. [<span class="octicon octicon-link"></span>](#1.3)Service web de cartes (WMS & WFS) |&#x2713;|-|&#x2713;|
-| 4. [<span class="octicon octicon-link"></span>](#1.4)Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec|&#x2713;|&#x2713;|&#x2713;|
-| 5. [<span class="octicon octicon-link"></span>](#1.5)Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec|&#x2713;[^1]|-|&#x2713;[^1]|
-| 6. [<span class="octicon octicon-link"></span>](#1.6)Outil de [gestion d’itinéraire]|&#x2713;|&#x2713;|&#x2713;|
-| 7. [<span class="octicon octicon-link"></span>](#1.7)Outil de [géocodage en lot] avec fichier CSV|-|&#x2713;|&#x2713;|
-| 8. [<span class="octicon octicon-link"></span>](#1.8)Recherche de lots rénovés|- |- |&#x2713;|
+| 2. [Territoire-API](#2.2)|&#x2713;|&#x2713;|&#x2713;|
+| 3. [Service web de cartes (WMS & WFS)](#2.3)|&#x2713;|-|&#x2713;|
+| 4. [Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec](#2.3)|&#x2713;|&#x2713;|&#x2713;|
+| 5. [Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec](#2.3)|&#x2713;[^1]|-|&#x2713;[^1]|
+| 6. Outil de [gestion d’itinéraire](#2.4)|&#x2713;|&#x2713;|&#x2713;|
+| 7. Outil de [géocodage en lot](#2.5) avec fichier CSV|-|&#x2713;|&#x2713;|
+| 8. [Recherche de lots rénovés](#2.6)|- |- |&#x2713;|
 
 [^1]: périmètre acrigéo
 
