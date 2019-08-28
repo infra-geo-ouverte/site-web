@@ -10,7 +10,7 @@ iconedocumentation: ""
 Les services Web et [API (interface de programmation d’applications)](http://granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=26508293) disponibles via l'Infrastructure géomatique ouverte ([IGO](http://www.igouverte.org/)) sont documentés dans cette page. Les [conditions d'utilisation sont détaillées ici ](#a-quelles-sont-les-conditions-dutilisations-de-ces-services-). Ces services sont offerts soit aux ministères/organismes et leur réseau dans leurs applications grand public, aux détenteurs de licences d'Adresses Québec, aux partenaires du MSP (par ex. : centres d’urgence 9-1-1) ou aux organismes publics du gouvernement du Québec dans leurs applications internes. Chaque client est responsable de mettre à jour ses systèmes en fonction des améliorations et nouveautés de ces services.
 
 <a id="1"></a>
-# 1. Tableau comparatif des accès aux services/API 
+# 1. Tableau comparatif des accès aux [services/API](#2)
 
 | **API & services Web disponibles**      | **Utilisation autorisée dans les applications grand public des ministères/organismes et réseau**| **Utilisation autorisée aux détenteurs de licences d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/)**  | **Utilisation autorisée dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/)** | 
 | ------------- |:-------------:| -----:|----:|
@@ -58,17 +58,17 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 +  de trouver la localisation par numéro de lots rénovés au Québec. Ce service est offert par le service de la géomatique de la [Commission de protection du territoire agricole du Québec](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1). Cette fonctionnalité est encore basée sur GLO et sera transférée vers iCherche/geocode à terme, une version est déjà disponible pour tests. (Contacter info@igouverte.com)
 
 <a id="3"></a>
-# 3. [<span class="octicon octicon-link"></span>](#3) Partage d'expertise
+# 3. Partage d'expertise
 #### Les partenaires IGO peuvent échanger de l'expertise dans le développement des solutions géomatiques basées sur IGO[^2].
 ##### Par exemple :
-+ [<span class="octicon octicon-link"></span>](#3.1) Développement de solutions de suivi de flottes véhiculaires
++ Développement de solutions de suivi de flottes véhiculaires
 
 [^2]: Contacter les partenaires IGO pour plus de détails.
 
 <a id="4"></a>
-# 4. [<span class="octicon octicon-link"></span>](#4)Foire aux questions (FAQ)
+# 4. Foire aux questions (FAQ)
 
-##### **A) [<span class="octicon octicon-link"></span>](#A) Quelles sont les conditions d'utilisations de ces services ?** 
+##### **A) Quelles sont les conditions d'utilisations de ces services ?** 
 + L'utilisateur doit inclure la mention des droits d’auteur du Gouvernement du Québec sur chaque copie de la totalité ou d’une partie de ces services de données. La mention à inscrire est « © Gouvernement du Québec » avec un hyperlien vers cette page : [http://www.droitauteur.gouv.qc.ca/copyright.php](http://www.droitauteur.gouv.qc.ca/copyright.php).
 
 + Le ministère de la Sécurité publique du Québec (MSP) et ses partenaires gouvernementaux dans IGO ne peuvent garantir l’exactitude des services de données et ils ne peuvent être tenus responsables des conclusions obtenues à la suite de l’utilisation de ceux-ci. Le MSP et ses partenaires gouvernementaux dans IGO n’assumeront aucune responsabilité à l’égard de tout dommage subi par l’utilisateur ou ses employés, agents, représentants ou sous-traitants à la suite de l’utilisation de ces services de données.
