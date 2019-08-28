@@ -14,11 +14,11 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 | **API & services Web disponibles**      | **Utilisation autorisée dans les applications grand public des ministères/organismes et réseau**| **Utilisation autorisée aux détenteurs de licences d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/)**  | **Utilisation autorisée dans l'intranet-[RITM](http://www.cspq.gouv.qc.ca/faire-affaire-avec-le-cspq/famille-de-services/sous-famille-de-services/services/service/reseau-integre-de-telecommunications-multimedia-ritm/)** | 
 | ------------- |:-------------:| -----:|----:|
-| 1. [iCherche/géocode](#2.1)(remplacera le [GLO](http://igouverte.org/Documentation/GLO_instruction/))|&#x2713;|&#x2713;|&#x2713;|
+| 1. [iCherche/géocode](#2.1)(remplacera le [GLO](http://igouverte.org/documentation/GLO_instruction/))|&#x2713;|&#x2713;|&#x2713;|
 | 2. [Territoire-API](#2.2)|&#x2713;|&#x2713;|&#x2713;|
-| 3. [Service web de cartes (WMS & WFS)](#2.3)|&#x2713;|-|&#x2713;|
-| 4. [Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec](#2.3)|&#x2713;|&#x2713;|&#x2713;|
-| 5. [Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec](#2.3)|&#x2713;[&#42;](#nbt)|-|&#x2713;[&#42;](#nbt)|
+| 3. [Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec](http://igouverte.org/documentation/services-web-ogc-igo/)|&#x2713;|&#x2713;|&#x2713;|
+| 4. [Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec](http://igouverte.org/documentation/services-web-ogc-igo/)|&#x2713;[&#42;](#nbt)|-|&#x2713;[&#42;](#nbt)|
+| 5. [Service web de cartes (WMS & WFS)](http://igouverte.org/documentation/services-web-ogc-igo/)|&#x2713;|-|&#x2713;|
 | 6. Outil de [gestion d’itinéraire](#2.4)|&#x2713;|&#x2713;|&#x2713;|
 | 7. Outil de [géocodage en lot](#2.5) avec fichier CSV|-|&#x2713;|&#x2713;|
 | 8. [Recherche de lots rénovés](#2.6)|- |- |&#x2713;|
@@ -44,19 +44,15 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 + Localiser : raccourci pour plusieurs recherches de territoire intersectant des points XY ou un geojson, avec possibilité de spécifier plusieurs types (gécodage inversé); ce service peut également retourner les éléments (comme la municipalité, l'adresse,...) qui sont à une distance donnée du point XY.
 
 <a id="2.3"></a>
-#### 2.3. [<span class="octicon octicon-link"></span>](#2.3)Service de fonds de cartes ([WMTS](https://fr.wikipedia.org/wiki/Web_Map_Tile_Service)) tuilés.
-+ Voici la [liste des services WMTS disponibles](http://igouverte.org/documentation/services-web-ogc-igo/)
-
-<a id="2.4"></a>
-#### 2.4. [<span class="octicon octicon-link"></span>](#2.4)*Le service de calcul et de gestion d’itinéraire* (API) permet :
+#### 2.3. *Le service de calcul et de gestion d’itinéraire* (API) permet :
 + de gérer des [itinéraires optimisés](http://igouverte.org/documentation/doc_itineraire/) (ex. meilleur parcours entre deux points) avec des requêtes en lot possibles. Il repose sur les données de la base géographique routière (BGR) de Transports Québec et d'Adresse Québec. Le service est basé sur la solution [OSRM](http://project-osrm.org/).
 
-<a id="2.5"></a>
-#### 2.5. [<span class="octicon octicon-link"></span>](#2.5)*Le service de géocodage en lot* permet :
+<a id="2.4"></a>
+#### 2.4. *Le service de géocodage en lot* permet :
 + de  [géocoder des points, à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (par ex. : csv)](https://geoegl.msp.gouv.qc.ca/GeocodageLot/). Le fichier doit minimalement contenir un champ contenant l'adresse complète ou le  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>. 
 
-<a id="2.6"></a>
-#### 2.6. [<span class="octicon octicon-link"></span>](#2.6)*La recherche de lots rénovés* permet :
+<a id="2.5"></a>
+#### 2.5. *La recherche de lots rénovés* permet :
 +  de trouver la localisation par numéro de lots rénovés au Québec. Ce service est offert par le service de la géomatique de la [Commission de protection du territoire agricole du Québec](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1). Cette fonctionnalité est encore basée sur GLO et sera transférée vers iCherche/geocode à terme, une version est déjà disponible pour tests. (Contacter info@igouverte.com)
 
 <a id="3"></a>
