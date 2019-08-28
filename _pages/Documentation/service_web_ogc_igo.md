@@ -20,39 +20,39 @@ iconedocumentation: ""
 ### [<span class="octicon octicon-link"></span>](#ServicesWeb) Service web de cartes (WMS/WFS) : 
 
 <a id="c"></a>
-##### C) [<span class="octicon octicon-link"></span>](#donneesqc)Aperçu de couches disponibles dans Données Québec
+##### C)[](#donneesqc)Aperçu de couches disponibles dans Données Québec
 + Visualisation : ([https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/))<br/>
 + Service WMS/WFS : [https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
 
 <a id="d"></a>
-##### D) [<span class="octicon octicon-link"></span>](#debitniveau)Débit niveau (Surveillance des crues)  
+##### D)[](#debitniveau)Débit niveau (Surveillance des crues)  
 + Visualisation : [https://geoegl.msp.gouv.qc.ca/adnv2/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=crue)<br/>
 + Service WMS/WFS : [https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
 
 <a id="e"></a>
-##### E) [<span class="octicon octicon-link"></span>](#foretouverte)Forêt Ouverte  
+##### E)[](#foretouverte)Forêt Ouverte  
 + Visualisation : [https://www.foretouverte.gouv.qc.ca](https://www.foretouverte.gouv.qc.ca))<br/>
 + Service WMS : [https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
 
 <a id="f"></a>
-##### F) [<span class="octicon octicon-link"></span>](#transport)Transports  
+##### F)[](#transport)Transports  
 + Visualisation : [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq)<br/>  
 + Service WMS : [https://ws.mapserver.transports.gouv.qc.ca/swtq?service=WMS&version=1.3.0&request=GetCapabilities](https://ws.mapserver.transports.gouv.qc.ca/swtq?service=WMS&version=1.3.0&request=GetCapabilities) 
 
 <a id="g"></a>
-##### G) [<span class="octicon octicon-link"></span>](#cptaq)CPTAQ  
+##### G)[](#cptaq)CPTAQ  
 + Visualisation : [http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1)<br/>  
 + Service WMS : [https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?service=WMS&version=1.3.0&request=GetCapabilities](https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?service=WMS&version=1.3.0&request=GetCapabilities)  
 
 <a id="h"></a>
-##### H) [<span class="octicon octicon-link"></span>](#bdga)BDGA  
+##### H)[](#bdga)BDGA  
 + Visualisation [https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives](https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives))<br/>  
 + Service WMS : [https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
 
 <a id="i"></a>
-##### I) [<span class="octicon octicon-link"></span>](#glace)Carte de glace  
-+ Service WMS/WCS : [https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
+##### I)[](#glace)Carte de glace  
++ Service WMS/WCS : [https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
 
 <a id="j"></a>
-##### J) [<span class="octicon octicon-link"></span>](#statregcriminalite)Statistiques régionales de criminalités au Québec  
-+ Service WMS/WFS : [https://geoegl.msp.gouv.qc.ca/ws/dpop.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/dpop.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
+##### J)[](#statregcriminalite)Statistiques régionales de criminalités au Québec  
++ Service WMS/WFS : [https://geoegl.msp.gouv.qc.ca/ws/dpop.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/dpop.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
