@@ -20,13 +20,13 @@ iconedocumentation: ""
 ### [<span class="octicon octicon-link"></span>](#ServicesWeb) Service web de cartes (WMS/WFS) : 
 
 <a id="c"></a>
-##### C) [<span class="octicon octicon-link"></span>](#donneesqc)WMS/WFS - Données Québec ([https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/)) : [https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?)
+##### C) [<span class="octicon octicon-link"></span>](#donneesqc)WMS/WFS - Échantillons de couches disponibles dans Données Québec et dans le visualisateur de données d'IGO ([https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/)) : [https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
 
 <a id="d"></a>
-##### D) [<span class="octicon octicon-link"></span>](#debitniveau)WMS/WFS - Débit niveau ([https://geoegl.msp.gouv.qc.ca/adnv2/](https://geoegl.msp.gouv.qc.ca/adnv2/)) : [https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?)
+##### D) [<span class="octicon octicon-link"></span>](#debitniveau)WMS/WFS - Débit niveau ([https://geoegl.msp.gouv.qc.ca/adnv2/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=crue) : [https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?)
 
 <a id="e"></a>
-##### E) [<span class="octicon octicon-link"></span>](#foretouverte)WMS - Inventaire Forestier ([https://geoegl.msp.gouv.qc.ca/igo/mffpecofor/](https://geoegl.msp.gouv.qc.ca/igo/mffpecofor/)) : [https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
+##### E) [<span class="octicon octicon-link"></span>](#foretouverte)WMS - Forêt Ouverte ([https://geoegl.msp.gouv.qc.ca/igo2/mffpecofor/](https://geoegl.msp.gouv.qc.ca/igo/mffpecofor/)) : [https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
 
 <a id="f"></a>
 ##### F) [<span class="octicon octicon-link"></span>](#transport)WMS - Transports ([https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq)) : [https://ws.mapserver.transports.gouv.qc.ca/swtq?service=WMS&version=1.3.0&request=GetCapabilities](https://ws.mapserver.transports.gouv.qc.ca/swtq?service=WMS&version=1.3.0&request=GetCapabilities) 
@@ -35,7 +35,7 @@ iconedocumentation: ""
 ##### G) [<span class="octicon octicon-link"></span>](#cptaq)WMS - CPTAQ ([http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1)) : [https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?service=WMS&version=1.3.0&request=GetCapabilities](https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?service=WMS&version=1.3.0&request=GetCapabilities)  
 
 <a id="h"></a>
-##### H) [<span class="octicon octicon-link"></span>](#bdga)WMS - BDGA ([https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives-a-lechelle-de-1-1-000-000](https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives-a-lechelle-de-1-1-000-000)) : [https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
+##### H) [<span class="octicon octicon-link"></span>](#bdga)WMS - BDGA ([https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives](https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives)) : [https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
 
 <a id="i"></a>
 ##### I) [<span class="octicon octicon-link"></span>](#glace)WMS-WCS - Carte de glace : [https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?) 
