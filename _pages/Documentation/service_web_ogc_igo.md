@@ -20,13 +20,19 @@ iconedocumentation: ""
 ### [<span class="octicon octicon-link"></span>](#ServicesWeb) Service web de cartes (WMS/WFS) : 
 
 <a id="c"></a>
-##### C) [<span class="octicon octicon-link"></span>](#donneesqc)WMS/WFS - Échantillons de couches disponibles dans Données Québec et dans le visualisateur de données d'IGO ([https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/)) : [https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
+##### C) [<span class="octicon octicon-link"></span>](#donneesqc)Aperçu de couches disponibles dans Données Québec
++ Visualisation : ([https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/))<br/>
++ Service WMS/WFS : [https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
 
 <a id="d"></a>
-##### D) [<span class="octicon octicon-link"></span>](#debitniveau)WMS/WFS - Débit niveau ([https://geoegl.msp.gouv.qc.ca/adnv2/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=crue) : [https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?)
+##### D) [<span class="octicon octicon-link"></span>](#debitniveau)Débit niveau (Surveillance des crues)  
++ Visualisation : [https://geoegl.msp.gouv.qc.ca/adnv2/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=crue)<br/>
++ Service WMS/WFS : [https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?)
 
 <a id="e"></a>
-##### E) [<span class="octicon octicon-link"></span>](#foretouverte)WMS - Forêt Ouverte ([https://geoegl.msp.gouv.qc.ca/igo2/mffpecofor/](https://geoegl.msp.gouv.qc.ca/igo/mffpecofor/)) : [https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
+##### E) [<span class="octicon octicon-link"></span>](#foretouverte)Forêt Ouverte  
++ Visualisation : [https://www.foretouverte.gouv.qc.ca](https://www.foretouverte.gouv.qc.ca))<br/>
++ Service WMS : [https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
 
 <a id="f"></a>
 ##### F) [<span class="octicon octicon-link"></span>](#transport)WMS - Transports ([https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq)) : [https://ws.mapserver.transports.gouv.qc.ca/swtq?service=WMS&version=1.3.0&request=GetCapabilities](https://ws.mapserver.transports.gouv.qc.ca/swtq?service=WMS&version=1.3.0&request=GetCapabilities) 
