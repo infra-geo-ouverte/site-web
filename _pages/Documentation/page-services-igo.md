@@ -16,8 +16,8 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 | ------------- |:-------------:| -----:|----:|
 | 1. [iCherche/géocode](#2.1)(remplacera le [GLO](http://igouverte.org/documentation/GLO_instruction/))|&#x2713;|&#x2713;|&#x2713;|
 | 2. [Territoire-API](#2.2)|&#x2713;|&#x2713;|&#x2713;|
-| 3. [Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec](http://igouverte.org/documentation/services-web-ogc-igo/)|&#x2713;|&#x2713;|&#x2713;|
-| 4. [Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec](http://igouverte.org/documentation/services-web-ogc-igo/)|&#x2713;[&#42;](#nbt)|-|&#x2713;[&#42;](#nbt)|
+| 3. [Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec](http://igouverte.org/documentation/services-web-ogc-igo/#carte_publique)|&#x2713;|&#x2713;|&#x2713;|
+| 4. [Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec](http://igouverte.org/documentation/services-web-ogc-igo/#imagerie)|&#x2713;[&#42;](#nbt)|-|&#x2713;[&#42;](#nbt)|
 | 5. [Service web de cartes (WMS & WFS)](http://igouverte.org/documentation/services-web-ogc-igo/)|&#x2713;|-|&#x2713;|
 | 6. Outil de [gestion d’itinéraire](#2.4)|&#x2713;|&#x2713;|&#x2713;|
 | 7. Outil de [géocodage en lot](#2.5) avec fichier CSV|-|&#x2713;|&#x2713;|
