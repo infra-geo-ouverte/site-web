@@ -28,4 +28,8 @@ submenu:
 ## Présentations IGO sur SlideShare 
 * [http://www.slideshare.net/igouverte](http://www.slideshare.net/igouverte)
     
-
+## Capsules Vidéo
+Démonstrations de l'installation et de certaines configurations de base.
+* [Installation] (file://spssogl97d.sso.msp.gouv.qc.ca/geodoc/projets/160-IGO-Infrastructure%20géomatique%20ouverte/Documentation/paramétrerAvecIGO2/1-installationLocal.mp4)
+* [Ajout de Contexte] (lien vers 2-ajouterContext.mp4)
+* [Ajout de Catalogue] (lien vers 3-ajouterCatalogue.mp4)
