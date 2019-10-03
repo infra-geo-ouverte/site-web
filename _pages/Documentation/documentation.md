@@ -30,6 +30,6 @@ submenu:
     
 ## Capsules Vidéo
 Démonstrations de l'installation et de certaines configurations de base.
-* [Installation](file://spssogl97d.sso.msp.gouv.qc.ca/geodoc/projets/160-IGO-Infrastructure%20géomatique%20ouverte/Documentation/paramétrerAvecIGO2/1-installationLocal.mp4)
-* [Ajout de Contexte](file://spssogl97d.sso.msp.gouv.qc.ca/geodoc/projets/160-IGO-Infrastructure%20géomatique%20ouverte/Documentation/paramétrerAvecIGO2/2-ajouterContext.mp4)
-* [Ajout de Catalogue](file://spssogl97d.sso.msp.gouv.qc.ca/geodoc/projets/160-IGO-Infrastructure%20géomatique%20ouverte/Documentation/paramétrerAvecIGO2/3-ajouterCatalogue.mp4)
+* [Installation](spssogl97d.sso.msp.gouv.qc.ca/geodoc/projets/160-IGO-Infrastructure%20géomatique%20ouverte/Documentation/paramétrerAvecIGO2/1-installationLocal.mp4)
+* [Ajout de Contexte](spssogl97d.sso.msp.gouv.qc.ca/geodoc/projets/160-IGO-Infrastructure%20géomatique%20ouverte/Documentation/paramétrerAvecIGO2/2-ajouterContext.mp4)
+* [Ajout de Catalogue](spssogl97d.sso.msp.gouv.qc.ca/geodoc/projets/160-IGO-Infrastructure%20géomatique%20ouverte/Documentation/paramétrerAvecIGO2/3-ajouterCatalogue.mp4)
