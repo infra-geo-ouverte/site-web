@@ -25,11 +25,11 @@ submenu:
     
 ## Technologies utilisées et supportées
  [Détail des librairies utilisées et des services supportés](http://www.igouverte.org/documentation/techno/) 
-## Présentations IGO sur SlideShare 
+## Présentations IGO 
 * [http://www.slideshare.net/igouverte](http://www.slideshare.net/igouverte)
     
 ## Capsules Vidéo
 Démonstrations de l'installation et de certaines configurations de base.
-* Installation
-* Ajout de Contexte
-* Ajout de Catalogue
+* [Installation](https://geoegl.msp.gouv.qc.ca/igouverte/videos/1-installationLocale.webm)
+* [Ajout de Contexte](https://geoegl.msp.gouv.qc.ca/igouverte/videos/2-ajouterContexte.webm)
+* [Ajout de Catalogue](https://geoegl.msp.gouv.qc.ca/igouverte/videos/3-ajouterCatalogue3.webm)
