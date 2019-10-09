@@ -25,8 +25,8 @@ submenu:
     
 ## Technologies utilisées et supportées
  [Détail des librairies utilisées et des services supportés](http://www.igouverte.org/documentation/techno/) 
-## Présentations IGO 
-* [http://www.slideshare.net/igouverte](http://www.slideshare.net/igouverte)
+## [Présentations IGO]
+* [IGO2-la collaboration en pratique](https://github.com/infra-geo-ouverte/site-web/tree/gh-pages/_pages/Documentation/20191015_IGO_générique.pdf)
     
 ## Capsules Vidéo
 Démonstrations de l'installation et de certaines configurations de base.
