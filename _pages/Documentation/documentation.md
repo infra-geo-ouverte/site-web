@@ -30,6 +30,6 @@ submenu:
     
 ## Capsules Vidéo
 Démonstrations de l'installation et de certaines configurations de base.
-* Installation
+* [Installation](https://testgeoegl.msp.gouv.qc.ca/igouverte/videos/1-installationLocale.webm)
 * Ajout de Contexte
 * Ajout de Catalogue
