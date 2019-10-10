@@ -28,7 +28,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 <a name="nbt">&#42;</a> : Accessible aux membres du regroupement ACRIgéo
 
 <a id="2"></a>
-# 2. [<span class="octicon octicon-link"></span>](#2) Description des services/API
+# 2. Description des services/API
 
 <a id="2.1"></a>
 #### 2.1. *iCherche/géocode* (API) permet :
