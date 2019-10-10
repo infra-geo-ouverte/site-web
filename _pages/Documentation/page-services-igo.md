@@ -32,18 +32,17 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 <a id="2.1"></a>
 #### 2.1. *iCherche/géocode* (API) permet :
-+ la [géolocalisation par adresse](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/geocode),  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, [lieu](https://gitlab.forge.gouv.qc.ca/geomatique/espace_public_description_projet_igo/wikis/icherche-lieu). Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/). Il remplacera à terme le service de géolocalisation [GLO](http://igouverte.org/documentation/glo/) qui ne sera plus amélioré à partir de 2017, mais supporté jusqu'à la fin 2019. ICherche est plus performant (par ex. : autocomplétion) que le GLO et plus précis dans ses résultats trouvés.
++ la [géolocalisation par adresse](https://geoegl.msp.gouv.qc.ca/apis/terrAPI/docs),  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, [lieu](https://gitlab.forge.gouv.qc.ca/geomatique/espace_public_description_projet_igo/wikis/icherche-lieu). Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/). Il remplacera à terme le service de géolocalisation [GLO] qui ne sera plus amélioré à partir de 2017, mais supporté jusqu'à la fin 2019. iCherche est plus performant (par ex. : autocomplétion) que le GLO et plus précis dans ses résultats trouvés.
 + Il permet indirectement de formater des adresses selon la base de données d'Adresse Québec.
 
 <a id="2.2"></a>
 #### 2.2. *TerrAPI* permet de :
+**Voir la documentation [ici](https://geoegl.msp.gouv.qc.ca/apis/terrAPI/docs)**
 + Lister les territoires : Retourne tous les territoires correspondants à un type avec des possibilités de filtrage (ex: "obtenir la liste des municipalités commençant par 'Meg' et la trier").
 + Rechercher par ID : retourne le territoire correspondant à l'identifiant spécifié (ex : "Obtenir la région administrative avec l'identifiant ou le geocode 01).
 + Rechercher par territoire : retourne la liste des territoires qui intersectent le ou les territoires choisis (ex: "obtenir les municipalités contenues dans un territoire de CLSC ou de savoir quelle est la région touristique d'une municipalité").
 + Valider l'intersection : valide si deux territoires s'intersectent (ex: "valider si la municipalité de Sainte-Thérèse intersecte la MRC de Thérèse-De-Blainville")
 + Localiser : raccourci pour plusieurs recherches de territoire intersectant des points XY ou un geojson, avec possibilité de spécifier plusieurs types (gécodage inversé); ce service peut également retourner les éléments (comme la municipalité, l'adresse,...) qui sont à une distance donnée du point XY.
-
-  ***Voir la documentation [ici](https://geoegl.msp.gouv.qc.ca/apis/terrAPI/docs)***
 
 <a id="2.3"></a>
 #### 2.3. *Le service de calcul et de gestion d’itinéraire* (API) permet :
