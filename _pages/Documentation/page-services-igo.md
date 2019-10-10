@@ -32,7 +32,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 <a id="2.1"></a>
 #### 2.1. *iCherche/géocode* (API) permet :
-+ la [géolocalisation par adresse](https://geoegl.msp.gouv.qc.ca/apis/terrAPI/docs),  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, [lieu](https://gitlab.forge.gouv.qc.ca/geomatique/espace_public_description_projet_igo/wikis/icherche-lieu). Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/). Il remplacera à terme le service de géolocalisation [GLO] qui ne sera plus amélioré à partir de 2017, mais supporté jusqu'à la fin 2019. iCherche est plus performant (par ex. : autocomplétion) que le GLO et plus précis dans ses résultats trouvés.
++ la [géolocalisation par adresse](https://geoegl.msp.gouv.qc.ca/apis/icherche/docs),  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, [lieu](https://gitlab.forge.gouv.qc.ca/geomatique/espace_public_description_projet_igo/wikis/icherche-lieu). Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/). Il remplacera à terme le service de géolocalisation [GLO] qui ne sera plus amélioré à partir de 2017, mais supporté jusqu'à la fin 2019. iCherche est plus performant (par ex. : autocomplétion) que le GLO et plus précis dans ses résultats trouvés.
 + Il permet indirectement de formater des adresses selon la base de données d'Adresse Québec.
 
 <a id="2.2"></a>
