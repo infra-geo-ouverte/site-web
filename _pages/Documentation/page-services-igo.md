@@ -20,8 +20,8 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 | 4. [Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec](http://igouverte.org/documentation/services-web-ogc-igo/#imagerie)|&#x2713;[&#42;](#nbt)|-|&#x2713;[&#42;](#nbt)|
 | 5. [Service web de cartes (WMS & WFS)](http://igouverte.org/documentation/services-web-ogc-igo/#ServicesWeb)|&#x2713;|-|&#x2713;|
 | 6. Outil de [gestion d’itinéraire](#2.3)|&#x2713;|&#x2713;|&#x2713;|
-| 7. Outil de [géocodage en lot](#2.5) avec fichier CSV|-|&#x2713;|&#x2713;|
-| 8. [Recherche de lots rénovés](#2.6)|- |- |&#x2713;|
+| 7. Outil de [géocodage en lot](#2.4) avec fichier CSV|-|&#x2713;|&#x2713;|
+| 8. [Recherche de lots rénovés](#2.5)|- |- |&#x2713;|
 
 
 
