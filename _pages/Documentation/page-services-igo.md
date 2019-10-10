@@ -73,7 +73,15 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 + Le ministère de la Sécurité publique du Québec (MSP) et ses partenaires gouvernementaux dans IGO ne peuvent garantir l’exactitude des services de données et ils ne peuvent être tenus responsables des conclusions obtenues à la suite de l’utilisation de ceux-ci. Le MSP et ses partenaires gouvernementaux dans IGO n’assumeront aucune responsabilité à l’égard de tout dommage subi par l’utilisateur ou ses employés, agents, représentants ou sous-traitants à la suite de l’utilisation de ces services de données.
 
 ##### **B) Quelles sont les URL des serveurs hôte pour tous ces services ?** 
-+ Si vous êtes à l'extérieur du gouvernement, le serveur hôte en production sera : { https://geoegl.msp.gouv.qc.ca } (et préproduction : { https://pregeoegl.msp.gouv.qc.ca }) et si vous êtes physiquement dans un bâtiment du gouvernement du Québec dans le réseau intranet (RITM), en production ce sera : { http://www.geomsp.qc } (et préproduction : { http://rc.geomsp.qc }). Ces adresses de serveurs hôte doivent être utilisées comme URL et elles doivent remplacer la valeur pour : {serveur} dans la documentation des différents services ou API.
++ Si vous êtes à l'extérieur du gouvernement, le serveur hôte sera :
+  + En production : https://geoegl.msp.gouv.qc.ca
+  + En préproduction : https://pregeoegl.msp.gouv.qc.ca
+
++ Si vous êtes physiquement dans un bâtiment du gouvernement du Québec dans le réseau intranet (RITM) ce sera :
+  + En production : http://www.geomsp.qc
+  + En préproduction : http://rc.geomsp.qc
+
++ Ces adresses de serveurs hôte doivent être utilisées comme URL et elles doivent remplacer la valeur pour : {serveur} dans la documentation des différents services ou API.
 
 ##### **C) Que faire si le service n'est plus disponible ou que son état est indisponible ?**
 + Le service est disponible 24 heures par jour, 7 jours sur 7, à l'exception des périodes nécessitant des mises à jour annoncées d'avance. De manière exceptionnelle, si le service est non disponible, vous pouvez utiliser le serveur hôte de préproduction (voir réponse à la question B) qui est une image similaire à la production. Cependant, aucune garantie n'est donnée car il est possible que ce serveur soit utilisé pour l'évolution des services.
