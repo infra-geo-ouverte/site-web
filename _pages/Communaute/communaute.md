@@ -17,6 +17,7 @@ submenu:
   - { hook: "annexe1", title: "Annexe 1: Charte du comité technique" }
   - { hook: "annexe2", title: "Annexe 2: Foire aux Questions" }
 ---
+{::options parse_block_html="true" /}
 <div class="panel panel-danger">
 **Message important**
 {: .panel-heading}
