@@ -23,7 +23,7 @@ submenu:
 {: .panel-heading}
 <div class="panel-body">
 
-**Tout ce qui concerne l'acte constitutif est présentement en révision. Cette section est donc sujette aux changements.
+**Tout ce qui concerne l'acte constitutif est présentement en révision. Cette section est donc sujette aux changements.**
 
 </div>
 </div>
