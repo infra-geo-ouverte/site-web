@@ -21,7 +21,7 @@ submenu:
 * **Services  accessibles**  
   * API de recherche(services de recherche ouverts) 
     * [iCherche Geocode](https://gitlab.forge.gouv.qc.ca/geomatique/api/wikis/geocode) : formatage et géocodage d'adresses basé sur Adresses Québec 
-    * [iCherche Territoire](https://geoegl.msp.gouv.qc.ca/apis/territoires/docs) : Recherche par élément spatial et filtrage  (supporte plusieurs éléments du découpage territorial  québécois)  
+    * [TerrAPI](https://geoegl.msp.gouv.qc.ca/apis/territoires/docs) : Recherche par élément spatial et filtrage  (supporte plusieurs éléments du découpage territorial  québécois)  
     
 ## Technologies utilisées et supportées
  [Détail des librairies utilisées et des services supportés](http://www.igouverte.org/documentation/techno/) 
