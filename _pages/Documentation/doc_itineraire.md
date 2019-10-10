@@ -9,35 +9,36 @@ iconedocumentation: ""
 =====================
 
 ## Référence pour l'API
-Voir cette [référence en **anglais seulement** du Server API d'Open Source Routing Machine (OSRM) pour utiliser et intégrer le service dans vos applications Web.](https://github.com/Project-OSRM/osrm-backend/blob/master/docs/http.md) 
+L'outil d'itinéraire développé dans le cadre d'IGO, est en fait l'API d'Open Source Routing Machinne (OSRM) appliqué au réseau routier du MTQ.
+
+Voir cette [référence en **anglais seulement** du Server API d'Open Source Routing Machine (OSRM) pour utiliser et intégrer le service dans vos applications Web.](https://github.com/Project-OSRM/osrm-backend/blob/master/docs/http.md)
 
 IMPORTANT : Il s'agit de changer l'URL de l'hôte : http://router.project-osrm.org par celui du service du MSP : https://geoegl.msp.gouv.qc.ca/services/itineraire/.
 
 =====================
 
-### Exemple avec "viaroute"
+### Exemple :
 
-Calcul du chemin le plus court entre deux coordonnées et d'une liste ordonnée de point intermédiaire.
+Calcul du chemin le plus court entre deux coordonnées :
 
-> https://geoegl.msp.gouv.qc.ca/services/itineraire/nearest/v1/driving/-71.7719940621812,45.444943646257855?number=1
+> https://geoegl.msp.gouv.qc.ca/services/itineraire/route/v1/driving/-73.535056,45.523849;-71.295712,46.715801?geometries=geojson&overview=simplified
 
-Paramètres:
-- Pour choisir le mode de transport : &graph=valeur  
-  Liste des valeurs: voiture
-- Formatter le résulat en [JSONP](http://en.wikipedia.org/wiki/JSONP) : &JSONP=FonctionCallback
-- Obtenir les information de navigation: &instructions= false ou true
-- Obtenir une route alternative: &alt= false ou true
-- Désactiver la compression : &compression= false ou true  (La compression [Encoded Polyline Algorithm Format](https://developers.google.com/maps/documentation/utilities/polylinealgorithm) de l'API google est utilisée par défaut.)
++ Pour de l'information sur les paramètres de cette requête, voir la documentation du [service d'itinéraire](http://project-osrm.org/docs/v5.22.0/api/#route-service) de OSRM.
 
-Le JSON retourné ressemblera à ceci:
-> {"status":0, 
-"status_message": "Found route between points", 
-"route_geometry": [[46.548358, -71.099907],[46.549629, -71.096738],[46.551233, -71.092805],[46.553778,-71.086544],[46.555336,-71.082701],[46.556366, -71.080120],[46.551462,-71.083229],[46.551127, -71.083415],[46.550785, -71.083571],[46.550443,-71.083693],[46.550099, -71.083777],[46.549512, -71.083865],[46.547862,-71.084074],[46.546633, -71.084228],[46.546099, -71.084272],[46.545747,-71.084269],[46.545055, -71.084179],[46.544552, -71.084043],[46.544036,-71.083842],[46.543550, -71.083579],[46.541323, -71.082138],[46.540213,-71.081447],[46.539554, -71.081100],[46.539054, -71.080870],[46.538427,-71.080617],[46.539500, -71.077874],[46.542587, -71.070270],[46.542621,-71.070216],[46.542696, -71.070177],[46.542765, -71.070176],[46.542818,-71.070209],[46.542882, -71.070257],[46.543063, -71.070551],[46.543154,-71.070653],[46.543246, -71.070655],[46.543634, -71.070154],[46.543674,-71.070046],[46.543673, -71.069988],[46.543492, -71.069556],[46.543357,-71.069321],[46.543105, -71.069040],[46.543357, -71.069321],[46.543492,-71.069556],[46.543673, -71.069988],[46.543674, -71.070046],[46.543634,-71.070154],[46.543246, -71.070655],[46.543154, -71.070653],[46.543063,-71.070551],[46.542882, -71.070257],[46.542765, -71.070176],[46.542696,-71.070177],[46.542621, -71.070216],[46.542587, -71.070270],[46.540462,-71.075523],[46.540071, -71.076457],[46.539500, -71.077874],[46.538427,-71.080617],[46.537205, -71.080196]], 
-"route_instructions":[["10","Rang Saint-Laurent",1756,0,6557,"1756m","NE",60],["4","Route du Président-Kennedy",2103,5,117,"2103m","SW",203],["6","Rue Poulin",1175,24,4233,"1175m","NE",60],["5","Rue Poulin",1175,40,4233,"1175m","NW",323],["8","Route du Président-Kennedy",139,57,0,"139m","S",166],["15","",0,58,0,"","N",0.0]],
-"route_summary":{"total_distance":6351,"total_time":15141,"start_point":"Rang Saint-Laurent","end_point":"Route du Président-Kennedy"}, 
-"alternative_geometries": [], 
-"alternative_instructions":[],"alternative_summaries":[], "route_name":["Rang Saint-Laurent","Route du Président-Kennedy"],
-"alternative_names":[["",""]],
-"via_points":[[46.548358,-71.099907],[46.543012,-71.070463],[46.537205,-71.080196]], "via_indices":[0,59,95],
-"alternative_indices":[], 
-"hint_data":{"checksum":-460876609,  "locations":["2tgJALngCQDHBQAAOgAAAKYAAAAAAAAALwUAAJMqBwCGRcYC_RnD-wAA2SU","-N8JAFzlCQCyAQAAAwAAAAQAAABpAwAArQAAAJwwBwCkMMYCAY3D-wwA2SU","998JABjhCQA3BgAAPwAAACcBAAAOAAAAjwMAAH4vBwD1GcYC_GbD-wEAAAA"] }}
++ Le GEOJSON retourné ressemblera à ceci:
+> {code: "Ok",
+waypoints: [
+{hint: "8tsCgCgXBIBbAQAAXwAAAAwCAAC3AQAA12yaQh1BqUEZKOlCD13DQlsBAABfAAAADAIAALcBAADYAAAAZvad-x6otgKw8Z37iaO2AgQAHxMrWkKj",
+location: [-73.53385,45.525022],
+name: "Voie"},{
+hint: "zNsIgP___38MAAAADAAAAMIBAAAfAAAALsnRQQAAAADeyXlEmr2FQgwAAAAMAAAAwgEAAB8AAADYAAAAOyDA-wvTyAIgHcD7mdPIAiAALwwrWkKj",
+location: [-71.294917,46.715659],
+name: "Autoroute Jean-Lesage"}],
+routes: [{legs: [{steps: [ ],weight: 11237.7,distance: 237639.7,
+summary: "",duration: 11237.7}],weight_name: "routability",
+geometry: {coordinates: [[-73.53385,45.525022],[-73.53457,45.519146],[-73.514253,45.521409],[-73.52041,45.531643],[-73.476121,45.57806],[-73.426201,45.568635],
+[-73.244366,45.593356],[-73.137768,45.595153],[-73.024261,45.63215],[-72.989346,45.634088],[-72.838908,45.671556],[-72.670915,45.780425],[-72.516683,45.909308],
+[-72.486187,45.910916],[-72.314734,46.054557],[-72.283542,46.066764],[-72.060971,46.213971],[-72.057422,46.243324],[-71.649043,46.519472],[-71.633148,46.542853],
+[-71.598145,46.552893],[-71.505911,46.620631],[-71.302776,46.69647],[-71.292497,46.717802],[-71.283267,46.721867],[-71.27743,46.716383],[-71.280421,46.727231],
+[-71.294917,46.715659]],
+type: "LineString"},weight: 11237.7,distance: 237639.7,duration: 11237.7}]}
