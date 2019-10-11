@@ -6,4 +6,4 @@ titre-faq: Pourquoi collaborer?
 ---
 
 
-Pour aider à améliorer le produit et à l'implanter chez des clients partenaires ou connexes ayant des besoins en cartographie Web. Pour plus de détails sur les contributions, voir la [section Contribuer](/contribuer).
+La mise en commun de l’expertise, les échange d’idées et critiques constructives pour avancer plus loin, plus vite. Tout ce qui est développé profite à tout le monde.
