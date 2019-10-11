@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 8
+faqsection: 08
 titre-faq: IGO permet-il l’édition de données?
 ---
 

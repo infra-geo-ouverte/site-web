@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 5
+faqsection: 05
 titre-faq: Comment démarrer le développement avec IGO?
 ---
 

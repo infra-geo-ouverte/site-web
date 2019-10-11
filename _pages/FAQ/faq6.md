@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 6
+faqsection: 06
 titre-faq: Quels sont les navigateurs supportés?
 ---
 

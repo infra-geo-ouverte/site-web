@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 4
+faqsection: 04
 titre-faq: Est-ce qu'IGO est meilleur que d’autres solutions logicielles?
 ---
 

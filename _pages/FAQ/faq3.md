@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 3
+faqsection: 03
 titre-faq: Quels sont les avantages à passer à IGO?
 ---
 

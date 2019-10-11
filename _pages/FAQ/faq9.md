@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 9
+faqsection: 09
 titre-faq: Combien ça coûte?
 ---
 

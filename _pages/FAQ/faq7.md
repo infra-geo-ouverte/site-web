@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 layout: faq
-faqsection: 7
+faqsection: 07
 titre-faq: Quelles données peuvent être affichées dans IGO?
 ---
 
