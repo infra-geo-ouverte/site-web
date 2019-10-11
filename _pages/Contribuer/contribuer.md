@@ -13,7 +13,7 @@ submenu:
 # Contribuer 
 Nous sommes bien heureux que vous pensiez contribuer à IGO!
 Avant de le faire, nous vous encourageons à lire le guide de contribution (la page courante), la [LICENCE](https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt) et la [FAQ](/faq/).
-Si vous avez d'autres questions, n'hésitez pas à communiquer avec nous à l'adresse suivante : info(a)igouverte.org ou à vous inscrire à la liste courriel.
+Si vous avez d'autres questions, n'hésitez pas à communiquer avec nous à l'adresse suivante : info(a)igouverte.org
 
 <a id="facon"></a>
 ## Façons de contribuer
