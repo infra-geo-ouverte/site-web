@@ -37,12 +37,13 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 <a id="2.2"></a>
 #### 2.2. *TerrAPI* permet de :
-**Voir la documentation [ici](https://geoegl.msp.gouv.qc.ca/apis/terrAPI/docs)**
 + Lister les territoires : Retourne tous les territoires correspondants à un type avec des possibilités de filtrage (ex: "obtenir la liste des municipalités commençant par 'Meg' et la trier").
 + Rechercher par ID : retourne le territoire correspondant à l'identifiant spécifié (ex : "Obtenir la région administrative avec l'identifiant ou le geocode 01).
 + Rechercher par territoire : retourne la liste des territoires qui intersectent le ou les territoires choisis (ex: "obtenir les municipalités contenues dans un territoire de CLSC ou de savoir quelle est la région touristique d'une municipalité").
 + Valider l'intersection : valide si deux territoires s'intersectent (ex: "valider si la municipalité de Sainte-Thérèse intersecte la MRC de Thérèse-De-Blainville")
 + Localiser : raccourci pour plusieurs recherches de territoire intersectant des points XY ou un geojson, avec possibilité de spécifier plusieurs types (gécodage inversé); ce service peut également retourner les éléments (comme la municipalité, l'adresse,...) qui sont à une distance donnée du point XY.
+
+  **Voir la documentation [ici](https://geoegl.msp.gouv.qc.ca/apis/terrAPI/docs)**
 
 <a id="2.3"></a>
 #### 2.3. *Le service de calcul et de gestion d’itinéraire* (API) permet :
