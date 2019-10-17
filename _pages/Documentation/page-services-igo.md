@@ -51,7 +51,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 <a id="2.4"></a>
 #### 2.4. *Le service de géocodage en lot* permet :
-+ de  [géocoder des points, à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (par ex. : csv)](https://geoegl.msp.gouv.qc.ca/GeocodageLot/). Le fichier doit minimalement contenir un champ contenant l'adresse complète ou le  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>. 
++ de  [géocoder des points, à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (par ex. : csv)]( http://www.geomsp.qc/GeocodageLot/). Le fichier doit minimalement contenir un champ contenant l'adresse complète ou le  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>. 
 
 <a id="2.5"></a>
 #### 2.5. *La recherche de lots rénovés* permet :
