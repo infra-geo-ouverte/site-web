@@ -11,7 +11,7 @@ submenu:
   - { hook: "cp", title: "Comité de pilotage (CP)" }
   - { hook: "ct", title: "Comité technique (CT)" }
   - { hook: "contributeurs", title: "Contributeurs" }
-  - { hook: "financement", title: "Sources de financement" }
+  - { hook: "fonctionnement", title: "Modes de fonctionnement" }
   - { hook: "mecanisme", title: "Mécanismes de prise des décisions" }
   - { hook: "gestion", title: "Gestion des demandes de changements ou d’amélioration" }
   - { hook: "outils", title: "Outils de travail de la communauté" }
@@ -57,7 +57,7 @@ Notons que tous les acteurs de la communauté ont de l’importance pour la bonn
 qu’ils sont tous régulièrement informés des décisions des différents comités.
 
 <a id="cd"></a>
-## Comité directeur (CD)[<span class="octicon octicon-link"></span>](#cd)
+## Comité directeur (CD) [<span class="octicon octicon-link"></span>](#cd)
 
 Le comité directeur a comme mandat de superviser l’ensemble des activités de la communauté IGO. Il est
 composé de gestionnaires (ou de leurs représentants) provenant de tout organisme qui a fourni au cours de la
@@ -82,7 +82,7 @@ les suivantes :
 - Représenter le comité directeur lorsque sa présence est sollicitée par d’autres instances.
 
 <a id="cp"></a>
-## Comité de pilotage (CP)[<span class="octicon octicon-link"></span>](#cp)
+## Comité de pilotage (CP) [<span class="octicon octicon-link"></span>](#cp)
 
 Le comité de pilotage est responsable de la bonne compréhension des besoins métier et de la satisfaction des
 utilisateurs. Il est formé de personnes issues des organismes contributeurs pour représenter les utilisateurs de
@@ -109,7 +109,7 @@ Ses responsabilités sont les suivantes :
 - Siéger aux comités directeur et technique à titre de représentant du CP.
 
 <a id="ct"></a>
-## Comité technique (CT)[<span class="octicon octicon-link"></span>](#ct)
+## Comité technique (CT) [<span class="octicon octicon-link"></span>](#ct)
 
 Le comité technique assure le leadership technique des activités de la communauté. Il est composé de
 développeurs experts et de spécialistes en infrastructure qui participent à la conception et à la réalisation de la
@@ -143,7 +143,7 @@ Le coordonnateur du CT est nommé par les membres du CT. Ses responsabilités so
 - Siéger aux comités directeur et de pilotage à titre de représentant du comité technique.
 
 <a id="contributeurs"></a>
-## Contributeurs[<span class="octicon octicon-link"></span>](#contributeurs)
+## Contributeurs [<span class="octicon octicon-link"></span>](#contributeurs)
 
 Nous entendons par contributeur toute personne qui participe activement aux activités de la communauté,
 sans nécessairement faire partie d’un comité. Les principaux acteurs sont regroupés en trois catégories :
@@ -172,11 +172,11 @@ des autres développeurs. Ils ont les responsabilités suivantes :
 
 - Approuver et intégrer le code soumis en s’assurant que les conventions et règles sont respectées.
 
+<a id="fonctionnement"></a>
+## Modes de fonctionnement [<span class="octicon octicon-link"></span>](#fonctionnement)
 
-## Modes de fonctionnement
 
-<a id="financement"></a>
-### Sources de financement[<span class="octicon octicon-link"></span>](#financement)
+### Sources de financement
 
 Les sources de financement de la communauté se traduisent par une participation financière et/ou humaine et/
 ou matérielle des contributeurs. Le CD a la responsabilité de garantir un apport financier, humain et matériel
@@ -191,7 +191,7 @@ logiciel est tenue de le faire sous les termes de la LiLiQ et d’en permettre l
 Référence : https://forge.gouv.qc.ca/licence/liliq-v1-1/#réciprocité-liliq-r
 
 <a id="mecanisme"></a>
-### Mécanismes de prise des décisions[<span class="octicon octicon-link"></span>](#mecanisme)
+### Mécanismes de prise des décisions [<span class="octicon octicon-link"></span>](#mecanisme)
 
 Ces mécanismes de prise de décision ne sont pas propres à un comité en particulier. Ils doivent s’appliquer
 uniformément à tous les comités de la communauté. Les mécanismes suivants sont retenus :
@@ -231,7 +231,7 @@ cas, la personne votante doit proposer une solution alternative
 - Le résultat du vote est compilé et publié.
 
 <a id="gestion"></a>
-### Gestion des demandes de changements ou d’amélioration[<span class="octicon octicon-link"></span>](#gestion)
+### Gestion des demandes de changements ou d’amélioration [<span class="octicon octicon-link"></span>](#gestion)
 
 Les demandes de changement ou d’améliorations peuvent émaner des utilisateurs (elles couvrent alors l’aspect
 métier) ou bien du comité technique (pour couvrir l’aspect technique). Si le changement est important (forte
@@ -254,7 +254,7 @@ formulée au comité technique. Dans le cas d’un changement impactant les util
 l’approbation du comité pilotage sont nécessaires.
 
 <a id="outils"></a>
-### Outils de travail de la communauté[<span class="octicon octicon-link"></span>](#outils)
+### Outils de travail de la communauté [<span class="octicon octicon-link"></span>](#outils)
 
 Une forge désigne un système de gestion de développement collaboratif de logiciel qui propose un ensemble
 d’outils dédiés au développement d’un ou de plusieurs logiciels.
