@@ -45,7 +45,7 @@ La structure de gouvernance se décline en trois comités :
 
 ## Schéma de la structure de la communauté
 
-![Schéma][https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/schema_communaute.png]
+![Schéma](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/schema_communaute.png)
 
 Les utilisateurs ou les développeurs peuvent devenir contributeurs, qui peuvent à leur tour devenir membres
 de comités, s’ils ont un intérêt dans la prise de décisions concernant l’évolution de la solution et que leur
