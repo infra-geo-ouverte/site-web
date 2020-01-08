@@ -4,270 +4,280 @@ layout: general
 title-main: Communauté
 iconecommunaute: ""
 submenu:
-  - { hook: "mission", title: "1. Mission de la communauté IGO" }
-  - { hook: "structure", title: "2. Structure de la communauté IGO" }
-  - { hook: "financement", title: "3. Sources de financement" }
-  - { hook: "licence", title: "4. Licence" }
-  - { hook: "droitauteur", title: "5. Droits d'auteur" }
-  - { hook: "principes", title: "6. Principes et mécanismes de prise des décisions" }
-  - { hook: "charte", title: "7. Charte du comité technique" }
-  - { hook: "codage", title: "8. Convention et règles de codage" }
-  - { hook: "depot", title: "9. Dépôt du code source et outils de communications" }
-  - { hook: "amendement", title: "10. Amendement de ce présent acte constitutif" }
-  - { hook: "annexe1", title: "Annexe 1: Charte du comité technique" }
-  - { hook: "annexe2", title: "Annexe 2: Foire aux Questions" }
+  - { hook: "mission", title: "Mission" }
+  - { hook: "structure", title: "Structure et parties prenantes" }
+  - { hook: "communaute", title: "Schéma de la structure de la communauté" }
+  - { hook: "cd", title: "4. Comité directeur (CD)" }
+  - { hook: "cp", title: "Comité de pilotage (CP)" }
+  - { hook: "ct", title: "Comité technique (CT)" }
+  - { hook: "contributeurs", title: "Contributeurs" }
+  - { hook: "financement", title: "Sources de financement" }
+  - { hook: "mecanisme", title: "Mécanismes de prise des décisions" }
+  - { hook: "gestion", title: "Gestion des demandes de changements ou d’amélioration" }
+  - { hook: "outils", title: "Outils de travail de la communauté" }
 ---
 {::options parse_block_html="true" /}
-<div class="panel panel-danger">
-**Message important!**
-{: .panel-heading}
-<div class="panel-body">
-
-**Tout ce qui concerne la gouvernance est présentement en révision. Cette section est donc sujette aux changements.**
-
-</div>
-</div>
 
 # Acte constitutif
 
-<a id="mission"></a>
-## 1. Mission [<span class="octicon octicon-link"></span>](#mission)
+# Charte de la communauté IGO
 
-Supporter le développement d’IGO afin d’assurer le respect des hauts standards internationaux en matière de géomatique et de répondre aux besoins des utilisateurs, notamment en diffusant les données géographiques produites par le gouvernement du Québec.
+## Mission
 
-<a id="structure"></a>
-## 2. Structure[<span class="octicon octicon-link"></span>](#structure)
+Supporter le développement et l’évolution de la solution IGO afin de répondre aux besoins des utilisateurs,
+notamment en diffusant les données géographiques produites par le gouvernement du Québec et ce, dans le
+respect des hauts standards internationaux en matière de géomatique.
 
-La communauté est composée de contributeurs, d’utilisateurs et d'un *comité technique* (CT). Le CT assure le leadership technique du projet dans son ensemble et s'assure de la bonne compréhension des besoins des utilisateurs et de leur satisfaction. Les développeurs, les utilisateurs et tout autre contributeur qui participent aux projets sont des acteurs aussi importants que les membres du comité. Cette structure de gouvernance ouverte est basée sur le fonctionnement du  [comité technique ou *Steering Committee* du projet MapServer](http://mapserver.org/fr/development/rfc/ms-rfc-1.html).
+## Structure et parties prenantes
 
-### 2.1. Comité technique (CT)
+La communauté IGO est composée d’utilisateurs et de contributeurs appuyés par une structure de gouvernance
+dont l’objectif est de définir les orientations et la stratégie d’évolution du projet et d’organiser le
+développement et l’évolution de la solution.
 
-Le CT assure le leadership technique des activités de la communauté.
+La structure de gouvernance se décline en trois comités :
 
-#### 2.1.1. Composition
-Le CT est composé de développeurs experts, de super-utilisateurs, de gestionnaires et de spécialistes en infrastructure qui participent à la conception, à la validation et à la réalisation de la solution. Le CT doit compter, parmi ses membres votants, au moins un valideur de code.
+1. Le **comité directeur** (CD) qui émet des orientations d’ordre stratégique (financières, matérielles et
+    humaines)
+2. Le **comité de pilotage** (CP) qui est responsable de la bonne compréhension des besoins métier et de la
+    satisfaction des utilisateurs
+3. Le **comité technique** (CT) qui assure le leadership technique du projet dans son ensemble et s’assure de
+    l’arrimage avec les besoins des utilisateurs.
 
-#### 2.1.2. Responsabilités du CT
-- Rédiger, modifier et amender la charte du CT et s'assurer de son respect par les membres de ce comité.
-- Tenir un calendrier d'évolution et le transmettre à la communauté pour information.
-- Identifier, collecter et consolider les besoins des utilisateurs.
-- Représenter la communauté auprès des organismes publics non membres et les partenaires extérieurs (incluant les fournisseurs de services, le cas échéant).
-- Étudier les demandes de changement et coordonner leurs réalisations par les contributeurs.
-- Gérer les droits d'accès au code.
-- Désigner les valideurs de code et les moyens techniques requis pour les projets de développement.
-- S'assurer d'une production adéquate de documentation et d'une architecture commune.
-- Rédiger les conventions et règles de codage.
-- Établir un mécanisme de gestion des versions en lien avec la communauté d'utilisateurs.
-- Suivre les déploiements de la solution et recueillir le retour sur l'expérience des utilisateurs.
-- Animer la communauté, la tenir informée et faire en sorte de la garder dynamique.
-- Produire, au besoin, des rapports du projet.
+## Schéma de la structure de la communauté
 
-#### 2.1.3. Coordonnateur du CT
-Le coordonnateur du CT est nommé par les membres du CT sous une formule de présidence tournante. Ses responsabilités sont les suivantes :
+![Schéma][https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/schema_communaute.png]
 
-- organiser les rencontres du CT;
-- publier les comptes rendus des réunions du CT.
+Les utilisateurs ou les développeurs peuvent devenir contributeurs, qui peuvent à leur tour devenir membres
+de comités, s’ils ont un intérêt dans la prise de décisions concernant l’évolution de la solution et que leur
+implication ou leur contribution dans la communauté le justifie.
 
-### 2.2. Contributeurs
-Nous entendons ici par contributeur, toute personne du domaine métier ou technique qui participe aux activités de la communauté. Les contributeurs incluent les :
+Notons que tous les acteurs de la communauté ont de l’importance pour la bonne santé de la communauté et
+qu’ils sont tous régulièrement informés des décisions des différents comités.
 
-- développeurs : ce sont en  général des programmeurs qui participent à la programmation du code du logiciel. **Un valideur de code est un profil particulier de développeur**. Les développeurs sont tenus de respecter les conventions, l'architecture commune et les règles de codage;
-- super-utilisateurs et utilisateurs : ce sont les utilisateurs de la solution (simples utilisateurs, pilotes, testeurs, etc.);
-- architectes et intégrateurs;
-- tout autre type de contributeurs.
+## Comité directeur (CD)
 
-#### 2.2.1. Valideurs de code
-Ce sont des programmeurs expérimentés et habilités à valider le travail des autres programmeurs. Ils approuvent et intègrent le code soumis au projet, puis s'assurent d'une documentation minimale au besoin. Les valideurs de code sont désignés par le CT. Un valideur de code doit être expert et s’engage à travailler pour garantir une meilleure stabilité du projet. Au moins un valideur de code doit faire partie du CT avec droit de vote. Pour plus d’information, voir [la section Principes et mécanisme de prise des décisions](#principes).
+Le comité directeur a comme mandat de superviser l’ensemble des activités de la communauté IGO. Il est
+composé de gestionnaires (ou de leurs représentants) provenant de tout organisme qui a fourni au cours de la
+dernière année, ou qui s’engage à fournir pour l’année en cours, une contribution concrète au noyau de
+l'application IGO. Le CD a les responsabilités suivantes :
 
-##### Exigences
-- Être un programmeur expérimenté avec une excellente connaissance du logiciel.
+- Assurer un apport financier, humain et matériel;
+- Entériner les recommandations proposées par les comités de pilotage et technique et approuver le
+    calendrier de réalisation (feuille de route stratégique);
+- Gérer la relation avec les organismes publics et les partenaires extérieurs;
+- Établir le code de conduite et statuer sur le choix de la licence;
+- Produire un bilan annuel (ou à une autre fréquence, selon les besoins).
 
-##### Statut
-- Le CT vote et approuve l'élection des valideurs de code.
-- Le statut du valideur de code peut être révoqué à tout moment par le CT et, par conséquent, celui-ci peut perdre les privilèges qui lui sont conférés.
+Le comité directeur se réunit deux fois par année (ou à une autre fréquence, selon les besoins).
 
-##### Privilèges
-- Permission de contribuer au dépôt du code source directement dans le tronc commun du logiciel sans modération préalable.
+### Coordonnateur du CD
 
-##### Responsabilités
-- S'assurer de l'intégrité des contributions (provenance, propriété intellectuelle, brevets, licence, etc.).
-- Respecter les règles de codage.
-- S'assurer d'avoir une documentation adéquate concernant les changements effectués.
+Le coordonnateur du comité est élu par les membres du comité directeur. Ses responsabilités sont
+les suivantes :
 
-<a id="financement"></a>
-## 3. Sources de financement  [<span class="octicon octicon-link"></span>](#financement)
- 
-Les sources de financement de la communauté se traduisent par une participation financière et/ou matérielle et/ou humaine.
+- Organiser les rencontres du comité et rédiger les comptes rendus;
+- Représenter le comité directeur lorsque sa présence est sollicitée par d’autres instances.
 
-<a id="licence"></a>
-## 4. Licence  [<span class="octicon octicon-link"></span>](#licence)
+## Comité de pilotage (CP)
 
-- Consulter la [LICENCE](https://github.com/infra-geo-ouverte/igo/blob/master/LICENCE.txt)
+Le comité de pilotage est responsable de la bonne compréhension des besoins métier et de la satisfaction des
+utilisateurs. Il est formé de personnes issues des organismes contributeurs pour représenter les utilisateurs de
+la solution. Le CP a les responsabilités suivantes :
 
-<a id="droitauteur"></a>
-## 5. Droits d'auteur   [<span class="octicon octicon-link"></span>](#droitauteur)
+- Consolider les besoins des utilisateurs et les présenter aux autres comités;
+- Étudier les demandes de changement et d’évolution en concertation avec le comité technique;
+- S’assurer que les modifications apportées à la solution informatique sont conformes aux attentes
+    initiales;
+- Suivre les déploiements et recueillir le retour d’expérience des utilisateurs;
+- Animer, informer et maintenir active la communauté;
+- Fournir un suivi des activités au comité directeur en collaboration avec le comité technique.
 
-À la lumière des définitions données dans les termes de la licence :
-« concédant » : le titulaire du droit d'auteur sur le logiciel, ou toute personne dûment autorisée par ce dernier à accorder la présente licence;
-« contributeur » : le titulaire du droit d'auteur ou toute personne autorisée par ce dernier à soumettre au concédant une contribution. **Un contributeur dont sa contribution est incorporée au logiciel est considéré comme un concédant en regard de sa contribution**.
 
-<a id="principes"></a>
-## 6. Principes et mécanismes de prise des décisions   [<span class="octicon octicon-link"></span>](#principes)
+Le comité de pilotage se réunit aux 4 mois environs (ou à une autre fréquence, selon les besoins), en général
+préalablement aux rencontres du comité technique.
 
-### 6.1. Chercher le consensus
-Il est préférable que les décisions soient prises à la suite d'un consensus entre les différents membres du CT. Le vote servira dans ce cas à officialiser ce consensus.
+### Coordonnateur du CP
 
-### 6.2. Membre votant
-Est considéré comme membre votant, un membre qui apporte une contribution substantielle (financière et/ou matérielle et\ou humaine) pour la communauté.
+Le coordonnateur du CP est nommé par les membres du CP (sur une base annuelle).
+Ses responsabilités sont les suivantes :
 
-### 6.3. Membre observateur
-Un membre  « observateur » est un contributeur qui n'a pas le droit de vote.
+- Organiser les rencontres du comité et en rédiger les comptes rendus;
+- Siéger aux comités directeur et technique à titre de représentant du CP.
 
-### 6.4. Poids du vote
-Un membre = une voix.
+## Comité technique (CT)
 
-### 6.5. Mécanisme de vote
-- Les motions sont inscrites sur une  liste de discussion et les votes se font en public, sauf dans les cas exigeant la confidentialité.
-- Le vote est habituellement ouvert pour une période relativement courte (ex. : trois jours ouvrables).
-- La notation suivante pour le vote est adoptée : +1, 0, -1 : 
-	1. + : signifie « je suis d'accord et je m'engage à supporter cette décision et à collaborer à sa réalisation »;
-	2. 0 : signifie « je m'abstiens »;
-	3. -1 : signifie « j'ai une objection ». Ceci est considéré comme étant un veto. Dans ce cas, la personne votante est dans l'obligation de fournir une motion de rechange.
-- Une proposition est acceptée si elle reçoit au moins +2 (incluant l'auteur) et aucun veto (-1).
-- Si une proposition reçoit un veto (-1) et qu'il est impossible de satisfaire toutes les parties après révision et discussion, la proposition peut être soumise pour un second vote ultime et, dans ce cas, un vote positif de la majorité absolue de tous les membres du comité est requis pour que la proposition soit acceptée. Dans ce cas, le veto ne s'applique plus.
+Le comité technique assure le leadership technique des activités de la communauté. Il est composé de
+développeurs experts et de spécialistes en infrastructure qui participent à la conception et à la réalisation de la
+solution. Les membres du comité technique proviennent des organismes contributeurs et sont fortement
+impliqués dans l’évolution du produit. Le CT doit compter au moins un validateur de code^1. Le CT a les
+responsabilités suivantes :
+
+- Proposer un calendrier d’évolution (feuille de route stratégique) en concertation avec le comité de
+    pilotage et le transmettre au comité directeur pour approbation;
+- Analyser les demandes de changement, donner un avis sur les incidences de celles-ci et effectuer les
+    recommandations aux autres comités tout en coordonnant leurs réalisations (feuille de route
+    technique);
+- Désigner les validateurs de code et gérer les droits d’accès au code;
+- Réaliser les choix de nature techniques (langages, logiciels, etc.);
+- Établir un mécanisme de gestion des versions;
+- Rédiger les conventions et règles de codage;
+- Produire le guide de contribution;
+- Fournir un suivi des activités au comité directeur en collaboration avec le comité de pilotage.
+
+Le comité se réunit aux 4 mois environs (ou à une autre fréquence, selon les besoins), en général à la suite des
+rencontres du comité de pilotage.
+
+1 Commiter en anglais
+
+
+### Coordonnateur du CT
+
+Le coordonnateur du CT est nommé par les membres du CT. Ses responsabilités sont les suivantes :
+
+- Organiser les rencontres du comité et en rédiger les comptes rendus;
+- Siéger aux comités directeur et de pilotage à titre de représentant du comité technique.
+
+## Contributeurs
+
+Nous entendons par contributeur toute personne qui participe activement aux activités de la communauté,
+sans nécessairement faire partie d’un comité. Les principaux acteurs sont regroupés en trois catégories :
+
+**Utilisateurs** ou ambassadeurs : ce sont les utilisateurs ou les promoteurs de la solution en logiciel libre de la
+communauté qui s’engagent significativement dans l’évolution et la promotion de la solution. Ils peuvent
+participer de plusieurs façons :
+
+- Essais et rapports de bogues;
+- Documentation d’utilisation;
+- Assistance aux autres utilisateurs;
+- Activités de promotion;
+- Coordination, charge de projet ou services-conseils.
+
+**Développeurs** : ce sont en général des programmeurs en informatique ou géomatique, des intégrateurs ou des
+concepteurs de site web. Ils ont les responsabilités suivantes :
+
+- Développer le nouveau code;
+- Corriger et améliorer le code existant;
+- Concevoir l’assemblage commun de l’outil web;
+- Définir l’ergonomie et le rendu visuel;
+- Produire la documentation technique.
+
+**Validateurs de code** : ce sont des programmeurs experts désignés par le CT, qui sont habilités à valider le travail
+des autres développeurs. Ils ont les responsabilités suivantes :
+
+- Approuver et intégrer le code soumis en s’assurant que les conventions et règles sont respectées.
+
+
+## Modes de fonctionnement
+
+### Sources de financement
+
+Les sources de financement de la communauté se traduisent par une participation financière et/ou humaine et/
+ou matérielle des contributeurs. Le CD a la responsabilité de garantir un apport financier, humain et matériel
+suffisant pour assurer la pérennité de la solution.
+
+### Licence et droit d’auteur
+
+IGO est un logiciel libre utilisant la version Réciprocité de la Licence Libre du Québec (LiLiQ-R), qui vise à
+préserver le caractère libre des logiciels y étant assujettis. Ainsi, toute personne qui modifie et distribue un tel
+logiciel est tenue de le faire sous les termes de la LiLiQ et d’en permettre l’accès au code source.
+
+Référence : https://forge.gouv.qc.ca/licence/liliq-v1-1/#réciprocité-liliq-r
+
+### Mécanismes de prise des décisions
+
+Ces mécanismes de prise de décision ne sont pas propres à un comité en particulier. Ils doivent s’appliquer
+uniformément à tous les comités de la communauté. Les mécanismes suivants sont retenus :
+
+#### Chercher le consensus
+
+Comme principe général, il est préférable que les décisions soient prises à la suite d’un consensus entre les
+différents membres d’un comité. Si un consensus ne peut être obtenu, le vote sera utilisé.
+
+#### Choix des membres des comités
+
+Les organisations qui apportent une contribution significative (financière, matérielle ou humaine) au
+développement du produit qui bénéficie à l’ensemble de la communauté sont éligibles à être
+représentés sur les différents comités et pouvoir ainsi participer à la prise de décision.
+
+#### Mécanisme de vote
+
+Le vote est utilisé si le consensus ne peut être obtenu dans le comité concerné ou si une consultation plus large
+est pertinente pour la décision. Les règles suivantes sont appliquées :
+
+- Poids du vote : un membre = une voix;
+- La notation suivante pour le vote est adoptée :
+
+
+```
++1 Signifie « je suis d’accord et m’engage à supporter cette décision et collaborer à sa
+réalisation »
+0 Signifie « je m’abstiens »
+-1 Signifie « j’ai une objection ». Ce vote est considéré comme étant un veto : dans ce
+cas, la personne votante doit proposer une solution alternative
+```
+- Une proposition est acceptée si elle reçoit au moins +2 (incluant l’auteur) et aucun veto (-1);
+- Si une proposition reçoit un veto (-1) et qu’il est impossible de satisfaire toutes les parties après
+    discussion, la proposition peut être soumise pour un second vote ultime. Dans ce cas, un vote positif de
+    la majorité absolue de tous les membres du comité sera requis pour que la proposition soit acceptée et
+    le veto ne s’applique plus;
 - Le résultat du vote est compilé et publié.
 
-### 6.6. Gestion des demandes de changements (RFC) 
-Le processus de demande de changement (RFC) doit suivre le processus suivant :
+### Gestion des demandes de changements ou d’amélioration
 
-- discussions préliminaires sur la liste de discussion; 
-- production d'un document de demande de changement dans le dépôt du projet à partir des gabarits fournis (raison d'être, conditions, moyens, règle, composantes, etc.); 
-- recherche de consensus;
-- discussion du CT par rapport à la demande de changement; 
-- vote du CT au besoin;
-- publication des documents de demande de changement sur le site GitHub d'IGO.
+Les demandes de changement ou d’améliorations peuvent émaner des utilisateurs (elles couvrent alors l’aspect
+métier) ou bien du comité technique (pour couvrir l’aspect technique). Si le changement est important (forte
+implication humaine et/ou financière), une demande d’autorisation est formulée et envoyée au CD pour
+approbation.
 
-### 6.7. Gestion des révisions 
-- Dépôt d'un plan de livraison.
-- Plan livraison -> gel de fonctionnalités -> version bêta -> RC (candidate release) -> livraison. 
-- Rôle de responsable de livraison (doit être un valideur de code). 
+#### Demandes des utilisateurs
 
-### 6.8. Cycle de révisions : 
-- Le cycle des révisions est basé sur la feuille de route (“roadmap”).
+Les besoins de changements ou d’améliorations sont souvent exprimés par les utilisateurs. Le comité de
+pilotage détermine si une demande doit être réalisée ou non et précise la priorité accordée. S’ensuit une
+discussion avec le comité technique afin de déterminer la faisabilité et les efforts requis. Au final, les demandes
+acceptées sont ajoutées à la feuille de route technique.
 
-<a id="charte"></a>
-## 7. Charte du comité technique    [<span class="octicon octicon-link"></span>](#charte)
+#### Demande de changements techniques
 
-Se référer à [l'annexe 1](#annexe1)
+Les changements d’ordre technique sont très variés : ils peuvent survenir en raison d’une évolution
+technologique, de la découverte d’un problème de sécurité, etc. Généralement, les développeurs vont tenir des
+discussions préliminaires afin de bien cerner la portée du changement. Éventuellement, une demande est
+formulée au comité technique. Dans le cas d’un changement impactant les utilisateurs, la consultation et
+l’approbation du comité pilotage sont nécessaires.
 
-<a id="codage"></a>
-## 8. Convention et règles de codage [<span class="octicon octicon-link"></span>](#codage)
-La convention de codage est un document interne rédigé par le CT. On peut s’en servir ou se servir de tout autre document que le CT juge utile. Cette convention doit être respectée par les développeurs et vise à uniformiser le code et les méthodes de travail (ex. : règles d'écriture du code source, d'architecture, du modèle de données, etc.).
 
-<a id="depot"></a>
-## 9. Dépôt du code source et outils de communication     [<span class="octicon octicon-link"></span>](#depot)
-Dépôts du code source : [https://github.com/infra-geo-ouverte/igo2](https://github.com/infra-geo-ouverte/igo2)
- et [https://github.com/infra-geo-ouverte/igo](https://github.com/infra-geo-ouverte/igo)
+### Outils de travail de la communauté
 
-Outils de communication : si vous avez d'autres questions, n'hésitez pas à communiquer avec nous à l'adresse suivante : info(a)igouverte.org ou à vous inscrire à la [liste courriel](http://listes.securitepublique.gouv.qc.ca/sympa/info/igo-publique).
+Une forge désigne un système de gestion de développement collaboratif de logiciel qui propose un ensemble
+d’outils dédiés au développement d’un ou de plusieurs logiciels.
 
-<a id="amendement" ></a>
-## 10. Amendement de ce présent acte constitutif [<span class="octicon octicon-link"></span>](#amendement)
+#### Forge publique
 
-Toute personne qui souhaite participer à la communauté IGO est tenue de respecter cet acte constitutif. Le CT se réserve le droit d’amender cet acte à tout moment sauf dans la partie Licence du logiciel IGO où les termes de la  [licence](https://github.com/infra-geo-ouverte/igo2/blob/master/LICENCE.txt) dominent.  
+Github est retenu comme forge publique pour IGO pour gérer le code du tronc commun d’IGO :
 
-<a id="acteur" ></a>
+- https://github.com/infra-geo-ouverte/igo2 (code assemblé pour l'application commune)
+- https://github.com/infra-geo-ouverte/igo2-lib (librairie des fonctionnalités communes de base)
 
-## 11. Schéma de gouvernance [<span class="octicon octicon-link"></span>](#acteur)
-<span id="acteurs">
-![Acteurs de la communauté](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/gouvernanceExterne.png)
-</span>
-<a id="annexe1" ></a>
-## Annexe 1 : Charte du CT [<span class="octicon octicon-link"></span>](#annexe1)
+Les utilisateurs peuvent soumettre des tickets (bogues ou suggestions d’amélioration) via les outils de tickets
+Github et ceux-ci seront révisés par les comités de pilotage et techniques. Les changements futurs et leur
+priorisation (feuille de route technique) sont publiés via l’outil de planification des versions Github.
 
-### A1. Mission 
-Le comité technique (CT) est chargé d'assurer le leadership technique pour la gestion d’IGO et il prend les décisions concernant les questions liées aux aspects techniques. Il constitue le comité ultime d'appel des décisions techniques.
+#### Forge gouvernementale
 
-### A2. Responsabilités du CT
-- Rédiger, modifier et amender la charte du CT et s'assurer de son respect par les membres de ce comité.
-- Tenir un calendrier d'évolution et le transmettre à la communauté pour information.
-- Identifier, collecter et consolider les besoins des utilisateurs.
-- Représenter la communauté auprès des organismes publics non membres et les partenaires extérieurs (incluant les fournisseurs de services, le cas échéant).
-- Étudier les demandes de changement et coordonner leurs réalisations par les contributeurs.
-- Gérer les droits d'accès au code.
-- Désigner les valideurs de code et les moyens techniques requis pour les projets de développement.
-- S'assurer d'une production adéquate de documentation et d'une architecture commune.
-- Rédiger les conventions et règles de codage.
-- Établir un mécanisme de gestion des versions en lien avec la communauté d'utilisateurs.
-- Suivre les déploiements de la solution et recueillir le retour sur l'expérience des utilisateurs.
-- Animer la communauté, la tenir informée et faire en sorte de la garder dynamique.
-- Produire, au besoin, des rapports du projet.
+Le gouvernement du Québec dispose d’une forge qui est à la disposition des organismes publics. Elle offre la
+possibilité d’y héberger du code en mode public ou privé. Plusieurs contributeurs à IGO utilisent le gestionnaire
+de dépôts Gitlab de la Forge gouvernementale pour le développement de la version personnalisée de leur
+navigateur IGO ou de services connexes.
 
-### A3. Représentants du CT    
-Le CT actuel a pour mandat d'assurer le leadership technique de la communauté. 
-Voici les membres actuels (un par organisation) :
+La Forge gouvernementale est également utilisée comme outil d’interaction entre les différents comités. La
+planification de haut niveau des tâches est disponible via les outils de tickets de Gitlab. La feuille de route
+stratégique qui reflète les contributions de chacun et l’évolution sur une base annuelle ainsi que les autres
+documents d’intérêt à la gouvernance du projet sont publiés sur le wiki de Gitlab.
 
-- CPTAQ : Karl Gingras
-- FADQ : Jean-François Martineau
-- INSPQ : Matthieu Tandonnet
-- MCC : Sylvie Girouard 
-- MFFP-Forêts : Josée Martel
-- MFFP-Faune : Nicolas Gignac
-- MTQ : Pierre-Étienne Lord
-- MERN : Carl Pelletier
-- MSP : Véronique Payan
-- MSSS : Hans Grisé
-- SCT : Claude Durocher
+Enfin, un salon de discussion ainsi qu’une liste de distribution sont à la disposition des membres de la
+communauté.
 
-### A4. Coordonnateur du CT
-Après chaque réunion, le CT propose un de ses membres pour agir à titre de coordonnateur du CT sous une présidence tournante (ordre défini par l'ordre alphabétique des organismes partenaires). En cas de plusieurs candidats, le choix du candidat se fait selon le mécanisme de vote de la communauté IGO. Les responsabilités du  coordonnateur du CT sont :
+Pour accéder à l’un ou l’autre de ces outils, envoyer un courriel à info@igouverte.org.
 
-- d'organiser les rencontres du CT;
-- de publier les comptes rendus des réunions du CT.
-
-### A5. Réunions 
-- Les réunions se déroulent tous les 4 mois environs (3 par an) soit en septembre, janvier, mai.
-- Le coordonnateur du CT doit proposer un ordre du jour deux semaines à l'avance.
-- Une réunion spéciale du CT peut être convoquée si un de ses membres en fait la demande sur la liste de diffusion au moins deux jours avant l'heure de réunion.
-- La tenue d'une réunion est conditionnelle à la participation d'au moins 50 % des membres du CT.
-
-### A6. Motions 
-Avant d'être soumises à un vote, les motions doivent être présentées et discutées publiquement à la recherche d'un consensus sur la liste de diffusion des développeurs, pour un minimum de deux jours ouvrables.
-
-### A7. Délégation du droit du vote 
-Un membre du CT qui se trouve dans l'impossibilité d'assister à une réunion peut mandater un représentant de son opinion qui votera en son nom.
-
-### A8. Candidatures au CT 
-Tout contributeur technique actif ou super-utilisateur peut soumettre sa candidature pour devenir membre du CT.
-
-### A9. Amendement
-L'amendement de cette présente charte du CT est proposé dans une motion spéciale qui, pour être acceptée, doit être approuvée selon les principes et les mécanismes de prise de décisions de la communauté.
-
-<a id="annexe2"></a>
-## Annexe 2 : foire aux questions (FAQ) [<span class="octicon octicon-link"></span>](#annexe2)          
-
-### Comment un développeur peut-il devenir un valideur de code?
-Les valideurs de code sont des développeurs expérimentés. Il est possible de devenir valideur de code en réalisant les étapes suivantes :
-
-- Contribuer régulièrement à la validation de code en envoyant des ajouts ou des modifications par l’intermédiaire du système de suivi de bogues.
-- Faire réviser et endosser ces modifications par un ou des valideurs de code pour inclusion officielle dans le logiciel. Cela permet de gagner la confiance des autres valideurs de code.
-- Confirmer le désir de devenir valideur de code et de respecter les règles d'engagement.
-- Se faire attribuer le titre de valideur de code par un vote du CT.
-- Être un valideur de code actif et respecter les règles d'engagement. Dans le cas contraire, la personne peut se faire révoquer sa qualité de valideur de code par le CT et, par conséquent, perdre les privilèges qui lui sont conférés.
-
-### Comment gagner la confiance des autres valideurs de code?
-
-- Avoir une bonne compréhension de l'architecture, des outils et des méthodes de fonctionnement du projet.
-- Écrire du code de qualité.
-- Avoir de bonnes aptitudes de communication.
-- Avoir l'intention de rester actif à moyen et à long terme.
-- Être disposé à suivre une formation ou à subir « un examen par les pairs » pour acquérir la qualité de valideur de code d'une façon accélérée.  
-
-### Numérotage des révisions 
-
-- Version = x.y.z (majeur.mineur.patch).
-- Mineur pair = stable (ex. : 5.4, 5.6).
-- Mineur impair = développement (ex: 5.5). 
-- Patch = résolutions bogues = 5.4.1, 5.4.2, etc.
+Dernière mise à jour : 8 janvier 2020
 
 
