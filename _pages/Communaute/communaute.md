@@ -18,7 +18,6 @@ submenu:
 ---
 {::options parse_block_html="true" /}
 
-# Acte constitutif
 
 # Charte de la communauté IGO
 
