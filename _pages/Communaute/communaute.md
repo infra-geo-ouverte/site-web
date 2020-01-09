@@ -7,7 +7,7 @@ submenu:
   - { hook: "mission", title: "Mission" }
   - { hook: "structure", title: "Structure et parties prenantes" }
   - { hook: "communaute", title: "Schéma de la structure de la communauté" }
-  - { hook: "cd", title: "4. Comité directeur (CD)" }
+  - { hook: "cd", title: "Comité directeur (CD)" }
   - { hook: "cp", title: "Comité de pilotage (CP)" }
   - { hook: "ct", title: "Comité technique (CT)" }
   - { hook: "contributeurs", title: "Contributeurs" }
