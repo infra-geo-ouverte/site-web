@@ -44,7 +44,8 @@ La structure de gouvernance se décline en trois comités :
 3. Le **comité technique** (CT) qui assure le leadership technique du projet dans son ensemble et s’assure de
     l’arrimage avec les besoins des utilisateurs.
 
-## Schéma de la structure de la communauté
+<a id="communaute"></a>
+## Schéma de la structure de la communauté [<span class="octicon octicon-link"></span>](#communaute)
 
 ![Schéma](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/schema_communaute.png)
 
