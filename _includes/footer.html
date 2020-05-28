@@ -6,6 +6,11 @@
 
 			<div class="listMenu">
 			<ul class="footer listGauche">
+				<li>
+					<a href="/nouveaute/">
+						Nouveautés
+					</a>
+				</li>
 				{% for page in site.pages %}
 					{% if page.title-main %} 
 					<li>
@@ -20,11 +25,7 @@
 						Licence
 					</a>
 				</li>
-				<li>
-					<a href="/Nouveaute/nouveaute/">
-						Nouveautés
-					</a>
-				</li>
+				</ul>
 
 				{% for link in site.navigation %}
 					{% if page.url contains 'english/' %}

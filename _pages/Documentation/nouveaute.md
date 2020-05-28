@@ -1,8 +1,7 @@
 ---
-permalink: /Nouveaute/nouveaute/
+permalink: /nouveaute/
 layout: general
-title-main: Services
-iconedocumentation: ""
+iconenouveaute: ""
 ---
 
 ![](RackMultipart20200527-4-1ayu9sx_html_34f0b98b7ab7e074.png)**IGO Version 1.3 (2020-05-11)**

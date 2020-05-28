@@ -59,6 +59,12 @@
 			<!-- menu principal -->
 			<div class="menu-main">
 				<ul class="nav navbar-nav">
+					<li>
+						<a href="/nouveaute/">
+							<span class="nav-icons octicon octicon-flame"></span>
+							Nouveautés
+						</a>
+					</li>
 					{% for page in site.pages %}
 						{% if page.title-main%}  
 						<li>
@@ -95,16 +101,9 @@
 									{{ page.title-main }} 
 								{% endif %}  
 							</a>
-
 						</li>
 						{% endif %}
 					{% endfor %}
-					<li>
-						<a href="/Nouveaute/nouveaute/">
-							<span class="nav-icons octicon octicon-flame"></span>
-							Nouveautés
-						</a>
-					</li>
 				</ul>
 			</div>	
 		<!--[if gt IE 8]><!--></div><!--<![endif]-->	<!-- /.navbar-collapse -->		
