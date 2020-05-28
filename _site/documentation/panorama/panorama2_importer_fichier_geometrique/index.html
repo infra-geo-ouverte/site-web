@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)" />	
 	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur, igo, infrastructure" />
-	<meta name="description" content="IGO est une solution Web gratuite en géomatique." />
+	<meta name="description" content="Panorama 2 - Importer un fichier géométrique :" />
 	<meta name="robots" content="index,follow"/> 
     <meta name="revisit-after" content="1 days"/>   
 	
@@ -72,10 +72,10 @@
 	<!--<![endif]-->
 	
 	<!-- pour avoir un url clean et mieux indexé ref: https://support.google.com/webmasters/answer/139066?hl=fr -->	
-	<link rel="canonical" href="http://igouverte.org/documentation/panorama/panorama2_importer_fichier_geometrique/" >
+	<link rel="canonical" href="http://localhost:4000/documentation/panorama/panorama2_importer_fichier_geometrique/" >
 	  
 	<!-- pour le fil RSS à ajouter avec un blog http://joelglovier.com/writing/rss-for-jekyll/ -->
-	<link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="http://igouverte.org/feed.xml" >
+	<link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="http://localhost:4000/feed.xml" >
 
   </head>
 
@@ -91,7 +91,7 @@
 		<!-- Titre du site/ mettre le logo -->
 		<div class="navbar-header">
 			<a href="/">
-				<img itemprop="image" width="260" height="138" class="logo-med" src="/assets/img/Igo_logoavec.png"  alt="Logo IGO" />
+				<img itemprop="image" class="logo-med" src="/assets/img/Igo_logoavec.png"  alt="Logo IGO" />
 			</a>
 						
 			<!--[if gt IE 8]><!-->
@@ -103,7 +103,7 @@
 				</button>
 			<!--<![endif]-->
 				<!-- Lien Github -->
-				<a class="git-btn btn btn-primary" href="https://github.com/infra-geo-ouverte/igo">Voir sur Github
+				<a class="git-btn btn btn-primary" href="https://github.com/infra-geo-ouverte/">Voir sur Github
 					
 					<!--[if lte IE 8]>
 						<img class="logo-git" width="32" height="32" src="/assets/img/GitHub-Mark-Light-32px.png" alt="Logo Github" />
@@ -122,7 +122,11 @@
 				<!-- menu haut droit -->	
 				
 				 <ul class="nav navbar-nav menu-top">
-
+					<li class="page-link fr">
+						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
+							Licence
+						</a>
+					</li>
 				    
 				    	
 					<li class="page-link en"><a href="/faq/">FAQ</a></li>
@@ -218,6 +222,8 @@
 					
 						
 					
+						
+					
 						  
 						<li>
 							<a class="page-link"  
@@ -235,6 +241,38 @@
 							</a>
 
 						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -304,6 +342,48 @@
 					
 						
 					
+						  
+						<li>
+							<a class="page-link"  
+								href="/Nouveaute/nouveaute/" role="button" aria-expanded="false">
+								
+								
+								
+								
+									<!-- <i class="fa fa-file-text fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.page.text.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-file-text"></span>
+									Services 
+								
+								  
+							</a>
+
+						</li>
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/documentation/page-services-igo/" role="button" aria-expanded="false">
+								
+								
+								
+								
+									<!-- <i class="fa fa-file-text fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.page.text.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-file-text"></span>
+									Services 
+								
+								  
+							</a>
+
+						</li>
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -325,9 +405,9 @@
 						
 					
 					<li>
-						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
-							<span class="nav-icons octicon octicon-code"></span>
-							Licence
+						<a href="/Nouveaute/nouveaute/">
+							<span class="nav-icons octicon octicon-flame"></span>
+							Nouveautés
 						</a>
 					</li>
 				</ul>
@@ -357,8 +437,6 @@
 
 </nav>
 
-        
-
 
 			<!-- Page Content -->
 				<div id="page-content-wrapper">
@@ -371,63 +449,81 @@
 			
 					<div class="container" >
 						<div>				
-							<h2 id="panorama-2-importer-un-fichier-g�om�trique">Panorama 2 - Importer un fichier géométrique :</h2>
+							<h2 id="panorama-2---importer-un-fichier-géométrique-">Panorama 2 - Importer un fichier géométrique :</h2>
 
 <ul>
-<li>Image du panorama
-<img src="https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/interfaces/navigateur/public/images/toolbar/mActionAddLayer.png" alt="image du panorama"></li>
-<li>Ce panorama permet à l’utilisateur de sélectionner un fichier géométrique externe qui contient les éléments géométriques qu&#39;il souhaite importer dans la carte.</li>
-<li>Tableau d’affichage</li>
+  <li>Image du panorama
+<img src="https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/interfaces/navigateur/public/images/toolbar/mActionAddLayer.png" alt="image du panorama" /></li>
+  <li>Ce panorama permet à l’utilisateur de sélectionner un fichier géométrique externe qui contient les éléments géométriques qu’il souhaite importer dans la carte.</li>
+  <li>Tableau d’affichage</li>
 </ul>
 
-<table><thead>
-<tr>
-<th style="text-align: center">Libellé</th>
-<th style="text-align: center">Type</th>
-<th style="text-align: center">Valeur attendue</th>
-<th style="text-align: center">Protégé</th>
-<th style="text-align: center">Attribut (Entité)</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: center">Fichier</td>
-<td style="text-align: center">Zone d&#39;affichage</td>
-<td style="text-align: center">Nom du fichier</td>
-<td style="text-align: center">--</td>
-<td style="text-align: center">--</td>
-</tr>
-<tr>
-<td style="text-align: center">Projection</td>
-<td style="text-align: center">Zone de texte</td>
-<td style="text-align: center">Valeur saisie à blanc</td>
-<td style="text-align: center">--</td>
-<td style="text-align: center">--</td>
-</tr>
-</tbody></table>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Libellé</th>
+      <th style="text-align: center">Type</th>
+      <th style="text-align: center">Valeur attendue</th>
+      <th style="text-align: center">Protégé</th>
+      <th style="text-align: center">Attribut (Entité)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Fichier</td>
+      <td style="text-align: center">Zone d’affichage</td>
+      <td style="text-align: center">Nom du fichier</td>
+      <td style="text-align: center">–</td>
+      <td style="text-align: center">–</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Projection</td>
+      <td style="text-align: center">Zone de texte</td>
+      <td style="text-align: center">Valeur saisie à blanc</td>
+      <td style="text-align: center">–</td>
+      <td style="text-align: center">–</td>
+    </tr>
+  </tbody>
+</table>
 
 <ul>
-<li>Tableau des options</li>
+  <li>Tableau des options</li>
 </ul>
 
-<table><thead>
-<tr>
-<th style="text-align: center">Option</th>
-<th style="text-align: center">Comportement</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: center">Bouton « Parcourir »</td>
-<td style="text-align: center">Permet de rechercher le ou les fichier(s) géométrique(s) externe(s) désiré(s).</td>
-</tr>
-<tr>
-<td style="text-align: center">Bouton « Importer »</td>
-<td style="text-align: center">Permet d’effectuer l’importation des éléments géométriques dans un fichier temporaire, de les afficher dans la carte et de zoomer sur ceux-ci. Si un problème est rencontré lors de l’importation, un message en provenance du service de conversion est affiché.</td>
-</tr>
-<tr>
-<td style="text-align: center">Bouton « Fermer »</td>
-<td style="text-align: center">Fermer le panorama courant.</td>
-</tr>
-</tbody></table>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Option</th>
+      <th style="text-align: center">Comportement</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Bouton « Parcourir »</td>
+      <td style="text-align: center">Permet de rechercher le ou les fichier(s) géométrique(s) externe(s) désiré(s).</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Bouton « Importer »</td>
+      <td style="text-align: center">Permet d’effectuer l’importation des éléments géométriques dans un fichier temporaire, de les afficher dans la carte et de zoomer sur ceux-ci. Si un problème est rencontré lors de l’importation, un message en provenance du service de conversion est affiché.</td>
+      <td> </td>
+      <td>Bouton « Fermer »</td>
+      <td>Fermer le panorama courant.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Bouton « Fermer »</td>
+      <td style="text-align: center">Fermer le panorama courant.</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
                   
 						</div>
 					</div>
@@ -440,15 +536,10 @@
     <footer class="site-footer" id="footer">
 
 	<div class="wrapper row">
-		<!-- LOGO -->
-		<div class="col-xs-12 col-sm-3 text-center">
-			<a href="/">
-				<img class="logo-med" width="85" height="187" src="/assets/img/logo_bleu_112.png"  alt="Logo IGO" />
-			</a>
+	
+		<div class="col-xs-12 col-sm-6 text-left">
 
-		</div>
-		<!-- LISTE DE PAGES -->
-		<div class="col-xs-12 col-sm-6 text-center">
+			<div class="listMenu">
 			<ul class="footer listGauche">
 				
 					
@@ -491,12 +582,46 @@
 				
 					
 				
+					
+				
 					 
 					<li>
 						<a class="page-link"  
 							href="/documentation/" role="button" aria-expanded="false">Documentation
 						</a>
 					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
 					
 				
 					
@@ -555,6 +680,26 @@
 				
 					
 				
+					 
+					<li>
+						<a class="page-link"  
+							href="/Nouveaute/nouveaute/" role="button" aria-expanded="false">Services
+						</a>
+					</li>
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/documentation/page-services-igo/" role="button" aria-expanded="false">Services
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
 					
 				
 					
@@ -580,6 +725,11 @@
 						Licence
 					</a>
 				</li>
+				<li>
+					<a href="/Nouveaute/nouveaute/">
+						Nouveautés
+					</a>
+				</li>
 
 				
 					
@@ -596,9 +746,16 @@
 				
 				
 			</ul>
-		</div>
+				<!-- LOGO -->
+			</div>
+			<a href="/">
+				<img class="logo-med" src="/assets/img/logo_bleu_112.png"  alt="Logo IGO" />
+			</a>
+
+			</div>
+		
 		<!-- FORMULAIRE -->
-		<div class="col-xs-12 col-sm-3 text-center col-form">			
+		<div class="col-xs-12 col-sm-6 text-center col-form">			
 			
 			<!-- reference pour le formulaire avec Formspree: http://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites&#151;cms-23870 -->
 			<div id="contact">
@@ -632,13 +789,13 @@
 		</div>
 	</div>
 		<hr>
-		<p class="footer-mail text-center">Courriel: info[a]igouverte.org </p>
+		<p class="footer-mail text-center">Courriel: info[@]igouverte.org </p>
 		<div class="share-page">
     Partagez &rarr; 
-    <a class="footer-reseau" href="https://twitter.com/intent/tweet?source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;text=IGO:%20http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a> 
-    <a class="footer-reseau" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;t=IGO" title="Share on Facebook" target="_blank"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
-    <a class="footer-reseau" href="https://plus.google.com/share?url=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
-    <a class="footer-reseau" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;title=IGO&amp;summary=Infrastructure%20geomatique%20ouverte&amp;source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square" data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
+    <a class="footer-reseau" href="https://twitter.com/intent/tweet?source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;text=IGO:%20http%3A%2F%2Figouverte.org%2F" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a> 
+    <a class="footer-reseau" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Figouverte.org%2F&amp;t=IGO" title="Share on Facebook" target="_blank"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
+    <a class="footer-reseau" href="https://plus.google.com/share?url=http%3A%2F%2Figouverte.org%2F" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
+    <a class="footer-reseau" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Figouverte.org%2F&amp;title=IGO&amp;summary=Infrastructure%20geomatique%20ouverte&amp;source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square" data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
 </div> 
 
 
@@ -648,9 +805,9 @@
 
 <!-- <div class="share-page">
     Share this on &rarr; 
-    <a href="https://twitter.com/intent/tweet?text=&url=http://igouverte.org/documentation/panorama/panorama2_importer_fichier_geometrique/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=http://igouverte.org/documentation/panorama/panorama2_importer_fichier_geometrique/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
-    <a href="https://plus.google.com/share?url=http://igouverte.org/documentation/panorama/panorama2_importer_fichier_geometrique/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=&url=http://localhost:4000/documentation/panorama/panorama2_importer_fichier_geometrique/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://localhost:4000/documentation/panorama/panorama2_importer_fichier_geometrique/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url=http://localhost:4000/documentation/panorama/panorama2_importer_fichier_geometrique/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
 </div> -->
 	<!-- summary="Infrastructure de géomatique ouverte" source="http://infra-geo-ouverte.github.io/site-web/" -->
 	
@@ -662,7 +819,7 @@
 	
 
 		
-		<small class="copyright text-center">&copy;IGO, 2015</small>
+		<small class="copyright text-center">&copy;IGO, 2017</small>
 
 </footer>
 </div> <!-- div de : <div itemscope itemtype="http://schema.org/SoftwareApplication"> dans le header -->

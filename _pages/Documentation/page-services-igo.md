@@ -32,7 +32,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 <a id="2.1"></a>
 #### 2.1. *iCherche/géocode* (API) permet :
-+ la [géolocalisation par adresse](https://geoegl.msp.gouv.qc.ca/apis/icherche/docs),  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, [lieu](https://geoegl.msp.gouv.qc.ca/apis/icherche/docs). Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/). Il remplacera à terme le service de géolocalisation [GLO] qui ne sera plus amélioré à partir de 2017, mais supporté jusqu'à la fin 2019. iCherche est plus performant (par ex. : autocomplétion) que le GLO et plus précis dans ses résultats trouvés.
++ la [géolocalisation par adresse](https://geoegl.msp.gouv.qc.ca/apis/icherche/docs),  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, [lieu](https://geoegl.msp.gouv.qc.ca/apis/icherche/docs). Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/). Il remplace le service de géolocalisation GLO qui n'est plus supporté. iCherche est plus performant (par ex. : autocomplétion) que le GLO et plus précis dans ses résultats trouvés.
 + Il permet indirectement de formater des adresses selon la base de données d'Adresse Québec.
 
 <a id="2.2"></a>
@@ -51,7 +51,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 
 <a id="2.4"></a>
 #### 2.4. *Le service de géocodage en lot* permet :
-+ de  [géocoder des points, à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (par ex. : csv)]( http://www.geomsp.qc/GeocodageLot/). Le fichier doit minimalement contenir un champ contenant l'adresse complète ou le  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>. 
++ de  [géocoder des points, à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (par ex. : csv)](  https://geoegl.msp.gouv.qc.ca/apis/icherche/docs/enlot). Le fichier doit minimalement contenir un champ contenant l'adresse complète ou le  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>. L'outil de Géocodage en lot est maintenant basé sur iCherche et est à jour avec la dernière version d'AdresseQc.
 
 <a id="2.5"></a>
 #### 2.5. *La recherche de lots rénovés* permet :

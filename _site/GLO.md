@@ -8,7 +8,7 @@ Afin de faciliter le positionnement sur le territoire Québécois, le Ministère
 
 ###Sécurité d’accès
 
-Le contrôle d’accès au service Web se fait via une clé d’utilisation (semblable à celle requise pour utiliser l’API de Google  Maps ).  Cette clé permet au  MSP  de contrôler les accès et par le fait même, le contenu de sa base de données.Les clés permettent également d’autoriser ou d’empêcher l’utilisation decertains types de recherche selon l’organisation ou l’utilisateur qui tente de se connecter.  Les clés d’accès sont émises par le  MSP  et sont contrôlées en fonction d’une suite d’adresses IP reliée au domaine Internet du requérant.Pour obtenir une clé, il suffit d’en faire la demande auprès du ministère via l’adresse de courriel suivante: [geomsp@msp.gouv.qc.ca](mailto:geomsp@msp.gouv.qc.ca). 
+Le contrôle d’accès au service Web se fait via une clé d’utilisation (semblable à celle requise pour utiliser l’API de Google  Maps ). Cette clé permet au  MSP  de contrôler les accès et par le fait même, le contenu de sa base de données.Les clés permettent également d’autoriser ou d’empêcher l’utilisation decertains types de recherche selon l’organisation ou l’utilisateur qui tente de se connecter.  Les clés d’accès sont émises par le  MSP  et sont contrôlées en fonction d’une suite d’adresses IP reliée au domaine Internet du requérant.Pour obtenir une clé, il suffit d’en faire la demande auprès du ministère via l’adresse de courriel suivante: [geomsp@msp.gouv.qc.ca](mailto:geomsp@msp.gouv.qc.ca). 
 
 ### Type de recherche
 
@@ -26,7 +26,7 @@ Certaines recherches peuvent être limitées à une clientèle bien précise (ex
 
 ### Chaîne de caractères de recherche
 
-Le service de recherche considère uniquement une seule chaîne de caractères par requête (paramètre <texte> ). Par contre, cette chaîne peut comporter plusieurs valeurs (ex : 1715 rue  Merlac , Québec). Contrairement à l’engin de recherche de Google, l’ordre dans lequel les paramètres sont placés dans la chaîne à une importance sur la performance et qualité des résultats obtenus. 
+Le service de recherche considère uniquement une seule chaîne de caractères par requête (paramètre <texte> ). Par contre, cette chaîne peut comporter plusieurs valeurs (ex : 1715 rue  Merlac , Québec). Contrairement à l’engin de recherche de Google, l’ordre dans lequel les paramètres sont placés dans la chaîne a une importance sur la performance et qualité des résultats obtenus. 
 
 Depuis la version 5 du  GLO , il est possible de passer une chaine de caractères ne correspondant à aucun pattern pour la recherche par adresse. Une recherche de similarité phonétique est alors déclenchée. 
 

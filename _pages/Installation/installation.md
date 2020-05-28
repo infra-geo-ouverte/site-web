@@ -23,3 +23,6 @@ submenu:
 
 ## Pas à pas détaillé
 Pour une version plus détaillée de la procédure d’installation avec les prérequis sous Windows voir ce [document](https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/pdf/Procedure_installation_IGO2_win_v1.pdf).
+
+### Téléchargement
+Pour télécharger l'application cliquer [ici](https://github.com/infra-geo-ouverte/igo2#téléchargement)

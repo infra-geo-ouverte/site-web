@@ -33,3 +33,7 @@ Démonstrations de l'installation et de certaines configurations de base.
 * [Installation](https://geoegl.msp.gouv.qc.ca/igouverte/videos/1-installationLocale.webm)
 * [Ajout de Contexte](https://geoegl.msp.gouv.qc.ca/igouverte/videos/2-ajouterContexte.webm)
 * [Ajout de Catalogue](https://geoegl.msp.gouv.qc.ca/igouverte/videos/3-ajouterCatalogue3.webm)
+
+## Documentation détaillée
+
+Pour consulter la documentation détaillée, cliquer [ici](https://igo2.readthedocs.io/fr/latest/) 

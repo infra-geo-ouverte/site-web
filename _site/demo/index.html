@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)" />	
 	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur, igo, infrastructure" />
-	<meta name="description" content="IGO est une solution Web gratuite en géomatique." />
+	<meta name="description" content="IGO2" />
 	<meta name="robots" content="index,follow"/> 
     <meta name="revisit-after" content="1 days"/>   
 	
@@ -72,10 +72,10 @@
 	<!--<![endif]-->
 	
 	<!-- pour avoir un url clean et mieux indexé ref: https://support.google.com/webmasters/answer/139066?hl=fr -->	
-	<link rel="canonical" href="http://igouverte.org/demo/" >
+	<link rel="canonical" href="http://localhost:4000/demo/" >
 	  
 	<!-- pour le fil RSS à ajouter avec un blog http://joelglovier.com/writing/rss-for-jekyll/ -->
-	<link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="http://igouverte.org/feed.xml" >
+	<link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="http://localhost:4000/feed.xml" >
 
   </head>
 
@@ -91,7 +91,7 @@
 		<!-- Titre du site/ mettre le logo -->
 		<div class="navbar-header">
 			<a href="/">
-				<img itemprop="image" width="260" height="138" class="logo-med" src="/assets/img/Igo_logoavec.png"  alt="Logo IGO" />
+				<img itemprop="image" class="logo-med" src="/assets/img/Igo_logoavec.png"  alt="Logo IGO" />
 			</a>
 						
 			<!--[if gt IE 8]><!-->
@@ -103,7 +103,7 @@
 				</button>
 			<!--<![endif]-->
 				<!-- Lien Github -->
-				<a class="git-btn btn btn-primary" href="https://github.com/infra-geo-ouverte/igo">Voir sur Github
+				<a class="git-btn btn btn-primary" href="https://github.com/infra-geo-ouverte/">Voir sur Github
 					
 					<!--[if lte IE 8]>
 						<img class="logo-git" width="32" height="32" src="/assets/img/GitHub-Mark-Light-32px.png" alt="Logo Github" />
@@ -122,7 +122,11 @@
 				<!-- menu haut droit -->	
 				
 				 <ul class="nav navbar-nav menu-top">
-
+					<li class="page-link fr">
+						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
+							Licence
+						</a>
+					</li>
 				    
 				    	
 					<li class="page-link en"><a href="/faq/">FAQ</a></li>
@@ -218,6 +222,8 @@
 					
 						
 					
+						
+					
 						  
 						<li>
 							<a class="page-link"  
@@ -235,6 +241,38 @@
 							</a>
 
 						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -304,6 +342,44 @@
 					
 						
 					
+						  
+						<li>
+							<a class="page-link"  
+								href="/Nouveaute/nouveaute/" role="button" aria-expanded="false">
+								
+								
+								
+								
+									<!-- <i class="fa fa-file-text fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.page.text.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-file-text"></span>
+									Services 
+								
+								  
+							</a>
+
+						</li>
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/documentation/page-services-igo/" role="button" aria-expanded="false">
+								
+								
+								
+								
+									<!-- <i class="fa fa-file-text fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.page.text.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-file-text"></span>
+									Services 
+								
+								  
+							</a>
+
+						</li>
+						
+					
 						
 					
 						
@@ -325,9 +401,9 @@
 						
 					
 					<li>
-						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
-							<span class="nav-icons octicon octicon-code"></span>
-							Licence
+						<a href="/Nouveaute/nouveaute/">
+							<span class="nav-icons octicon octicon-flame"></span>
+							Nouveautés
 						</a>
 					</li>
 				</ul>
@@ -357,8 +433,6 @@
 
 </nav>
 
-        
-
 
 			<!-- Page Content -->
 				<div id="page-content-wrapper">
@@ -371,95 +445,27 @@
 			
 					<div class="container" >
 						<div>				
-							<h1 id="d�monstration">Démonstration</h1>
+							<h2 id="igo2">IGO2</h2>
 
-<p>Vous pouvez voir un exemple de l&#39;interface d&#39;IGO-Navigateur en action sur le site <a href="http://geoegl.msp.gouv.qc.ca/gouvouvert/">des données ouvertes du gouvernement du Québec</a> et un exemple de son XML pour une configuration de base :</p>
+<p>La nouvelle version 2.0 d’IGO <a href="https://github.com/infra-geo-ouverte/igo2">(IGO2)</a> permet d’étendre son utilisation à des appareils mobiles et suit maintenant les dernières tendances du Web (ex. application adaptative, API, analyse temporelle). IGO2 est une solution Web gratuite en géomatique basée sur <a href="https://github.com/angular/angular">Angular</a> - <a href="https://github.com/angular/material2">Material</a>, <a href="https://github.com/openlayers/openlayers">OpenLayers</a> et <a href="https://github.com/infra-geo-ouverte/igo2-lib">IGO2lib</a>.</p>
 
-<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="lineno"> 1</span> <span class="nt">&lt;navigateur</span> <span class="na">authentification=</span><span class="s">&quot;false&quot;</span> 
-<span class="lineno"> 2</span>             <span class="na">titre=</span><span class="s">&quot;I.G.O. - Données ouvertes - Gouvernement du Québec&quot;</span>
-<span class="lineno"> 3</span>             <span class="na">baseUri=</span><span class="s">&quot;/gouvouvert/public/&quot;</span> 
-<span class="lineno"> 4</span>             <span class="na">serviceUri=</span><span class="s">&quot;../services/&quot;</span> 
-<span class="lineno"> 5</span>             <span class="na">apiUri=</span><span class="s">&quot;../api/&quot;</span> 
-<span class="lineno"> 6</span>             <span class="na">libUri=</span><span class="s">&quot;../librairie/&quot;</span><span class="nt">&gt;</span>
-<span class="lineno"> 7</span>     <span class="nt">&lt;presentation&gt;</span>
-<span class="lineno"> 8</span>            <span class="nt">&lt;panneaux&gt;</span>
-<span class="lineno"> 9</span>                 <span class="nt">&lt;panneau</span> <span class="na">classe=</span><span class="s">&quot;PanneauCarte&quot;</span> <span class="na">titre=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span>
-<span class="lineno">10</span>                  <span class="nt">&lt;panneau</span> <span class="na">id=</span><span class="s">&quot;InfoPanneau&quot;</span> <span class="na">classe=</span><span class="s">&quot;PanneauInfo&quot;</span> <span class="nt">/&gt;</span>
-<span class="lineno">11</span>                  <span class="nt">&lt;panneau</span> <span class="na">classe=</span><span class="s">&quot;PanneauEntete&quot;</span> <span class="na">image=</span><span class="s">&quot;images/bandeau/bandeau_donnees_ouv_goloc.png&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">12</span> 
-<span class="lineno">13</span>                 <span class="nt">&lt;panneau</span> <span class="na">classe=</span><span class="s">&quot;PanneauMenu&quot;</span> <span class="na">ouvert=</span><span class="s">&quot;true&quot;</span> <span class="nt">&gt;</span>
-<span class="lineno">14</span>                     <span class="nt">&lt;element-accordeon</span> <span class="na">classe=</span><span class="s">&quot;Arborescence&quot;</span> <span class="na">ouvert=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">15</span>                     <span class="nt">&lt;element-accordeon</span> <span class="na">classe=</span><span class="s">&quot;Localisation&quot;</span> <span class="na">id=</span><span class="s">&quot;localisation&quot;</span><span class="nt">&gt;</span>
-<span class="lineno">16</span>                         <span class="nt">&lt;element</span> <span class="na">classe=</span><span class="s">&quot;RechercheAdresse&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">17</span>                         <span class="nt">&lt;element</span> <span class="na">classe=</span><span class="s">&quot;RechercheLieu&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">18</span>                         <span class="nt">&lt;element</span> <span class="na">classe=</span><span class="s">&quot;RechercheGPS&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">19</span>                         <span class="nt">&lt;element</span> <span class="na">classe=</span><span class="s">&quot;RechercheBorne&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">20</span>                     <span class="nt">&lt;/element-accordeon&gt;</span>
-<span class="lineno">21</span>                     <span class="nt">&lt;element-accordeon</span> <span class="na">classe=</span><span class="s">&quot;Impression&quot;</span> <span class="na">ouvert=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">22</span>                 <span class="nt">&lt;/panneau&gt;</span>
-<span class="lineno">23</span> 
-<span class="lineno">24</span>             <span class="nt">&lt;/panneaux&gt;</span>
-<span class="lineno">25</span>          <span class="nt">&lt;outils&gt;</span>
-<span class="lineno">26</span>             <span class="nt">&lt;groupe-outils&gt;</span>
-<span class="lineno">27</span>                 <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilZoomEtendueMaximale&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">28</span>                 <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilZoomRectangle&quot;</span> <span class="na">type=</span><span class="s">&quot;avant&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">29</span>                 <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilZoomRectangle&quot;</span> <span class="na">type=</span><span class="s">&quot;arriere&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">30</span>                 <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilDeplacement&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">31</span>             <span class="nt">&lt;/groupe-outils&gt;</span>
-<span class="lineno">32</span>             <span class="nt">&lt;groupe-outils&gt;</span>
-<span class="lineno">33</span>                 <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilHistoriqueNavigation&quot;</span> <span class="na">type=</span><span class="s">&quot;precedent&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">34</span>                 <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilHistoriqueNavigation&quot;</span> <span class="na">type=</span><span class="s">&quot;suivant&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">35</span>             <span class="nt">&lt;/groupe-outils&gt;</span>
-<span class="lineno">36</span>              <span class="nt">&lt;groupe-outils&gt;</span>
-<span class="lineno">37</span>                 <span class="nt">&lt;menu</span> <span class="na">titre=</span><span class="s">&quot;Zoom sur une région&quot;</span><span class="nt">&gt;</span>
-<span class="lineno">38</span>                     <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilZoomPreselection&quot;</span> <span class="na">type=</span><span class="s">&quot;region-adm&quot;</span> <span class="na">titre=</span><span class="s">&quot;Par région administrative&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">39</span>                     <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilZoomPreselection&quot;</span> <span class="na">type=</span><span class="s">&quot;mrc&quot;</span> <span class="na">titre=</span><span class="s">&quot;Par MRC&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">40</span>                     <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilZoomPreselection&quot;</span> <span class="na">type=</span><span class="s">&quot;mun&quot;</span> <span class="na">titre=</span><span class="s">&quot;Par municipalité&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">41</span>                 <span class="nt">&lt;/menu&gt;</span>
-<span class="lineno">42</span>             <span class="nt">&lt;/groupe-outils&gt;</span>
-<span class="lineno">43</span>             <span class="nt">&lt;groupe-outils&gt;</span>
-<span class="lineno">44</span>                 <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilMesure&quot;</span> <span class="na">type=</span><span class="s">&quot;lineaire&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">45</span>                 <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilMesure&quot;</span> <span class="na">type=</span><span class="s">&quot;surface&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">46</span>             <span class="nt">&lt;/groupe-outils&gt;</span>
-<span class="lineno">47</span>             <span class="nt">&lt;groupe-outils&gt;</span>
-<span class="lineno">48</span>                 <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilInfo&quot;</span> <span class="nt">/&gt;</span>
-<span class="lineno">49</span>             <span class="nt">&lt;/groupe-outils&gt;</span>
-<span class="lineno">50</span>      <span class="nt">&lt;groupe-outils&gt;</span>
-<span class="lineno">51</span>                 <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilAide&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">52</span>                 <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilDeplacerCentre&quot;</span> <span class="nt">/&gt;</span>
-<span class="lineno">53</span>             <span class="nt">&lt;/groupe-outils&gt;</span>
-<span class="lineno">54</span>             <span class="nt">&lt;groupe-outils</span> <span class="na">position=</span><span class="s">&quot;droite&quot;</span> <span class="na">division=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>
-<span class="lineno">55</span>                 <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilAjoutWMS&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">56</span>             <span class="nt">&lt;/groupe-outils&gt;</span>
-<span class="lineno">57</span>             <span class="nt">&lt;groupe-outils</span> <span class="na">position=</span><span class="s">&quot;droite&quot;</span><span class="nt">&gt;</span>
-<span class="lineno">58</span>                 <span class="nt">&lt;outil</span> <span class="na">classe=</span><span class="s">&quot;OutilPartagerCarte&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">59</span>             <span class="nt">&lt;/groupe-outils&gt;</span>
-<span class="lineno">60</span>         <span class="nt">&lt;/outils&gt;</span>
-<span class="lineno">61</span>     <span class="nt">&lt;/presentation&gt;</span>
-<span class="lineno">62</span>     <span class="nt">&lt;contexte</span> <span class="na">code=</span><span class="s">&quot;gouvouvert&quot;</span> <span class="na">centre=</span><span class="s">&quot;-7994004,6034079&quot;</span> <span class="na">zoom=</span><span class="s">&quot;7&quot;</span><span class="nt">&gt;&lt;/contexte&gt;</span>
-<span class="lineno">63</span>     <span class="nt">&lt;couches&gt;</span>
-<span class="lineno">64</span>         <span class="nt">&lt;groupe-couches</span> <span class="na">groupe=</span><span class="s">&quot;Fond de carte&quot;</span><span class="nt">&gt;</span>
-<span class="lineno">65</span>             <span class="nt">&lt;couche</span>  
-<span class="lineno">66</span>                     <span class="na">titre=</span><span class="s">&quot;Gouvernement du Québec&quot;</span> 
-<span class="lineno">67</span>                     <span class="na">url=</span><span class="s">&quot;/cgi-wms/mapcache.fcgi/tms/&quot;</span> 
-<span class="lineno">68</span>                     <span class="na">nom=</span><span class="s">&quot;carte_gouv_qc_ro@EPSG_3857&quot;</span> 
-<span class="lineno">69</span>                     <span class="na">fond=</span><span class="s">&quot;true&quot;</span> <span class="na">protocole=</span><span class="s">&quot;TMS&quot;</span> 
-<span class="lineno">70</span>                     <span class="na">active=</span><span class="s">&quot;vrai&quot;</span>
-<span class="lineno">71</span>                     <span class="na">zoomMax=</span><span class="s">&quot;17&quot;</span>
-<span class="lineno">72</span>                     <span class="na">impressionUrl=</span><span class="s">&quot;/cgi-wms/carte_gouv_qc.fcgi?&quot;</span> 
-<span class="lineno">73</span>                     <span class="na">impressionNom=</span><span class="s">&quot;CARTE_GOUV_QC&quot;</span> 
-<span class="lineno">74</span>                     <span class="na">droit=</span> <span class="s">&quot;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;http://www.droitauteur.gouv.qc.ca/copyright.php&amp;quot;&amp;gt;&amp;lt;img width=&amp;quot;70/&amp;quot; height=&amp;quot;21&amp;quot; src=&amp;quot;/gouvouvert/public/images/quebec/gouv_qc_logo.gif&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;http://www.droitauteur.gouv.qc.ca/copyright.php&amp;quot; class=&amp;quot;styleAttributionTable&amp;quot;&amp;gt;&amp;amp;copy; Gouvernement du Qu&amp;#233;bec&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&quot;</span>
-<span class="lineno">75</span>             <span class="nt">/&gt;</span> 
-<span class="lineno">76</span>             <span class="nt">&lt;couche</span> <span class="na">titre=</span><span class="s">&quot;OpenStreetMap&quot;</span> <span class="na">protocole=</span><span class="s">&quot;OSM&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">77</span>             <span class="nt">&lt;couche</span> <span class="na">titre=</span><span class="s">&quot;OpenStreetMap-Humanitaire&quot;</span> <span class="na">protocole=</span><span class="s">&quot;OSM&quot;</span> <span class="na">nom=</span><span class="s">&quot;humanitaire&quot;</span><span class="nt">/&gt;</span> 
-<span class="lineno">78</span>             <span class="nt">&lt;couche</span> <span class="na">titre=</span><span class="s">&quot;Fond blanc&quot;</span> <span class="na">protocole=</span><span class="s">&quot;Blanc&quot;</span><span class="nt">/&gt;</span>  
-<span class="lineno">79</span>         <span class="nt">&lt;/groupe-couches&gt;</span>
-<span class="lineno">80</span>         <span class="nt">&lt;groupe-couches&gt;</span>
-<span class="lineno">81</span>             <span class="nt">&lt;couche</span> <span class="na">url=</span><span class="s">&quot;http://geoegl.msp.gouv.qc.ca/cgi-wms/igo_gouvouvertqc.fcgi?&quot;</span> <span class="na">protocole=</span><span class="s">&quot;WMS&quot;</span> <span class="na">mode=</span><span class="s">&quot;getCapabilities&quot;</span><span class="nt">/&gt;</span>
-<span class="lineno">82</span>         <span class="nt">&lt;/groupe-couches&gt;</span>
-<span class="lineno">83</span>     <span class="nt">&lt;/couches&gt;</span>
-<span class="lineno">84</span> 
-<span class="lineno">85</span> <span class="nt">&lt;/navigateur&gt;</span></code></pre></div>
+<p>Voici deux exemples d’instances d’IGO2 utilisant différents assemblages</p>
+<ul>
+  <li><a href="https://foretouverte.gouv.qc.ca">Forêt ouverte</a></li>
+  <li><a href="https://geoinondations.gouv.qc.ca">Géo-Inondations</a></li>
+  <li><a href="https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/">Visualisateur de données ouvertes pour le portail Données Québec</a></li>
+</ul>
+
+<h2 id="igo1">IGO1</h2>
+
+<p>Voici un exemple de l’interface d’IGO-Navigateur 1.0 toujours en action :</p>
+<ul>
+  <li><a href="https://geoegl.msp.gouv.qc.ca/igo/cptaq_demeter/">Demeter</a></li>
+</ul>
+
+<p>Voici un exemple de fichier de configuration pour IGO1 en XML : <a href="https://github.com/infra-geo-ouverte/igo/blob/master/xml/defaut.xml">https://github.com/infra-geo-ouverte/igo/blob/master/xml/defaut.xml</a>.</p>
+
+<p>IGO1 est basé sur : OpenLayers 2, ExtJS, GeoExt, jQuery, <a href="https://phalconphp.com/fr/">Phalcon</a> et Bootstrap.</p>
                   
 						</div>
 					</div>
@@ -472,15 +478,10 @@
     <footer class="site-footer" id="footer">
 
 	<div class="wrapper row">
-		<!-- LOGO -->
-		<div class="col-xs-12 col-sm-3 text-center">
-			<a href="/">
-				<img class="logo-med" width="85" height="187" src="/assets/img/logo_bleu_112.png"  alt="Logo IGO" />
-			</a>
+	
+		<div class="col-xs-12 col-sm-6 text-left">
 
-		</div>
-		<!-- LISTE DE PAGES -->
-		<div class="col-xs-12 col-sm-6 text-center">
+			<div class="listMenu">
 			<ul class="footer listGauche">
 				
 					
@@ -523,12 +524,46 @@
 				
 					
 				
+					
+				
 					 
 					<li>
 						<a class="page-link"  
 							href="/documentation/" role="button" aria-expanded="false">Documentation
 						</a>
 					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
 					
 				
 					
@@ -587,6 +622,22 @@
 				
 					
 				
+					 
+					<li>
+						<a class="page-link"  
+							href="/Nouveaute/nouveaute/" role="button" aria-expanded="false">Services
+						</a>
+					</li>
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/documentation/page-services-igo/" role="button" aria-expanded="false">Services
+						</a>
+					</li>
+					
+				
 					
 				
 					
@@ -612,6 +663,11 @@
 						Licence
 					</a>
 				</li>
+				<li>
+					<a href="/Nouveaute/nouveaute/">
+						Nouveautés
+					</a>
+				</li>
 
 				
 					
@@ -628,9 +684,16 @@
 				
 				
 			</ul>
-		</div>
+				<!-- LOGO -->
+			</div>
+			<a href="/">
+				<img class="logo-med" src="/assets/img/logo_bleu_112.png"  alt="Logo IGO" />
+			</a>
+
+			</div>
+		
 		<!-- FORMULAIRE -->
-		<div class="col-xs-12 col-sm-3 text-center col-form">			
+		<div class="col-xs-12 col-sm-6 text-center col-form">			
 			
 			<!-- reference pour le formulaire avec Formspree: http://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites&#151;cms-23870 -->
 			<div id="contact">
@@ -664,13 +727,13 @@
 		</div>
 	</div>
 		<hr>
-		<p class="footer-mail text-center">Courriel: info[a]igouverte.org </p>
+		<p class="footer-mail text-center">Courriel: info[@]igouverte.org </p>
 		<div class="share-page">
     Partagez &rarr; 
-    <a class="footer-reseau" href="https://twitter.com/intent/tweet?source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;text=IGO:%20http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a> 
-    <a class="footer-reseau" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;t=IGO" title="Share on Facebook" target="_blank"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
-    <a class="footer-reseau" href="https://plus.google.com/share?url=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
-    <a class="footer-reseau" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;title=IGO&amp;summary=Infrastructure%20geomatique%20ouverte&amp;source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square" data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
+    <a class="footer-reseau" href="https://twitter.com/intent/tweet?source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;text=IGO:%20http%3A%2F%2Figouverte.org%2F" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a> 
+    <a class="footer-reseau" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Figouverte.org%2F&amp;t=IGO" title="Share on Facebook" target="_blank"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
+    <a class="footer-reseau" href="https://plus.google.com/share?url=http%3A%2F%2Figouverte.org%2F" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
+    <a class="footer-reseau" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Figouverte.org%2F&amp;title=IGO&amp;summary=Infrastructure%20geomatique%20ouverte&amp;source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square" data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
 </div> 
 
 
@@ -680,9 +743,9 @@
 
 <!-- <div class="share-page">
     Share this on &rarr; 
-    <a href="https://twitter.com/intent/tweet?text=&url=http://igouverte.org/demo/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=http://igouverte.org/demo/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
-    <a href="https://plus.google.com/share?url=http://igouverte.org/demo/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=&url=http://localhost:4000/demo/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://localhost:4000/demo/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url=http://localhost:4000/demo/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
 </div> -->
 	<!-- summary="Infrastructure de géomatique ouverte" source="http://infra-geo-ouverte.github.io/site-web/" -->
 	
@@ -694,7 +757,7 @@
 	
 
 		
-		<small class="copyright text-center">&copy;IGO, 2015</small>
+		<small class="copyright text-center">&copy;IGO, 2017</small>
 
 </footer>
 </div> <!-- div de : <div itemscope itemtype="http://schema.org/SoftwareApplication"> dans le header -->

@@ -39,7 +39,11 @@
 				<!-- menu haut droit -->	
 				
 				 <ul class="nav navbar-nav menu-top">
-
+					<li class="page-link fr">
+						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
+							Licence
+						</a>
+					</li>
 				    {% for link in site.navigation %}
 				    	{% if page.url contains 'english/' %}
 				        <li class="page-link fr"><a href="{{ link.url }}">{{ link.text2 }}</a></li>
@@ -96,9 +100,9 @@
 						{% endif %}
 					{% endfor %}
 					<li>
-						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo/master/LICENCE.txt">
-							<span class="nav-icons octicon octicon-code"></span>
-							Licence
+						<a href="/Nouveaute/nouveaute/">
+							<span class="nav-icons octicon octicon-flame"></span>
+							Nouveautés
 						</a>
 					</li>
 				</ul>

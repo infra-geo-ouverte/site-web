@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)" />	
 	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur, igo, infrastructure" />
-	<meta name="description" content="IGO est une solution Web gratuite en géomatique." />
+	<meta name="description" content="Documentation" />
 	<meta name="robots" content="index,follow"/> 
     <meta name="revisit-after" content="1 days"/>   
 	
@@ -72,10 +72,10 @@
 	<!--<![endif]-->
 	
 	<!-- pour avoir un url clean et mieux indexé ref: https://support.google.com/webmasters/answer/139066?hl=fr -->	
-	<link rel="canonical" href="http://igouverte.org/documentation/" >
+	<link rel="canonical" href="http://localhost:4000/documentation/" >
 	  
 	<!-- pour le fil RSS à ajouter avec un blog http://joelglovier.com/writing/rss-for-jekyll/ -->
-	<link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="http://igouverte.org/feed.xml" >
+	<link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="http://localhost:4000/feed.xml" >
 
   </head>
 
@@ -91,7 +91,7 @@
 		<!-- Titre du site/ mettre le logo -->
 		<div class="navbar-header">
 			<a href="/">
-				<img itemprop="image" width="260" height="138" class="logo-med" src="/assets/img/Igo_logoavec.png"  alt="Logo IGO" />
+				<img itemprop="image" class="logo-med" src="/assets/img/Igo_logoavec.png"  alt="Logo IGO" />
 			</a>
 						
 			<!--[if gt IE 8]><!-->
@@ -103,7 +103,7 @@
 				</button>
 			<!--<![endif]-->
 				<!-- Lien Github -->
-				<a class="git-btn btn btn-primary" href="https://github.com/infra-geo-ouverte/igo">Voir sur Github
+				<a class="git-btn btn btn-primary" href="https://github.com/infra-geo-ouverte/">Voir sur Github
 					
 					<!--[if lte IE 8]>
 						<img class="logo-git" width="32" height="32" src="/assets/img/GitHub-Mark-Light-32px.png" alt="Logo Github" />
@@ -122,7 +122,11 @@
 				<!-- menu haut droit -->	
 				
 				 <ul class="nav navbar-nav menu-top">
-
+					<li class="page-link fr">
+						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
+							Licence
+						</a>
+					</li>
 				    
 				    	
 					<li class="page-link en"><a href="/faq/">FAQ</a></li>
@@ -218,6 +222,8 @@
 					
 						
 					
+						
+					
 						  
 						<li>
 							<a class="page-link"  
@@ -235,6 +241,38 @@
 							</a>
 
 						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -304,6 +342,44 @@
 					
 						
 					
+						  
+						<li>
+							<a class="page-link"  
+								href="/Nouveaute/nouveaute/" role="button" aria-expanded="false">
+								
+								
+								
+								
+									<!-- <i class="fa fa-file-text fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.page.text.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-file-text"></span>
+									Services 
+								
+								  
+							</a>
+
+						</li>
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/documentation/page-services-igo/" role="button" aria-expanded="false">
+								
+								
+								
+								
+									<!-- <i class="fa fa-file-text fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.page.text.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-file-text"></span>
+									Services 
+								
+								  
+							</a>
+
+						</li>
+						
+					
 						
 					
 						
@@ -325,9 +401,9 @@
 						
 					
 					<li>
-						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
-							<span class="nav-icons octicon octicon-code"></span>
-							Licence
+						<a href="/Nouveaute/nouveaute/">
+							<span class="nav-icons octicon octicon-flame"></span>
+							Nouveautés
 						</a>
 					</li>
 				</ul>
@@ -344,28 +420,29 @@
  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
 
 	
-		
+
 		<ul class="nav sidebar-nav">
 		  
-			<li class="sidebar-brand "><a class="smooth-scroll" href="#utilisateur">Pour les utilisateurs</a></li>
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#utilisateur">Pour les utilisateurs</a></li>
+         
 		  
-			<li class="sidebar-brand "><a class="smooth-scroll" href="#developpeur">Pour les développeurs</a></li>
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#developpeur">Pour les développeurs</a></li>
+         
 		  
-			<li class="sidebar-brand "><a class="smooth-scroll" href="#gabarit">Gabarits et autres</a></li>
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#gabarit">Gabarits et autres</a></li>
+         
 		  
 
 			<li class="sidebar-brand">
 				<a href="#header" class="back-to-top smooth-scroll octicon octicon-chevron-up">
 					<span class="hautpage">Haut de la page </span>
-					
+
 				</a>
 			</li>
 		</ul>
 	
 
 </nav>
-
-        
 
 
 			<!-- Page Content -->
@@ -381,38 +458,50 @@
 						<div>				
 							<h1 id="documentation">Documentation</h1>
 
-<p>Cet espace comprend toute la documentation et les gabarits communs d&#39;IGO.</p>
-
-<p><a id="utilisateur"></a></p>
-
-<h2 id="guide-pour-les-utilisateurs-d-39-igo-navigateur">Guide pour les utilisateurs d&#39;IGO-Navigateur : <a href="#utilisateur"><span class="octicon octicon-link"></span></a></h2>
-
-<p><a href="https://github.com/infra-geo-ouverte/igo/blob/master/doc/guide/IGO_Navigateur_guide.docx">Guide d&#39;utilisation du navigateur IGO</a></p>
-
-<p><a id="developpeur"></a></p>
-
-<h2 id="informations-pour-les-d�veloppeurs-et-int�grateurs">Informations pour les développeurs et intégrateurs : <a href="#developpeur"><span class="octicon octicon-link"></span></a></h2>
-
-<p><a href="https://github.com/infra-geo-ouverte/igo/blob/master/doc/xml/DocumentationXML.markdown">Documentation des balises XML d&#39;IGO-Navigateur</a></p>
-
-<p><a id="gabarit"></a></p>
-
-<h2 id="gabarit-pour-documenter-un">Gabarit pour documenter un : <a href="#gabarit"><span class="octicon octicon-link"></span></a></h2>
-
+<h2 id="découpage-de-la-solution">Découpage de la solution</h2>
 <ul>
-<li><a href="/documentation/doc_module">module</a></li>
-<li><a href="/documentation/doc_service">service</a></li>
-<li><a href="/documentation/doc_panorama">panorama</a>.</li>
+  <li>Coté Client :
+    <ul>
+      <li><a href="https://github.com/infra-geo-ouverte/igo2-lib">IGO2 Lib</a> : librairie des fonctionnalités client. Une démonstration de chacun des composants est disponible <a href="https://infra-geo-ouverte.github.io/igo2-lib/#/home">ici</a>.</li>
+      <li><a href="https://github.com/infra-geo-ouverte/igo2">IGO2 Assemblage</a> : assemblage de la librairie permettant de créer l’application, IGO2 par défaut.Un assemblage personnalisé peut aussi être construit directement à partir de la librairie IGO2 Lib.</li>
+      <li>Fichiers de configuration des contextes (format JSON)</li>
+    </ul>
+  </li>
+  <li>Coté Serveur (optionnel):
+    <ul>
+      <li><a href="https://github.com/infra-geo-ouverte/igo2-api">API de contexte</a>: Rend la configuration des contextes disponible au niveau serveur, à installer. Permet la gestion des contextes  au niveau d’une base de données ce qui rend possible la création et la modification des contextes par un utilisateur.</li>
+    </ul>
+  </li>
+  <li><strong>Services  accessibles</strong>
+    <ul>
+      <li>API de recherche(services de recherche ouverts)
+        <ul>
+          <li><a href="https://geoegl.msp.gouv.qc.ca/apis/icherche/docs">iCherche Geocode</a> : formatage et géocodage d’adresses basé sur Adresses Québec</li>
+          <li><a href="https://geoegl.msp.gouv.qc.ca/apis/terrapi/docs">TerrAPI</a> : Recherche par élément spatial et filtrage  (supporte plusieurs éléments du découpage territorial  québécois)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
 
-<h2 id="autres-documents">Autres documents :</h2>
-
+<h2 id="technologies-utilisées-et-supportées">Technologies utilisées et supportées</h2>
+<p><a href="http://www.igouverte.org/documentation/techno/">Détail des librairies utilisées et des services supportés</a></p>
+<h2 id="présentations-igo">Présentations IGO</h2>
 <ul>
-<li><a href="/documentation/techno">technologies utilisées</a></li>
-<li><a href="https://github.com/infra-geo-ouverte/igo/blob/master/doc/IGO-CIBLE-v2014_aveclogo.png">architecture</a></li>
-<li><a href="/documentation/module">modules</a></li>
-<li><a href="/documentation/glo">GLO</a>.</li>
+  <li><a href="https://github.com/infra-geo-ouverte/site-web/tree/gh-pages/_pages/Documentation/20191015_IGO_générique.pdf">IGO2-la collaboration en pratique</a></li>
 </ul>
+
+<h2 id="capsules-vidéo">Capsules Vidéo</h2>
+<p>Démonstrations de l’installation et de certaines configurations de base.</p>
+<ul>
+  <li><a href="https://geoegl.msp.gouv.qc.ca/igouverte/videos/1-installationLocale.webm">Installation</a></li>
+  <li><a href="https://geoegl.msp.gouv.qc.ca/igouverte/videos/2-ajouterContexte.webm">Ajout de Contexte</a></li>
+  <li><a href="https://geoegl.msp.gouv.qc.ca/igouverte/videos/3-ajouterCatalogue3.webm">Ajout de Catalogue</a></li>
+</ul>
+
+<h2 id="documentation-détaillée">Documentation détaillée</h2>
+
+<p>Pour consulter la documentation détaillée, cliquer <a href="https://igo2.readthedocs.io/fr/latest/">ici</a></p>
                   
 						</div>
 					</div>
@@ -425,15 +514,10 @@
     <footer class="site-footer" id="footer">
 
 	<div class="wrapper row">
-		<!-- LOGO -->
-		<div class="col-xs-12 col-sm-3 text-center">
-			<a href="/">
-				<img class="logo-med" width="85" height="187" src="/assets/img/logo_bleu_112.png"  alt="Logo IGO" />
-			</a>
+	
+		<div class="col-xs-12 col-sm-6 text-left">
 
-		</div>
-		<!-- LISTE DE PAGES -->
-		<div class="col-xs-12 col-sm-6 text-center">
+			<div class="listMenu">
 			<ul class="footer listGauche">
 				
 					
@@ -476,12 +560,46 @@
 				
 					
 				
+					
+				
 					 
 					<li>
 						<a class="page-link"  
 							href="/documentation/" role="button" aria-expanded="false">Documentation
 						</a>
 					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
 					
 				
 					
@@ -540,6 +658,22 @@
 				
 					
 				
+					 
+					<li>
+						<a class="page-link"  
+							href="/Nouveaute/nouveaute/" role="button" aria-expanded="false">Services
+						</a>
+					</li>
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/documentation/page-services-igo/" role="button" aria-expanded="false">Services
+						</a>
+					</li>
+					
+				
 					
 				
 					
@@ -565,6 +699,11 @@
 						Licence
 					</a>
 				</li>
+				<li>
+					<a href="/Nouveaute/nouveaute/">
+						Nouveautés
+					</a>
+				</li>
 
 				
 					
@@ -581,9 +720,16 @@
 				
 				
 			</ul>
-		</div>
+				<!-- LOGO -->
+			</div>
+			<a href="/">
+				<img class="logo-med" src="/assets/img/logo_bleu_112.png"  alt="Logo IGO" />
+			</a>
+
+			</div>
+		
 		<!-- FORMULAIRE -->
-		<div class="col-xs-12 col-sm-3 text-center col-form">			
+		<div class="col-xs-12 col-sm-6 text-center col-form">			
 			
 			<!-- reference pour le formulaire avec Formspree: http://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites&#151;cms-23870 -->
 			<div id="contact">
@@ -617,13 +763,13 @@
 		</div>
 	</div>
 		<hr>
-		<p class="footer-mail text-center">Courriel: info[a]igouverte.org </p>
+		<p class="footer-mail text-center">Courriel: info[@]igouverte.org </p>
 		<div class="share-page">
     Partagez &rarr; 
-    <a class="footer-reseau" href="https://twitter.com/intent/tweet?source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;text=IGO:%20http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a> 
-    <a class="footer-reseau" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;t=IGO" title="Share on Facebook" target="_blank"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
-    <a class="footer-reseau" href="https://plus.google.com/share?url=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
-    <a class="footer-reseau" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;title=IGO&amp;summary=Infrastructure%20geomatique%20ouverte&amp;source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square" data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
+    <a class="footer-reseau" href="https://twitter.com/intent/tweet?source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;text=IGO:%20http%3A%2F%2Figouverte.org%2F" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a> 
+    <a class="footer-reseau" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Figouverte.org%2F&amp;t=IGO" title="Share on Facebook" target="_blank"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
+    <a class="footer-reseau" href="https://plus.google.com/share?url=http%3A%2F%2Figouverte.org%2F" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
+    <a class="footer-reseau" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Figouverte.org%2F&amp;title=IGO&amp;summary=Infrastructure%20geomatique%20ouverte&amp;source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square" data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
 </div> 
 
 
@@ -633,9 +779,9 @@
 
 <!-- <div class="share-page">
     Share this on &rarr; 
-    <a href="https://twitter.com/intent/tweet?text=&url=http://igouverte.org/documentation/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=http://igouverte.org/documentation/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
-    <a href="https://plus.google.com/share?url=http://igouverte.org/documentation/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=&url=http://localhost:4000/documentation/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://localhost:4000/documentation/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url=http://localhost:4000/documentation/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
 </div> -->
 	<!-- summary="Infrastructure de géomatique ouverte" source="http://infra-geo-ouverte.github.io/site-web/" -->
 	
@@ -647,7 +793,7 @@
 	
 
 		
-		<small class="copyright text-center">&copy;IGO, 2015</small>
+		<small class="copyright text-center">&copy;IGO, 2017</small>
 
 </footer>
 </div> <!-- div de : <div itemscope itemtype="http://schema.org/SoftwareApplication"> dans le header -->
