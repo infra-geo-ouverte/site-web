@@ -8,7 +8,8 @@ _Ce document présente les principales améliorations et correctifs des dernièr
 
 _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
 
-![](RackMultipart20200527-4-1ayu9sx_html_34f0b98b7ab7e074.png)**IGO Version 1.3 (2020-05-11)**
+<a id="version_1_3"></a>
+## IGO Version 1.3 (2020-05-11) [<span class="octicon octicon-link"></span>](#version_1_3)
 
 **Nouvelles fonctionnalités et améliorations**
 
