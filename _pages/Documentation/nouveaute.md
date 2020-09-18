@@ -4,13 +4,13 @@ layout: general
 iconenouveaute: ""
 ---
 
-**Nouvelles fonctionnalités et améliorations**
-
-_Ce document présente les principales améliorations et correctifs. Tous les changements sont détaillés au niveau technique dans le journal des modifications sur le dépôt GitHub du projet igo2-lib :_ [_https://github.com/infra-geo-ouverte/igo2-lib/blob/master/CHANGELOG.md_](https://github.com/infra-geo-ouverte/igo2-lib/blob/master/CHANGELOG.md)
+_Ce document présente les principales améliorations et correctifs des dernières version d'IGO. Tous les changements sont détaillés au niveau technique dans le journal des modifications sur le dépôt GitHub du projet igo2-lib :_ [_https://github.com/infra-geo-ouverte/igo2-lib/blob/master/CHANGELOG.md_](https://github.com/infra-geo-ouverte/igo2-lib/blob/master/CHANGELOG.md)
 
 _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
 
 ![](RackMultipart20200527-4-1ayu9sx_html_34f0b98b7ab7e074.png)**IGO Version 1.3 (2020-05-11)**
+
+**Nouvelles fonctionnalités et améliorations**
 
 - **Catalogue**
   - Le titre du catalogue est conservé dans le titre lorsqu&#39;on bascule à l&#39;intérieur du catalogue
