@@ -4,9 +4,61 @@ layout: general
 iconenouveaute: ""
 ---
 
-_Ce document présente les principales améliorations et correctifs des dernières version d'IGO. Tous les changements sont détaillés au niveau technique dans le journal des modifications sur le dépôt GitHub du projet igo2-lib :_ [_https://github.com/infra-geo-ouverte/igo2-lib/blob/master/CHANGELOG.md_](https://github.com/infra-geo-ouverte/igo2-lib/blob/master/CHANGELOG.md)
+_Ce document présente les principales améliorations et correctifs des dernières version d'IGO. Tous les changements sont détaillés dans le journal des modifications sur le dépôt GitHub du projet igo2-lib :_ [_https://github.com/infra-geo-ouverte/igo2-lib/blob/master/CHANGELOG.md_](https://github.com/infra-geo-ouverte/igo2-lib/blob/master/CHANGELOG.md)
 
 _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
+
+<a id="version_1_4"></a>
+## IGO Version 1.4 (2020-08-03) [<span class="octicon octicon-link"></span>](#version_1_4)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Global**
+  -	Détection des fureteurs dont la version n’est pas supportée (([#399](https://github.com/infra-geo-ouverte/igo2/issues/399)))
+  -	Stockage des préférences de l’utilisateur (([#443](https://github.com/infra-geo-ouverte/igo2/issues/443)))
+
+- **Carte**
+  -	Ajout d’un mode de localisation permettant le suivi de la position en temps réel (([#648](https://github.com/infra-geo-ouverte/igo2-lib/pull/648)))
+
+- **Contextes**
+  -	Pouvoir exporter et importer un contexte dans une instance IGO qui n'utilise pas l'api de contexte (([#388](https://github.com/infra-geo-ouverte/igo2/issues/388)))
+  -	À l’ouverture d’un contexte, retirer les couches dont l'accès est interdit et avertir l'utilisateur (([#321](https://github.com/infra-geo-ouverte/igo2/issues/321)))
+  -	Pouvoir filtrer la liste des contextes par profil d’utilisateur et niveau de partage (instances utilisant l’api de contexte seulement) (([#447](https://github.com/infra-geo-ouverte/igo2/issues/447)))
+  -	Pouvoir masquer un contexte (instances utilisant l’api de contexte seulement) (([#680](https://github.com/infra-geo-ouverte/igo2-lib/pull/680)))
+  -	L’utilisateur peut retirer un contexte qui lui a été partagé de façon permanente
+  -	Possibilité de traduire en anglais le message (toast) qui s’affiche à l’ouverture d’un contexte (([#433](https://github.com/infra-geo-ouverte/igo2/issues/433)))
+
+- **Interrogation sur la carte**
+  -	Pouvoir agrandir/réduire la taille de la fenêtre des résultats d’interrogation sur la carte (([#442](https://github.com/infra-geo-ouverte/igo2/issues/442)))
+
+- **Paramètres URL**
+  -	Ajout d'un fichier de données géolocalisées à la volée par paramètre d'URL (([#415](https://github.com/infra-geo-ouverte/igo2/issues/415)))
+
+- **Outil d’importation/exportation**
+  -	Exportation en fichier CSV compatible avec Excel (fichier CSV avec séparateur point-virgule) (([#452](https://github.com/infra-geo-ouverte/igo2/issues/452)))
+  -	Exporter plusieurs couches à la fois (([#692](https://github.com/infra-geo-ouverte/igo2-lib/pull/692)))
+  -	Exporter les couches dans l’étendue de la carte (WFS et vecteurs) (([#657](https://github.com/infra-geo-ouverte/igo2-lib/pull/657)))
+  -	Conserver les dernières options choisies (([#657](https://github.com/infra-geo-ouverte/igo2-lib/pull/657)))
+  -	Afficher un hyperlien pour les couches téléchargeables avec un lien externe (([#661](https://github.com/infra-geo-ouverte/igo2-lib/pull/661)))
+
+- **Impression**
+  -	Impression de carte sur appareil mobile (([#685](https://github.com/infra-geo-ouverte/igo2-lib/pull/685)))
+
+- **Filtre spatial**
+  -	Lier l’exportation des résultats du filtre spatial à l’outil d’exportation (([#439](https://github.com/infra-geo-ouverte/igo2/issues/439)))
+
+**Correctifs**
+
+- **Recherche**
+  -	Supprimer le résultat précédent de la carte lors d'une nouvelle recherche (([#473](https://github.com/infra-geo-ouverte/igo2/issues/473))) (([#475](https://github.com/infra-geo-ouverte/igo2/issues/475)))
+  -	Pouvoir ouvrir le lien Google Maps quand le résultat est une municipalité (([#409](https://github.com/infra-geo-ouverte/igo2/issues/409)))
+
+- **Contextes**
+  -	Si un contexte est invalide, avertir l’utilisateur et afficher le contexte par défaut
+
+- **Outil d’importation/exportation**
+  -	L’exportation en format GOX supporte les géométries de type MultiLineString (([#660](https://github.com/infra-geo-ouverte/igo2-lib/pull/660)))
+  -	Pouvoir exporter les enregistrements même si le service WFS n’est pas visible sur la carte (([#661](https://github.com/infra-geo-ouverte/igo2-lib/pull/661)))
 
 <a id="version_1_3"></a>
 ## IGO Version 1.3 (2020-05-11) [<span class="octicon octicon-link"></span>](#version_1_3)
