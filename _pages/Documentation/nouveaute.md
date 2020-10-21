@@ -14,7 +14,7 @@ _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-
 **Nouvelles fonctionnalités et améliorations**
 
 - **Global**
-  -	Quand l’enregistrement sélectionné est trop petit pour être visible à l’échelle actuelle de la carte, afficher un marqueur pour indiquer l’emplacement ([#]())
+  -	Quand l’enregistrement sélectionné est trop petit pour être visible à l’échelle actuelle de la carte, afficher un marqueur pour indiquer l’emplacement
 
 - **Aide et documentation**
   - Possibilité d'afficher une page d’accueil au contenu configurable ([#689](https://github.com/infra-geo-ouverte/igo2-lib/pull/689))
