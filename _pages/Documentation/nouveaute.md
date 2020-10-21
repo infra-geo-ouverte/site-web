@@ -8,6 +8,41 @@ _Ce document présente les principales améliorations et correctifs des dernièr
 
 _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
 
+<a id="version_1_5"></a>
+## IGO Version 1.5 (2020-10-09) [<span class="octicon octicon-link"></span>](#version_1_5)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Global**
+  -	Quand l’enregistrement sélectionné est trop petit pour être visible à l’échelle actuelle de la carte, afficher un marqueur pour indiquer l’emplacement ([#]())
+
+- **Aide et documentation**
+  - Possibilité d'afficher une page d’accueil au contenu configurable ([#689](https://github.com/infra-geo-ouverte/igo2-lib/pull/689))
+  - Ajout d’un tour guidé configurable ([#382](https://github.com/infra-geo-ouverte/igo2/issues/382))
+
+- **Table des enregistrements**
+  - Montrer les enregistrements des couches vectorielles contenues dans la carte ([#390](https://github.com/infra-geo-ouverte/igo2/issues/390))
+  - Afficher le résultat de la sélection d’une couche dans la table ([#445](https://github.com/infra-geo-ouverte/igo2/issues/445))
+
+- **Interrogation sur la carte**
+  - Afficher les images directement dans la fenêtre d’information
+
+- **Gestion des couches de la carte**
+  - Afficher ou masquer plusieurs couches à la fois dans la sélection multiple ([#453](https://github.com/infra-geo-ouverte/igo2/issues/453))
+  - Pouvoir définir des filtres temporel dans les filtres attributaires avancés ([#705](https://github.com/infra-geo-ouverte/igo2-lib/pull/705))
+
+- **Itinéraire**
+  - Lien pour afficher l’outil d’itinéraire vers un résultat de recherche ([#711](https://github.com/infra-geo-ouverte/igo2-lib/pull/711))
+
+- **Catalogue**
+  - Pouvoir ajouter des services ArcGIS REST dans les catalogues composites ([#709](https://github.com/infra-geo-ouverte/igo2-lib/pull/709))
+
+- **Authentification**
+  - Ajout de l'authentification Microsoft Azure
+
+- **Mises à jour**
+  - Mise à jour de l’ensemble des librairies ([#696](https://github.com/infra-geo-ouverte/igo2-lib/issues/696))
+
 <a id="version_1_4"></a>
 ## IGO Version 1.4 (2020-08-03) [<span class="octicon octicon-link"></span>](#version_1_4)
 
@@ -83,7 +118,7 @@ _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-
 - **Interrogation sur la carte**
   - Lorsque le service interrogé ne retourne pas de géométrie, ajouter un marqueur sur la carte pour indiquer l&#39;emplacement du clic ([#617](https://github.com/infra-geo-ouverte/igo2-lib/issues/617))
 
-- **Outil de gestion des couches de la carte**
+- **Gestion des couches de la carte**
   - Amélioration à l&#39;ergonomie ([#397](https://github.com/infra-geo-ouverte/igo2/issues/397)) :
     - Les outils de gestion d&#39;une couche (opacité, ordre, suppression, filtres attributaires et temporels) s&#39;affichent dans une barre d&#39;outil en bas du panneau ([#357](https://github.com/infra-geo-ouverte/igo2-lib/issues/357))
     - Onglet « Légende » qui permet un affichage simplifié de la légende des couches visibles sur la carte (#507)
