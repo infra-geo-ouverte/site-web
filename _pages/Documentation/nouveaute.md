@@ -31,7 +31,7 @@ _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-
   - Ajouter les coordonnées (latitude et longitude) des points extraits
 
 - **Catalogue**
-  - Possibilité de définir un alias pour renomme rune couche d'un catalogue composite ([#787](https://github.com/infra-geo-ouverte/igo2-lib/pull/787))
+  - Possibilité de définir un alias pour renommer une couche d'un catalogue composite ([#787](https://github.com/infra-geo-ouverte/igo2-lib/pull/787))
   - Afficher le contenu de la balise « abstract » si aucun hyperlien de métadonnées n’est défini ([#514](https://github.com/infra-geo-ouverte/igo2/issues/514))
 
 <a id="version_1_5"></a>
