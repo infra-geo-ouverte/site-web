@@ -8,6 +8,32 @@ _Ce document présente les principales améliorations et correctifs des dernièr
 
 _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
 
+<a id="version_1_6"></a>
+## IGO Version 1.6 (2021-02-01) [<span class="octicon octicon-link"></span>](#version_1_6)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Aide et documentation**
+  -	Possibilité d'ajouter un lien vers un guide d’utilisation dans l’outil « À propos » ([#790](https://github.com/infra-geo-ouverte/igo2-lib/pull/790))
+  - Ajout d’un tour interactif pour l’outil « Carte »
+  - Ajout d’un tour interactif pour l’outil « Contextes »
+  - Aide à l’outil de recherche (indiquer des exemples) ([#306](https://github.com/infra-geo-ouverte/igo2/issues/306))
+
+- **Outil de dessin**
+  - Ajout d’un outil de dessin ([#391](https://github.com/infra-geo-ouverte/igo2/issues/391))
+
+- **Impression**
+  - Corriger l’affichage des titres trop longs ([#724](https://github.com/infra-geo-ouverte/igo2-lib/issues/724))
+  - Ajout d'un sous-titre ([#805](https://github.com/infra-geo-ouverte/igo2-lib/pull/805))
+
+- **Impression**
+  - Pouvoir ajouter un buffer autour d’une zone prédéfinie ou dessinée
+  - Ajouter les coordonnées (latitude et longitude) des points extraits
+
+- **Catalogue**
+  - Possibilité de définir un alias pour renomme rune couche d'un catalogue composite ([#787](https://github.com/infra-geo-ouverte/igo2-lib/pull/787))
+  - Afficher le contenu de la balise « abstract » si aucun hyperlien de métadonnées n’est défini ([#514](https://github.com/infra-geo-ouverte/igo2/issues/514))
+
 <a id="version_1_5"></a>
 ## IGO Version 1.5 (2020-10-09) [<span class="octicon octicon-link"></span>](#version_1_5)
 
