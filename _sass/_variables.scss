@@ -1,0 +1,120 @@
+// ************** COULEURS *********************
+// UTILISATION: EX: color: $bleu;
+
+$bleu: #006bb6;
+$bleu-pale: lighten($bleu, 60%); // pour background #ebf7ff 
+$bleu-fonce: darken($bleu, 20%); // #002d4d 
+
+$vert: #9fcb17;
+$vert-pale: lighten($vert, 40%); //pour background #e8f7ba
+$vert-fonce: darken($vert, 20%); // #566e0c
+
+$orange: #ffa84c;
+$orange-pale: lighten($orange, 25%);  //pour background #566e0cc
+$orange-fonce: darken($orange, 15%); //#fa8000
+
+$gris: #828282;
+$gris-fonce: darken($gris, 20%); //#4d4d4d
+$gris-pale: #f8f8f8;
+
+$noir: #111;
+$blanc: #fff;
+
+// ************** TEXTE **************************
+//letter-spacing
+$title-letter-spacing: 4px;
+$text-letter-spacing: 2px;
+
+//line-height
+$base-line-height: 1.5;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+
+//fonts
+$title-font-family: 'Ubuntu', sans-serif;
+$base-font-family: 'Muli', 'Helvetica', 'Arial', sans-serif; 
+//import est dans le css/main.scss
+
+// Heading pour écran font-size
+$h1: 30px;
+$h2: 24px;
+$h3: 20px;
+$h4: 16px;
+$h5: 14px;
+$h6: 13px;
+
+
+$spacing-unit:     30px;
+
+// Font weights
+$light: 300;
+$regular: 400;
+$bold: 700;
+
+// transitions
+$transition: all 0.2s linear;
+
+// Width of the content area ????
+$content-width:    800px;
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+// ************* MEDIA QUERIES *******************
+
+// media-queries
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+$screen-xs-min: 500px;
+
+// **************** MIXINS *********************
+//mixin
+@mixin background-img{
+	background-repeat: no-repeat;
+	background-position: top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+	margin: 0 auto;
+}
+// pour les ancres dans les sections de pages
+@mixin anchor{
+	background-repeat: no-repeat;
+	background-position: top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+/*******************************************************/
+
+/************css pour tablette et ordinateur ***********/
+
+/*******************************************************/
+/* ---------------- 500px ---------------------------- */
+@media screen and (min-width: $screen-xs-min) {
+
+}
+/* ----------------768px-----------------------------  */
+
+@media screen and (min-width: $screen-sm-min) {
+
+}
+
+/* ----------------992px----------------------------------  */
+
+@media screen and (min-width: $screen-md-min) {
+
+}
+
+/* ----------------1200px---------------------------------  */
+
+@media screen and (min-width: $screen-lg-min) {
+
+}

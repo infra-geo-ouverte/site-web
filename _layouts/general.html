@@ -1,0 +1,29 @@
+  {% include head.html %}
+
+	<body>
+		{% include header.html %}
+		
+			<div id="wrapper">
+			{% include sidebar.html %}
+
+			<!-- Page Content -->
+				<div id="page-content-wrapper">
+					<!-- Flèche pour ouvrir et fermer le menu de côté gauche -->
+					<!--[if gte IE 8)] -->
+					<button type="button" id="icone-sidebar" class="octicon octicon-move-right" data-toggle="offcanvas">
+						<!-- si on veut mettre du texte sur le bouton <span class="txtmenu"></span> -->
+					</button>
+					<!-- [endif]-->
+			
+					<div class="container" >
+						<div>				
+							{{ content }}                  
+						</div>
+					</div>
+				</div>
+					<!-- /#page-content-wrapper -->
+
+			</div>  <!-- /#wrapper di sidebar.html-->
+
+
+    {% include footer.html %}

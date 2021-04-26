@@ -1,0 +1,1076 @@
+  <!doctype html>
+<html lang="fr">
+
+<head>
+	<title>IGO Infrastructure Géomatique Ouverte</title>
+
+		 
+	<!-- Balises meta régulières -->	 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)" />	
+	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur, igo, infrastructure" />
+	<meta name="description" content="Charte de la communauté IGO" />
+	<meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>   
+	
+	<!-- Reseaux sociaux-->
+	<meta property="og:title"       content="IGO Infrastructure Géomatique Ouverte" />
+	<meta property="og:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
+	<meta property="og:type"        content="website" />
+	<meta property="og:locale" 	content="fr_FR" />
+	<meta property="og:url"         content="http://igouverte.org/" />
+	<meta property="og:site_name"   content="IGO" />
+	<meta property="og:image"       content="http://infra-geo-ouverte.github.io/site-web/assets/img/socialImg.jpg" />
+
+	
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@igo" />
+	<meta name="twitter:title" content="IGO: Infrastructure Géomatique Ouverte" />
+	<meta name="twitter:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
+	<meta name="twitter:image" content="http://infra-geo-ouverte.github.io/site-web/assets/img/socialImg.jpg" />
+
+	<!-- Favicon pour mobile, onglet du site.... 
+	<link rel="icon" sizes="228x228" href="/assets/img/igo_icone.png"> -->
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/img/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!-- Balise pour Google -->
+	<meta name="google-site-verification" content="tb9Q1FBCF-x1ul35k6Q8_-4OsL4IT0tge9FDeVfXG44" />
+	
+	<!-- Fichiers css-->
+    	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/assets/fonts/octicons/octicons.css" />
+	<link rel="stylesheet" href="/css/print.css"  media="print">  	<!-- Pour l'impression de page du site -->
+
+	
+	<!-- CSS dépendant du navigateur IE -->
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="/css/main_ie8.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"> </script>
+	<![endif]-->
+	<!--[if (gte IE 9)|(!IE)]><!-->
+		<link rel="stylesheet" href="/css/main.css" />
+	<!--<![endif]-->
+	
+	<!-- pour avoir un url clean et mieux indexé ref: https://support.google.com/webmasters/answer/139066?hl=fr -->	
+	<link rel="canonical" href="http://localhost:4000/communaute/" >
+	  
+	<!-- pour le fil RSS à ajouter avec un blog http://joelglovier.com/writing/rss-for-jekyll/ -->
+	<link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="http://localhost:4000/feed.xml" >
+
+  </head>
+
+
+	<body>
+		<div itemscope itemtype="http://schema.org/SoftwareApplication">
+<header class="site-header" id="header">
+	
+	<nav class="navbar navbar-default">
+	<div>
+		<!-- Menu mobile, 3 span pour les 3 lignes de l'icone -->
+		
+		<!-- Titre du site/ mettre le logo -->
+		<div class="navbar-header">
+			<a href="/">
+				<img itemprop="image" class="logo-med" src="/assets/img/Igo_logoavec.png"  alt="Logo IGO" />
+			</a>
+						
+			<!--[if gt IE 8]><!-->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			<!--<![endif]-->
+				<!-- Lien Github -->
+				<a class="git-btn btn btn-primary" href="https://github.com/infra-geo-ouverte/">Voir sur Github
+					
+					<!--[if lte IE 8]>
+						<img class="logo-git" width="32" height="32" src="/assets/img/GitHub-Mark-Light-32px.png" alt="Logo Github" />
+					<![endif]-->
+					<span class="logo-git octicon octicon-mark-github"></span>
+					
+				</a>
+					
+		</div>
+
+		<!-- Collect the nav links -->
+		<!--[if gt IE 8]><!-->
+		<div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<!--<![endif]-->
+			<div class="head-right">				
+				<!-- menu haut droit -->	
+				
+				 <ul class="nav navbar-nav menu-top">
+					<li class="page-link fr">
+						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
+							Licence
+						</a>
+					</li>
+				    
+				    	
+					<li class="page-link en"><a href="/faq/">FAQ</a></li>
+					
+				    
+				    	
+					<li class="page-link en"><a href="/english/">English</a></li>
+					
+				    
+				    	
+					<li class="page-link en"><a href="/"></a></li>
+					
+				    
+					<li class="headContact"><a href="#footer">Contact</a></li>
+				</ul> 
+				
+
+			</div>	
+			<!-- menu principal -->
+			<div class="menu-main">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="/nouveaute/">
+							<span class="nav-icons octicon octicon-flame"></span>
+							Nouveautés
+						</a>
+					</li>
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/communaute/" role="button" aria-expanded="false">
+								
+								
+									<!-- <i class="fa fa-child fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.people.multiple.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-organization"></span>
+									Communauté 
+								
+								
+								
+								  
+							</a>
+						</li>
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/contribuer/" role="button" aria-expanded="false">
+								
+									<!-- <i class="fa fa-user-plus fa-lg "></i>  
+									<img class="icons" src="/assets/img/icons/appbar.layer.add.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-git-merge"></span>
+									Contribuer 
+								
+								
+								
+								
+								  
+							</a>
+						</li>
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/demo/" role="button" aria-expanded="false">
+								
+								
+								
+								
+								
+									<!-- <i class="fa fa-eye fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.cogs.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-eye"></span>
+									Démonstration 
+								  
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/documentation/" role="button" aria-expanded="false">
+								
+								
+								
+								
+									<!-- <i class="fa fa-file-text fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.page.text.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-file-text"></span>
+									Documentation 
+								
+								  
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/installation/" role="button" aria-expanded="false">
+								
+								
+								
+									<!-- <i class="fa fa-laptop fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.cabinet.in.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-move-down"></span>
+									Installation 
+								
+								
+								  
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/documentation/page-services-igo/" role="button" aria-expanded="false">
+								
+								
+								
+								
+									<!-- <i class="fa fa-file-text fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.page.text.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-file-text"></span>
+									Services 
+								
+								  
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+				</ul>
+			</div>	
+		<!--[if gt IE 8]><!--></div><!--<![endif]-->	<!-- /.navbar-collapse -->		
+	</div> 
+	</nav>	
+
+</header>
+
+		
+			<div id="wrapper">
+			<!-- Contenu de la barre de navigation sur le côté de la page -->
+ <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+
+	
+
+		<ul class="nav sidebar-nav">
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#mission">Mission</a></li>
+         
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#structure">Structure et parties prenantes</a></li>
+         
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#communaute">Schéma de la structure de la communauté</a></li>
+         
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#cd">Comité directeur (CD)</a></li>
+         
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#cp">Comité de pilotage (CP)</a></li>
+         
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#ct">Comité technique (CT)</a></li>
+         
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#contributeurs">Contributeurs</a></li>
+         
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#fonctionnement">Modes de fonctionnement</a></li>
+         
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#mecanisme">Mécanismes de prise des décisions</a></li>
+         
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#gestion">Gestion des demandes de changements ou d’amélioration</a></li>
+         
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#outils">Outils de travail de la communauté</a></li>
+         
+		  
+
+			<li class="sidebar-brand">
+				<a href="#header" class="back-to-top smooth-scroll octicon octicon-chevron-up">
+					<span class="hautpage">Haut de la page </span>
+
+				</a>
+			</li>
+		</ul>
+	
+
+</nav>
+
+
+			<!-- Page Content -->
+				<div id="page-content-wrapper">
+					<!-- Flèche pour ouvrir et fermer le menu de côté gauche -->
+					<!--[if gte IE 8)] -->
+					<button type="button" id="icone-sidebar" class="octicon octicon-move-right" data-toggle="offcanvas">
+						<!-- si on veut mettre du texte sur le bouton <span class="txtmenu"></span> -->
+					</button>
+					<!-- [endif]-->
+			
+					<div class="container" >
+						<div>				
+							
+<h1 id="charte-de-la-communauté-igo">Charte de la communauté IGO</h1>
+
+<p><a id="mission"></a></p>
+<h2 id="mission-">Mission <a href="#mission"><span class="octicon octicon-link"></span></a></h2>
+
+<p>Supporter le développement et l’évolution de la solution IGO afin de répondre aux besoins des utilisateurs,
+notamment en diffusant les données géographiques produites par le gouvernement du Québec et ce, dans le
+respect des hauts standards internationaux en matière de géomatique.</p>
+
+<p><a id="structure"></a></p>
+<h2 id="structure-et-parties-prenantes-">Structure et parties prenantes <a href="#structure"><span class="octicon octicon-link"></span></a></h2>
+
+<p>La communauté IGO est composée d’utilisateurs et de contributeurs appuyés par une structure de gouvernance
+dont l’objectif est de définir les orientations et la stratégie d’évolution du projet et d’organiser le
+développement et l’évolution de la solution.</p>
+
+<p>La structure de gouvernance se décline en trois comités :</p>
+
+<ol>
+  <li>Le <strong>comité directeur</strong> (CD) qui émet des orientations d’ordre stratégique (financières, matérielles et
+ humaines)</li>
+  <li>Le <strong>comité de pilotage</strong> (CP) qui est responsable de la bonne compréhension des besoins métier et de la
+ satisfaction des utilisateurs</li>
+  <li>Le <strong>comité technique</strong> (CT) qui assure le leadership technique du projet dans son ensemble et s’assure de
+ l’arrimage avec les besoins des utilisateurs.</li>
+</ol>
+
+<p><a id="communaute"></a></p>
+<h2 id="schéma-de-la-structure-de-la-communauté-">Schéma de la structure de la communauté <a href="#communaute"><span class="octicon octicon-link"></span></a></h2>
+
+<p><img src="https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/img/schema_communaute.png" alt="Schéma" /></p>
+
+<p>Les utilisateurs ou les développeurs peuvent devenir contributeurs, qui peuvent à leur tour devenir membres
+de comités, s’ils ont un intérêt dans la prise de décisions concernant l’évolution de la solution et que leur
+implication ou leur contribution dans la communauté le justifie.</p>
+
+<p>Notons que tous les acteurs de la communauté ont de l’importance pour la bonne santé de la communauté et
+qu’ils sont tous régulièrement informés des décisions des différents comités.</p>
+
+<p><a id="cd"></a></p>
+<h2 id="comité-directeur-cd-">Comité directeur (CD) <a href="#cd"><span class="octicon octicon-link"></span></a></h2>
+
+<p>Le comité directeur a comme mandat de superviser l’ensemble des activités de la communauté IGO. Il est
+composé de gestionnaires (ou de leurs représentants) provenant de tout organisme qui a fourni au cours de la
+dernière année, ou qui s’engage à fournir pour l’année en cours, une contribution concrète au noyau de
+l’application IGO. Le CD a les responsabilités suivantes :</p>
+
+<ul>
+  <li>Assurer un apport financier, humain et matériel;</li>
+  <li>Entériner les recommandations proposées par les comités de pilotage et technique et approuver le
+  calendrier de réalisation (feuille de route stratégique);</li>
+  <li>Gérer la relation avec les organismes publics et les partenaires extérieurs;</li>
+  <li>Établir le code de conduite et statuer sur le choix de la licence;</li>
+  <li>Produire un bilan annuel (ou à une autre fréquence, selon les besoins).</li>
+</ul>
+
+<p>Le comité directeur se réunit deux fois par année (ou à une autre fréquence, selon les besoins).</p>
+
+<h3 id="coordonnateur-du-cd">Coordonnateur du CD</h3>
+
+<p>Le coordonnateur du comité est élu par les membres du comité directeur. Ses responsabilités sont
+les suivantes :</p>
+
+<ul>
+  <li>Organiser les rencontres du comité et rédiger les comptes rendus;</li>
+  <li>Représenter le comité directeur lorsque sa présence est sollicitée par d’autres instances.</li>
+</ul>
+
+<p><a id="cp"></a></p>
+<h2 id="comité-de-pilotage-cp-">Comité de pilotage (CP) <a href="#cp"><span class="octicon octicon-link"></span></a></h2>
+
+<p>Le comité de pilotage est responsable de la bonne compréhension des besoins métier et de la satisfaction des
+utilisateurs. Il est formé de personnes issues des organismes contributeurs pour représenter les utilisateurs de
+la solution. Le CP a les responsabilités suivantes :</p>
+
+<ul>
+  <li>Consolider les besoins des utilisateurs et les présenter aux autres comités;</li>
+  <li>Étudier les demandes de changement et d’évolution en concertation avec le comité technique;</li>
+  <li>S’assurer que les modifications apportées à la solution informatique sont conformes aux attentes
+  initiales;</li>
+  <li>Suivre les déploiements et recueillir le retour d’expérience des utilisateurs;</li>
+  <li>Animer, informer et maintenir active la communauté;</li>
+  <li>Fournir un suivi des activités au comité directeur en collaboration avec le comité technique.</li>
+</ul>
+
+<p>Le comité de pilotage se réunit aux 4 mois environs (ou à une autre fréquence, selon les besoins), en général
+préalablement aux rencontres du comité technique.</p>
+
+<h3 id="coordonnateur-du-cp">Coordonnateur du CP</h3>
+
+<p>Le coordonnateur du CP est nommé par les membres du CP (sur une base annuelle).
+Ses responsabilités sont les suivantes :</p>
+
+<ul>
+  <li>Organiser les rencontres du comité et en rédiger les comptes rendus;</li>
+  <li>Siéger aux comités directeur et technique à titre de représentant du CP.</li>
+</ul>
+
+<p><a id="ct"></a></p>
+<h2 id="comité-technique-ct-">Comité technique (CT) <a href="#ct"><span class="octicon octicon-link"></span></a></h2>
+
+<p>Le comité technique assure le leadership technique des activités de la communauté. Il est composé de
+développeurs experts et de spécialistes en infrastructure qui participent à la conception et à la réalisation de la
+solution. Les membres du comité technique proviennent des organismes contributeurs et sont fortement
+impliqués dans l’évolution du produit. Le CT doit compter au moins un validateur de code^1. Le CT a les
+responsabilités suivantes :</p>
+
+<ul>
+  <li>Proposer un calendrier d’évolution (feuille de route stratégique) en concertation avec le comité de
+  pilotage et le transmettre au comité directeur pour approbation;</li>
+  <li>Analyser les demandes de changement, donner un avis sur les incidences de celles-ci et effectuer les
+  recommandations aux autres comités tout en coordonnant leurs réalisations (feuille de route
+  technique);</li>
+  <li>Désigner les validateurs de code et gérer les droits d’accès au code;</li>
+  <li>Réaliser les choix de nature techniques (langages, logiciels, etc.);</li>
+  <li>Établir un mécanisme de gestion des versions;</li>
+  <li>Rédiger les conventions et règles de codage;</li>
+  <li>Produire le guide de contribution;</li>
+  <li>Fournir un suivi des activités au comité directeur en collaboration avec le comité de pilotage.</li>
+</ul>
+
+<p>Le comité se réunit aux 4 mois environs (ou à une autre fréquence, selon les besoins), en général à la suite des
+rencontres du comité de pilotage.</p>
+
+<p>1 Commiter en anglais</p>
+
+<h3 id="coordonnateur-du-ct">Coordonnateur du CT</h3>
+
+<p>Le coordonnateur du CT est nommé par les membres du CT. Ses responsabilités sont les suivantes :</p>
+
+<ul>
+  <li>Organiser les rencontres du comité et en rédiger les comptes rendus;</li>
+  <li>Siéger aux comités directeur et de pilotage à titre de représentant du comité technique.</li>
+</ul>
+
+<p><a id="contributeurs"></a></p>
+<h2 id="contributeurs-">Contributeurs <a href="#contributeurs"><span class="octicon octicon-link"></span></a></h2>
+
+<p>Nous entendons par contributeur toute personne qui participe activement aux activités de la communauté,
+sans nécessairement faire partie d’un comité. Les principaux acteurs sont regroupés en trois catégories :</p>
+
+<p><strong>Utilisateurs</strong> ou ambassadeurs : ce sont les utilisateurs ou les promoteurs de la solution en logiciel libre de la
+communauté qui s’engagent significativement dans l’évolution et la promotion de la solution. Ils peuvent
+participer de plusieurs façons :</p>
+
+<ul>
+  <li>Essais et rapports de bogues;</li>
+  <li>Documentation d’utilisation;</li>
+  <li>Assistance aux autres utilisateurs;</li>
+  <li>Activités de promotion;</li>
+  <li>Coordination, charge de projet ou services-conseils.</li>
+</ul>
+
+<p><strong>Développeurs</strong> : ce sont en général des programmeurs en informatique ou géomatique, des intégrateurs ou des
+concepteurs de site web. Ils ont les responsabilités suivantes :</p>
+
+<ul>
+  <li>Développer le nouveau code;</li>
+  <li>Corriger et améliorer le code existant;</li>
+  <li>Concevoir l’assemblage commun de l’outil web;</li>
+  <li>Définir l’ergonomie et le rendu visuel;</li>
+  <li>Produire la documentation technique.</li>
+</ul>
+
+<p><strong>Validateurs de code</strong> : ce sont des programmeurs experts désignés par le CT, qui sont habilités à valider le travail
+des autres développeurs. Ils ont les responsabilités suivantes :</p>
+
+<ul>
+  <li>Approuver et intégrer le code soumis en s’assurant que les conventions et règles sont respectées.</li>
+</ul>
+
+<p><a id="fonctionnement"></a></p>
+<h2 id="modes-de-fonctionnement-">Modes de fonctionnement <a href="#fonctionnement"><span class="octicon octicon-link"></span></a></h2>
+
+<h3 id="sources-de-financement">Sources de financement</h3>
+
+<p>Les sources de financement de la communauté se traduisent par une participation financière et/ou humaine et/
+ou matérielle des contributeurs. Le CD a la responsabilité de garantir un apport financier, humain et matériel
+suffisant pour assurer la pérennité de la solution.</p>
+
+<h3 id="licence-et-droit-dauteur">Licence et droit d’auteur</h3>
+
+<p>IGO est un logiciel libre utilisant la version Réciprocité de la Licence Libre du Québec (LiLiQ-R), qui vise à
+préserver le caractère libre des logiciels y étant assujettis. Ainsi, toute personne qui modifie et distribue un tel
+logiciel est tenue de le faire sous les termes de la LiLiQ et d’en permettre l’accès au code source.</p>
+
+<p>Référence : https://forge.gouv.qc.ca/licence/liliq-v1-1/#réciprocité-liliq-r</p>
+
+<p><a id="mecanisme"></a></p>
+<h3 id="mécanismes-de-prise-des-décisions-">Mécanismes de prise des décisions <a href="#mecanisme"><span class="octicon octicon-link"></span></a></h3>
+
+<p>Ces mécanismes de prise de décision ne sont pas propres à un comité en particulier. Ils doivent s’appliquer
+uniformément à tous les comités de la communauté. Les mécanismes suivants sont retenus :</p>
+
+<h4 id="chercher-le-consensus">Chercher le consensus</h4>
+
+<p>Comme principe général, il est préférable que les décisions soient prises à la suite d’un consensus entre les
+différents membres d’un comité. Si un consensus ne peut être obtenu, le vote sera utilisé.</p>
+
+<h4 id="choix-des-membres-des-comités">Choix des membres des comités</h4>
+
+<p>Les organisations qui apportent une contribution significative (financière, matérielle ou humaine) au
+développement du produit qui bénéficie à l’ensemble de la communauté sont éligibles à être
+représentés sur les différents comités et pouvoir ainsi participer à la prise de décision.</p>
+
+<h4 id="mécanisme-de-vote">Mécanisme de vote</h4>
+
+<p>Le vote est utilisé si le consensus ne peut être obtenu dans le comité concerné ou si une consultation plus large
+est pertinente pour la décision. Les règles suivantes sont appliquées :</p>
+
+<ul>
+  <li>Poids du vote : un membre = une voix;</li>
+  <li>La notation suivante pour le vote est adoptée :</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+1 Signifie « je suis d’accord et m’engage à supporter cette décision et collaborer à sa
+réalisation »
+0 Signifie « je m’abstiens »
+-1 Signifie « j’ai une objection ». Ce vote est considéré comme étant un veto : dans ce
+cas, la personne votante doit proposer une solution alternative
+</code></pre></div></div>
+<ul>
+  <li>Une proposition est acceptée si elle reçoit au moins +2 (incluant l’auteur) et aucun veto (-1);</li>
+  <li>Si une proposition reçoit un veto (-1) et qu’il est impossible de satisfaire toutes les parties après
+  discussion, la proposition peut être soumise pour un second vote ultime. Dans ce cas, un vote positif de
+  la majorité absolue de tous les membres du comité sera requis pour que la proposition soit acceptée et
+  le veto ne s’applique plus;</li>
+  <li>Le résultat du vote est compilé et publié.</li>
+</ul>
+
+<p><a id="gestion"></a></p>
+<h3 id="gestion-des-demandes-de-changements-ou-damélioration-">Gestion des demandes de changements ou d’amélioration <a href="#gestion"><span class="octicon octicon-link"></span></a></h3>
+
+<p>Les demandes de changement ou d’améliorations peuvent émaner des utilisateurs (elles couvrent alors l’aspect
+métier) ou bien du comité technique (pour couvrir l’aspect technique). Si le changement est important (forte
+implication humaine et/ou financière), une demande d’autorisation est formulée et envoyée au CD pour
+approbation.</p>
+
+<h4 id="demandes-des-utilisateurs">Demandes des utilisateurs</h4>
+
+<p>Les besoins de changements ou d’améliorations sont souvent exprimés par les utilisateurs. Le comité de
+pilotage détermine si une demande doit être réalisée ou non et précise la priorité accordée. S’ensuit une
+discussion avec le comité technique afin de déterminer la faisabilité et les efforts requis. Au final, les demandes
+acceptées sont ajoutées à la feuille de route technique.</p>
+
+<h4 id="demande-de-changements-techniques">Demande de changements techniques</h4>
+
+<p>Les changements d’ordre technique sont très variés : ils peuvent survenir en raison d’une évolution
+technologique, de la découverte d’un problème de sécurité, etc. Généralement, les développeurs vont tenir des
+discussions préliminaires afin de bien cerner la portée du changement. Éventuellement, une demande est
+formulée au comité technique. Dans le cas d’un changement impactant les utilisateurs, la consultation et
+l’approbation du comité pilotage sont nécessaires.</p>
+
+<p><a id="outils"></a></p>
+<h3 id="outils-de-travail-de-la-communauté-">Outils de travail de la communauté <a href="#outils"><span class="octicon octicon-link"></span></a></h3>
+
+<p>Une forge désigne un système de gestion de développement collaboratif de logiciel qui propose un ensemble
+d’outils dédiés au développement d’un ou de plusieurs logiciels.</p>
+
+<h4 id="forge-publique">Forge publique</h4>
+
+<p>Github est retenu comme forge publique pour IGO pour gérer le code du tronc commun d’IGO :</p>
+
+<ul>
+  <li>https://github.com/infra-geo-ouverte/igo2 (code assemblé pour l’application commune)</li>
+  <li>https://github.com/infra-geo-ouverte/igo2-lib (librairie des fonctionnalités communes de base)</li>
+</ul>
+
+<p>Les utilisateurs peuvent soumettre des tickets (bogues ou suggestions d’amélioration) via les outils de tickets
+Github et ceux-ci seront révisés par les comités de pilotage et techniques. Les changements futurs et leur
+priorisation (feuille de route technique) sont publiés via l’outil de planification des versions Github.</p>
+
+<h4 id="forge-gouvernementale">Forge gouvernementale</h4>
+
+<p>Le gouvernement du Québec dispose d’une forge qui est à la disposition des organismes publics. Elle offre la
+possibilité d’y héberger du code en mode public ou privé. Plusieurs contributeurs à IGO utilisent le gestionnaire
+de dépôts Gitlab de la Forge gouvernementale pour le développement de la version personnalisée de leur
+navigateur IGO ou de services connexes.</p>
+
+<p>La Forge gouvernementale est également utilisée comme outil d’interaction entre les différents comités. La
+planification de haut niveau des tâches est disponible via les outils de tickets de Gitlab. La feuille de route
+stratégique qui reflète les contributions de chacun et l’évolution sur une base annuelle ainsi que les autres
+documents d’intérêt à la gouvernance du projet sont publiés sur le wiki de Gitlab.</p>
+
+<p>Enfin, un salon de discussion ainsi qu’une liste de distribution sont à la disposition des membres de la
+communauté.</p>
+
+<p>Pour accéder à l’un ou l’autre de ces outils, envoyer un courriel à info@igouverte.org.</p>
+
+<p>Dernière mise à jour : 8 janvier 2020</p>
+
+                  
+						</div>
+					</div>
+				</div>
+					<!-- /#page-content-wrapper -->
+
+			</div>  <!-- /#wrapper di sidebar.html-->
+
+
+    <footer class="site-footer" id="footer">
+
+	<div class="wrapper row">
+	
+		<div class="col-xs-12 col-sm-6 text-left">
+
+			<div class="listMenu">
+			<ul class="footer listGauche">
+				<li>
+					<a href="/nouveaute/">
+						Nouveautés
+					</a>
+				</li>
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/communaute/" role="button" aria-expanded="false">Communauté
+						</a>
+					</li>
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/contribuer/" role="button" aria-expanded="false">Contribuer
+						</a>
+					</li>
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/demo/" role="button" aria-expanded="false">Démonstration
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/documentation/" role="button" aria-expanded="false">Documentation
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/installation/" role="button" aria-expanded="false">Installation
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/documentation/page-services-igo/" role="button" aria-expanded="false">Services
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<li>
+					<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
+						Licence
+					</a>
+				</li>
+				</ul>
+
+				
+					
+				<li class="page-link en"><a href="/faq/">FAQ</a></li>
+				
+				
+					
+				<li class="page-link en"><a href="/english/">English</a></li>
+				
+				
+					
+				<li class="page-link en"><a href="/"></a></li>
+				
+				
+				
+			</ul>
+				<!-- LOGO -->
+			</div>
+			<a href="/">
+				<img class="logo-med" src="/assets/img/logo_bleu_112.png"  alt="Logo IGO" />
+			</a>
+
+			</div>
+		
+		<!-- FORMULAIRE -->
+		<div class="col-xs-12 col-sm-6 text-center col-form">			
+			
+			<!-- reference pour le formulaire avec Formspree: http://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites&#151;cms-23870 -->
+			<div id="contact">
+				<h3>Contactez-nous :</h3>
+				<form id="contactform" method="POST">
+
+					<input type="text" class="contact1" name="name" placeholder="Nom" />
+					<input type="email" class="contact1" name="_replyto" placeholder="Courriel" /> <!-- reply to pour autorépondre -->		
+
+					<textarea class="contact2" name="message" placeholder="Message"></textarea>
+
+					<!-- Built into Formspree is a “honeypot” method of spam prevention. The honeypot technique is quite simple; you hide a field inside your form that users don’t see, but spambots do. 
+					The spambot will fill in the field, while users won’t. Any submission with this field filled in will be considered spam. 
+					By naming the field “_gotcha”, Formspree will recognise it and ignore any submissions made with this filled in. -->
+					
+					
+					<input type="submit" class="submitContact" value="Envoyer" />
+					<span class="hideForm">
+						<input type="text" name="_gotcha" style="display:none" /><!-- pour arrêter les spammeur robots -->
+						<input type="hidden" name="_subject" value="Demande d'information pour IGO" /> <!-- This field will not appear when a user views the form, but the value will be used for the subject line when I receive a submission. -->
+						<input type="hidden" name="_next" value="//igouverte.org/courriel/" />  <!--mettre une page de merci votre courriel est envoyé -->
+					</span>
+				</form>
+				
+				<script>
+					var contactform =  document.getElementById('contactform');
+					contactform.setAttribute('action', '//formspree.io/' + 'info' + '@' + 'igouverte' + '.' + 'org');
+				
+				</script>
+			</div>					
+		</div>
+	</div>
+		<hr>
+		<p class="footer-mail text-center">Courriel: info[@]igouverte.org </p>
+		<div class="share-page">
+    Partagez &rarr; 
+    <a class="footer-reseau" href="https://twitter.com/intent/tweet?source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;text=IGO:%20http%3A%2F%2Figouverte.org%2F" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a> 
+    <a class="footer-reseau" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Figouverte.org%2F&amp;t=IGO" title="Share on Facebook" target="_blank"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
+    <a class="footer-reseau" href="https://plus.google.com/share?url=http%3A%2F%2Figouverte.org%2F" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
+    <a class="footer-reseau" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Figouverte.org%2F&amp;title=IGO&amp;summary=Infrastructure%20geomatique%20ouverte&amp;source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square" data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
+</div> 
+
+
+
+<!-- ref: http://codingtips.kanishkkunal.in/share-buttons-jekyll/ -->
+
+
+<!-- <div class="share-page">
+    Share this on &rarr; 
+    <a href="https://twitter.com/intent/tweet?text=&url=http://localhost:4000/communaute/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://localhost:4000/communaute/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url=http://localhost:4000/communaute/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+</div> -->
+	<!-- summary="Infrastructure de géomatique ouverte" source="http://infra-geo-ouverte.github.io/site-web/" -->
+	
+	<!-- bouton Linked in 	<i class="fa fa-linkedin-square"></i> 
+	<div class="footer-reseau">
+	<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: fr_FR</script>
+	<script type="IN/Share" data-url="http://infra-geo-ouverte.github.io/site-web/"></script>
+	</div> -->
+	
+
+		
+		<small class="copyright text-center">&copy;IGO, 2017</small>
+
+</footer>
+</div> <!-- div de : <div itemscope itemtype="http://schema.org/SoftwareApplication"> dans le header -->
+
+	<!-- fin footer -->
+
+<!--	liens locaux
+	<script type="text/javascript" src="/assets/script/jquery-1.11.1.min.js"> </script>
+	<script type="text/javascript" src="/assets/script/bootstrap.min.js"> </script> 
+	
+	ne pas mettre http ou https en avant des liens car ça bloque sur certains postes avec Firefox  -->
+		
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"> </script>
+	<script type="text/javascript" src="/assets/script/main.js"> </script>
+	<script type="text/javascript" src="/assets/script/animation_banniere.js"> </script>
+
+	
+</body>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//geoegl.msp.gouv.qc.ca/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 22]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//geoegl.msp.gouv.qc.ca/piwik/piwik.php?idsite=22" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</html>
+

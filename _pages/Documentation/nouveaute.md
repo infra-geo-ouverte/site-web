@@ -1,0 +1,174 @@
+---
+permalink: /nouveaute/
+layout: general
+iconenouveaute: ""
+---
+
+_Ce document présente les principales améliorations et correctifs des dernières version d'IGO. Tous les changements sont détaillés dans le journal des modifications sur le dépôt GitHub du projet igo2-lib :_ [_https://github.com/infra-geo-ouverte/igo2-lib/blob/master/CHANGELOG.md_](https://github.com/infra-geo-ouverte/igo2-lib/blob/master/CHANGELOG.md)
+
+_Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
+
+<a id="version_1_6"></a>
+## IGO Version 1.6 (2021-02-01) [<span class="octicon octicon-link"></span>](#version_1_6)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Aide et documentation**
+  -	Possibilité d'ajouter un lien vers un guide d’utilisation dans l’outil « À propos » ([#790](https://github.com/infra-geo-ouverte/igo2-lib/pull/790))
+  - Ajout d’un tour interactif pour l’outil « Carte »
+  - Ajout d’un tour interactif pour l’outil « Contextes »
+  - Aide à l’outil de recherche (indiquer des exemples) ([#306](https://github.com/infra-geo-ouverte/igo2/issues/306))
+
+- **Outil de dessin**
+  - Ajout d’un outil de dessin ([#391](https://github.com/infra-geo-ouverte/igo2/issues/391))
+
+- **Impression**
+  - Corriger l’affichage des titres trop longs ([#724](https://github.com/infra-geo-ouverte/igo2-lib/issues/724))
+  - Ajout d'un sous-titre ([#805](https://github.com/infra-geo-ouverte/igo2-lib/pull/805))
+
+- **Impression**
+  - Pouvoir ajouter un buffer autour d’une zone prédéfinie ou dessinée
+  - Ajouter les coordonnées (latitude et longitude) des points extraits
+
+- **Catalogue**
+  - Possibilité de définir un alias pour renommer une couche d'un catalogue composite ([#787](https://github.com/infra-geo-ouverte/igo2-lib/pull/787))
+  - Afficher le contenu de la balise « abstract » si aucun hyperlien de métadonnées n’est défini ([#514](https://github.com/infra-geo-ouverte/igo2/issues/514))
+
+<a id="version_1_5"></a>
+## IGO Version 1.5 (2020-10-09) [<span class="octicon octicon-link"></span>](#version_1_5)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Global**
+  -	Quand l’enregistrement sélectionné est trop petit pour être visible à l’échelle actuelle de la carte, afficher un marqueur pour indiquer l’emplacement
+
+- **Aide et documentation**
+  - Possibilité d'afficher une page d’accueil au contenu configurable ([#689](https://github.com/infra-geo-ouverte/igo2-lib/pull/689))
+  - Ajout d’un tour guidé configurable ([#382](https://github.com/infra-geo-ouverte/igo2/issues/382))
+
+- **Table des enregistrements**
+  - Montrer les enregistrements des couches vectorielles contenues dans la carte ([#390](https://github.com/infra-geo-ouverte/igo2/issues/390))
+  - Afficher le résultat de la sélection d’une couche dans la table ([#445](https://github.com/infra-geo-ouverte/igo2/issues/445))
+
+- **Interrogation sur la carte**
+  - Afficher les images directement dans la fenêtre d’information
+
+- **Gestion des couches de la carte**
+  - Afficher ou masquer plusieurs couches à la fois dans la sélection multiple ([#453](https://github.com/infra-geo-ouverte/igo2/issues/453))
+  - Pouvoir définir des filtres temporel dans les filtres attributaires avancés ([#705](https://github.com/infra-geo-ouverte/igo2-lib/pull/705))
+
+- **Itinéraire**
+  - Lien pour afficher l’outil d’itinéraire vers un résultat de recherche ([#711](https://github.com/infra-geo-ouverte/igo2-lib/pull/711))
+
+- **Catalogue**
+  - Pouvoir ajouter des services ArcGIS REST dans les catalogues composites ([#709](https://github.com/infra-geo-ouverte/igo2-lib/pull/709))
+
+- **Authentification**
+  - Ajout de l'authentification Microsoft Azure
+
+- **Mises à jour**
+  - Mise à jour de l’ensemble des librairies ([#696](https://github.com/infra-geo-ouverte/igo2-lib/issues/696))
+
+<a id="version_1_4"></a>
+## IGO Version 1.4 (2020-08-03) [<span class="octicon octicon-link"></span>](#version_1_4)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Global**
+  -	Détection des fureteurs dont la version n’est pas supportée ([#399](https://github.com/infra-geo-ouverte/igo2/issues/399))
+  -	Stockage des préférences de l’utilisateur ([#443](https://github.com/infra-geo-ouverte/igo2/issues/443))
+
+- **Carte**
+  -	Ajout d’un mode de localisation permettant le suivi de la position en temps réel ([#648](https://github.com/infra-geo-ouverte/igo2-lib/pull/648))
+
+- **Contextes**
+  -	Pouvoir exporter et importer un contexte dans une instance IGO qui n'utilise pas l'api de contexte ([#388](https://github.com/infra-geo-ouverte/igo2/issues/388))
+  -	À l’ouverture d’un contexte, retirer les couches dont l'accès est interdit et avertir l'utilisateur ([#321](https://github.com/infra-geo-ouverte/igo2/issues/321))
+  -	Pouvoir filtrer la liste des contextes par profil d’utilisateur et niveau de partage (instances utilisant l’api de contexte seulement) ([#447](https://github.com/infra-geo-ouverte/igo2/issues/447))
+  -	Pouvoir masquer un contexte (instances utilisant l’api de contexte seulement) ([#680](https://github.com/infra-geo-ouverte/igo2-lib/pull/680))
+  -	L’utilisateur peut retirer un contexte qui lui a été partagé de façon permanente
+  -	Possibilité de traduire en anglais le message (toast) qui s’affiche à l’ouverture d’un contexte ([#433](https://github.com/infra-geo-ouverte/igo2/issues/433))
+
+- **Interrogation sur la carte**
+  -	Pouvoir agrandir/réduire la taille de la fenêtre des résultats d’interrogation sur la carte ([#442](https://github.com/infra-geo-ouverte/igo2/issues/442))
+
+- **Paramètres URL**
+  -	Ajout d'un fichier de données géolocalisées à la volée par paramètre d'URL ([#415](https://github.com/infra-geo-ouverte/igo2/issues/415))
+
+- **Outil d’importation/exportation**
+  -	Exportation en fichier CSV compatible avec Excel (fichier CSV avec séparateur point-virgule) ([#452](https://github.com/infra-geo-ouverte/igo2/issues/452))
+  -	Exporter plusieurs couches à la fois ([#692](https://github.com/infra-geo-ouverte/igo2-lib/pull/692))
+  -	Exporter les couches dans l’étendue de la carte (WFS et vecteurs) ([#657](https://github.com/infra-geo-ouverte/igo2-lib/pull/657))
+  -	Conserver les dernières options choisies ([#657](https://github.com/infra-geo-ouverte/igo2-lib/pull/657))
+  -	Afficher un hyperlien pour les couches téléchargeables avec un lien externe ([#661](https://github.com/infra-geo-ouverte/igo2-lib/pull/661))
+
+- **Impression**
+  -	Impression de carte sur appareil mobile ([#685](https://github.com/infra-geo-ouverte/igo2-lib/pull/685))
+
+- **Filtre spatial**
+  -	Lier l’exportation des résultats du filtre spatial à l’outil d’exportation ([#439](https://github.com/infra-geo-ouverte/igo2/issues/439))
+
+**Correctifs**
+
+- **Recherche**
+  -	Supprimer le résultat précédent de la carte lors d'une nouvelle recherche ([#473](https://github.com/infra-geo-ouverte/igo2/issues/473)) ([#475](https://github.com/infra-geo-ouverte/igo2/issues/475))
+  -	Pouvoir ouvrir le lien Google Maps quand le résultat est une municipalité ([#409](https://github.com/infra-geo-ouverte/igo2/issues/409))
+
+- **Contextes**
+  -	Si un contexte est invalide, avertir l’utilisateur et afficher le contexte par défaut
+
+- **Outil d’importation/exportation**
+  -	L’exportation en format GOX supporte les géométries de type MultiLineString ([#660](https://github.com/infra-geo-ouverte/igo2-lib/pull/660))
+  -	Pouvoir exporter les enregistrements même si le service WFS n’est pas visible sur la carte ([#661](https://github.com/infra-geo-ouverte/igo2-lib/pull/661))
+
+<a id="version_1_3"></a>
+## IGO Version 1.3 (2020-05-11) [<span class="octicon octicon-link"></span>](#version_1_3)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Catalogue**
+  - Le titre du catalogue est conservé dans le titre lorsqu&#39;on bascule à l&#39;intérieur du catalogue
+  - Possibilité de créer des catalogues en combinant plusieurs sources différentes ([#559](https://github.com/infra-geo-ouverte/igo2-lib/pull/559)) :
+    - Regrouper différentes sources dans un même catalogue
+    - Créer un groupe à l&#39;intérieur du catalogue en regroupant différentes couches
+    - Filtrer les couches de la source en listant le nom des couches ou en utilisant une expression
+
+- **Contextes**
+  - Pouvoir filtrer la liste des contextes ([#432](https://github.com/infra-geo-ouverte/igo2/issues/432))
+  - Pouvoir trier les contextes en ordre alphabétique ([#624](https://github.com/infra-geo-ouverte/igo2-lib/pull/624))
+  - Créer un contexte directement dans l&#39;onglet des contextes (bouton de la barre de profil déplacé - version authentifiée seulement) ([#624](https://github.com/infra-geo-ouverte/igo2-lib/pull/624))
+
+- **Filtres sur les couches**
+  - Possibilité de spécifier les opérateurs permis pour chaque champ d&#39;une couche et nouveaux opérateurs disponibles ([#608](https://github.com/infra-geo-ouverte/igo2-lib/pull/608))
+
+- **Interrogation sur la carte**
+  - Lorsque le service interrogé ne retourne pas de géométrie, ajouter un marqueur sur la carte pour indiquer l&#39;emplacement du clic ([#617](https://github.com/infra-geo-ouverte/igo2-lib/issues/617))
+
+- **Gestion des couches de la carte**
+  - Amélioration à l&#39;ergonomie ([#397](https://github.com/infra-geo-ouverte/igo2/issues/397)) :
+    - Les outils de gestion d&#39;une couche (opacité, ordre, suppression, filtres attributaires et temporels) s&#39;affichent dans une barre d&#39;outil en bas du panneau ([#357](https://github.com/infra-geo-ouverte/igo2-lib/issues/357))
+    - Onglet « Légende » qui permet un affichage simplifié de la légende des couches visibles sur la carte (#507)
+    - Un bouton « Opacité » permet de faire apparaître le slider pour gérer l&#39;opacité des couches ( [#451](https://github.com/infra-geo-ouverte/igo2-lib/issues/451))
+    - Faire des actions su plusieurs couches en même temps (monter, descendre, supprimer) ([#307](https://github.com/infra-geo-ouverte/igo2/issues/307))
+    - Affichage des filtres attributaires dans un panneau distinct
+  - Ajuster le délai pour ne pas voir apparaître le message « Aucune couche n&#39;est présentement active sur la carte » au chargement des contextes ([#438](https://github.com/infra-geo-ouverte/igo2/issues/438))
+
+- **Outil d&#39;importation/exportation**
+  - Regroupement en grappes (_clusters_) de données importées à l&#39;aide d&#39;un fichier de style (nécessite une configuration préalable) ([#616](https://github.com/infra-geo-ouverte/igo2-lib/pull/616))
+  - Exporter l&#39;information descriptive en format GPX ([#622](https://github.com/infra-geo-ouverte/igo2-lib/issues/622))
+
+- **Sources de données**
+  - Les couches ajoutées à la carte par le catalogue, la recherche ou les contextes ont les mêmes attributs, si un api est spécifié pour les obtenir (exemple : filtre temporel) ([#344](https://github.com/infra-geo-ouverte/igo2/issues/344))
+  - Le format du GetInfo est obtenu selon les informations fournies par la source de données, pour s&#39;assurer que le format utilisé soit supporté ([#582](https://github.com/infra-geo-ouverte/igo2-lib/pull/582))
+
+**Correctifs**
+
+- **Contextes**
+  - Le fait qu&#39;une couche soit interrogeable ou non est conservé dans le contexte
+
+- **Filtre temporel**
+  - Meilleure gestion des dates (correction du problème lors de la conversion en UTC, format d&#39;affichage en français, indicateur de la date sélectionnée dans le calendrier) (corrige en partie [#534](https://github.com/infra-geo-ouverte/igo2-lib/issues/534))
+  - Les dates affiches ne se réinitialisent pas tant que le filtre est actif sur la couche (corrige [#359](https://github.com/infra-geo-ouverte/igo2/issues/359))
+
+- **Sources de données**
+  - Meilleure gestion quand une source de données est en erreur (les autres couches de la carte ne sont pas affectées)

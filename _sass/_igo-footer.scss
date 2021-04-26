@@ -1,0 +1,197 @@
+/**********************
+css du footer
+********************/
+
+#footer {
+	display: block;
+	background-color: $bleu-fonce;
+	color: $blanc;
+	padding: 1% 0;
+	margin-top: 20px;
+	box-shadow: 0px -3px 5px #888888;
+}
+#footer hr{
+	width: 80%;
+	border-color: $gris-fonce;
+	margin: 10px auto;
+}
+
+#footer .wrapper{
+	margin: 0 ;
+}
+
+#footer ul{
+	list-style-type: none;
+	margin: 10px auto;
+}
+#footer ul a{
+	color: $blanc;
+}
+
+#footer .logo-med{
+	width: 60px;
+	margin-top: 20px;
+	vertical-align: top;
+	float: right;
+	margin-right: 10%;
+}
+#footer .listMenu{
+	display: inline-block;
+	margin-left: 10%;
+}
+
+#footer .logo-med:hover{ 
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+	transform: scale(1.1) rotate(360deg);
+}
+
+#footer .footer-mail{
+	color: $blanc;
+	display: block;
+	height: auto;
+}
+
+#footer .copyright{
+	padding-top: 10px;
+	display: block;
+}
+/************************
+* Formulaire
+********************/
+#footer .contact1, #footer .contact2, #footer .submitContact {
+	display: block;
+	width: 90%;
+	margin: 1% auto;
+	padding: 1%;
+	color: $noir;
+}
+/************************
+* Réseaux sociaux
+********************/
+
+#footer .footer-reseau{
+	color: $blanc;
+	text-align: center;
+	padding-top: 15px;
+}
+#footer .share-page{
+	text-align: center;
+	padding-top: 10px;
+}
+
+/* animation*/
+#footer .fa {
+	padding-left: 10px;
+	font-size: 30px;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+#footer .fa:hover, .hvr-grow:focus, .hvr-grow:active {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+/************************
+* Formulaire
+********************/
+#footer #contact{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px 0;
+	color: $blanc;
+}
+
+#footer #contact h3{
+	color: white;
+}
+#footer p{
+	margin: 0;
+}
+
+#footer .contact1 input{
+	width: 90%;
+	background-color: $blanc;
+	border: none;
+	color: $noir;
+}
+
+#footer .contact2{
+	margin-top: 5px;
+	height: 150px;
+	background-color: $blanc;
+}
+#footer .submitContact{
+	width: 40%;
+	background-color: $bleu;
+	border: none;
+	color: $blanc;
+	margin-top: 2%;
+}
+/* compatibilité ie */
+.holder-box{
+	position: relative;
+}
+.holder-box label{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0);
+	color: black;
+}
+
+/*******************************************************/
+
+/************css pour tablette et ordinateur ***********/
+
+/*******************************************************/
+/* ---------------- 500px ---------------------------- */
+@media screen and (min-width: $screen-xs-min) {
+
+
+}
+/* ----------------768px-----------------------------  */
+
+@media screen and (min-width: $screen-sm-min) {
+	#footer .logo-med{
+		padding-top: 60px;
+		margin-right: 18%;
+		width: 85px;
+		vertical-align: top;
+	}
+	#footer .listMenu{
+		display: inline-block;
+		margin-left: 10%;
+	}
+
+	#footer .submitContact{
+		margin-right: 5%;
+		float: right;
+	}
+	#footer .listGauche{
+		padding-top: 35px;
+	}
+	#footer .contact1, #footer .contact2, #footer {
+		margin: 2% auto;
+		padding: 1%;
+		font-weight: bold;
+	}
+	#footer .wrapper{
+		padding: 0;
+	}
+
+}

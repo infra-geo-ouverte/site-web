@@ -1,0 +1,42 @@
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}	
+	
+    <div class="page-content">
+
+      <div class="wrapper">
+	  
+	  
+	  
+	  
+	 <h2>Projet IGO</h2> 
+	  
+	  	{% for page in site.pages %}
+			{% if page.faqsection%} <!-- si la page markdown a faqsection dans son entete -->
+				{{ page.title-top }} <!-- ajouter le nom de la page ex: FAQ (se trouve dans l'entête de faq.md) -->
+				
+				<div class="panel-group" id="{{page.faqsection}}" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="heading{{page.faqsection}}"> <!-- entête de la faq -->
+							<h4 class="panel-title">
+								<a href="#no{{page.faqsection}}" data-toggle="collapse" data-parent="#{{page.faqsection}}" aria-expanded="true" aria-controls="no{{page.faqsection}}">
+									{{ page.titre-faq }} 
+								</a>
+							</h4>
+						</div>
+						<div id="no{{page.faqsection}}" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading{{page.faqsection}}">
+							<div class="panel-body">
+								{{ page.content }}
+							</div>
+						</div>
+					</div>
+				</div>		
+			{% endif %}
+		{% endfor %}
+      </div>
+    </div>
+
+
+    {% include footer.html %}

@@ -1,0 +1,122 @@
+<footer class="site-footer" id="footer">
+
+	<div class="wrapper row">
+	
+		<div class="col-xs-12 col-sm-6 text-left">
+
+			<div class="listMenu">
+			<ul class="footer listGauche">
+				<li>
+					<a href="/nouveaute/">
+						Nouveautés
+					</a>
+				</li>
+				{% for page in site.pages %}
+					{% if page.title-main %} 
+					<li>
+						<a class="page-link"  
+							href="{{ page.url | prepend: site.baseurl }}" role="button" aria-expanded="false">{{ page.title-main }}
+						</a>
+					</li>
+					{% endif %}
+				{% endfor %}
+				<li>
+					<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
+						Licence
+					</a>
+				</li>
+				</ul>
+
+				{% for link in site.navigation %}
+					{% if page.url contains 'english/' %}
+					<li class="page-link fr"><a href="{{site.baseurl}}{{ link.url }}">{{ link.text2 }}</a></li>
+					{% else %}
+				<li class="page-link en"><a href="{{site.baseurl}}{{ link.url }}">{{ link.text}}</a></li>
+				{% endif %}
+				{% endfor %}
+				
+			</ul>
+				<!-- LOGO -->
+			</div>
+			<a href="/">
+				<img class="logo-med" src="{{ '/assets/img/logo_bleu_112.png'| prepend: site.baseurl }}"  alt="Logo IGO" />
+			</a>
+
+			</div>
+		
+		<!-- FORMULAIRE -->
+		<div class="col-xs-12 col-sm-6 text-center col-form">			
+			
+			<!-- reference pour le formulaire avec Formspree: http://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites&#151;cms-23870 -->
+			<div id="contact">
+				<h3>Contactez-nous :</h3>
+				<form id="contactform" method="POST">
+
+					<input type="text" class="contact1" name="name" placeholder="Nom" />
+					<input type="email" class="contact1" name="_replyto" placeholder="Courriel" /> <!-- reply to pour autorépondre -->		
+
+					<textarea class="contact2" name="message" placeholder="Message"></textarea>
+
+					<!-- Built into Formspree is a “honeypot” method of spam prevention. The honeypot technique is quite simple; you hide a field inside your form that users don’t see, but spambots do. 
+					The spambot will fill in the field, while users won’t. Any submission with this field filled in will be considered spam. 
+					By naming the field “_gotcha”, Formspree will recognise it and ignore any submissions made with this filled in. -->
+					
+					
+					<input type="submit" class="submitContact" value="Envoyer" />
+					<span class="hideForm">
+						<input type="text" name="_gotcha" style="display:none" /><!-- pour arrêter les spammeur robots -->
+						<input type="hidden" name="_subject" value="Demande d'information pour IGO" /> <!-- This field will not appear when a user views the form, but the value will be used for the subject line when I receive a submission. -->
+						<input type="hidden" name="_next" value="//igouverte.org/courriel/" />  <!--mettre une page de merci votre courriel est envoyé -->
+					</span>
+				</form>
+				
+				<script>
+					var contactform =  document.getElementById('contactform');
+					contactform.setAttribute('action', '//formspree.io/' + 'info' + '@' + 'igouverte' + '.' + 'org');
+				
+				</script>
+			</div>					
+		</div>
+	</div>
+		<hr>
+		<p class="footer-mail text-center">Courriel: info[@]igouverte.org </p>
+		{% include reseau_sociaux.html %}
+		
+		<small class="copyright text-center">&copy;IGO, 2017</small>
+
+</footer>
+</div> <!-- div de : <div itemscope itemtype="http://schema.org/SoftwareApplication"> dans le header -->
+
+	<!-- fin footer -->
+
+<!--	liens locaux
+	<script type="text/javascript" src="{{ '/assets/script/jquery-1.11.1.min.js' | prepend: site.baseurl }}"> </script>
+	<script type="text/javascript" src="{{ '/assets/script/bootstrap.min.js' | prepend: site.baseurl }}"> </script> 
+	
+	ne pas mettre http ou https en avant des liens car ça bloque sur certains postes avec Firefox  -->
+		
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"> </script>
+	<script type="text/javascript" src="{{ '/assets/script/main.js' | prepend: site.baseurl }}"> </script>
+	<script type="text/javascript" src="{{ '/assets/script/animation_banniere.js' | prepend: site.baseurl }}"> </script>
+
+	
+</body>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//geoegl.msp.gouv.qc.ca/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 22]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//geoegl.msp.gouv.qc.ca/piwik/piwik.php?idsite=22" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</html>

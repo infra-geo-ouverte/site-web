@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+		 
+	<!-- Balises meta régulières -->	 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)" />	
+	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur, igo, infrastructure" />
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+	<meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>   
+	
+	<!-- Reseaux sociaux-->
+	<meta property="og:title"       content="IGO Infrastructure Géomatique Ouverte" />
+	<meta property="og:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
+	<meta property="og:type"        content="website" />
+	<meta property="og:locale" 	content="fr_FR" />
+	<meta property="og:url"         content="http://igouverte.org/" />
+	<meta property="og:site_name"   content="IGO" />
+	<meta property="og:image"       content="http://infra-geo-ouverte.github.io/site-web/assets/img/socialImg.jpg" />
+
+	
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@igo" />
+	<meta name="twitter:title" content="IGO: Infrastructure Géomatique Ouverte" />
+	<meta name="twitter:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
+	<meta name="twitter:image" content="http://infra-geo-ouverte.github.io/site-web/assets/img/socialImg.jpg" />
+
+	<!-- Favicon pour mobile, onglet du site.... 
+	<link rel="icon" sizes="228x228" href="{{ '/assets/img/igo_icone.png' | prepend: site.baseurl }}"> -->
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/img/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!-- Balise pour Google -->
+	<meta name="google-site-verification" content="tb9Q1FBCF-x1ul35k6Q8_-4OsL4IT0tge9FDeVfXG44" />
+	
+	<!-- Fichiers css-->
+    	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="{{'/assets/fonts/octicons/octicons.css' | prepend: site.baseurl}}" />
+	<link rel="stylesheet" href="{{ '/css/print.css' | prepend: site.baseurl }}"  media="print">  	<!-- Pour l'impression de page du site -->
+
+	
+	<!-- CSS dépendant du navigateur IE -->
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="{{ '/css/main_ie8.css' | prepend: site.baseurl }}" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"> </script>
+	<![endif]-->
+	<!--[if (gte IE 9)|(!IE)]><!-->
+		<link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}" />
+	<!--<![endif]-->
+	
+	<!-- pour avoir un url clean et mieux indexé ref: https://support.google.com/webmasters/answer/139066?hl=fr -->	
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" >
+	  
+	<!-- pour le fil RSS à ajouter avec un blog http://joelglovier.com/writing/rss-for-jekyll/ -->
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" >
+
+  </head>

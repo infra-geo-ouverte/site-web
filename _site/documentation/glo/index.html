@@ -1,0 +1,1325 @@
+  <!doctype html>
+<html lang="fr">
+
+<head>
+	<title>IGO Infrastructure Géomatique Ouverte</title>
+
+		 
+	<!-- Balises meta régulières -->	 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)" />	
+	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur, igo, infrastructure" />
+	<meta name="description" content="IGO est une solution Web gratuite en géomatique." />
+	<meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>   
+	
+	<!-- Reseaux sociaux-->
+	<meta property="og:title"       content="IGO Infrastructure Géomatique Ouverte" />
+	<meta property="og:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
+	<meta property="og:type"        content="website" />
+	<meta property="og:locale" 	content="fr_FR" />
+	<meta property="og:url"         content="http://igouverte.org/" />
+	<meta property="og:site_name"   content="IGO" />
+	<meta property="og:image"       content="http://infra-geo-ouverte.github.io/site-web/assets/img/socialImg.jpg" />
+
+	
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@igo" />
+	<meta name="twitter:title" content="IGO: Infrastructure Géomatique Ouverte" />
+	<meta name="twitter:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
+	<meta name="twitter:image" content="http://infra-geo-ouverte.github.io/site-web/assets/img/socialImg.jpg" />
+
+	<!-- Favicon pour mobile, onglet du site.... 
+	<link rel="icon" sizes="228x228" href="/assets/img/igo_icone.png"> -->
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/img/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!-- Balise pour Google -->
+	<meta name="google-site-verification" content="tb9Q1FBCF-x1ul35k6Q8_-4OsL4IT0tge9FDeVfXG44" />
+	
+	<!-- Fichiers css-->
+    	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/assets/fonts/octicons/octicons.css" />
+	<link rel="stylesheet" href="/css/print.css"  media="print">  	<!-- Pour l'impression de page du site -->
+
+	
+	<!-- CSS dépendant du navigateur IE -->
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="/css/main_ie8.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"> </script>
+	<![endif]-->
+	<!--[if (gte IE 9)|(!IE)]><!-->
+		<link rel="stylesheet" href="/css/main.css" />
+	<!--<![endif]-->
+	
+	<!-- pour avoir un url clean et mieux indexé ref: https://support.google.com/webmasters/answer/139066?hl=fr -->	
+	<link rel="canonical" href="http://igouverte.org/documentation/glo/" >
+	  
+	<!-- pour le fil RSS à ajouter avec un blog http://joelglovier.com/writing/rss-for-jekyll/ -->
+	<link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="http://igouverte.org/feed.xml" >
+
+  </head>
+
+
+	<body>
+		<div itemscope itemtype="http://schema.org/SoftwareApplication">
+<header class="site-header" id="header">
+	
+	<nav class="navbar navbar-default">
+	<div>
+		<!-- Menu mobile, 3 span pour les 3 lignes de l'icone -->
+		
+		<!-- Titre du site/ mettre le logo -->
+		<div class="navbar-header">
+			<a href="/">
+				<img itemprop="image" width="260" height="138" class="logo-med" src="/assets/img/Igo_logoavec.png"  alt="Logo IGO" />
+			</a>
+						
+			<!--[if gt IE 8]><!-->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			<!--<![endif]-->
+				<!-- Lien Github -->
+				<a class="git-btn btn btn-primary" href="https://github.com/infra-geo-ouverte/igo">Voir sur Github
+					
+					<!--[if lte IE 8]>
+						<img class="logo-git" width="32" height="32" src="/assets/img/GitHub-Mark-Light-32px.png" alt="Logo Github" />
+					<![endif]-->
+					<span class="logo-git octicon octicon-mark-github"></span>
+					
+				</a>
+					
+		</div>
+
+		<!-- Collect the nav links -->
+		<!--[if gt IE 8]><!-->
+		<div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<!--<![endif]-->
+			<div class="head-right">				
+				<!-- menu haut droit -->	
+				
+				 <ul class="nav navbar-nav menu-top">
+
+				    
+				    	
+					<li class="page-link en"><a href="/faq/">FAQ</a></li>
+					
+				    
+				    	
+					<li class="page-link en"><a href="/english/">English</a></li>
+					
+				    
+				    	
+					<li class="page-link en"><a href="/"></a></li>
+					
+				    
+					<li class="headContact"><a href="#footer">Contact</a></li>
+				</ul> 
+				
+
+			</div>	
+			<!-- menu principal -->
+			<div class="menu-main">
+				<ul class="nav navbar-nav">
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/communaute/" role="button" aria-expanded="false">
+								
+								
+									<!-- <i class="fa fa-child fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.people.multiple.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-organization"></span>
+									Communauté 
+								
+								
+								
+								  
+							</a>
+
+						</li>
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/contribuer/" role="button" aria-expanded="false">
+								
+									<!-- <i class="fa fa-user-plus fa-lg "></i>  
+									<img class="icons" src="/assets/img/icons/appbar.layer.add.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-git-merge"></span>
+									Contribuer 
+								
+								
+								
+								
+								  
+							</a>
+
+						</li>
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/demo/" role="button" aria-expanded="false">
+								
+								
+								
+								
+								
+									<!-- <i class="fa fa-eye fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.cogs.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-eye"></span>
+									Démonstration 
+								  
+							</a>
+
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/documentation/" role="button" aria-expanded="false">
+								
+								
+								
+								
+									<!-- <i class="fa fa-file-text fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.page.text.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-file-text"></span>
+									Documentation 
+								
+								  
+							</a>
+
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/installation/" role="button" aria-expanded="false">
+								
+								
+								
+									<!-- <i class="fa fa-laptop fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.cabinet.in.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-move-down"></span>
+									Installation 
+								
+								
+								  
+							</a>
+
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li>
+						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
+							<span class="nav-icons octicon octicon-code"></span>
+							Licence
+						</a>
+					</li>
+				</ul>
+			</div>	
+		<!--[if gt IE 8]><!--></div><!--<![endif]-->	<!-- /.navbar-collapse -->		
+	</div> 
+	</nav>	
+
+</header>
+
+		
+			<div id="wrapper">
+			<!-- Contenu de la barre de navigation sur le côté de la page -->
+ <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+
+	
+		
+		<ul class="nav sidebar-nav">
+		  
+			<li class="sidebar-brand "><a class="smooth-scroll" href="#introduction">Introduction</a></li>
+		  
+			<li class="sidebar-brand "><a class="smooth-scroll" href="#type">Type de recherche</a></li>
+		  
+			<li class="sidebar-brand "><a class="smooth-scroll" href="#chaine">Chaîne de caractères de recherche</a></li>
+		  
+			<li class="sidebar-brand "><a class="smooth-scroll" href="#mode">Deux modes d’utilisation</a></li>
+		  
+			<li class="sidebar-brand "><a class="smooth-scroll" href="#requete">Structure des requêtes SOAP (XML)</a></li>
+		  
+			<li class="sidebar-brand "><a class="smooth-scroll" href="#reponse">Structure des réponses SOAP (XML)</a></li>
+		  
+			<li class="sidebar-brand "><a class="smooth-scroll" href="#version">Versions du service Web ( GLO )</a></li>
+		  
+
+			<li class="sidebar-brand">
+				<a href="#header" class="back-to-top smooth-scroll octicon octicon-chevron-up">
+					<span class="hautpage">Haut de la page </span>
+					
+				</a>
+			</li>
+		</ul>
+	
+
+</nav>
+
+        
+
+
+			<!-- Page Content -->
+				<div id="page-content-wrapper">
+					<!-- Flèche pour ouvrir et fermer le menu de côté gauche -->
+					<!--[if gte IE 8)] -->
+					<button type="button" id="icone-sidebar" class="octicon octicon-move-right" data-toggle="offcanvas">
+						<!-- si on veut mettre du texte sur le bouton <span class="txtmenu"></span> -->
+					</button>
+					<!-- [endif]-->
+			
+					<div class="container" >
+						<div>				
+							<h1 id="service-web-de-quot-g�olocalisation-glo-quot">Service web de &quot;GéoLOcalisation (GLO)&quot;</h1>
+
+<p><a id="introduction"></a></p>
+
+<h2 id="introduction">Introduction <a href="#introduction"><span class="octicon octicon-link"></span></a></h2>
+
+<p>Afin de faciliter le positionnement sur le territoire Québécois, le Ministère de la Sécurité Publique du Québec (MSP) à mis en place un service Web dédié à cette fin.Ce service de «  géolocalisation  » est entièrement interopérable et permet de localiser des adresses, des codes postaux, des rues, des municipalités, des  MRC , des toponymes, des édifices publics (écoles, hôpitaux,  CLSC , CPE), des entreprises et même des bornes kilométriques situées sur le réseau routier du Ministère des Transports ( MTQ ).  L’innovation de ce service repose sur sa haute fiabilité, son utilisation multiplateforme ainsi que sur la fréquence de ses mises à jour. </p>
+
+<h3 id="s�curit�-d’acc�s">Sécurité d’accès</h3>
+
+<p>Le contrôle d’accès au service Web se fait via une clé d’utilisation (semblable à celle requise pour utiliser l’API de Google  Maps ).  Cette clé permet au  MSP  de contrôler les accès et par le fait même, le contenu de sa base de données.Les clés permettent également d’autoriser ou d’empêcher l’utilisation decertains types de recherche selon l’organisation ou l’utilisateur qui tente de se connecter.  Les clés d’accès sont émises par le  MSP  et sont contrôlées en fonction d’une suite d’adresses IP reliée au domaine Internet du requérant.Pour obtenir une clé, il suffit d’en faire la demande auprès du ministère via l’adresse de courriel suivante: <a href="mailto:geomsp@msp.gouv.qc.ca">geomsp@msp.gouv.qc.ca</a>. </p>
+
+<h3 id="note-importante">NOTE  IMPORTANTE</h3>
+
+<h4 id="ce-service-ne-doit-pas-�tre-utilis�-en-mode-lot-il-est-un-service-en-ligne-il-est-interdit-de-lancer-des-appels-par-un-programme-service-module-quelconque-qui-permettrait-de-g�ocoder-des-milliers-adresses-si-le-besoin-de-votre-organisation-est-de-g�ocoder-quelques-centaines-ou-milliers-d’adresses-veuillez-communiquer-avec-nous-pour-l’utilisation-du-service-glo-utilisable-en-mode-lot-qui-est-beaucoup-plus-efficace-si-un-organisme-utilise-le-glo-pour-un-g�ocodage-en-lot-son-acc�s-lui-sera-retir�-sans-pr�avis">Ce service ne doit pas être utilisé en mode lot. IL EST UN SERVICE EN LIGNE. Il est INTERDIT de lancer des appels par un programme, service, module quelconque qui permettrait de géocoder des milliers adresses. Si le besoin de votre organisation est de géocoder quelques centaines ou milliers d’adresses, veuillez communiquer avec nous pour l’utilisation du service  GLO  utilisable en mode lot, qui est beaucoup plus efficace. Si un organisme utilise le  GLO  pour un géocodage en lot, son accès lui sera retiré sans préavis.</h4>
+
+<p><a id="type"></a></p>
+
+<h3 id="type-de-recherche">Type de recherche <a href="#type"><span class="octicon octicon-link"></span></a></h3>
+
+<p>Le service Web supporte cinq types de recherche :</p>
+
+<table><thead>
+<tr>
+<th></th>
+<th>Type de recherche</th>
+<th>Code</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+<td>Par adresse (combinaison de code postal, no. civique, rue ou ville)</td>
+<td>adresse</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Par lieux d‘intérêts (restaurant, entreprise, école, etc…)</td>
+<td>lieu</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Par borne kilométrique (borne et no. de route)</td>
+<td>borne</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Par coordonnées GPS (lat, lon) ou (lon, lat), UTM, MTM, format Bell</td>
+<td>gps</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Infrastructure d’Hydro-Québec (poteau, barrage, centrale, etc…)</td>
+<td>hq</td>
+</tr>
+</tbody></table>
+
+<p>Certaines recherches peuvent être limitées à une clientèle bien précise (ex : La recherche sur les éléments du réseau d’Hydro-Québec est disponible seulement par les intervenants en sécurité civile).  Cette gestion est  effectué  via la clé d’accès décrite ci haut. </p>
+
+<p><a id="chaine"></a></p>
+
+<h3 id="cha�ne-de-caract�res-de-recherche">Chaîne de caractères de recherche <a href="#chaine"><span class="octicon octicon-link"></span></a></h3>
+
+<p>Le service de recherche considère uniquement une seule chaîne de caractères par requête (paramètre <texte> ). Par contre, cette chaîne peut comporter plusieurs valeurs (ex : 1715 rue  Merlac , Québec). Contrairement à l’engin de recherche de Google, l’ordre dans lequel les paramètres sont placés dans la chaîne à une importance sur la performance et qualité des résultats obtenus. </p>
+
+<p>Depuis la version 5 du  GLO , il est possible de passer une chaine de caractères ne correspondant à aucun pattern pour la recherche par adresse. Une recherche de similarité phonétique est alors déclenchée. </p>
+
+<p>Ex: 2525 Québec Laurier  G1V   2L2  boulevard </p>
+
+<p>La fonction cherche donc les mots demandés.Ces mots peuvent être coupés au début ou avec des fautes d’orthographe à l’intérieur des mots. Les mots sont alors affectés d’un poids et ceux le plus près de 100% sont retournés. </p>
+
+<p>Cette nouvelle fonctionnalité est un peu plus lente que la recherche par pattern qui est beaucoup plus rapide. </p>
+
+<p><span style="background-color:lime;"><strong>LES  VERSIONS  1, 2 ET 3 NE SONT PLUS SUPPORTÉES.</strong><span />  </p>
+
+<p>Voici des exemples de chaîne qui peuvent être soumise au service (les informations retournées seront décrites en détail à la section du présent document): </p>
+
+<ol>
+<li>Adresse<br></li>
+</ol>
+
+<p>a) À partir d&#39;un <strong>code postal</strong> seulement  </p>
+
+<p>Ex :   <strong><span style="color:blue">G1M 2L1</strong></span>  (** avec ou sans espace **) </p>
+
+<p>=  ►   Retourne toutes les adresses (no. civique, la rue ainsi que la ville) qui se retrouvent à l’intérieur du code postal.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    1681 Rue De  Merlac , Québec
+    1685 Rue De  Merlac , Québec
+    1691 Rue De  Merlac , Québec
+    1695 Rue De  Merlac , Québec
+    1701 Rue De  Merlac , Québec
+    1705 Rue De  Merlac , Québe
+    1711 Rue De  Merlac , Québec
+    1715 Rue De  Merlac , Québec
+    1721 Rue De  Merlac , Québec
+    1725 Rue De  Merlac , Québec
+</code></pre></div>
+<p>b) À partir d’un <strong>code postal et un numéro civique</strong>  </p>
+
+<p>Si le numéro civique existe, Ex :  <strong><span style="color:blue">G1M 2L1, 1715</strong></span></p>
+
+<p>=  ►   Retourne seulement l’adresse qui correspond au numéro civique. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    1715 Rue De  Merlac , Québec
+</code></pre></div>
+<p>Si le numéro civique n’existe pas,   Ex :   <strong><span style="color:blue">G1M 2L1, 1714</strong></span></p>
+
+<p>=  ►   Retourne les adresses en utilisant les tranches de numéros civiques (gauche ou droite) qui se retrouvent à l’intérieur du code postal.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    1701 Rue De  Merlac , Québec
+    1705 Rue De  Merlac , Québec
+    1711 Rue De  Merlac , Québec
+    1715 Rue De  Merlac , Québec
+    1721 Rue De  Merlac , Québec
+    1725 Rue De  Merlac , Québec
+</code></pre></div>
+<p>Si le numéro civique ne se retrouve pas dans aucune tranche d’adresse </p>
+
+<p>=  ►   La requête par  <strong><span style="font-size:10.0pt;  ">code postal</strong> est effectuée. </p>
+
+<p>c) À partir d’un <strong>code postal, un numéro civique et un nom de rue</strong>  </p>
+
+<p>Si la combinaison numéro civique et rue existe, Ex:   <strong><span style="color:blue">J9P 4X2, 511 Sabourin</strong></span> </p>
+
+<p>=  ►   Retourne seulement l’adresse qui correspond au numéro civique. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    511 Boulevard Sabourin,  Vald’Or 
+</code></pre></div>
+<p>Si le numéro civique n’existe pas,   Ex:   <strong><span style="color:blue">J9P4X2 , 510 Sabourin</strong></span></p>
+
+<p>=  ►   Retourne les adresses en utilisant les tranches de numéros civiques (gauche ou droite) qui se retrouvent sur la rue spécifiée et à l’intérieur du code postal. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    511 Boulevard Sabourin,  Vald’Or 
+    517 Boulevard Sabourin,  Vald’Or 
+    519 Boulevard Sabourin,  Vald’Or 
+    525 Boulevard Sabourin,  Vald’Or 
+</code></pre></div>
+<p>Si aucun résultat n’est trouvé 
+  =  ►   La requête par  <strong>nom de rue et un numéro civique</strong> est effectuée. </p>
+
+<p>d) À partir d’un <strong>code postal et un nom de rue</strong>  </p>
+
+<p>Si la combinaison code postal et nom de rue existe, Ex:   <strong><span style="color:blue">G0S2S0, Fortier</strong></span></p>
+
+<p>= ► Retourne toutes les adresses (no. civique, la rue ainsi que la ville) qui se retrouvent sur cette rue à l’intérieur du code postal spécifié. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    295 Rue Fortier, Saint-Isidore 
+    299 Rue Fortier, Saint-Isidore
+    300 Rue Fortier, Saint-Isidore
+    301 Rue Fortier, Saint-Isidore
+    302 Rue Fortier, Saint-Isidore
+</code></pre></div>
+<p>Si aucun résultat n’est trouvé </p>
+
+<p>=  ►   La requête par  <strong>code postal</strong> est effectuée. </p>
+
+<p>e) À partir d’un <strong>numéro civique et un nom de rue</strong>  </p>
+
+<p>Si la combinaison numéro civique + rue existe,Ex : <strong><span style="color:  blue">100, Blais</strong></span> </p>
+
+<p>=  ►   Retournetoutes les adresses (no. civique, la rue et la ville) pour toutes les villes du Québec qui ont une rue et un numéro civique correspondant. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    100 Boulevard Blais Est, Berthier-sur-Mer
+    100 Chemin des Blais,  Sainte-Émélie-de-l&#39;Énergie 
+    100 Rue Blais,  Amqui 
+    100 Rue Blais, Saint-Côme
+</code></pre></div>
+<p>Si aucune combinaison numéro civique + rue existe… </p>
+
+<p>=  ►   Retourne toutes les adresses en utilisant les tranches de numéros civiques (gauche ou droite) et le nom de la rue pour toutes les villes du Québec. </p>
+
+<p>Si aucun résultat… </p>
+
+<p>=  ►   La requête par <strong>nom de rue</strong> est effectuée (le numéro civique est alors ignoré). </p>
+
+<p>f) À partir d’un <strong>numéro civique, un nom/numéro de rue, et une ville</strong></p>
+
+<p>Si une combinaison existe,</p>
+
+<p>Ex:<strong><span style="color:blue"> 100 Fortier,  Amqui</strong> </span></p>
+
+<p>Ex: <strong><span style="color:blue">450 6<sup>e</sup>, Shawinigan</strong></span> </p>
+
+<p>=  ►   Retourne seulement l’adresse qui correspond au numéro civique. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    100 rue Fortier,  Amqui
+ou
+
+    450 6e Avenue, Shawinigan
+</code></pre></div>
+<p>Note : </p>
+
+<p>Il n’est pas nécessaire d’écrire ‘rue’, ‘route’, ‘rang’ ou ‘avenue’. </p>
+
+<p>Si aucune combinaison numéro civique + rue + ville existe… </p>
+
+<p>=  ►   Retourne toutes les adresses en utilisant les tranches de numéros civiques (gauche ou droite) et le nom de la rue pour la ville spécifié. </p>
+
+<p>Si aucun résultat… </p>
+
+<p>=  ►   La requête par <strong>nom de rue et numéro civique</strong> est effectuée. </p>
+
+<p>g) À partir d’un   <strong>nom de rue et une ville</strong></p>
+
+<p>Si la combinaison nom de rue et ville existe, Ex:  <strong><span style="  color:blue">Fortier, St-Isidore</strong> </span></p>
+
+<p>=  ►   Retourne toutes les adresses (no. civique, la rue ainsi que la ville) qui se retrouvent sur cette rue à l’intérieur de la ville spécifié. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    101 Boulevard Fortier, Saint-Isidore-de-Clifton
+    105 Boulevard Fortier, Saint-Isidore-de-Clifton
+    109 Boulevard Fortier, Saint-Isidore-de-Clifton
+    110 Boulevard Fortier, Saint-Isidore-de-Clifton
+    295 Rue Fortier, Saint-Isidore
+    299 Rue Fortier, Saint-Isidore
+    300 Rue Fortier, Saint-Isidore
+    301 Rue Fortier, Saint-Isidore
+    302 Rue Fortier, Saint-Isidore
+</code></pre></div>
+<p>h) À partir d’<strong>un seul mot</strong> qui n’est pas un code postal (rue, municipalité,  MRC  ou région administrative)  </p>
+
+<p><span style="color:blue">Ex : <strong>Fortier</span> ou <span style="color:blue">Québec</span> ou <span style="color:blue">Vallée-du-Richelieu</span> ou <span style="color:blue">Chaudière-Appalaches</strong></span> (** important de mettre des traits d’unions dans les noms **) </p>
+
+<p>=  ►   Retourne un résultat provenant de toutes les bases de données disponibles soit: les territoires administratifs, le rues, les toponymes </p>
+
+<p>i) Une fonctionnalité de recherche textuelle a été ajoutée dans les cas où le résultat pour tous les patterns précédents donne « 0 » ou « aucun résultat ».  </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">     Ex : 2525  boul  Laurier Québec  G1V   2L2  
+</code></pre></div>
+<p>= ►  Retourne un résultat provenant de la base de données d’adresses. La recherche se fait dans le champ &lt;  RECHERCHE_TEXTUELLE  &gt; qui contient l’adresse au complet, le code postal, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ. </p>
+
+<ol>
+<li><p>Lieu  </p>
+
+<p>À partir de <strong>plusieurs mots clé</strong> (ordre n’a pas d’importance)  </p>
+
+<p>Ex :   <strong><span style="color:blue">LacPoulin</strong></span> ou <strong><span style="color:blue">Mcdo Lévis</strong></span></p>
+
+<p>Retourne un résultat provenant de la base de données de Lieux d’intérêt. La recherche se fait dans le champ &lt;  RECHERCHE_TEXTUELLE  &gt; qui contient plusieurs informations concernant ce lieu : son nom,des mots clé, l’adresse s’il y a lieu, le nom de ville. TOUS LES MOTS sont recherchés et doivent exister dans ce champ. </p></li>
+<li><p>Borne Kilométrique  </p>
+
+<p>Note : avec un espace ou une virgule comme séparation </p>
+
+<p>a) À partir d&#39;une <strong>valeur de kilométrage et d’un numéro de route</strong>  </p>
+
+<p>Ex :  <strong><span style="color:blue">108, 73</strong></span></p>
+
+<p>Note : Pour les bornes à chaque 100 mètres dans la région de Montréal, la syntaxe est la suivante : 66.9 40 = borne du 900e mètres au 66<sup>e </sup>kilomètre de la route 40. </p>
+
+<p>b) À partir d’un  </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">i. **numéro de sortie d’autoroute seulement** 
+ii. **numéro de sortie d’autoroute et d’un numéro de route** 
+iii. **numéro de sortie d’autoroute et d’un nom de municipalité** 
+iv. **nom de municipalité seulement** 
+
+Ex:  **&lt;span style=&quot;color:blue&quot;&gt;SORTIE 315**&lt;/span&gt;
+**&lt;span style=&quot;color:blue&quot;&gt;SORTIE 315 40**&lt;/span&gt;
+**&lt;span style=&quot;color:blue&quot;&gt;SORTIE 315 Québec**&lt;/span&gt;
+**&lt;span style=&quot;color:blue&quot;&gt;SORTIE Québec**&lt;/span&gt;
+</code></pre></div>
+<p>c) À partir d&#39;une <strong>valeur de mile du  CN</strong><br>
+Ex :   <strong><span style="color:blue">CN, 50</strong></span></p>
+
+<p>d) À partir d’un <strong>numéro d’une aide flottante de la garde côtière canadienne</strong><br>
+Ex :   <strong><span style="color:blue">GCC H47</strong></span></p></li>
+<li><p>Coordonnées GPS  </p>
+
+<p>a) À partir de coordonnées en Degrés décimaux </p>
+
+<p>Ex:  <strong><span style="color:blue"> 48.843439, -67.930932</strong></span></p>
+
+<p>= ► Retourne </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Dans la municipalité de (Bas-Saint-Laurent), à 13.9Km de Baie-des-Sables 
+</code></pre></div>
+<p>b) À partir de coordonnées en Degrés minutes secondes  </p>
+
+<p>Ex :  <strong><span style="color:blue">48 22 23, -67 34 21</strong></span></p>
+
+<p>= ► Retourne </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Dans la municipalité de Saint-Léon-le-Grand (Bas-Saint-Laurent), à 5.1Km de Saint-Léon-le-Grand 
+</code></pre></div>
+<p>c) À partir de coordonnées en Degrés minutes décimales </p>
+
+<p>Ex :  <strong><span style="color:blue">48 22.843, -67 34.932</strong></span></p>
+
+<p>= ► Retourne </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Dans la municipalité de Saint-Léon-le-Grand (Bas-Saint-Laurent), à 5.7Km de Saint-Léon-le-Grand 
+</code></pre></div>
+<p>d) À partir de coordonnées en UTM-fuseau  </p>
+
+<p>Ex :  <strong><span style="color:blue">UTM-18 1018490.56282, 5434191.46593</strong></p>
+
+<p>= ► Retourne </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Dans la municipalité de (Bas-Saint-Laurent), à 13.9Km de Baie-des-Sables 
+</code></pre></div>
+<p>e) À partir de coordonnées en  MTM-fuseau   </p>
+
+<p>Ex :   <strong><span style="color:blue">MTM7  493344.550863, 5414859.14264</strong></span></p>
+
+<p>= ► Retourne </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Dans la municipalité de (Bas-Saint-Laurent), à 13.9Km de Baie-des-Sables 
+</code></pre></div>
+<p>f) À partir du format de Bell ( Lat :  dd.ddd  Long: dd.ddd UNC:  CONF :)  </p>
+
+<p>Ex: <strong><span style="color:blue">Lat: 46 49 50.041N Long: 71 11 26.753W UNC:100  CONF :90</strong></p>
+
+<p>= ► Retourne </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">__certitude de 90% dans un rayon de 100m__ Dans la municipalité de (Chaudière-Appalaches), à 2.3Km de Québec 
+</code></pre></div>
+<p><strong>Notes pour la recherche par GPS:</strong> </p>
+
+<p>On peut inscrire dans l&#39;ordre  Lat /Long ou Long/ Lat  avec, ou sans le signe négatif. De plus, on peut utiliser le <strong>point</strong> ou <strong>l&#39;espace</strong> pour séparer les degrés/minutes/secondes.  </p>
+
+<p>Le couple de coordonnées <strong>doit absolument</strong> être séparé par une virgule;  </p>
+
+<p>Cette fonctionnalité de recherche donne le nom du territoire municipal dans lequel la coordonnée à été captée et donne également la distance a vol d&#39;oiseau de la localité la plus proche.  </p></li>
+</ol>
+
+<p><a id="mode"></a></p>
+
+<h3 id="deux-modes-d’utilisation">Deux modes d’utilisation <a href="#mode"><span class="octicon octicon-link"></span></a></h3>
+
+<p>1) La première façon d’utiliser le service est par un simple appel URL, directement dans un fureteur Internet.Cette méthode est plus simple, car elle ne nécessite pas de programmation (création d’un message ou d’un client en format SOAP).Cette méthode retourne l’information sous forme XML. </p>
+
+<p>Voici un exemple d’appel en mode HTTP. </p>
+
+<p>Pour la version 5: </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[Le lien ne fonctionne pas](http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeurHTTP.php?type=adresse&amp;texte=2525%20laurier%20qu%E9bec&amp;cle=&lt;votre clé&gt;&amp;indDebut=0&amp;indFin=10&amp;epsg=900913&amp;format=xml &quot;Lien&quot;)
+</code></pre></div>
+<p>Liste des paramètres: </p>
+
+<table><thead>
+<tr>
+<th></th>
+<th>Variable</th>
+<th>Valeurs possibles</th>
+<th>Obligatoire</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+<td>Texte</td>
+<td>Chaîne de caractères pour la recherche*</td>
+<td>Oui</td>
+</tr>
+<tr>
+<td>2</td>
+<td>cle</td>
+<td>Clé d’accès émise par le MSP</td>
+<td>Oui</td>
+</tr>
+<tr>
+<td>3</td>
+<td>type</td>
+<td>adresse, lieu, borne, gps, hq A partir de la version 5, le type est obligatoire</td>
+<td>Oui – « adresse »  par défaut</td>
+</tr>
+<tr>
+<td>4</td>
+<td>epsg</td>
+<td>Système de référence des coordonnées en sortie, (code EPSG de la donnée source par défaut)</td>
+<td>Oui – système de coordonnées source par défaut</td>
+</tr>
+<tr>
+<td>5</td>
+<td>indexDebut</td>
+<td>Permet de spécifier l’index de départ de la réponse, (optionnel, 0 par défaut)</td>
+<td>Non - 0 par défaut</td>
+</tr>
+<tr>
+<td>6</td>
+<td>indexFin</td>
+<td>Permet de spécifier l’index de fin de la réponse, (optionnel 79 par défaut)</td>
+<td>Non - 79 par défaut</td>
+</tr>
+<tr>
+<td>7</td>
+<td>version</td>
+<td>Paramètre qui n’est plus utilisé.</td>
+<td>----</td>
+</tr>
+<tr>
+<td>8</td>
+<td>format</td>
+<td>Permet de spécifier le type de format de sortie du fichier. Pour le moment XML. (seront possible HTML, CSV ou autre un jour)</td>
+<td>Oui – XML par défaut</td>
+</tr>
+</tbody></table>
+
+<p><span style="color:red">Si la chaîne de texte  comprends  des caractères non supportés par l’URL (les accents et les espaces entre autres), ces derniers doivent être encodés avant d’être soumis au service.En PHP, il existe une fonction pour effectuer automatiquement cette opération ( urlencode ).</span></p>
+
+<p>Exemple qui retourne les 49 premiers enregistrements seulement </p>
+
+<p>Pour la version 5: </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[Lien à ajouter](http://glo.com &quot;Lien à ajouter&quot;)
+</code></pre></div>
+<p>Exemple qui retourne les enregistrements mais dont les coordonnées sont dans le système de projection de Google </p>
+
+<p>Pour la version 5: </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[Lien à ajouter](http://glo.com &quot;Lien à ajouter&quot;)
+</code></pre></div>
+<p>2) La deuxième façon est d’appeler directement le service Web en utilisant un langage de programmation (Java, .Net, PHP,  etc …). Il requiert la création d’une requête (ou message) SOAP avec les paramètres requis. Les différents paramètres ainsi que les méthodes exposées par le service Web sont définies dans le fichier  WSDL  <a href="http://www.w3.org/TR/wsdl" title="Wen SErvice Definition Language">Wen SErvice Definition Language</a>  </p>
+
+<p>pour la version 5 du service </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[Le lien ne fonctionne pas](http://geoegl.msp.gouv.qc.ca/Services/glo/V5/gloServeur.php?WSDL) 
+</code></pre></div>
+<p>Voici les méthodes présentement supportées par le service : </p>
+
+<ul>
+<li>    Geocoder    (  ) – <em>Pour les recherches d’adresses, de lieux ou des éléments du réseau d’Hydro-Québec</em> </li>
+<li>    GeocoderBorne    ()<br></li>
+<li>    GeocoderGPS    ()<br></li>
+</ul>
+
+<p><strong>Note</strong> : les recherches par coordonnées GPS et par borne kilométrique sont traitées dans des méthodes séparées, car elles requièrent une réponse et une structure particulière. </p>
+
+<p><a id="requete"></a></p>
+
+<h3 id="structure-des-requ�tes-soap-xml">Structure des requêtes SOAP (XML) <a href="#requete"><span class="octicon octicon-link"></span></a></h3>
+
+<p>Pour les requêtes d’adresse, de lieux ou d’éléments du réseau d’Hydro-Québec, la structure SOAP pour le message à envoyer prends la forme suivante : </p>
+
+<p><strong>Version 5 :</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:geo=&quot;http://geoegl.msp.gouv.qc.ca/&quot;&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;geo:GeocoderRequete&gt;
+         &lt;GLOCleAcces&gt;votre clé&lt;/GLOCleAcces&gt;
+         &lt;texte&gt;&quot;&gt;1715 rue Merlac Québec&lt;/texte&gt;
+         &lt;type&gt;adresse&lt;/type&gt;
+         &lt;codeEPSG&gt;32198&lt;/codeEPSG&gt;
+         &lt;index&gt;
+            &lt;debut&gt;0&lt;/debut&gt;
+            &lt;fin&gt;10&lt;/fin&gt;
+         &lt;/index&gt;
+      &lt;/geo:GeocoderRequete&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;
+</code></pre></div>
+<p>Tout comme pour le mode par appel URL, les trois paramètres obligatoires sont :</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">le clé d’accès (&lt;GLOCleAcces&gt;);
+le type : adresse, lieu, hq;
+le texte à géocoder (&lt;texte&gt;)
+</code></pre></div>
+<p><strong>VERSION 5 :</strong></p>
+
+<p>Pour les deux autres types de géocodage (par borne ou coordonnées GPS), la structure est exactement la même excepté que le nom de la requête :</p>
+
+<p>Requête par borne kilométrique:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:geo=&quot;http://geoegl.msp.gouv.qc.ca/&quot;&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;geo:BorneRequete&gt;
+...
+      &lt;/geo:BorneRequete&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;
+</code></pre></div>
+<p>Requête par coordonnées GPS :</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:geo=&quot;http://geoegl.msp.gouv.qc.ca/&quot;&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;geo:GPSRequete&gt;
+             ...
+      &lt;/geo:GPSRequete&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;
+</code></pre></div>
+<p><a id="reponse"></a></p>
+
+<h4 id="structure-des-r�ponses-soap-xml">Structure des réponses SOAP (XML) <a href="#reponse"><span class="octicon octicon-link"></span></a></h4>
+
+<p>La réponse en format XML qui est retournée par le service (ou via l’URL) peut être facilement décortiquée par l’application appelante.Chaque type de requête retourne généralement; le nombre d’enregistrement, une liste d’attributs pour chacune des occurrences de la réponse correspondant à la chaîne de caractères reçue en paramètre.On retrouve aussi les coordonnées de la localisation de l’information obtenue de l’entrepôt de donné du  MSP . Enfin, on trouvera quelques métadonnées qualifiant la donnée. </p>
+
+<p>Extrait de la réponse XML d’une recherche d’adresse (par code postal soit «  <strong><span style="color:blue"> G1M2L1</strong></span>  »): 
+<strong>Version 5 :</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:ns1=&quot;http://geoegl.msp.gouv.qc.ca/&quot;&gt;
+   &lt;SOAP-ENV:Body&gt;
+      &lt;ns1:GeocoderReponse&gt;
+         &lt;nombreResultat&gt;1&lt;/nombreResultat&gt;
+         &lt;geocoderReponseListe&gt;
+            &lt;borneDetail&gt;
+               &lt;adresseLibre&gt;1715 Rue De Merlac, Québec&lt;/adresseLibre&gt;
+               &lt;geocodeMatchCode&gt;100&lt;/geocodeMatchCode&gt;
+               &lt;noCiviq&gt;1715&lt;/noCiviq&gt;
+               &lt;codeMuncp&gt;23027&lt;/codeMuncp&gt;
+               &lt;noMatricule&gt;448690783110000000&lt;/noMatricule&gt;
+               &lt;noSeqAdrCivique&gt;1457606&lt;/noSeqAdrCivique&gt;
+               &lt;nomRue&gt;Rue De Merlac&lt;/nomRue&gt;
+               &lt;noCivqSuffx/&gt;
+               &lt;noApprt&gt;0&lt;/noApprt&gt;
+               &lt;noApprtSuffx&gt;0&lt;/noApprtSuffx&gt;
+               &lt;noCiviqDebutDroite&gt;0&lt;/noCiviqDebutDroite&gt;
+               &lt;noCiviqFinDroite&gt;0&lt;/noCiviqFinDroite&gt;
+               &lt;noCiviqDebutGauche&gt;1701&lt;/noCiviqDebutGauche&gt;
+               &lt;noCiviqFinGauche&gt;1725&lt;/noCiviqFinGauche&gt;
+               &lt;placeListe&gt;
+                  &lt;borneDetail&gt;
+                     &lt;type&gt;Municipalité&lt;/type&gt;
+                     &lt;nom&gt;Québec&lt;/nom&gt;
+                  &lt;/borneDetail&gt;
+               &lt;/placeListe&gt;
+               &lt;CP&gt;
+                  &lt;codePostal&gt;G1M2L1&lt;/codePostal&gt;
+                  &lt;Copyright&gt;Marque officielle de la Societe canadienne des postes&lt;/Copyright&gt;
+               &lt;/CP&gt;
+               &lt;localisation&gt;
+                  &lt;point&gt;
+                     &lt;x&gt;-212089.70453172&lt;/x&gt;
+                     &lt;y&gt;316975.67564502&lt;/y&gt;
+                     &lt;SRS&gt;
+                        &lt;codeEPSG&gt;32198&lt;/codeEPSG&gt;
+                        &lt;nom&gt;EPSG&lt;/nom&gt;
+                        &lt;WKT&gt;+proj=lcc +lat_1=60 +lat_2=46 +lat_0=44 +lon_0=-68.5 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs&lt;/WKT&gt;
+                     &lt;/SRS&gt;
+                  &lt;/point&gt;
+                  &lt;enveloppe&gt;
+                     &lt;SRS&gt;
+                        &lt;codeEPSG&gt;0&lt;/codeEPSG&gt;
+                        &lt;nom/&gt;
+                        &lt;WKT/&gt;
+                     &lt;/SRS&gt;
+                  &lt;/enveloppe&gt;
+               &lt;/localisation&gt;
+               &lt;metadonnee&gt;
+                  &lt;classe&gt;Adresse Québec version 09&lt;/classe&gt;
+                  &lt;source&gt;AQ&lt;/source&gt;
+                  &lt;date&gt;2012/11/08 00:00:00&lt;/date&gt;
+               &lt;/metadonnee&gt;
+            &lt;/borneDetail&gt;
+         &lt;/geocoderReponseListe&gt;
+      &lt;/ns1:GeocoderReponse&gt;
+   &lt;/SOAP-ENV:Body&gt;
+&lt;/SOAP-ENV:Envelope&gt;
+</code></pre></div>
+<p>*cote de précision </p>
+
+<p>| 100 | Le géocodage a réussis à associer l’adresse au rôle d’évaluation |
+| 50 | Le géocodage a positionner l’adresse entre le minimum et le maximum de la tranche d’adresse du segment par extrapolation mathématique |
+| 35 | Le géocodage a positionner l’adresse au centre du segment de la rue (absence de minimum/maximum) |</p>
+
+<p><a id="version"></a></p>
+
+<h4 id="versions-du-service-web-glo">Versions du service Web ( GLO )  <a href="#version"><span class="octicon octicon-link"></span></a></h4>
+
+<p>Version 1 : Version initiale </p>
+
+<p>Version 2 : 14 octobre 2009 </p>
+
+<p>La différence majeure entre les deux versions se retrouve au niveau des recherches par adresse.Le géocodage est maintenant plus précis c’est à dire que le positionnement peut se faire directement sur le numéro civique (grâce au rôle d’évaluation) et non plus sur une tranche d’adresse seulement comme c’était le cas avec la version #1 du service : </p>
+
+<p>Ancien champs de la version #1: </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;  noCiviqDebut  &gt; 
+
+&lt;  noCiviqFin  &gt; 
+</code></pre></div>
+<p>Remplacés par les nouveaux champs de la version #2: </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;  geocodeMatchCode  &gt; 
+
+&lt;  noCiviq  &gt; 
+
+&lt;  noCiviqDebutDroite  &gt; 
+
+&lt;  noCiviqFinDroite  &gt; 
+
+&lt;  noCiviqDebutGauche  &gt; 
+
+&lt;  noCiviqFinGauche  &gt; 
+</code></pre></div>
+<p>Version 3 : décembre 2010 (Seulement à l’intérieur du  MSP ) </p>
+
+<p>La version 3 du  GLO  comprend l’ajout des champs suivants:  CODE_MUNCP ,  NO_MATRICULE ,  NO_SEQ_ODONM  du  DGE .   Cette version comprend également l’ajout d’une recherche d&#39;adresse textuelle améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté. La recherche par Lieux d’intérêt est également grandement améliorée. </p>
+
+<p>Champs de la version #3: </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;  geocodeMatchCode  &gt; 
+
+&lt;  noCiviq  &gt; 
+
+&lt;  noCiviqDebutDroite  &gt; 
+
+&lt;  noCiviqFinDroite  &gt; 
+
+&lt;  noCiviqDebutGauche  &gt; 
+
+&lt;  noCiviqFinGauche  &gt; 
+
+&lt;  code_muncp  &gt; 
+
+&lt;  no_matricule  &gt; 
+
+&lt;  no_seq_adr_civique  &gt; 
+</code></pre></div>
+<p>*<em>Version 5 : novembre 2012 *</em></p>
+
+<p>Cette version comprend également l’ajout d’une recherche d&#39;adresse de similarité phonétique améliorée supplémentaire qui donne des résultats si aucun pattern n’est respecté. </p>
+
+<p>Champs de la version #5: </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">  ajout    en sortie du tag :**&lt;span style=&quot;background:lime;mso-highlight:lime&quot;&gt;&lt; RemarqueListe /&gt;** 
+</code></pre></div>
+<p>Correspond aux suggestions de similarité phonétique suggérées si aucun résultat n’est trouvé. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">  ajout en sortie dans le résultat XML: 
+
+ &lt;  borneDetail  &gt; 
+
+&lt; noCiviqDebut /&gt;champ à valider si nécessaire à conserver 
+
+&lt;span style=&quot;background:olive;mso-highlight:olive&quot;&gt;&lt; noCiviqFin /&gt;champ à valider si nécessaire à conserver 
+
+ &lt;CP&gt;
+     &lt;codePostal&gt;G1V2L2&lt;/codePostal&gt;
+     &lt;Copyright&gt; Marque officielle de la Societe canadienne des postes&lt;/Copyright&gt;
+ &lt;/CP&gt;
+      &lt;localisation&gt;
+          &lt;point&gt;
+               &lt;x&gt;-7934466.89847387&lt;/x&gt;
+               &lt;y&gt;5904997.4000787&lt;/y&gt;
+               &lt;SRS&gt;
+                   &lt;nom&gt;spatialreferencing.org&lt;/nom&gt;     
+                   &lt;codeEPSG&gt;900913&lt;/codeEPSG&gt;
+                   &lt;WKT&gt;
+                        +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +units=m +k=1.0 +nadgrids=@null +no_defs
+                  &lt;/WKT&gt;
+                &lt;/SRS&gt;
+           &lt;/point&gt;
+            &lt;enveloppe&gt;
+               &lt;Xmin/&gt;
+               &lt;Ymin/&gt;
+               &lt;Xmax/&gt;
+               &lt;Ymax/&gt;
+               &lt;SRS&gt;
+                   &lt;nom/&gt;
+                   &lt;codeEPSG&gt;0&lt;/codeEPSG&gt;
+                   &lt;WKT/&gt;
+               &lt;/SRS&gt;
+            &lt;/enveloppe&gt;
+    &lt;/localisation&gt;
+</code></pre></div>
+<p><strong><u> Ajout janvier 2014 </u></strong></p>
+
+<p>ajout en sortie du tag :<span style="background:lime;mso-highlight:lime"><code>&lt;statut/&gt;</code></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"> Correspond aux informations sur les municipalités. 
+  etat      : Officiel ou Non officiel. 
+  description   : Valide, Supprimé. 
+  commentaire   : correspondant à une Ancienne limite ou la ville correspondant Maintenant. 
+
+&lt;statut&gt;
+    &lt;etat&gt;Non officiel&lt;/etat&gt;
+    &lt;description&gt;Supprimé&lt;/description&gt;
+    &lt;commentaire&gt;Ancienne limite&lt;/commentaire&gt;
+&lt;/statut&gt;
+
+&lt;statut&gt;
+    &lt;etat&gt;Officiel&lt;/etat&gt;
+    &lt;description&gt;Valide&lt;/description&gt;
+    &lt;commentaire/&gt;
+&lt;/statut&gt;
+
+&lt;statut&gt;&lt;etat&gt;Non officiel&lt;/etat&gt;
+    &lt;description&gt;Supprimé&lt;/description&gt;
+    &lt;commentaire&gt;Maintenant Shawinigan&lt;/commentaire&gt;
+&lt;/statut&gt;
+
+&lt;statut&gt;&lt;etat&gt;Non officiel&lt;/etat&gt;
+    &lt;description&gt;Supprimé&lt;/description&gt;
+    &lt;commentaire&gt;Ancienne limite&lt;/commentaire&gt;
+&lt;/statut&gt;
+</code></pre></div>
+<p>Correspond également aux informations sur les adresses.</p>
+
+<p>etat           : Officiel ou Non officiel.</p>
+
+<p>description    : Ajouté, Modification sur description seulement, Modification sur géométrie seulement, Modification sur géométrie et description.</p>
+
+<p>commentaire    : aucun.</p>
+                  
+						</div>
+					</div>
+				</div>
+					<!-- /#page-content-wrapper -->
+
+			</div>  <!-- /#wrapper di sidebar.html-->
+
+
+    <footer class="site-footer" id="footer">
+
+	<div class="wrapper row">
+		<!-- LOGO -->
+		<div class="col-xs-12 col-sm-3 text-center">
+			<a href="/">
+				<img class="logo-med" width="85" height="187" src="/assets/img/logo_bleu_112.png"  alt="Logo IGO" />
+			</a>
+
+		</div>
+		<!-- LISTE DE PAGES -->
+		<div class="col-xs-12 col-sm-6 text-center">
+			<ul class="footer listGauche">
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/communaute/" role="button" aria-expanded="false">Communauté
+						</a>
+					</li>
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/contribuer/" role="button" aria-expanded="false">Contribuer
+						</a>
+					</li>
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/demo/" role="button" aria-expanded="false">Démonstration
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/documentation/" role="button" aria-expanded="false">Documentation
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/installation/" role="button" aria-expanded="false">Installation
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<li>
+					<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
+						Licence
+					</a>
+				</li>
+
+				
+					
+				<li class="page-link en"><a href="/faq/">FAQ</a></li>
+				
+				
+					
+				<li class="page-link en"><a href="/english/">English</a></li>
+				
+				
+					
+				<li class="page-link en"><a href="/"></a></li>
+				
+				
+				
+			</ul>
+		</div>
+		<!-- FORMULAIRE -->
+		<div class="col-xs-12 col-sm-3 text-center col-form">			
+			
+			<!-- reference pour le formulaire avec Formspree: http://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites&#151;cms-23870 -->
+			<div id="contact">
+				<h3>Contactez-nous :</h3>
+				<form id="contactform" method="POST">
+
+					<input type="text" class="contact1" name="name" placeholder="Nom" />
+					<input type="email" class="contact1" name="_replyto" placeholder="Courriel" /> <!-- reply to pour autorépondre -->		
+
+					<textarea class="contact2" name="message" placeholder="Message"></textarea>
+
+					<!-- Built into Formspree is a “honeypot” method of spam prevention. The honeypot technique is quite simple; you hide a field inside your form that users don’t see, but spambots do. 
+					The spambot will fill in the field, while users won’t. Any submission with this field filled in will be considered spam. 
+					By naming the field “_gotcha”, Formspree will recognise it and ignore any submissions made with this filled in. -->
+					
+					
+					<input type="submit" class="submitContact" value="Envoyer" />
+					<span class="hideForm">
+						<input type="text" name="_gotcha" style="display:none" /><!-- pour arrêter les spammeur robots -->
+						<input type="hidden" name="_subject" value="Demande d'information pour IGO" /> <!-- This field will not appear when a user views the form, but the value will be used for the subject line when I receive a submission. -->
+						<input type="hidden" name="_next" value="//igouverte.org/courriel/" />  <!--mettre une page de merci votre courriel est envoyé -->
+					</span>
+				</form>
+				
+				<script>
+					var contactform =  document.getElementById('contactform');
+					contactform.setAttribute('action', '//formspree.io/' + 'info' + '@' + 'igouverte' + '.' + 'org');
+				
+				</script>
+			</div>					
+		</div>
+	</div>
+		<hr>
+		<p class="footer-mail text-center">Courriel: info[a]igouverte.org </p>
+		<div class="share-page">
+    Partagez &rarr; 
+    <a class="footer-reseau" href="https://twitter.com/intent/tweet?source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;text=IGO:%20http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a> 
+    <a class="footer-reseau" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;t=IGO" title="Share on Facebook" target="_blank"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
+    <a class="footer-reseau" href="https://plus.google.com/share?url=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
+    <a class="footer-reseau" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;title=IGO&amp;summary=Infrastructure%20geomatique%20ouverte&amp;source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square" data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
+</div> 
+
+
+
+<!-- ref: http://codingtips.kanishkkunal.in/share-buttons-jekyll/ -->
+
+
+<!-- <div class="share-page">
+    Share this on &rarr; 
+    <a href="https://twitter.com/intent/tweet?text=&url=http://igouverte.org/documentation/glo/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://igouverte.org/documentation/glo/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url=http://igouverte.org/documentation/glo/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+</div> -->
+	<!-- summary="Infrastructure de géomatique ouverte" source="http://infra-geo-ouverte.github.io/site-web/" -->
+	
+	<!-- bouton Linked in 	<i class="fa fa-linkedin-square"></i> 
+	<div class="footer-reseau">
+	<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: fr_FR</script>
+	<script type="IN/Share" data-url="http://infra-geo-ouverte.github.io/site-web/"></script>
+	</div> -->
+	
+
+		
+		<small class="copyright text-center">&copy;IGO, 2015</small>
+
+</footer>
+</div> <!-- div de : <div itemscope itemtype="http://schema.org/SoftwareApplication"> dans le header -->
+
+	<!-- fin footer -->
+
+<!--	liens locaux
+	<script type="text/javascript" src="/assets/script/jquery-1.11.1.min.js"> </script>
+	<script type="text/javascript" src="/assets/script/bootstrap.min.js"> </script> 
+	
+	ne pas mettre http ou https en avant des liens car ça bloque sur certains postes avec Firefox  -->
+		
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"> </script>
+	<script type="text/javascript" src="/assets/script/main.js"> </script>
+	<script type="text/javascript" src="/assets/script/animation_banniere.js"> </script>
+
+	
+</body>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//geoegl.msp.gouv.qc.ca/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 22]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//geoegl.msp.gouv.qc.ca/piwik/piwik.php?idsite=22" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</html>
+

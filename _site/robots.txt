@@ -1,0 +1,14 @@
+User-Agent: *    
+Disallow: /_included/
+Disallow: /_layouts/
+Disallow: /_sass/
+Disallow: /_pages/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /readme_infos_Jekyll.txt
+Disallow: /readme_karine.txt
+
+
+
+
+

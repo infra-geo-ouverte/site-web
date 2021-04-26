@@ -1,0 +1,217 @@
+/*****************************************
+css de l'accueil incluant la banniere
+***************************************/
+
+/***
+*Banniere
+***/
+
+#banniere{
+	background-image: url("../assets/img/blurred_igo_carte_accueil.jpg");
+	@include background-img;
+	background-attachment: local;
+	height: 300px;
+	border: none;
+	.banniere{
+			padding-top: 60px;
+			padding-left: 5%;
+		}
+}
+
+
+#banniere .banniere-logo, .banniere-titre{
+	display: inline-block;
+	vertical-align: 50%;
+}
+
+#banniere .banniere-logo{
+	width: 50px;
+}
+#banniere .banniere-titre{
+	padding-left: 2%;
+	padding-top: 10px;
+	margin: 0;
+	font-weight: $bold;
+	font-size: $h1*0.5;
+	font-family: $title-font-family;
+	display: inline-block!important;
+	text-shadow: 0px 3px 4px #bbb;
+	letter-spacing: $text-letter-spacing*0.7;
+	color: $noir;
+}
+
+#banniere .btn-banniere{
+	color: $noir;
+	background-color: $vert;
+	width: 110px;
+	font-size: 12px;
+	margin: 5px auto 0 auto;
+	border-color: $vert;
+}
+#banniere .btn-banniere:hover{
+	color: $blanc;
+	background-color: $vert-fonce;
+	border-color: $vert-fonce;
+}
+#banniere .btns-ban{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+#banniere .btn{
+	padding: 1%;
+}
+/****************************
+*Accueil contenu
+***********************/
+#accueil .col-sm-6{
+	padding: 0;
+	width: 100%;
+	margin: 1%;
+}
+
+#accueil .btn{
+	width: 100%;
+	font-size: $h3*0.7;
+}
+#accueil .modal-backdrop.in{
+	opacity: 0;
+}
+
+#accueil .text-center{
+	padding-top: 15px;
+}
+#accueil .modal-header{
+	background-color: $vert-pale;
+}
+#accueil .modal-backdrop{
+	z-index: 0;
+}
+#accueil .modal-body ul li{
+	margin-left: 10px;
+}
+#accueil .wrapper p{
+	text-align: justify;
+}
+#accueil{
+	width: 100%;
+}
+
+/*******************************************************/
+
+/************css pour tablette et ordinateur ***********/
+
+/*******************************************************/
+/* ---------------- 500px ---------------------------- */
+@media screen and (min-width: $screen-xs-min) {
+	#banniere{
+		height: 400px;
+		margin-top: 20px;
+			.banniere{
+				padding-top: 100px;
+				padding-left: 20%;
+			}
+	}
+
+	#banniere .banniere-logo{
+		vertical-align: 50%;
+		width: 70px;
+	}
+	#banniere .banniere-titre{
+		padding-left: 5%;
+		font-weight: $bold;
+		padding-top: 10px;
+		letter-spacing: $text-letter-spacing;
+		margin: 0;
+		font-size: $h1*0.7;
+	}
+	#banniere .btn-banniere{
+		width: 130px;
+		font-size: 18px;
+	}
+	#banniere .btns-ban{
+		padding-top: 15px;
+	}
+	#banniere .btn{
+		margin-right: 5%;
+	}
+}
+/* ----------------768px-----------------------------  */
+
+@media screen and (min-width: $screen-sm-min) {
+	#banniere{
+		height: 500px;
+		margin-top: 0;
+			.banniere{
+				padding-top: 130px;
+				padding-left: 25%;
+			}
+	}
+
+	#banniere .banniere-titre{
+		letter-spacing: $title-letter-spacing;
+		font-size: $h1;
+	}
+
+	#banniere .banniere-logo{
+		vertical-align: 50%;
+		width: 100px;
+	}
+	#banniere .btn-banniere{
+		width: 150px;
+		font-size: 20px;
+	}
+	#banniere .btns-ban{
+		width: 80%;
+		padding-top: 25px;
+	}
+	#accueil .btn{
+		font-size: $h3*0.7;
+	}
+	#accueil .wrapper{
+		padding: 0 5%;
+	}
+	#accueil .wrapper .col-sm-6{
+		padding: 0;
+		width: 45%;
+		margin: 1%;
+	}
+	#accueil .modal-body ul li{
+		margin-left: 25px;
+	}
+}
+
+/* --------- DISCUS --- */
+
+	#disqus_thread{
+		margin-top: 20px;
+	}
+
+/* ----------------992px----------------------------------  */
+
+@media screen and (min-width: $screen-md-min) {
+	#banniere .banniere{
+		padding-top: 150px;
+		padding-left: 30%;
+			.banniere-logo{
+				vertical-align: 50%;
+				width: 115px;
+			}
+	}
+
+	#accueil .btn{
+		font-size: $h3*0.9;
+	}
+}
+
+/* ----------------1200px---------------------------------  */
+
+@media screen and (min-width: $screen-lg-min) {
+
+}
+
+
+
+
+
+

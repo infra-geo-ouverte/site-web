@@ -1,0 +1,109 @@
+/**********************
+css du footer
+********************/
+
+#footer {
+	background-color: $bleu-fonce;
+	color: $blanc;
+	padding: 1% 0;
+	margin-top: 20px;
+	margin-left: 0!important;
+}
+
+#footer ul{
+	list-style-type: none;
+	margin: 10px auto;
+}
+#footer ul a{
+	color: $blanc;
+}
+
+#footer .logo-med{
+	width: 85px;
+	position: absolute;
+    	left: 500px;
+    	vertical-align: top;
+    	display: inline-block;
+}
+#footer .listMenu{
+	display: inline-block;
+	margin-left: 275px;
+}
+
+#footer .footer-mail{
+	padding-top: 2% 0;
+	color: $blanc;
+	display: block;
+	margin: 0;
+}
+#footer .footer-mail .octicon{
+	display: none;
+}
+#footer .copyright{
+	padding-top: 1%;
+	display: block;
+}
+
+#footer .col-xs-12{
+	width: 45%;
+	padding: 0 10px;
+}
+
+
+/************************
+* reseaux sociaux
+********************/
+
+#footer .footer-reseau{
+	color: $blanc;
+	text-align: center;
+}
+#footer .share-page{
+	text-align: center;
+	padding-top: 15px;
+}
+#footer .fa {
+	padding-left: 10px;
+	font-size: 30px;
+	vertical-align: middle;
+}
+
+/************************
+* Formulaire
+********************/
+#footer #contact{
+	position: absolute;
+	width: 400px;
+	left: 200px;
+}
+#footer #contact h3{
+	color: white;
+	text-align: left;
+}
+#footer .submitContact{
+	color: white;
+	background-color: #006bb6;
+	margin-top: 5px;
+	border: none;
+	float: right;
+}
+#footer .holder-box label{
+	width: 30%;
+	text-align: left;
+	vertical-align: top;
+}
+#footer .holder-box input, #footer .holder-box textarea{
+	width: 70%;
+	color: black;
+}
+#footer .holder-box textarea{
+	height: 100px;
+	color: black;
+}
+#footer .hideForm{
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 0;
+	height: 0;
+}

@@ -1,0 +1,780 @@
+  <!doctype html>
+<html lang="fr">
+
+<head>
+	<title>IGO Infrastructure Géomatique Ouverte</title>
+
+		 
+	<!-- Balises meta régulières -->	 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="copyright" content="Licence Libre du Québec – Réciprocité (LiLiQ-R)" />	
+	<meta name="keywords" content="logiciel libre, géomatique, open source, navigateur, igo, infrastructure" />
+	<meta name="description" content="Procédures d’installations possibles et supportées pour IGO2 :" />
+	<meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>   
+	
+	<!-- Reseaux sociaux-->
+	<meta property="og:title"       content="IGO Infrastructure Géomatique Ouverte" />
+	<meta property="og:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
+	<meta property="og:type"        content="website" />
+	<meta property="og:locale" 	content="fr_FR" />
+	<meta property="og:url"         content="http://igouverte.org/" />
+	<meta property="og:site_name"   content="IGO" />
+	<meta property="og:image"       content="http://infra-geo-ouverte.github.io/site-web/assets/img/socialImg.jpg" />
+
+	
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@igo" />
+	<meta name="twitter:title" content="IGO: Infrastructure Géomatique Ouverte" />
+	<meta name="twitter:description" content="IGO : une infrastructure de géomatique disponible gratuitement sur le Web." />
+	<meta name="twitter:image" content="http://infra-geo-ouverte.github.io/site-web/assets/img/socialImg.jpg" />
+
+	<!-- Favicon pour mobile, onglet du site.... 
+	<link rel="icon" sizes="228x228" href="/assets/img/igo_icone.png"> -->
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/img/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!-- Balise pour Google -->
+	<meta name="google-site-verification" content="tb9Q1FBCF-x1ul35k6Q8_-4OsL4IT0tge9FDeVfXG44" />
+	
+	<!-- Fichiers css-->
+    	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/assets/fonts/octicons/octicons.css" />
+	<link rel="stylesheet" href="/css/print.css"  media="print">  	<!-- Pour l'impression de page du site -->
+
+	
+	<!-- CSS dépendant du navigateur IE -->
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="/css/main_ie8.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"> </script>
+	<![endif]-->
+	<!--[if (gte IE 9)|(!IE)]><!-->
+		<link rel="stylesheet" href="/css/main.css" />
+	<!--<![endif]-->
+	
+	<!-- pour avoir un url clean et mieux indexé ref: https://support.google.com/webmasters/answer/139066?hl=fr -->	
+	<link rel="canonical" href="http://localhost:4000/installation/" >
+	  
+	<!-- pour le fil RSS à ajouter avec un blog http://joelglovier.com/writing/rss-for-jekyll/ -->
+	<link rel="alternate" type="application/rss+xml" title="IGO Infrastructure Géomatique Ouverte" href="http://localhost:4000/feed.xml" >
+
+  </head>
+
+
+	<body>
+		<div itemscope itemtype="http://schema.org/SoftwareApplication">
+<header class="site-header" id="header">
+	
+	<nav class="navbar navbar-default">
+	<div>
+		<!-- Menu mobile, 3 span pour les 3 lignes de l'icone -->
+		
+		<!-- Titre du site/ mettre le logo -->
+		<div class="navbar-header">
+			<a href="/">
+				<img itemprop="image" class="logo-med" src="/assets/img/Igo_logoavec.png"  alt="Logo IGO" />
+			</a>
+						
+			<!--[if gt IE 8]><!-->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			<!--<![endif]-->
+				<!-- Lien Github -->
+				<a class="git-btn btn btn-primary" href="https://github.com/infra-geo-ouverte/">Voir sur Github
+					
+					<!--[if lte IE 8]>
+						<img class="logo-git" width="32" height="32" src="/assets/img/GitHub-Mark-Light-32px.png" alt="Logo Github" />
+					<![endif]-->
+					<span class="logo-git octicon octicon-mark-github"></span>
+					
+				</a>
+					
+		</div>
+
+		<!-- Collect the nav links -->
+		<!--[if gt IE 8]><!-->
+		<div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<!--<![endif]-->
+			<div class="head-right">				
+				<!-- menu haut droit -->	
+				
+				 <ul class="nav navbar-nav menu-top">
+					<li class="page-link fr">
+						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
+							Licence
+						</a>
+					</li>
+				    
+				    	
+					<li class="page-link en"><a href="/faq/">FAQ</a></li>
+					
+				    
+				    	
+					<li class="page-link en"><a href="/english/">English</a></li>
+					
+				    
+				    	
+					<li class="page-link en"><a href="/"></a></li>
+					
+				    
+					<li class="headContact"><a href="#footer">Contact</a></li>
+				</ul> 
+				
+
+			</div>	
+			<!-- menu principal -->
+			<div class="menu-main">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="/nouveaute/">
+							<span class="nav-icons octicon octicon-flame"></span>
+							Nouveautés
+						</a>
+					</li>
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/communaute/" role="button" aria-expanded="false">
+								
+								
+									<!-- <i class="fa fa-child fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.people.multiple.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-organization"></span>
+									Communauté 
+								
+								
+								
+								  
+							</a>
+						</li>
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/contribuer/" role="button" aria-expanded="false">
+								
+									<!-- <i class="fa fa-user-plus fa-lg "></i>  
+									<img class="icons" src="/assets/img/icons/appbar.layer.add.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-git-merge"></span>
+									Contribuer 
+								
+								
+								
+								
+								  
+							</a>
+						</li>
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/demo/" role="button" aria-expanded="false">
+								
+								
+								
+								
+								
+									<!-- <i class="fa fa-eye fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.cogs.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-eye"></span>
+									Démonstration 
+								  
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/documentation/" role="button" aria-expanded="false">
+								
+								
+								
+								
+									<!-- <i class="fa fa-file-text fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.page.text.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-file-text"></span>
+									Documentation 
+								
+								  
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/installation/" role="button" aria-expanded="false">
+								
+								
+								
+									<!-- <i class="fa fa-laptop fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.cabinet.in.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-move-down"></span>
+									Installation 
+								
+								
+								  
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						  
+						<li>
+							<a class="page-link"  
+								href="/documentation/page-services-igo/" role="button" aria-expanded="false">
+								
+								
+								
+								
+									<!-- <i class="fa fa-file-text fa-lg"></i> 
+									<img class="icons" src="/assets/img/icons/appbar.page.text.svg" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-file-text"></span>
+									Services 
+								
+								  
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+				</ul>
+			</div>	
+		<!--[if gt IE 8]><!--></div><!--<![endif]-->	<!-- /.navbar-collapse -->		
+	</div> 
+	</nav>	
+
+</header>
+
+		
+			<div id="wrapper">
+			<!-- Contenu de la barre de navigation sur le côté de la page -->
+ <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+
+	
+
+		<ul class="nav sidebar-nav">
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#virtuelle">Machine virtuelle</a></li>
+         
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#ubuntu">Linux-Ubuntu</a></li>
+         
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#windows">Windows</a></li>
+         
+		  
+			   <li class="sidebar-brand "><a class="smooth-scroll" href="#telechargement">Téléchargement</a></li>
+         
+		  
+
+			<li class="sidebar-brand">
+				<a href="#header" class="back-to-top smooth-scroll octicon octicon-chevron-up">
+					<span class="hautpage">Haut de la page </span>
+
+				</a>
+			</li>
+		</ul>
+	
+
+</nav>
+
+
+			<!-- Page Content -->
+				<div id="page-content-wrapper">
+					<!-- Flèche pour ouvrir et fermer le menu de côté gauche -->
+					<!--[if gte IE 8)] -->
+					<button type="button" id="icone-sidebar" class="octicon octicon-move-right" data-toggle="offcanvas">
+						<!-- si on veut mettre du texte sur le bouton <span class="txtmenu"></span> -->
+					</button>
+					<!-- [endif]-->
+			
+					<div class="container" >
+						<div>				
+							<h1 id="procédures-dinstallations-possibles-et-supportées-pour-igo2-">Procédures d’installations possibles et supportées pour IGO2 :</h1>
+
+<h2 id="installation-rapide-locale-pour-développeur">Installation rapide locale pour développeur</h2>
+
+<ol>
+  <li>Prérequis : installer Git et NodeJS</li>
+  <li>Installation de la librairie d’IGO2-Lib<br />
+Consulter la <a href="https://github.com/infra-geo-ouverte/igo2-lib#installation">Procédure d’installation rapide la librarie d’IGO2</a> pour        démarrer IGO2Lib (sans l’assemblage IGO2) avec NodeJS.</li>
+  <li>Installation de l’assemblage d’IGO2<br />
+Consulter la <a href="https://github.com/infra-geo-ouverte/igo2#installation-et-d%C3%A9marrage">Procédure d’installation rapide</a> pour démarrer    l’assemblage d’IGO2 avec NodeJS.</li>
+</ol>
+
+<h2 id="pas-à-pas-détaillé">Pas à pas détaillé</h2>
+<p>Pour une version plus détaillée de la procédure d’installation avec les prérequis sous Windows voir ce <a href="https://raw.githubusercontent.com/infra-geo-ouverte/site-web/gh-pages/assets/pdf/Procedure_installation_IGO2_win_v1.pdf">document</a>.</p>
+
+<h3 id="téléchargement">Téléchargement</h3>
+<p>Pour télécharger l’application cliquer <a href="https://github.com/infra-geo-ouverte/igo2#téléchargement">ici</a></p>
+                  
+						</div>
+					</div>
+				</div>
+					<!-- /#page-content-wrapper -->
+
+			</div>  <!-- /#wrapper di sidebar.html-->
+
+
+    <footer class="site-footer" id="footer">
+
+	<div class="wrapper row">
+	
+		<div class="col-xs-12 col-sm-6 text-left">
+
+			<div class="listMenu">
+			<ul class="footer listGauche">
+				<li>
+					<a href="/nouveaute/">
+						Nouveautés
+					</a>
+				</li>
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/communaute/" role="button" aria-expanded="false">Communauté
+						</a>
+					</li>
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/contribuer/" role="button" aria-expanded="false">Contribuer
+						</a>
+					</li>
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/demo/" role="button" aria-expanded="false">Démonstration
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/documentation/" role="button" aria-expanded="false">Documentation
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/installation/" role="button" aria-expanded="false">Installation
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					 
+					<li>
+						<a class="page-link"  
+							href="/documentation/page-services-igo/" role="button" aria-expanded="false">Services
+						</a>
+					</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<li>
+					<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
+						Licence
+					</a>
+				</li>
+				</ul>
+
+				
+					
+				<li class="page-link en"><a href="/faq/">FAQ</a></li>
+				
+				
+					
+				<li class="page-link en"><a href="/english/">English</a></li>
+				
+				
+					
+				<li class="page-link en"><a href="/"></a></li>
+				
+				
+				
+			</ul>
+				<!-- LOGO -->
+			</div>
+			<a href="/">
+				<img class="logo-med" src="/assets/img/logo_bleu_112.png"  alt="Logo IGO" />
+			</a>
+
+			</div>
+		
+		<!-- FORMULAIRE -->
+		<div class="col-xs-12 col-sm-6 text-center col-form">			
+			
+			<!-- reference pour le formulaire avec Formspree: http://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites&#151;cms-23870 -->
+			<div id="contact">
+				<h3>Contactez-nous :</h3>
+				<form id="contactform" method="POST">
+
+					<input type="text" class="contact1" name="name" placeholder="Nom" />
+					<input type="email" class="contact1" name="_replyto" placeholder="Courriel" /> <!-- reply to pour autorépondre -->		
+
+					<textarea class="contact2" name="message" placeholder="Message"></textarea>
+
+					<!-- Built into Formspree is a “honeypot” method of spam prevention. The honeypot technique is quite simple; you hide a field inside your form that users don’t see, but spambots do. 
+					The spambot will fill in the field, while users won’t. Any submission with this field filled in will be considered spam. 
+					By naming the field “_gotcha”, Formspree will recognise it and ignore any submissions made with this filled in. -->
+					
+					
+					<input type="submit" class="submitContact" value="Envoyer" />
+					<span class="hideForm">
+						<input type="text" name="_gotcha" style="display:none" /><!-- pour arrêter les spammeur robots -->
+						<input type="hidden" name="_subject" value="Demande d'information pour IGO" /> <!-- This field will not appear when a user views the form, but the value will be used for the subject line when I receive a submission. -->
+						<input type="hidden" name="_next" value="//igouverte.org/courriel/" />  <!--mettre une page de merci votre courriel est envoyé -->
+					</span>
+				</form>
+				
+				<script>
+					var contactform =  document.getElementById('contactform');
+					contactform.setAttribute('action', '//formspree.io/' + 'info' + '@' + 'igouverte' + '.' + 'org');
+				
+				</script>
+			</div>					
+		</div>
+	</div>
+		<hr>
+		<p class="footer-mail text-center">Courriel: info[@]igouverte.org </p>
+		<div class="share-page">
+    Partagez &rarr; 
+    <a class="footer-reseau" href="https://twitter.com/intent/tweet?source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F&amp;text=IGO:%20http%3A%2F%2Figouverte.org%2F" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a> 
+    <a class="footer-reseau" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Figouverte.org%2F&amp;t=IGO" title="Share on Facebook" target="_blank"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
+    <a class="footer-reseau" href="https://plus.google.com/share?url=http%3A%2F%2Figouverte.org%2F" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" data-toggle="tooltip" data-placement="top" title="Google +"></i></a>
+    <a class="footer-reseau" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Figouverte.org%2F&amp;title=IGO&amp;summary=Infrastructure%20geomatique%20ouverte&amp;source=http%3A%2F%2Finfra-geo-ouverte.github.io%2Fsite-web%2F" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square" data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
+</div> 
+
+
+
+<!-- ref: http://codingtips.kanishkkunal.in/share-buttons-jekyll/ -->
+
+
+<!-- <div class="share-page">
+    Share this on &rarr; 
+    <a href="https://twitter.com/intent/tweet?text=&url=http://localhost:4000/installation/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://localhost:4000/installation/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url=http://localhost:4000/installation/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+</div> -->
+	<!-- summary="Infrastructure de géomatique ouverte" source="http://infra-geo-ouverte.github.io/site-web/" -->
+	
+	<!-- bouton Linked in 	<i class="fa fa-linkedin-square"></i> 
+	<div class="footer-reseau">
+	<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: fr_FR</script>
+	<script type="IN/Share" data-url="http://infra-geo-ouverte.github.io/site-web/"></script>
+	</div> -->
+	
+
+		
+		<small class="copyright text-center">&copy;IGO, 2017</small>
+
+</footer>
+</div> <!-- div de : <div itemscope itemtype="http://schema.org/SoftwareApplication"> dans le header -->
+
+	<!-- fin footer -->
+
+<!--	liens locaux
+	<script type="text/javascript" src="/assets/script/jquery-1.11.1.min.js"> </script>
+	<script type="text/javascript" src="/assets/script/bootstrap.min.js"> </script> 
+	
+	ne pas mettre http ou https en avant des liens car ça bloque sur certains postes avec Firefox  -->
+		
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"> </script>
+	<script type="text/javascript" src="/assets/script/main.js"> </script>
+	<script type="text/javascript" src="/assets/script/animation_banniere.js"> </script>
+
+	
+</body>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//geoegl.msp.gouv.qc.ca/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 22]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//geoegl.msp.gouv.qc.ca/piwik/piwik.php?idsite=22" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</html>
+

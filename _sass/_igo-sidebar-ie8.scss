@@ -1,0 +1,214 @@
+/* ref: http://bootsnipp.com/snippets/featured/fancy-sidebar-navigation */
+
+/* -------------------------
+
+* css propre à IE8 seulement
+
+------------------------ */
+
+#wrapper .navbar-inverse{
+	width: 250px;
+	background-color: $blanc;	
+}
+#wrapper navbar-fixed-top{
+	border: none;
+}
+#wrapper .sidebar-brand a{
+	color: $bleu-fonce;
+}
+#wrapper .sidebar-brand a:hover{
+	color: $blanc;
+}
+
+#wrapper .container{  // contenu principal sans le bouton
+	margin-left: 250px;
+	width: auto;
+	margin-top: 30px;
+}
+#wrapper .octicon{
+	display: none;
+} 
+#page-content-wrapper button{
+	display: none;
+}
+#wrapper .hautpage:hover{
+	color: $noir;
+}
+
+#wrapper #sidebar-wrapper{
+	top: 250px;
+}
+#footer{
+	margin-left: 220px; //pour laisser de la place au menu des pages qui ont un sidebar seulement
+}
+/*-------------------------------*/
+/* Wrappers : pour le contenu de la page en général     */
+/* Contient la classe Toggle qui fait ouvrir et fermet le menu du sidebar sur le côté  */
+/*-------------------------------*/
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px; // fait tasser le contenu principal vers la droite
+}
+
+#sidebar-wrapper {  //contenu du sidebar, le sidebar fait 220px de large
+   //position: fixed;
+	z-index: 1000;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: $blanc;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+#wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
+    width: 250px;
+}
+
+#wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
+    position: relative;
+    margin-right: -250px;
+}
+
+
+#page-content-wrapper { // Contenu principal, incluant le bouton, position à partir du header
+    width: 100%;
+	display: inline-block;
+}
+/* ----------------------------- */
+/* Bouton ouvrir et fermet 
+-------------------------------- */
+#page-content-wrapper button{
+	padding: 5px 5px;
+	background-color: $bleu-pale;
+	border-style: solid;
+	border-width: 1px;
+	border-color: $bleu-fonce;
+	border-radius: 15px;
+}
+
+#icone-sidebar{
+	display: inline-block;
+	float: left;
+	position: fixed;
+	top: 150px;  
+	z-index: 999;
+	display: block;
+	width: auto;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+#page-content-wrapper span.txtmenu{
+	font-family: $base-font-family;
+	margin-left: 2px;
+	font-size: $h5;
+    line-height: $base-line-height;
+}
+
+/*-------------------------------*/
+/*     Sidebar nav styles        */
+/*-------------------------------*/
+
+.sidebar-nav {  // dans le ul de la liste du sidebar
+    position: absolute;
+    top: 20px; 
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    position: relative; 
+    line-height: $base-line-height;
+    display: inline-block;
+    width: 100%;
+}
+
+.sidebar-nav li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 3px;
+    background-color: $bleu-fonce;
+    -webkit-transition: width .2s ease-in;
+      -moz-transition:  width .2s ease-in;
+       -ms-transition:  width .2s ease-in;
+            transition: width .2s ease-in;
+
+}
+.sidebar-nav li:before {
+    color: #fff;
+    background-color: $bleu;
+}
+
+.sidebar-nav li:hover:before,
+.sidebar-nav li.open:hover:before {
+    width: 100%;
+    -webkit-transition: width .2s ease-in;
+      -moz-transition:  width .2s ease-in;
+       -ms-transition:  width .2s ease-in;
+            transition: width .2s ease-in;
+
+}
+
+.sidebar-nav li a {
+    display: block;
+    color: $bleu-fonce;
+	font-weight: $bold;
+    text-decoration: none;
+    padding: 0 15px 5px 20px;    
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus,
+.sidebar-nav li.open a:hover,
+.sidebar-nav li.open a:active,
+.sidebar-nav li.open a:focus{
+    color: $blanc;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.sidebar-nav > .sidebar-brand {
+    font-size: $h5;
+    line-height: $base-line-height;
+}
+#sidebar-wrapper .sidebar-brand{
+	list-style-type: none;
+}
+
+#wrapper .hautpage{ //Lien retourner en haut de la page
+	color: $bleu-fonce;
+	font-weight: $bold;
+    text-decoration: none;
+	font-family: $base-font-family;
+	font-size: $h5;
+    line-height: $base-line-height;
+}
+/*#wrapper .hautpage:hover{
+    color: $blanc;
+    background-color: $bleu;
+}*/
+
+

@@ -1,0 +1,113 @@
+<div itemscope itemtype="http://schema.org/SoftwareApplication">
+<header class="site-header" id="header">
+	
+	<nav class="navbar navbar-default">
+	<div>
+		<!-- Menu mobile, 3 span pour les 3 lignes de l'icone -->
+		
+		<!-- Titre du site/ mettre le logo -->
+		<div class="navbar-header">
+			<a href="/">
+				<img itemprop="image" class="logo-med" src="{{ '/assets/img/Igo_logoavec.png' | prepend: site.baseurl }}"  alt="Logo IGO" />
+			</a>
+						
+			<!--[if gt IE 8]><!-->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			<!--<![endif]-->
+				<!-- Lien Github -->
+				<a class="git-btn btn btn-primary" href="https://github.com/infra-geo-ouverte/">Voir sur Github
+					
+					<!--[if lte IE 8]>
+						<img class="logo-git" width="32" height="32" src="{{ '/assets/img/GitHub-Mark-Light-32px.png' | prepend: site.baseurl }}" alt="Logo Github" />
+					<![endif]-->
+					<span class="logo-git octicon octicon-mark-github"></span>
+					
+				</a>
+					
+		</div>
+
+		<!-- Collect the nav links -->
+		<!--[if gt IE 8]><!-->
+		<div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<!--<![endif]-->
+			<div class="head-right">				
+				<!-- menu haut droit -->	
+				
+				 <ul class="nav navbar-nav menu-top">
+					<li class="page-link fr">
+						<a href="https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt">
+							Licence
+						</a>
+					</li>
+				    {% for link in site.navigation %}
+				    	{% if page.url contains 'english/' %}
+				        <li class="page-link fr"><a href="{{ link.url }}">{{ link.text2 }}</a></li>
+				        {% else %}
+					<li class="page-link en"><a href="{{ link.url }}">{{ link.text}}</a></li>
+					{% endif %}
+				    {% endfor %}
+					<li class="headContact"><a href="#footer">Contact</a></li>
+				</ul> 
+				
+
+			</div>	
+			<!-- menu principal -->
+			<div class="menu-main">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="/nouveaute/">
+							<span class="nav-icons octicon octicon-flame"></span>
+							Nouveautés
+						</a>
+					</li>
+					{% for page in site.pages %}
+						{% if page.title-main%}  
+						<li>
+							<a class="page-link"  
+								href="{{ page.url | prepend: site.baseurl }}" role="button" aria-expanded="false">
+								{% if page.iconecontribuer %}
+									<!-- <i class="fa fa-user-plus fa-lg "></i>  
+									<img class="icons" src="{{ '/assets/img/icons/appbar.layer.add.svg' | prepend: site.baseurl }}" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-git-merge"></span>
+									{{ page.title-main }} 
+								{% endif %}
+								{% if page.iconecommunaute %}
+									<!-- <i class="fa fa-child fa-lg"></i> 
+									<img class="icons" src="{{ '/assets/img/icons/appbar.people.multiple.svg' | prepend: site.baseurl }}" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-organization"></span>
+									{{ page.title-main }} 
+								{% endif %}
+								{% if page.iconeinstallation %}
+									<!-- <i class="fa fa-laptop fa-lg"></i> 
+									<img class="icons" src="{{ '/assets/img/icons/appbar.cabinet.in.svg' | prepend: site.baseurl }}" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-move-down"></span>
+									{{ page.title-main }} 
+								{% endif %}
+								{% if page.iconedocumentation %}
+									<!-- <i class="fa fa-file-text fa-lg"></i> 
+									<img class="icons" src="{{ '/assets/img/icons/appbar.page.text.svg' | prepend: site.baseurl }}" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-file-text"></span>
+									{{ page.title-main }} 
+								{% endif %}
+								{% if page.iconedemo %}
+									<!-- <i class="fa fa-eye fa-lg"></i> 
+									<img class="icons" src="{{ '/assets/img/icons/appbar.cogs.svg' | prepend: site.baseurl }}" alt="Icone contribuer" /> -->
+									<span class="nav-icons octicon octicon-eye"></span>
+									{{ page.title-main }} 
+								{% endif %}  
+							</a>
+						</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</div>	
+		<!--[if gt IE 8]><!--></div><!--<![endif]-->	<!-- /.navbar-collapse -->		
+	</div> 
+	</nav>	
+
+</header>

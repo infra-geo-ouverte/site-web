@@ -1,0 +1,311 @@
+/* ref: http://bootsnipp.com/snippets/featured/fancy-sidebar-navigation */
+/*-------------------------------*/
+/* Wrappers : pour le contenu de la page en général     */
+/* Contient la classe Toggle qui fait ouvrir et fermet le menu du sidebar sur le côté  */
+/*-------------------------------*/
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#sidebar-wrapper {  //contenu du sidebar, le sidebar fait 220px de large
+    z-index: 1000;
+    left: 0;
+    width: 0;
+    top: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: $blanc;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#sidebar-wrapper .sidebar-brand{
+	list-style-type: none;
+}
+
+#wrapper .navbar-inverse{
+	border: none;
+}
+#wrapper .navbar{
+	border: none;
+	min-height: 200px;
+	height: 100%
+}
+
+#wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
+    	width: 250px;
+	position: fixed;
+	top: 0;
+}
+
+#wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
+    position: relative;
+    margin-right: -250px;
+}
+
+#wrapper .container{  // contenu principal sans le bouton
+	margin-left: 15px;
+	width: auto;
+	padding-top: 30px;
+}
+#page-content-wrapper { // Contenu principal, incluant le bouton, position à partir du header
+    	width: 100%;
+    	padding-top: 30px;
+	display: inline-block;
+}
+/* ----------------------------- */
+/* Bouton ouvrir et fermer
+-------------------------------- */
+#page-content-wrapper button{
+	padding: 5px 5px;
+	background-color: $bleu;
+	border-style: solid;
+	border-width: 1px;
+	border-color: $bleu;
+	border-radius: 50px;
+	color: $blanc;
+	box-shadow: 0px 5px 10px #888888;
+}
+#page-content-wrapper button:hover{
+	background-color: $bleu-fonce;
+	width: 10%;
+	-webkit-transition: all 1s ease;
+  	   -moz-transition: all 1s ease;
+	     -o-transition: all 1s ease;
+	        transition: all 1s ease;
+}
+
+#wrapper.toggled #icone-sidebar{
+	left: 275px;
+}
+
+#icone-sidebar{
+	display: inline-block;
+	float: left;
+	position: fixed;
+	top: 175px;
+	z-index: 999;
+	display: block;
+	width: auto;
+	margin-left: 5px;
+	margin-right: 5px;
+	
+
+}
+#page-content-wrapper .octicon{
+	font-size: 10px;
+}
+
+#page-content-wrapper span.txtmenu{
+	font-family: $base-font-family;
+	margin-left: 2px;
+	font-size: $h5;
+    line-height: $base-line-height;
+}
+
+/*-------------------------------*/
+/*   Sidebar nav liste d'items   */
+/*-------------------------------*/
+
+.sidebar-nav {  // dans le ul de la liste du sidebar
+    position: absolute;
+    top: 20px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    position: relative;
+    line-height: $base-line-height;
+    display: inline-block;
+    width: 100%;
+}
+
+.sidebar-nav li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 3px;
+    background-color: $bleu;
+	color: #fff;
+    -webkit-transition: width .4s ease;
+      -moz-transition:  width .4s ease;
+       -ms-transition:  width .4s ease;
+            transition: width .4s ease;
+
+}
+
+
+.sidebar-nav li:hover:before,
+.sidebar-nav li.open:hover:before {
+    width: 100%;
+    -webkit-transition: width .4s ease;
+      -moz-transition:  width .4s ease;
+       -ms-transition:  width .4s ease;
+            transition: width .4s ease;
+
+}
+
+.sidebar-nav li a {
+    display: block;
+    color: $bleu-fonce;
+	font-weight: $bold;
+    text-decoration: none;
+    padding: 0 5px 5px 10px;
+}
+
+
+.sidebar-nav li a:hover,
+.sidebar-nav li.open a:hover
+{
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.sidebar-nav > .sidebar-brand, .sidebar-brand2 a {
+    font-size: 12px;
+    line-height: $base-line-height;
+	list-style: none;
+}
+
+.sidebar-nav > .sidebar-submenu2 {
+  top: 0px;
+  position: relative;}
+
+.sidebar-submenu2 > .sidebar-brand2 {
+  padding: 0 0 0 35px; }
+
+#wrapper .hautpage{ //Lien retourner en haut de la page
+	color: $bleu-fonce;
+	font-weight: $bold;
+    list-style: none;
+	font-family: $base-font-family;
+	font-size: 12px;
+    line-height: $base-line-height;
+}
+#wrapper .hautpage:hover{
+    color: #fff;
+    background-color: $bleu;
+}
+
+
+/*******************************************************/
+
+/************css pour tablette et ordinateur ***********/
+
+/*******************************************************/
+
+/* ---------------- 500px ---------------------------- */
+@media screen and (min-width: $screen-xs-min) {
+ 	#icone-sidebar{
+		top: 175px;
+		
+	}
+	#sidebar-wrapper {
+		top: 0;
+	}
+	#page-content-wrapper { // Contenu principal, incluant le bouton, position à partir du header
+		padding-top: 20px;
+	}
+	#wrapper .container{
+		margin-left: 45px;
+	}
+}
+/* ----------------768px-----------------------------  */
+
+@media screen and (min-width: $screen-sm-min) {
+
+
+	// faire tasser le contenu vers la droite quand le menu ouvre/sidebar
+
+	#wrapper {
+		padding-left: 0;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+
+	#wrapper.toggled {
+		padding-left: 250px; // fait tasser le contenu principal vers la droite
+	}
+
+	#sidebar-wrapper {  //contenu du sidebar, le sidebar fait 250px de large
+		z-index: 1000;
+		left: 250px;
+		width: 0;
+		height: 100%;
+		top: 0;
+		margin-left: -250px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		background: $blanc;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+
+	#wrapper.toggled #sidebar-wrapper {  // quand le sidebar est ouvert
+		width: 250px;
+		top: 0;
+	}
+
+	#wrapper.toggled #page-content-wrapper { // quand le sidebar est ouvert
+		position: relative;
+		margin-right: -250px;
+	}
+	#page-content-wrapper button:hover{
+		width: 5%;
+	}
+
+	#icone-sidebar{
+		top: 325px;
+	}
+	#wrapper .container{
+		margin-left: 95px;
+	}
+
+	#page-content-wrapper { // Contenu principal, incluant le bouton, position à partir du header
+		width: 100%;
+		padding-top: 40px;
+		display: inline-block;
+	}
+	#page-content-wrapper .octicon{
+		font-size: 15px;
+	}
+	#page-content-wrapper span.txtmenu{
+		font-size: $h6;
+	}
+	#wrapper .back-to-top .hautpage{
+		font-size: $h6;
+	}
+	.sidebar-nav > .sidebar-brand {
+		font-size: $h6;
+	}
+
+}
+
+/* ----------------992px----------------------------------  */
+
+@media screen and (min-width: $screen-md-min) {
+	#icone-sidebar{
+		top: 325px;
+	}
+	#sidebar-wrapper {
+		top: 0;
+	}
+
+}

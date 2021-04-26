@@ -1,0 +1,346 @@
+#Modèle d'une sitemap fait avec Liquid.  Le sitemap qui sera utilisé est dans le dossier _site et est généré è partir du plugin jekyll-sitemap
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/glo/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//archive/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//communaute/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//contribuer/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//courriel/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//demo/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/doc_module/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/doc_panorama/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/doc_service/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//faq/</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//english/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//installation/</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/module/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/module/module_exporter_fichier_forme/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/module/module_exporter_gpx/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/module/module_importer_fichier_geometrique/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/panorama/panorama1_exporter_fichier_forme/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/panorama/panorama1_exporter_gpx/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/panorama/panorama1_importer_fichier_geometrique/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/panorama/panorama2_importer_fichier_geometrique/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://kboisvert.github.io/test_IGO//documentation/techno/</loc>
+    </url>
+    
+    
+    
+</urlset>
