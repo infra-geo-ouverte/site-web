@@ -8,6 +8,45 @@ _Ce document présente les principales améliorations et correctifs des dernièr
 
 _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
 
+<a id="version_1_7"></a>
+## IGO Version 1.7 (2021-04-28) [<span class="octicon octicon-link"></span>](#version_1_7)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Filtre attributaire**
+  -	Possibilité d’ajouter des filtres sous forme de case à cocher ou de boutons radio et de les combiner ([#831](https://github.com/infra-geo-ouverte/igo2-lib/pull/831))
+  - Possibilité de combiner avec le filtre temporel pour filtrer les entités par date ([#831](https://github.com/infra-geo-ouverte/igo2-lib/pull/831))
+  - Ajout d’un attribut permettant la gestion de l’ordre d’apparence ([#831](https://github.com/infra-geo-ouverte/igo2-lib/pull/831))
+  - Ajout d’un attribut permettant d’identifier les groupes à l’aide de sous-titre  ([#831](https://github.com/infra-geo-ouverte/igo2-lib/pull/831))
+
+- **Interrogation sur la carte**
+  - Bouton pour agrandir et diminuer directement disponible de l’entête ([#600](https://github.com/infra-geo-ouverte/igo2/pull/600))
+  - Amélioration du rendu pour les tableaux html et lorsque la table de résultats est présente ([#600](https://github.com/infra-geo-ouverte/igo2/pull/600))
+  - Couleur de sélection, de survol et de base maintenant pilotable pour le getInfo
+
+- **Impression**
+  - Ajout des attributions gouvernementales ([#832](https://github.com/infra-geo-ouverte/igo2-lib/pull/832))
+  - Ajout de la barre d’échelle ([#832](https://github.com/infra-geo-ouverte/igo2-lib/pull/832))
+
+- **Aide et documentation**
+  - Guide disponible selon le profil d’authentification ([#833](https://github.com/infra-geo-ouverte/igo2-lib/pull/833))
+
+- **Recherche**
+  - Afficher l’UNC (intervalle de confiance) pour les coordonnées BELL
+  - Détection du « + » pour la recherche d’intersection
+  - Recherche multiple avec le caractère "|" ([#594](https://github.com/infra-geo-ouverte/igo2/pull/594))
+  - Possibilité d’afficher tous les résultats de recherche sur la carte dans les paramètres de recherche ([#825](https://github.com/infra-geo-ouverte/igo2-lib/pull/825))
+  - Couleur de sélection, de survol et de base maintenant pilotable pour la recherche
+  - Zoom sur l’étendue des résultats lors d'une recherche par url (avec paramètre search=...)
+
+- **Catalogue**
+  - Plus de limitation aux niveaux des couches provenant de services externes avec plus de deux sous-groupes ([#835](https://github.com/infra-geo-ouverte/igo2-lib/pull/835))
+  - Formulaire d’ajout de services web (wms, wmts et arcgis) ([#835](https://github.com/infra-geo-ouverte/igo2-lib/pull/835))
+  - Indicateurs pour les catalogues externes([#835](https://github.com/infra-geo-ouverte/igo2-lib/pull/835))
+
+- **Message informatif**
+  - Ajout d’une date de début et de fin de message ([#839](https://github.com/infra-geo-ouverte/igo2-lib/pull/839))
+
 <a id="version_1_6"></a>
 ## IGO Version 1.6 (2021-02-01) [<span class="octicon octicon-link"></span>](#version_1_6)
 
@@ -26,7 +65,7 @@ _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-
   - Corriger l’affichage des titres trop longs ([#724](https://github.com/infra-geo-ouverte/igo2-lib/issues/724))
   - Ajout d'un sous-titre ([#805](https://github.com/infra-geo-ouverte/igo2-lib/pull/805))
 
-- **Impression**
+- **Filtre spatial**
   - Pouvoir ajouter un buffer autour d’une zone prédéfinie ou dessinée
   - Ajouter les coordonnées (latitude et longitude) des points extraits
 
