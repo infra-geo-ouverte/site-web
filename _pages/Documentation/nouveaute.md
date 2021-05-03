@@ -34,7 +34,7 @@ _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-
 - **Recherche**
   - Afficher l’UNC (intervalle de confiance) pour les coordonnées BELL
   - Détection du « + » pour la recherche d’intersection
-  - Recherche multiple avec le caractère "|" ([#594](https://github.com/infra-geo-ouverte/igo2/pull/594))
+  - Recherche multiple avec le caractère "\|" ([#594](https://github.com/infra-geo-ouverte/igo2/pull/594))
   - Possibilité d’afficher tous les résultats de recherche sur la carte dans les paramètres de recherche ([#825](https://github.com/infra-geo-ouverte/igo2-lib/pull/825))
   - Couleur de sélection, de survol et de base maintenant pilotable pour la recherche
   - Zoom sur l’étendue des résultats lors d'une recherche par url (avec paramètre search=...)
