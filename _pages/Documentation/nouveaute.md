@@ -8,6 +8,38 @@ _Ce document présente les principales améliorations et correctifs des dernièr
 
 _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
 
+<a id="version_1_8"></a>
+## IGO Version 1.8 (2021-07-07) [<span class="octicon octicon-link"></span>](#version_1_8)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Gestion des couches de la carte**
+  - Ajout d’un bouton pour zoomer sur l’étendue de la carte ([#518](https://github.com/infra-geo-ouverte/igo2/issues/518))
+  - Fixer la barre d’outils en haut de la liste des couches ([#509](https://github.com/infra-geo-ouverte/igo2/issues/509))
+  -	Bouton pour sélectionner/désélectionner toutes les couches visibles directement en haut de la liste des couches ([#887](https://github.com/infra-geo-ouverte/igo2-lib/pull/887))
+
+- **Filtre attributaire**
+  - Configurer des filtres attributaires avec une liste déroulante ([#876](https://github.com/infra-geo-ouverte/igo2-lib/pull/876))
+
+- **Impression**
+  - Afficher la légende sur la même page que la carte ([#547](https://github.com/infra-geo-ouverte/igo2/issues/547)) 
+
+- **Outil de mesure**
+  - Afficher les mesures de distance des segments de polygone ([#455](https://github.com/infra-geo-ouverte/igo2/issues/455)) 
+
+- **Aide et documentation**
+  - Quand on ouvre un contexte avec un message associé, les messages d’information déjà présents sont remplacés ([#507](https://github.com/infra-geo-ouverte/igo2/issues/507)) 
+  - Afficher plusieurs messages à l’ouverture d’un contexte ou d’une couche ([#865](https://github.com/infra-geo-ouverte/igo2-lib/pull/865))
+
+- **Recherche**
+  - Configurer la symbologie des résultats de recherche ([#870](https://github.com/infra-geo-ouverte/igo2-lib/pull/870))
+
+- **Carte**
+  -	Configurer le style de la barre d’échelle ([#859](https://github.com/infra-geo-ouverte/igo2-lib/pull/859))
+
+- **Authentification**
+  - Support de Azure Active Directory B2C ([#872](https://github.com/infra-geo-ouverte/igo2-lib/pull/872))
+
 <a id="version_1_7"></a>
 ## IGO Version 1.7 (2021-04-28) [<span class="octicon octicon-link"></span>](#version_1_7)
 
