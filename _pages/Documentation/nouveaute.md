@@ -28,7 +28,7 @@ _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-
   - Possibilité d'ajouter un filtre temporel par année ([#907](https://github.com/infra-geo-ouverte/igo2-lib/pull/907))
 
 - **Mises à jour**
-  - Mise à jour de l’ensemble des librairies (Angular 12, OpenLayers 6...)
+  - Mise à jour de l’ensemble des librairies (Angular 12, OpenLayers 6.7...)
 
 <a id="version_1_8"></a>
 ## IGO Version 1.8 (2021-07-07) [<span class="octicon octicon-link"></span>](#version_1_8)
