@@ -8,6 +8,28 @@ _Ce document présente les principales améliorations et correctifs des dernièr
 
 _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
 
+<a id="version_1_9"></a>
+## IGO Version 1.9 (2021-09-20) [<span class="octicon octicon-link"></span>](#version_1_9)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Itinéraire**
+  - Les couches de données résultantes (arrêts et tracé) sont maintenant liées avec l’outil de carte ([#896](https://github.com/infra-geo-ouverte/igo2/pull/896))
+
+- **Dessin**
+  - Améliorations mineures à l’interface de l’outil ([#649](https://github.com/infra-geo-ouverte/igo2/issues/649))
+  - Les dessins et les étiquettes peuvent maintenant être modifiés ([#897](https://github.com/infra-geo-ouverte/igo2-lib/pull/897))
+  - Les couches de données résultantes (dessins) sont maintenant liées avec l’outil de carte ([#896](https://github.com/infra-geo-ouverte/igo2-lib/pull/896))
+
+- **Mesure**
+  - Les couches de données résultantes (mesure à la carte) sont maintenant liées avec l’outil de carte ([#896](https://github.com/infra-geo-ouverte/igo2/pull/896))
+
+- **Filtre attributaire**
+  - Possibilité d'ajouter un filtre temporel par année ([#907](https://github.com/infra-geo-ouverte/igo2-lib/pull/907))
+
+- **Mises à jour**
+  - Mise à jour de l’ensemble des librairies (Angular 12, OpenLayers 6...)
+
 <a id="version_1_8"></a>
 ## IGO Version 1.8 (2021-07-07) [<span class="octicon octicon-link"></span>](#version_1_8)
 
