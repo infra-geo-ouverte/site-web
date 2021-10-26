@@ -27,7 +27,7 @@ _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-
 - **Filtre attributaire**
   - Possibilité d'ajouter un filtre temporel par année ([#907](https://github.com/infra-geo-ouverte/igo2-lib/pull/907))
 
-  - **Outils avancés**
+- **Outils avancés**
   - Permet de comparer spatialement plusieurs couches à l'aide d'un « swipe » horizontal([#900](https://github.com/infra-geo-ouverte/igo2-lib/pull/900))
   - Permet d'obtenir et de copier les coordonnées du centre de la carte selon différentes projections ([#900](https://github.com/infra-geo-ouverte/igo2-lib/pull/900))
 
