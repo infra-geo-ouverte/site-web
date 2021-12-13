@@ -8,6 +8,23 @@ _Ce document présente les principales améliorations et correctifs des dernièr
 
 _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
 
+<a id="version_1_10"></a>
+## IGO Version 1.10 (2021-10-13) [<span class="octicon octicon-link"></span>](#version_1_10)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Recherche**
+  - La position du curseur permet maintenant d’afficher la municipalité, la MRC et la région administrative du point ([#941](https://github.com/infra-geo-ouverte/igo2-lib/pull/941))
+
+- **Outil d’importation/exportation**
+  - L’exportation multiple en format CSV (compatible Excel) permet maintenant l’exportation d’un seul fichier regroupant toutes les entités ainsi que la séparation de ce même fichier par couches ([#949](https://github.com/infra-geo-ouverte/igo2-lib/issues/949))
+
+- **Filtre spatial**
+  - Une liste comprenant l’ensemble des résultats est maintenant affichée à la recherche ([#954](https://github.com/infra-geo-ouverte/igo2-lib/pull/954))
+
+- **Mises à jour**
+  - Mise à jour de la librairie des messages (angular2-notifications -> ngx-toastr) ([#928](https://github.com/infra-geo-ouverte/igo2-lib/pull/928))
+
 <a id="version_1_9"></a>
 ## IGO Version 1.9 (2021-09-20) [<span class="octicon octicon-link"></span>](#version_1_9)
 
