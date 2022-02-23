@@ -2,7 +2,7 @@
 permalink: /
 layout: default
 accueilsection: 3
-titre-accueil: Partenaires actuels
+titre-accueil: Contributeur actifs et utilisateurs (liste non-exhaustive)
 ---
 
 
