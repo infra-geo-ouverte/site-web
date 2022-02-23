@@ -2,7 +2,7 @@
 permalink: /
 layout: default
 accueilsection: 3
-titre-accueil: Contributeur actifs et utilisateurs (liste non-exhaustive)
+titre-accueil: Contributeurs actifs et utilisateurs (liste non-exhaustive)
 ---
 
 
