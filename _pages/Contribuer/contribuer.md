@@ -45,3 +45,8 @@ Quand vous soumettez un nouveau bogue ou problème, veuillez donner le plus de d
 ## Droits d'auteur sur les contributions
 Tous les ajouts et modifications à IGO sont sujets aux droits d'auteur. Les contributeurs externes au gouvernement du Québec peuvent conserver leurs droits d'auteur en acceptant de partager leur code selon les termes décrits dans la [LICENCE](https://raw.githubusercontent.com/infra-geo-ouverte/igo2/master/LICENCE.txt).
 Vous êtes encouragés à ajouter votre nom ou le nom de votre employeur lors de contributions dans l'entête du fichier modifié.
+
+<a id="contribution"></a>
+## Vous êtes intéressé à contribuer ?
+
+Plus d'informations concernant les formations et connaissances à avoir pour pouvoir contribuer au code source sont disponibles sur la plateforme github d'[IGO](https://github.com/infra-geo-ouverte/igo2/wiki). Pour toute question ou pour contacter les responsables de la communauté, veuillez nous joindre au info@igouverte.org ou utiliser l'entête de [contact](https://www.igouverte.org/contribuer/#footer).

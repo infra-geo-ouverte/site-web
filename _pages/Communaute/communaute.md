@@ -172,6 +172,8 @@ des autres développeurs. Ils ont les responsabilités suivantes :
 
 - Approuver et intégrer le code soumis en s’assurant que les conventions et règles sont respectées.
 
+**Pour plus d'informations sur la contribution à la communauté IGO, veuillez consulter la section [Contribuer](https://www.igouverte.org/contribuer/)**
+
 <a id="fonctionnement"></a>
 ## Modes de fonctionnement [<span class="octicon octicon-link"></span>](#fonctionnement)
 
