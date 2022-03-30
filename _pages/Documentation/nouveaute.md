@@ -8,6 +8,34 @@ _Ce document présente les principales améliorations et correctifs des dernièr
 
 _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
 
+<a id="version_1_11"></a>
+## IGO Version 1.11 (2022-03-30) [<span class="octicon octicon-link"></span>](#version_1_11)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Filtre attributaire**
+  - Il est maintenant possible de personnaliser le titre des sections attributaires-temporels ([#981](https://github.com/infra-geo-ouverte/igo2-lib/pull/981))
+  - Des options pour réinitialiser et désactiver le filtre attributaire-temporel sont maintenant disponibles ([#982](https://github.com/infra-geo-ouverte/igo2-lib/pull/982))
+
+- **Carte**
+  - Possibilité d'afficher un info-bulle sur la carte ([#979](https://github.com/infra-geo-ouverte/igo2-lib/pull/979))
+  - Bouton permettant de revenir à un "extent" prédéfini (carte et contexte) ([#957](https://github.com/infra-geo-ouverte/igo2-lib/pull/957))
+
+- **Édition**
+  - Possibilité d'éditer des couches par l'intermédiaire de la vue tabulaire ([#996](https://github.com/infra-geo-ouverte/igo2-lib/pull/996))
+
+- **Vue tabulaire**
+  - Il est maintenant possible d'associer le comportement du query aux couches liées wms-wfs ([#995](https://github.com/infra-geo-ouverte/igo2-lib/pull/995))
+
+- **Catalogue**
+  - Correction de problèmes liés à l'affichage des légendes et données de catalogue provenant de services arcgirest ([#966](https://github.com/infra-geo-ouverte/igo2-lib/pull/966))
+
+- **Itinéraire**
+  - Le contexte actif est ajouté à l'url de partage (si non-authentifié) ([#998](https://github.com/infra-geo-ouverte/igo2-lib/pull/998))
+
+- **Recherche**
+  - La fenêtre d’information ne s’ajoute plus à l’ajout de la couche (seulement à la sélection). ([#1020](https://github.com/infra-geo-ouverte/igo2-lib/pull/1020))
+
 <a id="version_1_10"></a>
 ## IGO Version 1.10 (2021-10-13) [<span class="octicon octicon-link"></span>](#version_1_10)
 
