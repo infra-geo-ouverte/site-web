@@ -8,6 +8,33 @@ _Ce document présente les principales améliorations et correctifs des dernièr
 
 _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
 
+<a id="version_1_12"></a>
+## IGO Version 1.12 (2022-06-23) [<span class="octicon octicon-link"></span>](#version_1_12)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Filtre attributaire**
+  - Il est maintenant possible de peupler une valeur de filtre attributaire par un domaine de valeurs ([#1044](https://github.com/infra-geo-ouverte/igo2-lib/pull/1044))
+  - Il est maintenant possible de programmer un filtre attributaire par autocomplétions ([#1044](https://github.com/infra-geo-ouverte/igo2-lib/pull/1044))
+
+- **Outil de dessin**
+  - Possibilité d'éditer les étiquettes par la table d’entités, de permettre le changement de la police ainsi que sa taille ([#1059](https://github.com/infra-geo-ouverte/igo2-lib/pull/1059))
+
+- **Édition**
+  - Différentes configurations ont été ajoutées à l’outil d’édition de couches permettant notamment de désactiver l’ajout, la modification ou la suppression d’entités sur une couche ciblée ([#1048](https://github.com/infra-geo-ouverte/igo2-lib/pull/1048))
+
+- **Vue tabulaire**
+  - Un bouton permettant de zoomer ponctuellement sur les entités sélectionnées ([#796](https://github.com/infra-geo-ouverte/igo2/pull/796))
+
+- **Catalogue**
+  - Il est maintenant possible de forcer un lien vers les métadonnées ou encore de forcer un résumé sur une ou plusieurs couches lorsque celles-ci proviennent de services externes ([#1077](https://github.com/infra-geo-ouverte/igo2-lib/pull/1077))
+
+- **Interrogation sur la carte**
+  - Lorsque la limite du nombre d'entités interrogeables est atteinte, un message averti l’utilisateur comme de quoi il est possible qu’il y est plus d’entités dans sa sélection ([#1055](https://github.com/infra-geo-ouverte/igo2-lib/pull/1055))
+
+- **Recherche**
+  - Par configuration, on peut moduler l'affichage du détail du résultat ([#1054](https://github.com/infra-geo-ouverte/igo2-lib/pull/1054))
+
 <a id="version_1_11"></a>
 ## IGO Version 1.11 (2022-03-30) [<span class="octicon octicon-link"></span>](#version_1_11)
 
