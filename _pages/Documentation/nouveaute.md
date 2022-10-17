@@ -8,6 +8,17 @@ _Ce document présente les principales améliorations et correctifs des dernièr
 
 _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
 
+<a id="version_1_13"></a>
+## IGO Version 1.13 (2022-10-14) [<span class="octicon octicon-link"></span>](#version_1_13)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Synchronisation de couches**
+  - Refactorisation de la fonction de synchronisation de couches ([#1107](https://github.com/infra-geo-ouverte/igo2-lib/pull/1107))
+
+- **Mises à jour**
+  - Mise à jour de l’ensemble des librairies (Angular 14, OpenLayers 6.15.1, rxjs 7...) ([#1094](https://github.com/infra-geo-ouverte/igo2-lib/pull/1094))
+
 <a id="version_1_12"></a>
 ## IGO Version 1.12 (2022-06-23) [<span class="octicon octicon-link"></span>](#version_1_12)
 
