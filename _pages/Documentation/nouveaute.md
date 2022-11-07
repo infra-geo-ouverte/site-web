@@ -16,6 +16,10 @@ _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-
 - **Synchronisation de couches**
   - Refactorisation de la fonction de synchronisation de couches ([#1107](https://github.com/infra-geo-ouverte/igo2-lib/pull/1107))
 
+- **Outil de dessin**
+  - Application du style par élément ([#1065](https://github.com/infra-geo-ouverte/igo2-lib/pull/1065))
+  - Ajout d'un modal permettant la modification du style ([#1065](https://github.com/infra-geo-ouverte/igo2-lib/pull/1065))
+
 - **Mises à jour**
   - Mise à jour de l’ensemble des librairies (Angular 14, OpenLayers 6.15.1, rxjs 7...) ([#1094](https://github.com/infra-geo-ouverte/igo2-lib/pull/1094))
 
