@@ -19,6 +19,7 @@ _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-
 - **Outil de dessin**
   - Application du style par élément ([#1065](https://github.com/infra-geo-ouverte/igo2-lib/pull/1065))
   - Ajout d'un modal permettant la modification du style ([#1065](https://github.com/infra-geo-ouverte/igo2-lib/pull/1065))
+  - Permettre la création de plusieurs couches de dessin ([#1081](https://github.com/infra-geo-ouverte/igo2-lib/pull/1081))
 
 - **Mises à jour**
   - Mise à jour de l’ensemble des librairies (Angular 14, OpenLayers 6.15.1, rxjs 7...) ([#1094](https://github.com/infra-geo-ouverte/igo2-lib/pull/1094))
