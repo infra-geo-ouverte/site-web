@@ -15,7 +15,7 @@ Voici cinq exemples d'instances d'IGO2 utilisant différents assemblages
 * [Visualisateur de données ouvertes pour le portail Données Québec](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/)
 * [Ministère de la sécurité publique](https://geoegl.msp.gouv.qc.ca/igo2/portail/)
 * [Déméter (CPTAQ)](https://demeter.cptaq.gouv.qc.ca/)
-* [Géoportail de santé publique](https://cartes.inspq.qc.ca/geoportail/)
+* [Géoportail de santé publique du Québec](https://cartes.inspq.qc.ca/geoportail/)
 
 ## IGO1
 
