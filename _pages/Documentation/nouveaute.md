@@ -8,6 +8,26 @@ _Ce document présente les principales améliorations et correctifs des dernièr
 
 _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
 
+<a id="version_1_14"></a>
+## IGO Version 1.14 (2022-12-15) [<span class="octicon octicon-link"></span>](#version_1_14)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Impression**
+  - Permettre l'impression de PDF géoréférencés ([#1149](https://github.com/infra-geo-ouverte/igo2-lib/pull/1149))
+
+- **Outil de dessin**
+  - Création d'un cercle avec un rayon prédéfinie ([#1090](https://github.com/infra-geo-ouverte/igo2-lib/pull/1090))
+  - Étiquette prédéfinie selon la géométrie ([#1092](https://github.com/infra-geo-ouverte/igo2-lib/pull/1092))
+
+- **PWA**
+  - Module pwa (progressive web app) permettant l'installation d'une version applicative d'IGO2 ([#625](https://github.com/infra-geo-ouverte/igo2/pull/625))
+  - *Une PWA est une application construit à partir d'un site web. De cette façon, IGO2 peut-être installé sur un ordinateur ou un téléphone de la même façon que les
+    applications mobiles.
+
+- **Paramètres d'URL**
+  - Forcer le langage de l'application par paramètre d'URL ([#881](https://github.com/infra-geo-ouverte/igo2-lib/pull/881))
+
 <a id="version_1_13"></a>
 ## IGO Version 1.13 (2022-10-14) [<span class="octicon octicon-link"></span>](#version_1_13)
 
