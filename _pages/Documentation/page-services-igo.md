@@ -34,8 +34,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 #### 2.1. iCherche/géocode (API de géocodage) :
 + Permet la géolocalisation par adresse,  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, lieu, etc. Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/).
 + Permet de formater des adresses selon la base de données d'Adresse Québec.
-   &nbsp;
-  [Accéder à la documentation d'iCherche](https://geoegl.msp.gouv.qc.ca/apis/icherche/docs)
++ [Accéder à la documentation d'iCherche](https://geoegl.msp.gouv.qc.ca/apis/icherche/docs)
 
 <a id="2.2"></a>
 #### 2.2. TerrAPI (API de géocodage inversé et de recherche spatiale) :
@@ -51,9 +50,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
   + Retourner tous les territoires correspondants à un type avec des possibilités de filtrage (ex.: obtenir la liste des municipalités commençant par 'Mat' et la trier en ordre alphabétique);
   + Obtenir tous les territoires contenus dans un autre (ex.: retourner toutes les municipalité de la région administrative 04);
   + Retourner le territoire correspondant à l'identifiant spécifié (ex.: obtenir la région administrative avec le code 01, obtenir la municipalité avec le code 23027, etc.)
-
-  &nbsp;
-  [Accéder à la documentation de TerrAPI](https://geoegl.msp.gouv.qc.ca/apis/terrAPI/docs)
++ [Accéder à la documentation de TerrAPI](https://geoegl.msp.gouv.qc.ca/apis/terrAPI/docs)
 
 <a id="2.3"></a>
 #### 2.3. Service de calcul d’itinéraire :
@@ -61,19 +58,18 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 + Permet de gérer des itinéraires optimisés (ex.: meilleur parcours entre deux points) avec des requêtes en lot possibles;
 + Alimenté par les données de réseau routier [AQréseau+](https://www.donneesquebec.ca/recherche/dataset/adresses-quebec/resource/0d5df103-f856-4183-9a15-eb06fce9c8bf) d’Adresses Québec; 
 + Basé sur la solution [OSRM](http://project-osrm.org/).
-&nbsp;
-  [Accéder à la documentation du service d'itinéraire](http://igouverte.org/documentation/doc_itineraire/)
++ [Accéder à la documentation du service d'itinéraire](http://igouverte.org/documentation/doc_itineraire/)
 
 <a id="2.4"></a>
 #### 2.4. Service de géocodage en lot :
 + Permet de  géocoder des points à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (ex.: CSV);
 + Basé sur le service de géocodage iCherche et les données d'Adresses Québec.
-&nbsp;
-  [Accéder à la documentation du service de géocodage en lot](https://geoegl.msp.gouv.qc.ca/apis/icherche/docs/enlot)
++ [Accéder à la documentation du service de géocodage en lot](https://geoegl.msp.gouv.qc.ca/apis/icherche/docs/enlot)
 
 <a id="2.5"></a>
 #### 2.5. Service de recherche de lots cadastraux :
 +  Permet de localiser un lot par numéro de lot du cadastre rénové du Québec. Ce service est offert par le service de la géomatique de la [Commission de protection du territoire agricole du Québec](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1).
+
 
 <a id="3"></a>
 # 3. Foire aux questions (FAQ)
