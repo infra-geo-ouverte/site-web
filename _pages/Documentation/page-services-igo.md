@@ -19,7 +19,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 | 3. [Service de fond de carte (WMTS) tuilé - Carte de base (Publique) du gouvernement du Québec](http://igouverte.org/documentation/services-web-ogc-igo/#carte_publique)|&#x2713;|&#x2713;|&#x2713;|
 | 4. [Service de fond de carte (WMTS) tuilé - Service d'imagerie du gouvernement du Québec](http://igouverte.org/documentation/services-web-ogc-igo/#imagerie)|&#x2713;[&#42;](#nbt)|-|&#x2713;[&#42;](#nbt)|
 | 5. [Service web de cartes (WMS & WFS)](http://igouverte.org/documentation/services-web-ogc-igo/#ServicesWeb)|&#x2713;|-|&#x2713;|
-| 6. Outil de [gestion d’itinéraire](#2.3)|&#x2713;|&#x2713;|&#x2713;|
+| 6. Outil de [calcul d’itinéraire](#2.3)|&#x2713;|&#x2713;|&#x2713;|
 | 7. Outil de [géocodage en lot](#2.4) avec fichier CSV|-|&#x2713;|&#x2713;|
 | 8. [Recherche de lots rénovés](#2.5)|- |- |&#x2713;|
 
@@ -31,64 +31,65 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 # 2. Description des services/API
 
 <a id="2.1"></a>
-#### 2.1. *iCherche/géocode* (API) permet :
-+ la [géolocalisation par adresse](https://geoegl.msp.gouv.qc.ca/apis/icherche/docs),  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, [lieu](https://geoegl.msp.gouv.qc.ca/apis/icherche/docs). Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/). Il remplace le service de géolocalisation GLO qui n'est plus supporté. iCherche est plus performant (par ex. : autocomplétion) que le GLO et plus précis dans ses résultats trouvés.
-+ Il permet indirectement de formater des adresses selon la base de données d'Adresse Québec.
+#### 2.1. iCherche/géocode (API de géocodage) :
++ Permet la géolocalisation par adresse,  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, lieu, etc. Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/).
++ Permet de formater des adresses selon la base de données d'Adresse Québec.
+   &nbsp;
+  [Accéder à la documentation d'iCherche](https://geoegl.msp.gouv.qc.ca/apis/icherche/docs)
 
 <a id="2.2"></a>
-#### 2.2. *TerrAPI* permet de :
-+ Lister les territoires : Retourne tous les territoires correspondants à un type avec des possibilités de filtrage (ex: "obtenir la liste des municipalités commençant par 'Meg' et la trier").
-+ Rechercher par ID : retourne le territoire correspondant à l'identifiant spécifié (ex : "Obtenir la région administrative avec l'identifiant ou le geocode 01).
-+ Rechercher par territoire : retourne la liste des territoires qui intersectent le ou les territoires choisis (ex: "obtenir les municipalités contenues dans un territoire de CLSC ou de savoir quelle est la région touristique d'une municipalité").
-+ Valider l'intersection : valide si deux territoires s'intersectent (ex: "valider si la municipalité de Sainte-Thérèse intersecte la MRC de Thérèse-De-Blainville")
-+ Localiser : raccourci pour plusieurs recherches de territoire intersectant des points XY ou un geojson, avec possibilité de spécifier plusieurs types (gécodage inversé); ce service peut également retourner les éléments (comme la municipalité, l'adresse,...) qui sont à une distance donnée du point XY.
+#### 2.2. TerrAPI (API de géocodage inversé et de recherche spatiale) :
++ Permet le géocodage inversé, par exemple :
+  + Obtenir l'adresse la plus proche d'une coordonnée;
+  + Obtenir toutes les adresses situées à moins de X mètres d'une coordonnée, en ordre de distance à celle-ci;
+  + Localiser un territoire (ex.: une municipalité) à partir d'une coordonnée.
++ Permet la recherche spatiale à partir d'un découpage territorial ou d'une géométrie fournie sous forme de geojson, par exemple :
+  + Retourner toutes les adresses contenues dans un polygone donné;
+  + Retourner la liste des territoires qui intersectent le ou les territoires choisis (ex.: obtenir les municipalités contenues dans un bassin versant, obtenir la région touristique d'une municipalité, etc.);
+  + Valider si deux territoires s'intersectent (ex.: valider si la municipalité de Sainte-Thérèse intersecte la MRC de Thérèse-De-Blainville).
++ Supporte des recherches basées sur les découpages territoriaux, par exemple : 
+  + Retourner tous les territoires correspondants à un type avec des possibilités de filtrage (ex.: obtenir la liste des municipalités commençant par 'Mat' et la trier en ordre alphabétique);
+  + Obtenir tous les territoires contenus dans un autre (ex.: retourner toutes les municipalité de la région administrative 04);
+  + Retourner le territoire correspondant à l'identifiant spécifié (ex.: obtenir la région administrative avec le code 01, obtenir la municipalité avec le code 23027, etc.)
 
-  **Voir la documentation [ici](https://geoegl.msp.gouv.qc.ca/apis/terrAPI/docs)**
+  &nbsp;
+  [Accéder à la documentation de TerrAPI](https://geoegl.msp.gouv.qc.ca/apis/terrAPI/docs)
 
 <a id="2.3"></a>
-#### 2.3. *Le service de calcul et de gestion d’itinéraire* (API) permet :
-+ de gérer des [itinéraires optimisés](http://igouverte.org/documentation/doc_itineraire/) (ex. meilleur parcours entre deux points) avec des requêtes en lot possibles. Il repose sur les données de la base géographique routière (BGR) de Transports Québec et d'Adresse Québec. Le service est basé sur la solution [OSRM](http://project-osrm.org/).
-
+#### 2.3. Service de calcul d’itinéraire :
++ Permet de calculer des itinéraires, des temps de déplacement et des distances entre deux points selon le réseau routier;
++ Permet de gérer des itinéraires optimisés (ex.: meilleur parcours entre deux points) avec des requêtes en lot possibles;
++ Alimenté par les données de réseau routier [AQréseau+](https://www.donneesquebec.ca/recherche/dataset/adresses-quebec/resource/0d5df103-f856-4183-9a15-eb06fce9c8bf) d’Adresses Québec; 
++ Basé sur la solution [OSRM](http://project-osrm.org/).
+&nbsp;
+  [Accéder à la documentation du service d'itinéraire](http://igouverte.org/documentation/doc_itineraire/)
 <a id="2.4"></a>
-#### 2.4. *Le service de géocodage en lot* permet :
-+ de  [géocoder des points, à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (par ex. : csv)](  https://geoegl.msp.gouv.qc.ca/apis/icherche/docs/enlot). Le fichier doit minimalement contenir un champ contenant l'adresse complète ou le  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>. L'outil de Géocodage en lot est maintenant basé sur iCherche et est à jour avec la dernière version d'AdresseQc.
+#### 2.4. Service de géocodage en lot :
++ Permet de  géocoder des points à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (ex.: CSV);
++ Basé sur le service de géocodage iCherche et les données d'Adresses Québec.
+&nbsp;
+  [Accéder à la documentation du service de géocodage en lot](https://geoegl.msp.gouv.qc.ca/apis/icherche/docs/enlot)
 
 <a id="2.5"></a>
-#### 2.5. *La recherche de lots rénovés* permet :
-+  de trouver la localisation par numéro de lots rénovés au Québec. Ce service est offert par le service de la géomatique de la [Commission de protection du territoire agricole du Québec](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1). Cette fonctionnalité est encore basée sur GLO et sera transférée vers iCherche/geocode à terme, une version est déjà disponible pour tests. (Contacter info@igouverte.com)
+#### 2.5. Service de recherche de lots cadastraux :
++  Permet de localiser un lot par numéro de lot du cadastre rénové du Québec. Ce service est offert par le service de la géomatique de la [Commission de protection du territoire agricole du Québec](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1).
 
 <a id="3"></a>
-# 3. Partage d'expertise
-#### Les partenaires IGO peuvent échanger de l'expertise dans le développement des solutions géomatiques basées sur IGO[^2].
-##### Par exemple :
-+ Développement de solutions de suivi de flottes véhiculaires
+# 3. Foire aux questions (FAQ)
 
-[^2]: Contacter les partenaires IGO pour plus de détails.
-
-<a id="4"></a>
-# 4. Foire aux questions (FAQ)
-
-##### **A) Quelles sont les conditions d'utilisations de ces services ?** 
+##### **3.1. Quelles sont les conditions d'utilisations de ces services ?** 
 + L'utilisateur doit inclure la mention des droits d’auteur du Gouvernement du Québec sur chaque copie de la totalité ou d’une partie de ces services de données. La mention à inscrire est « © Gouvernement du Québec » avec un hyperlien vers cette page : [http://www.droitauteur.gouv.qc.ca/copyright.php](http://www.droitauteur.gouv.qc.ca/copyright.php).
 
 + Le ministère de la Sécurité publique du Québec (MSP) et ses partenaires gouvernementaux dans IGO ne peuvent garantir l’exactitude des services de données et ils ne peuvent être tenus responsables des conclusions obtenues à la suite de l’utilisation de ceux-ci. Le MSP et ses partenaires gouvernementaux dans IGO n’assumeront aucune responsabilité à l’égard de tout dommage subi par l’utilisateur ou ses employés, agents, représentants ou sous-traitants à la suite de l’utilisation de ces services de données.
 
-##### **B) Quelles sont les URL des serveurs hôte pour tous ces services ?** 
-+ Si vous êtes à l'extérieur du gouvernement, le serveur hôte sera :
-  + En production : https://geoegl.msp.gouv.qc.ca
-  + En préproduction : https://pregeoegl.msp.gouv.qc.ca
+##### **3.2. Quel est le degré de support offert pour ces services ?**
++ Les services sont disponibles 24 heures par jour, 7 jours sur 7, à l’exception des périodes d’interruption planifiées ou non. À moins d’une situation urgente, les interruptions planifiées sont annoncées un minimum de 3 jours ouvrables à l'avance. Pour être ajouté à la liste de diffusion informant des avis d’interruption ou de tout changement apporté aux services, veuillez adresser votre demande en utilisant le formulaire [Contactez-nous](http://igouverte.org/#footer) de ce site.
++ Un support est assuré du lundi au vendredi, soit de 8h30 à 16h30 lors des heures normales, à l’exception des jours fériés. S’il y a un problème majeur à l’extérieur de ces heures ouvrables, la demande sera traitée à la prochaine période de 8h30 à 16h30 du lundi au vendredi, à l’exception des jours fériés.
 
-+ Si vous êtes physiquement dans un bâtiment du gouvernement du Québec dans le réseau intranet (RITM) ce sera :
-  + En production : http://www.geomsp.qc
-  + En préproduction : http://rc.geomsp.qc
+##### **3.3. Que faire si le service n'est plus disponible ou que son état est indisponible ?**
++ Le service est disponible 24 heures par jour, 7 jours sur 7, à l’exception des périodes  d’interruption planifiées ou non. De manière exceptionnelle, si le service est non disponible pour une longue période, des services de relève pourraient être rendus disponibles. Cependant, aucune garantie n’est donnée quant à leur disponibilité.
++ Pour être ajouté à la liste de diffusion informant des avis d’interruption ou de tout changement apporté aux services, veuillez adresser votre demande en utilisant le formulaire [Contactez-nous](http://igouverte.org/#footer) de ce site.
 
-+ Ces adresses de serveurs hôte doivent être utilisées comme URL et elles doivent remplacer la valeur pour : {serveur} dans la documentation des différents services ou API.
 
-##### **C) Que faire si le service n'est plus disponible ou que son état est indisponible ?**
-+ Le service est disponible 24 heures par jour, 7 jours sur 7, à l'exception des périodes nécessitant des mises à jour annoncées d'avance. De manière exceptionnelle, si le service est non disponible, vous pouvez utiliser le serveur hôte de préproduction (voir réponse à la question B) qui est une image similaire à la production. Cependant, aucune garantie n'est donnée car il est possible que ce serveur soit utilisé pour l'évolution des services.
-
-##### **D) Quel est le degré de soutien de ces services ?**
-+ Ils sont disponibles 24 heures par jour, 7 jours sur 7, à l'exception des périodes de mises à jour qui seront annoncées un minimum de 3 jours ouvrables en avance. Un soutien est assuré du lundi au vendredi, soit de 8 h 30 à 16 h 30 lors de ces heures normales, à l’exception des jours fériés. S'il y a un problème majeur à l'extérieur de ces heures ouvrables, la demande sera traitée à la prochaine période de 8 h 30 à 16 h 30 du lundi au vendredi, à l’exception des jours fériés.
-
-##### **E) Si j'ai d’autres questions sur ces services avec qui puis-je communiquer ?** 
-+ N’hésitez pas à communiquer avec nous à l’adresse courriel suivante : info@igouverte.org ou consulter le site igouverte.org et cliquez sur : [Contact dans le site Web d'IGO](http://igouverte.org/#footer).
+##### **3.4. Si j'ai d’autres questions sur ces services, avec qui puis-je communiquer ?** 
++ N’hésitez pas à communiquer avec nous à l’adresse courriel suivante : info@igouverte.org ou utilisez le formulaire [Contactez-nous](http://igouverte.org/#footer) de ce site.
