@@ -63,6 +63,7 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 + Basé sur la solution [OSRM](http://project-osrm.org/).
 &nbsp;
   [Accéder à la documentation du service d'itinéraire](http://igouverte.org/documentation/doc_itineraire/)
+
 <a id="2.4"></a>
 #### 2.4. Service de géocodage en lot :
 + Permet de  géocoder des points à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (ex.: CSV);
@@ -77,19 +78,19 @@ Les services Web et [API (interface de programmation d’applications)](http://g
 <a id="3"></a>
 # 3. Foire aux questions (FAQ)
 
-##### **3.1. Quelles sont les conditions d'utilisations de ces services ?** 
+#### **3.1. Quelles sont les conditions d'utilisations de ces services ?** 
 + L'utilisateur doit inclure la mention des droits d’auteur du Gouvernement du Québec sur chaque copie de la totalité ou d’une partie de ces services de données. La mention à inscrire est « © Gouvernement du Québec » avec un hyperlien vers cette page : [http://www.droitauteur.gouv.qc.ca/copyright.php](http://www.droitauteur.gouv.qc.ca/copyright.php).
 
 + Le ministère de la Sécurité publique du Québec (MSP) et ses partenaires gouvernementaux dans IGO ne peuvent garantir l’exactitude des services de données et ils ne peuvent être tenus responsables des conclusions obtenues à la suite de l’utilisation de ceux-ci. Le MSP et ses partenaires gouvernementaux dans IGO n’assumeront aucune responsabilité à l’égard de tout dommage subi par l’utilisateur ou ses employés, agents, représentants ou sous-traitants à la suite de l’utilisation de ces services de données.
 
-##### **3.2. Quel est le degré de support offert pour ces services ?**
+#### **3.2. Quel est le degré de support offert pour ces services ?**
 + Les services sont disponibles 24 heures par jour, 7 jours sur 7, à l’exception des périodes d’interruption planifiées ou non. À moins d’une situation urgente, les interruptions planifiées sont annoncées un minimum de 3 jours ouvrables à l'avance. Pour être ajouté à la liste de diffusion informant des avis d’interruption ou de tout changement apporté aux services, veuillez adresser votre demande en utilisant le formulaire [Contactez-nous](http://igouverte.org/#footer) de ce site.
 + Un support est assuré du lundi au vendredi, soit de 8h30 à 16h30 lors des heures normales, à l’exception des jours fériés. S’il y a un problème majeur à l’extérieur de ces heures ouvrables, la demande sera traitée à la prochaine période de 8h30 à 16h30 du lundi au vendredi, à l’exception des jours fériés.
 
-##### **3.3. Que faire si le service n'est plus disponible ou que son état est indisponible ?**
+#### **3.3. Que faire si le service n'est plus disponible ou que son état est indisponible ?**
 + Le service est disponible 24 heures par jour, 7 jours sur 7, à l’exception des périodes  d’interruption planifiées ou non. De manière exceptionnelle, si le service est non disponible pour une longue période, des services de relève pourraient être rendus disponibles. Cependant, aucune garantie n’est donnée quant à leur disponibilité.
 + Pour être ajouté à la liste de diffusion informant des avis d’interruption ou de tout changement apporté aux services, veuillez adresser votre demande en utilisant le formulaire [Contactez-nous](http://igouverte.org/#footer) de ce site.
 
 
-##### **3.4. Si j'ai d’autres questions sur ces services, avec qui puis-je communiquer ?** 
+#### **3.4. Si j'ai d’autres questions sur ces services, avec qui puis-je communiquer ?** 
 + N’hésitez pas à communiquer avec nous à l’adresse courriel suivante : info@igouverte.org ou utilisez le formulaire [Contactez-nous](http://igouverte.org/#footer) de ce site.
