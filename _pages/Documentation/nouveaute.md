@@ -8,6 +8,34 @@ _Ce document présente les principales améliorations et correctifs des dernièr
 
 _Démonstration de la dernière version disponible d&#39;IGO :_ [_https://infra-geo-ouverte.github.io/igo2/_](https://infra-geo-ouverte.github.io/igo2/)
 
+<a id="version_1_15"></a>
+## IGO Version 1.15 (2023-05-03) [<span class="octicon octicon-link"></span>](#version_1_15)
+
+**Nouvelles fonctionnalités et améliorations**
+
+- **Données vectorielles**
+  - Capacité de recherche pour les données vectorielles contenues dans la carte. ([#1185](https://github.com/infra-geo-ouverte/igo2-lib/pull/1185))
+  - Ajout d’une option afin de conserver les données importées de manière permanente. ([#1204](https://github.com/infra-geo-ouverte/igo2-lib/pull/1204))
+  - Possibilité de changer la couleur des couches importées. ([#1213](https://github.com/infra-geo-ouverte/igo2-lib/pull/1213))
+  - Possibilité de précharger une donnée vectorielle malgré le fait qu’elle soit hors plage d’échelle ou non visible. ([#1231](https://github.com/infra-geo-ouverte/igo2-lib/pull/1231))
+
+- **Géolocalisation**
+  - Correctifs et amélioration à l’outil de géolocalisation. ([#1209](https://github.com/infra-geo-ouverte/igo2-lib/pull/1209))
+  - Ajout d'une flèche indiquant la direction du déplacement. ([#1209](https://github.com/infra-geo-ouverte/igo2-lib/pull/1209))
+
+- **Application**
+  - Délestage du support d’Internet Explorer. ([#1174](https://github.com/infra-geo-ouverte/igo2-lib/pull/1174))
+  - Correctifs et améliorations pour l’installation/mise à jour de l’application web. ([#929](https://github.com/infra-geo-ouverte/igo2/pull/929))
+  - L’ajout de couche est dorénavant un évènement de suivi pour les statistiques d’utilisation (matomo). ([#1220](https://github.com/infra-geo-ouverte/igo2-lib/pull/1220))
+  - Possibilité d'afficher les coordonnées en latitude longitude. ([#1159](https://github.com/infra-geo-ouverte/igo2-lib/pull/1159))
+
+- **Recherches et interrogations**
+  - Possibilité de changer l'affichage des résultats d’interrogation entre le format liste vers le format onglet. ([#1156](https://github.com/infra-geo-ouverte/igo2-lib/pull/1156))
+  - Les résultats de recherche sont dorénavant enregistrable dans une couche tierce d’information. ([#1179](https://github.com/infra-geo-ouverte/igo2-lib/pull/1179))
+
+- **Mises à jour**
+  - Mise à jour de certaines des librairies (Angular 14 LTS, OpenLayers 7.3). ([#1150](https://github.com/infra-geo-ouverte/igo2-lib/pull/1150))
+
 <a id="version_1_14"></a>
 ## IGO Version 1.14 (2022-12-15) [<span class="octicon octicon-link"></span>](#version_1_14)
 
