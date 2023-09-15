@@ -31,8 +31,10 @@ Les données utilisées proviennent de diverses sources:
 + Ville de Blainville;
 + Ville de Longueuil;
 + Ville de Montréal;
++ Ville de Québec;
 + Ville de Repentigny;
 + Ville de Rimouski;
++ Ville de Rouyn-Noranda;
 + Ville de Saguenay;
 + Ville de Shawinigan;
 + Ville de Sherbrooke.
