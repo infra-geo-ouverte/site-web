@@ -43,34 +43,30 @@ Les données utilisées proviennent de diverses sources:
 + Le service WMTS peut être utilisé uniquement par le personnel des ministères et des organismes du gouvernement du Québec (ministères et organismes faisant partie du périmètre de l’ACRIgéo) pour des fins professionnelles, dans des sites intranet, extranet et Internet gouvernementaux. Le service d'imagerie peut être utilisé dans des sites Internet gouvernementaux. Le service WMTS est licencié au même titre que les données d’origines et il ne peut être utilisé que par le gouvernement du Québec. Celui-ci n’est pas autorisé à vendre, à prêter, à donner, à échanger ou prendre copie afin de transmettre à un tiers les Données. Le lien du service WMTS (URL source) ne peut en aucun temps être partagé aux organisations membres des réseaux ACRIgéo ni à toute autre organisation ou personne externe au gouvernement du Québec. Le service est mis à jour régulièrement.
 
 
-### [<a id="ServicesWeb"></a>](#ServicesWeb) Service web de cartes (WMS/WFS) : 
+### [<a id="ServicesWeb"></a>](#ServicesWeb) Service cartographiques WMS/WFS : 
 
-##### A) [<a id="ServicesWeb-A"></a>](#donneesqc)Aperçu de couches disponibles dans Données Québec
-+ Visualisation : ([https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/))<br/>
-+ Service WMS/WFS : [https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/igo_gouvouvert.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
+##### A) [<a id="ServicesWeb-A"></a>](#donneesqc)Aperçu des couches disponibles dans Données Québec
++ Visualisation : [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/)
 
-##### B) [<a id="ServicesWeb-B"></a>](#debitniveau)Débit niveau (Surveillance des crues)  
-+ Visualisation : [https://geoegl.msp.gouv.qc.ca/adnv2/](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=crue)<br/>
-+ Service WMS/WFS : [https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?](https://geoegl.msp.gouv.qc.ca/ws/adnInternetV2.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
+##### B) [<a id="ServicesWeb-B"></a>](#servmsp)Service WMS du ministère de la Sécurité publique (MSP)
++ Service WMS : [https://geoegl.msp.gouv.qc.ca/apis/wss/complet.fcgi?](https://geoegl.msp.gouv.qc.ca/apis/wss/complet.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
 
-##### C) [<a id="ServicesWeb-C"></a>](#foretouverte)Forêt Ouverte  
-+ Visualisation : [https://www.foretouverte.gouv.qc.ca](https://www.foretouverte.gouv.qc.ca))<br/>
+##### C) [<a id="ServicesWeb-C"></a>](#vigilance)Surveillance des crues
++ Visualisation : [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=crue](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=crue)<br/>
++ Service WMS : [https://geoegl.msp.gouv.qc.ca/apis/wss/vigilance.fcgi?](https://geoegl.msp.gouv.qc.ca/apis/wss/vigilance.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
+
+##### D) [<a id="ServicesWeb-D"></a>](#foretouverte)Forêt Ouverte  
++ Visualisation : [https://www.foretouverte.gouv.qc.ca](https://www.foretouverte.gouv.qc.ca)<br/>
 + Service WMS : [https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/mffpecofor.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
 
-##### D) [<a id="ServicesWeb-D"></a>](#transport)Transports  
+##### E) [<a id="ServicesWeb-E"></a>](#transport)Transports  
 + Visualisation : [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=mtq)<br/>  
 + Service WMS : [https://ws.mapserver.transports.gouv.qc.ca/swtq?service=WMS&version=1.3.0&request=GetCapabilities](https://ws.mapserver.transports.gouv.qc.ca/swtq?service=WMS&version=1.3.0&request=GetCapabilities) 
 
-##### E) [<a id="ServicesWeb-E"></a>](#cptaq)CPTAQ  
+##### F) [<a id="ServicesWeb-F"></a>](#cptaq)CPTAQ  
 + Visualisation : [http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1)<br/>  
 + Service WMS : [https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?service=WMS&version=1.3.0&request=GetCapabilities](https://carto.cptaq.gouv.qc.ca/cgi-bin/cptaq?service=WMS&version=1.3.0&request=GetCapabilities)  
 
-##### F) [<a id="ServicesWeb-F"></a>](#bdga)BDGA  
-+ Visualisation [https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives](https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-geographiques-et-administratives))<br/>  
-+ Service WMS : [https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/bdga.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
-
-##### G) [<a id="ServicesWeb-G"></a>](#glace)Carte de glace  
-+ Service WMS/WCS : [https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
-
-##### H) [<a id="ServicesWeb-H"></a>](#statregcriminalite)Statistiques régionales de criminalités au Québec  
-+ Service WMS/WFS : [https://geoegl.msp.gouv.qc.ca/ws/dpop.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/dpop.fcgi?service=WMS&version=1.3.0&request=GetCapabilities) 
+##### G) [<a id="ServicesWeb-G"></a>](#glace)Cartes de glace  
++ Visualisation : [https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=glace](https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=glace)<br/>
++ Service WMS/WCS : [https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?service=WMS&version=1.3.0&request=GetCapabilities](https://geoegl.msp.gouv.qc.ca/ws/radarsat.fcgi?service=WMS&version=1.3.0&request=GetCapabilities)
