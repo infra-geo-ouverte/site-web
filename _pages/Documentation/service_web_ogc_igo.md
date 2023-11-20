@@ -11,8 +11,8 @@ iconedocumentation: ""
 
 ##### A) [<a id="ServicesWMTS-A"></a>](#carte_publique) Service de fond de carte topographique gouvernemental
 Le service de fond de carte public se nomme "carte_gouv_qc_public". Il présente un fond de carte (routes, hydrographie, lieux d'intérêt) basé sur des données gouvernementales mises à jour régulièrement.  Deux formats sont offerts :
-+ <b>WMTS</b> : Web Map Tile Service et couche nommée "carte_gouv_qc_public " : https://geoegl.msp.gouv.qc.ca/apis/carto/wmts/1.0.0/?SERVICE=WMTS&REQUEST=GetCapabilities
-+ <b>TMS</b> : https://geoegl.msp.gouv.qc.ca/carto/tms/1.0.0/carte_gouv_qc_public@EPSG_3857/{z}/{x}/{-y}.png
++ <b>WMTS</b> : couche nommée "carte_gouv_qc_public " : [https://geoegl.msp.gouv.qc.ca/apis/carto/wmts/1.0.0/?SERVICE=WMTS&REQUEST=GetCapabilities](https://geoegl.msp.gouv.qc.ca/apis/carto/wmts/1.0.0/?SERVICE=WMTS&REQUEST=GetCapabilities)
++ <b>TMS</b> : format d'appel des tuiles https://geoegl.msp.gouv.qc.ca/carto/tms/1.0.0/carte_gouv_qc_public@EPSG_3857/{z}/{x}/{-y}.png
 + Pour l'utiliser dans l'application mobile **[OSMAnd](https://osmand.net/)**, voici l'URL à utiliser pour configurer le WMTS comme source en ligne dans les fonds de carte : [https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=carte_gouv_qc_public&STYLE=default&TILEMATRIXSET=EPSG_3857&TILEMATRIX={0}&TILEROW={2}&TILECOL={1}&FORMAT=image%2Fpng](https://geoegl.msp.gouv.qc.ca/carto/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=carte_gouv_qc_public&STYLE=default&TILEMATRIXSET=EPSG_3857&TILEMATRIX={0}&TILEROW={2}&TILECOL={1}&FORMAT=image%2Fpng) avec le module "[online maps](https://osmand.net/features/online-maps-plugin).
 
 Les données utilisées proviennent de diverses sources:
