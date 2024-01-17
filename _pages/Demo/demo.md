@@ -16,12 +16,3 @@ Voici cinq exemples d'instances d'IGO2 utilisant différents assemblages
 * [Ministère de la sécurité publique](https://geoegl.msp.gouv.qc.ca/igo2/portail/)
 * [Déméter (CPTAQ)](https://demeter.cptaq.gouv.qc.ca/)
 * [Géoportail de santé publique du Québec](https://cartes.inspq.qc.ca/geoportail/)
-
-## IGO1
-
-Voici un exemple de l'interface d'IGO-Navigateur 1.0 toujours en action :
-- [Demeter](https://geoegl.msp.gouv.qc.ca/igo/cptaq_demeter/)
-
-Voici un exemple de fichier de configuration pour IGO1 en XML : [https://github.com/infra-geo-ouverte/igo/blob/master/xml/defaut.xml](https://github.com/infra-geo-ouverte/igo/blob/master/xml/defaut.xml). 
-
-IGO1 est basé sur : OpenLayers 2, ExtJS, GeoExt, jQuery, [Phalcon](https://phalconphp.com/fr/) et Bootstrap.
