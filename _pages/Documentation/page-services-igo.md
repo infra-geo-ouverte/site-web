@@ -7,9 +7,9 @@ iconedocumentation: ""
 
 # Services Web et API offerts dans IGO
 
-Cetta page présente les services Web et [API (interface de programmation d’applications)](http://granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=26508293) disponibles via l'Infrastructure géomatique ouverte (IGO). 
+Cette page présente les services Web et [API (interface de programmation d’applications)](http://granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=26508293) disponibles via l'Infrastructure géomatique ouverte (IGO). 
 
-IMPORTANT : Veuillez prendre note des [conditions d'utilisation](#2) des services. L'utilisation des services est autorisée pour les ministères et organismes du gouvernement du Québec ainsi que les organisations participant au partage de données gouvernementales.
+IMPORTANT : Veuillez prendre note des [conditions d'utilisation](#2) des services ci-dessous. L'utilisation des services est autorisée pour les ministères et organismes du gouvernement du Québec ainsi que les organisations participant au partage de données gouvernementales.
 
 <a id="1"></a>
 # 1. Description des services/API
