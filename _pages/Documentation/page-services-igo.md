@@ -74,14 +74,14 @@ IMPORTANT : Veuillez prendre note des [conditions d'utilisation](#2) des service
 <a id="2"></a>
 # 2. Conditions d'utilisation
 
-#### **2.1. Utilisations autorisées** 
+#### 2.1. Utilisations autorisées
 
 + L'utilisation des services est autorisée pour les ministères et organismes du gouvernement du Québec ainsi que les organisations participant au partage de données gouvernementales.
 
-#### **2.2. Droits d'auteur** 
+#### 2.2. Droits d'auteur 
 + L'utilisateur doit inclure la mention des droits d’auteur du Gouvernement du Québec sur chaque copie de la totalité ou d’une partie de ces services de données. La mention à inscrire est « © Gouvernement du Québec » avec un hyperlien vers cette page : [http://www.droitauteur.gouv.qc.ca/copyright.php](http://www.droitauteur.gouv.qc.ca/copyright.php).
 
-#### **2.3. Informations complémentaires** 
+#### 2.3. Informations complémentaires 
 
 + Le ministère de la Sécurité publique du Québec (MSP) et ses partenaires gouvernementaux dans IGO ne peuvent garantir l’exactitude des services de données et ils ne peuvent être tenus responsables des conclusions obtenues à la suite de l’utilisation de ceux-ci. Le MSP et ses partenaires gouvernementaux dans IGO n’assumeront aucune responsabilité à l’égard de tout dommage subi par l’utilisateur ou ses employés, agents, représentants ou sous-traitants à la suite de l’utilisation de ces services de données.
 
@@ -92,5 +92,5 @@ IMPORTANT : Veuillez prendre note des [conditions d'utilisation](#2) des service
 + Pour être ajouté à la liste de diffusion informant des avis d’interruption ou de tout changement apporté aux services, veuillez adresser votre demande en utilisant le formulaire [Contactez-nous](http://igouverte.org/#footer) de ce site.
 
 
-#### **2.4. Nous joindre** 
+#### 2.4. Nous joindre
 + N’hésitez pas à communiquer avec nous à l’adresse courriel suivante : info@igouverte.org ou utilisez le formulaire [Contactez-nous](http://igouverte.org/#footer) de ce site.
