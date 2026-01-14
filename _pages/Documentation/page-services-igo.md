@@ -37,21 +37,37 @@ IMPORTANT : Veuillez prendre note des [conditions d'utilisation](#2) des service
 + [Accéder à la documentation de TerrAPI](https://terrapi.geo.msp.gouv.qc.ca/docs)
 
 <a id="1.3"></a>
-#### 1.3. Service de calcul d’itinéraire :
+#### 1.3. Service de fond de carte du gouvernement du Québec
++ Présente un fond de carte topographique (routes, hydrographie, lieux d'intérêt) basé sur des données gouvernementales mises à jour régulièrement
++ [Accéder à la documentation du service de fond de carte](http://igouverte.org/documentation/services-web-ogc-igo/#ServiceFond)
+
+<a id="1.4"></a>
+#### 1.4. Service de fond de carte d'imagerie du gouvernement du Québec
++ Couverture continue d'images satellitaires et aériennes acquises par le gouvernement du Québec ainsi que dans le cadre du partenariat d'acquisition d'orthophographies gouvernemental.
++ [Accéder à la documentation du service de fond de carte d'imagerie](http://igouverte.org/documentation/services-web-ogc-igo/#ServiceImagerie)
++ <i>Important : Le fond de carte d'imagerie peut être utilisé uniquement par le personnel des ministères et des organismes du gouvernement du Québec. Consultez la [documentation du service](http://igouverte.org/documentation/services-web-ogc-igo/#imagerie) pour plus de détails sur les conditions d'utilisation spécifiques de ce service.</i>
+
+<a id="1.5"></a>
+#### 1.5. Services cartographiques
++ Plusieurs services catographiques disponibles dans les instances IGO sont également disponibles pour consultation directe. 
++ [Accéder à la documentation des services cartographiques](http://igouverte.org/documentation/services-web-ogc-igo/#ServicesCarto)
+
+<a id="1.6"></a>
+#### 1.6. Service de calcul d’itinéraire :
 + Permet de calculer des itinéraires, des temps de déplacement et des distances entre deux points selon le réseau routier;
 + Permet de gérer des itinéraires optimisés (ex.: meilleur parcours entre deux points) avec des requêtes en lot possibles;
 + Alimenté par les données de réseau routier [AQréseau+](https://www.donneesquebec.ca/recherche/dataset/adresses-quebec/resource/0d5df103-f856-4183-9a15-eb06fce9c8bf) d’Adresses Québec; 
 + Basé sur la solution [OSRM](http://project-osrm.org/).
 + [Accéder à la documentation du service d'itinéraire](http://igouverte.org/documentation/doc_itineraire/)
 
-<a id="1.4"></a>
-#### 1.4. Service de géocodage en lot :
+<a id="1.7"></a>
+#### 1.7. Service de géocodage en lot :
 + Permet de  géocoder des points à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (ex.: CSV);
 + Basé sur le service de géocodage iCherche et les données d'Adresses Québec.
 + [Accéder à la documentation du service de géocodage en lot](https://icherche.geo.msp.gouv.qc.ca/docs/enlot)
 
-<a id="1.5"></a>
-#### 1.5. Service de recherche de lots cadastraux :
+<a id="1.8"></a>
+#### 1.8. Service de recherche de lots cadastraux :
 +  Permet de localiser un lot par numéro de lot du cadastre rénové du Québec. Ce service est offert par le service de la géomatique de la [Commission de protection du territoire agricole du Québec](http://www.cptaq.gouv.qc.ca/index.php?id=378&no_cache=1).
 
 
