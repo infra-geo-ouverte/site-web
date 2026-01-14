@@ -8,7 +8,8 @@ iconedocumentation: ""
 
 ### Services de fonds de carte tuilés : 
 
-##### A) <a id="ServiceFond"></a>Service de fond de carte topographique gouvernemental
+<a id="ServiceFond"></a>
+##### A) Service de fond de carte topographique gouvernemental
 Le service de fond de carte public se nomme "carte_gouv_qc_public". Il présente un fond de carte (routes, hydrographie, lieux d'intérêt) basé sur des données gouvernementales mises à jour régulièrement.  Deux formats sont offerts :
 + <b>WMTS</b> : couche nommée "carte_gouv_qc_public" : [https://geoegl.msp.gouv.qc.ca/apis/carto/wmts/1.0.0/?SERVICE=WMTS&REQUEST=GetCapabilities](https://geoegl.msp.gouv.qc.ca/apis/carto/wmts/1.0.0/?SERVICE=WMTS&REQUEST=GetCapabilities)
 + <b>TMS</b> : format d'appel des tuiles https://geoegl.msp.gouv.qc.ca/carto/tms/1.0.0/carte_gouv_qc_public@EPSG_3857/{z}/{x}/{-y}.png
@@ -41,15 +42,16 @@ Les données utilisées proviennent de diverses sources:
 + Ville de Shawinigan;
 + Ville de Sherbrooke.
 
-##### B) <a id="ServiceImagerie"></a>Service de fond de carte d'imagerie du gouvernement du Québec
+<a id="ServiceImagerie"></a>
+##### B) Service de fond de carte d'imagerie du gouvernement du Québec
 Le service de fond de carte d'imagerie se nomme "orthos". Il s'agit d'une couverture continue d'images satellitaires et aériennes acquises par le gouvernement du Québec ainsi que dans le cadre du partenariat d'acquisition d'orthophographies gouvernemental.<br/>
 <b>Conditions d'utilisation</b> : Le service WMTS peut être utilisé uniquement par le personnel des ministères et des organismes du gouvernement du Québec (ministères et organismes faisant partie du périmètre de l’ACRIgéo) pour des fins professionnelles, dans des sites intranet, extranet et Internet gouvernementaux. Le service d'imagerie peut être utilisé dans des sites Internet gouvernementaux. Le service WMTS est licencié au même titre que les données d’origines et il ne peut être utilisé que par le gouvernement du Québec. Celui-ci n’est pas autorisé à vendre, à prêter, à donner, à échanger ou prendre copie afin de transmettre à un tiers les Données. Le lien du service WMTS (URL source) ne peut en aucun temps être partagé aux organisations membres des réseaux ACRIgéo ni à toute autre organisation ou personne externe au gouvernement du Québec. Le service est mis à jour régulièrement.<br/>
 Deux formats sont offerts :
 + <b>WMTS</b> : couche nommée "orthos" : [https://geoegl.msp.gouv.qc.ca/apis/carto/wmts/1.0.0/?SERVICE=WMTS&REQUEST=GetCapabilities](https://geoegl.msp.gouv.qc.ca/apis/carto/wmts/1.0.0/?SERVICE=WMTS&REQUEST=GetCapabilities)
 + <b>TMS</b> : format d'appel des tuiles https://geoegl.msp.gouv.qc.ca/carto/tms/1.0.0/orthos@EPSG_3857/{z}/{x}/{-y}.png
 
-
-### <a id="ServicesCarto"></a>Services cartographiques WMS/WFS : 
+<a id="ServicesCarto"></a>
+### Services cartographiques WMS/WFS : 
 
 ##### A) Aperçu des couches disponibles dans Données Québec
 + Visualisation : [https://www.carte-igo.donneesquebec.ca/igo2/apercu-qc/](https://www.carte-igo.donneesquebec.ca/igo2/apercu-qc/)
