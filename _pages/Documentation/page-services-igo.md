@@ -18,7 +18,7 @@ IMPORTANT : Veuillez prendre note des [conditions d'utilisation](#2) des service
 #### 1.1. iCherche/géocode (API de géocodage) :
 + Permet la géolocalisation par adresse,  [code postal](https://www.canadapost.ca)<sup><abbr title="marque officielle">MO</abbr></sup>, territoire administratif, lieu, etc. Il se fonde, entre autres, sur les données d'[Adresses Québec](http://adressesquebec.gouv.qc.ca/).
 + Permet de formater des adresses selon la base de données d'Adresse Québec.
-+ [Accéder à la documentation d'iCherche](https://icherche.geo.msp.gouv.qc.ca/docs)
++ [Accéder à la documentation d'iCherche](https://icherche.geo.securite.gouv.qc.ca/docs)
 
 <a id="1.2"></a>
 #### 1.2. TerrAPI (API de géocodage inversé et de recherche spatiale) :
@@ -34,7 +34,7 @@ IMPORTANT : Veuillez prendre note des [conditions d'utilisation](#2) des service
   + Retourner tous les territoires correspondants à un type avec des possibilités de filtrage (ex.: obtenir la liste des municipalités commençant par 'Mat' et la trier en ordre alphabétique);
   + Obtenir tous les territoires contenus dans un autre (ex.: retourner toutes les municipalité de la région administrative 04);
   + Retourner le territoire correspondant à l'identifiant spécifié (ex.: obtenir la région administrative avec le code 01, obtenir la municipalité avec le code 23027, etc.)
-+ [Accéder à la documentation de TerrAPI](https://terrapi.geo.msp.gouv.qc.ca/docs)
++ [Accéder à la documentation de TerrAPI](https://terrapi.geo.securite.gouv.qc.ca/docs)
 
 <a id="1.3"></a>
 #### 1.3. Service de fond de carte du gouvernement du Québec
@@ -64,7 +64,7 @@ IMPORTANT : Veuillez prendre note des [conditions d'utilisation](#2) des service
 #### 1.7. Service de géocodage en lot :
 + Permet de  géocoder des points à partir d’une liste d’adresses ou de codes postaux contenus dans un fichier tabulaire/texte (ex.: CSV);
 + Basé sur le service de géocodage iCherche et les données d'Adresses Québec.
-+ [Accéder à la documentation du service de géocodage en lot](https://icherche.geo.msp.gouv.qc.ca/docs/enlot)
++ [Accéder à la documentation du service de géocodage en lot](https://icherche.geo.securite.gouv.qc.ca/docs/enlot)
 
 <a id="1.8"></a>
 #### 1.8. Service de recherche de lots cadastraux :
